@@ -51,6 +51,7 @@ class ProjectManualInput(BaseModel):
     tagline: str = ""
     problem: str = ""
     target_user: str = ""
+    sponsor_requirements: str = ""
     what_it_does: str = ""
     how_it_works: str = ""
     tech_tags: List[str] = Field(default_factory=list)
@@ -64,6 +65,7 @@ class AnalyzeRequest(BaseModel):
     devpost_url: Optional[str] = None
     demo_url: Optional[str] = None
     deployment_url: Optional[str] = None
+    sponsor_requirements: Optional[str] = None
     project: Optional[ProjectManualInput] = None
 
 
@@ -191,7 +193,12 @@ def analyze_project(req: AnalyzeRequest, request: Request):
     # 5. Judge Surface Evaluation (Layer 2 & Layer 3 via Router)
     router = EvaluationRouter()
     demo_evidence = f"Video: {req.demo_url}" if req.demo_url else ("Live URL: " + req.deployment_url if req.deployment_url else "")
-    award_criteria_text = "Overall excellence in innovation, technical depth, design, and practical utility."
+    
+    sponsor_req = sanitize_untrusted_text(proj.sponsor_requirements or req.sponsor_requirements or "")
+    if sponsor_req:
+        award_criteria_text = f"Sponsor & Track Requirements: {sponsor_req}"
+    else:
+        award_criteria_text = "Overall excellence in innovation, technical depth, design, and practical utility."
 
     judge_evals = router.evaluate_judge_surface(
         project_name=name,
@@ -214,6 +221,7 @@ def analyze_project(req: AnalyzeRequest, request: Request):
     gemini_client = GeminiClient()
     untrusted_evidence_block = (
         f"Title: {name}\nTagline: {tagline}\nProblem: {problem}\nUser: {target_user}\n"
+        f"Target Award: {req.award_id}\nSponsor / Track Requirements: {sponsor_req}\n"
         f"What: {what_it_does}\nHow: {how_it_works}\nCode LOC: {deterministic_metrics.get('approx_loc')}\n"
         f"Frameworks: {deterministic_metrics.get('frontend_frameworks') + deterministic_metrics.get('backend_frameworks')}"
     )
@@ -224,7 +232,7 @@ def analyze_project(req: AnalyzeRequest, request: Request):
         deterministic_metrics=deterministic_metrics,
         jev_classifications={k: v.model_dump() for k, v in judge_evals.items()},
         historical_comparisons=historical_stats,
-        criteria_alignment={"award_title": "Best Overall", "criteria": award_criteria_text},
+        criteria_alignment={"award_title": req.award_id.replace("_", " ").title(), "criteria": award_criteria_text},
     )
 
     return {
@@ -242,9 +250,10 @@ def analyze_project(req: AnalyzeRequest, request: Request):
         "engineering": deterministic_metrics,
         "historical_comparison": historical_stats,
         "criteria_alignment": {
-            "target_award": "Best Overall",
+            "target_award": req.award_id.replace("_", " ").title(),
             "criteria_summary": award_criteria_text,
             "alignment_level": judge_evals.get("award_alignment", {}).label if "award_alignment" in judge_evals else "moderate",
+            "sponsor_requirements": sponsor_req,
         },
         "recommendations": synthesis_resp.synthesis.model_dump(),
         "disclaimer": (

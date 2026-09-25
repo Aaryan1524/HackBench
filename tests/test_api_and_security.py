@@ -122,3 +122,33 @@ def test_rate_limiter():
     assert limiter.is_allowed(ip) is True
     assert limiter.is_allowed(ip) is True
     assert limiter.is_allowed(ip) is False
+
+
+def test_sponsor_requirements_in_manual_analysis(client):
+    """
+    Test that sponsor requirements are accepted, sanitized, and used in criteria alignment.
+    """
+    payload = {
+        "event_id": "shellhacks2025:2025",
+        "award_id": "best_fintech_track",
+        "input_mode": "manual",
+        "sponsor_requirements": "Must use Hedera Token Service and integrate smart contract audit checks.",
+        "project": {
+            "name": "AuditVault",
+            "tagline": "Automated security vault for DeFi liquidity pools",
+            "problem": "Unverified DeFi contracts suffer exploit drains.",
+            "target_user": "DeFi protocol treasuries.",
+            "sponsor_requirements": "Must use Hedera Token Service and integrate smart contract audit checks.",
+            "what_it_does": "Checks smart contract bytecode against known vulnerability patterns before execution.",
+            "how_it_works": "FastAPI backend, Solidity scanner, Hedera SDK integration.",
+            "tech_tags": ["Python", "FastAPI", "Hedera", "Solidity"],
+        },
+    }
+
+    res = client.post("/api/analyze", json=payload)
+    assert res.status_code == 200
+    data = res.json()
+    assert "criteria_alignment" in data
+    assert "Hedera Token Service" in data["criteria_alignment"]["criteria_summary"]
+    assert data["criteria_alignment"]["sponsor_requirements"] == "Must use Hedera Token Service and integrate smart contract audit checks."
+

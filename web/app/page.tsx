@@ -76,6 +76,7 @@ interface AnalysisResult {
     target_award: string;
     criteria_summary: string;
     alignment_level: string;
+    sponsor_requirements?: string;
   };
   recommendations: {
     summary: string;
@@ -158,12 +159,13 @@ export default function Home() {
 
   // Form Fields
   const [primaryLink, setPrimaryLink] = useState("");
-  const [targetHackathon] = useState("shellhacks2025:2025");
+  const [targetHackathon, setTargetHackathon] = useState("shellhacks2025:2025");
   const [targetAward, setTargetAward] = useState("best_overall");
   const [githubUrl, setGithubUrl] = useState("");
   const [devpostUrl, setDevpostUrl] = useState("");
   const [demoUrl, setDemoUrl] = useState("");
   const [deploymentUrl, setDeploymentUrl] = useState("");
+  const [sponsorRequirements, setSponsorRequirements] = useState("");
 
   const [name, setName] = useState("");
   const [tagline, setTagline] = useState("");
@@ -210,6 +212,7 @@ export default function Home() {
         "Hotels suffer from low guest review rates (under 8%) and only discover operational failures like AC breakdowns or poor housekeeping after negative public reviews are posted on TripAdvisor."
       );
       setTargetUser("Independent boutique hotel general managers and operations directors.");
+      setSponsorRequirements("Must provide an autonomous voice integration using Twilio or telephony API and output structured operational metrics rather than free-form text.");
       setWhatItDoes(
         "Calls hotel guests via an autonomous voice agent post-checkout, conducts an empathetic 2-minute conversation, and extracts structured operational metrics."
       );
@@ -227,6 +230,7 @@ export default function Home() {
       setDeploymentUrl("https://ecoquest-demo.vercel.app");
       setName("EcoQuest");
       setTagline("Gamifying urban sustainability through verifiable recycling missions");
+      setSponsorRequirements("");
       setTargetAward("best_social_good");
     }
   };
@@ -259,11 +263,13 @@ export default function Home() {
       devpost_url: finalDevpost || undefined,
       demo_url: finalDemo || undefined,
       deployment_url: finalDeployment || undefined,
+      sponsor_requirements: sponsorRequirements.trim() || undefined,
       project: {
         name: name.trim() || (finalDevpost ? finalDevpost.split("/").pop() || "Candidate Project" : "Candidate Project"),
         tagline: tagline.trim(),
         problem: problem.trim(),
         target_user: targetUser.trim(),
+        sponsor_requirements: sponsorRequirements.trim() || "",
         what_it_does: whatItDoes.trim(),
         how_it_works: howItWorks.trim(),
         tech_tags: techTags
@@ -462,13 +468,30 @@ export default function Home() {
                         </div>
                       )}
                     </div>
+
+                    <div>
+                      <label htmlFor="sponsorReqLink" className="block text-xs font-semibold uppercase tracking-wider text-ink-secondary mb-1">
+                        Sponsor or Track Requirements (optional)
+                      </label>
+                      <input
+                        id="sponsorReqLink"
+                        type="text"
+                        value={sponsorRequirements}
+                        onChange={(e) => setSponsorRequirements(e.target.value)}
+                        placeholder="e.g. Must integrate sponsor XYZ API or address specific track prompt"
+                        className="w-full px-3.5 py-2.5 bg-white border border-edge rounded text-sm text-ink placeholder:text-ink-muted focus:outline-none focus:border-ink"
+                      />
+                      <p className="mt-1 text-xs text-ink-secondary">
+                        If targeting a specific sponsor challenge, describe what they require.
+                      </p>
+                    </div>
                   </div>
                 ) : (
                   /* --- Mode 2: Manual Fields --- */
                   <div className="space-y-6">
                     <div>
                       <label className="block text-xs font-semibold uppercase tracking-wider text-ink-secondary mb-2">
-                        Project name
+                        Project name <span className="text-rose-600">*</span>
                       </label>
                       <input
                         type="text"
@@ -495,52 +518,74 @@ export default function Home() {
 
                     <div>
                       <label className="block text-xs font-semibold uppercase tracking-wider text-ink-secondary mb-2">
-                        What problem are you solving?
+                        What problem are you solving? <span className="text-rose-600">*</span>
                       </label>
                       <textarea
                         rows={3}
                         value={problem}
                         onChange={(e) => setProblem(e.target.value)}
                         placeholder="Describe the specific pain point..."
+                        required
                         className="w-full px-4 py-3 bg-white border border-edge rounded text-base text-ink focus:outline-none focus:border-ink resize-y"
                       />
                     </div>
 
                     <div>
                       <label className="block text-xs font-semibold uppercase tracking-wider text-ink-secondary mb-2">
-                        Who is it for?
+                        Who is it for? <span className="text-rose-600">*</span>
                       </label>
                       <input
                         type="text"
                         value={targetUser}
                         onChange={(e) => setTargetUser(e.target.value)}
                         placeholder="e.g. Boutique hotel general managers"
+                        required
                         className="w-full px-4 py-3 bg-white border border-edge rounded text-base text-ink focus:outline-none focus:border-ink"
                       />
                     </div>
 
+                    {/* Mandatory Sponsor Requirements */}
                     <div>
                       <label className="block text-xs font-semibold uppercase tracking-wider text-ink-secondary mb-2">
-                        What does it do?
+                        Sponsor or Track Requirements <span className="text-rose-600">*</span>
+                      </label>
+                      <textarea
+                        rows={3}
+                        value={sponsorRequirements}
+                        onChange={(e) => setSponsorRequirements(e.target.value)}
+                        placeholder="Paste the sponsor challenge, required API/SDK, or prize criteria (e.g. Must integrate Twilio voice, or best use of Hedera)..."
+                        required
+                        className="w-full px-4 py-3 bg-white border border-edge rounded text-base text-ink focus:outline-none focus:border-ink resize-y"
+                      />
+                      <p className="mt-1.5 text-xs text-ink-secondary">
+                        Mandatory. Tells us what the sponsor specifically expects so we can evaluate actual requirement fit without guessing.
+                      </p>
+                    </div>
+
+                    <div>
+                      <label className="block text-xs font-semibold uppercase tracking-wider text-ink-secondary mb-2">
+                        What does it do? <span className="text-rose-600">*</span>
                       </label>
                       <textarea
                         rows={3}
                         value={whatItDoes}
                         onChange={(e) => setWhatItDoes(e.target.value)}
                         placeholder="What happens when a user touches your product?"
+                        required
                         className="w-full px-4 py-3 bg-white border border-edge rounded text-base text-ink focus:outline-none focus:border-ink resize-y"
                       />
                     </div>
 
                     <div>
                       <label className="block text-xs font-semibold uppercase tracking-wider text-ink-secondary mb-2">
-                        How does the core flow work?
+                        How does the core flow work? <span className="text-rose-600">*</span>
                       </label>
                       <textarea
                         rows={3}
                         value={howItWorks}
                         onChange={(e) => setHowItWorks(e.target.value)}
                         placeholder="Key technical components and user steps..."
+                        required
                         className="w-full px-4 py-3 bg-white border border-edge rounded text-base text-ink focus:outline-none focus:border-ink resize-y"
                       />
                     </div>
@@ -578,11 +623,18 @@ export default function Home() {
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-2 border-t border-edge">
                   <div>
                     <label className="block text-xs font-semibold uppercase tracking-wider text-ink-secondary mb-1.5">
-                      Hackathon
+                      Hackathon baseline
                     </label>
-                    <div className="px-3.5 py-2.5 bg-canvas-subtle border border-edge rounded text-sm text-ink font-medium">
-                      ShellHacks 2025
-                    </div>
+                    <select
+                      value={targetHackathon}
+                      onChange={(e) => setTargetHackathon(e.target.value)}
+                      className="w-full px-3.5 py-2.5 bg-white border border-edge rounded text-sm text-ink focus:outline-none focus:border-ink cursor-pointer"
+                    >
+                      <option value="shellhacks2025:2025">ShellHacks 2025</option>
+                      <option value="shellhacks2024:2024">ShellHacks 2024</option>
+                      <option value="shellhacks-2023:2023">ShellHacks 2023</option>
+                      <option value="shellhacks2026:2026">ShellHacks 2026 (Preparation)</option>
+                    </select>
                   </div>
                   <div>
                     <label className="block text-xs font-semibold uppercase tracking-wider text-ink-secondary mb-1.5">
@@ -810,6 +862,16 @@ export default function Home() {
                   {result.criteria_alignment.alignment_level}
                 </span>
               </div>
+              {result.criteria_alignment.sponsor_requirements && (
+                <div className="mt-4 p-4 bg-canvas-subtle border border-edge rounded text-xs space-y-1.5">
+                  <span className="font-semibold text-ink uppercase tracking-wider block">
+                    Targeted Sponsor Criteria:
+                  </span>
+                  <p className="text-ink-secondary leading-relaxed">
+                    {result.criteria_alignment.sponsor_requirements}
+                  </p>
+                </div>
+              )}
             </section>
 
             {/* 6. What To Improve: The Speakeasy Dark Card */}
