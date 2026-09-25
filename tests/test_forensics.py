@@ -24,6 +24,7 @@ from hackbench.outcomes.extractor import OutcomeExtractor
 from hackbench.outcomes.revealer import OutcomeRevealer
 from hackbench.analysis.mismatches import MismatchAnalyzer
 from hackbench.analysis.strong_nonwinners import StrongNonWinnerDetector
+from hackbench.analysis.benchmark_2026 import ShellHacks2026Benchmark
 
 
 def test_winner_info_cannot_enter_blind_evaluator_inputs():
@@ -401,4 +402,61 @@ def test_rerun_idempotency(tmp_path):
     )
 
     assert b1.bundle_sha256 == b2.bundle_sha256
+
+
+def test_shellhacks_2026_benchmark_tool(tmp_path):
+    """
+    Test that the ShellHacks2026Benchmark tool evaluates a local candidate repository
+    strictly deterministically and provides percentiles and gap recommendations.
+    """
+    candidate_repo = tmp_path / "candidate_hack_repo"
+    candidate_repo.mkdir()
+
+    # Create mock files
+    (candidate_repo / "package.json").write_text(
+        json.dumps({
+            "name": "nextjs-app",
+            "dependencies": {
+                "next": "^14.0.0",
+                "react": "^18.0.0",
+                "tailwindcss": "^3.0.0"
+            }
+        })
+    )
+
+    api_dir = candidate_repo / "pages" / "api"
+    api_dir.mkdir(parents=True)
+    (api_dir / "analytics.ts").write_text(
+        "export async function GET(req: any) {\n  return Response.json({ status: 'ok' });\n}\n"
+    )
+
+    tests_dir = candidate_repo / "tests"
+    tests_dir.mkdir()
+    (tests_dir / "analytics.test.ts").write_text(
+        "describe('analytics', () => {\n  it('works', () => {\n    expect(true).toBe(true);\n  });\n});\n"
+    )
+
+    benchmarker = ShellHacks2026Benchmark()
+    result = benchmarker.evaluate_candidate_project(
+        repo_path_or_url=str(candidate_repo),
+        project_name="NextGen Analytics",
+        tagline="Real-time telemetry for hackathons",
+        what_it_does="Analyzes hackathon telemetry using Next.js and API endpoints.",
+        tech_tags=["Next.js", "React", "TypeScript", "TailwindCSS"],
+        deployment_url=None,
+    )
+
+    # Deterministic checks
+    assert result.project_name == "NextGen Analytics"
+    assert result.deterministic_metrics["approx_loc"] > 0
+    assert result.deterministic_metrics["test_files_count"] == 1
+    assert result.deterministic_metrics["api_routes_count"] == 1
+    assert "Next.js" in result.deterministic_metrics["frontend_frameworks"]
+    assert "React" in result.deterministic_metrics["frontend_frameworks"]
+    assert result.composite_quality_score > 0
+    assert 0 <= result.historical_percentile_vs_winners <= 100
+    assert 0 <= result.historical_percentile_vs_all <= 100
+    assert len(result.actionable_recommendations) > 0
+    assert "DETERMINISTIC EVALUATION" in result.disclaimer
+
 
