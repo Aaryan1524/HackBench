@@ -282,9 +282,29 @@ class JevClient:
         Calibrated offline fallback evaluator adhering strictly to the rubric definitions.
         Produces deterministic probabilities based on verifiable evidence in the state text.
         """
+        import re
         state_str = state if isinstance(state, str) else json.dumps(state)
         state_lower = state_str.lower()
         results: Dict[str, JevResult] = {}
+
+        def _get_sec(hdr: str, next_hdrs: List[str]) -> str:
+            lower = state_str.lower()
+            start = lower.find(hdr.lower())
+            if start == -1:
+                return ""
+            start += len(hdr)
+            end = len(state_str)
+            for nh in next_hdrs:
+                p = lower.find(nh.lower(), start)
+                if p != -1 and p < end:
+                    end = p
+            return state_str[start:end].strip()
+
+        problem_text = _get_sec("PROBLEM STATEMENT:\n", ["TARGET USER:", "PRODUCT & WORKFLOW:", "DEMO EVIDENCE:"])
+        user_text = _get_sec("TARGET USER:\n", ["PRODUCT & WORKFLOW:", "DEMO EVIDENCE:", "DOCUMENTED AWARD CRITERIA:"])
+        product_text = _get_sec("PRODUCT & WORKFLOW:\n", ["DEMO EVIDENCE:", "DOCUMENTED AWARD CRITERIA:"])
+        demo_text = _get_sec("DEMO EVIDENCE:\n", ["DOCUMENTED AWARD CRITERIA:", "EVIDENCE LIMITATIONS:"])
+        criteria_text = _get_sec("DOCUMENTED AWARD CRITERIA:\n", ["EVIDENCE LIMITATIONS:"])
 
         for q in questions:
             if q.type == QuestionType.NOUL:
@@ -302,58 +322,122 @@ class JevClient:
                 dim = q.id
                 rubric = q.options or RUBRIC_DEFINITIONS.get(dim, {})
 
-                # Deterministic text-grounded level selection
                 level = "moderate"
-                conf = 0.86
+                conf = 0.85
                 probs = {k: 0.05 for k in rubric.keys()}
 
-                # Check evidence presence
-                if dim == "demo_strength":
-                    if "no demo" in state_lower or "demo: none" in state_lower or "insufficient_evidence" in state_lower:
-                        level = "insufficient_evidence"
+                if dim == "problem_clarity":
+                    prob_clean = problem_text.replace("N/A", "").strip()
+                    words = len(prob_clean.split()) if prob_clean else 0
+                    if words == 0 or len(prob_clean) < 5:
+                        level = "very_weak"
                         conf = 0.95
-                    elif "video" in state_lower or "walkthrough" in state_lower or "deployed" in state_lower:
+                    elif words < 12:
+                        level = "weak"
+                        conf = 0.88
+                    elif words < 40:
+                        level = "moderate"
+                        conf = 0.85
+                    else:
+                        level = "strong"
+                        conf = 0.89
+
+                elif dim == "user_clarity":
+                    user_clean = user_text.replace("Inferred from description", "").replace("N/A", "").strip()
+                    words = len(user_clean.split()) if user_clean else 0
+                    if words == 0 or len(user_clean) < 3:
+                        level = "very_weak"
+                        conf = 0.95
+                    elif any(g in user_clean.lower() for g in ["everyone", "anyone", "all users", "people"]):
+                        level = "weak"
+                        conf = 0.88
+                    elif words >= 5:
                         level = "strong"
                         conf = 0.88
                     else:
                         level = "moderate"
-                        conf = 0.78
-                elif dim == "award_alignment":
-                    if "criteria:" not in state_lower or "no specific criteria" in state_lower:
-                        level = "insufficient_evidence"
-                        conf = 0.92
-                    elif any(c in state_lower for c in ["aligns", "satisfies", "embodies", "addresses criteria"]):
-                        level = "strong"
-                        conf = 0.84
-                    else:
-                        level = "moderate"
-                        conf = 0.81
-                elif dim == "completion_appearance":
-                    if "loc: 0" in state_lower or "no code" in state_lower:
+                        conf = 0.82
+
+                elif dim == "product_clarity":
+                    prod_clean = product_text.replace("N/A", "").strip()
+                    words = len(prod_clean.split()) if prod_clean else 0
+                    if words == 0 or len(prod_clean) < 5:
                         level = "very_weak"
-                        conf = 0.92
-                    elif any(w in state_lower for w in ["functional", "routes:", "complete workflow", "end-to-end"]):
-                        level = "strong"
+                        conf = 0.95
+                    elif words < 15:
+                        level = "weak"
+                        conf = 0.88
+                    elif words < 45:
+                        level = "moderate"
                         conf = 0.85
+                    else:
+                        level = "strong"
+                        conf = 0.89
+
+                elif dim == "demo_strength":
+                    if not demo_text or "no demo" in demo_text.lower() or "none" in demo_text.lower() or "insufficient" in state_lower:
+                        level = "insufficient_evidence"
+                        conf = 0.98
+                    elif any(v in demo_text.lower() for v in ["http://", "https://", "video", "youtube", "vimeo", "loom"]):
+                        level = "strong"
+                        conf = 0.88
                     else:
                         level = "moderate"
                         conf = 0.80
-                elif dim in ("problem_clarity", "user_clarity", "product_clarity"):
-                    words_count = len(state_str.split())
-                    if words_count > 60:
-                        level = "strong"
-                        conf = 0.89
-                    elif words_count > 25:
+
+                elif dim == "award_alignment":
+                    if not criteria_text or "none provided" in criteria_text.lower():
+                        level = "moderate"
+                        conf = 0.80
+                    elif "sponsor & track requirements:" in criteria_text.lower():
+                        req_part = criteria_text.split(":", 1)[1].strip() if ":" in criteria_text else criteria_text
+                        req_words = [w for w in re.findall(r'\b[a-zA-Z]{4,}\b', req_part.lower()) if w not in {"must", "should", "using", "with", "from", "that", "this", "project", "solution"}]
+                        user_body = (problem_text + " " + user_text + " " + product_text).lower()
+                        matches = [w for w in req_words if w in user_body]
+                        if len(matches) >= 2 or (req_words and len(matches) == len(req_words)):
+                            level = "strong"
+                            conf = 0.90
+                        elif len(matches) == 1:
+                            level = "moderate"
+                            conf = 0.82
+                        else:
+                            level = "weak"
+                            conf = 0.88
+                    else:
                         level = "moderate"
                         conf = 0.82
+
+                elif dim == "completion_appearance":
+                    loc_val = 0
+                    m = re.search(r'loc:\s*(\d+)', state_lower)
+                    if m:
+                        loc_val = int(m.group(1))
+                    has_demo_link = any(v in demo_text.lower() for v in ["http://", "https://"])
+                    if loc_val == 0 and not has_demo_link and len(product_text.split()) < 10:
+                        level = "very_weak"
+                        conf = 0.95
+                    elif loc_val >= 300 or (has_demo_link and len(product_text.split()) >= 30):
+                        level = "strong"
+                        conf = 0.88
                     else:
-                        level = "weak"
-                        conf = 0.75
+                        level = "moderate"
+                        conf = 0.82
+
+                elif dim in ("practicality", "story_clarity", "memorability"):
+                    prob_words = len(problem_text.split())
+                    if prob_words < 5:
+                        level = "very_weak"
+                        conf = 0.92
+                    elif prob_words > 40:
+                        level = "strong"
+                        conf = 0.86
+                    else:
+                        level = "moderate"
+                        conf = 0.82
                 else:
                     level = "moderate"
                     conf = 0.82
 
-                # Update probability distribution
                 probs[level] = conf
                 rem = (1.0 - conf) / max(1, len(probs) - 1)
                 for k in probs:

@@ -235,6 +235,8 @@ Generate a structured JSON synthesis adhering strictly to this schema:
             deterministic_metrics=deterministic_metrics,
             rubric_classifications=jev_classifications,
             historical_comparisons=historical_comparisons,
+            untrusted_evidence=untrusted_evidence,
+            criteria_alignment=criteria_alignment,
         )
         return GeminiResponse(
             synthesis=synthesis,
@@ -249,97 +251,255 @@ Generate a structured JSON synthesis adhering strictly to this schema:
         deterministic_metrics: Dict[str, Any],
         rubric_classifications: Dict[str, Any],
         historical_comparisons: Dict[str, Any],
+        untrusted_evidence: str = "",
+        criteria_alignment: Optional[Dict[str, Any]] = None,
     ) -> ParticipantReportSynthesis:
+        import re
+
+        def _extract_val(tag: str, next_tags: List[str]) -> str:
+            lower_ev = untrusted_evidence.lower()
+            tag_pos = lower_ev.find(tag.lower())
+            if tag_pos == -1:
+                return ""
+            tag_pos += len(tag)
+            end_pos = len(untrusted_evidence)
+            for nt in next_tags:
+                p = lower_ev.find(nt.lower(), tag_pos)
+                if p != -1 and p < end_pos:
+                    end_pos = p
+            return untrusted_evidence[tag_pos:end_pos].strip()
+
+        prob_str = _extract_val("Problem:", ["User:", "Target Award:", "Sponsor / Track Requirements:"])
+        user_str = _extract_val("User:", ["Target Award:", "Sponsor / Track Requirements:", "What:"])
+        award_str = _extract_val("Target Award:", ["Sponsor / Track Requirements:", "What:"])
+        sponsor_str = _extract_val("Sponsor / Track Requirements:", ["What:", "How:", "Code LOC:"])
+        what_str = _extract_val("What:", ["How:", "Code LOC:", "Frameworks:"])
+        how_str = _extract_val("How:", ["Code LOC:", "Frameworks:"])
+
         loc = deterministic_metrics.get("approx_loc", 0)
         api_routes = deterministic_metrics.get("api_routes_count", 0)
         tests = deterministic_metrics.get("test_files_count", 0)
         dep_reachable = deterministic_metrics.get("live_deployment_reachable", False)
 
-        strengths = []
+        prob_words = len(prob_str.split()) if prob_str and prob_str.lower() != "n/a" else 0
+        user_words = len(user_str.split()) if user_str and "inferred" not in user_str.lower() and user_str.lower() != "n/a" else 0
+        what_words = len(what_str.split()) if what_str and what_str.lower() != "n/a" else 0
+
+        strengths: List[SynthesizedStrength] = []
+        gaps: List[SynthesizedGap] = []
+        next_actions: List[SynthesizedNextAction] = []
+
+        # 1. Strengths evaluation
+        if prob_words >= 15:
+            strengths.append(SynthesizedStrength(
+                title="Articulated Problem Statement",
+                evidence=f"Explicitly stated problem: '{prob_str[:90]}...'",
+                historical_context="Consistent with historical winners who open with immediate, grounded problem framing."
+            ))
+        if user_words >= 3 and not any(g in user_str.lower() for g in ["everyone", "anyone", "general public"]):
+            strengths.append(SynthesizedStrength(
+                title="Defined User Persona",
+                evidence=f"Targeted specifically at: '{user_str[:80]}'",
+                historical_context="Sharp audience focus is a key trait of memorable hackathon projects."
+            ))
         if loc >= 300:
             strengths.append(SynthesizedStrength(
-                title="Substantive Implementation",
+                title="Substantive Codebase",
                 evidence=f"Verified repository containing {loc} LOC across functional files.",
                 historical_context="Consistent with historical winner median LOC volume (400-800 LOC)."
             ))
+        elif loc > 0:
+            strengths.append(SynthesizedStrength(
+                title="Functional Code Verified",
+                evidence=f"Scanned {loc} LOC with verified implementation files.",
+                historical_context="Technical artifacts provide judges with objective proof of engineering effort."
+            ))
+        if dep_reachable:
+            strengths.append(SynthesizedStrength(
+                title="Live Verified Deployment",
+                evidence="Deployment URL is live and responded with HTTP 200.",
+                historical_context="72% of category winners maintained active, reachable deployments for judges."
+            ))
         if api_routes >= 2:
             strengths.append(SynthesizedStrength(
-                title="Structured Backend Endpoints",
+                title="Structured Backend Routing",
                 evidence=f"Detected {api_routes} distinct API routing endpoints.",
                 historical_context="Structured routing demonstrates functional client-server integration."
             ))
         if tests > 0:
             strengths.append(SynthesizedStrength(
-                title="Verified Automated Tests",
+                title="Automated Test Suite",
                 evidence=f"{tests} test files verified in repository.",
                 historical_context="Only 12% of historical submissions included automated test suites."
             ))
+
+        # Check sponsor alignment strength
+        if sponsor_str and sponsor_str.lower() not in ("none", "n/a", ""):
+            req_words = [w for w in re.findall(r'\b[a-zA-Z]{4,}\b', sponsor_str.lower()) if w not in {"must", "should", "using", "with", "from", "that", "this", "project", "solution"}]
+            user_body = (prob_str + " " + user_str + " " + what_str + " " + how_str).lower()
+            matches = [w for w in req_words if w in user_body]
+            if len(matches) >= 2 or (req_words and len(matches) == len(req_words)):
+                strengths.append(SynthesizedStrength(
+                    title="Sponsor Requirement Alignment",
+                    evidence=f"Submission explicitly addresses required sponsor criteria: '{sponsor_str[:70]}...'",
+                    historical_context="Directly embodying sponsor prompts is the single highest predictor of track wins."
+                ))
+
         if not strengths:
-            strengths.append(SynthesizedStrength(
-                title="Clear Conceptual Scope",
-                evidence="Defined problem statement and functional goal.",
-                historical_context="Matches ideation standards seen across general submissions."
+            if prob_words > 0 or what_words > 0:
+                strengths.append(SynthesizedStrength(
+                    title="Initial Project Conception",
+                    evidence=f"Project entry initialized for '{project_name}'.",
+                    historical_context="Establishes entry baseline into the competition evaluation pool."
+                ))
+            else:
+                strengths.append(SynthesizedStrength(
+                    title="Submission Shell Created",
+                    evidence="Project title registered in evaluation system.",
+                    historical_context="Ready for submission content, narrative details, and demo proof."
+                ))
+
+        # 2. Gaps evaluation
+        if prob_words == 0:
+            gaps.append(SynthesizedGap(
+                title="Missing Problem Statement",
+                evidence="No concrete problem statement was provided in the submission.",
+                historical_context="Judges have 3-5 minutes; an unmistakable problem statement is essential."
+            ))
+            next_actions.append(SynthesizedNextAction(
+                priority=1,
+                action="Write a concise 2-sentence problem statement detailing the user's current pain point.",
+                reason="Judges evaluate projects rapidly; the friction must be unmistakable."
+            ))
+        elif prob_words < 12:
+            gaps.append(SynthesizedGap(
+                title="Under-Specified Problem Depth",
+                evidence=f"Problem description is only {prob_words} words: '{prob_str}'.",
+                historical_context="Historical winners detail why existing alternatives fail before presenting features."
+            ))
+            next_actions.append(SynthesizedNextAction(
+                priority=1,
+                action="Expand on the specific real-world friction and why current solutions are inadequate.",
+                reason="Provides necessary motivation for judges to appreciate the solution."
             ))
 
-        gaps = []
+        if user_words == 0:
+            gaps.append(SynthesizedGap(
+                title="Unspecified Target Audience",
+                evidence="Target user is missing or undefined.",
+                historical_context="Top hackathon projects clearly define the exact persona who needs the product."
+            ))
+            next_actions.append(SynthesizedNextAction(
+                priority=2,
+                action="Explicitly specify your target user persona (e.g. students, nurses, delivery dispatchers).",
+                reason="Helps judges visualize adoption credibility and real-world utility."
+            ))
+        elif any(g in user_str.lower() for g in ["everyone", "anyone", "general public", "all users"]):
+            gaps.append(SynthesizedGap(
+                title="Overly Broad Audience Definition",
+                evidence=f"Target user is defined as '{user_str}', which is too generic for judges.",
+                historical_context="Projects claiming 'everyone' as their user lose credibility during judging."
+            ))
+            next_actions.append(SynthesizedNextAction(
+                priority=2,
+                action="Narrow your primary audience to an acute early-adopter niche for the initial demo.",
+                reason="Niche focus makes workflow demonstrations much more compelling."
+            ))
+
+        # Sponsor requirement gap
+        if sponsor_str and sponsor_str.lower() not in ("none", "n/a", ""):
+            req_words = [w for w in re.findall(r'\b[a-zA-Z]{4,}\b', sponsor_str.lower()) if w not in {"must", "should", "using", "with", "from", "that", "this", "project", "solution"}]
+            user_body = (prob_str + " " + user_str + " " + what_str + " " + how_str).lower()
+            matches = [w for w in req_words if w in user_body]
+            if len(matches) < 2 and (not req_words or len(matches) < len(req_words)):
+                gaps.append(SynthesizedGap(
+                    title="Sponsor Criteria Misalignment",
+                    evidence=f"Submission does not clearly demonstrate how it fulfills required sponsor criteria: '{sponsor_str[:80]}...'",
+                    historical_context="Sponsor judges prioritize core adoption of their required tools over peripheral tagging."
+                ))
+                next_actions.append(SynthesizedNextAction(
+                    priority=1,
+                    action=f"Explicitly weave the required sponsor criteria ({sponsor_str[:40]}...) into your primary demo narrative.",
+                    reason="Sponsor prizes are awarded on deep, intentional adoption."
+                ))
+
         if not dep_reachable:
             gaps.append(SynthesizedGap(
                 title="No Reachable Live Deployment",
                 evidence="Live deployment URL was either missing or unreachable upon HTTP probe.",
                 historical_context="72% of top category winners maintained active, reachable deployments for judges."
             ))
-        if api_routes == 0 and loc > 0:
+            if not any(a.action.startswith("Deploy") for a in next_actions):
+                next_actions.append(SynthesizedNextAction(
+                    priority=3,
+                    action="Deploy a live reachable frontend on Vercel or Netlify or record a video walkthrough.",
+                    reason="Provides judges with immediate interactive proof of functionality."
+                ))
+
+        if what_words == 0:
             gaps.append(SynthesizedGap(
-                title="Limited Modular Backend Routing",
-                evidence="No explicit API route handlers detected in scanned source code.",
-                historical_context="Historical winners frequently demonstrated verified client-server communication."
+                title="Missing Product Workflow Description",
+                evidence="No description of what the project does or how it functions was provided.",
+                historical_context="Judges need an explicit overview of how data flows through the application."
             ))
-        if deterministic_metrics.get("todo_fixme_count", 0) > 4:
-            gaps.append(SynthesizedGap(
-                title="Unfinished Code Markers",
-                evidence=f"Scanned {deterministic_metrics.get('todo_fixme_count')} TODO or FIXME markers in codebase.",
-                historical_context="Clean repositories with resolved stubs signal execution discipline."
-            ))
-        if not gaps:
-            gaps.append(SynthesizedGap(
-                title="Judge-Facing Demo Clarity",
-                evidence="Demo walkthrough evidence requires close inspection to understand primary value.",
-                historical_context="Top projects typically communicate end-to-end value within 60 seconds."
+            next_actions.append(SynthesizedNextAction(
+                priority=2,
+                action="Describe your end-to-end user workflow: what input is given and what output is generated.",
+                reason="Connects the problem statement to the technical implementation."
             ))
 
-        next_actions = [
-            SynthesizedNextAction(
-                priority=1,
-                action="Deploy a live reachable frontend on Vercel or Netlify.",
-                reason="Provides judges with immediate interactive proof of functionality."
-            ),
-            SynthesizedNextAction(
-                priority=2,
+        # Deduplicate and sort next_actions by priority
+        seen_actions = set()
+        deduped_actions: List[SynthesizedNextAction] = []
+        for act in sorted(next_actions, key=lambda a: a.priority):
+            if act.action not in seen_actions:
+                seen_actions.add(act.action)
+                deduped_actions.append(act)
+
+        if len(deduped_actions) < 3:
+            deduped_actions.append(SynthesizedNextAction(
+                priority=len(deduped_actions) + 1,
                 action="Focus the initial 60 seconds of presentation strictly on the primary user problem and live solution.",
                 reason="Historical forensics shows judge-facing clarity is paramount in high-speed judging sessions."
-            ),
-            SynthesizedNextAction(
-                priority=3,
-                action="Clean up dangling TODO stubs and ensure all core API calls return live data rather than mock fixtures.",
-                reason="Replaces static placeholders with verified integration depth."
-            ),
-        ]
+            ))
+        if len(deduped_actions) < 3:
+            deduped_actions.append(SynthesizedNextAction(
+                priority=len(deduped_actions) + 1,
+                action="Prepare a backup screen recording in case venue Wi-Fi causes demo latency.",
+                reason="Ensures the judging pitch remains uninterrupted regardless of network conditions."
+            ))
+
+        # Re-index priorities 1, 2, 3
+        for idx, act in enumerate(deduped_actions[:3], 1):
+            act.priority = idx
+
+        # Dynamic Summary
+        if prob_words == 0 or user_words == 0:
+            summary = (
+                f"'{project_name}' currently has incomplete submission details with key descriptive elements missing. "
+                f"To benchmark competitively against historical winners, provide a concrete problem statement, specific target persona, and working demo evidence."
+            )
+        elif not dep_reachable and loc == 0:
+            summary = (
+                f"'{project_name}' establishes a defined problem and target audience. "
+                f"However, without verified code metrics or live deployment proof, judges cannot verify completion against historical winners."
+            )
+        else:
+            summary = (
+                f"'{project_name}' presents an evidence-backed submission with observable engineering elements. "
+                f"Compared with historical winners, key opportunities lie in live deployment reachability and rapid judge-facing value demonstration."
+            )
 
         limitations = [
-            "This assessment is derived strictly from public evidence (repository code, deployment, description).",
+            "This assessment is derived strictly from observable public evidence (repository code, deployment, description).",
             "In-person hackathon judging contains unobserved dynamics (live booth pitch, charisma, judge backgrounds).",
             "Historical correlation does not constitute causation or guarantee any future outcome."
         ]
-
-        summary = (
-            f"{project_name} presents an evidence-backed implementation with observable engineering elements. "
-            f"Compared with historical winners, key opportunities lie in live deployment reachability and rapid judge-facing value demonstration."
-        )
 
         return ParticipantReportSynthesis(
             summary=summary,
             strengths=strengths[:3],
             gaps=gaps[:3],
-            next_actions=next_actions,
+            next_actions=deduped_actions[:3],
             limitations=limitations,
         )
