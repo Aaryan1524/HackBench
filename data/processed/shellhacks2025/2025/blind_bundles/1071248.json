@@ -1,0 +1,202 @@
+{
+  "project_id": "1071248",
+  "slug": "ecoquest-9yqx0f",
+  "title": "EcoQuest",
+  "tagline": "EcoQuest is an educational game that promotes ecological awareness, while using Google’s ADK to reduce coding redundancy and improve workflow efficiency for developers.",
+  "problem_statement": "",
+  "inspiration": "",
+  "what_it_does": "",
+  "how_it_was_built": "",
+  "challenges": "",
+  "accomplishments": "",
+  "lessons_learned": "",
+  "future_plans": "",
+  "tech_tags": [
+    "gemini-api",
+    "google-adk",
+    "next.js",
+    "phaser.js",
+    "phaser.js",
+    "python",
+    "python",
+    "tailwind-css"
+  ],
+  "team_size": 4,
+  "repository_metrics": {
+    "repo_url": "https://github.com/NotAPlumber505/EcoQuest.git",
+    "status": "accessible",
+    "default_branch": "main",
+    "file_count": 101,
+    "approx_loc": 3004,
+    "loc_by_language": {
+      "JavaScript": 87,
+      "Python": 383,
+      "TypeScript": 2486,
+      "CSS": 48
+    },
+    "primary_languages": [
+      "TypeScript",
+      "Python",
+      "JavaScript",
+      "CSS"
+    ],
+    "tech_stack": {
+      "frontend_frameworks": [
+        "React",
+        "Vite",
+        "Next.js"
+      ],
+      "backend_frameworks": [
+        "FastAPI"
+      ],
+      "databases": [
+        "PostgreSQL"
+      ],
+      "ai_ml_libraries": [],
+      "model_providers": [
+        "Cohere"
+      ],
+      "cloud_devops": [],
+      "third_party_apis": [],
+      "hardware_components": [],
+      "package_dependencies": [
+        "@types/node",
+        "@types/react",
+        "@types/react-dom",
+        "cohere",
+        "fastapi",
+        "next",
+        "pg",
+        "phaser",
+        "react",
+        "react-dom",
+        "typescript",
+        "vite"
+      ]
+    },
+    "git_timeline": {
+      "total_commits": 49,
+      "commits_in_window": 49,
+      "first_commit_time": "2025-09-27T15:33:48Z",
+      "last_commit_time": "2025-09-28T14:57:59Z",
+      "commit_timestamps": [
+        "2025-09-27T15:33:48Z",
+        "2025-09-27T15:35:44Z",
+        "2025-09-27T15:55:48Z",
+        "2025-09-27T17:51:59Z",
+        "2025-09-27T19:51:55Z",
+        "2025-09-27T20:00:27Z",
+        "2025-09-27T21:25:27Z",
+        "2025-09-27T22:13:08Z",
+        "2025-09-27T22:18:42Z",
+        "2025-09-27T22:44:10Z",
+        "2025-09-27T22:53:17Z",
+        "2025-09-27T23:07:09Z",
+        "2025-09-27T23:34:02Z",
+        "2025-09-28T01:58:58Z",
+        "2025-09-28T02:11:05Z",
+        "2025-09-28T02:19:05Z",
+        "2025-09-28T02:22:12Z",
+        "2025-09-28T02:48:55Z",
+        "2025-09-28T02:50:48Z",
+        "2025-09-28T02:58:10Z",
+        "2025-09-28T03:06:15Z",
+        "2025-09-28T03:10:12Z",
+        "2025-09-28T03:21:49Z",
+        "2025-09-28T03:22:07Z",
+        "2025-09-28T03:23:20Z",
+        "2025-09-28T04:36:30Z",
+        "2025-09-28T05:38:41Z",
+        "2025-09-28T06:13:31Z",
+        "2025-09-28T06:14:48Z",
+        "2025-09-28T06:14:48Z",
+        "2025-09-28T06:51:52Z",
+        "2025-09-28T06:57:22Z",
+        "2025-09-28T07:10:04Z",
+        "2025-09-28T07:12:24Z",
+        "2025-09-28T07:17:36Z",
+        "2025-09-28T07:26:55Z",
+        "2025-09-28T07:30:42Z",
+        "2025-09-28T09:29:21Z",
+        "2025-09-28T09:59:23Z",
+        "2025-09-28T09:59:28Z",
+        "2025-09-28T11:13:22Z",
+        "2025-09-28T11:13:22Z",
+        "2025-09-28T11:44:32Z",
+        "2025-09-28T11:55:44Z",
+        "2025-09-28T11:57:57Z",
+        "2025-09-28T13:16:40Z",
+        "2025-09-28T14:45:09Z",
+        "2025-09-28T14:52:47Z",
+        "2025-09-28T14:57:59Z"
+      ],
+      "late_rewrites_detected": false,
+      "deadline_crunch_ratio": 0.24,
+      "final_stage_focus": "docs",
+      "history_is_squashed_or_minimal": false,
+      "contributor_count": 4,
+      "contributors": [
+        "Jaylena Burgos",
+        "N1xed",
+        "Saneec",
+        "Mario Casas"
+      ]
+    },
+    "test_files_count": 0,
+    "test_frameworks": [],
+    "has_ci": false,
+    "ci_configs": [],
+    "has_docker": false,
+    "has_env_template": false,
+    "readme_size_bytes": 2644,
+    "has_architecture_docs": true,
+    "api_routes_count": 0,
+    "db_migrations_or_schema_count": 0,
+    "mock_data_detected": false,
+    "mock_data_indicators": [],
+    "todo_fixme_count": 0,
+    "boilerplate_detected": true,
+    "boilerplate_indicators": [
+      "Default starter package name: 'template-nextjs'"
+    ],
+    "deployment_check": null,
+    "consistency_with_claims": "partial",
+    "consistency_explanation": "Partial evidence: 3/8 claimed technologies found in codebase.",
+    "actual_integrations_found": [
+      "next.js",
+      "phaser.js",
+      "phaser.js"
+    ],
+    "readme_claims_unsupported_by_code": [
+      "gemini-api",
+      "google-adk",
+      "python",
+      "python",
+      "tailwind-css"
+    ],
+    "provenance": [
+      {
+        "claim": "Inspected repository https://github.com/NotAPlumber505/EcoQuest.git",
+        "evidence_type": "repository",
+        "source": "https://github.com/NotAPlumber505/EcoQuest.git",
+        "location": "root",
+        "confidence": 1.0,
+        "details": null
+      }
+    ]
+  },
+  "demo_summary": {
+    "has_video_demo": true,
+    "video_platform": "youtube",
+    "video_url": "https://www.youtube.com/embed/iqcOobclc6g?enablejsapi=1&hl=en_US&rel=0&start=&version=3&wmode=transparent",
+    "duration_seconds": null,
+    "has_live_deployment": false,
+    "deployment_url": "",
+    "deployment_reachable": null,
+    "has_slide_deck": false,
+    "observations": []
+  },
+  "sponsor_technologies_mentioned": [],
+  "bundle_sha256": "8f9c3d6541acf57c4ee007d1fbf8eec5ca05ec8087ec4d7a4c42c964705b5ded",
+  "created_at": "2026-09-25T15:00:11.534822Z"
+}

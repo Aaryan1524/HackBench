@@ -1,0 +1,151 @@
+{
+  "project_id": "1068659",
+  "slug": "brainsafe-browser",
+  "title": "BrainSafe",
+  "tagline": "AI-powered browser extension that protects infant brain development by detecting, modifying and filtering harmful digital content in real time across different video platforms like YouTube, etc.",
+  "problem_statement": "",
+  "inspiration": "",
+  "what_it_does": "",
+  "how_it_was_built": "",
+  "challenges": "",
+  "accomplishments": "",
+  "lessons_learned": "",
+  "future_plans": "",
+  "tech_tags": [
+    "adk",
+    "django",
+    "django",
+    "gcp",
+    "gemini",
+    "gemini",
+    "javascript",
+    "javascript",
+    "multimodalaiagents",
+    "openai",
+    "promptengineering",
+    "python",
+    "python"
+  ],
+  "team_size": 2,
+  "repository_metrics": {
+    "repo_url": "https://github.com/abbasidaniyal/BrainSafe",
+    "status": "accessible",
+    "default_branch": "main",
+    "file_count": 28,
+    "approx_loc": 1838,
+    "loc_by_language": {
+      "JavaScript": 526,
+      "CSS": 379,
+      "HTML": 42,
+      "Python": 891
+    },
+    "primary_languages": [
+      "Python",
+      "JavaScript",
+      "CSS",
+      "HTML"
+    ],
+    "tech_stack": {
+      "frontend_frameworks": [],
+      "backend_frameworks": [
+        "Django"
+      ],
+      "databases": [
+        "SQLite"
+      ],
+      "ai_ml_libraries": [],
+      "model_providers": [
+        "OpenAI"
+      ],
+      "cloud_devops": [],
+      "third_party_apis": [],
+      "hardware_components": [],
+      "package_dependencies": [
+        "django",
+        "openai",
+        "sqlite"
+      ]
+    },
+    "git_timeline": {
+      "total_commits": 5,
+      "commits_in_window": 5,
+      "first_commit_time": "2025-09-28T06:23:17Z",
+      "last_commit_time": "2025-10-01T18:41:34Z",
+      "commit_timestamps": [
+        "2025-09-28T06:23:17Z",
+        "2025-09-28T09:46:39Z",
+        "2025-09-28T09:47:01Z",
+        "2025-09-28T09:48:10Z",
+        "2025-10-01T18:41:34Z"
+      ],
+      "late_rewrites_detected": false,
+      "deadline_crunch_ratio": 0.2,
+      "final_stage_focus": "debugging",
+      "history_is_squashed_or_minimal": false,
+      "contributor_count": 2,
+      "contributors": [
+        "Joshita Arora",
+        "Daniyal Abbasi"
+      ]
+    },
+    "test_files_count": 0,
+    "test_frameworks": [],
+    "has_ci": false,
+    "ci_configs": [],
+    "has_docker": false,
+    "has_env_template": false,
+    "readme_size_bytes": 9200,
+    "has_architecture_docs": true,
+    "api_routes_count": 0,
+    "db_migrations_or_schema_count": 0,
+    "mock_data_detected": false,
+    "mock_data_indicators": [],
+    "todo_fixme_count": 0,
+    "boilerplate_detected": false,
+    "boilerplate_indicators": [],
+    "deployment_check": null,
+    "consistency_with_claims": "inconsistent",
+    "consistency_explanation": "Weak evidence: Only 3/13 claimed technologies detected in codebase.",
+    "actual_integrations_found": [
+      "django",
+      "django",
+      "openai"
+    ],
+    "readme_claims_unsupported_by_code": [
+      "adk",
+      "gcp",
+      "gemini",
+      "gemini",
+      "javascript",
+      "javascript",
+      "multimodalaiagents",
+      "promptengineering",
+      "python",
+      "python"
+    ],
+    "provenance": [
+      {
+        "claim": "Inspected repository https://github.com/abbasidaniyal/BrainSafe",
+        "evidence_type": "repository",
+        "source": "https://github.com/abbasidaniyal/BrainSafe",
+        "location": "root",
+        "confidence": 1.0,
+        "details": null
+      }
+    ]
+  },
+  "demo_summary": {
+    "has_video_demo": true,
+    "video_platform": "youtube",
+    "video_url": "https://www.youtube.com/embed/aABEnFQ2MPE?enablejsapi=1&hl=en_US&rel=0&start=&version=3&wmode=transparent",
+    "duration_seconds": null,
+    "has_live_deployment": false,
+    "deployment_url": "",
+    "deployment_reachable": null,
+    "has_slide_deck": false,
+    "observations": []
+  },
+  "sponsor_technologies_mentioned": [],
+  "bundle_sha256": "cdff892a3d529dcd0d5d4af3b0f4cc9947cc411596c9e82999f620a312dcfdd9",
+  "created_at": "2026-09-25T15:00:11.506113Z"
+}
