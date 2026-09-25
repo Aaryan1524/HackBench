@@ -36,6 +36,9 @@ class DeploymentCheck(BaseModel):
     status_code: Optional[int] = None
     response_time_ms: Optional[float] = None
     checked_at: datetime = Field(default_factory=lambda: datetime.now(timezone.utc))
+    deployment_url_status: str = "unreachable"  # "reachable", "unreachable", "none"
+    deployment_verification: str = "unknown"  # "verified_project", "likely_project", "unknown", "unrelated"
+    verification_evidence: Optional[str] = None
 
 
 class RepositoryMetrics(BaseModel):

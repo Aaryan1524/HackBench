@@ -47,6 +47,9 @@ interface AnalysisResult {
       score: number;
       confidence: number;
       provider: string;
+      fallback_used?: boolean;
+      fallback_reason?: string;
+      jev_confidence?: number;
       is_insufficient_evidence?: boolean;
     }
   >;
@@ -62,13 +65,18 @@ interface AnalysisResult {
     api_routes_count: number;
     has_ci: boolean;
     live_deployment_reachable: boolean;
+    deployment_url_status?: string;
+    deployment_verification?: string;
+    deployment_evidence?: string;
     todo_fixme_count: number;
   };
   historical_comparison: {
     sample_sizes: {
       historical_winners: number;
+      non_winners?: number;
       strong_non_winners: number;
       total_analyzed: number;
+      cohort_description?: string;
     };
     dimensions: Record<string, DimensionComparison>;
   };
@@ -80,6 +88,7 @@ interface AnalysisResult {
   };
   recommendations: {
     summary: string;
+    main_gap_headline?: string;
     strengths: Strength[];
     gaps: Gap[];
     next_actions: NextAction[];
@@ -118,6 +127,10 @@ function formatLabel(raw: string): string {
 }
 
 function getEditorialHeadline(result: AnalysisResult): string {
+  if (result.recommendations.main_gap_headline?.trim()) {
+    return result.recommendations.main_gap_headline.trim();
+  }
+
   const gaps = result.recommendations.gaps || [];
   const strengths = result.recommendations.strengths || [];
   const dims = result.judge_surface || {};
@@ -129,7 +142,7 @@ function getEditorialHeadline(result: AnalysisResult): string {
   const alignScore = dims.award_alignment?.score ?? 3;
 
   if (engLoc > 200 && demoScore <= 3) {
-    return "Strong engineering. The demo is the gap.";
+    return "Strong engineering. Demo proof is the gap.";
   }
   if (probScore >= 4 && alignScore <= 3) {
     return "Clear product. Award alignment is the gap.";
@@ -737,9 +750,15 @@ export default function Home() {
 
             {/* 1. Results Hero */}
             <section className="max-w-3xl border-b border-edge pb-12 sm:pb-16">
-              <span className="text-xs uppercase font-semibold tracking-widest text-ink-secondary block mb-3">
-                Your Project · {result.project.name}
-              </span>
+              <div className="flex items-center gap-2 mb-3">
+                <span className="text-xs uppercase font-semibold tracking-widest text-ink font-mono">
+                  {result.project.name}
+                </span>
+                <span className="text-edge">·</span>
+                <span className="text-xs uppercase font-medium tracking-wider text-ink-secondary">
+                  What stands out
+                </span>
+              </div>
               <h1 className="font-serif text-4xl sm:text-6xl font-normal tracking-tight leading-[1.1] text-ink text-balance">
                 {getEditorialHeadline(result)}
               </h1>
@@ -753,11 +772,11 @@ export default function Home() {
             {/* 2. Top Analysis: 3 Concise Blocks */}
             <section className="grid grid-cols-1 md:grid-cols-3 gap-8 sm:gap-12 border-b border-edge pb-16">
               <div>
-                <span className="text-xs uppercase font-semibold tracking-wider text-ink-secondary block mb-3">
+                <span className="text-xs uppercase font-semibold tracking-wider text-ink-secondary block mb-3 font-mono">
                   Strongest
                 </span>
                 <h3 className="font-serif text-xl sm:text-2xl font-normal text-ink mb-2">
-                  {result.recommendations.strengths[0]?.title || "Technical Foundation"}
+                  {result.recommendations.strengths[0]?.title || "Problem & user clarity"}
                 </h3>
                 <p className="text-sm text-ink-secondary leading-relaxed">
                   {result.recommendations.strengths[0]?.evidence ||
@@ -766,11 +785,11 @@ export default function Home() {
               </div>
 
               <div>
-                <span className="text-xs uppercase font-semibold tracking-wider text-ink-secondary block mb-3">
+                <span className="text-xs uppercase font-semibold tracking-wider text-ink-secondary block mb-3 font-mono">
                   Biggest Gap
                 </span>
                 <h3 className="font-serif text-xl sm:text-2xl font-normal text-ink mb-2">
-                  {result.recommendations.gaps[0]?.title || "Demo Visibility"}
+                  {result.recommendations.gaps[0]?.title || "Observable proof"}
                 </h3>
                 <p className="text-sm text-ink-secondary leading-relaxed">
                   {result.recommendations.gaps[0]?.evidence ||
@@ -779,7 +798,7 @@ export default function Home() {
               </div>
 
               <div>
-                <span className="text-xs uppercase font-semibold tracking-wider text-ink-secondary block mb-3">
+                <span className="text-xs uppercase font-semibold tracking-wider text-ink-secondary block mb-3 font-mono">
                   Improve Next
                 </span>
                 <h3 className="font-serif text-xl sm:text-2xl font-normal text-ink mb-2">
@@ -792,63 +811,59 @@ export default function Home() {
               </div>
             </section>
 
-            {/* 3. Dimension Summary: Clean Minimal Rows */}
-            <section className="max-w-2xl border-b border-edge pb-16">
-              <h2 className="font-serif text-2xl sm:text-3xl font-normal text-ink mb-8">
-                Rubric dimensions
-              </h2>
-              <div className="divide-y divide-edge">
-                {Object.entries(result.judge_surface).map(([key, dim]) => (
-                  <div key={key} className="py-3.5 flex items-center justify-between text-sm">
-                    <span className="text-ink font-medium capitalize">
-                      {dim.dimension.replace(/_/g, " ")}
-                    </span>
-                    <span className="text-ink-secondary">
-                      {formatLabel(dim.label)}
-                    </span>
-                  </div>
-                ))}
-              </div>
-            </section>
-
-            {/* 4. Historical Comparison */}
+            {/* 3. Streamlined Comparison Table */}
             <section className="max-w-3xl border-b border-edge pb-16">
-              <h2 className="font-serif text-2xl sm:text-3xl font-normal text-ink mb-4">
-                How this compares
+              <h2 className="font-serif text-2xl sm:text-3xl font-normal text-ink mb-2">
+                How you compare
               </h2>
-              <p className="text-sm sm:text-base text-ink-secondary leading-relaxed mb-8">
-                Compared against historical overall winners and strong non-winners from ShellHacks, evaluated
-                across identical public evidence dimensions.
+              <p className="text-sm text-ink-secondary mb-8">
+                Your evaluation across the 9 canonical hackathon dimensions compared directly against historical ShellHacks winners.
               </p>
 
-              <div className="space-y-4 mb-8">
-                {Object.entries(result.historical_comparison.dimensions || {})
-                  .slice(0, 5)
-                  .map(([dimKey, comp]) => (
-                    <div
-                      key={dimKey}
-                      className="p-4 bg-white border border-edge rounded text-sm space-y-1.5"
-                    >
-                      <div className="flex items-baseline justify-between font-medium">
-                        <span className="capitalize text-ink">{dimKey.replace(/_/g, " ")}</span>
-                        <span className="text-xs text-ink-secondary">
-                          You: <strong className="text-ink">{comp.you}</strong> · Winners: {comp.historical_overall_winners}
+              <div className="border border-edge rounded bg-white overflow-hidden shadow-xs">
+                <div className="grid grid-cols-12 px-5 py-3 bg-canvas-subtle border-b border-edge text-xs font-semibold uppercase tracking-wider text-ink-secondary">
+                  <span className="col-span-5 sm:col-span-5">Dimension</span>
+                  <span className="col-span-3 sm:col-span-3">Your Assessment</span>
+                  <span className="col-span-4 sm:col-span-4">Historical Winners</span>
+                </div>
+                <div className="divide-y divide-edge">
+                  {Object.entries(result.judge_surface).map(([key, dim]) => {
+                    const comp = result.historical_comparison.dimensions?.[key];
+                    const winnerStat = comp?.historical_overall_winners?.split(" (")[0] || "Strong → Very strong";
+                    return (
+                      <div key={key} className="grid grid-cols-12 px-5 py-3.5 items-center text-sm">
+                        <span className="col-span-5 sm:col-span-5 font-medium text-ink capitalize">
+                          {dim.dimension.replace(/_/g, " ")}
+                        </span>
+                        <span className="col-span-3 sm:col-span-3">
+                          <span
+                            className={`inline-block px-2.5 py-0.5 rounded text-xs font-medium ${
+                              dim.label === "very_strong" || dim.label === "strong"
+                                ? "bg-emerald-50 text-emerald-800 border border-emerald-200"
+                                : dim.label === "moderate"
+                                ? "bg-neutral-100 text-neutral-800 border border-neutral-200"
+                                : "bg-amber-50 text-amber-900 border border-amber-200"
+                            }`}
+                          >
+                            {formatLabel(dim.label)}
+                          </span>
+                        </span>
+                        <span className="col-span-4 sm:col-span-4 text-xs text-ink-secondary font-mono">
+                          {winnerStat}
                         </span>
                       </div>
-                      <p className="text-xs text-ink-secondary leading-normal">
-                        {comp.interpretation}
-                      </p>
-                    </div>
-                  ))}
+                    );
+                  })}
+                </div>
               </div>
 
-              <p className="text-xs text-ink-muted">
-                Based on {result.historical_comparison.sample_sizes.historical_winners} historical winners and{" "}
-                {result.historical_comparison.sample_sizes.strong_non_winners} analyzed non-winners.
+              <p className="mt-4 text-xs text-ink-muted">
+                {result.historical_comparison.sample_sizes.cohort_description ||
+                  `50 analyzed projects: ${result.historical_comparison.sample_sizes.historical_winners} award-winning projects and ${result.historical_comparison.sample_sizes.non_winners || 21} non-winners, including ${result.historical_comparison.sample_sizes.strong_non_winners} strong non-winners.`}
               </p>
             </section>
 
-            {/* 5. Criteria Alignment */}
+            {/* 4. Criteria Alignment */}
             <section className="max-w-2xl border-b border-edge pb-16">
               <h2 className="font-serif text-2xl sm:text-3xl font-normal text-ink mb-4">
                 Alignment with {TRACK_OPTIONS.find((t) => t.id === targetAward)?.label || "Target Award"}
@@ -874,12 +889,12 @@ export default function Home() {
               )}
             </section>
 
-            {/* 6. What To Improve: The Speakeasy Dark Card */}
+            {/* 5. What To Fix Before Judging: The Speakeasy Dark Card */}
             <section className="bg-night text-white rounded-xl p-8 sm:p-14 border border-night-edge">
               <h2 className="font-serif text-3xl sm:text-5xl font-normal tracking-tight text-white mb-10 text-balance">
-                What I would fix
+                What to fix
                 <br />
-                before presenting this.
+                before judging.
               </h2>
 
               <div className="space-y-8 max-w-2xl">
@@ -901,21 +916,20 @@ export default function Home() {
               </div>
             </section>
 
-            {/* 7. Advanced Technical Details (Collapsed by Default) */}
-            <section className="max-w-2xl pt-4">
+            {/* 6. Advanced Technical Details & Evidence (Collapsed by Default) */}
+            <section className="max-w-3xl pt-4">
               <details className="group border border-edge rounded bg-white p-5 cursor-pointer">
                 <summary className="text-xs uppercase font-semibold tracking-wider text-ink-secondary flex items-center justify-between focus:outline-none select-none">
-                  <span>View evidence & engineering verification</span>
+                  <span>View evidence & engineering telemetry</span>
                   <span className="text-ink-muted group-open:rotate-180 transition-transform">↓</span>
                 </summary>
 
                 <div className="mt-6 pt-4 border-t border-edge space-y-6 text-sm">
                   <p className="text-xs text-ink-secondary">
-                    We inspect public code statically without executing it. These deterministic metrics are extracted
-                    directly from repository structures:
+                    Deterministic metrics extracted directly from repository structures and deployment checks:
                   </p>
 
-                  <div className="grid grid-cols-2 sm:grid-cols-3 gap-4 text-xs">
+                  <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 text-xs">
                     <div className="p-3 bg-canvas rounded border border-edge">
                       <span className="text-ink-muted block mb-1">Code volume</span>
                       <strong className="text-ink font-semibold">
@@ -934,6 +948,36 @@ export default function Home() {
                         {result.engineering.api_routes_count} routes
                       </strong>
                     </div>
+                    <div className="p-3 bg-canvas rounded border border-edge">
+                      <span className="text-ink-muted block mb-1">TODO/FIXME</span>
+                      <strong className="text-ink font-semibold">
+                        {result.engineering.todo_fixme_count} markers
+                      </strong>
+                    </div>
+                  </div>
+
+                  {/* Deployment Verification Block */}
+                  <div className="p-4 bg-canvas rounded border border-edge space-y-2 text-xs">
+                    <div className="flex items-center justify-between">
+                      <span className="font-semibold text-ink uppercase tracking-wider">Deployment Verification</span>
+                      <span
+                        className={`px-2 py-0.5 rounded font-mono text-[11px] ${
+                          result.engineering.deployment_verification === "verified_project"
+                            ? "bg-emerald-100 text-emerald-800"
+                            : result.engineering.deployment_verification === "likely_project"
+                            ? "bg-sky-100 text-sky-800"
+                            : result.engineering.deployment_verification === "unrelated"
+                            ? "bg-rose-100 text-rose-800"
+                            : "bg-neutral-100 text-neutral-700"
+                        }`}
+                      >
+                        {result.engineering.deployment_verification || "none"}
+                      </span>
+                    </div>
+                    <div className="text-ink-secondary leading-relaxed">
+                      <strong>Reachable:</strong> {result.engineering.live_deployment_reachable ? "Yes (HTTP 200)" : "No"} ·{" "}
+                      <strong>Evidence:</strong> {result.engineering.deployment_evidence || "No deployment URL checked."}
+                    </div>
                   </div>
 
                   {result.engineering.primary_languages?.length > 0 && (
@@ -947,8 +991,27 @@ export default function Home() {
                     </div>
                   )}
 
+                  {/* Routing & Provider Audit */}
+                  <div className="border-t border-edge pt-3 space-y-2 text-xs">
+                    <span className="font-semibold text-ink uppercase tracking-wider block">
+                      Evaluation Routing Audit
+                    </span>
+                    <div className="grid grid-cols-2 sm:grid-cols-3 gap-2 font-mono text-[11px]">
+                      {Object.entries(result.judge_surface).map(([k, v]) => (
+                        <div key={k} className="p-2 bg-canvas-subtle rounded border border-edge/60">
+                          <span className="text-ink font-medium capitalize block">{k.replace(/_/g, " ")}</span>
+                          <span className="text-ink-muted">
+                            {v.provider} ({(v.confidence * 100).toFixed(0)}%)
+                            {v.fallback_used && ` [fallback: ${v.fallback_reason || "active"}]`}
+                          </span>
+                        </div>
+                      ))}
+                    </div>
+                  </div>
+
                   <div className="text-xs text-ink-muted border-t border-edge pt-3">
-                    Evaluation provenance: Bounded rubrics scored via Jev System One; synthesis via Gemini.
+                    {result.historical_comparison.sample_sizes.cohort_description ||
+                      `Calibrated on 50 analyzed projects: 29 award-winning projects and 21 non-winners, including 6 strong non-winners from ShellHacks.`}
                   </div>
                 </div>
               </details>
@@ -984,7 +1047,8 @@ export default function Home() {
             <div className="text-sm text-ink-secondary space-y-4 leading-relaxed">
               <p>
                 HackBench is an open-source evaluation system built on historical hackathon submissions (starting with
-                ShellHacks 2025).
+                ShellHacks 2025). Calibrated across 50 analyzed projects: 29 award-winning projects and 21 non-winners,
+                including 6 strong non-winners.
               </p>
               <p>
                 Every project is evaluated blindly on publicly observable artifacts—Devpost descriptions, repository

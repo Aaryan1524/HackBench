@@ -42,6 +42,7 @@ class DimensionEvaluationResult(BaseModel):
     probabilities: Dict[str, float] = Field(default_factory=dict)
     fallback_used: bool = False
     fallback_reason: Optional[str] = None
+    jev_confidence: Optional[float] = None
     is_insufficient_evidence: bool = False
 
 
@@ -186,6 +187,7 @@ class EvaluationRouter:
                         provider="jev",
                         probabilities=q_res.probabilities,
                         fallback_used=False,
+                        jev_confidence=q_res.confidence,
                     )
                 else:
                     reason = "jev_confidence_below_threshold" if q_res else "jev_dimension_missing"
@@ -205,6 +207,7 @@ class EvaluationRouter:
                         provider="chatgpt",
                         fallback_used=True,
                         fallback_reason=reason,
+                        jev_confidence=q_res.confidence if q_res else None,
                     )
         elif self.gemini.is_configured:
             # JEV_API_KEY not yet configured: Route directly through ChatGPT
@@ -250,7 +253,9 @@ class EvaluationRouter:
                     score=score_val,
                     confidence=conf,
                     provider="chatgpt",
-                    fallback_used=False,
+                    fallback_used=True,
+                    fallback_reason="jev_key_not_configured",
+                    jev_confidence=None,
                 )
         else:
             # Neither API key configured: Fall back to local calibrated heuristics
@@ -271,6 +276,13 @@ class EvaluationRouter:
                     fallback_used=True,
                     fallback_reason="no_api_keys_configured",
                 )
+
+        # Log router provider telemetry for auditability
+        for dim, res in results.items():
+            logger.info(
+                f"[Router Telemetry] {dim}: provider={res.provider}, fallback={res.fallback_used} "
+                f"(reason={res.fallback_reason}), conf={res.confidence:.2f}, jev_conf={res.jev_confidence}"
+            )
 
         # Cache final results
         self.cache.set(cache_key, {k: v.model_dump() for k, v in results.items()})

@@ -173,20 +173,26 @@ def analyze_project(req: AnalyzeRequest, request: Request):
         "api_routes_count": 0,
         "has_ci": False,
         "live_deployment_reachable": False,
+        "deployment_url_status": "none",
+        "deployment_verification": "none",
+        "deployment_evidence": "No deployment URL provided.",
         "todo_fixme_count": 0,
     }
 
+    temp_dir = Path("data/raw/participant_repos")
+    temp_dir.mkdir(parents=True, exist_ok=True)
+    analyzer = RepositoryAnalyzer(temp_dir)
+
     if req.github_url:
-        temp_dir = Path("data/raw/participant_repos")
-        temp_dir.mkdir(parents=True, exist_ok=True)
-        analyzer = RepositoryAnalyzer(temp_dir)
         try:
             repo_m = analyzer.analyze_repository(
                 repo_url=req.github_url,
                 project_id=f"part_{uuid.uuid4().hex[:8]}",
                 claimed_tech_tags=tech_tags,
                 deployment_url=req.deployment_url,
+                project_name=name,
             )
+            dep = repo_m.deployment_check
             deterministic_metrics = {
                 "status": repo_m.status,
                 "approx_loc": repo_m.approx_loc,
@@ -198,12 +204,24 @@ def analyze_project(req: AnalyzeRequest, request: Request):
                 "test_files_count": repo_m.test_files_count,
                 "api_routes_count": repo_m.api_routes_count,
                 "has_ci": repo_m.has_ci,
-                "live_deployment_reachable": repo_m.deployment_check.is_reachable if repo_m.deployment_check else False,
+                "live_deployment_reachable": dep.is_reachable if dep else False,
+                "deployment_url_status": dep.deployment_url_status if dep else "none",
+                "deployment_verification": dep.deployment_verification if dep else "none",
+                "deployment_evidence": dep.verification_evidence if dep else "No deployment URL provided.",
                 "todo_fixme_count": repo_m.todo_fixme_count,
             }
         except Exception as e:
             logger.warning(f"Failed to analyze repo {req.github_url}: {e}")
             deterministic_metrics["status"] = f"error: {str(e)[:40]}"
+    elif req.deployment_url:
+        try:
+            dep = analyzer.check_deployment(req.deployment_url, project_name=name)
+            deterministic_metrics["live_deployment_reachable"] = dep.is_reachable
+            deterministic_metrics["deployment_url_status"] = dep.deployment_url_status
+            deterministic_metrics["deployment_verification"] = dep.deployment_verification
+            deterministic_metrics["deployment_evidence"] = dep.verification_evidence or ""
+        except Exception as e:
+            logger.warning(f"Failed to check deployment {req.deployment_url}: {e}")
 
     # 5. Judge Surface Evaluation (Layer 2 & Layer 3 via Router)
     router = EvaluationRouter()
@@ -314,11 +332,19 @@ def _compute_historical_comparisons(
         except Exception:
             pass
 
+    non_winners_count = max(0, total_analyzed - winners_count)
+    cohort_desc = (
+        f"{total_analyzed} analyzed projects: {winners_count} award-winning projects and "
+        f"{non_winners_count} non-winners, including {snw_count} strong non-winners."
+    )
+
     comparisons = {
         "sample_sizes": {
             "historical_winners": winners_count,
+            "non_winners": non_winners_count,
             "strong_non_winners": snw_count,
             "total_analyzed": total_analyzed,
+            "cohort_description": cohort_desc,
         },
         "dimensions": {},
     }
