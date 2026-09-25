@@ -1,6 +1,7 @@
 import os
 import re
 import shutil
+import subprocess
 import logging
 from pathlib import Path
 from datetime import datetime, timezone
@@ -137,8 +138,25 @@ class RepositoryAnalyzer:
             try:
                 logger.info(f"Cloning {clean_url} into {target_dir}...")
                 target_dir.mkdir(parents=True, exist_ok=True)
-                # Clone with depth to be fast and safe
-                repo = git.Repo.clone_from(clean_url, target_dir, depth=200)
+                env = {
+                    **os.environ,
+                    "GIT_TERMINAL_PROMPT": "0",
+                    "GIT_ASKPASS": "/bin/echo",
+                }
+                cmd = ["git", "clone", "--depth", "50", "--single-branch", clean_url, str(target_dir)]
+                proc = subprocess.run(cmd, env=env, stdout=subprocess.PIPE, stderr=subprocess.PIPE, timeout=25, text=True)
+                if proc.returncode != 0:
+                    raise RuntimeError(f"git clone failed (code {proc.returncode}): {proc.stderr[:200]}")
+                repo = git.Repo(target_dir)
+            except subprocess.TimeoutExpired:
+                logger.warning(f"Git clone timed out for {repo_url} (repository may contain giant binary assets)")
+                dep_check = self._check_deployment(deployment_url) if deployment_url else None
+                return RepositoryMetrics(
+                    repo_url=repo_url,
+                    status="clone_timeout_large_repo",
+                    deployment_check=dep_check,
+                    provenance=provenance,
+                )
             except Exception as e:
                 logger.warning(f"Failed to clone repository {repo_url}: {e}")
                 status = "not_found" if "not found" in str(e).lower() else "private_or_failed"
