@@ -60,6 +60,8 @@ def test_health_endpoint(client):
     assert data["status"] == "healthy"
     assert "JEV_API_KEY" not in str(data)
     assert "GEMINI_API_KEY" not in str(data)
+    assert "CHATGPT_API_KEY" not in str(data)
+    assert "OPENAI_API_KEY" not in str(data)
 
 
 def test_manual_project_analysis_success(client):

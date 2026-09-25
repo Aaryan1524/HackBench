@@ -52,7 +52,8 @@ cp .env.example .env
 ```bash
 # Optional API Keys for enhanced analysis (falls back to calibrated deterministic offline evaluators if omitted)
 JEV_API_KEY=your_jev_api_key_here
-GEMINI_API_KEY=your_gemini_api_key_here
+CHATGPT_API_KEY=your_chatgpt_api_key_here
+CHATGPT_MODEL=gpt-5.6-terra
 
 # Server defaults
 BACKEND_HOST=0.0.0.0
@@ -183,7 +184,7 @@ docker build -t hackbench-api .
 # Run container
 docker run -p 8000:8000 \
   -e JEV_API_KEY="your_key" \
-  -e GEMINI_API_KEY="your_key" \
+  -e CHATGPT_API_KEY="your_key" \
   hackbench-api
 ```
 

@@ -12,7 +12,7 @@ from .jev import (
     RUBRIC_DEFINITIONS,
     SCORE_LEVEL_VALUES,
 )
-from .gemini import GeminiClient, ParticipantReportSynthesis
+from .chatgpt import ChatGPTClient, GeminiClient, ParticipantReportSynthesis
 from .cache import AICache, RUBRIC_VERSION
 from .usage import AnalysisUsageStats
 

@@ -5,13 +5,25 @@ import uuid
 import time
 from pathlib import Path
 from typing import Optional, List, Dict, Any
+
+# Auto-load .env into environment if present
+env_file = Path(".env")
+if env_file.exists():
+    for line in env_file.read_text(encoding="utf-8").splitlines():
+        line = line.strip()
+        if line and not line.startswith("#") and "=" in line:
+            k, v = line.split("=", 1)
+            k, v = k.strip(), v.strip().strip("'").strip('"')
+            if k and k not in os.environ:
+                os.environ[k] = v
+
 from fastapi import FastAPI, HTTPException, Request, Response, status
 from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel, Field
 
 from ..ai.router import EvaluationRouter
 from ..ai.jev import JevClient
-from ..ai.gemini import GeminiClient
+from ..ai.chatgpt import ChatGPTClient, GeminiClient
 from ..collectors.git_repo import RepositoryAnalyzer
 from ..collectors.devpost import DevpostCollector
 from ..collectors.base import CachedHttpClient
@@ -76,12 +88,15 @@ def health_check():
     without exposing credentials or private keys.
     """
     history_summary = Path("reports/shellhacks2025_2025/forensics_summary.json")
+    chatgpt_active = bool(os.getenv("CHATGPT_API_KEY") or os.getenv("OPENAI_API_KEY") or os.getenv("GEMINI_API_KEY"))
     return {
         "status": "healthy",
         "service": "hackbench-api",
         "version": "0.1.0",
         "jev_configured": bool(os.getenv("JEV_API_KEY")),
-        "gemini_configured": bool(os.getenv("GEMINI_API_KEY")),
+        "chatgpt_configured": chatgpt_active,
+        "openai_configured": chatgpt_active,
+        "gemini_configured": chatgpt_active,
         "historical_dataset_ready": history_summary.exists(),
         "timestamp": time.time(),
     }
@@ -221,8 +236,8 @@ def analyze_project(req: AnalyzeRequest, request: Request):
     outcomes_path = Path(f"data/raw/{slug}/{year}/outcomes_sealed/outcomes.json")
     historical_stats = _compute_historical_comparisons(judge_evals, hist_summary_path, outcomes_path)
 
-    # 7. Gemini Synthesis (Layer 3)
-    gemini_client = GeminiClient()
+    # 7. ChatGPT Synthesis (Layer 3)
+    synthesis_client = ChatGPTClient()
     untrusted_evidence_block = (
         f"Title: {name}\nTagline: {tagline}\nProblem: {problem}\nUser: {target_user}\n"
         f"Target Award: {req.award_id}\nSponsor / Track Requirements: {sponsor_req}\n"
@@ -230,7 +245,7 @@ def analyze_project(req: AnalyzeRequest, request: Request):
         f"Frameworks: {deterministic_metrics.get('frontend_frameworks') + deterministic_metrics.get('backend_frameworks')}"
     )
 
-    synthesis_resp = gemini_client.synthesize_report(
+    synthesis_resp = synthesis_client.synthesize_report(
         project_name=name,
         untrusted_evidence=untrusted_evidence_block,
         deterministic_metrics=deterministic_metrics,

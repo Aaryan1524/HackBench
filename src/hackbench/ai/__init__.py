@@ -1,5 +1,5 @@
 from .jev import JevClient, JevQuestion, QuestionType, JevResult, RUBRIC_DEFINITIONS
-from .gemini import GeminiClient, ParticipantReportSynthesis
+from .chatgpt import ChatGPTClient, ParticipantReportSynthesis, GeminiClient
 from .cache import AICache
 from .usage import AnalysisUsageStats
 from .router import EvaluationRouter, DimensionEvaluationResult
@@ -10,6 +10,7 @@ __all__ = [
     "QuestionType",
     "JevResult",
     "RUBRIC_DEFINITIONS",
+    "ChatGPTClient",
     "GeminiClient",
     "ParticipantReportSynthesis",
     "AICache",
