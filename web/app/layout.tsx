@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
+import { Lora } from "next/font/google";
 import "./globals.css";
 
 const geistSans = localFont({
@@ -7,16 +8,23 @@ const geistSans = localFont({
   variable: "--font-geist-sans",
   weight: "100 900",
 });
+
 const geistMono = localFont({
   src: "./fonts/GeistMonoVF.woff",
   variable: "--font-geist-mono",
   weight: "100 900",
 });
 
+const lora = Lora({
+  subsets: ["latin"],
+  variable: "--font-serif",
+  display: "swap",
+});
+
 export const metadata: Metadata = {
-  title: "HackBench Forensics — Empirical Hackathon Project Analysis",
+  title: "HackBench — See how your hackathon project compares",
   description:
-    "See how your hackathon project compares with historical winners, strong non-winners, and documented judging criteria. Evidence-grounded historical analysis.",
+    "Add your project and compare it with historical winners, strong non-winners, and documented judging criteria.",
 };
 
 export default function RootLayout({
@@ -25,9 +33,9 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className="dark">
+    <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased bg-slate-950 text-slate-100 min-h-screen selection:bg-indigo-500 selection:text-white`}
+        className={`${lora.variable} ${geistSans.variable} ${geistMono.variable} antialiased bg-canvas text-ink font-sans min-h-screen selection:bg-[#EBE8DF] selection:text-ink`}
       >
         {children}
       </body>
