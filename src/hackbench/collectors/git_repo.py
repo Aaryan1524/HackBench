@@ -88,6 +88,26 @@ FRAMEWORK_SIGNATURES = {
     "rpi.gpio": ("hardware", "Raspberry Pi GPIO"),
 }
 
+DEFAULT_IGNORE_DIRS = {
+    ".git",
+    "node_modules",
+    "venv",
+    ".venv",
+    "__pycache__",
+    "dist",
+    "build",
+    ".next",
+    ".expo",
+    "data",
+    "reports",
+    ".gemini",
+    "coverage",
+    ".pytest_cache",
+    ".mypy_cache",
+    "target",
+    "vendor",
+}
+
 
 class RepositoryAnalyzer:
     """
@@ -346,10 +366,8 @@ class RepositoryAnalyzer:
         approx_loc = 0
         loc_by_lang: Dict[str, int] = {}
 
-        ignore_dirs = {".git", "node_modules", "venv", ".venv", "__pycache__", "dist", "build", ".next", ".expo"}
-
         for root, dirs, files in os.walk(target_dir):
-            dirs[:] = [d for d in dirs if d not in ignore_dirs]
+            dirs[:] = [d for d in dirs if d not in DEFAULT_IGNORE_DIRS]
             for f in files:
                 file_count += 1
                 ext = Path(f).suffix.lower()
@@ -400,13 +418,14 @@ class RepositoryAnalyzer:
 
         # Scan code files for key import signatures
         for root, dirs, files in os.walk(target_dir):
-            dirs[:] = [d for d in dirs if d not in {".git", "node_modules", "venv", ".venv", "dist", "build"}]
+            dirs[:] = [d for d in dirs if d not in DEFAULT_IGNORE_DIRS]
             for f in files:
                 if f.endswith((".py", ".js", ".ts", ".jsx", ".tsx")):
                     try:
-                        content = (Path(root) / f).read_text(encoding="utf-8", errors="ignore").lower()
-                        for sig, (cat, name) in FRAMEWORK_SIGNATURES.items():
-                            if sig in content:
+                        content = (Path(root) / f).read_text(encoding="utf-8", errors="ignore")
+                        for sig in FRAMEWORK_SIGNATURES:
+                            pat = rf"(?:import\s+.*?\b{re.escape(sig)}\b|from\s+{re.escape(sig)}\b|require\s*\(\s*['\"][^'\"]*{re.escape(sig)}|from\s+['\"][^'\"]*{re.escape(sig)})"
+                            if re.search(pat, content, re.IGNORECASE):
                                 all_deps.add(sig)
                     except Exception:
                         pass
@@ -437,7 +456,7 @@ class RepositoryAnalyzer:
         test_patterns = [r"test_.*\.py$", r".*_test\.py$", r".*\.test\.[jt]sx?$", r".*\.spec\.[jt]sx?$"]
 
         for root, dirs, files in os.walk(target_dir):
-            dirs[:] = [d for d in dirs if d not in {".git", "node_modules", "venv", ".venv"}]
+            dirs[:] = [d for d in dirs if d not in DEFAULT_IGNORE_DIRS]
             for f in files:
                 if any(re.match(pat, f) for pat in test_patterns):
                     test_count += 1
@@ -475,7 +494,7 @@ class RepositoryAnalyzer:
         regex = re.compile("|".join(patterns))
 
         for root, dirs, files in os.walk(target_dir):
-            dirs[:] = [d for d in dirs if d not in {".git", "node_modules", "venv", ".venv", "dist"}]
+            dirs[:] = [d for d in dirs if d not in DEFAULT_IGNORE_DIRS]
             for f in files:
                 if f.endswith((".py", ".js", ".ts")):
                     try:
@@ -488,6 +507,7 @@ class RepositoryAnalyzer:
     def _count_db_schemas(self, target_dir: Path) -> int:
         count = 0
         for root, dirs, files in os.walk(target_dir):
+            dirs[:] = [d for d in dirs if d not in DEFAULT_IGNORE_DIRS]
             for f in files:
                 if f.endswith((".prisma", ".sql")) or "migration" in f.lower() or "schema" in f.lower():
                     count += 1
@@ -497,7 +517,7 @@ class RepositoryAnalyzer:
         indicators = []
         mock_keywords = ["mock_data", "dummy_data", "fake_users", "mock_response", "sample_json"]
         for root, dirs, files in os.walk(target_dir):
-            dirs[:] = [d for d in dirs if d not in {".git", "node_modules", "venv", ".venv"}]
+            dirs[:] = [d for d in dirs if d not in DEFAULT_IGNORE_DIRS]
             for f in files:
                 f_lower = f.lower()
                 if any(kw in f_lower for kw in mock_keywords):
@@ -514,7 +534,7 @@ class RepositoryAnalyzer:
     def _count_todos(self, target_dir: Path) -> int:
         count = 0
         for root, dirs, files in os.walk(target_dir):
-            dirs[:] = [d for d in dirs if d not in {".git", "node_modules", "venv", ".venv"}]
+            dirs[:] = [d for d in dirs if d not in DEFAULT_IGNORE_DIRS]
             for f in files:
                 if f.endswith((".py", ".js", ".ts", ".jsx", ".tsx", ".go", ".rs", ".java", ".c", ".cpp")):
                     try:
