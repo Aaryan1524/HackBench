@@ -31,7 +31,7 @@
   "team_size": 4,
   "repository_metrics": {
     "repo_url": "https://github.com/thashin04/GreenLight-Driving/tree/main",
-    "status": "clone_timeout_large_repo",
+    "status": "accessible",
     "default_branch": "main",
     "file_count": 0,
     "approx_loc": 0,
@@ -57,7 +57,7 @@
       "late_rewrites_detected": false,
       "deadline_crunch_ratio": 0.0,
       "final_stage_focus": "unknown",
-      "history_is_squashed_or_minimal": false,
+      "history_is_squashed_or_minimal": true,
       "contributor_count": 0,
       "contributors": []
     },
@@ -77,10 +77,26 @@
     "boilerplate_detected": false,
     "boilerplate_indicators": [],
     "deployment_check": null,
-    "consistency_with_claims": "unverifiable",
-    "consistency_explanation": "",
+    "consistency_with_claims": "inconsistent",
+    "consistency_explanation": "Weak evidence: Only 0/15 claimed technologies detected in codebase.",
     "actual_integrations_found": [],
-    "readme_claims_unsupported_by_code": [],
+    "readme_claims_unsupported_by_code": [
+      "adk",
+      "firebase",
+      "firebase",
+      "gemini",
+      "gemini",
+      "google",
+      "google",
+      "python",
+      "python",
+      "react",
+      "react",
+      "shadcn",
+      "tailwind",
+      "typescript",
+      "typescript"
+    ],
     "provenance": [
       {
         "claim": "Inspected repository https://github.com/thashin04/GreenLight-Driving/tree/main",
@@ -104,6 +120,6 @@
     "observations": []
   },
   "sponsor_technologies_mentioned": [],
-  "bundle_sha256": "f2de87f8ef98d80077ef99d9f31044de11e3538b4de6df484d9ff917a1d3a220",
-  "created_at": "2026-09-25T15:00:11.519429Z"
+  "bundle_sha256": "83c67f299e5bc772edf2822a3a6150e34f1aef8dff2d725d1d7c9302b5e19595",
+  "created_at": "2026-09-25T15:48:33.515769Z"
 }

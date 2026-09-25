@@ -1,0 +1,145 @@
+{
+  "project_id": "1069358",
+  "slug": "agent-powered-patient-moniter",
+  "title": "Agent Powered Patient Moniter",
+  "tagline": "Imagine having an AI nurse that never sleeps, instantly answers questions about any patient, and monitors critical conditions 24/7. Built with Google's ADK, our systems transform patient care vastly.",
+  "problem_statement": "",
+  "inspiration": "",
+  "what_it_does": "",
+  "how_it_was_built": "",
+  "challenges": "",
+  "accomplishments": "",
+  "lessons_learned": "",
+  "future_plans": "",
+  "tech_tags": [
+    "css3",
+    "css3",
+    "flask",
+    "flask",
+    "google",
+    "google",
+    "html5",
+    "html5",
+    "javascript",
+    "javascript",
+    "sqlite",
+    "sqlite"
+  ],
+  "team_size": 3,
+  "repository_metrics": {
+    "repo_url": "https://github.com/RaphaelXVII/Agent-Powered-Patient-Moniter",
+    "status": "accessible",
+    "default_branch": "main",
+    "file_count": 18,
+    "approx_loc": 3597,
+    "loc_by_language": {
+      "Python": 1111,
+      "CSS": 1146,
+      "JavaScript": 347,
+      "HTML": 993
+    },
+    "primary_languages": [
+      "CSS",
+      "Python",
+      "HTML",
+      "JavaScript"
+    ],
+    "tech_stack": {
+      "frontend_frameworks": [],
+      "backend_frameworks": [
+        "Flask"
+      ],
+      "databases": [],
+      "ai_ml_libraries": [],
+      "model_providers": [],
+      "cloud_devops": [],
+      "third_party_apis": [],
+      "hardware_components": [],
+      "package_dependencies": [
+        "flask"
+      ]
+    },
+    "git_timeline": {
+      "total_commits": 8,
+      "commits_in_window": 8,
+      "first_commit_time": "2025-09-27T18:51:15Z",
+      "last_commit_time": "2025-09-28T04:03:45Z",
+      "commit_timestamps": [
+        "2025-09-27T18:51:15Z",
+        "2025-09-28T01:29:32Z",
+        "2025-09-28T02:49:10Z",
+        "2025-09-28T03:18:43Z",
+        "2025-09-28T03:53:36Z",
+        "2025-09-28T03:53:54Z",
+        "2025-09-28T04:01:21Z",
+        "2025-09-28T04:03:45Z"
+      ],
+      "late_rewrites_detected": false,
+      "deadline_crunch_ratio": 0.75,
+      "final_stage_focus": "features",
+      "history_is_squashed_or_minimal": false,
+      "contributor_count": 1,
+      "contributors": [
+        "RaphaelXVII"
+      ]
+    },
+    "test_files_count": 0,
+    "test_frameworks": [],
+    "has_ci": false,
+    "ci_configs": [],
+    "has_docker": false,
+    "has_env_template": false,
+    "readme_size_bytes": 4190,
+    "has_architecture_docs": false,
+    "api_routes_count": 0,
+    "db_migrations_or_schema_count": 0,
+    "mock_data_detected": false,
+    "mock_data_indicators": [],
+    "todo_fixme_count": 0,
+    "boilerplate_detected": false,
+    "boilerplate_indicators": [],
+    "deployment_check": null,
+    "consistency_with_claims": "inconsistent",
+    "consistency_explanation": "Weak evidence: Only 2/12 claimed technologies detected in codebase.",
+    "actual_integrations_found": [
+      "flask",
+      "flask"
+    ],
+    "readme_claims_unsupported_by_code": [
+      "css3",
+      "css3",
+      "google",
+      "google",
+      "html5",
+      "html5",
+      "javascript",
+      "javascript",
+      "sqlite",
+      "sqlite"
+    ],
+    "provenance": [
+      {
+        "claim": "Inspected repository https://github.com/RaphaelXVII/Agent-Powered-Patient-Moniter",
+        "evidence_type": "repository",
+        "source": "https://github.com/RaphaelXVII/Agent-Powered-Patient-Moniter",
+        "location": "root",
+        "confidence": 1.0,
+        "details": null
+      }
+    ]
+  },
+  "demo_summary": {
+    "has_video_demo": true,
+    "video_platform": "youtube",
+    "video_url": "https://www.youtube.com/embed/CyOTB0yKSfQ?enablejsapi=1&hl=en_US&rel=0&start=&version=3&wmode=transparent",
+    "duration_seconds": null,
+    "has_live_deployment": false,
+    "deployment_url": "",
+    "deployment_reachable": null,
+    "has_slide_deck": false,
+    "observations": []
+  },
+  "sponsor_technologies_mentioned": [],
+  "bundle_sha256": "ddfa7ccdd187f22650d9629a39d53a181b85fba37ac62c2429a145f60042872f",
+  "created_at": "2026-09-25T15:48:33.950565Z"
+}

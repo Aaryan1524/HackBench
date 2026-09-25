@@ -1,0 +1,149 @@
+{
+  "project_id": "1071244",
+  "slug": "nexushack",
+  "title": "NexusHACK",
+  "tagline": "Are you a first time hacker? Do you need more members for your team? Dont worry, NexusHACK has you covered. With our platform, people will be able to connect and create teams so they are ready to hack",
+  "problem_statement": "",
+  "inspiration": "",
+  "what_it_does": "",
+  "how_it_was_built": "",
+  "challenges": "",
+  "accomplishments": "",
+  "lessons_learned": "",
+  "future_plans": "",
+  "tech_tags": [
+    "express.js",
+    "express.js",
+    "javascript",
+    "javascript",
+    "postgresql",
+    "postgresql",
+    "react",
+    "react",
+    "typescript",
+    "typescript"
+  ],
+  "team_size": 3,
+  "repository_metrics": {
+    "repo_url": "https://github.com/JayCee24-8/NexusHACK---ShellHacks-2025-Project",
+    "status": "accessible",
+    "default_branch": "main",
+    "file_count": 43,
+    "approx_loc": 3995,
+    "loc_by_language": {
+      "TypeScript": 3257,
+      "HTML": 42,
+      "JavaScript": 696
+    },
+    "primary_languages": [
+      "TypeScript",
+      "JavaScript",
+      "HTML"
+    ],
+    "tech_stack": {
+      "frontend_frameworks": [
+        "Vite",
+        "React"
+      ],
+      "backend_frameworks": [
+        "Express.js"
+      ],
+      "databases": [
+        "PostgreSQL",
+        "Prisma"
+      ],
+      "ai_ml_libraries": [],
+      "model_providers": [
+        "Gemini"
+      ],
+      "cloud_devops": [],
+      "third_party_apis": [],
+      "hardware_components": [],
+      "package_dependencies": [
+        "@google/genai",
+        "express",
+        "pg",
+        "prisma",
+        "react",
+        "vite"
+      ]
+    },
+    "git_timeline": {
+      "total_commits": 4,
+      "commits_in_window": 4,
+      "first_commit_time": "2025-09-28T14:44:15Z",
+      "last_commit_time": "2025-09-29T14:54:01Z",
+      "commit_timestamps": [
+        "2025-09-28T14:44:15Z",
+        "2025-09-28T14:45:53Z",
+        "2025-09-28T14:47:08Z",
+        "2025-09-29T14:54:01Z"
+      ],
+      "late_rewrites_detected": false,
+      "deadline_crunch_ratio": 0.25,
+      "final_stage_focus": "docs",
+      "history_is_squashed_or_minimal": false,
+      "contributor_count": 2,
+      "contributors": [
+        "JayCee24-8",
+        "Juan Hernandez"
+      ]
+    },
+    "test_files_count": 0,
+    "test_frameworks": [],
+    "has_ci": false,
+    "ci_configs": [],
+    "has_docker": false,
+    "has_env_template": false,
+    "readme_size_bytes": 5547,
+    "has_architecture_docs": false,
+    "api_routes_count": 19,
+    "db_migrations_or_schema_count": 1,
+    "mock_data_detected": false,
+    "mock_data_indicators": [],
+    "todo_fixme_count": 0,
+    "boilerplate_detected": false,
+    "boilerplate_indicators": [],
+    "deployment_check": null,
+    "consistency_with_claims": "partial",
+    "consistency_explanation": "Partial evidence: 6/10 claimed technologies found in codebase.",
+    "actual_integrations_found": [
+      "express.js",
+      "express.js",
+      "postgresql",
+      "postgresql",
+      "react",
+      "react"
+    ],
+    "readme_claims_unsupported_by_code": [
+      "javascript",
+      "javascript",
+      "typescript",
+      "typescript"
+    ],
+    "provenance": [
+      {
+        "claim": "Inspected repository https://github.com/JayCee24-8/NexusHACK---ShellHacks-2025-Project",
+        "evidence_type": "repository",
+        "source": "https://github.com/JayCee24-8/NexusHACK---ShellHacks-2025-Project",
+        "location": "root",
+        "confidence": 1.0,
+        "details": null
+      }
+    ]
+  },
+  "demo_summary": {
+    "has_video_demo": true,
+    "video_platform": "youtube",
+    "video_url": "https://www.youtube.com/embed/y-rh_EElYPo?enablejsapi=1&hl=en_US&rel=0&start=&version=3&wmode=transparent",
+    "duration_seconds": null,
+    "has_live_deployment": false,
+    "deployment_url": "",
+    "deployment_reachable": null,
+    "has_slide_deck": false,
+    "observations": []
+  },
+  "sponsor_technologies_mentioned": [],
+  "bundle_sha256": "86cc31b3b245a9a330f3773f5c09ed37f43f6367eb77193936421edff7441ee9",
+  "created_at": "2026-09-25T15:48:33.660201Z"
+}

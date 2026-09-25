@@ -11,7 +11,7 @@
 
 # SECTION 1: BLIND ANALYSIS
 *This section was completed and cryptographically sealed prior to revealing judging outcomes.*
-*Integrity Hash: `c7b3fcaf8f90948a41a555fa2e4f51869bc337d22e8b234efe705594b181bf85`*
+*Integrity Hash: `908f8eaf8924e5f18ad477141d2f151d3d07fde57198f00dc0d85d9a550d9abb`*
 
 ### Diagnostic Evaluation
 - **Problem Statement**: False and duplicate invoices cost AP teams money. By routing extraction, matching, and anomaly checks to our best fit model, our benchmark-driven AI provides proof/confidence for acceptance review.

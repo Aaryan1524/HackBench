@@ -46,8 +46,7 @@
         "Django"
       ],
       "databases": [
-        "PostgreSQL",
-        "SQLite"
+        "PostgreSQL"
       ],
       "ai_ml_libraries": [
         "LangChain"
@@ -92,7 +91,6 @@
         "idna",
         "jsonpatch",
         "jsonpointer",
-        "langchain",
         "langchain-core",
         "langchain-google-genai",
         "langsmith",
@@ -112,7 +110,6 @@
         "requests-toolbelt",
         "rsa",
         "sniffio",
-        "sqlite",
         "sqlparse",
         "tenacity",
         "tqdm",
@@ -204,6 +201,6 @@
     "observations": []
   },
   "sponsor_technologies_mentioned": [],
-  "bundle_sha256": "fb0ff8c5b65baaf26142f49ad1531680a6b16d9754ad33abe896cc19fd97fbef",
-  "created_at": "2026-09-25T15:00:11.551538Z"
+  "bundle_sha256": "0f94ac46f4abed48c196f06829d688fb7ac764a0859108127519c11d39e8dd65",
+  "created_at": "2026-09-25T15:48:33.580349Z"
 }

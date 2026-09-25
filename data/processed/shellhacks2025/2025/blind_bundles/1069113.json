@@ -1,0 +1,152 @@
+{
+  "project_id": "1069113",
+  "slug": "combat-vision",
+  "title": "Combat Vision",
+  "tagline": "Combat Vision turns any webcam into an AR battle arena. Players duel with tracked lightsabers, striking hitboxes in real time! It's fast, immersive, and headset-free gameplay on any computer.",
+  "problem_statement": "",
+  "inspiration": "",
+  "what_it_does": "",
+  "how_it_was_built": "",
+  "challenges": "",
+  "accomplishments": "",
+  "lessons_learned": "",
+  "future_plans": "",
+  "tech_tags": [
+    "aseprite",
+    "css",
+    "css",
+    "html5",
+    "html5",
+    "javascript",
+    "javascript",
+    "mediapipe",
+    "react",
+    "react",
+    "vite",
+    "webrtc",
+    "webrtc"
+  ],
+  "team_size": 2,
+  "repository_metrics": {
+    "repo_url": "https://github.com/viannahuynh/CombatVision/tree/v-test/cv-app",
+    "status": "accessible",
+    "default_branch": "main",
+    "file_count": 61,
+    "approx_loc": 689,
+    "loc_by_language": {
+      "HTML": 13,
+      "JavaScript": 566,
+      "CSS": 110
+    },
+    "primary_languages": [
+      "JavaScript",
+      "CSS",
+      "HTML"
+    ],
+    "tech_stack": {
+      "frontend_frameworks": [
+        "Vite",
+        "React"
+      ],
+      "backend_frameworks": [],
+      "databases": [],
+      "ai_ml_libraries": [],
+      "model_providers": [],
+      "cloud_devops": [],
+      "third_party_apis": [],
+      "hardware_components": [],
+      "package_dependencies": [
+        "react",
+        "vite"
+      ]
+    },
+    "git_timeline": {
+      "total_commits": 12,
+      "commits_in_window": 12,
+      "first_commit_time": "2025-09-27T05:40:42Z",
+      "last_commit_time": "2025-09-28T07:02:07Z",
+      "commit_timestamps": [
+        "2025-09-27T05:40:42Z",
+        "2025-09-27T06:42:57Z",
+        "2025-09-27T06:46:15Z",
+        "2025-09-27T18:23:27Z",
+        "2025-09-27T18:28:00Z",
+        "2025-09-27T18:37:21Z",
+        "2025-09-27T19:56:20Z",
+        "2025-09-27T23:02:26Z",
+        "2025-09-28T02:30:01Z",
+        "2025-09-28T05:05:20Z",
+        "2025-09-28T05:26:54Z",
+        "2025-09-28T07:02:07Z"
+      ],
+      "late_rewrites_detected": false,
+      "deadline_crunch_ratio": 0.33,
+      "final_stage_focus": "features",
+      "history_is_squashed_or_minimal": false,
+      "contributor_count": 2,
+      "contributors": [
+        "Ellie Carron",
+        "Vianna Huynh"
+      ]
+    },
+    "test_files_count": 0,
+    "test_frameworks": [],
+    "has_ci": false,
+    "ci_configs": [],
+    "has_docker": false,
+    "has_env_template": false,
+    "readme_size_bytes": 0,
+    "has_architecture_docs": false,
+    "api_routes_count": 0,
+    "db_migrations_or_schema_count": 0,
+    "mock_data_detected": false,
+    "mock_data_indicators": [],
+    "todo_fixme_count": 0,
+    "boilerplate_detected": false,
+    "boilerplate_indicators": [],
+    "deployment_check": null,
+    "consistency_with_claims": "inconsistent",
+    "consistency_explanation": "Weak evidence: Only 3/13 claimed technologies detected in codebase.",
+    "actual_integrations_found": [
+      "react",
+      "react",
+      "vite"
+    ],
+    "readme_claims_unsupported_by_code": [
+      "aseprite",
+      "css",
+      "css",
+      "html5",
+      "html5",
+      "javascript",
+      "javascript",
+      "mediapipe",
+      "webrtc",
+      "webrtc"
+    ],
+    "provenance": [
+      {
+        "claim": "Inspected repository https://github.com/viannahuynh/CombatVision/tree/v-test/cv-app",
+        "evidence_type": "repository",
+        "source": "https://github.com/viannahuynh/CombatVision/tree/v-test/cv-app",
+        "location": "root",
+        "confidence": 1.0,
+        "details": null
+      }
+    ]
+  },
+  "demo_summary": {
+    "has_video_demo": true,
+    "video_platform": "youtube",
+    "video_url": "https://www.youtube.com/embed/k8tfQnv19Mg?enablejsapi=1&hl=en_US&rel=0&start=&version=3&wmode=transparent",
+    "duration_seconds": null,
+    "has_live_deployment": false,
+    "deployment_url": "",
+    "deployment_reachable": null,
+    "has_slide_deck": false,
+    "observations": []
+  },
+  "sponsor_technologies_mentioned": [],
+  "bundle_sha256": "5644c703b071a54478f801d62b12746a5cc076cb99694017cc42ae3e71598b5a",
+  "created_at": "2026-09-25T15:48:33.920269Z"
+}

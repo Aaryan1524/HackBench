@@ -1,0 +1,37 @@
+{
+  "project_id": "1068483",
+  "slug": "larry",
+  "title": "Like A Good Neighbor",
+  "tagline": "This fun game provides real examples of everyday risks. It educates students on potential dangers and shows how State Farm can help through an engaging mix of visual novel and simulator elements.",
+  "problem_statement": "",
+  "inspiration": "",
+  "what_it_does": "",
+  "how_it_was_built": "",
+  "challenges": "",
+  "accomplishments": "",
+  "lessons_learned": "",
+  "future_plans": "",
+  "tech_tags": [
+    "figma",
+    "gdscript",
+    "github",
+    "github",
+    "godot"
+  ],
+  "team_size": 4,
+  "repository_metrics": null,
+  "demo_summary": {
+    "has_video_demo": true,
+    "video_platform": "youtube",
+    "video_url": "https://www.youtube.com/embed/WKZ3PUyiPjs?enablejsapi=1&hl=en_US&rel=0&start=&version=3&wmode=transparent",
+    "duration_seconds": null,
+    "has_live_deployment": false,
+    "deployment_url": "",
+    "deployment_reachable": null,
+    "has_slide_deck": false,
+    "observations": []
+  },
+  "sponsor_technologies_mentioned": [],
+  "bundle_sha256": "0603765a0d9e4aeeef6d793f305614feefdc48c56e1c2f19692bcee87cb8c6c7",
+  "created_at": "2026-09-25T15:48:33.812839Z"
+}

@@ -40,7 +40,7 @@
     "repo_url": "https://github.com/ambakkou/google-storm",
     "status": "accessible",
     "default_branch": "main",
-    "file_count": 170,
+    "file_count": 165,
     "approx_loc": 19817,
     "loc_by_language": {
       "TypeScript": 19176,
@@ -58,13 +58,12 @@
     ],
     "tech_stack": {
       "frontend_frameworks": [
+        "Next.js",
         "React",
-        "TailwindCSS",
-        "Next.js"
+        "TailwindCSS"
       ],
       "backend_frameworks": [],
       "databases": [
-        "PostgreSQL",
         "Firebase"
       ],
       "ai_ml_libraries": [],
@@ -123,7 +122,6 @@
         "next",
         "next-auth",
         "next-themes",
-        "pg",
         "postcss",
         "react",
         "react-day-picker",
@@ -175,11 +173,11 @@
       "history_is_squashed_or_minimal": false,
       "contributor_count": 5,
       "contributors": [
-        "iamgopaul",
-        "BAKKOU Amine",
         "Amine Bakkou",
         "Bhavesh Basdeo",
-        "ragulkumarv"
+        "ragulkumarv",
+        "iamgopaul",
+        "BAKKOU Amine"
       ]
     },
     "test_files_count": 0,
@@ -203,8 +201,8 @@
       "url": "https://google-storm.vercel.app",
       "is_reachable": true,
       "status_code": 200,
-      "response_time_ms": 312.3,
-      "checked_at": "2026-09-25T14:59:15.069115Z"
+      "response_time_ms": 293.8,
+      "checked_at": "2026-09-25T15:36:34.882823Z"
     },
     "consistency_with_claims": "partial",
     "consistency_explanation": "Partial evidence: 8/22 claimed technologies found in codebase.",
@@ -257,6 +255,6 @@
     "observations": []
   },
   "sponsor_technologies_mentioned": [],
-  "bundle_sha256": "822900c6e0dc1db17e963681a973418da20b3a988d6456370c338b68b10abe79",
-  "created_at": "2026-09-25T15:00:11.545024Z"
+  "bundle_sha256": "2082c22c176dfa318f6f41b7753d0bfaee27cf88ff6fffb5baf920686cfb48bf",
+  "created_at": "2026-09-25T15:48:33.562574Z"
 }

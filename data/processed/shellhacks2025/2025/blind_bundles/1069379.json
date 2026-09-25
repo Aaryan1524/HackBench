@@ -72,8 +72,8 @@
       "url": "https://eco-sort-copy-cb2fdf55.base44.app",
       "is_reachable": true,
       "status_code": 200,
-      "response_time_ms": 452.8,
-      "checked_at": "2026-09-25T14:56:25.166008Z"
+      "response_time_ms": 423.7,
+      "checked_at": "2026-09-25T15:33:14.545334Z"
     },
     "consistency_with_claims": "unverifiable",
     "consistency_explanation": "",
@@ -102,6 +102,6 @@
     "observations": []
   },
   "sponsor_technologies_mentioned": [],
-  "bundle_sha256": "6f0afe8062ed31d0864633fc5b3827807ca63bbb95d889f319958e770e1fea20",
-  "created_at": "2026-09-25T15:00:11.489145Z"
+  "bundle_sha256": "32e2059ffde4b0a4a9d35627973360dfecd218fc9536b0d23826dda2e23f7e33",
+  "created_at": "2026-09-25T15:48:33.473638Z"
 }

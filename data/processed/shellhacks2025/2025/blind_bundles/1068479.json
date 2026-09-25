@@ -1,0 +1,43 @@
+{
+  "project_id": "1068479",
+  "slug": "ideabrowser",
+  "title": "HackSpark",
+  "tagline": "Where developers find inspiration, stay motivated, and build together.",
+  "problem_statement": "",
+  "inspiration": "",
+  "what_it_does": "",
+  "how_it_was_built": "",
+  "challenges": "",
+  "accomplishments": "",
+  "lessons_learned": "",
+  "future_plans": "",
+  "tech_tags": [
+    "ent",
+    "gemini",
+    "gemini",
+    "golang",
+    "golang",
+    "nextjs",
+    "postgresql",
+    "postgresql",
+    "react",
+    "react",
+    "tanstack"
+  ],
+  "team_size": 3,
+  "repository_metrics": null,
+  "demo_summary": {
+    "has_video_demo": true,
+    "video_platform": "vimeo",
+    "video_url": "https://player.vimeo.com/video/1122619850?byline=0&portrait=0&title=0#t=",
+    "duration_seconds": null,
+    "has_live_deployment": true,
+    "deployment_url": "https://hackspark-web.vercel.app/",
+    "deployment_reachable": null,
+    "has_slide_deck": false,
+    "observations": []
+  },
+  "sponsor_technologies_mentioned": [],
+  "bundle_sha256": "4ece1bc08b9395961231f3ed72b51c419dd233010a7c51dcd2df9cab2e861300",
+  "created_at": "2026-09-25T15:48:33.903921Z"
+}

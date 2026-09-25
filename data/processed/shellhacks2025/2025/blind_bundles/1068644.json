@@ -32,7 +32,7 @@
   "team_size": 3,
   "repository_metrics": {
     "repo_url": "https://github.com/RajAnesh98/hackathon-demo",
-    "status": "clone_timeout_large_repo",
+    "status": "accessible",
     "default_branch": "main",
     "file_count": 0,
     "approx_loc": 0,
@@ -58,7 +58,7 @@
       "late_rewrites_detected": false,
       "deadline_crunch_ratio": 0.0,
       "final_stage_focus": "unknown",
-      "history_is_squashed_or_minimal": false,
+      "history_is_squashed_or_minimal": true,
       "contributor_count": 0,
       "contributors": []
     },
@@ -78,10 +78,27 @@
     "boilerplate_detected": false,
     "boilerplate_indicators": [],
     "deployment_check": null,
-    "consistency_with_claims": "unverifiable",
-    "consistency_explanation": "",
+    "consistency_with_claims": "inconsistent",
+    "consistency_explanation": "Weak evidence: Only 0/16 claimed technologies detected in codebase.",
     "actual_integrations_found": [],
-    "readme_claims_unsupported_by_code": [],
+    "readme_claims_unsupported_by_code": [
+      "communication",
+      "data",
+      "gemini-api",
+      "gradio",
+      "groq",
+      "groq",
+      "langchain",
+      "langgraph",
+      "multi-agent",
+      "numpy",
+      "numpy",
+      "pandas",
+      "pandas",
+      "python",
+      "python",
+      "rag"
+    ],
     "provenance": [
       {
         "claim": "Inspected repository https://github.com/RajAnesh98/hackathon-demo",
@@ -105,6 +122,6 @@
     "observations": []
   },
   "sponsor_technologies_mentioned": [],
-  "bundle_sha256": "ac1063d10deebac80b4ea05dc6924c5bd27b733156e55bf010a67c8b564cc8bb",
-  "created_at": "2026-09-25T15:00:11.559204Z"
+  "bundle_sha256": "6cf3efa500ae0584948521be975b0e92df3c51096e88220d47d40fc75eba2b36",
+  "created_at": "2026-09-25T15:48:33.585243Z"
 }

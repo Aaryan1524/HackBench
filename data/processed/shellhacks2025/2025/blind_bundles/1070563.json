@@ -24,7 +24,7 @@
   "team_size": 1,
   "repository_metrics": {
     "repo_url": "https://github.com/Alans44/wolfranimation",
-    "status": "clone_timeout_large_repo",
+    "status": "accessible",
     "default_branch": "main",
     "file_count": 0,
     "approx_loc": 0,
@@ -50,7 +50,7 @@
       "late_rewrites_detected": false,
       "deadline_crunch_ratio": 0.0,
       "final_stage_focus": "unknown",
-      "history_is_squashed_or_minimal": false,
+      "history_is_squashed_or_minimal": true,
       "contributor_count": 0,
       "contributors": []
     },
@@ -70,10 +70,19 @@
     "boilerplate_detected": false,
     "boilerplate_indicators": [],
     "deployment_check": null,
-    "consistency_with_claims": "unverifiable",
-    "consistency_explanation": "",
+    "consistency_with_claims": "inconsistent",
+    "consistency_explanation": "Weak evidence: Only 0/8 claimed technologies detected in codebase.",
     "actual_integrations_found": [],
-    "readme_claims_unsupported_by_code": [],
+    "readme_claims_unsupported_by_code": [
+      "manim",
+      "numpy",
+      "numpy",
+      "python",
+      "python",
+      "wolfram-technologies",
+      "wolfram-technologies",
+      "wolframscript"
+    ],
     "provenance": [
       {
         "claim": "Inspected repository https://github.com/Alans44/wolfranimation",
@@ -97,6 +106,6 @@
     "observations": []
   },
   "sponsor_technologies_mentioned": [],
-  "bundle_sha256": "12350eb690720b57ca710d624c673f903a848fe3c12c6e5e08fe2d2c765b9073",
-  "created_at": "2026-09-25T15:00:11.529850Z"
+  "bundle_sha256": "03f64e292db8407251f73ae3fe850d56d8556f75e497247c3d42815a933a391d",
+  "created_at": "2026-09-25T15:48:33.532024Z"
 }

@@ -1,0 +1,152 @@
+{
+  "project_id": "1070657",
+  "slug": "finmate-3ltqow",
+  "title": "FinMate",
+  "tagline": "Budgeting app for college students, have all of your transactions not only in one place but visualized, and chat with AI for recommendations based on your budget. See where your moneys' going!",
+  "problem_statement": "",
+  "inspiration": "",
+  "what_it_does": "",
+  "how_it_was_built": "",
+  "challenges": "",
+  "accomplishments": "",
+  "lessons_learned": "",
+  "future_plans": "",
+  "tech_tags": [
+    "shadcn",
+    "tailwind",
+    "typescript",
+    "typescript",
+    "zustand"
+  ],
+  "team_size": 2,
+  "repository_metrics": {
+    "repo_url": "https://github.com/dmoreno0716/FinMate",
+    "status": "accessible",
+    "default_branch": "main",
+    "file_count": 39,
+    "approx_loc": 3772,
+    "loc_by_language": {
+      "TypeScript": 3625,
+      "JavaScript": 88,
+      "CSS": 59
+    },
+    "primary_languages": [
+      "TypeScript",
+      "JavaScript",
+      "CSS"
+    ],
+    "tech_stack": {
+      "frontend_frameworks": [
+        "React",
+        "TailwindCSS",
+        "Next.js"
+      ],
+      "backend_frameworks": [],
+      "databases": [],
+      "ai_ml_libraries": [],
+      "model_providers": [],
+      "cloud_devops": [],
+      "third_party_apis": [],
+      "hardware_components": [],
+      "package_dependencies": [
+        "@radix-ui/react-dialog",
+        "@radix-ui/react-icons",
+        "@radix-ui/react-label",
+        "@radix-ui/react-progress",
+        "@radix-ui/react-select",
+        "@radix-ui/react-slot",
+        "@types/node",
+        "@types/react",
+        "@types/react-dom",
+        "autoprefixer",
+        "class-variance-authority",
+        "clsx",
+        "eslint",
+        "eslint-config-next",
+        "lucide-react",
+        "nanoid",
+        "next",
+        "postcss",
+        "prettier",
+        "react",
+        "react-dom",
+        "recharts",
+        "tailwind-merge",
+        "tailwindcss",
+        "tailwindcss-animate",
+        "typescript",
+        "zustand"
+      ]
+    },
+    "git_timeline": {
+      "total_commits": 3,
+      "commits_in_window": 3,
+      "first_commit_time": "2025-09-28T10:18:58Z",
+      "last_commit_time": "2025-09-28T12:03:10Z",
+      "commit_timestamps": [
+        "2025-09-28T10:18:58Z",
+        "2025-09-28T12:00:27Z",
+        "2025-09-28T12:03:10Z"
+      ],
+      "late_rewrites_detected": false,
+      "deadline_crunch_ratio": 0.67,
+      "final_stage_focus": "docs",
+      "history_is_squashed_or_minimal": false,
+      "contributor_count": 1,
+      "contributors": [
+        "David Moreno"
+      ]
+    },
+    "test_files_count": 0,
+    "test_frameworks": [],
+    "has_ci": false,
+    "ci_configs": [],
+    "has_docker": false,
+    "has_env_template": false,
+    "readme_size_bytes": 1052,
+    "has_architecture_docs": false,
+    "api_routes_count": 0,
+    "db_migrations_or_schema_count": 0,
+    "mock_data_detected": false,
+    "mock_data_indicators": [],
+    "todo_fixme_count": 0,
+    "boilerplate_detected": false,
+    "boilerplate_indicators": [],
+    "deployment_check": null,
+    "consistency_with_claims": "consistent",
+    "consistency_explanation": "Strong evidence: 4/5 claimed technologies verified in codebase.",
+    "actual_integrations_found": [
+      "tailwind",
+      "typescript",
+      "typescript",
+      "zustand"
+    ],
+    "readme_claims_unsupported_by_code": [
+      "shadcn"
+    ],
+    "provenance": [
+      {
+        "claim": "Inspected repository https://github.com/dmoreno0716/FinMate",
+        "evidence_type": "repository",
+        "source": "https://github.com/dmoreno0716/FinMate",
+        "location": "root",
+        "confidence": 1.0,
+        "details": null
+      }
+    ]
+  },
+  "demo_summary": {
+    "has_video_demo": true,
+    "video_platform": "youtube",
+    "video_url": "https://www.youtube.com/embed/PvOCOSi9sIQ?enablejsapi=1&hl=en_US&rel=0&start=&version=3&wmode=transparent",
+    "duration_seconds": null,
+    "has_live_deployment": false,
+    "deployment_url": "",
+    "deployment_reachable": null,
+    "has_slide_deck": false,
+    "observations": []
+  },
+  "sponsor_technologies_mentioned": [],
+  "bundle_sha256": "956c220b496ce320d83ab27782616b202f709a13b1b68f19f8ae5c0cad8c7714",
+  "created_at": "2026-09-25T15:48:33.982197Z"
+}

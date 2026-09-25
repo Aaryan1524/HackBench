@@ -1,0 +1,184 @@
+{
+  "project_id": "1068549",
+  "slug": "tasklens",
+  "title": "MealSync",
+  "tagline": "Smarter enrollment, more meals secured.",
+  "problem_statement": "",
+  "inspiration": "",
+  "what_it_does": "",
+  "how_it_was_built": "",
+  "challenges": "",
+  "accomplishments": "",
+  "lessons_learned": "",
+  "future_plans": "",
+  "tech_tags": [
+    "fastapi",
+    "firebase",
+    "firebase",
+    "github",
+    "github",
+    "javascript",
+    "javascript",
+    "node.js",
+    "node.js",
+    "npm",
+    "npm",
+    "python",
+    "python",
+    "react",
+    "react",
+    "tailwindcss",
+    "vercel",
+    "vite"
+  ],
+  "team_size": 4,
+  "repository_metrics": {
+    "repo_url": "https://github.com/Swetasp/mealsync.git",
+    "status": "accessible",
+    "default_branch": "main",
+    "file_count": 62,
+    "approx_loc": 4783,
+    "loc_by_language": {
+      "Python": 973,
+      "Shell": 25,
+      "HTML": 41,
+      "CSS": 55,
+      "JavaScript": 3689
+    },
+    "primary_languages": [
+      "JavaScript",
+      "Python",
+      "CSS",
+      "HTML",
+      "Shell"
+    ],
+    "tech_stack": {
+      "frontend_frameworks": [
+        "Vite",
+        "React"
+      ],
+      "backend_frameworks": [
+        "FastAPI"
+      ],
+      "databases": [
+        "Firebase",
+        "PostgreSQL"
+      ],
+      "ai_ml_libraries": [],
+      "model_providers": [
+        "Gemini"
+      ],
+      "cloud_devops": [],
+      "third_party_apis": [],
+      "hardware_components": [],
+      "package_dependencies": [
+        "fastapi",
+        "firebase",
+        "firebase-admin",
+        "google-auth",
+        "google-cloud-firestore",
+        "google-cloud-secret-manager",
+        "google-cloud-tasks",
+        "google-generativeai",
+        "httpx",
+        "pg",
+        "pydantic",
+        "python-dotenv",
+        "react",
+        "structlog",
+        "uvicorn[standard]",
+        "vite"
+      ]
+    },
+    "git_timeline": {
+      "total_commits": 10,
+      "commits_in_window": 10,
+      "first_commit_time": "2025-09-27T14:20:56Z",
+      "last_commit_time": "2025-09-28T14:56:30Z",
+      "commit_timestamps": [
+        "2025-09-27T14:20:56Z",
+        "2025-09-27T14:25:54Z",
+        "2025-09-27T18:20:21Z",
+        "2025-09-27T18:21:27Z",
+        "2025-09-27T20:24:31Z",
+        "2025-09-27T20:24:45Z",
+        "2025-09-28T03:40:02Z",
+        "2025-09-28T03:52:23Z",
+        "2025-09-28T12:39:54Z",
+        "2025-09-28T14:56:30Z"
+      ],
+      "late_rewrites_detected": false,
+      "deadline_crunch_ratio": 0.2,
+      "final_stage_focus": "docs",
+      "history_is_squashed_or_minimal": false,
+      "contributor_count": 1,
+      "contributors": [
+        "Sweta Pasari"
+      ]
+    },
+    "test_files_count": 0,
+    "test_frameworks": [],
+    "has_ci": false,
+    "ci_configs": [],
+    "has_docker": true,
+    "has_env_template": true,
+    "readme_size_bytes": 2260,
+    "has_architecture_docs": true,
+    "api_routes_count": 8,
+    "db_migrations_or_schema_count": 0,
+    "mock_data_detected": false,
+    "mock_data_indicators": [],
+    "todo_fixme_count": 1,
+    "boilerplate_detected": false,
+    "boilerplate_indicators": [],
+    "deployment_check": null,
+    "consistency_with_claims": "partial",
+    "consistency_explanation": "Partial evidence: 8/18 claimed technologies found in codebase.",
+    "actual_integrations_found": [
+      "fastapi",
+      "firebase",
+      "firebase",
+      "python",
+      "python",
+      "react",
+      "react",
+      "vite"
+    ],
+    "readme_claims_unsupported_by_code": [
+      "github",
+      "github",
+      "javascript",
+      "javascript",
+      "node.js",
+      "node.js",
+      "npm",
+      "npm",
+      "tailwindcss",
+      "vercel"
+    ],
+    "provenance": [
+      {
+        "claim": "Inspected repository https://github.com/Swetasp/mealsync.git",
+        "evidence_type": "repository",
+        "source": "https://github.com/Swetasp/mealsync.git",
+        "location": "root",
+        "confidence": 1.0,
+        "details": null
+      }
+    ]
+  },
+  "demo_summary": {
+    "has_video_demo": true,
+    "video_platform": "youtube",
+    "video_url": "https://www.youtube.com/embed/ABP5Z4dclZk?enablejsapi=1&hl=en_US&rel=0&start=&version=3&wmode=transparent",
+    "duration_seconds": null,
+    "has_live_deployment": false,
+    "deployment_url": "",
+    "deployment_reachable": null,
+    "has_slide_deck": false,
+    "observations": []
+  },
+  "sponsor_technologies_mentioned": [],
+  "bundle_sha256": "6be054ec7a0e04a92cd69395c13e25efb799a676a31cd4e7df48001ffd8fbed5",
+  "created_at": "2026-09-25T15:48:33.882888Z"
+}

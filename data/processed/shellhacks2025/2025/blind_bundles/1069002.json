@@ -1,0 +1,156 @@
+{
+  "project_id": "1069002",
+  "slug": "flare-6u1om2",
+  "title": "FLARE",
+  "tagline": "FLARE , a physics-aware AI that uses digital twins and multi-agent learning to reveal how EV charging attacks destabilize power grids, guiding resilient cybersecurity.",
+  "problem_statement": "",
+  "inspiration": "",
+  "what_it_does": "",
+  "how_it_was_built": "",
+  "challenges": "",
+  "accomplishments": "",
+  "lessons_learned": "",
+  "future_plans": "",
+  "tech_tags": [
+    "claude",
+    "generativeai",
+    "google-adk",
+    "gym",
+    "python",
+    "python",
+    "pytorch",
+    "pytorch"
+  ],
+  "team_size": 1,
+  "repository_metrics": {
+    "repo_url": "https://github.com/zakariahaider14/shell_hacks_flare",
+    "status": "accessible",
+    "default_branch": "main",
+    "file_count": 62,
+    "approx_loc": 41626,
+    "loc_by_language": {
+      "Python": 41626
+    },
+    "primary_languages": [
+      "Python"
+    ],
+    "tech_stack": {
+      "frontend_frameworks": [],
+      "backend_frameworks": [
+        "Express.js",
+        "Flask"
+      ],
+      "databases": [],
+      "ai_ml_libraries": [
+        "TensorFlow",
+        "PyTorch",
+        "Scikit-Learn",
+        "HuggingFace Transformers",
+        "LangChain"
+      ],
+      "model_providers": [
+        "OpenAI"
+      ],
+      "cloud_devops": [],
+      "third_party_apis": [],
+      "hardware_components": [],
+      "package_dependencies": [
+        "express",
+        "flask",
+        "langchain",
+        "openai",
+        "sklearn",
+        "tensorflow",
+        "torch",
+        "transformers"
+      ]
+    },
+    "git_timeline": {
+      "total_commits": 16,
+      "commits_in_window": 16,
+      "first_commit_time": "2025-09-28T05:53:34Z",
+      "last_commit_time": "2025-10-08T18:21:46Z",
+      "commit_timestamps": [
+        "2025-09-28T05:53:34Z",
+        "2025-09-28T06:13:26Z",
+        "2025-09-28T06:16:41Z",
+        "2025-09-28T06:21:29Z",
+        "2025-09-28T06:21:55Z",
+        "2025-09-28T06:49:44Z",
+        "2025-09-28T09:35:16Z",
+        "2025-09-28T11:29:21Z",
+        "2025-09-28T18:29:35Z",
+        "2025-09-28T18:49:09Z",
+        "2025-09-29T17:26:49Z",
+        "2025-09-29T17:55:23Z",
+        "2025-10-03T19:56:24Z",
+        "2025-10-03T19:57:43Z",
+        "2025-10-08T18:20:48Z",
+        "2025-10-08T18:21:46Z"
+      ],
+      "late_rewrites_detected": false,
+      "deadline_crunch_ratio": 0.12,
+      "final_stage_focus": "features",
+      "history_is_squashed_or_minimal": false,
+      "contributor_count": 2,
+      "contributors": [
+        "zakariahaider14",
+        "Mohammad Zakaria Haider"
+      ]
+    },
+    "test_files_count": 2,
+    "test_frameworks": [],
+    "has_ci": false,
+    "ci_configs": [],
+    "has_docker": false,
+    "has_env_template": false,
+    "readme_size_bytes": 84,
+    "has_architecture_docs": false,
+    "api_routes_count": 0,
+    "db_migrations_or_schema_count": 0,
+    "mock_data_detected": false,
+    "mock_data_indicators": [],
+    "todo_fixme_count": 0,
+    "boilerplate_detected": false,
+    "boilerplate_indicators": [],
+    "deployment_check": null,
+    "consistency_with_claims": "inconsistent",
+    "consistency_explanation": "Weak evidence: Only 2/8 claimed technologies detected in codebase.",
+    "actual_integrations_found": [
+      "pytorch",
+      "pytorch"
+    ],
+    "readme_claims_unsupported_by_code": [
+      "claude",
+      "generativeai",
+      "google-adk",
+      "gym",
+      "python",
+      "python"
+    ],
+    "provenance": [
+      {
+        "claim": "Inspected repository https://github.com/zakariahaider14/shell_hacks_flare",
+        "evidence_type": "repository",
+        "source": "https://github.com/zakariahaider14/shell_hacks_flare",
+        "location": "root",
+        "confidence": 1.0,
+        "details": null
+      }
+    ]
+  },
+  "demo_summary": {
+    "has_video_demo": true,
+    "video_platform": "youtube",
+    "video_url": "https://www.youtube.com/embed/fy6Os5AKXSo?enablejsapi=1&hl=en_US&rel=0&start=&version=3&wmode=transparent",
+    "duration_seconds": null,
+    "has_live_deployment": false,
+    "deployment_url": "",
+    "deployment_reachable": null,
+    "has_slide_deck": false,
+    "observations": []
+  },
+  "sponsor_technologies_mentioned": [],
+  "bundle_sha256": "efcacdfbaec8659b90c57d8e18f76e15366216490f6b5428f61b6a422eb48b3c",
+  "created_at": "2026-09-25T15:48:33.994987Z"
+}

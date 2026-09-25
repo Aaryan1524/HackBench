@@ -11,7 +11,7 @@
 
 # SECTION 1: BLIND ANALYSIS
 *This section was completed and cryptographically sealed prior to revealing judging outcomes.*
-*Integrity Hash: `64ee7f4d2ed7cfcd1ed17fe5529d788de933b8c975927ed8f9921bc24722eaff`*
+*Integrity Hash: `c6c3ea2439ffcd4b2601c21756befce9039d77887c0983eb7a464d2ab55a212a`*
 
 ### Diagnostic Evaluation
 - **Problem Statement**: Our project creates a single place to ask a question and get one clear, trusted answer with citations from across all sources

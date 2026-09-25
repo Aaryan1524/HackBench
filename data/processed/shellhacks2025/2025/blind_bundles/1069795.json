@@ -46,7 +46,7 @@
     "repo_url": "https://github.com/DanielJEfres/ctrl-arm",
     "status": "accessible",
     "default_branch": "main",
-    "file_count": 260,
+    "file_count": 67,
     "approx_loc": 11021,
     "loc_by_language": {
       "Python": 7622,
@@ -64,9 +64,8 @@
     ],
     "tech_stack": {
       "frontend_frameworks": [
-        "Next.js",
-        "React",
-        "Vite"
+        "Vite",
+        "React"
       ],
       "backend_frameworks": [
         "Express.js"
@@ -75,27 +74,24 @@
         "SQLite"
       ],
       "ai_ml_libraries": [
-        "Scikit-Learn",
-        "PyTorch"
+        "PyTorch",
+        "Scikit-Learn"
       ],
       "model_providers": [
-        "OpenAI",
-        "Gemini"
+        "Gemini",
+        "OpenAI"
       ],
       "cloud_devops": [],
       "third_party_apis": [],
       "hardware_components": [
-        "Arduino",
         "Serial Communication"
       ],
       "package_dependencies": [
-        "arduino",
         "express",
         "google-adk",
         "google-generativeai",
         "librosa",
         "matplotlib",
-        "next",
         "numpy",
         "onnx",
         "onnxruntime",
@@ -205,12 +201,12 @@
       "history_is_squashed_or_minimal": false,
       "contributor_count": 6,
       "contributors": [
+        "Adrian Osorio Blanchard",
+        "Carlos Catala",
+        "Sam Borges",
         "Carlos",
         "DanielJEfres",
-        "Carlos Catala",
-        "Sam",
-        "Sam Borges",
-        "Adrian Osorio Blanchard"
+        "Sam"
       ]
     },
     "test_files_count": 2,
@@ -286,6 +282,6 @@
     "observations": []
   },
   "sponsor_technologies_mentioned": [],
-  "bundle_sha256": "0901c6c4ca8932112be32d8af5839b7edf3ee06a872ed15fbc7655510a6dc00c",
-  "created_at": "2026-09-25T15:00:11.522029Z"
+  "bundle_sha256": "c70ce2d789f77e09ff194325c17f4b3dc4e15fc11d72f1ffa0c6d9faaf07c074",
+  "created_at": "2026-09-25T15:48:33.520594Z"
 }

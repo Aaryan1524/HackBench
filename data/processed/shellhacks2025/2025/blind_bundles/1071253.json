@@ -44,9 +44,8 @@
     ],
     "tech_stack": {
       "frontend_frameworks": [
-        "React",
-        "Next.js",
-        "Vite"
+        "Vite",
+        "React"
       ],
       "backend_frameworks": [
         "FastAPI"
@@ -59,7 +58,6 @@
       "hardware_components": [],
       "package_dependencies": [
         "fastapi",
-        "next",
         "react",
         "vite"
       ]
@@ -148,6 +146,6 @@
     "observations": []
   },
   "sponsor_technologies_mentioned": [],
-  "bundle_sha256": "7e074197fd785cba87510434caa071ce60cf21cd822c1d4ea2e0438d0e2935f9",
-  "created_at": "2026-09-25T15:00:11.541598Z"
+  "bundle_sha256": "36305462c33b77c8f019610c0821e690a4b5c4e872f9b484179efc2d21615595",
+  "created_at": "2026-09-25T15:48:33.551613Z"
 }

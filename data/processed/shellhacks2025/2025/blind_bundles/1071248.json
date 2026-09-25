@@ -43,19 +43,12 @@
     "tech_stack": {
       "frontend_frameworks": [
         "React",
-        "Vite",
         "Next.js"
       ],
-      "backend_frameworks": [
-        "FastAPI"
-      ],
-      "databases": [
-        "PostgreSQL"
-      ],
+      "backend_frameworks": [],
+      "databases": [],
       "ai_ml_libraries": [],
-      "model_providers": [
-        "Cohere"
-      ],
+      "model_providers": [],
       "cloud_devops": [],
       "third_party_apis": [],
       "hardware_components": [],
@@ -63,15 +56,11 @@
         "@types/node",
         "@types/react",
         "@types/react-dom",
-        "cohere",
-        "fastapi",
         "next",
-        "pg",
         "phaser",
         "react",
         "react-dom",
-        "typescript",
-        "vite"
+        "typescript"
       ]
     },
     "git_timeline": {
@@ -137,9 +126,9 @@
       "contributor_count": 4,
       "contributors": [
         "Jaylena Burgos",
-        "N1xed",
+        "Mario Casas",
         "Saneec",
-        "Mario Casas"
+        "N1xed"
       ]
     },
     "test_files_count": 0,
@@ -197,6 +186,6 @@
     "observations": []
   },
   "sponsor_technologies_mentioned": [],
-  "bundle_sha256": "8f9c3d6541acf57c4ee007d1fbf8eec5ca05ec8087ec4d7a4c42c964705b5ded",
-  "created_at": "2026-09-25T15:00:11.534822Z"
+  "bundle_sha256": "3fd2bcf7f4aca5b8b623ef5cf4ea4f0d5a10b93eac055d020a43867f6f17b751",
+  "created_at": "2026-09-25T15:48:33.540899Z"
 }

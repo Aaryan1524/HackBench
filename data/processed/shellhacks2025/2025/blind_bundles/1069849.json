@@ -63,8 +63,7 @@
     "tech_stack": {
       "frontend_frameworks": [
         "React",
-        "Next.js",
-        "Angular"
+        "Next.js"
       ],
       "backend_frameworks": [],
       "databases": [
@@ -78,7 +77,6 @@
         "Serial Communication"
       ],
       "package_dependencies": [
-        "angular",
         "next",
         "numpy",
         "prisma",
@@ -157,10 +155,10 @@
       "history_is_squashed_or_minimal": false,
       "contributor_count": 5,
       "contributors": [
-        "Fernando E. Amado-Pupo",
         "apaezs",
-        "Param Gattupalli",
+        "Fernando E. Amado-Pupo",
         "Alejandro Paez",
+        "Param Gattupalli",
         "GGonzalez08"
       ]
     },
@@ -183,8 +181,8 @@
       "url": "http://happy-head.vercel.app",
       "is_reachable": true,
       "status_code": 200,
-      "response_time_ms": 275.0,
-      "checked_at": "2026-09-25T14:56:25.844663Z"
+      "response_time_ms": 293.1,
+      "checked_at": "2026-09-25T15:33:15.319481Z"
     },
     "consistency_with_claims": "inconsistent",
     "consistency_explanation": "Weak evidence: Only 6/30 claimed technologies detected in codebase.",
@@ -245,6 +243,6 @@
     "observations": []
   },
   "sponsor_technologies_mentioned": [],
-  "bundle_sha256": "b2be8168251b8ba12248ca5b66ba7b5d05ed0cd9d601e396ac2be21e23383bdc",
-  "created_at": "2026-09-25T15:00:11.499361Z"
+  "bundle_sha256": "782bfbfbdc7ee2ec5b5afc8568bb142d8d1787e909e02fb0ab43243f8a229237",
+  "created_at": "2026-09-25T15:48:33.485884Z"
 }

@@ -1,0 +1,188 @@
+{
+  "project_id": "1070991",
+  "slug": "agentwealth",
+  "title": "WealthAgent",
+  "tagline": "Multiple agents. One mission: your financial growth.",
+  "problem_statement": "",
+  "inspiration": "",
+  "what_it_does": "",
+  "how_it_was_built": "",
+  "challenges": "",
+  "accomplishments": "",
+  "lessons_learned": "",
+  "future_plans": "",
+  "tech_tags": [
+    "adk",
+    "angular.js",
+    "angular.js",
+    "flask",
+    "flask",
+    "python",
+    "python",
+    "sqlite",
+    "sqlite"
+  ],
+  "team_size": 4,
+  "repository_metrics": {
+    "repo_url": "https://github.com/Ant1-dev/AgentWealth",
+    "status": "accessible",
+    "default_branch": "main",
+    "file_count": 85,
+    "approx_loc": 8570,
+    "loc_by_language": {
+      "HTML": 635,
+      "TypeScript": 2686,
+      "CSS": 2076,
+      "Python": 3134,
+      "Shell": 39
+    },
+    "primary_languages": [
+      "Python",
+      "TypeScript",
+      "CSS",
+      "HTML",
+      "Shell"
+    ],
+    "tech_stack": {
+      "frontend_frameworks": [
+        "Angular"
+      ],
+      "backend_frameworks": [
+        "Flask"
+      ],
+      "databases": [],
+      "ai_ml_libraries": [],
+      "model_providers": [],
+      "cloud_devops": [],
+      "third_party_apis": [],
+      "hardware_components": [],
+      "package_dependencies": [
+        "angular",
+        "flask"
+      ]
+    },
+    "git_timeline": {
+      "total_commits": 46,
+      "commits_in_window": 46,
+      "first_commit_time": "2025-09-26T22:32:24Z",
+      "last_commit_time": "2025-10-01T16:04:20Z",
+      "commit_timestamps": [
+        "2025-09-26T22:32:24Z",
+        "2025-09-27T03:36:13Z",
+        "2025-09-27T16:57:16Z",
+        "2025-09-27T18:45:18Z",
+        "2025-09-27T19:34:21Z",
+        "2025-09-27T20:41:49Z",
+        "2025-09-27T20:57:07Z",
+        "2025-09-28T00:14:23Z",
+        "2025-09-28T00:16:08Z",
+        "2025-09-28T00:25:18Z",
+        "2025-09-28T00:34:10Z",
+        "2025-09-28T01:32:36Z",
+        "2025-09-28T02:23:42Z",
+        "2025-09-28T02:26:51Z",
+        "2025-09-28T02:29:00Z",
+        "2025-09-28T03:07:27Z",
+        "2025-09-28T03:20:19Z",
+        "2025-09-28T04:19:50Z",
+        "2025-09-28T04:20:49Z",
+        "2025-09-28T04:26:21Z",
+        "2025-09-28T04:46:02Z",
+        "2025-09-28T04:47:55Z",
+        "2025-09-28T05:15:15Z",
+        "2025-09-28T05:16:15Z",
+        "2025-09-28T06:42:07Z",
+        "2025-09-28T06:52:45Z",
+        "2025-09-28T06:58:19Z",
+        "2025-09-28T07:28:29Z",
+        "2025-09-28T08:02:08Z",
+        "2025-09-28T08:09:57Z",
+        "2025-09-28T08:10:28Z",
+        "2025-09-28T08:54:43Z",
+        "2025-09-28T09:34:05Z",
+        "2025-09-28T09:47:28Z",
+        "2025-09-28T09:58:55Z",
+        "2025-09-28T10:53:47Z",
+        "2025-09-28T11:01:20Z",
+        "2025-09-28T11:49:35Z",
+        "2025-09-28T12:19:01Z",
+        "2025-09-28T12:25:56Z",
+        "2025-09-28T14:36:01Z",
+        "2025-09-28T14:58:41Z",
+        "2025-09-30T00:50:55Z",
+        "2025-09-30T00:52:33Z",
+        "2025-10-01T15:09:08Z",
+        "2025-10-01T16:04:20Z"
+      ],
+      "late_rewrites_detected": false,
+      "deadline_crunch_ratio": 0.04,
+      "final_stage_focus": "docs",
+      "history_is_squashed_or_minimal": false,
+      "contributor_count": 5,
+      "contributors": [
+        "jjean298",
+        "Ant1",
+        "Michael-Venous",
+        "Antoine Morrison",
+        "Mike Laptop"
+      ]
+    },
+    "test_files_count": 3,
+    "test_frameworks": [
+      "vitest/jest"
+    ],
+    "has_ci": false,
+    "ci_configs": [],
+    "has_docker": false,
+    "has_env_template": false,
+    "readme_size_bytes": 2307,
+    "has_architecture_docs": true,
+    "api_routes_count": 0,
+    "db_migrations_or_schema_count": 0,
+    "mock_data_detected": false,
+    "mock_data_indicators": [],
+    "todo_fixme_count": 0,
+    "boilerplate_detected": false,
+    "boilerplate_indicators": [],
+    "deployment_check": null,
+    "consistency_with_claims": "partial",
+    "consistency_explanation": "Partial evidence: 4/9 claimed technologies found in codebase.",
+    "actual_integrations_found": [
+      "angular.js",
+      "angular.js",
+      "flask",
+      "flask"
+    ],
+    "readme_claims_unsupported_by_code": [
+      "adk",
+      "python",
+      "python",
+      "sqlite",
+      "sqlite"
+    ],
+    "provenance": [
+      {
+        "claim": "Inspected repository https://github.com/Ant1-dev/AgentWealth",
+        "evidence_type": "repository",
+        "source": "https://github.com/Ant1-dev/AgentWealth",
+        "location": "root",
+        "confidence": 1.0,
+        "details": null
+      }
+    ]
+  },
+  "demo_summary": {
+    "has_video_demo": true,
+    "video_platform": "youtube",
+    "video_url": "https://www.youtube.com/embed/1VqqHG7fE9E?enablejsapi=1&hl=en_US&rel=0&start=&version=3&wmode=transparent",
+    "duration_seconds": null,
+    "has_live_deployment": false,
+    "deployment_url": "",
+    "deployment_reachable": null,
+    "has_slide_deck": false,
+    "observations": []
+  },
+  "sponsor_technologies_mentioned": [],
+  "bundle_sha256": "78506ed862f4c84824bc6493ae02568a5df23458af2e5412556c1852931efa39",
+  "created_at": "2026-09-25T15:48:33.679444Z"
+}

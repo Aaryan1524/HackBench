@@ -1,0 +1,38 @@
+{
+  "project_id": "1070152",
+  "slug": "moola-r8b4fs",
+  "title": "Moola",
+  "tagline": "Moola is your AI money coach. In Miami we love our moolah, so we built a web app that makes every dollar make sense: helping you budget, save, and invest smarter.",
+  "problem_statement": "",
+  "inspiration": "",
+  "what_it_does": "",
+  "how_it_was_built": "",
+  "challenges": "",
+  "accomplishments": "",
+  "lessons_learned": "",
+  "future_plans": "",
+  "tech_tags": [
+    "auth0",
+    "googlegemini",
+    "materialui",
+    "react",
+    "react",
+    "supabase"
+  ],
+  "team_size": 4,
+  "repository_metrics": null,
+  "demo_summary": {
+    "has_video_demo": true,
+    "video_platform": "youtube",
+    "video_url": "https://www.youtube.com/embed/J0LKyNAkOd0?enablejsapi=1&hl=en_US&rel=0&start=&version=3&wmode=transparent",
+    "duration_seconds": null,
+    "has_live_deployment": false,
+    "deployment_url": "",
+    "deployment_reachable": null,
+    "has_slide_deck": false,
+    "observations": []
+  },
+  "sponsor_technologies_mentioned": [],
+  "bundle_sha256": "e64640a2a3d7667a6e21bc26956f92966a860a23bbcac0d97a8e23321f33b561",
+  "created_at": "2026-09-25T15:48:33.737264Z"
+}

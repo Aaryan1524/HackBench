@@ -37,9 +37,7 @@
       "Python"
     ],
     "tech_stack": {
-      "frontend_frameworks": [
-        "React"
-      ],
+      "frontend_frameworks": [],
       "backend_frameworks": [
         "FastAPI",
         "Flask"
@@ -52,8 +50,7 @@
       "hardware_components": [],
       "package_dependencies": [
         "fastapi",
-        "flask",
-        "react"
+        "flask"
       ]
     },
     "git_timeline": {
@@ -128,6 +125,6 @@
     "observations": []
   },
   "sponsor_technologies_mentioned": [],
-  "bundle_sha256": "b0939ea24a7ca1423aae48d7c4a9e6eb046c56aee874ffd4f0bd250ac92c5c87",
-  "created_at": "2026-09-25T15:00:11.561875Z"
+  "bundle_sha256": "9a473b027a9f254d299d249314c0c6dc0e465e47e7b380b0685748c6357e6354",
+  "created_at": "2026-09-25T15:48:33.594049Z"
 }

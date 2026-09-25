@@ -1,0 +1,152 @@
+{
+  "project_id": "1069809",
+  "slug": "issueswarm",
+  "title": "IssueSwarm",
+  "tagline": "IssueSwarm is a FastAPI-based webhook service that validates GitHub signatures, triages new issues with Gemini, and posts automated fix suggestions back to GitHub using PyGithub.",
+  "problem_statement": "",
+  "inspiration": "",
+  "what_it_does": "",
+  "how_it_was_built": "",
+  "challenges": "",
+  "accomplishments": "",
+  "lessons_learned": "",
+  "future_plans": "",
+  "tech_tags": [
+    "fast-api",
+    "gemini",
+    "gemini",
+    "google-adk",
+    "google-cloud",
+    "google-cloud",
+    "ngrok",
+    "python",
+    "python"
+  ],
+  "team_size": 4,
+  "repository_metrics": {
+    "repo_url": "https://github.com/Tmwakalasya/IssueSwarm",
+    "status": "accessible",
+    "default_branch": "main",
+    "file_count": 13,
+    "approx_loc": 431,
+    "loc_by_language": {
+      "Python": 431
+    },
+    "primary_languages": [
+      "Python"
+    ],
+    "tech_stack": {
+      "frontend_frameworks": [],
+      "backend_frameworks": [
+        "FastAPI"
+      ],
+      "databases": [],
+      "ai_ml_libraries": [],
+      "model_providers": [
+        "Gemini"
+      ],
+      "cloud_devops": [],
+      "third_party_apis": [],
+      "hardware_components": [],
+      "package_dependencies": [
+        "fastapi",
+        "google-generativeai",
+        "httpx",
+        "pydantic",
+        "pygithub",
+        "python-dotenv",
+        "uvicorn"
+      ]
+    },
+    "git_timeline": {
+      "total_commits": 16,
+      "commits_in_window": 16,
+      "first_commit_time": "2025-09-27T03:49:07Z",
+      "last_commit_time": "2025-09-28T01:54:31Z",
+      "commit_timestamps": [
+        "2025-09-27T03:49:07Z",
+        "2025-09-27T03:54:24Z",
+        "2025-09-27T08:21:21Z",
+        "2025-09-27T21:07:03Z",
+        "2025-09-27T21:09:44Z",
+        "2025-09-27T21:10:19Z",
+        "2025-09-27T21:11:03Z",
+        "2025-09-27T21:14:34Z",
+        "2025-09-27T21:15:23Z",
+        "2025-09-27T21:16:06Z",
+        "2025-09-27T21:18:13Z",
+        "2025-09-27T22:27:17Z",
+        "2025-09-27T22:29:02Z",
+        "2025-09-28T01:51:15Z",
+        "2025-09-28T01:51:51Z",
+        "2025-09-28T01:54:31Z"
+      ],
+      "late_rewrites_detected": false,
+      "deadline_crunch_ratio": 0.81,
+      "final_stage_focus": "debugging",
+      "history_is_squashed_or_minimal": false,
+      "contributor_count": 1,
+      "contributors": [
+        "Tuntufye Mwakalasya"
+      ]
+    },
+    "test_files_count": 2,
+    "test_frameworks": [
+      "unittest",
+      "pytest"
+    ],
+    "has_ci": false,
+    "ci_configs": [],
+    "has_docker": false,
+    "has_env_template": true,
+    "readme_size_bytes": 8090,
+    "has_architecture_docs": true,
+    "api_routes_count": 1,
+    "db_migrations_or_schema_count": 0,
+    "mock_data_detected": false,
+    "mock_data_indicators": [],
+    "todo_fixme_count": 0,
+    "boilerplate_detected": false,
+    "boilerplate_indicators": [],
+    "deployment_check": null,
+    "consistency_with_claims": "partial",
+    "consistency_explanation": "Partial evidence: 4/9 claimed technologies found in codebase.",
+    "actual_integrations_found": [
+      "gemini",
+      "gemini",
+      "python",
+      "python"
+    ],
+    "readme_claims_unsupported_by_code": [
+      "fast-api",
+      "google-adk",
+      "google-cloud",
+      "google-cloud",
+      "ngrok"
+    ],
+    "provenance": [
+      {
+        "claim": "Inspected repository https://github.com/Tmwakalasya/IssueSwarm",
+        "evidence_type": "repository",
+        "source": "https://github.com/Tmwakalasya/IssueSwarm",
+        "location": "root",
+        "confidence": 1.0,
+        "details": null
+      }
+    ]
+  },
+  "demo_summary": {
+    "has_video_demo": true,
+    "video_platform": "youtube",
+    "video_url": "https://www.youtube.com/embed/DyDKi8zbeqs?enablejsapi=1&hl=en_US&rel=0&start=&version=3&wmode=transparent",
+    "duration_seconds": null,
+    "has_live_deployment": false,
+    "deployment_url": "",
+    "deployment_reachable": null,
+    "has_slide_deck": false,
+    "observations": []
+  },
+  "sponsor_technologies_mentioned": [],
+  "bundle_sha256": "045ba3c987f122d22b7d7f52ea770be24c738a7dd6502665ad5dfe03122ed995",
+  "created_at": "2026-09-25T15:48:34.049547Z"
+}

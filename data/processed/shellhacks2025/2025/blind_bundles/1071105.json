@@ -1,0 +1,173 @@
+{
+  "project_id": "1071105",
+  "slug": "aiexamteeth",
+  "title": "AiExamteeth",
+  "tagline": "AIExamTeeth educates you on your dental X-ray: detects and labels cavities, shows cost estimates, and gives flexible payment options.",
+  "problem_statement": "",
+  "inspiration": "",
+  "what_it_does": "",
+  "how_it_was_built": "",
+  "challenges": "",
+  "accomplishments": "",
+  "lessons_learned": "",
+  "future_plans": "",
+  "tech_tags": [
+    "api",
+    "css",
+    "css",
+    "flask",
+    "flask",
+    "html",
+    "html",
+    "javascript",
+    "javascript",
+    "openai",
+    "opencv",
+    "opencv",
+    "pillow",
+    "python",
+    "python",
+    "smtp",
+    "twilio",
+    "twilio",
+    "yolov8"
+  ],
+  "team_size": 2,
+  "repository_metrics": {
+    "repo_url": "https://github.com/Lol0131/AiExamteeth.git",
+    "status": "accessible",
+    "default_branch": "main",
+    "file_count": 85,
+    "approx_loc": 5733,
+    "loc_by_language": {
+      "Python": 3359,
+      "CSS": 10,
+      "JavaScript": 2,
+      "HTML": 2362
+    },
+    "primary_languages": [
+      "Python",
+      "HTML",
+      "CSS",
+      "JavaScript"
+    ],
+    "tech_stack": {
+      "frontend_frameworks": [],
+      "backend_frameworks": [
+        "Flask"
+      ],
+      "databases": [],
+      "ai_ml_libraries": [
+        "PyTorch"
+      ],
+      "model_providers": [
+        "OpenAI"
+      ],
+      "cloud_devops": [],
+      "third_party_apis": [],
+      "hardware_components": [],
+      "package_dependencies": [
+        "flask",
+        "gradio",
+        "numpy",
+        "openai",
+        "opencv-python-headless",
+        "pillow",
+        "python-dotenv",
+        "torch",
+        "twilio",
+        "ultralytics"
+      ]
+    },
+    "git_timeline": {
+      "total_commits": 9,
+      "commits_in_window": 9,
+      "first_commit_time": "2025-09-27T22:30:50Z",
+      "last_commit_time": "2025-12-29T02:05:57Z",
+      "commit_timestamps": [
+        "2025-09-27T22:30:50Z",
+        "2025-09-28T02:46:48Z",
+        "2025-09-28T04:25:58Z",
+        "2025-09-28T07:38:17Z",
+        "2025-09-28T07:40:46Z",
+        "2025-09-28T13:19:43Z",
+        "2025-09-28T14:38:05Z",
+        "2025-10-03T19:21:15Z",
+        "2025-12-29T02:05:57Z"
+      ],
+      "late_rewrites_detected": false,
+      "deadline_crunch_ratio": 0.11,
+      "final_stage_focus": "debugging",
+      "history_is_squashed_or_minimal": false,
+      "contributor_count": 1,
+      "contributors": [
+        "Lol0131"
+      ]
+    },
+    "test_files_count": 13,
+    "test_frameworks": [],
+    "has_ci": false,
+    "ci_configs": [],
+    "has_docker": false,
+    "has_env_template": false,
+    "readme_size_bytes": 5284,
+    "has_architecture_docs": true,
+    "api_routes_count": 0,
+    "db_migrations_or_schema_count": 0,
+    "mock_data_detected": false,
+    "mock_data_indicators": [],
+    "todo_fixme_count": 4,
+    "boilerplate_detected": false,
+    "boilerplate_indicators": [],
+    "deployment_check": null,
+    "consistency_with_claims": "partial",
+    "consistency_explanation": "Partial evidence: 10/19 claimed technologies found in codebase.",
+    "actual_integrations_found": [
+      "flask",
+      "flask",
+      "openai",
+      "opencv",
+      "opencv",
+      "pillow",
+      "python",
+      "python",
+      "twilio",
+      "twilio"
+    ],
+    "readme_claims_unsupported_by_code": [
+      "api",
+      "css",
+      "css",
+      "html",
+      "html",
+      "javascript",
+      "javascript",
+      "smtp",
+      "yolov8"
+    ],
+    "provenance": [
+      {
+        "claim": "Inspected repository https://github.com/Lol0131/AiExamteeth.git",
+        "evidence_type": "repository",
+        "source": "https://github.com/Lol0131/AiExamteeth.git",
+        "location": "root",
+        "confidence": 1.0,
+        "details": null
+      }
+    ]
+  },
+  "demo_summary": {
+    "has_video_demo": true,
+    "video_platform": "youtube",
+    "video_url": "https://www.youtube.com/embed/AN93XlIFrKc?enablejsapi=1&hl=en_US&rel=0&start=&version=3&wmode=transparent",
+    "duration_seconds": null,
+    "has_live_deployment": false,
+    "deployment_url": "",
+    "deployment_reachable": null,
+    "has_slide_deck": false,
+    "observations": []
+  },
+  "sponsor_technologies_mentioned": [],
+  "bundle_sha256": "e5bc54a9357aea7d035a46b01e5adbc31c6f4d4d08fb94b5ff63b6a3f7d86216",
+  "created_at": "2026-09-25T15:48:33.642101Z"
+}
