@@ -12,7 +12,7 @@ from .jev import (
     RUBRIC_DEFINITIONS,
     SCORE_LEVEL_VALUES,
 )
-from .gemini import GeminiClient, ParticipantReportSynthesis
+from .chatgpt import ChatGPTClient, GeminiClient, ParticipantReportSynthesis
 from .cache import AICache, RUBRIC_VERSION
 from .usage import AnalysisUsageStats
 
@@ -141,75 +141,135 @@ class EvaluationRouter:
                 for k, v in cached_result.items()
             }
 
-        # 4. Execute Jev shared-state evaluation
-        jev_resp = self.jev.evaluate(shared_state, questions)
-
-        # 5. Confidence Gating & Gemini Fallback
+        # 4. Evaluation Routing: Jev (Layer 2) if configured, else ChatGPT batch classification
         results: Dict[str, DimensionEvaluationResult] = {}
-        for q in questions:
-            dim = q.id
-            q_res = jev_resp.results.get(dim)
 
-            # Special case: missing demo or criteria -> explicit insufficient_evidence
-            if dim == "demo_strength" and not has_video_demo and not has_live_deployment:
+        if self.jev.is_configured:
+            # Jev Layer 2 with confidence gating to ChatGPT
+            jev_resp = self.jev.evaluate(shared_state, questions)
+            for q in questions:
+                dim = q.id
+                q_res = jev_resp.results.get(dim)
+
+                if dim == "demo_strength" and not has_video_demo and not has_live_deployment:
+                    results[dim] = DimensionEvaluationResult(
+                        dimension=dim,
+                        label="insufficient_evidence",
+                        score=0.0,
+                        confidence=1.0,
+                        provider="deterministic_rule",
+                        is_insufficient_evidence=True,
+                    )
+                    continue
+
+                if dim == "award_alignment" and not award_criteria_text:
+                    results[dim] = DimensionEvaluationResult(
+                        dimension=dim,
+                        label="insufficient_evidence",
+                        score=0.0,
+                        confidence=1.0,
+                        provider="deterministic_rule",
+                        is_insufficient_evidence=True,
+                    )
+                    continue
+
+                if q_res and q_res.confidence >= self.confidence_threshold:
+                    best_label = str(q_res.value)
+                    if isinstance(q_res.value, (int, float)):
+                        best_label = self._score_to_label(float(q_res.value))
+                    score_val = SCORE_LEVEL_VALUES.get(best_label.lower(), 3.0)
+                    results[dim] = DimensionEvaluationResult(
+                        dimension=dim,
+                        label=best_label.lower(),
+                        score=score_val,
+                        confidence=q_res.confidence,
+                        provider="jev",
+                        probabilities=q_res.probabilities,
+                        fallback_used=False,
+                    )
+                else:
+                    reason = "jev_confidence_below_threshold" if q_res else "jev_dimension_missing"
+                    rubric = RUBRIC_DEFINITIONS.get(dim, {})
+                    chatgpt_fallback = self.gemini.classify_ambiguous(
+                        dimension=dim,
+                        untrusted_evidence=shared_state,
+                        rubric_anchors=rubric,
+                        fallback_reason=reason,
+                    )
+                    label = chatgpt_fallback.get("label", "moderate").lower()
+                    results[dim] = DimensionEvaluationResult(
+                        dimension=dim,
+                        label=label,
+                        score=SCORE_LEVEL_VALUES.get(label, 3.0),
+                        confidence=float(chatgpt_fallback.get("confidence", 0.80)),
+                        provider="chatgpt",
+                        fallback_used=True,
+                        fallback_reason=reason,
+                    )
+        elif self.gemini.is_configured:
+            # JEV_API_KEY not yet configured: Route directly through ChatGPT
+            logger.info("JEV_API_KEY not configured. Evaluating rubric dimensions via ChatGPT batch classification.")
+            batch_evals = self.gemini.classify_batch(
+                untrusted_evidence=shared_state,
+                dimensions=BOUNDED_JEV_DIMENSIONS,
+                rubrics=RUBRIC_DEFINITIONS,
+            )
+            for q in questions:
+                dim = q.id
+
+                if dim == "demo_strength" and not has_video_demo and not has_live_deployment:
+                    results[dim] = DimensionEvaluationResult(
+                        dimension=dim,
+                        label="insufficient_evidence",
+                        score=0.0,
+                        confidence=1.0,
+                        provider="deterministic_rule",
+                        is_insufficient_evidence=True,
+                    )
+                    continue
+
+                if dim == "award_alignment" and not award_criteria_text:
+                    results[dim] = DimensionEvaluationResult(
+                        dimension=dim,
+                        label="insufficient_evidence",
+                        score=0.0,
+                        confidence=1.0,
+                        provider="deterministic_rule",
+                        is_insufficient_evidence=True,
+                    )
+                    continue
+
+                dim_eval = batch_evals.get(dim, {})
+                label = str(dim_eval.get("label", "moderate")).lower()
+                conf = float(dim_eval.get("confidence", 0.85))
+                score_val = SCORE_LEVEL_VALUES.get(label, 3.0)
+
                 results[dim] = DimensionEvaluationResult(
                     dimension=dim,
-                    label="insufficient_evidence",
-                    score=0.0,
-                    confidence=1.0,
-                    provider="deterministic_rule",
-                    is_insufficient_evidence=True,
+                    label=label,
+                    score=score_val,
+                    confidence=conf,
+                    provider="chatgpt",
+                    fallback_used=False,
                 )
-                continue
-
-            if dim == "award_alignment" and not award_criteria_text:
-                results[dim] = DimensionEvaluationResult(
-                    dimension=dim,
-                    label="insufficient_evidence",
-                    score=0.0,
-                    confidence=1.0,
-                    provider="deterministic_rule",
-                    is_insufficient_evidence=True,
-                )
-                continue
-
-            # Check if Jev response exists and meets confidence threshold
-            if q_res and q_res.confidence >= self.confidence_threshold:
-                # High Confidence -> Accept Jev classification
-                best_label = str(q_res.value)
-                if isinstance(q_res.value, (int, float)):
-                    # map numeric score back to closest label
+        else:
+            # Neither API key configured: Fall back to local calibrated heuristics
+            jev_resp = self.jev.evaluate(shared_state, questions)
+            for q in questions:
+                dim = q.id
+                q_res = jev_resp.results.get(dim)
+                best_label = str(q_res.value) if q_res else "moderate"
+                if q_res and isinstance(q_res.value, (int, float)):
                     best_label = self._score_to_label(float(q_res.value))
                 score_val = SCORE_LEVEL_VALUES.get(best_label.lower(), 3.0)
-
                 results[dim] = DimensionEvaluationResult(
                     dimension=dim,
                     label=best_label.lower(),
                     score=score_val,
-                    confidence=q_res.confidence,
-                    provider="jev",
-                    probabilities=q_res.probabilities,
-                    fallback_used=False,
-                )
-            else:
-                # Low Confidence or Jev Failure -> Fallback to Gemini
-                reason = "jev_confidence_below_threshold" if q_res else "jev_dimension_missing"
-                rubric = RUBRIC_DEFINITIONS.get(dim, {})
-                gemini_fallback = self.gemini.classify_ambiguous(
-                    dimension=dim,
-                    untrusted_evidence=shared_state,
-                    rubric_anchors=rubric,
-                    fallback_reason=reason,
-                )
-                label = gemini_fallback.get("label", "moderate").lower()
-                results[dim] = DimensionEvaluationResult(
-                    dimension=dim,
-                    label=label,
-                    score=SCORE_LEVEL_VALUES.get(label, 3.0),
-                    confidence=float(gemini_fallback.get("confidence", 0.80)),
-                    provider="gemini",
+                    confidence=q_res.confidence if q_res else 0.80,
+                    provider="offline_calibrated",
                     fallback_used=True,
-                    fallback_reason=reason,
+                    fallback_reason="no_api_keys_configured",
                 )
 
         # Cache final results

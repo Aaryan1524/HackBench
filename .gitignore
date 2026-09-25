@@ -26,6 +26,9 @@ share/python-wheels/
 venv/
 ENV/
 env/
+.env
+.env.local
+*.env
 
 # Pytest / Cache
 .pytest_cache/

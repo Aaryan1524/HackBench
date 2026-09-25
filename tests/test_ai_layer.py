@@ -154,3 +154,26 @@ def test_cache_prevents_duplicate_calls_and_invalidation(tmp_path):
     key_v2 = cache.compute_cache_key("evidence_1", "dim_1", "jev-latest", "v2.0.0")
     assert key_v2 != key1
     assert cache.get(key_v2) is None
+
+
+def test_chatgpt_client_initialization_and_synthesis():
+    """
+    Test ChatGPTClient initialization with environment keys, model fallback, and structured synthesis.
+    """
+    from hackbench.ai.chatgpt import ChatGPTClient
+
+    client = ChatGPTClient(api_key="test-key", model="gpt-5.6-terra")
+    assert client.is_configured
+    assert client.model == "gpt-5.6-terra"
+
+    # Offline/Deterministic synthesis fallback
+    resp = client.synthesize_report(
+        project_name="TestProject",
+        untrusted_evidence="Problem: Real issue\nUser: Specific persona",
+        deterministic_metrics={"approx_loc": 350, "live_deployment_reachable": True},
+        jev_classifications={},
+        historical_comparisons={},
+    )
+    assert resp.synthesis is not None
+    assert len(resp.synthesis.strengths) > 0
+    assert len(resp.synthesis.next_actions) > 0
