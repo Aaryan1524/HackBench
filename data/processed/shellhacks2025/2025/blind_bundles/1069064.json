@@ -57,18 +57,16 @@
     ],
     "tech_stack": {
       "frontend_frameworks": [
-        "React",
-        "TailwindCSS",
         "Vite",
-        "Next.js"
+        "React",
+        "TailwindCSS"
       ],
       "backend_frameworks": [
         "Express.js"
       ],
       "databases": [
         "MongoDB",
-        "Firebase",
-        "PostgreSQL"
+        "Firebase"
       ],
       "ai_ml_libraries": [],
       "model_providers": [],
@@ -80,8 +78,6 @@
         "express",
         "firebase",
         "mongoose",
-        "next",
-        "pg",
         "react",
         "tailwindcss",
         "vite"
@@ -168,9 +164,9 @@
       "contributor_count": 4,
       "contributors": [
         "Minh Q Nguyen",
-        "hoangvu5",
+        "Hoang Vu",
         "QuangMinhNguyen27405",
-        "Hoang Vu"
+        "hoangvu5"
       ]
     },
     "test_files_count": 0,
@@ -243,6 +239,6 @@
     "observations": []
   },
   "sponsor_technologies_mentioned": [],
-  "bundle_sha256": "3ac7f9ff72d82d6cb5e424df10c9ff6cf3d2801d992c3d51420af793121e7752",
-  "created_at": "2026-09-25T15:00:11.508702Z"
+  "bundle_sha256": "cb9d7e80311ff49a584594260d81e8380bedde44dc252c2013698e848ac61547",
+  "created_at": "2026-09-25T15:48:33.497535Z"
 }

@@ -1,0 +1,51 @@
+# Forensic Report: TA.I
+
+## Overview & Metadata
+- **Project Slug**: `ta-i`
+- **Tagline**: Helping teachers help students
+- **Devpost URL**: [ta-i](https://devpost.com/software/ta-i)
+- **Repository URL**: https://github.com/ClaireW004/ta.i
+- **Team Size**: 4
+
+---
+
+# SECTION 1: BLIND ANALYSIS
+*This section was completed and cryptographically sealed prior to revealing judging outcomes.*
+*Integrity Hash: `b39bcf2f45f03d5e317b7836650bc7969009947001d397f8199e193401e02977`*
+
+### Diagnostic Evaluation
+- **Problem Statement**: Helping teachers help students
+- **Target User**: Generic / broad user base
+- **Core Workflow**: 
+- **Verified Software Execution**: Live deployment is active and reachable (https://tai-ten.vercel.app/).
+- **Observable Incompleteness**: Repository is clone_timeout_large_repo; code cannot be verified.
+
+### Observable Repository Metrics
+- **Repo Status**: clone_timeout_large_repo
+- **Approximate LOC**: 0
+- **Primary Languages**: 
+- **Test Files Count**: 0
+- **CI / Docker Configs**: CI=False, Docker=False
+- **Live Endpoint Reachable**: True
+
+### Blind Rubric Scores (0-5 Scale)
+- **Composite Quality Score**: **2.13 / 5.0**
+- **Completion**: 2.3 / 5 (moderate)
+- **Technical Depth**: 1.0 / 5
+- **Product Coherence**: 2.0 / 5
+- **Originality**: 2.0 / 5
+- **Demo Strength**: 4.0 / 5
+- **Evaluator Agreement**: `high_agreement`
+
+---
+
+# SECTION 2: OUTCOME-AWARE ANALYSIS
+*This section was unsealed strictly after blind evaluation was frozen.*
+
+### Official Judging Result
+- **Winner Status**: NON-WINNER
+- **Award Titles**: None
+
+### Forensic Alignment
+- **Classification**: `evidence_strongly_supports_outcome`
+- **Analysis**: Non-winner with composite score 2.13; consistent with median non-winning cohort.

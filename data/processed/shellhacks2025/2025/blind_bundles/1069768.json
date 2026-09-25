@@ -59,9 +59,7 @@
     ],
     "tech_stack": {
       "frontend_frameworks": [
-        "React",
-        "TailwindCSS",
-        "Next.js"
+        "React"
       ],
       "backend_frameworks": [
         "Express.js"
@@ -81,11 +79,9 @@
         "express",
         "firebase",
         "firebase-admin",
-        "next",
         "nodemailer",
         "react",
-        "react-native-get-random-values",
-        "tailwindcss"
+        "react-native-get-random-values"
       ]
     },
     "git_timeline": {
@@ -164,12 +160,12 @@
       "history_is_squashed_or_minimal": false,
       "contributor_count": 6,
       "contributors": [
-        "rockbison1230",
         "Lily Vrionis",
-        "Sameer Bashir",
+        "rockbison1230",
         "Alyssa",
-        "Alyssa Desena",
-        "amana"
+        "Sameer Bashir",
+        "amana",
+        "Alyssa Desena"
       ]
     },
     "test_files_count": 0,
@@ -244,6 +240,6 @@
     "observations": []
   },
   "sponsor_technologies_mentioned": [],
-  "bundle_sha256": "a9cac0e36c2bfecda51551546e4adacad30a8d69db0f2e7e23f9a0f5b469644d",
-  "created_at": "2026-09-25T15:00:11.514451Z"
+  "bundle_sha256": "0b7b9df5b74e79ba2d076f866b878bac1e33ffb46b302e7456f1aa300d8ce787",
+  "created_at": "2026-09-25T15:48:33.506738Z"
 }

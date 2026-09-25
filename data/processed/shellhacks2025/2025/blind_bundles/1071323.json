@@ -38,12 +38,8 @@
       "Python"
     ],
     "tech_stack": {
-      "frontend_frameworks": [
-        "Next.js"
-      ],
-      "backend_frameworks": [
-        "Express.js"
-      ],
+      "frontend_frameworks": [],
+      "backend_frameworks": [],
       "databases": [],
       "ai_ml_libraries": [],
       "model_providers": [
@@ -53,8 +49,6 @@
       "third_party_apis": [],
       "hardware_components": [],
       "package_dependencies": [
-        "express",
-        "next",
         "openai"
       ]
     },
@@ -132,6 +126,6 @@
     "observations": []
   },
   "sponsor_technologies_mentioned": [],
-  "bundle_sha256": "a08a0484152073066dde3cada6e874bbcb58f5645df27bccfff3a6be68100092",
-  "created_at": "2026-09-25T15:00:11.567912Z"
+  "bundle_sha256": "f59efa9932371ae370d4287af6f80e86446b7947d64fc52749b7b171ebecacbf",
+  "created_at": "2026-09-25T15:48:33.610289Z"
 }

@@ -1,0 +1,161 @@
+{
+  "project_id": "1070919",
+  "slug": "chuuchuuride",
+  "title": "ChuuChuuRide",
+  "tagline": "Reinventing the way students commute.  \r\n“Students drive students.” ChuuChuuRide transforms empty seats into safer, cheaper, greener rides—building stronger campuses.",
+  "problem_statement": "",
+  "inspiration": "",
+  "what_it_does": "",
+  "how_it_was_built": "",
+  "challenges": "",
+  "accomplishments": "",
+  "lessons_learned": "",
+  "future_plans": "",
+  "tech_tags": [
+    "auth0",
+    "css",
+    "css",
+    "gemini",
+    "gemini",
+    "google-directions",
+    "google-directions",
+    "google-maps",
+    "google-maps",
+    "google-places",
+    "google-places",
+    "html5",
+    "html5",
+    "react",
+    "react",
+    "typescript",
+    "typescript"
+  ],
+  "team_size": 4,
+  "repository_metrics": {
+    "repo_url": "https://github.com/Paola-DG/ChuuChuuRide---Reinventing-the-Way-Students-Commute",
+    "status": "accessible",
+    "default_branch": "main",
+    "file_count": 70,
+    "approx_loc": 5177,
+    "loc_by_language": {
+      "TypeScript": 5126,
+      "HTML": 51
+    },
+    "primary_languages": [
+      "TypeScript",
+      "HTML"
+    ],
+    "tech_stack": {
+      "frontend_frameworks": [
+        "React",
+        "Vite"
+      ],
+      "backend_frameworks": [],
+      "databases": [],
+      "ai_ml_libraries": [],
+      "model_providers": [
+        "Gemini"
+      ],
+      "cloud_devops": [],
+      "third_party_apis": [],
+      "hardware_components": [],
+      "package_dependencies": [
+        "@auth0/auth0-react",
+        "@google/genai",
+        "@types/node",
+        "@vitejs/plugin-react",
+        "date-fns",
+        "react",
+        "react-dom",
+        "recharts",
+        "typescript",
+        "vite"
+      ]
+    },
+    "git_timeline": {
+      "total_commits": 6,
+      "commits_in_window": 6,
+      "first_commit_time": "2025-09-28T12:16:27Z",
+      "last_commit_time": "2025-09-28T13:05:35Z",
+      "commit_timestamps": [
+        "2025-09-28T12:16:27Z",
+        "2025-09-28T12:17:48Z",
+        "2025-09-28T12:29:20Z",
+        "2025-09-28T12:30:05Z",
+        "2025-09-28T13:05:18Z",
+        "2025-09-28T13:05:35Z"
+      ],
+      "late_rewrites_detected": false,
+      "deadline_crunch_ratio": 0.0,
+      "final_stage_focus": "docs",
+      "history_is_squashed_or_minimal": false,
+      "contributor_count": 1,
+      "contributors": [
+        "Paola Dorado Galicia"
+      ]
+    },
+    "test_files_count": 0,
+    "test_frameworks": [],
+    "has_ci": false,
+    "ci_configs": [],
+    "has_docker": false,
+    "has_env_template": false,
+    "readme_size_bytes": 3080,
+    "has_architecture_docs": false,
+    "api_routes_count": 0,
+    "db_migrations_or_schema_count": 0,
+    "mock_data_detected": false,
+    "mock_data_indicators": [],
+    "todo_fixme_count": 0,
+    "boilerplate_detected": false,
+    "boilerplate_indicators": [],
+    "deployment_check": null,
+    "consistency_with_claims": "partial",
+    "consistency_explanation": "Partial evidence: 7/17 claimed technologies found in codebase.",
+    "actual_integrations_found": [
+      "auth0",
+      "gemini",
+      "gemini",
+      "react",
+      "react",
+      "typescript",
+      "typescript"
+    ],
+    "readme_claims_unsupported_by_code": [
+      "css",
+      "css",
+      "google-directions",
+      "google-directions",
+      "google-maps",
+      "google-maps",
+      "google-places",
+      "google-places",
+      "html5",
+      "html5"
+    ],
+    "provenance": [
+      {
+        "claim": "Inspected repository https://github.com/Paola-DG/ChuuChuuRide---Reinventing-the-Way-Students-Commute",
+        "evidence_type": "repository",
+        "source": "https://github.com/Paola-DG/ChuuChuuRide---Reinventing-the-Way-Students-Commute",
+        "location": "root",
+        "confidence": 1.0,
+        "details": null
+      }
+    ]
+  },
+  "demo_summary": {
+    "has_video_demo": true,
+    "video_platform": "youtube",
+    "video_url": "https://www.youtube.com/embed/WpW-_x3U3kk?enablejsapi=1&hl=en_US&rel=0&start=&version=3&wmode=transparent",
+    "duration_seconds": null,
+    "has_live_deployment": false,
+    "deployment_url": "",
+    "deployment_reachable": null,
+    "has_slide_deck": false,
+    "observations": []
+  },
+  "sponsor_technologies_mentioned": [],
+  "bundle_sha256": "52c487ba504c123130ae32456ab241e08e873bec44cfa72eb9a502beaa8b825a",
+  "created_at": "2026-09-25T15:48:33.807684Z"
+}

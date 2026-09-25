@@ -11,7 +11,7 @@
 
 # SECTION 1: BLIND ANALYSIS
 *This section was completed and cryptographically sealed prior to revealing judging outcomes.*
-*Integrity Hash: `b0bcda92fe735e0f797b9c30855736b74fa891d781c57cb41ef232bc9425272d`*
+*Integrity Hash: `6eccd4244303f807c7cb2e35455bb8880abd446e1190cb3820172a260dd17ee8`*
 
 ### Diagnostic Evaluation
 - **Problem Statement**: CodePT is an interactive ai tutor that teaches the user how to code. It will start with the user at any level and help build them up based on their code by giving suggestions and tips.

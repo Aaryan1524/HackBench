@@ -1,0 +1,127 @@
+{
+  "project_id": "1068567",
+  "slug": "grocerease-ai",
+  "title": "GrocerEase AI",
+  "tagline": "Multi-agent system using Google ADK and A2A helping SNAP/WIC users maximize benefits via smart budgeting, nutrition advice & transit planning through 3 specialized agents.",
+  "problem_statement": "",
+  "inspiration": "",
+  "what_it_does": "",
+  "how_it_was_built": "",
+  "challenges": "",
+  "accomplishments": "",
+  "lessons_learned": "",
+  "future_plans": "",
+  "tech_tags": [
+    "a2a",
+    "adk",
+    "cloud",
+    "gemini",
+    "gemini",
+    "google",
+    "google",
+    "python",
+    "python"
+  ],
+  "team_size": 4,
+  "repository_metrics": {
+    "repo_url": "https://github.com/sreesadhan7/GrocerEase_AI",
+    "status": "accessible",
+    "default_branch": "main",
+    "file_count": 13,
+    "approx_loc": 1697,
+    "loc_by_language": {
+      "Python": 1697
+    },
+    "primary_languages": [
+      "Python"
+    ],
+    "tech_stack": {
+      "frontend_frameworks": [],
+      "backend_frameworks": [],
+      "databases": [],
+      "ai_ml_libraries": [],
+      "model_providers": [],
+      "cloud_devops": [],
+      "third_party_apis": [],
+      "hardware_components": [],
+      "package_dependencies": []
+    },
+    "git_timeline": {
+      "total_commits": 6,
+      "commits_in_window": 6,
+      "first_commit_time": "2025-09-27T14:56:34Z",
+      "last_commit_time": "2025-09-28T14:38:37Z",
+      "commit_timestamps": [
+        "2025-09-27T14:56:34Z",
+        "2025-09-27T16:56:47Z",
+        "2025-09-28T05:44:08Z",
+        "2025-09-28T05:52:05Z",
+        "2025-09-28T14:34:21Z",
+        "2025-09-28T14:38:37Z"
+      ],
+      "late_rewrites_detected": false,
+      "deadline_crunch_ratio": 0.33,
+      "final_stage_focus": "docs",
+      "history_is_squashed_or_minimal": false,
+      "contributor_count": 2,
+      "contributors": [
+        "sreesadhan7",
+        "unknown"
+      ]
+    },
+    "test_files_count": 0,
+    "test_frameworks": [],
+    "has_ci": false,
+    "ci_configs": [],
+    "has_docker": false,
+    "has_env_template": true,
+    "readme_size_bytes": 1039,
+    "has_architecture_docs": false,
+    "api_routes_count": 0,
+    "db_migrations_or_schema_count": 0,
+    "mock_data_detected": false,
+    "mock_data_indicators": [],
+    "todo_fixme_count": 0,
+    "boilerplate_detected": false,
+    "boilerplate_indicators": [],
+    "deployment_check": null,
+    "consistency_with_claims": "inconsistent",
+    "consistency_explanation": "Weak evidence: Only 0/9 claimed technologies detected in codebase.",
+    "actual_integrations_found": [],
+    "readme_claims_unsupported_by_code": [
+      "a2a",
+      "adk",
+      "cloud",
+      "gemini",
+      "gemini",
+      "google",
+      "google",
+      "python",
+      "python"
+    ],
+    "provenance": [
+      {
+        "claim": "Inspected repository https://github.com/sreesadhan7/GrocerEase_AI",
+        "evidence_type": "repository",
+        "source": "https://github.com/sreesadhan7/GrocerEase_AI",
+        "location": "root",
+        "confidence": 1.0,
+        "details": null
+      }
+    ]
+  },
+  "demo_summary": {
+    "has_video_demo": true,
+    "video_platform": "youtube",
+    "video_url": "https://www.youtube.com/embed/8Nh6KVNg0tE?enablejsapi=1&hl=en_US&rel=0&start=&version=3&wmode=transparent",
+    "duration_seconds": null,
+    "has_live_deployment": false,
+    "deployment_url": "",
+    "deployment_reachable": null,
+    "has_slide_deck": false,
+    "observations": []
+  },
+  "sponsor_technologies_mentioned": [],
+  "bundle_sha256": "898d5145be856f510c9bf06a7d2ef9543246865f66e4c75f6aa3c8c5f4920efb",
+  "created_at": "2026-09-25T15:48:33.647914Z"
+}

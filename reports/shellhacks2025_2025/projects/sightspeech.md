@@ -11,7 +11,7 @@
 
 # SECTION 1: BLIND ANALYSIS
 *This section was completed and cryptographically sealed prior to revealing judging outcomes.*
-*Integrity Hash: `1231958aed98858127de503170c016af552fd2cde1a357a798c2c1859dde7842`*
+*Integrity Hash: `ec4af72462c1e493b3e2482f48e4bb0f7a65c777819dfb2e97dbbe5188e185df`*
 
 ### Diagnostic Evaluation
 - **Problem Statement**: Text-to-speech is a near-essential tool for the legally blind; However, normal things like signs, classroom boards, etc., do not have this tool. SightSpeech aims to help solve this issue.

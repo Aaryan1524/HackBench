@@ -1,0 +1,43 @@
+{
+  "project_id": "1070322",
+  "slug": "cad-ai-lva435",
+  "title": "CAD.ai",
+  "tagline": "Cad.ai is an AI-powered assistant that turns your ideas or even uploaded images into fully generated AutoCAD designs instantly, streamlining the way you go from concept to creation.",
+  "problem_statement": "",
+  "inspiration": "",
+  "what_it_does": "",
+  "how_it_was_built": "",
+  "challenges": "",
+  "accomplishments": "",
+  "lessons_learned": "",
+  "future_plans": "",
+  "tech_tags": [
+    "applescript",
+    "applescript",
+    "flask",
+    "flask",
+    "gemini",
+    "gemini",
+    "lisp",
+    "next.js",
+    "openai",
+    "python",
+    "python"
+  ],
+  "team_size": 4,
+  "repository_metrics": null,
+  "demo_summary": {
+    "has_video_demo": true,
+    "video_platform": "youtube",
+    "video_url": "https://www.youtube.com/embed/cH44w6MFXXw?enablejsapi=1&hl=en_US&rel=0&start=&version=3&wmode=transparent",
+    "duration_seconds": null,
+    "has_live_deployment": false,
+    "deployment_url": "",
+    "deployment_reachable": null,
+    "has_slide_deck": false,
+    "observations": []
+  },
+  "sponsor_technologies_mentioned": [],
+  "bundle_sha256": "603cb26fff806893c8cf0c2432442b94dbefc8b580c5a5fd5a9182fa00981167",
+  "created_at": "2026-09-25T15:48:33.666281Z"
+}

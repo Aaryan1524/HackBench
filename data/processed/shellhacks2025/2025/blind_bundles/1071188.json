@@ -1,0 +1,183 @@
+{
+  "project_id": "1071188",
+  "slug": "remind-clyw5p",
+  "title": "ReMind",
+  "tagline": "ReMind simplifies care with Voice AI Agents. Designed for Dementia and Parkinson’s care, it empowers families and caregivers to keep loved ones safe, connected, and self-sufficient",
+  "problem_statement": "",
+  "inspiration": "",
+  "what_it_does": "",
+  "how_it_was_built": "",
+  "challenges": "",
+  "accomplishments": "",
+  "lessons_learned": "",
+  "future_plans": "",
+  "tech_tags": [
+    "fastapi",
+    "postgresql",
+    "postgresql",
+    "react",
+    "react",
+    "tailwind",
+    "typescript",
+    "typescript",
+    "vapi"
+  ],
+  "team_size": 4,
+  "repository_metrics": {
+    "repo_url": "https://github.com/useyourshadow/ShellHacks25",
+    "status": "accessible",
+    "default_branch": "main",
+    "file_count": 65,
+    "approx_loc": 3096,
+    "loc_by_language": {
+      "Python": 1072,
+      "Shell": 21,
+      "HTML": 13,
+      "JavaScript": 23,
+      "TypeScript": 1965,
+      "CSS": 2
+    },
+    "primary_languages": [
+      "TypeScript",
+      "Python",
+      "JavaScript",
+      "Shell",
+      "HTML",
+      "CSS"
+    ],
+    "tech_stack": {
+      "frontend_frameworks": [
+        "React",
+        "Vite",
+        "TailwindCSS"
+      ],
+      "backend_frameworks": [
+        "FastAPI"
+      ],
+      "databases": [],
+      "ai_ml_libraries": [],
+      "model_providers": [],
+      "cloud_devops": [],
+      "third_party_apis": [],
+      "hardware_components": [],
+      "package_dependencies": [
+        "fastapi",
+        "framer-motion",
+        "react",
+        "react-dom",
+        "react-hot-toast",
+        "tailwindcss",
+        "vite"
+      ]
+    },
+    "git_timeline": {
+      "total_commits": 35,
+      "commits_in_window": 35,
+      "first_commit_time": "2025-09-27T06:50:29Z",
+      "last_commit_time": "2025-09-30T01:57:13Z",
+      "commit_timestamps": [
+        "2025-09-27T06:50:29Z",
+        "2025-09-27T16:26:44Z",
+        "2025-09-27T17:33:49Z",
+        "2025-09-27T18:38:39Z",
+        "2025-09-27T19:25:51Z",
+        "2025-09-27T19:38:37Z",
+        "2025-09-27T19:44:41Z",
+        "2025-09-27T20:03:03Z",
+        "2025-09-27T21:05:36Z",
+        "2025-09-27T21:05:49Z",
+        "2025-09-27T21:09:57Z",
+        "2025-09-27T21:25:40Z",
+        "2025-09-27T22:53:07Z",
+        "2025-09-28T00:07:22Z",
+        "2025-09-28T01:45:07Z",
+        "2025-09-28T03:48:35Z",
+        "2025-09-28T03:52:42Z",
+        "2025-09-28T04:55:39Z",
+        "2025-09-28T05:48:57Z",
+        "2025-09-28T05:49:09Z",
+        "2025-09-28T06:06:40Z",
+        "2025-09-28T06:17:30Z",
+        "2025-09-28T06:22:03Z",
+        "2025-09-28T06:26:21Z",
+        "2025-09-28T06:27:38Z",
+        "2025-09-28T07:03:17Z",
+        "2025-09-28T07:22:41Z",
+        "2025-09-28T07:26:17Z",
+        "2025-09-28T07:41:57Z",
+        "2025-09-28T07:47:52Z",
+        "2025-09-28T08:43:24Z",
+        "2025-09-28T08:45:50Z",
+        "2025-09-28T14:36:53Z",
+        "2025-09-28T14:58:37Z",
+        "2025-09-30T01:57:13Z"
+      ],
+      "late_rewrites_detected": false,
+      "deadline_crunch_ratio": 0.03,
+      "final_stage_focus": "docs",
+      "history_is_squashed_or_minimal": false,
+      "contributor_count": 4,
+      "contributors": [
+        "Michael Saint-Blancard",
+        "ronak-kumar1023",
+        "oliver",
+        "michaelsainttt"
+      ]
+    },
+    "test_files_count": 0,
+    "test_frameworks": [],
+    "has_ci": false,
+    "ci_configs": [],
+    "has_docker": false,
+    "has_env_template": false,
+    "readme_size_bytes": 2519,
+    "has_architecture_docs": false,
+    "api_routes_count": 24,
+    "db_migrations_or_schema_count": 2,
+    "mock_data_detected": false,
+    "mock_data_indicators": [],
+    "todo_fixme_count": 0,
+    "boilerplate_detected": false,
+    "boilerplate_indicators": [],
+    "deployment_check": null,
+    "consistency_with_claims": "partial",
+    "consistency_explanation": "Partial evidence: 4/9 claimed technologies found in codebase.",
+    "actual_integrations_found": [
+      "fastapi",
+      "react",
+      "react",
+      "tailwind"
+    ],
+    "readme_claims_unsupported_by_code": [
+      "postgresql",
+      "postgresql",
+      "typescript",
+      "typescript",
+      "vapi"
+    ],
+    "provenance": [
+      {
+        "claim": "Inspected repository https://github.com/useyourshadow/ShellHacks25",
+        "evidence_type": "repository",
+        "source": "https://github.com/useyourshadow/ShellHacks25",
+        "location": "root",
+        "confidence": 1.0,
+        "details": null
+      }
+    ]
+  },
+  "demo_summary": {
+    "has_video_demo": true,
+    "video_platform": "youtube",
+    "video_url": "https://www.youtube.com/embed/hf1Phpkh_o4?enablejsapi=1&hl=en_US&rel=0&start=&version=3&wmode=transparent",
+    "duration_seconds": null,
+    "has_live_deployment": false,
+    "deployment_url": "",
+    "deployment_reachable": null,
+    "has_slide_deck": false,
+    "observations": []
+  },
+  "sponsor_technologies_mentioned": [],
+  "bundle_sha256": "a015f35d3ce02b4abc1b3af32b8f62510e841fa524b364ae8b7bb46e4827c029",
+  "created_at": "2026-09-25T15:48:33.672082Z"
+}

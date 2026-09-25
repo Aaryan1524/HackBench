@@ -44,10 +44,7 @@
       "HTML"
     ],
     "tech_stack": {
-      "frontend_frameworks": [
-        "React",
-        "Next.js"
-      ],
+      "frontend_frameworks": [],
       "backend_frameworks": [],
       "databases": [],
       "ai_ml_libraries": [],
@@ -64,10 +61,8 @@
         "google-generativeai",
         "https://github.com/explosion/spacy-models/releases/download/en_core_web_sm-3.8.0/en_core_web_sm-3.8.0-py3-none-any.whl",
         "litellm",
-        "next",
         "psutil",
         "pydantic",
-        "react",
         "spacy",
         "streamlit",
         "streamlit-folium"
@@ -95,8 +90,8 @@
       "history_is_squashed_or_minimal": false,
       "contributor_count": 2,
       "contributors": [
-        "jorget15",
-        "eilyntudares"
+        "eilyntudares",
+        "jorget15"
       ]
     },
     "test_files_count": 1,
@@ -159,6 +154,6 @@
     "observations": []
   },
   "sponsor_technologies_mentioned": [],
-  "bundle_sha256": "3227bd616213f5a05ec3609001946c168f6a268597a175ddfe428b5fb51091b6",
-  "created_at": "2026-09-25T15:00:11.560418Z"
+  "bundle_sha256": "f11b8fcc3b5b8f173b2525fb5f10522004f84442690e67f3d0be416d57929986",
+  "created_at": "2026-09-25T15:48:33.587408Z"
 }

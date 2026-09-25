@@ -64,41 +64,27 @@
     ],
     "tech_stack": {
       "frontend_frameworks": [
-        "React",
-        "Vue.js",
-        "Vite",
-        "Next.js"
+        "React"
       ],
       "backend_frameworks": [
         "Flask"
       ],
-      "databases": [
-        "Redis",
-        "PostgreSQL"
-      ],
+      "databases": [],
       "ai_ml_libraries": [
         "PyTorch"
       ],
-      "model_providers": [
-        "Groq"
-      ],
+      "model_providers": [],
       "cloud_devops": [],
       "third_party_apis": [],
       "hardware_components": [],
       "package_dependencies": [
         "flask",
         "flask-cors",
-        "groq",
-        "next",
         "numpy",
         "opencv-python",
-        "pg",
         "react",
-        "redis",
         "torch",
         "ultralytics",
-        "vite",
-        "vue",
         "waitress"
       ]
     },
@@ -200,11 +186,11 @@
       "history_is_squashed_or_minimal": false,
       "contributor_count": 6,
       "contributors": [
-        "David Robinson",
-        "mmamdouh4370",
-        "Ahmet Cetin",
         "Max-Grabov",
         "Mohammed Mamdouh",
+        "mmamdouh4370",
+        "Ahmet Cetin",
+        "David Robinson",
         "AhmetCetin24"
       ]
     },
@@ -281,6 +267,6 @@
     "observations": []
   },
   "sponsor_technologies_mentioned": [],
-  "bundle_sha256": "1faf6179a73466c4532f0f997c17edc13d5cf14a9723b7d46c67e9484de407f9",
-  "created_at": "2026-09-25T15:00:11.507237Z"
+  "bundle_sha256": "02d1382e746ac3ff423d39776c5c7f05a501e7b82f7cae294cc8a1417730ce42",
+  "created_at": "2026-09-25T15:48:33.495920Z"
 }

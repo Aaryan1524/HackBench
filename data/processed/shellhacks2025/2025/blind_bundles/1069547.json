@@ -1,0 +1,43 @@
+{
+  "project_id": "1069547",
+  "slug": "studyfinder-9yn8qp",
+  "title": "StudyFinder",
+  "tagline": "Cram studying? Looking for help? We got you covered.",
+  "problem_statement": "",
+  "inspiration": "",
+  "what_it_does": "",
+  "how_it_was_built": "",
+  "challenges": "",
+  "accomplishments": "",
+  "lessons_learned": "",
+  "future_plans": "",
+  "tech_tags": [
+    "css",
+    "css",
+    "firebase",
+    "firebase",
+    "html",
+    "html",
+    "react",
+    "react",
+    "typescript",
+    "typescript",
+    "vscode"
+  ],
+  "team_size": 1,
+  "repository_metrics": null,
+  "demo_summary": {
+    "has_video_demo": true,
+    "video_platform": "youtube",
+    "video_url": "https://www.youtube.com/embed/gpwvwuvanq8?enablejsapi=1&hl=en_US&rel=0&start=&version=3&wmode=transparent",
+    "duration_seconds": null,
+    "has_live_deployment": true,
+    "deployment_url": "https://studyfinderfinal.netlify.app/",
+    "deployment_reachable": null,
+    "has_slide_deck": false,
+    "observations": []
+  },
+  "sponsor_technologies_mentioned": [],
+  "bundle_sha256": "72f5464869febb673fcd691b542ee3c0db04a0880c0d70921da3e9b63ff3004e",
+  "created_at": "2026-09-25T15:48:33.894197Z"
+}

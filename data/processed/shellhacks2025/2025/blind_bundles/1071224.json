@@ -1,0 +1,33 @@
+{
+  "project_id": "1071224",
+  "slug": "shellhacks-vmqjsr",
+  "title": "A Young Adult's Unrealistic Guide to Insurance",
+  "tagline": "Immerse yourself in the lessons of insurance in a fun choose-your-own-adventure format!",
+  "problem_statement": "",
+  "inspiration": "",
+  "what_it_does": "",
+  "how_it_was_built": "",
+  "challenges": "",
+  "accomplishments": "",
+  "lessons_learned": "",
+  "future_plans": "",
+  "tech_tags": [
+    "next.js"
+  ],
+  "team_size": 3,
+  "repository_metrics": null,
+  "demo_summary": {
+    "has_video_demo": true,
+    "video_platform": "youtube",
+    "video_url": "https://www.youtube.com/embed/0AKVHwGTxlE?enablejsapi=1&hl=en_US&rel=0&start=&version=3&wmode=transparent",
+    "duration_seconds": null,
+    "has_live_deployment": false,
+    "deployment_url": "",
+    "deployment_reachable": null,
+    "has_slide_deck": false,
+    "observations": []
+  },
+  "sponsor_technologies_mentioned": [],
+  "bundle_sha256": "4fde4006d8ffe8d2a3e3158615b9b2b490b2e4cbec39271620baf485307d3792",
+  "created_at": "2026-09-25T15:48:33.744822Z"
+}

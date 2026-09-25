@@ -45,7 +45,7 @@
   "team_size": 4,
   "repository_metrics": {
     "repo_url": "https://github.com/Bomoga/Outagent",
-    "status": "clone_timeout_large_repo",
+    "status": "accessible",
     "default_branch": "main",
     "file_count": 0,
     "approx_loc": 0,
@@ -71,7 +71,7 @@
       "late_rewrites_detected": false,
       "deadline_crunch_ratio": 0.0,
       "final_stage_focus": "unknown",
-      "history_is_squashed_or_minimal": false,
+      "history_is_squashed_or_minimal": true,
       "contributor_count": 0,
       "contributors": []
     },
@@ -91,10 +91,40 @@
     "boilerplate_detected": false,
     "boilerplate_indicators": [],
     "deployment_check": null,
-    "consistency_with_claims": "unverifiable",
-    "consistency_explanation": "",
+    "consistency_with_claims": "inconsistent",
+    "consistency_explanation": "Weak evidence: Only 0/29 claimed technologies detected in codebase.",
     "actual_integrations_found": [],
-    "readme_claims_unsupported_by_code": [],
+    "readme_claims_unsupported_by_code": [
+      "a2a",
+      "duckdb",
+      "fastapi",
+      "geopandas",
+      "google-adk",
+      "google-auth",
+      "google-cloud",
+      "google-cloud",
+      "httpx",
+      "lightgbm",
+      "numpy",
+      "numpy",
+      "pandas",
+      "pandas",
+      "pyarrow",
+      "pydantic",
+      "pyproj",
+      "pytest",
+      "pytest-asyncio",
+      "python",
+      "python",
+      "rasterio",
+      "requests-mock",
+      "scikit-learn",
+      "scikit-learn",
+      "shapely",
+      "tenacity",
+      "uvicorn",
+      "xgboost"
+    ],
     "provenance": [
       {
         "claim": "Inspected repository https://github.com/Bomoga/Outagent",
@@ -118,6 +148,6 @@
     "observations": []
   },
   "sponsor_technologies_mentioned": [],
-  "bundle_sha256": "455f363a4cdc27637c56ceaf6e368b01202034c281485161bbbf8dd8f7461647",
-  "created_at": "2026-09-25T15:00:11.536170Z"
+  "bundle_sha256": "d15c5071cec043e7735f84660b1dea892a6dbc036128764f13112c2768a2b512",
+  "created_at": "2026-09-25T15:48:33.542643Z"
 }

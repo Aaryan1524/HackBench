@@ -11,7 +11,7 @@
 
 # SECTION 1: BLIND ANALYSIS
 *This section was completed and cryptographically sealed prior to revealing judging outcomes.*
-*Integrity Hash: `5757d2ec1ecd12bd2a4d95e3186c30eb5b213a6884842fe335a96edbc495b427`*
+*Integrity Hash: `85296cbfd056b989257c817d22dcec319b26a01c4af4fe54d7159144b6b3a9dc`*
 
 ### Diagnostic Evaluation
 - **Problem Statement**: A web-app developed to help prep students for their technical interviews through the use of AI mock interviewer.
@@ -22,7 +22,7 @@
 
 ### Observable Repository Metrics
 - **Repo Status**: accessible
-- **Approximate LOC**: 4609
+- **Approximate LOC**: 4548
 - **Primary Languages**: TypeScript, CSS, JavaScript, HTML
 - **Test Files Count**: 1
 - **CI / Docker Configs**: CI=False, Docker=False
