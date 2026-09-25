@@ -73,6 +73,7 @@ def ingest_event(
 @app.command("collect-projects")
 def collect_projects(
     event_id: str = typer.Argument(..., help="Event slug and year (e.g. shellhacks2025:2025 or URL)"),
+    all_projects: bool = typer.Option(False, "--all", "-a", help="Scrape all projects across all gallery pages"),
     max_projects: Optional[int] = typer.Option(None, "--max-projects", "-m", help="Limit number of projects to scrape"),
     max_pages: Optional[int] = typer.Option(None, "--max-pages", "-p", help="Limit gallery pages"),
 ):
@@ -80,6 +81,10 @@ def collect_projects(
     Discover and ingest project submissions from the hackathon gallery.
     Quarantines official awards into sealed outcomes staging.
     """
+    if all_projects:
+        max_projects = None
+        max_pages = None
+
     slug, year, event_url = _resolve_event(event_id)
     raw_cache = storage.get_raw_dir(slug, year) / "cache"
     client = CachedHttpClient(cache_dir=raw_cache)
@@ -124,11 +129,14 @@ def collect_projects(
 @app.command("collect-repos")
 def collect_repos(
     event_id: str = typer.Argument(..., help="Event identifier (e.g. shellhacks2025:2025)"),
+    all_repos: bool = typer.Option(False, "--all", "-a", help="Analyze all repositories without limit"),
     max_repos: Optional[int] = typer.Option(None, "--max-repos", "-r", help="Limit number of repositories to clone"),
 ):
     """
     Clone accessible GitHub repositories and extract deterministic metrics.
     """
+    if all_repos:
+        max_repos = None
     slug, year, _ = _resolve_event(event_id)
     projects = _load_projects(slug, year)
 
@@ -341,6 +349,7 @@ def generate_reports(
 @app.command("run")
 def run_pipeline(
     event_url: str = typer.Argument(..., help="Hackathon URL (e.g. https://shellhacks2025.devpost.com/)"),
+    all_projects: bool = typer.Option(False, "--all", "-a", help="Run entire pipeline on all submissions without limits"),
     max_projects: Optional[int] = typer.Option(None, "--max-projects", "-m", help="Limit projects to analyze"),
     max_repos: Optional[int] = typer.Option(None, "--max-repos", "-r", help="Limit repositories to clone"),
     max_pages: Optional[int] = typer.Option(None, "--max-pages", "-p", help="Limit gallery pages"),
@@ -349,15 +358,20 @@ def run_pipeline(
     Execute the entire forensic pipeline end-to-end:
     Ingest -> Collect Projects -> Inspect Repos -> Blind Evaluate -> Reveal Results -> Analyze -> Report.
     """
+    if all_projects:
+        max_projects = None
+        max_repos = None
+        max_pages = None
+
     console.print(f"[bold yellow]Executing end-to-end Hackathon Forensics pipeline on {event_url}...[/]")
     # 1. Ingest event
     ingest_event(event_url)
 
     # 2. Collect projects
-    collect_projects(event_url, max_projects=max_projects, max_pages=max_pages)
+    collect_projects(event_url, all_projects=all_projects, max_projects=max_projects, max_pages=max_pages)
 
     # 3. Collect repos
-    collect_repos(event_url, max_repos=max_repos)
+    collect_repos(event_url, all_repos=all_projects, max_repos=max_repos)
 
     # 4. Blind evaluate
     evaluate_blind(event_url)

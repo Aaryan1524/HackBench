@@ -42,3 +42,11 @@ data/forensics.db-journal
 .DS_Store
 .idea/
 .vscode/
+
+# Web & AI Cache
+web/node_modules/
+web/.next/
+web/out/
+data/cache/
+data/raw/participant_repos/
+data/raw/benchmark_candidates/
