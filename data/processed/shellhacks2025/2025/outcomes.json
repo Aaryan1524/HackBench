@@ -1,0 +1,811 @@
+{
+  "1069379": {
+    "project_id": "1069379",
+    "is_winner": true,
+    "is_overall_winner": true,
+    "is_sponsor_winner": true,
+    "is_track_winner": false,
+    "is_beginner_winner": false,
+    "awards": [
+      {
+        "name": "1st, 2nd, & 3rd Best Overall",
+        "award_type": "overall",
+        "sponsor": null,
+        "placement": "1st",
+        "official_source": "https://devpost.com/software/ecosort-ofyuie",
+        "raw_badge_text": "1st, 2nd, & 3rd Best Overall"
+      },
+      {
+        "name": "Wix.com & Base44",
+        "award_type": "sponsor",
+        "sponsor": null,
+        "placement": null,
+        "official_source": "https://devpost.com/software/ecosort-ofyuie",
+        "raw_badge_text": "Wix.com & Base44"
+      }
+    ],
+    "unsealed_at": "2026-09-25T15:00:45.987513Z"
+  },
+  "1071018": {
+    "project_id": "1071018",
+    "is_winner": true,
+    "is_overall_winner": true,
+    "is_sponsor_winner": false,
+    "is_track_winner": false,
+    "is_beginner_winner": false,
+    "awards": [
+      {
+        "name": "1st, 2nd, & 3rd Best Overall",
+        "award_type": "overall",
+        "sponsor": null,
+        "placement": "1st",
+        "official_source": "https://devpost.com/software/floodguard-okgzty",
+        "raw_badge_text": "1st, 2nd, & 3rd Best Overall"
+      }
+    ],
+    "unsealed_at": "2026-09-25T15:00:45.987513Z"
+  },
+  "1068517": {
+    "project_id": "1068517",
+    "is_winner": true,
+    "is_overall_winner": true,
+    "is_sponsor_winner": false,
+    "is_track_winner": false,
+    "is_beginner_winner": false,
+    "awards": [
+      {
+        "name": "1st, 2nd, & 3rd Best Overall",
+        "award_type": "overall",
+        "sponsor": null,
+        "placement": "1st",
+        "official_source": "https://devpost.com/software/magical-girl-os",
+        "raw_badge_text": "1st, 2nd, & 3rd Best Overall"
+      }
+    ],
+    "unsealed_at": "2026-09-25T15:00:45.987513Z"
+  },
+  "1069849": {
+    "project_id": "1069849",
+    "is_winner": true,
+    "is_overall_winner": false,
+    "is_sponsor_winner": false,
+    "is_track_winner": false,
+    "is_beginner_winner": true,
+    "awards": [
+      {
+        "name": "Best First-Time Hacker",
+        "award_type": "beginner",
+        "sponsor": null,
+        "placement": "1st",
+        "official_source": "https://devpost.com/software/happy-head",
+        "raw_badge_text": "Best First-Time Hacker"
+      }
+    ],
+    "unsealed_at": "2026-09-25T15:00:45.987513Z"
+  },
+  "1069682": {
+    "project_id": "1069682",
+    "is_winner": true,
+    "is_overall_winner": false,
+    "is_sponsor_winner": true,
+    "is_track_winner": false,
+    "is_beginner_winner": false,
+    "awards": [
+      {
+        "name": "Google Cloud",
+        "award_type": "sponsor",
+        "sponsor": null,
+        "placement": null,
+        "official_source": "https://devpost.com/software/a11y-b8xg5i",
+        "raw_badge_text": "Google Cloud"
+      }
+    ],
+    "unsealed_at": "2026-09-25T15:00:45.987513Z"
+  },
+  "1070508": {
+    "project_id": "1070508",
+    "is_winner": true,
+    "is_overall_winner": false,
+    "is_sponsor_winner": true,
+    "is_track_winner": false,
+    "is_beginner_winner": false,
+    "awards": [
+      {
+        "name": "Google Cloud",
+        "award_type": "sponsor",
+        "sponsor": null,
+        "placement": null,
+        "official_source": "https://devpost.com/software/straightup-hvet3r",
+        "raw_badge_text": "Google Cloud"
+      }
+    ],
+    "unsealed_at": "2026-09-25T15:00:45.987513Z"
+  },
+  "1068659": {
+    "project_id": "1068659",
+    "is_winner": true,
+    "is_overall_winner": false,
+    "is_sponsor_winner": true,
+    "is_track_winner": false,
+    "is_beginner_winner": false,
+    "awards": [
+      {
+        "name": "Google Cloud",
+        "award_type": "sponsor",
+        "sponsor": null,
+        "placement": null,
+        "official_source": "https://devpost.com/software/brainsafe-browser",
+        "raw_badge_text": "Google Cloud"
+      }
+    ],
+    "unsealed_at": "2026-09-25T15:00:45.987513Z"
+  },
+  "1069863": {
+    "project_id": "1069863",
+    "is_winner": true,
+    "is_overall_winner": false,
+    "is_sponsor_winner": false,
+    "is_track_winner": true,
+    "is_beginner_winner": false,
+    "awards": [
+      {
+        "name": "Waymo",
+        "award_type": "track",
+        "sponsor": null,
+        "placement": null,
+        "official_source": "https://devpost.com/software/birdseye-ck0j12",
+        "raw_badge_text": "Waymo"
+      },
+      {
+        "name": "Assurant",
+        "award_type": "track",
+        "sponsor": null,
+        "placement": null,
+        "official_source": "https://devpost.com/software/birdseye-ck0j12",
+        "raw_badge_text": "Assurant"
+      }
+    ],
+    "unsealed_at": "2026-09-25T15:00:45.987513Z"
+  },
+  "1069064": {
+    "project_id": "1069064",
+    "is_winner": true,
+    "is_overall_winner": false,
+    "is_sponsor_winner": false,
+    "is_track_winner": true,
+    "is_beginner_winner": false,
+    "awards": [
+      {
+        "name": "Waymo",
+        "award_type": "track",
+        "sponsor": null,
+        "placement": null,
+        "official_source": "https://devpost.com/software/openpotholemap",
+        "raw_badge_text": "Waymo"
+      }
+    ],
+    "unsealed_at": "2026-09-25T15:00:45.987513Z"
+  },
+  "1070435": {
+    "project_id": "1070435",
+    "is_winner": true,
+    "is_overall_winner": false,
+    "is_sponsor_winner": true,
+    "is_track_winner": true,
+    "is_beginner_winner": false,
+    "awards": [
+      {
+        "name": "Waymo",
+        "award_type": "track",
+        "sponsor": null,
+        "placement": null,
+        "official_source": "https://devpost.com/software/vl-adk",
+        "raw_badge_text": "Waymo"
+      },
+      {
+        "name": "NVIDIA",
+        "award_type": "track",
+        "sponsor": null,
+        "placement": null,
+        "official_source": "https://devpost.com/software/vl-adk",
+        "raw_badge_text": "NVIDIA"
+      },
+      {
+        "name": "Microsoft",
+        "award_type": "sponsor",
+        "sponsor": null,
+        "placement": null,
+        "official_source": "https://devpost.com/software/vl-adk",
+        "raw_badge_text": "Microsoft"
+      }
+    ],
+    "unsealed_at": "2026-09-25T15:00:45.987513Z"
+  },
+  "1071262": {
+    "project_id": "1071262",
+    "is_winner": true,
+    "is_overall_winner": false,
+    "is_sponsor_winner": false,
+    "is_track_winner": true,
+    "is_beginner_winner": false,
+    "awards": [
+      {
+        "name": "Assurant",
+        "award_type": "track",
+        "sponsor": null,
+        "placement": null,
+        "official_source": "https://devpost.com/software/clarita",
+        "raw_badge_text": "Assurant"
+      }
+    ],
+    "unsealed_at": "2026-09-25T15:00:45.987513Z"
+  },
+  "1070574": {
+    "project_id": "1070574",
+    "is_winner": true,
+    "is_overall_winner": false,
+    "is_sponsor_winner": true,
+    "is_track_winner": true,
+    "is_beginner_winner": false,
+    "awards": [
+      {
+        "name": "Assurant",
+        "award_type": "track",
+        "sponsor": null,
+        "placement": null,
+        "official_source": "https://devpost.com/software/prep-bear",
+        "raw_badge_text": "Assurant"
+      },
+      {
+        "name": "Microsoft",
+        "award_type": "sponsor",
+        "sponsor": null,
+        "placement": null,
+        "official_source": "https://devpost.com/software/prep-bear",
+        "raw_badge_text": "Microsoft"
+      }
+    ],
+    "unsealed_at": "2026-09-25T15:00:45.987513Z"
+  },
+  "1071177": {
+    "project_id": "1071177",
+    "is_winner": true,
+    "is_overall_winner": false,
+    "is_sponsor_winner": true,
+    "is_track_winner": false,
+    "is_beginner_winner": false,
+    "awards": [
+      {
+        "name": "Google",
+        "award_type": "sponsor",
+        "sponsor": null,
+        "placement": null,
+        "official_source": "https://devpost.com/software/tyodor",
+        "raw_badge_text": "Google"
+      }
+    ],
+    "unsealed_at": "2026-09-25T15:00:45.987513Z"
+  },
+  "1069768": {
+    "project_id": "1069768",
+    "is_winner": true,
+    "is_overall_winner": false,
+    "is_sponsor_winner": true,
+    "is_track_winner": false,
+    "is_beginner_winner": false,
+    "awards": [
+      {
+        "name": "Google",
+        "award_type": "sponsor",
+        "sponsor": null,
+        "placement": null,
+        "official_source": "https://devpost.com/software/beacon-fc3qis",
+        "raw_badge_text": "Google"
+      }
+    ],
+    "unsealed_at": "2026-09-25T15:00:45.987513Z"
+  },
+  "1071123": {
+    "project_id": "1071123",
+    "is_winner": true,
+    "is_overall_winner": false,
+    "is_sponsor_winner": true,
+    "is_track_winner": false,
+    "is_beginner_winner": false,
+    "awards": [
+      {
+        "name": "Google",
+        "award_type": "sponsor",
+        "sponsor": null,
+        "placement": null,
+        "official_source": "https://devpost.com/software/ezspeak-30hy1w",
+        "raw_badge_text": "Google"
+      }
+    ],
+    "unsealed_at": "2026-09-25T15:00:45.987513Z"
+  },
+  "1070822": {
+    "project_id": "1070822",
+    "is_winner": true,
+    "is_overall_winner": false,
+    "is_sponsor_winner": false,
+    "is_track_winner": true,
+    "is_beginner_winner": false,
+    "awards": [
+      {
+        "name": "State Farm",
+        "award_type": "track",
+        "sponsor": null,
+        "placement": null,
+        "official_source": "https://devpost.com/software/the-rat-race",
+        "raw_badge_text": "State Farm"
+      },
+      {
+        "name": "Netflix",
+        "award_type": "track",
+        "sponsor": null,
+        "placement": null,
+        "official_source": "https://devpost.com/software/the-rat-race",
+        "raw_badge_text": "Netflix"
+      }
+    ],
+    "unsealed_at": "2026-09-25T15:00:45.987513Z"
+  },
+  "1068936": {
+    "project_id": "1068936",
+    "is_winner": true,
+    "is_overall_winner": false,
+    "is_sponsor_winner": false,
+    "is_track_winner": true,
+    "is_beginner_winner": false,
+    "awards": [
+      {
+        "name": "State Farm",
+        "award_type": "track",
+        "sponsor": null,
+        "placement": null,
+        "official_source": "https://devpost.com/software/next-step-cme06a",
+        "raw_badge_text": "State Farm"
+      }
+    ],
+    "unsealed_at": "2026-09-25T15:00:45.987513Z"
+  },
+  "1070348": {
+    "project_id": "1070348",
+    "is_winner": true,
+    "is_overall_winner": false,
+    "is_sponsor_winner": false,
+    "is_track_winner": true,
+    "is_beginner_winner": false,
+    "awards": [
+      {
+        "name": "State Farm",
+        "award_type": "track",
+        "sponsor": null,
+        "placement": null,
+        "official_source": "https://devpost.com/software/greenlight-idnv6o",
+        "raw_badge_text": "State Farm"
+      }
+    ],
+    "unsealed_at": "2026-09-25T15:00:45.987513Z"
+  },
+  "1071163": {
+    "project_id": "1071163",
+    "is_winner": true,
+    "is_overall_winner": false,
+    "is_sponsor_winner": false,
+    "is_track_winner": true,
+    "is_beginner_winner": false,
+    "awards": [
+      {
+        "name": "Netflix",
+        "award_type": "track",
+        "sponsor": null,
+        "placement": null,
+        "official_source": "https://devpost.com/software/quests-and-conflicts-vr",
+        "raw_badge_text": "Netflix"
+      }
+    ],
+    "unsealed_at": "2026-09-25T15:00:45.987513Z"
+  },
+  "1069795": {
+    "project_id": "1069795",
+    "is_winner": true,
+    "is_overall_winner": false,
+    "is_sponsor_winner": true,
+    "is_track_winner": false,
+    "is_beginner_winner": false,
+    "awards": [
+      {
+        "name": "Microsoft",
+        "award_type": "sponsor",
+        "sponsor": null,
+        "placement": null,
+        "official_source": "https://devpost.com/software/ctrl-arm",
+        "raw_badge_text": "Microsoft"
+      }
+    ],
+    "unsealed_at": "2026-09-25T15:00:45.987513Z"
+  },
+  "1070248": {
+    "project_id": "1070248",
+    "is_winner": true,
+    "is_overall_winner": false,
+    "is_sponsor_winner": false,
+    "is_track_winner": true,
+    "is_beginner_winner": false,
+    "awards": [
+      {
+        "name": "Capital One",
+        "award_type": "track",
+        "sponsor": null,
+        "placement": null,
+        "official_source": "https://devpost.com/software/agentzero-tnh9p3",
+        "raw_badge_text": "Capital One"
+      }
+    ],
+    "unsealed_at": "2026-09-25T15:00:45.987513Z"
+  },
+  "1069733": {
+    "project_id": "1069733",
+    "is_winner": true,
+    "is_overall_winner": false,
+    "is_sponsor_winner": true,
+    "is_track_winner": false,
+    "is_beginner_winner": false,
+    "awards": [
+      {
+        "name": "Wix.com & Base44",
+        "award_type": "sponsor",
+        "sponsor": null,
+        "placement": null,
+        "official_source": "https://devpost.com/software/moneysensei",
+        "raw_badge_text": "Wix.com & Base44"
+      }
+    ],
+    "unsealed_at": "2026-09-25T15:00:45.987513Z"
+  },
+  "1070548": {
+    "project_id": "1070548",
+    "is_winner": true,
+    "is_overall_winner": false,
+    "is_sponsor_winner": true,
+    "is_track_winner": false,
+    "is_beginner_winner": false,
+    "awards": [
+      {
+        "name": "Wix.com & Base44",
+        "award_type": "sponsor",
+        "sponsor": null,
+        "placement": null,
+        "official_source": "https://devpost.com/software/devpost-weu7vz",
+        "raw_badge_text": "Wix.com & Base44"
+      }
+    ],
+    "unsealed_at": "2026-09-25T15:00:45.987513Z"
+  },
+  "1069586": {
+    "project_id": "1069586",
+    "is_winner": true,
+    "is_overall_winner": false,
+    "is_sponsor_winner": false,
+    "is_track_winner": true,
+    "is_beginner_winner": false,
+    "awards": [
+      {
+        "name": "Github",
+        "award_type": "track",
+        "sponsor": null,
+        "placement": null,
+        "official_source": "https://devpost.com/software/gitflow-bzwcov",
+        "raw_badge_text": "Github"
+      }
+    ],
+    "unsealed_at": "2026-09-25T15:00:45.987513Z"
+  },
+  "1069323": {
+    "project_id": "1069323",
+    "is_winner": true,
+    "is_overall_winner": false,
+    "is_sponsor_winner": false,
+    "is_track_winner": true,
+    "is_beginner_winner": false,
+    "awards": [
+      {
+        "name": "Wolfram",
+        "award_type": "track",
+        "sponsor": null,
+        "placement": null,
+        "official_source": "https://devpost.com/software/intelligent-poker-league",
+        "raw_badge_text": "Wolfram"
+      }
+    ],
+    "unsealed_at": "2026-09-25T15:00:45.987513Z"
+  },
+  "1070563": {
+    "project_id": "1070563",
+    "is_winner": true,
+    "is_overall_winner": false,
+    "is_sponsor_winner": false,
+    "is_track_winner": true,
+    "is_beginner_winner": false,
+    "awards": [
+      {
+        "name": "Wolfram",
+        "award_type": "track",
+        "sponsor": null,
+        "placement": null,
+        "official_source": "https://devpost.com/software/wolframination",
+        "raw_badge_text": "Wolfram"
+      }
+    ],
+    "unsealed_at": "2026-09-25T15:00:45.987513Z"
+  },
+  "1068477": {
+    "project_id": "1068477",
+    "is_winner": true,
+    "is_overall_winner": false,
+    "is_sponsor_winner": false,
+    "is_track_winner": true,
+    "is_beginner_winner": false,
+    "awards": [
+      {
+        "name": "MLH || Best Use of Gemini API || Mechanical Keyboards",
+        "award_type": "track",
+        "sponsor": null,
+        "placement": null,
+        "official_source": "https://devpost.com/software/sightspeech",
+        "raw_badge_text": "MLH || Best Use of Gemini API || Mechanical Keyboards"
+      }
+    ],
+    "unsealed_at": "2026-09-25T15:00:45.987513Z"
+  },
+  "1069796": {
+    "project_id": "1069796",
+    "is_winner": true,
+    "is_overall_winner": false,
+    "is_sponsor_winner": false,
+    "is_track_winner": true,
+    "is_beginner_winner": false,
+    "awards": [
+      {
+        "name": "MLH || Best Use of Auth0 || Wireless Headphones",
+        "award_type": "track",
+        "sponsor": null,
+        "placement": null,
+        "official_source": "https://devpost.com/software/sylly",
+        "raw_badge_text": "MLH || Best Use of Auth0 || Wireless Headphones"
+      }
+    ],
+    "unsealed_at": "2026-09-25T15:00:45.987513Z"
+  },
+  "1070953": {
+    "project_id": "1070953",
+    "is_winner": true,
+    "is_overall_winner": false,
+    "is_sponsor_winner": false,
+    "is_track_winner": true,
+    "is_beginner_winner": false,
+    "awards": [
+      {
+        "name": "MLH || Best Domain Name from GoDaddy Registry || Digital Gift Card",
+        "award_type": "track",
+        "sponsor": null,
+        "placement": null,
+        "official_source": "https://devpost.com/software/memoray",
+        "raw_badge_text": "MLH || Best Domain Name from GoDaddy Registry || Digital Gift Card"
+      }
+    ],
+    "unsealed_at": "2026-09-25T15:00:45.987513Z"
+  },
+  "1071248": {
+    "project_id": "1071248",
+    "is_winner": false,
+    "is_overall_winner": false,
+    "is_sponsor_winner": false,
+    "is_track_winner": false,
+    "is_beginner_winner": false,
+    "awards": [],
+    "unsealed_at": "2026-09-25T15:00:45.987513Z"
+  },
+  "1068495": {
+    "project_id": "1068495",
+    "is_winner": false,
+    "is_overall_winner": false,
+    "is_sponsor_winner": false,
+    "is_track_winner": false,
+    "is_beginner_winner": false,
+    "awards": [],
+    "unsealed_at": "2026-09-25T15:00:45.987513Z"
+  },
+  "1071242": {
+    "project_id": "1071242",
+    "is_winner": false,
+    "is_overall_winner": false,
+    "is_sponsor_winner": false,
+    "is_track_winner": false,
+    "is_beginner_winner": false,
+    "awards": [],
+    "unsealed_at": "2026-09-25T15:00:45.987513Z"
+  },
+  "1068504": {
+    "project_id": "1068504",
+    "is_winner": false,
+    "is_overall_winner": false,
+    "is_sponsor_winner": false,
+    "is_track_winner": false,
+    "is_beginner_winner": false,
+    "awards": [],
+    "unsealed_at": "2026-09-25T15:00:45.987513Z"
+  },
+  "1071392": {
+    "project_id": "1071392",
+    "is_winner": false,
+    "is_overall_winner": false,
+    "is_sponsor_winner": false,
+    "is_track_winner": false,
+    "is_beginner_winner": false,
+    "awards": [],
+    "unsealed_at": "2026-09-25T15:00:45.987513Z"
+  },
+  "1071253": {
+    "project_id": "1071253",
+    "is_winner": false,
+    "is_overall_winner": false,
+    "is_sponsor_winner": false,
+    "is_track_winner": false,
+    "is_beginner_winner": false,
+    "awards": [],
+    "unsealed_at": "2026-09-25T15:00:45.987513Z"
+  },
+  "1071053": {
+    "project_id": "1071053",
+    "is_winner": false,
+    "is_overall_winner": false,
+    "is_sponsor_winner": false,
+    "is_track_winner": false,
+    "is_beginner_winner": false,
+    "awards": [],
+    "unsealed_at": "2026-09-25T15:00:45.987513Z"
+  },
+  "1070441": {
+    "project_id": "1070441",
+    "is_winner": false,
+    "is_overall_winner": false,
+    "is_sponsor_winner": false,
+    "is_track_winner": false,
+    "is_beginner_winner": false,
+    "awards": [],
+    "unsealed_at": "2026-09-25T15:00:45.987513Z"
+  },
+  "1071114": {
+    "project_id": "1071114",
+    "is_winner": false,
+    "is_overall_winner": false,
+    "is_sponsor_winner": false,
+    "is_track_winner": false,
+    "is_beginner_winner": false,
+    "awards": [],
+    "unsealed_at": "2026-09-25T15:00:45.987513Z"
+  },
+  "1071259": {
+    "project_id": "1071259",
+    "is_winner": false,
+    "is_overall_winner": false,
+    "is_sponsor_winner": false,
+    "is_track_winner": false,
+    "is_beginner_winner": false,
+    "awards": [],
+    "unsealed_at": "2026-09-25T15:00:45.987513Z"
+  },
+  "1071180": {
+    "project_id": "1071180",
+    "is_winner": false,
+    "is_overall_winner": false,
+    "is_sponsor_winner": false,
+    "is_track_winner": false,
+    "is_beginner_winner": false,
+    "awards": [],
+    "unsealed_at": "2026-09-25T15:00:45.987513Z"
+  },
+  "1071212": {
+    "project_id": "1071212",
+    "is_winner": false,
+    "is_overall_winner": false,
+    "is_sponsor_winner": false,
+    "is_track_winner": false,
+    "is_beginner_winner": false,
+    "awards": [],
+    "unsealed_at": "2026-09-25T15:00:45.987513Z"
+  },
+  "1071111": {
+    "project_id": "1071111",
+    "is_winner": false,
+    "is_overall_winner": false,
+    "is_sponsor_winner": false,
+    "is_track_winner": false,
+    "is_beginner_winner": false,
+    "awards": [],
+    "unsealed_at": "2026-09-25T15:00:45.987513Z"
+  },
+  "1068644": {
+    "project_id": "1068644",
+    "is_winner": false,
+    "is_overall_winner": false,
+    "is_sponsor_winner": false,
+    "is_track_winner": false,
+    "is_beginner_winner": false,
+    "awards": [],
+    "unsealed_at": "2026-09-25T15:00:45.987513Z"
+  },
+  "1071233": {
+    "project_id": "1071233",
+    "is_winner": false,
+    "is_overall_winner": false,
+    "is_sponsor_winner": false,
+    "is_track_winner": false,
+    "is_beginner_winner": false,
+    "awards": [],
+    "unsealed_at": "2026-09-25T15:00:45.987513Z"
+  },
+  "1071169": {
+    "project_id": "1071169",
+    "is_winner": false,
+    "is_overall_winner": false,
+    "is_sponsor_winner": false,
+    "is_track_winner": false,
+    "is_beginner_winner": false,
+    "awards": [],
+    "unsealed_at": "2026-09-25T15:00:45.987513Z"
+  },
+  "1071251": {
+    "project_id": "1071251",
+    "is_winner": false,
+    "is_overall_winner": false,
+    "is_sponsor_winner": false,
+    "is_track_winner": false,
+    "is_beginner_winner": false,
+    "awards": [],
+    "unsealed_at": "2026-09-25T15:00:45.987513Z"
+  },
+  "1070978": {
+    "project_id": "1070978",
+    "is_winner": false,
+    "is_overall_winner": false,
+    "is_sponsor_winner": false,
+    "is_track_winner": false,
+    "is_beginner_winner": false,
+    "awards": [],
+    "unsealed_at": "2026-09-25T15:00:45.987513Z"
+  },
+  "1071139": {
+    "project_id": "1071139",
+    "is_winner": false,
+    "is_overall_winner": false,
+    "is_sponsor_winner": false,
+    "is_track_winner": false,
+    "is_beginner_winner": false,
+    "awards": [],
+    "unsealed_at": "2026-09-25T15:00:45.987513Z"
+  },
+  "1071287": {
+    "project_id": "1071287",
+    "is_winner": false,
+    "is_overall_winner": false,
+    "is_sponsor_winner": false,
+    "is_track_winner": false,
+    "is_beginner_winner": false,
+    "awards": [],
+    "unsealed_at": "2026-09-25T15:00:45.987513Z"
+  },
+  "1071323": {
+    "project_id": "1071323",
+    "is_winner": false,
+    "is_overall_winner": false,
+    "is_sponsor_winner": false,
+    "is_track_winner": false,
+    "is_beginner_winner": false,
+    "awards": [],
+    "unsealed_at": "2026-09-25T15:00:45.987513Z"
+  }
+}

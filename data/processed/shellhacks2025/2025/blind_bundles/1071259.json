@@ -1,0 +1,165 @@
+{
+  "project_id": "1071259",
+  "slug": "meow-censor",
+  "title": "Meow Censor",
+  "tagline": "A cuter way to deal with unsavory language.",
+  "problem_statement": "",
+  "inspiration": "",
+  "what_it_does": "",
+  "how_it_was_built": "",
+  "challenges": "",
+  "accomplishments": "",
+  "lessons_learned": "",
+  "future_plans": "",
+  "tech_tags": [
+    "freesound-api",
+    "gemini",
+    "gemini",
+    "google-adk",
+    "google-gemini",
+    "openai-whisper",
+    "streamlit"
+  ],
+  "team_size": 2,
+  "repository_metrics": {
+    "repo_url": "https://github.com/greenzanman/meowCensor",
+    "status": "accessible",
+    "default_branch": "main",
+    "file_count": 40,
+    "approx_loc": 1120,
+    "loc_by_language": {
+      "Python": 1120
+    },
+    "primary_languages": [
+      "Python"
+    ],
+    "tech_stack": {
+      "frontend_frameworks": [
+        "Next.js"
+      ],
+      "backend_frameworks": [],
+      "databases": [],
+      "ai_ml_libraries": [],
+      "model_providers": [],
+      "cloud_devops": [],
+      "third_party_apis": [],
+      "hardware_components": [],
+      "package_dependencies": [
+        "\u0000",
+        "\u0000#\u0000 \u0000",
+        "\u0000a\u0000u\u0000d\u0000i\u0000o\u0000-\u0000r\u0000e\u0000c\u0000o\u0000r\u0000d\u0000e\u0000r\u0000-\u0000s\u0000t\u0000r\u0000e\u0000a\u0000m\u0000l\u0000i\u0000t\u0000",
+        "\u0000f\u0000r\u0000e\u0000e\u0000s\u0000o\u0000u\u0000n\u0000d\u0000-\u0000p\u0000y\u0000t\u0000h\u0000o\u0000n\u0000 \u0000@\u0000 \u0000g\u0000i\u0000t\u0000+\u0000h\u0000t\u0000t\u0000p\u0000s\u0000:\u0000/\u0000/\u0000g\u0000i\u0000t\u0000h\u0000u\u0000b\u0000.\u0000c\u0000o\u0000m\u0000/\u0000m\u0000t\u0000g\u0000/\u0000f\u0000r\u0000e\u0000e\u0000s\u0000o\u0000u\u0000n\u0000d\u0000-\u0000p\u0000y\u0000t\u0000h\u0000o\u0000n\u0000@\u00005\u0000b\u0000e\u00009\u00009\u0000a\u00003\u00006\u00008\u00009\u0000d\u00001\u00007\u00003\u00000\u00003\u0000c\u00000\u00001\u0000c\u0000b\u00001\u00002\u00002\u0000b\u0000b\u0000b\u00000\u0000d\u00005\u0000a\u00009\u00006\u0000e\u0000b\u0000a\u00000\u00004\u0000f\u00006\u0000",
+        "\u0000g\u0000o\u0000o\u0000g\u0000l\u0000e\u0000-\u0000a\u0000d\u0000k\u0000",
+        "\u0000g\u0000o\u0000o\u0000g\u0000l\u0000e\u0000-\u0000g\u0000e\u0000n\u0000a\u0000i\u0000",
+        "\u0000l\u0000i\u0000b\u0000r\u0000o\u0000s\u0000a\u0000",
+        "\u0000n\u0000u\u0000m\u0000p\u0000y\u0000",
+        "\u0000o\u0000p\u0000e\u0000n\u0000a\u0000i\u0000-\u0000w\u0000h\u0000i\u0000s\u0000p\u0000e\u0000r\u0000",
+        "\u0000p\u0000a\u0000n\u0000d\u0000a\u0000s\u0000",
+        "\u0000p\u0000y\u0000d\u0000a\u0000n\u0000t\u0000i\u0000c\u0000",
+        "\u0000p\u0000y\u0000d\u0000u\u0000b\u0000",
+        "\u0000p\u0000y\u0000t\u0000h\u0000o\u0000n\u0000-\u0000d\u0000o\u0000t\u0000e\u0000n\u0000v\u0000",
+        "\u0000s\u0000o\u0000u\u0000n\u0000d\u0000f\u0000i\u0000l\u0000e\u0000",
+        "\u0000s\u0000t\u0000r\u0000e\u0000a\u0000m\u0000l\u0000i\u0000t\u0000",
+        "\u0000t\u0000q\u0000d\u0000m\u0000",
+        "genkit",
+        "next"
+      ]
+    },
+    "git_timeline": {
+      "total_commits": 24,
+      "commits_in_window": 24,
+      "first_commit_time": "2025-09-27T06:38:28Z",
+      "last_commit_time": "2025-09-28T14:39:14Z",
+      "commit_timestamps": [
+        "2025-09-27T06:38:28Z",
+        "2025-09-27T07:53:04Z",
+        "2025-09-27T07:58:35Z",
+        "2025-09-27T16:46:25Z",
+        "2025-09-27T17:54:18Z",
+        "2025-09-27T17:54:36Z",
+        "2025-09-27T18:04:17Z",
+        "2025-09-27T18:15:12Z",
+        "2025-09-27T18:51:39Z",
+        "2025-09-27T18:51:47Z",
+        "2025-09-27T18:52:00Z",
+        "2025-09-27T20:35:21Z",
+        "2025-09-28T00:32:39Z",
+        "2025-09-28T01:06:13Z",
+        "2025-09-28T01:14:35Z",
+        "2025-09-28T01:17:43Z",
+        "2025-09-28T01:32:48Z",
+        "2025-09-28T01:33:21Z",
+        "2025-09-28T01:33:36Z",
+        "2025-09-28T01:33:52Z",
+        "2025-09-28T01:34:05Z",
+        "2025-09-28T01:43:00Z",
+        "2025-09-28T02:28:14Z",
+        "2025-09-28T14:39:14Z"
+      ],
+      "late_rewrites_detected": false,
+      "deadline_crunch_ratio": 0.04,
+      "final_stage_focus": "docs",
+      "history_is_squashed_or_minimal": false,
+      "contributor_count": 3,
+      "contributors": [
+        "greenzanman",
+        "Zane Manning",
+        "Yikazoid"
+      ]
+    },
+    "test_files_count": 4,
+    "test_frameworks": [
+      "unittest"
+    ],
+    "has_ci": false,
+    "ci_configs": [],
+    "has_docker": false,
+    "has_env_template": false,
+    "readme_size_bytes": 3470,
+    "has_architecture_docs": false,
+    "api_routes_count": 0,
+    "db_migrations_or_schema_count": 52,
+    "mock_data_detected": false,
+    "mock_data_indicators": [],
+    "todo_fixme_count": 0,
+    "boilerplate_detected": false,
+    "boilerplate_indicators": [],
+    "deployment_check": null,
+    "consistency_with_claims": "inconsistent",
+    "consistency_explanation": "Weak evidence: Only 0/7 claimed technologies detected in codebase.",
+    "actual_integrations_found": [],
+    "readme_claims_unsupported_by_code": [
+      "freesound-api",
+      "gemini",
+      "gemini",
+      "google-adk",
+      "google-gemini",
+      "openai-whisper",
+      "streamlit"
+    ],
+    "provenance": [
+      {
+        "claim": "Inspected repository https://github.com/greenzanman/meowCensor",
+        "evidence_type": "repository",
+        "source": "https://github.com/greenzanman/meowCensor",
+        "location": "root",
+        "confidence": 1.0,
+        "details": null
+      }
+    ]
+  },
+  "demo_summary": {
+    "has_video_demo": true,
+    "video_platform": "youtube",
+    "video_url": "https://www.youtube.com/embed/VPbH9b8I2rE?enablejsapi=1&hl=en_US&rel=0&start=&version=3&wmode=transparent",
+    "duration_seconds": null,
+    "has_live_deployment": false,
+    "deployment_url": "",
+    "deployment_reachable": null,
+    "has_slide_deck": false,
+    "observations": []
+  },
+  "sponsor_technologies_mentioned": [],
+  "bundle_sha256": "58d74beb1ae77939697ccfde4b89533f04801d96f3dbbe51cace5c068322e14f",
+  "created_at": "2026-09-25T15:00:11.546684Z"
+}

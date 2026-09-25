@@ -1,0 +1,173 @@
+{
+  "project_id": "1069682",
+  "slug": "a11y-b8xg5i",
+  "title": "A11y Tools",
+  "tagline": "A Google Chrome extension that elevates the limitations of people with disabilities and makes web pages accessible to a wider audience.",
+  "problem_statement": "",
+  "inspiration": "",
+  "what_it_does": "",
+  "how_it_was_built": "",
+  "challenges": "",
+  "accomplishments": "",
+  "lessons_learned": "",
+  "future_plans": "",
+  "tech_tags": [
+    "agent-based",
+    "css",
+    "css",
+    "fastapi",
+    "gemini",
+    "gemini",
+    "google-cloud-ai",
+    "googleadk",
+    "html",
+    "html",
+    "javascript",
+    "javascript",
+    "python",
+    "python",
+    "restapi"
+  ],
+  "team_size": 3,
+  "repository_metrics": {
+    "repo_url": "https://github.com/ibraouh/ShellHacks2025",
+    "status": "accessible",
+    "default_branch": "main",
+    "file_count": 43,
+    "approx_loc": 5529,
+    "loc_by_language": {
+      "CSS": 467,
+      "JavaScript": 3706,
+      "Python": 1356
+    },
+    "primary_languages": [
+      "JavaScript",
+      "Python",
+      "CSS"
+    ],
+    "tech_stack": {
+      "frontend_frameworks": [
+        "Next.js"
+      ],
+      "backend_frameworks": [
+        "Express.js",
+        "FastAPI"
+      ],
+      "databases": [],
+      "ai_ml_libraries": [],
+      "model_providers": [],
+      "cloud_devops": [],
+      "third_party_apis": [],
+      "hardware_components": [],
+      "package_dependencies": [
+        "express",
+        "fastapi",
+        "next"
+      ]
+    },
+    "git_timeline": {
+      "total_commits": 25,
+      "commits_in_window": 25,
+      "first_commit_time": "2025-09-27T03:43:25Z",
+      "last_commit_time": "2025-09-28T14:45:15Z",
+      "commit_timestamps": [
+        "2025-09-27T03:43:25Z",
+        "2025-09-27T13:08:44Z",
+        "2025-09-27T15:06:41Z",
+        "2025-09-27T15:24:28Z",
+        "2025-09-27T16:03:03Z",
+        "2025-09-27T16:15:59Z",
+        "2025-09-27T16:56:18Z",
+        "2025-09-27T19:43:19Z",
+        "2025-09-27T21:26:12Z",
+        "2025-09-27T21:26:59Z",
+        "2025-09-27T21:33:24Z",
+        "2025-09-27T21:33:24Z",
+        "2025-09-27T21:34:34Z",
+        "2025-09-27T21:34:46Z",
+        "2025-09-27T21:36:16Z",
+        "2025-09-27T21:58:00Z",
+        "2025-09-27T21:58:46Z",
+        "2025-09-27T22:01:23Z",
+        "2025-09-27T22:06:43Z",
+        "2025-09-28T01:58:49Z",
+        "2025-09-28T02:00:17Z",
+        "2025-09-28T02:27:31Z",
+        "2025-09-28T03:36:28Z",
+        "2025-09-28T14:44:52Z",
+        "2025-09-28T14:45:15Z"
+      ],
+      "late_rewrites_detected": false,
+      "deadline_crunch_ratio": 0.08,
+      "final_stage_focus": "debugging",
+      "history_is_squashed_or_minimal": false,
+      "contributor_count": 3,
+      "contributors": [
+        "RemiBougie",
+        "Abe",
+        "Ibrahim Raouh"
+      ]
+    },
+    "test_files_count": 0,
+    "test_frameworks": [],
+    "has_ci": false,
+    "ci_configs": [],
+    "has_docker": false,
+    "has_env_template": false,
+    "readme_size_bytes": 6843,
+    "has_architecture_docs": true,
+    "api_routes_count": 10,
+    "db_migrations_or_schema_count": 0,
+    "mock_data_detected": false,
+    "mock_data_indicators": [],
+    "todo_fixme_count": 0,
+    "boilerplate_detected": false,
+    "boilerplate_indicators": [],
+    "deployment_check": null,
+    "consistency_with_claims": "inconsistent",
+    "consistency_explanation": "Weak evidence: Only 1/15 claimed technologies detected in codebase.",
+    "actual_integrations_found": [
+      "fastapi"
+    ],
+    "readme_claims_unsupported_by_code": [
+      "agent-based",
+      "css",
+      "css",
+      "gemini",
+      "gemini",
+      "google-cloud-ai",
+      "googleadk",
+      "html",
+      "html",
+      "javascript",
+      "javascript",
+      "python",
+      "python",
+      "restapi"
+    ],
+    "provenance": [
+      {
+        "claim": "Inspected repository https://github.com/ibraouh/ShellHacks2025",
+        "evidence_type": "repository",
+        "source": "https://github.com/ibraouh/ShellHacks2025",
+        "location": "root",
+        "confidence": 1.0,
+        "details": null
+      }
+    ]
+  },
+  "demo_summary": {
+    "has_video_demo": true,
+    "video_platform": "youtube",
+    "video_url": "https://www.youtube.com/embed/evGVk7XjDH4?enablejsapi=1&hl=en_US&rel=0&start=&version=3&wmode=transparent",
+    "duration_seconds": null,
+    "has_live_deployment": false,
+    "deployment_url": "",
+    "deployment_reachable": null,
+    "has_slide_deck": false,
+    "observations": []
+  },
+  "sponsor_technologies_mentioned": [],
+  "bundle_sha256": "ae5a4808e9edf36e76d0f34e12d64a8848c63302a0afe3159cc9ec725c2b0b27",
+  "created_at": "2026-09-25T15:00:11.502192Z"
+}

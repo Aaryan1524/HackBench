@@ -1,0 +1,222 @@
+{
+  "name": "ShellHacks 2025",
+  "slug": "shellhacks2025",
+  "year": 2025,
+  "start_date": null,
+  "end_date": null,
+  "organizer": "INIT / FIU",
+  "event_url": "https://shellhacks2025.devpost.com/",
+  "devpost_url": "https://shellhacks2025.devpost.com/",
+  "gallery_url": "https://shellhacks2025.devpost.com/project-gallery",
+  "judging_criteria": [],
+  "eligibility_rules": [],
+  "submission_requirements": [],
+  "prize_categories": [
+    {
+      "prize_id": "prize_90125",
+      "title": "1st, 2nd, & 3rd Best Overall",
+      "prize_type": "overall",
+      "sponsor_name": null,
+      "description": "Best overall in-person projects",
+      "value_usd": null,
+      "number_of_winners": 3,
+      "technologies_required_or_encouraged": [],
+      "source_url": "https://shellhacks2025.devpost.com/"
+    },
+    {
+      "prize_id": "prize_90183",
+      "title": "Best First-Time Hacker",
+      "prize_type": "beginner",
+      "sponsor_name": null,
+      "description": "To qualify, 50% of the team must be first-time hackers (submitting a project at a hackathon for the first time)",
+      "value_usd": null,
+      "number_of_winners": 1,
+      "technologies_required_or_encouraged": [],
+      "source_url": "https://shellhacks2025.devpost.com/"
+    },
+    {
+      "prize_id": "prize_90520",
+      "title": "Google Cloud",
+      "prize_type": "track",
+      "sponsor_name": null,
+      "description": "The Autonomous AI Agent ChallengeYour mission is to identify a significant business or developer problem and build an innovative solution using Google's Agent Development Kit (ADK) and/or the Agent2Agent (A2A) protocol. Your agent must demonstrate the power of autonomous systems by implementing either a continuous loop for ongoing tasks and parallel agents to divide and conquer complex workflows.",
+      "value_usd": null,
+      "number_of_winners": 3,
+      "technologies_required_or_encouraged": [],
+      "source_url": "https://shellhacks2025.devpost.com/"
+    },
+    {
+      "prize_id": "prize_90184",
+      "title": "Waymo",
+      "prize_type": "track",
+      "sponsor_name": null,
+      "description": "The Waymo Mobility Challenge:",
+      "value_usd": null,
+      "number_of_winners": 3,
+      "technologies_required_or_encouraged": [],
+      "source_url": "https://shellhacks2025.devpost.com/"
+    },
+    {
+      "prize_id": "prize_90185",
+      "title": "Assurant",
+      "prize_type": "track",
+      "sponsor_name": null,
+      "description": "The Assurant Way Challenge: Our purpose",
+      "value_usd": null,
+      "number_of_winners": 3,
+      "technologies_required_or_encouraged": [],
+      "source_url": "https://shellhacks2025.devpost.com/"
+    },
+    {
+      "prize_id": "prize_90186",
+      "title": "Google",
+      "prize_type": "track",
+      "sponsor_name": null,
+      "description": "Google Hackathon: AI for Social Good",
+      "value_usd": null,
+      "number_of_winners": 3,
+      "technologies_required_or_encouraged": [],
+      "source_url": "https://shellhacks2025.devpost.com/"
+    },
+    {
+      "prize_id": "prize_90187",
+      "title": "State Farm",
+      "prize_type": "track",
+      "sponsor_name": null,
+      "description": "State Farm Challenge:",
+      "value_usd": null,
+      "number_of_winners": 3,
+      "technologies_required_or_encouraged": [],
+      "source_url": "https://shellhacks2025.devpost.com/"
+    },
+    {
+      "prize_id": "prize_90188",
+      "title": "NVIDIA",
+      "prize_type": "track",
+      "sponsor_name": null,
+      "description": "Hack for the Future with NVIDIA",
+      "value_usd": null,
+      "number_of_winners": 1,
+      "technologies_required_or_encouraged": [],
+      "source_url": "https://shellhacks2025.devpost.com/"
+    },
+    {
+      "prize_id": "prize_90519",
+      "title": "Netflix",
+      "prize_type": "track",
+      "sponsor_name": null,
+      "description": "Beyond the BingeThis challenge is all about building the next generation of interactive entertainment. Your task is to design and prototype a compelling, choose-your-own-adventure style narrative that goes beyond a linear story.",
+      "value_usd": null,
+      "number_of_winners": 2,
+      "technologies_required_or_encouraged": [],
+      "source_url": "https://shellhacks2025.devpost.com/"
+    },
+    {
+      "prize_id": "prize_90190",
+      "title": "Microsoft",
+      "prize_type": "track",
+      "sponsor_name": null,
+      "description": "AI 4 Good:",
+      "value_usd": null,
+      "number_of_winners": 3,
+      "technologies_required_or_encouraged": [],
+      "source_url": "https://shellhacks2025.devpost.com/"
+    },
+    {
+      "prize_id": "prize_90518",
+      "title": "Capital One",
+      "prize_type": "sponsor",
+      "sponsor_name": null,
+      "description": "Innovate & elevate - The future of financeCreate a financial services application that leverages developing technology (Gen AI, blockchain) to create a new financial services product or improve the user experience of an existing concept.",
+      "value_usd": null,
+      "number_of_winners": 1,
+      "technologies_required_or_encouraged": [],
+      "source_url": "https://shellhacks2025.devpost.com/"
+    },
+    {
+      "prize_id": "prize_90189",
+      "title": "Wix.com & Base44",
+      "prize_type": "sponsor",
+      "sponsor_name": null,
+      "description": "Welcome to the Base44 Innovation Hackathon Prompts! Your mission is to use technology and creative problem-solving to develop an app that makes a real-world impact. You’ll compete in one of the five challenge categories. Your solution should not only be innovative but also practical, user-friendly, and scalable.",
+      "value_usd": null,
+      "number_of_winners": 3,
+      "technologies_required_or_encouraged": [],
+      "source_url": "https://shellhacks2025.devpost.com/"
+    },
+    {
+      "prize_id": "prize_90785",
+      "title": "Github",
+      "prize_type": "track",
+      "sponsor_name": null,
+      "description": "Most Creative Project (judge’s choice)",
+      "value_usd": null,
+      "number_of_winners": 1,
+      "technologies_required_or_encouraged": [],
+      "source_url": "https://shellhacks2025.devpost.com/"
+    },
+    {
+      "prize_id": "prize_90786",
+      "title": "Wolfram",
+      "prize_type": "track",
+      "sponsor_name": null,
+      "description": "The Wolfram Award prize for all participants who utilize Wolfram Language (https://www.wolfram.com/language/) as a significant component in their project, verified by a Wolfram mentor at your event (via Discord)",
+      "value_usd": null,
+      "number_of_winners": 2,
+      "technologies_required_or_encouraged": [],
+      "source_url": "https://shellhacks2025.devpost.com/"
+    },
+    {
+      "prize_id": "prize_90740",
+      "title": "MLH || Best Use of Gemini API || Mechanical Keyboards",
+      "prize_type": "sponsor",
+      "sponsor_name": null,
+      "description": "It’s time to push the boundaries of what's possible with AI using Google Gemini. Check out the Gemini API to build AI-powered apps that make your friends say WHOA. So, what can Gemini do for your hackathon project?",
+      "value_usd": null,
+      "number_of_winners": 1,
+      "technologies_required_or_encouraged": [],
+      "source_url": "https://shellhacks2025.devpost.com/"
+    },
+    {
+      "prize_id": "prize_90741",
+      "title": "MLH || Best Use of Auth0 || Wireless Headphones",
+      "prize_type": "track",
+      "sponsor_name": null,
+      "description": "Auth0 wants your applications to be secure! Why spend hours building features like social sign-in, Multi-Factor Authentication, and passwordless log-in when you can enable them through Auth0 straight out of the box? Auth0 is free to try, doesn’t require a credit card, and allows for up to 7,000 free active users and unlimited log-ins. Make your new account today and use any of the Auth0 APIs for a chance to win a pair of wireless headphones for you and each member of your team!",
+      "value_usd": null,
+      "number_of_winners": 1,
+      "technologies_required_or_encouraged": [],
+      "source_url": "https://shellhacks2025.devpost.com/"
+    },
+    {
+      "prize_id": "prize_90742",
+      "title": "MLH || Best Domain Name from GoDaddy Registry || Digital Gift Card",
+      "prize_type": "track",
+      "sponsor_name": null,
+      "description": "GoDaddy Registry is giving you everything you need to be the best hacker no matter where you are. Register your domain name with GoDaddy Registry for a chance to win some amazing prizes!",
+      "value_usd": null,
+      "number_of_winners": 1,
+      "technologies_required_or_encouraged": [],
+      "source_url": "https://shellhacks2025.devpost.com/"
+    }
+  ],
+  "sponsor_challenges": [],
+  "special_tracks": [],
+  "judging_process": "",
+  "judging_weights_published": false,
+  "number_of_projects": 245,
+  "number_of_participants": null,
+  "technologies_encouraged": [],
+  "official_winner_announcements": [],
+  "sources": [
+    {
+      "claim": "Hackathon ShellHacks 2025 ingested from Devpost",
+      "evidence_type": "event_rules",
+      "source": "https://shellhacks2025.devpost.com/",
+      "location": "event-homepage",
+      "confidence": 1.0,
+      "details": null
+    }
+  ],
+  "ingested_at": "2026-09-25T14:42:08.675244Z"
+}

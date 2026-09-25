@@ -1,0 +1,116 @@
+{
+  "project_id": "1071180",
+  "slug": "body-quest",
+  "title": "Body Quest",
+  "tagline": "An interactive platform where students click body parts on an illustration and a chatbot explains them in simple terms making anatomy engaging, curious, and playful for students.",
+  "problem_statement": "",
+  "inspiration": "",
+  "what_it_does": "",
+  "how_it_was_built": "",
+  "challenges": "",
+  "accomplishments": "",
+  "lessons_learned": "",
+  "future_plans": "",
+  "tech_tags": [
+    "gemini",
+    "gemini",
+    "python",
+    "python",
+    "streamlit"
+  ],
+  "team_size": 4,
+  "repository_metrics": {
+    "repo_url": "https://github.com/saraitmanar/Shellhacks2025_2.0",
+    "status": "accessible",
+    "default_branch": "frontend",
+    "file_count": 6,
+    "approx_loc": 268,
+    "loc_by_language": {
+      "Python": 268
+    },
+    "primary_languages": [
+      "Python"
+    ],
+    "tech_stack": {
+      "frontend_frameworks": [],
+      "backend_frameworks": [],
+      "databases": [],
+      "ai_ml_libraries": [],
+      "model_providers": [],
+      "cloud_devops": [],
+      "third_party_apis": [],
+      "hardware_components": [],
+      "package_dependencies": []
+    },
+    "git_timeline": {
+      "total_commits": 4,
+      "commits_in_window": 4,
+      "first_commit_time": "2025-09-27T17:50:21Z",
+      "last_commit_time": "2025-09-27T22:30:34Z",
+      "commit_timestamps": [
+        "2025-09-27T17:50:21Z",
+        "2025-09-27T18:42:37Z",
+        "2025-09-27T21:06:15Z",
+        "2025-09-27T22:30:34Z"
+      ],
+      "late_rewrites_detected": false,
+      "deadline_crunch_ratio": 0.25,
+      "final_stage_focus": "debugging",
+      "history_is_squashed_or_minimal": false,
+      "contributor_count": 1,
+      "contributors": [
+        "saraitmanar"
+      ]
+    },
+    "test_files_count": 0,
+    "test_frameworks": [],
+    "has_ci": false,
+    "ci_configs": [],
+    "has_docker": false,
+    "has_env_template": false,
+    "readme_size_bytes": 0,
+    "has_architecture_docs": false,
+    "api_routes_count": 0,
+    "db_migrations_or_schema_count": 0,
+    "mock_data_detected": false,
+    "mock_data_indicators": [],
+    "todo_fixme_count": 0,
+    "boilerplate_detected": false,
+    "boilerplate_indicators": [],
+    "deployment_check": null,
+    "consistency_with_claims": "inconsistent",
+    "consistency_explanation": "Weak evidence: Only 0/5 claimed technologies detected in codebase.",
+    "actual_integrations_found": [],
+    "readme_claims_unsupported_by_code": [
+      "gemini",
+      "gemini",
+      "python",
+      "python",
+      "streamlit"
+    ],
+    "provenance": [
+      {
+        "claim": "Inspected repository https://github.com/saraitmanar/Shellhacks2025_2.0",
+        "evidence_type": "repository",
+        "source": "https://github.com/saraitmanar/Shellhacks2025_2.0",
+        "location": "root",
+        "confidence": 1.0,
+        "details": null
+      }
+    ]
+  },
+  "demo_summary": {
+    "has_video_demo": true,
+    "video_platform": "youtube",
+    "video_url": "https://www.youtube.com/embed/dDRcJ1UbyQA?enablejsapi=1&hl=en_US&rel=0&start=&version=3&wmode=transparent",
+    "duration_seconds": null,
+    "has_live_deployment": false,
+    "deployment_url": "",
+    "deployment_reachable": null,
+    "has_slide_deck": true,
+    "observations": []
+  },
+  "sponsor_technologies_mentioned": [],
+  "bundle_sha256": "79dd2412e15bc38bbd97dbeea06126e7214bd8378160fd7eacb44d0aee30b909",
+  "created_at": "2026-09-25T15:00:11.549127Z"
+}
