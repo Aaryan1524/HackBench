@@ -214,8 +214,12 @@ def analyze_project(req: AnalyzeRequest, request: Request):
     )
 
     # 6. Load Historical Winner & Non-Winner Distributions
-    hist_summary_path = Path("reports/shellhacks2025_2025/forensics_summary.json")
-    historical_stats = _compute_historical_comparisons(judge_evals, hist_summary_path)
+    slug, year = req.event_id.split(":") if ":" in req.event_id else (req.event_id, "2025")
+    hist_summary_path = Path(f"reports/{slug}_{year}/forensics_summary.json")
+    if not hist_summary_path.exists():
+        hist_summary_path = Path("reports/shellhacks2025_2025/forensics_summary.json")
+    outcomes_path = Path(f"data/raw/{slug}/{year}/outcomes_sealed/outcomes.json")
+    historical_stats = _compute_historical_comparisons(judge_evals, hist_summary_path, outcomes_path)
 
     # 7. Gemini Synthesis (Layer 3)
     gemini_client = GeminiClient()
@@ -267,6 +271,7 @@ def analyze_project(req: AnalyzeRequest, request: Request):
 def _compute_historical_comparisons(
     current_evals: Dict[str, Any],
     summary_path: Path,
+    outcomes_path: Optional[Path] = None,
 ) -> Dict[str, Any]:
     """
     Computes empirical cohort distributions with explicit sample sizes for each dimension.
@@ -283,6 +288,14 @@ def _compute_historical_comparisons(
                 total_analyzed = len(recs)
                 winners_count = sum(1 for r in recs if r.get("outcome", {}).get("is_winner"))
                 snw_count = len(data.get("strong_non_winners", [])) or 6
+        except Exception:
+            pass
+    elif outcomes_path and outcomes_path.exists():
+        try:
+            data = json.loads(outcomes_path.read_text(encoding="utf-8"))
+            total_analyzed = len(data)
+            winners_count = sum(1 for v in data.values() if v.get("is_winner"))
+            snw_count = max(0, total_analyzed - winners_count)
         except Exception:
             pass
 

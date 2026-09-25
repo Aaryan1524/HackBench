@@ -1,205 +1,183 @@
-# HackBench Forensics (Hackathon Forensics)
+# HackBench
 
-> **Empirical, evidence-grounded hackathon evaluation and historical comparison engine.**
+> **Empirical, evidence-based hackathon project evaluation and pitch diagnostic engine.**
 
-HackBench allows hackathon participants, researchers, and organizers to evaluate a project submission against historical hackathon winners, strong non-winners, and documented judging criteria based strictly on observable public evidence.
-
----
-
-## What HackBench Does
-
-- **Collects Public Evidence**: Ingests project claims, Devpost writeups, public Git commit timelines, code metrics, and live deployment reachability.
-- **Enforces Logical Blinding**: Evaluates project quality without knowing official placement or awards, sealing evaluations with cryptographic hashes before outcome reveal.
-- **Compares Against Historical Cohorts**: Measures judge-facing presentation and engineering depth against empirical distributions of past winners and strong non-winners.
-- **Identifies Verifiable Gaps**: Highlights concrete, evidence-backed improvements (e.g. unhandled TODOs, missing demo proof, static mock data, unreachable deployments).
-- **Supports Two Participant Input Modes**:
-  - **Path A (Link-based)**: Provide public GitHub, Devpost, and deployment URLs.
-  - **Path B (Manual)**: Describe the problem, user, workflow, and tech stack directly.
+HackBench benchmarks your hackathon project against **over 700 real historical submissions, winners, and prize criteria** before you pitch to judges.
 
 ---
 
-## What HackBench Does NOT Do
+## Why HackBench?
 
-- **NO Winner/Loser Predictions**: The system strictly **NEVER** predicts who will win, computes win probabilities, or generates placement odds.
-- **NO Hallucinated Metrics**: Lines of code, framework detections, and API routes are derived strictly from deterministic static parsing. Missing repos are marked `not_found` with zero LOC.
-- **NO Code Execution**: Repositories are inspected as untrusted static data; HackBench never runs `npm install`, `pip install`, shell scripts, or container builds on user code.
-- **NO Post-Hoc Rationalization**: Evaluator results that conflict with judges' decisions are preserved as `evidence_conflicts_with_outcome` rather than adjusted to fit official outcomes.
+In most hackathons, judges spend just **3 to 5 minutes** reviewing your project. High-potential projects routinely lose top placements not because the underlying code is lacking, but because:
 
----
+1. **The problem statement is vague or buried**: Judges cannot easily understand *why* the product exists.
+2. **The target audience is generic**: "Everyone" is not a target user.
+3. **The demo does not prove the core claims**: Judges see slides or UI mockups instead of tangible evidence.
+4. **Sponsor criteria are treated as an afterthought**: The submission tags a sponsor tool without solving the sponsor's explicit problem.
 
-## 3-Layer AI Architecture
-
-HackBench avoids expensive, slow, and ungrounded LLM generation for routine decisions by employing a three-layer evaluation architecture:
-
-```
-Participant / Web UI / CLI
-            ↓
-  POST /api/analyze
-            ↓
-┌─────────────────────────────────────────────────────────────┐
-│ Layer 1: Deterministic Software Engine                      │
-│ - Verified LOC, AST framework detection, API routes         │
-│ - Automated test suite detection (pytest, jest, vitest)     │
-│ - Git commit crunch ratio & stage focus                     │
-│ - Live HTTP deployment reachability check (status, latency) │
-│ - Documented judging criteria lookup                        │
-└─────────────────────────────────────────────────────────────┘
-            ↓
-┌─────────────────────────────────────────────────────────────┐
-│ Layer 2: Jev System One Decision Engine                     │
-│ - Fast, structured, probabilistic classification            │
-│ - Single shared-state batch evaluation across 9 rubrics     │
-│ - Question Primitives: Choice, Score, Noul                  │
-│ - Explicit rubric anchors (Very Weak -> Very Strong)        │
-└─────────────────────────────────────────────────────────────┘
-            ↓
-┌─────────────────────────────────────────────────────────────┐
-│ Confidence & Uncertainty Gate (Threshold = 0.80)            │
-│ - High Confidence (≥ 0.80) → Accept Jev result directly     │
-│ - Low Confidence / Ambiguous (< 0.80) → Route to Gemini     │
-│ - Missing Evidence Boundary → Deterministic insufficient    │
-└─────────────────────────────────────────────────────────────┘
-            ↓
-┌─────────────────────────────────────────────────────────────┐
-│ Layer 3: Gemini Synthesis & Fallback Engine                 │
-│ - Generative synthesis of structured executive summary      │
-│ - Observable strengths, gaps, and top 3 prioritized actions │
-│ - Content inside <PROJECT_EVIDENCE> treated as untrusted    │
-└─────────────────────────────────────────────────────────────┘
-            ↓
-  Structured JSON Report → Rendered Results Page
-```
+HackBench acts as an objective, pre-pitch review board. It inspects your narrative, target audience, demo proof, engineering depth, and sponsor requirements to highlight **concrete gaps and prioritized fixes** before submission deadlines close.
 
 ---
 
-## Quickstart
+## Strict Core Invariants
+
+HackBench is strictly designed around empirical evidence and integrity:
+
+- 🚫 **NO Win / Loss Predictions**: HackBench **never** predicts whether you will win or outputs placement odds. Its sole purpose is diagnostic quality and constructive improvement.
+- 🚫 **NO Fabricated Metrics**: Lines of code, framework detections, and API routes are derived strictly from deterministic static analysis. If a repo or link is missing, it is reported honestly without speculation.
+- 🚫 **NO Code Execution**: Repositories are inspected solely via read-only static file analysis and AST parsing. HackBench **never** runs `npm install`, `pip install`, shell scripts, or container builds on untrusted code.
+
+---
+
+## 2-Minute Quickstart
 
 ### Prerequisites
-- Python 3.12+
-- Node.js 18+ and npm
-- [uv](https://github.com/astral-sh/uv) (fast Python package installer)
+- **Python 3.12+**
+- **Node.js 18+** and **npm**
+- [**uv**](https://github.com/astral-sh/uv) (recommended Python package manager)
 
 ### 1. Clone & Setup Backend
 ```bash
-git clone https://github.com/Aaryan1524/ShellhacksHackathonAnalysis.git
-cd ShellhacksHackathonAnalysis
+git clone https://github.com/Aaryan1524/HackBench.git
+cd HackBench
 
-# Install python dependencies with uv
+# Install backend dependencies
 uv sync
 
 # Configure environment variables
 cp .env.example .env
 ```
 
-### 2. Configure Environment Variables (`.env`)
+### 2. Configure Environment (`.env`)
 ```bash
-# Layer 2: Jev System One Decision Engine
+# Optional API Keys for enhanced analysis (falls back to calibrated deterministic offline evaluators if omitted)
 JEV_API_KEY=your_jev_api_key_here
-JEV_MODEL=jev-latest
-JEV_CONFIDENCE_THRESHOLD=0.80
-
-# Layer 3: Gemini Synthesis
 GEMINI_API_KEY=your_gemini_api_key_here
-GEMINI_MODEL=gemini-2.5-flash
 
-# Backend & Web
+# Server defaults
 BACKEND_HOST=0.0.0.0
 BACKEND_PORT=8000
 FRONTEND_URL=http://localhost:3000
 ```
 
-*(Note: If API keys are omitted, HackBench falls back to calibrated deterministic offline evaluators.)*
-
-### 3. Run the Backend API Server
+### 3. Start Backend API
 ```bash
-uv run uvicorn hackbench.api.server:app --host 0.0.0.0 --port 8000 --reload
+uv run uvicorn hackbench.api.server:app --host 0.0.0.0 --port 8000
 ```
-Health endpoint: `http://localhost:8000/health`
+API health check: `http://localhost:8000/health`
 
-### 4. Run the Web Application
+### 4. Start Web Application
 ```bash
 cd web
 npm install
 npm run dev
 ```
-Open `http://localhost:3000` in your browser.
+Open **[http://localhost:3000](http://localhost:3000)** in your browser.
 
 ---
 
-## CLI Usage
+## How to Evaluate Your Project
 
-The CLI (`hackbench`) provides end-to-end command-line tools for researchers and developers:
+HackBench offers two flexible input workflows depending on where you are in the hackathon cycle:
+
+### Path A: Manual Entry (Fastest during hackathon crunch)
+Ideal when your project isn't published yet or your code is still in progress:
+- **Project Name & Tagline**: A concise one-sentence pitch.
+- **Problem Statement**: What real friction exists today?
+- **Target Audience**: Exactly who encounters this problem regularly?
+- **What It Does & How It Works**: The core workflow, architecture, and technology stack.
+- **Sponsor & Track Requirements (Mandatory)**: Paste the exact criteria or prompt from the sponsor/grand prize track (e.g., *"Must use MongoDB Atlas Vector Search and solve healthcare accessibility"*). HackBench verifies your project specifically against this mandate.
+
+### Path B: Public Links
+Ideal once your submission materials are live:
+- **GitHub Repository URL**: Verifies commit timelines, lines of code, frameworks, test suites, and API endpoints via static inspection.
+- **Devpost Draft URL**: Pulls your submitted writeup and team claims.
+- **Live Deployment & Video Demo URLs**: Performs live reachability checks and verifies video demonstration evidence.
+
+---
+
+## Multi-Year Empirical Baseline
+
+HackBench benchmarks candidate submissions against **734 real hackathon submissions** collected across multiple years of Florida's largest hackathon (ShellHacks):
+
+| Event | Total Submissions | Track / Sponsor Prizes | Overall Winners |
+| :--- | :--- | :--- | :--- |
+| **ShellHacks 2025** | 245 projects | 28 categories | 3 projects |
+| **ShellHacks 2024** | 257 projects | 25 categories | 3 projects |
+| **ShellHacks 2023** | 232 projects | 25 categories | 3 projects |
+| **Total Baseline** | **734 projects** | **78 prize tracks** | **9 grand champions** |
+
+You can choose your comparative benchmark year directly in the web UI dropdown (`ShellHacks 2025`, `2024`, or `2023`).
+
+---
+
+## What the Diagnostic Report Delivers
+
+1. **Executive Verdict & 3 Core Blocks**:
+   - **Audience & Problem Clarity**: Evaluates how crisply the problem is communicated and whether the user persona is sharp.
+   - **Product & Demo Proof**: Checks for tangible evidence of functionality versus static claims.
+   - **Technical Feasibility & Depth**: Verified engineering metrics, architectural sanity, and API surface.
+2. **What to Fix Before Presenting**:
+   - A prioritized, high-contrast action list targeting the highest-leverage improvements to make in your demo script, README, or UI before pitching to judges.
+3. **Historical Dimension Comparisons**:
+   - Benchmark your rating against the empirical distribution of past winners and strong non-winners across 9 rubrics (*Problem Clarity, User Clarity, Product Clarity, Demo Strength, Completion, Practicality, Story, Memorability, Track Alignment*).
+4. **Targeted Sponsor & Track Alignment**:
+   - A dedicated evaluation detailing how tightly your narrative meets the sponsor's technical and thematic requirements.
+5. **Deterministic Engineering Verification**:
+   - Lines of code, detected frontend/backend frameworks, test frameworks (`pytest`, `jest`, `vitest`), REST/GraphQL routes, and live HTTP deployment response status.
+
+---
+
+## CLI Tools
+
+For power users, hackathon researchers, and organizers, HackBench provides an extensive command-line interface:
 
 ```bash
-# Benchmark a single candidate project (local path or Git URL) for ShellHacks 2026:
+# Benchmark a local project repository or folder:
 hackbench benchmark-project ./my-hackathon-repo \
   --name "Project Name" \
   --tagline "One-line pitch" \
-  --what "Summary of project" \
+  --what "Summary of what the project does" \
   --tags "React, FastAPI, PostgreSQL" \
   --deploy "https://my-app.vercel.app"
 
-# Ingest hackathon event rules and criteria:
+# Ingest event rules and prize categories from Devpost:
 hackbench ingest-event https://shellhacks2025.devpost.com/
 
-# Collect project gallery submissions (quarantining awards):
+# Collect gallery submissions and quarantine official outcomes:
 hackbench collect-projects shellhacks2025:2025 --all
 
-# Clone public repositories and extract deterministic metrics:
-hackbench collect-repos shellhacks2025:2025 --all
-
-# Run multi-pass blind evaluations (sealed with SHA256):
+# Run multi-pass blind evaluation:
 hackbench evaluate-blind shellhacks2025:2025
 
-# Unseal official outcomes:
+# Unseal official awards and generate comparative forensics:
 hackbench reveal-results shellhacks2025:2025
-
-# Run comparative forensics (mismatches and strong non-winners):
 hackbench analyze shellhacks2025:2025
-
-# Generate all 14 markdown forensic reports:
-hackbench report shellhacks2025:2025
-
-# Or run the entire pipeline end-to-end in one command:
-hackbench run https://shellhacks2025.devpost.com/ --all
 ```
 
 ---
 
-## Running Tests
+## Testing & Verification
 
-All unit and integration tests are automated via pytest:
+The test suite enforces deterministic metric parsing, security boundaries, rate limiting, and core invariants:
 
 ```bash
 uv run pytest tests/ -v
 ```
 
 Test coverage includes:
-- **Jev Engine**: Choice, Score, Noul parsing, multi-question batching, cache invalidation, and fallback routing.
-- **Security & SSRF**: Rejection of localhost, RFC1918 private IPs, cloud metadata (`169.254.169.254`), and file:// URLs.
-- **Prompt Injection**: Sanitization of closing XML tags and delimited untrusted text blocks.
-- **Core Invariants**: Verification of sealed outcomes, immutability of frozen blind evaluations, and absence of win probabilities.
+- **SSRF Safeguards**: Rejection of localhost (`127.0.0.1`), RFC1918 private subnets, cloud metadata endpoints (`169.254.169.254`), and `file://` URIs.
+- **Untrusted Input Boundaries**: Sanitization of XML delimiters, script injection, and untrusted user narrative text.
+- **Outcome Quarantine**: Verification that award data is sealed with cryptographic hashes and never leaks into blind evaluation passes.
+- **Mandatory Sponsor Flow**: Verification that custom sponsor requirements are routed into criteria alignment evaluations.
 
 ---
 
-## Jev Validation Report
+## Deployment
 
-Jev classifications have been validated against the historical ShellHacks dataset. View the detailed empirical report at:
-[`reports/jev_validation.md`](reports/jev_validation.md).
-
-Key validation findings:
-- **Adjacent + Exact Agreement**: Exceeds **88%** across primary judge-facing clarity dimensions.
-- **Confidence Calibration**: Mean confidence on agreements is **0.86**, dropping to **0.68** on disagreements, proving effective routing.
-
----
-
-## Deployment Instructions
-
-### Option 1: Docker Container Deployment (Railway, Render, Fly.io, Cloud Run)
-Build and run the production backend container:
-
+### Backend (Docker / Cloud Run / Railway / Fly.io)
 ```bash
-# Build Docker image
+# Build production image
 docker build -t hackbench-api .
 
 # Run container
@@ -209,31 +187,13 @@ docker run -p 8000:8000 \
   hackbench-api
 ```
 
-### Option 2: Vercel Frontend Deployment
-Deploy the `web/` directory directly to Vercel:
-1. Set the root directory in Vercel to `web`.
-2. Configure the environment variable `BACKEND_URL` to point to your deployed backend API URL.
+### Frontend (Vercel)
+1. Import the repository into Vercel.
+2. Set the Root Directory to `web`.
+3. Set the environment variable `BACKEND_URL` to your production backend endpoint.
 
 ---
 
-## Security Considerations
+## Contributing & License
 
-1. **SSRF Safeguards**: All external URL fetches undergo DNS resolution and IP validation before connection. Localhost (`127.0.0.0/8`, `::1`), private networks (`10.0.0.0/8`, `172.16.0.0/12`, `192.168.0.0/16`), and cloud metadata (`169.254.169.254`) are strictly blocked.
-2. **Untrusted Code Sandboxing**: Repositories are inspected solely via static file reading and AST parsing. User code is never executed, dependencies are never installed, and package scripts are never triggered.
-3. **Prompt Injection Boundaries**: All project text (README, descriptions, comments) is enclosed within `<PROJECT_EVIDENCE>` tags with explicit model instructions to treat content as untrusted evidence.
-4. **Secret Isolation**: `JEV_API_KEY` and `GEMINI_API_KEY` remain strictly server-side and are never exposed in frontend bundles or logs.
-
----
-
-## Adding Another Hackathon
-
-To analyze a new hackathon (e.g. `hackmit2025` or `calhacks2025`):
-1. Ingest event rules and prizes:
-   ```bash
-   hackbench ingest-event https://hackmit2025.devpost.com/
-   ```
-2. Run the end-to-end pipeline:
-   ```bash
-   hackbench run https://hackmit2025.devpost.com/ --all
-   ```
-All historical datasets, SQLite/DuckDB records, and markdown reports will be automatically isolated in `data/processed/<slug>/<year>/` and `reports/<slug>_<year>/`.
+HackBench is open-source under the [MIT License](LICENSE). Contributions, bug reports, and dataset additions are welcome via pull requests.
