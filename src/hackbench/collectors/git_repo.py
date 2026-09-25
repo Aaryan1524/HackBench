@@ -8,6 +8,7 @@ from datetime import datetime, timezone
 from typing import Optional, List, Dict, Any, Tuple
 import httpx
 import git
+import urllib.parse
 
 from ..models import (
     RepositoryMetrics,
@@ -125,6 +126,7 @@ class RepositoryAnalyzer:
         project_id: str,
         claimed_tech_tags: Optional[List[str]] = None,
         deployment_url: Optional[str] = None,
+        project_name: Optional[str] = None,
         hackathon_start: Optional[datetime] = None,
         hackathon_end: Optional[datetime] = None,
     ) -> RepositoryMetrics:
@@ -170,7 +172,7 @@ class RepositoryAnalyzer:
                 repo = git.Repo(target_dir)
             except subprocess.TimeoutExpired:
                 logger.warning(f"Git clone timed out for {repo_url} (repository may contain giant binary assets)")
-                dep_check = self._check_deployment(deployment_url) if deployment_url else None
+                dep_check = self._check_deployment(deployment_url, project_name=project_name) if deployment_url else None
                 return RepositoryMetrics(
                     repo_url=repo_url,
                     status="clone_timeout_large_repo",
@@ -181,7 +183,7 @@ class RepositoryAnalyzer:
                 logger.warning(f"Failed to clone repository {repo_url}: {e}")
                 status = "not_found" if "not found" in str(e).lower() else "private_or_failed"
                 # Check deployment status anyway if deployment_url provided
-                dep_check = self._check_deployment(deployment_url) if deployment_url else None
+                dep_check = self._check_deployment(deployment_url, project_name=project_name) if deployment_url else None
                 return RepositoryMetrics(
                     repo_url=repo_url,
                     status=status,
@@ -246,7 +248,7 @@ class RepositoryAnalyzer:
         boilerplate_indicators = self._detect_boilerplate(target_dir)
 
         # 5. Live deployment check
-        dep_check = self._check_deployment(deployment_url) if deployment_url else None
+        dep_check = self._check_deployment(deployment_url, project_name=project_name) if deployment_url else None
 
         # 6. Consistency between claims and actual code
         consistency, explanation, actual_ints, unsupported = self._verify_consistency(
@@ -558,18 +560,87 @@ class RepositoryAnalyzer:
                 pass
         return indicators
 
-    def _check_deployment(self, url: str) -> DeploymentCheck:
+    def _check_deployment(self, url: str, project_name: Optional[str] = None) -> DeploymentCheck:
         check = DeploymentCheck(url=url)
         try:
             start_t = datetime.now()
-            with httpx.Client(timeout=6.0, follow_redirects=True) as client:
+            with httpx.Client(timeout=6.0, follow_redirects=True, headers={"User-Agent": "HackBench-Forensics/1.0"}) as client:
                 resp = client.get(url)
                 check.status_code = resp.status_code
                 check.is_reachable = resp.status_code < 400
                 check.response_time_ms = round((datetime.now() - start_t).total_seconds() * 1000, 1)
-        except Exception:
+
+                if not check.is_reachable:
+                    check.deployment_url_status = "unreachable"
+                    check.deployment_verification = "unrelated"
+                    check.verification_evidence = f"Deployment URL returned HTTP error {resp.status_code}."
+                    return check
+
+                check.deployment_url_status = "reachable"
+
+                # Parse domain to identify generic or unrelated domains
+                parsed = urllib.parse.urlparse(url)
+                domain = parsed.netloc.lower()
+                if domain.startswith("www."):
+                    domain = domain[4:]
+
+                generic_domains = {
+                    "example.com", "example.org", "example.net",
+                    "google.com", "github.com", "gitlab.com",
+                    "apple.com", "microsoft.com", "facebook.com",
+                    "wikipedia.org", "twitter.com", "x.com",
+                    "linkedin.com", "youtube.com", "youtu.be",
+                    "devpost.com", "medium.com"
+                }
+
+                if domain in generic_domains:
+                    check.deployment_verification = "unrelated"
+                    check.verification_evidence = (
+                        f"URL is reachable (HTTP {resp.status_code}), but points to an unrelated public domain '{domain}', "
+                        "not a dedicated project deployment."
+                    )
+                    return check
+
+                # Inspect page title and body content
+                body_text = resp.text[:100000] if resp.text else ""
+                title_match = re.search(r"<title[^>]*>(.*?)</title>", body_text, re.IGNORECASE | re.DOTALL)
+                page_title = title_match.group(1).strip() if title_match else ""
+
+                meta_desc_match = re.search(
+                    r'<meta\s+(?:name|property)=["\'](?:description|og:title|og:description)["\']\s+content=["\'](.*?)["\']',
+                    body_text,
+                    re.IGNORECASE,
+                )
+                meta_desc = meta_desc_match.group(1).strip() if meta_desc_match else ""
+
+                if project_name and len(project_name.strip()) > 2:
+                    pname = project_name.strip().lower()
+                    pname_no_spaces = pname.replace(" ", "")
+
+                    if pname in page_title.lower() or pname in meta_desc.lower():
+                        check.deployment_verification = "verified_project"
+                        check.verification_evidence = f"Page title or meta description explicitly matches project '{project_name}'."
+                    elif pname_no_spaces in domain or pname in body_text.lower():
+                        check.deployment_verification = "likely_project"
+                        check.verification_evidence = f"Deployment domain or text content references '{project_name}'."
+                    else:
+                        check.deployment_verification = "unknown"
+                        check.verification_evidence = (
+                            f"Server responded (HTTP {resp.status_code}), but page title/content does not contain evidence "
+                            f"matching project '{project_name}'."
+                        )
+                else:
+                    check.deployment_verification = "unknown"
+                    check.verification_evidence = f"Server responded (HTTP {resp.status_code}), but no project name was provided to verify content."
+        except Exception as e:
             check.is_reachable = False
+            check.deployment_url_status = "unreachable"
+            check.deployment_verification = "unrelated"
+            check.verification_evidence = f"HTTP probe failed: {str(e)[:100]}"
         return check
+
+    def check_deployment(self, url: str, project_name: Optional[str] = None) -> DeploymentCheck:
+        return self._check_deployment(url, project_name=project_name)
 
     def _verify_consistency(
         self,
