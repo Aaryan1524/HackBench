@@ -164,6 +164,65 @@ Respond ONLY with a JSON object: {{"label": "...", "confidence": 0.85, "rational
             "fallback_reason": fallback_reason,
         }
 
+    def classify_batch(
+        self,
+        untrusted_evidence: str,
+        dimensions: List[str],
+        rubrics: Dict[str, Dict[str, str]],
+    ) -> Dict[str, Dict[str, Any]]:
+        """
+        Evaluate all canonical rubric dimensions in a single structured request
+        when JEV_API_KEY is not configured.
+        """
+        start_t = time.time()
+        filtered_rubrics = {d: rubrics.get(d, {}) for d in dimensions if d in rubrics}
+
+        if not self.is_configured:
+            logger.info("ChatGPT not configured for batch classification. Using offline heuristics.")
+            return {}
+
+        prompt = f"""You are an objective hackathon evaluation judge.
+Evaluate the candidate project against these canonical rubrics:
+{json.dumps(filtered_rubrics, indent=2)}
+
+<PROJECT_EVIDENCE>
+{untrusted_evidence}
+</PROJECT_EVIDENCE>
+
+Respond ONLY with a JSON object where keys are the exact rubric dimensions ({', '.join(dimensions)}), and each value is:
+{{"label": "one of the exact rubric keys (e.g. very_weak, weak, moderate, strong, very_strong, insufficient_evidence)", "confidence": 0.85, "rationale": "one sentence explanation"}}"""
+
+        try:
+            url = f"{OPENAI_API_BASE}/chat/completions"
+            headers = {
+                "Authorization": f"Bearer {self.api_key}",
+                "Content-Type": "application/json",
+            }
+            payload = {
+                "model": self.model,
+                "messages": [
+                    {
+                        "role": "system",
+                        "content": "You are an objective, evidence-based hackathon evaluation judge. Respond strictly with JSON.",
+                    },
+                    {"role": "user", "content": prompt},
+                ],
+                "response_format": {"type": "json_object"},
+            }
+            with httpx.Client(timeout=self.timeout_seconds) as client:
+                res = client.post(url, headers=headers, json=payload)
+                if res.status_code == 200:
+                    text = res.json()["choices"][0]["message"]["content"]
+                    parsed = json.loads(text)
+                    logger.info(f"ChatGPT batch rubric evaluation completed in {(time.time() - start_t) * 1000:.1f}ms")
+                    return parsed
+                else:
+                    logger.warning(f"ChatGPT batch rubric evaluation HTTP {res.status_code}: {res.text}")
+        except Exception as e:
+            logger.warning(f"ChatGPT batch rubric classification call failed: {e}. Falling back.")
+
+        return {}
+
     def synthesize_report(
         self,
         project_name: str,
