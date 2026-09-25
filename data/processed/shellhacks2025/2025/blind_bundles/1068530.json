@@ -1,0 +1,117 @@
+{
+  "project_id": "1068530",
+  "slug": "livestream-lobby",
+  "title": "LiveStream Lobby",
+  "tagline": "In this project we tried to combine both realtime chatting and gaming into this entertaining way to play games using majority based decision making gameplay.",
+  "problem_statement": "",
+  "inspiration": "",
+  "what_it_does": "",
+  "how_it_was_built": "",
+  "challenges": "",
+  "accomplishments": "",
+  "lessons_learned": "",
+  "future_plans": "",
+  "tech_tags": [
+    "api",
+    "godot",
+    "liveperson-chat",
+    "liveperson-chat",
+    "openai",
+    "pixeleditor",
+    "youtube",
+    "youtube"
+  ],
+  "team_size": 2,
+  "repository_metrics": {
+    "repo_url": "https://github.com/ASB-13/ShellHack2025-Game",
+    "status": "accessible",
+    "default_branch": "main",
+    "file_count": 13,
+    "approx_loc": 0,
+    "loc_by_language": {},
+    "primary_languages": [],
+    "tech_stack": {
+      "frontend_frameworks": [],
+      "backend_frameworks": [],
+      "databases": [],
+      "ai_ml_libraries": [],
+      "model_providers": [],
+      "cloud_devops": [],
+      "third_party_apis": [],
+      "hardware_components": [],
+      "package_dependencies": []
+    },
+    "git_timeline": {
+      "total_commits": 3,
+      "commits_in_window": 3,
+      "first_commit_time": "2025-09-28T14:13:30Z",
+      "last_commit_time": "2025-09-28T14:20:49Z",
+      "commit_timestamps": [
+        "2025-09-28T14:13:30Z",
+        "2025-09-28T14:20:07Z",
+        "2025-09-28T14:20:49Z"
+      ],
+      "late_rewrites_detected": false,
+      "deadline_crunch_ratio": 0.0,
+      "final_stage_focus": "features",
+      "history_is_squashed_or_minimal": false,
+      "contributor_count": 1,
+      "contributors": [
+        "ASB-13"
+      ]
+    },
+    "test_files_count": 0,
+    "test_frameworks": [],
+    "has_ci": false,
+    "ci_configs": [],
+    "has_docker": false,
+    "has_env_template": false,
+    "readme_size_bytes": 80,
+    "has_architecture_docs": false,
+    "api_routes_count": 0,
+    "db_migrations_or_schema_count": 0,
+    "mock_data_detected": false,
+    "mock_data_indicators": [],
+    "todo_fixme_count": 0,
+    "boilerplate_detected": false,
+    "boilerplate_indicators": [],
+    "deployment_check": null,
+    "consistency_with_claims": "inconsistent",
+    "consistency_explanation": "Weak evidence: Only 0/8 claimed technologies detected in codebase.",
+    "actual_integrations_found": [],
+    "readme_claims_unsupported_by_code": [
+      "api",
+      "godot",
+      "liveperson-chat",
+      "liveperson-chat",
+      "openai",
+      "pixeleditor",
+      "youtube",
+      "youtube"
+    ],
+    "provenance": [
+      {
+        "claim": "Inspected repository https://github.com/ASB-13/ShellHack2025-Game",
+        "evidence_type": "repository",
+        "source": "https://github.com/ASB-13/ShellHack2025-Game",
+        "location": "root",
+        "confidence": 1.0,
+        "details": null
+      }
+    ]
+  },
+  "demo_summary": {
+    "has_video_demo": true,
+    "video_platform": "youtube",
+    "video_url": "https://www.youtube.com/embed/BZSRkNLmRwI?enablejsapi=1&hl=en_US&rel=0&start=&version=3&wmode=transparent",
+    "duration_seconds": null,
+    "has_live_deployment": false,
+    "deployment_url": "",
+    "deployment_reachable": null,
+    "has_slide_deck": false,
+    "observations": []
+  },
+  "sponsor_technologies_mentioned": [],
+  "bundle_sha256": "e729bd592571463a7d6ea4abc43e43ccbd05410dcba49cd036c8ec96e1d09406",
+  "created_at": "2026-09-25T15:48:33.884568Z"
+}

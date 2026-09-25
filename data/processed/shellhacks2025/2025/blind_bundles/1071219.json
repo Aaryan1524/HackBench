@@ -1,0 +1,178 @@
+{
+  "project_id": "1071219",
+  "slug": "your-right-pocket",
+  "title": "Your Right Pocket",
+  "tagline": "YourRightPocket is a web application designed to power a fintech platform that enables users to round up their purchases and donate the spare change to charity.",
+  "problem_statement": "",
+  "inspiration": "",
+  "what_it_does": "",
+  "how_it_was_built": "",
+  "challenges": "",
+  "accomplishments": "",
+  "lessons_learned": "",
+  "future_plans": "",
+  "tech_tags": [
+    "api",
+    "every.org",
+    "jwt-authentication",
+    "mysql-database-on-railway",
+    "node.js/express-api-with-mvc-architecture",
+    "react.js-with-vite",
+    "shadcn",
+    "tailwind-css"
+  ],
+  "team_size": 3,
+  "repository_metrics": {
+    "repo_url": "https://github.com/tylerewing64/shellhacks-2.git",
+    "status": "accessible",
+    "default_branch": "main",
+    "file_count": 132,
+    "approx_loc": 12464,
+    "loc_by_language": {
+      "HTML": 31,
+      "JavaScript": 5226,
+      "CSS": 2008,
+      "TypeScript": 5199
+    },
+    "primary_languages": [
+      "JavaScript",
+      "TypeScript",
+      "CSS",
+      "HTML"
+    ],
+    "tech_stack": {
+      "frontend_frameworks": [
+        "Vite",
+        "React",
+        "Next.js"
+      ],
+      "backend_frameworks": [
+        "Express.js"
+      ],
+      "databases": [],
+      "ai_ml_libraries": [],
+      "model_providers": [],
+      "cloud_devops": [],
+      "third_party_apis": [],
+      "hardware_components": [],
+      "package_dependencies": [
+        "express",
+        "next",
+        "react",
+        "vite"
+      ]
+    },
+    "git_timeline": {
+      "total_commits": 38,
+      "commits_in_window": 38,
+      "first_commit_time": "2025-09-27T03:24:32Z",
+      "last_commit_time": "2025-09-28T11:31:31Z",
+      "commit_timestamps": [
+        "2025-09-27T03:24:32Z",
+        "2025-09-27T03:57:00Z",
+        "2025-09-27T05:38:28Z",
+        "2025-09-27T06:30:19Z",
+        "2025-09-27T06:35:01Z",
+        "2025-09-27T06:35:24Z",
+        "2025-09-27T06:42:42Z",
+        "2025-09-27T06:44:37Z",
+        "2025-09-27T06:54:31Z",
+        "2025-09-27T06:55:03Z",
+        "2025-09-27T22:06:34Z",
+        "2025-09-27T23:26:51Z",
+        "2025-09-27T23:36:26Z",
+        "2025-09-28T00:01:36Z",
+        "2025-09-28T00:05:01Z",
+        "2025-09-28T03:03:25Z",
+        "2025-09-28T03:12:26Z",
+        "2025-09-28T03:33:38Z",
+        "2025-09-28T03:36:54Z",
+        "2025-09-28T03:49:22Z",
+        "2025-09-28T06:00:53Z",
+        "2025-09-28T06:01:49Z",
+        "2025-09-28T06:20:09Z",
+        "2025-09-28T06:59:39Z",
+        "2025-09-28T07:10:41Z",
+        "2025-09-28T07:42:36Z",
+        "2025-09-28T07:55:56Z",
+        "2025-09-28T07:59:10Z",
+        "2025-09-28T08:05:33Z",
+        "2025-09-28T08:05:40Z",
+        "2025-09-28T08:21:31Z",
+        "2025-09-28T08:23:22Z",
+        "2025-09-28T08:23:46Z",
+        "2025-09-28T08:32:14Z",
+        "2025-09-28T08:48:06Z",
+        "2025-09-28T08:50:39Z",
+        "2025-09-28T11:30:56Z",
+        "2025-09-28T11:31:31Z"
+      ],
+      "late_rewrites_detected": false,
+      "deadline_crunch_ratio": 0.55,
+      "final_stage_focus": "debugging",
+      "history_is_squashed_or_minimal": false,
+      "contributor_count": 5,
+      "contributors": [
+        "Zairion Palmer",
+        "tylerewing64",
+        "jordanzhancock",
+        "Shawn Paulin",
+        "Jordan Hancock"
+      ]
+    },
+    "test_files_count": 0,
+    "test_frameworks": [],
+    "has_ci": false,
+    "ci_configs": [],
+    "has_docker": false,
+    "has_env_template": false,
+    "readme_size_bytes": 2017,
+    "has_architecture_docs": false,
+    "api_routes_count": 30,
+    "db_migrations_or_schema_count": 1,
+    "mock_data_detected": false,
+    "mock_data_indicators": [],
+    "todo_fixme_count": 1,
+    "boilerplate_detected": false,
+    "boilerplate_indicators": [],
+    "deployment_check": null,
+    "consistency_with_claims": "inconsistent",
+    "consistency_explanation": "Weak evidence: Only 2/8 claimed technologies detected in codebase.",
+    "actual_integrations_found": [
+      "node.js/express-api-with-mvc-architecture",
+      "react.js-with-vite"
+    ],
+    "readme_claims_unsupported_by_code": [
+      "api",
+      "every.org",
+      "jwt-authentication",
+      "mysql-database-on-railway",
+      "shadcn",
+      "tailwind-css"
+    ],
+    "provenance": [
+      {
+        "claim": "Inspected repository https://github.com/tylerewing64/shellhacks-2.git",
+        "evidence_type": "repository",
+        "source": "https://github.com/tylerewing64/shellhacks-2.git",
+        "location": "root",
+        "confidence": 1.0,
+        "details": null
+      }
+    ]
+  },
+  "demo_summary": {
+    "has_video_demo": true,
+    "video_platform": "youtube",
+    "video_url": "https://www.youtube.com/embed/bYUIJvkkmzI?enablejsapi=1&hl=en_US&rel=0&start=&version=3&wmode=transparent",
+    "duration_seconds": null,
+    "has_live_deployment": false,
+    "deployment_url": "",
+    "deployment_reachable": null,
+    "has_slide_deck": false,
+    "observations": []
+  },
+  "sponsor_technologies_mentioned": [],
+  "bundle_sha256": "fc51c53551c22a969e2d5bb327633b138a9469b3b93f1bf2c869b4530754f45a",
+  "created_at": "2026-09-25T15:48:33.650016Z"
+}

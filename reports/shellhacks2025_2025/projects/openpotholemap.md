@@ -11,7 +11,7 @@
 
 # SECTION 1: BLIND ANALYSIS
 *This section was completed and cryptographically sealed prior to revealing judging outcomes.*
-*Integrity Hash: `2a1cce051f5d6cf92a6d753564327f40fc3e28fb1924f79974d953c16c72b901`*
+*Integrity Hash: `b166f68535b97dd5832f338d75e77be27cec3427bfbfdf0d02bb5d223981295d`*
 
 ### Diagnostic Evaluation
 - **Problem Statement**: Leverages computer vision, GPS, and crowdsourcing to detect potholes, warn drivers, and share data with city authorities in real time.

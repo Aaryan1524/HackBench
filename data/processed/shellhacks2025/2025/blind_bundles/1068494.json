@@ -1,0 +1,177 @@
+{
+  "project_id": "1068494",
+  "slug": "goodlife-danwo1",
+  "title": "GoodLife",
+  "tagline": "An intuitive, modern, traveler-focused app that helps volunteers find the most meaningful opportunities abroad by matching them with the most compatible host experiences.",
+  "problem_statement": "",
+  "inspiration": "",
+  "what_it_does": "",
+  "how_it_was_built": "",
+  "challenges": "",
+  "accomplishments": "",
+  "lessons_learned": "",
+  "future_plans": "",
+  "tech_tags": [
+    "figma",
+    "github",
+    "github",
+    "google-gemini-api",
+    "javascript",
+    "javascript",
+    "miro",
+    "python",
+    "python",
+    "react-native",
+    "react-native"
+  ],
+  "team_size": 4,
+  "repository_metrics": {
+    "repo_url": "https://github.com/ggela123/GoodLife",
+    "status": "accessible",
+    "default_branch": "main",
+    "file_count": 50,
+    "approx_loc": 3851,
+    "loc_by_language": {
+      "JavaScript": 3653,
+      "Python": 166,
+      "TypeScript": 32
+    },
+    "primary_languages": [
+      "JavaScript",
+      "Python",
+      "TypeScript"
+    ],
+    "tech_stack": {
+      "frontend_frameworks": [
+        "React"
+      ],
+      "backend_frameworks": [
+        "FastAPI"
+      ],
+      "databases": [
+        "Supabase",
+        "PostgreSQL"
+      ],
+      "ai_ml_libraries": [],
+      "model_providers": [],
+      "cloud_devops": [],
+      "third_party_apis": [],
+      "hardware_components": [],
+      "package_dependencies": [
+        "@react-native-async-storage/async-storage",
+        "@react-navigation/native",
+        "@react-navigation/stack",
+        "@supabase/supabase-js",
+        "@types/react",
+        "dotenv",
+        "expo",
+        "expo-status-bar",
+        "fastapi",
+        "i18n-iso-countries",
+        "pg",
+        "react",
+        "react-native",
+        "react-native-safe-area-context",
+        "react-native-screens",
+        "react-native-url-polyfill",
+        "supabase",
+        "typescript"
+      ]
+    },
+    "git_timeline": {
+      "total_commits": 20,
+      "commits_in_window": 20,
+      "first_commit_time": "2025-09-27T07:04:43Z",
+      "last_commit_time": "2025-09-28T14:51:37Z",
+      "commit_timestamps": [
+        "2025-09-27T07:04:43Z",
+        "2025-09-27T09:17:10Z",
+        "2025-09-27T09:25:38Z",
+        "2025-09-27T09:27:58Z",
+        "2025-09-27T18:27:37Z",
+        "2025-09-27T20:47:52Z",
+        "2025-09-27T21:36:26Z",
+        "2025-09-27T22:21:07Z",
+        "2025-09-27T22:36:12Z",
+        "2025-09-27T23:48:38Z",
+        "2025-09-28T04:07:56Z",
+        "2025-09-28T08:34:40Z",
+        "2025-09-28T08:45:46Z",
+        "2025-09-28T08:54:00Z",
+        "2025-09-28T10:31:20Z",
+        "2025-09-28T12:09:38Z",
+        "2025-09-28T13:53:31Z",
+        "2025-09-28T14:41:58Z",
+        "2025-09-28T14:48:34Z",
+        "2025-09-28T14:51:37Z"
+      ],
+      "late_rewrites_detected": false,
+      "deadline_crunch_ratio": 0.45,
+      "final_stage_focus": "features",
+      "history_is_squashed_or_minimal": false,
+      "contributor_count": 3,
+      "contributors": [
+        "Gerald Gelats",
+        "Christian Orozco",
+        "GeraldGelats"
+      ]
+    },
+    "test_files_count": 0,
+    "test_frameworks": [],
+    "has_ci": false,
+    "ci_configs": [],
+    "has_docker": false,
+    "has_env_template": false,
+    "readme_size_bytes": 10,
+    "has_architecture_docs": false,
+    "api_routes_count": 2,
+    "db_migrations_or_schema_count": 0,
+    "mock_data_detected": false,
+    "mock_data_indicators": [],
+    "todo_fixme_count": 0,
+    "boilerplate_detected": false,
+    "boilerplate_indicators": [],
+    "deployment_check": null,
+    "consistency_with_claims": "inconsistent",
+    "consistency_explanation": "Weak evidence: Only 2/11 claimed technologies detected in codebase.",
+    "actual_integrations_found": [
+      "react-native",
+      "react-native"
+    ],
+    "readme_claims_unsupported_by_code": [
+      "figma",
+      "github",
+      "github",
+      "google-gemini-api",
+      "javascript",
+      "javascript",
+      "miro",
+      "python",
+      "python"
+    ],
+    "provenance": [
+      {
+        "claim": "Inspected repository https://github.com/ggela123/GoodLife",
+        "evidence_type": "repository",
+        "source": "https://github.com/ggela123/GoodLife",
+        "location": "root",
+        "confidence": 1.0,
+        "details": null
+      }
+    ]
+  },
+  "demo_summary": {
+    "has_video_demo": true,
+    "video_platform": "youtube",
+    "video_url": "https://www.youtube.com/embed/9HB9uMN93FI?enablejsapi=1&hl=en_US&rel=0&start=&version=3&wmode=transparent",
+    "duration_seconds": null,
+    "has_live_deployment": false,
+    "deployment_url": "",
+    "deployment_reachable": null,
+    "has_slide_deck": true,
+    "observations": []
+  },
+  "sponsor_technologies_mentioned": [],
+  "bundle_sha256": "cd54b2b7ed9527b68308deba56fc51b07a29443077f6a2361bd34508f315b522",
+  "created_at": "2026-09-25T15:48:33.918307Z"
+}

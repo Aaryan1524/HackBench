@@ -3,10 +3,10 @@
 Automated sanity checks challenging popular hackathon heuristics.
 
 ## Hypothesis: "AI-heavy projects possess an inherent winning advantage."
-- **Finding**: AI was present in 58% of winners versus 61% of non-winners. Given the high overall base rate (60%), AI is essentially table stakes rather than a standalone differentiator.
-- **Base Rate Overall**: 60% (30/50)
+- **Finding**: AI was present in 58% of winners versus 59% of non-winners. Given the high overall base rate (59%), AI is essentially table stakes rather than a standalone differentiator.
+- **Base Rate Overall**: 59% (146/245)
 - **Prevalence Among Winners**: 58% (17/29)
-- **Prevalence Among Non Winners**: 61% (13/21)
+- **Prevalence Among Non Winners**: 59% (129/216)
 
 ---
 ## Hypothesis: "The most technically complex codebase wins."

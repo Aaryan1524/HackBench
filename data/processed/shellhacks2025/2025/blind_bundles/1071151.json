@@ -1,0 +1,163 @@
+{
+  "project_id": "1071151",
+  "slug": "rapid-aid-ev3zhf",
+  "title": "Rapid Aid",
+  "tagline": "Disaster response is slowed by manual coordination. RapidAid uses AI to instantly match aid requests with volunteer organizations—cutting delays and saving critical time.",
+  "problem_statement": "",
+  "inspiration": "",
+  "what_it_does": "",
+  "how_it_was_built": "",
+  "challenges": "",
+  "accomplishments": "",
+  "lessons_learned": "",
+  "future_plans": "",
+  "tech_tags": [
+    "ai",
+    "gemini",
+    "gemini",
+    "indexeddb",
+    "javascript",
+    "javascript",
+    "react",
+    "react",
+    "vite"
+  ],
+  "team_size": 4,
+  "repository_metrics": {
+    "repo_url": "https://github.com/AGZ3/RapidAId/blob/main/README.md",
+    "status": "accessible",
+    "default_branch": "main",
+    "file_count": 33,
+    "approx_loc": 2890,
+    "loc_by_language": {
+      "HTML": 13,
+      "JavaScript": 1474,
+      "CSS": 1403
+    },
+    "primary_languages": [
+      "JavaScript",
+      "CSS",
+      "HTML"
+    ],
+    "tech_stack": {
+      "frontend_frameworks": [
+        "React",
+        "Vite"
+      ],
+      "backend_frameworks": [],
+      "databases": [],
+      "ai_ml_libraries": [],
+      "model_providers": [],
+      "cloud_devops": [],
+      "third_party_apis": [],
+      "hardware_components": [],
+      "package_dependencies": [
+        "@eslint/js",
+        "@google/generative-ai",
+        "@types/react",
+        "@types/react-dom",
+        "@vitejs/plugin-react",
+        "eslint",
+        "eslint-plugin-react-hooks",
+        "eslint-plugin-react-refresh",
+        "globals",
+        "react",
+        "react-dom",
+        "react-router-dom",
+        "vite"
+      ]
+    },
+    "git_timeline": {
+      "total_commits": 18,
+      "commits_in_window": 18,
+      "first_commit_time": "2025-09-27T16:29:58Z",
+      "last_commit_time": "2025-09-28T13:48:16Z",
+      "commit_timestamps": [
+        "2025-09-27T16:29:58Z",
+        "2025-09-27T19:04:30Z",
+        "2025-09-27T19:48:26Z",
+        "2025-09-27T20:13:03Z",
+        "2025-09-27T20:13:35Z",
+        "2025-09-27T20:57:25Z",
+        "2025-09-27T20:57:54Z",
+        "2025-09-27T21:55:28Z",
+        "2025-09-27T22:16:23Z",
+        "2025-09-27T23:11:59Z",
+        "2025-09-28T00:23:00Z",
+        "2025-09-28T00:32:46Z",
+        "2025-09-28T00:59:43Z",
+        "2025-09-28T02:26:09Z",
+        "2025-09-28T12:50:54Z",
+        "2025-09-28T12:58:36Z",
+        "2025-09-28T13:45:18Z",
+        "2025-09-28T13:48:16Z"
+      ],
+      "late_rewrites_detected": false,
+      "deadline_crunch_ratio": 0.22,
+      "final_stage_focus": "debugging",
+      "history_is_squashed_or_minimal": false,
+      "contributor_count": 4,
+      "contributors": [
+        "AGZ3",
+        "Alec Gomez",
+        "TheHermitIV",
+        "Daniel Ibarra"
+      ]
+    },
+    "test_files_count": 0,
+    "test_frameworks": [],
+    "has_ci": false,
+    "ci_configs": [],
+    "has_docker": false,
+    "has_env_template": false,
+    "readme_size_bytes": 9046,
+    "has_architecture_docs": true,
+    "api_routes_count": 0,
+    "db_migrations_or_schema_count": 0,
+    "mock_data_detected": false,
+    "mock_data_indicators": [],
+    "todo_fixme_count": 0,
+    "boilerplate_detected": false,
+    "boilerplate_indicators": [],
+    "deployment_check": null,
+    "consistency_with_claims": "partial",
+    "consistency_explanation": "Partial evidence: 4/9 claimed technologies found in codebase.",
+    "actual_integrations_found": [
+      "ai",
+      "react",
+      "react",
+      "vite"
+    ],
+    "readme_claims_unsupported_by_code": [
+      "gemini",
+      "gemini",
+      "indexeddb",
+      "javascript",
+      "javascript"
+    ],
+    "provenance": [
+      {
+        "claim": "Inspected repository https://github.com/AGZ3/RapidAId/blob/main/README.md",
+        "evidence_type": "repository",
+        "source": "https://github.com/AGZ3/RapidAId/blob/main/README.md",
+        "location": "root",
+        "confidence": 1.0,
+        "details": null
+      }
+    ]
+  },
+  "demo_summary": {
+    "has_video_demo": true,
+    "video_platform": "youtube",
+    "video_url": "https://www.youtube.com/embed/yHue23mMxl8?enablejsapi=1&hl=en_US&rel=0&start=&version=3&wmode=transparent",
+    "duration_seconds": null,
+    "has_live_deployment": false,
+    "deployment_url": "",
+    "deployment_reachable": null,
+    "has_slide_deck": false,
+    "observations": []
+  },
+  "sponsor_technologies_mentioned": [],
+  "bundle_sha256": "3703d927f5d1fb187cd2ec3e89d8e83afe8bd066fe09ff9c1a6feca9229bae79",
+  "created_at": "2026-09-25T15:48:33.687356Z"
+}

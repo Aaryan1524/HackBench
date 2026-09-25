@@ -1,0 +1,171 @@
+{
+  "project_id": "1069145",
+  "slug": "mindpath-neu0tc",
+  "title": "MindPath",
+  "tagline": "Your private mental wellness companion - secure journaling meets AI-powered insights.",
+  "problem_statement": "",
+  "inspiration": "",
+  "what_it_does": "",
+  "how_it_was_built": "",
+  "challenges": "",
+  "accomplishments": "",
+  "lessons_learned": "",
+  "future_plans": "",
+  "tech_tags": [
+    "auth0",
+    "custom-rest",
+    "express.js",
+    "express.js",
+    "gemini",
+    "gemini",
+    "google-cloud",
+    "google-cloud",
+    "lucide",
+    "node.js",
+    "node.js",
+    "react",
+    "react",
+    "sqlite",
+    "sqlite",
+    "tailwindcss"
+  ],
+  "team_size": 5,
+  "repository_metrics": {
+    "repo_url": "https://github.com/MaxineToTheStars/shellhacks-2025",
+    "status": "accessible",
+    "default_branch": "production",
+    "file_count": 43,
+    "approx_loc": 3331,
+    "loc_by_language": {
+      "JavaScript": 1413,
+      "Shell": 259,
+      "HTML": 13,
+      "TypeScript": 1552,
+      "CSS": 94
+    },
+    "primary_languages": [
+      "TypeScript",
+      "JavaScript",
+      "Shell",
+      "CSS",
+      "HTML"
+    ],
+    "tech_stack": {
+      "frontend_frameworks": [
+        "React"
+      ],
+      "backend_frameworks": [
+        "Express.js"
+      ],
+      "databases": [
+        "SQLite"
+      ],
+      "ai_ml_libraries": [],
+      "model_providers": [],
+      "cloud_devops": [],
+      "third_party_apis": [],
+      "hardware_components": [],
+      "package_dependencies": [
+        "express",
+        "react",
+        "sqlite"
+      ]
+    },
+    "git_timeline": {
+      "total_commits": 16,
+      "commits_in_window": 16,
+      "first_commit_time": "2025-09-27T05:11:41Z",
+      "last_commit_time": "2025-09-28T13:54:10Z",
+      "commit_timestamps": [
+        "2025-09-27T05:11:41Z",
+        "2025-09-27T05:16:58Z",
+        "2025-09-27T06:37:25Z",
+        "2025-09-27T07:09:57Z",
+        "2025-09-27T07:30:42Z",
+        "2025-09-27T07:42:51Z",
+        "2025-09-27T08:01:21Z",
+        "2025-09-27T09:55:57Z",
+        "2025-09-27T16:57:18Z",
+        "2025-09-27T20:30:14Z",
+        "2025-09-27T20:34:40Z",
+        "2025-09-27T20:36:01Z",
+        "2025-09-28T13:27:22Z",
+        "2025-09-28T13:50:04Z",
+        "2025-09-28T13:53:06Z",
+        "2025-09-28T13:54:10Z"
+      ],
+      "late_rewrites_detected": false,
+      "deadline_crunch_ratio": 0.25,
+      "final_stage_focus": "docs",
+      "history_is_squashed_or_minimal": false,
+      "contributor_count": 3,
+      "contributors": [
+        "MaxineToTheStars",
+        "Felipe Solorzano",
+        "Maxine"
+      ]
+    },
+    "test_files_count": 0,
+    "test_frameworks": [],
+    "has_ci": false,
+    "ci_configs": [],
+    "has_docker": false,
+    "has_env_template": false,
+    "readme_size_bytes": 1301,
+    "has_architecture_docs": true,
+    "api_routes_count": 10,
+    "db_migrations_or_schema_count": 0,
+    "mock_data_detected": false,
+    "mock_data_indicators": [],
+    "todo_fixme_count": 0,
+    "boilerplate_detected": false,
+    "boilerplate_indicators": [],
+    "deployment_check": null,
+    "consistency_with_claims": "partial",
+    "consistency_explanation": "Partial evidence: 6/16 claimed technologies found in codebase.",
+    "actual_integrations_found": [
+      "express.js",
+      "express.js",
+      "react",
+      "react",
+      "sqlite",
+      "sqlite"
+    ],
+    "readme_claims_unsupported_by_code": [
+      "auth0",
+      "custom-rest",
+      "gemini",
+      "gemini",
+      "google-cloud",
+      "google-cloud",
+      "lucide",
+      "node.js",
+      "node.js",
+      "tailwindcss"
+    ],
+    "provenance": [
+      {
+        "claim": "Inspected repository https://github.com/MaxineToTheStars/shellhacks-2025",
+        "evidence_type": "repository",
+        "source": "https://github.com/MaxineToTheStars/shellhacks-2025",
+        "location": "root",
+        "confidence": 1.0,
+        "details": null
+      }
+    ]
+  },
+  "demo_summary": {
+    "has_video_demo": true,
+    "video_platform": "youtube",
+    "video_url": "https://www.youtube.com/embed/fBTvQiffekQ?enablejsapi=1&hl=en_US&rel=0&start=&version=3&wmode=transparent",
+    "duration_seconds": null,
+    "has_live_deployment": false,
+    "deployment_url": "",
+    "deployment_reachable": null,
+    "has_slide_deck": false,
+    "observations": []
+  },
+  "sponsor_technologies_mentioned": [],
+  "bundle_sha256": "2aab9ae8fdafb35875e6c0ff54e9d21367dcd71ff58e1bace71bfe5711c6be8c",
+  "created_at": "2026-09-25T15:48:33.817613Z"
+}

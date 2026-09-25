@@ -11,7 +11,7 @@
 
 # SECTION 1: BLIND ANALYSIS
 *This section was completed and cryptographically sealed prior to revealing judging outcomes.*
-*Integrity Hash: `79e3126c6ab606f7ea4fd397c2d9dc74d7f2d4d3ae649e6c78e0d8aea8a50079`*
+*Integrity Hash: `83034df53273bce519f9ae8925d88d288bfb7cc0e2a13563659942000de3a2f8`*
 
 ### Diagnostic Evaluation
 - **Problem Statement**: - Allow and encourage players to use technology in the game- Discourages cheating on other playing websites. - Collects data on technology and enables players to make the best solvers possible.
@@ -48,8 +48,8 @@
 
 ### Forensic Alignment
 - **Classification**: `evidence_does_not_clearly_distinguish_winner`
-- **Analysis**: Evidence does not clearly distinguish winner: Scored 2.82. Comparable non-winners (Google Storm (Score: 3.13)) exhibited equal or slightly higher verified metrics.
-- **Comparable Strong Non-Winners**: Google Storm (Score: 3.13)
+- **Analysis**: Evidence does not clearly distinguish winner: Scored 2.82. Comparable non-winners (Google Storm (Score: 3.13), TLDR (Score: 3.13)) exhibited equal or slightly higher verified metrics.
+- **Comparable Strong Non-Winners**: Google Storm (Score: 3.13), TLDR (Score: 3.13)
 
 ### Potential Unobserved Hypotheses (Unverified Possibilities):
 - *Live demo execution differentiated this project from comparable non-winners.*

@@ -1,0 +1,43 @@
+{
+  "project_id": "1070739",
+  "slug": "smartcart-91qlky",
+  "title": "SmartCart",
+  "tagline": "SmartCart: Scan, score & store. Your AI nutritionist + shopping assistant that tracks pantry, compares prices & suggests recipes for healthier, cheaper, waste-free living.",
+  "problem_statement": "",
+  "inspiration": "",
+  "what_it_does": "",
+  "how_it_was_built": "",
+  "challenges": "",
+  "accomplishments": "",
+  "lessons_learned": "",
+  "future_plans": "",
+  "tech_tags": [
+    "firebase",
+    "firebase",
+    "flask",
+    "flask",
+    "google-cloud",
+    "google-cloud",
+    "python",
+    "python",
+    "swiftui",
+    "xcode",
+    "xcode"
+  ],
+  "team_size": 2,
+  "repository_metrics": null,
+  "demo_summary": {
+    "has_video_demo": true,
+    "video_platform": "youtube",
+    "video_url": "https://www.youtube.com/embed/D5D_tlMZjtE?enablejsapi=1&hl=en_US&rel=0&start=&version=3&wmode=transparent",
+    "duration_seconds": null,
+    "has_live_deployment": false,
+    "deployment_url": "",
+    "deployment_reachable": null,
+    "has_slide_deck": false,
+    "observations": []
+  },
+  "sponsor_technologies_mentioned": [],
+  "bundle_sha256": "ad765f5e43ab3625151cca8d72587728a6c1dd12032c5135961c5221766a45a9",
+  "created_at": "2026-09-25T15:48:33.740545Z"
+}

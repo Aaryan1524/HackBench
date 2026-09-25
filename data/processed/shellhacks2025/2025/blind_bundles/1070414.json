@@ -1,0 +1,189 @@
+{
+  "project_id": "1070414",
+  "slug": "varietyshoppinghour",
+  "title": "VarietyShoppingHour",
+  "tagline": "Shopping's Golden Hour finally has some variety!",
+  "problem_statement": "",
+  "inspiration": "",
+  "what_it_does": "",
+  "how_it_was_built": "",
+  "challenges": "",
+  "accomplishments": "",
+  "lessons_learned": "",
+  "future_plans": "",
+  "tech_tags": [
+    "express.js",
+    "express.js",
+    "node.js",
+    "node.js",
+    "react",
+    "react",
+    "vite"
+  ],
+  "team_size": 4,
+  "repository_metrics": {
+    "repo_url": "https://github.com/EmptySet-Exe/VarietyShoppingHour",
+    "status": "accessible",
+    "default_branch": "main",
+    "file_count": 38,
+    "approx_loc": 1122,
+    "loc_by_language": {
+      "HTML": 13,
+      "JavaScript": 1109
+    },
+    "primary_languages": [
+      "JavaScript",
+      "HTML"
+    ],
+    "tech_stack": {
+      "frontend_frameworks": [
+        "Vite",
+        "React",
+        "Next.js"
+      ],
+      "backend_frameworks": [
+        "Express.js"
+      ],
+      "databases": [
+        "MongoDB"
+      ],
+      "ai_ml_libraries": [],
+      "model_providers": [],
+      "cloud_devops": [],
+      "third_party_apis": [],
+      "hardware_components": [],
+      "package_dependencies": [
+        "express",
+        "mongoose",
+        "next",
+        "react",
+        "vite"
+      ]
+    },
+    "git_timeline": {
+      "total_commits": 50,
+      "commits_in_window": 50,
+      "first_commit_time": "2025-09-27T10:28:55Z",
+      "last_commit_time": "2025-10-03T20:53:55Z",
+      "commit_timestamps": [
+        "2025-09-27T10:28:55Z",
+        "2025-09-27T10:36:27Z",
+        "2025-09-27T10:55:56Z",
+        "2025-09-27T11:05:57Z",
+        "2025-09-27T13:23:37Z",
+        "2025-09-27T13:25:31Z",
+        "2025-09-27T14:06:12Z",
+        "2025-09-27T14:55:36Z",
+        "2025-09-27T15:21:14Z",
+        "2025-09-27T15:24:27Z",
+        "2025-09-27T15:27:39Z",
+        "2025-09-27T15:30:18Z",
+        "2025-09-27T16:11:04Z",
+        "2025-09-27T16:25:38Z",
+        "2025-09-27T16:53:41Z",
+        "2025-09-27T17:28:20Z",
+        "2025-09-27T17:47:36Z",
+        "2025-09-27T17:58:47Z",
+        "2025-09-27T18:48:36Z",
+        "2025-09-27T19:26:54Z",
+        "2025-09-27T19:32:25Z",
+        "2025-09-27T20:10:55Z",
+        "2025-09-27T20:31:30Z",
+        "2025-09-27T22:05:37Z",
+        "2025-09-27T22:14:40Z",
+        "2025-09-27T22:20:25Z",
+        "2025-09-27T22:24:42Z",
+        "2025-09-27T22:30:56Z",
+        "2025-09-27T22:33:44Z",
+        "2025-09-27T23:13:06Z",
+        "2025-09-28T00:48:38Z",
+        "2025-09-28T02:54:52Z",
+        "2025-09-28T02:55:40Z",
+        "2025-09-28T02:56:13Z",
+        "2025-09-28T03:06:25Z",
+        "2025-09-28T03:28:50Z",
+        "2025-09-28T05:18:52Z",
+        "2025-09-28T09:40:14Z",
+        "2025-09-28T14:47:15Z",
+        "2025-09-28T14:57:56Z",
+        "2025-09-28T14:58:13Z",
+        "2025-09-28T14:58:54Z",
+        "2025-10-03T16:05:15Z",
+        "2025-10-03T16:07:26Z",
+        "2025-10-03T16:09:29Z",
+        "2025-10-03T16:10:59Z",
+        "2025-10-03T16:14:41Z",
+        "2025-10-03T17:58:53Z",
+        "2025-10-03T20:49:28Z",
+        "2025-10-03T20:53:55Z"
+      ],
+      "late_rewrites_detected": false,
+      "deadline_crunch_ratio": 0.16,
+      "final_stage_focus": "docs",
+      "history_is_squashed_or_minimal": false,
+      "contributor_count": 7,
+      "contributors": [
+        "Jack_Exe",
+        "Hershey",
+        "strigoaraneo",
+        "Roberto Hogas Goras",
+        "rober",
+        "Strigo Araneo",
+        "EmptySet-Exe"
+      ]
+    },
+    "test_files_count": 0,
+    "test_frameworks": [],
+    "has_ci": false,
+    "ci_configs": [],
+    "has_docker": false,
+    "has_env_template": false,
+    "readme_size_bytes": 2666,
+    "has_architecture_docs": false,
+    "api_routes_count": 7,
+    "db_migrations_or_schema_count": 0,
+    "mock_data_detected": false,
+    "mock_data_indicators": [],
+    "todo_fixme_count": 0,
+    "boilerplate_detected": false,
+    "boilerplate_indicators": [],
+    "deployment_check": null,
+    "consistency_with_claims": "consistent",
+    "consistency_explanation": "Strong evidence: 5/7 claimed technologies verified in codebase.",
+    "actual_integrations_found": [
+      "express.js",
+      "express.js",
+      "react",
+      "react",
+      "vite"
+    ],
+    "readme_claims_unsupported_by_code": [
+      "node.js",
+      "node.js"
+    ],
+    "provenance": [
+      {
+        "claim": "Inspected repository https://github.com/EmptySet-Exe/VarietyShoppingHour",
+        "evidence_type": "repository",
+        "source": "https://github.com/EmptySet-Exe/VarietyShoppingHour",
+        "location": "root",
+        "confidence": 1.0,
+        "details": null
+      }
+    ]
+  },
+  "demo_summary": {
+    "has_video_demo": true,
+    "video_platform": "youtube",
+    "video_url": "https://www.youtube.com/embed/uJ9FYCZT3d4?enablejsapi=1&hl=en_US&rel=0&start=&version=3&wmode=transparent",
+    "duration_seconds": null,
+    "has_live_deployment": false,
+    "deployment_url": "",
+    "deployment_reachable": null,
+    "has_slide_deck": false,
+    "observations": []
+  },
+  "sponsor_technologies_mentioned": [],
+  "bundle_sha256": "4d1844f31e3f7e0f13420477a06ff3fb9d14e4b45f10f0a7cd4131a2cf23e605",
+  "created_at": "2026-09-25T15:48:34.031808Z"
+}

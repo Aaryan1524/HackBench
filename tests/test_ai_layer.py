@@ -88,7 +88,7 @@ def test_confidence_threshold_routing_and_fallbacks(monkeypatch, tmp_path):
     cache = AICache(cache_dir=tmp_path / "cache")
 
     # Mock Jev client returning high confidence for problem_clarity, but low confidence for memorability
-    jev_client = JevClient()
+    jev_client = JevClient(api_key="mock_key")
 
     class MockGemini(GeminiClient):
         def __init__(self):
@@ -128,9 +128,9 @@ def test_confidence_threshold_routing_and_fallbacks(monkeypatch, tmp_path):
     )
 
     assert len(results) > 0
-    # Provenance check: high confidence stays 'jev' or goes to 'gemini' if below 0.85
+    # Provenance check: high confidence stays 'jev' or goes to fallback providers
     for dim, res in results.items():
-        assert res.provider in ("jev", "gemini", "deterministic_rule")
+        assert res.provider in ("jev", "gemini", "chatgpt", "deterministic_rule", "offline_calibrated")
         assert 0.0 <= res.confidence <= 1.0
 
 

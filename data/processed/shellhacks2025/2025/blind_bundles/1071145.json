@@ -1,0 +1,168 @@
+{
+  "project_id": "1071145",
+  "slug": "gridguard-09sw7l",
+  "title": "GridGuard",
+  "tagline": "GridGuard is the energy grid prediction dashboard for those wanting an idea of if they'll lose power during incidents around the country.",
+  "problem_statement": "",
+  "inspiration": "",
+  "what_it_does": "",
+  "how_it_was_built": "",
+  "challenges": "",
+  "accomplishments": "",
+  "lessons_learned": "",
+  "future_plans": "",
+  "tech_tags": [
+    "csv",
+    "gemini",
+    "gemini",
+    "numpy",
+    "numpy",
+    "pandas",
+    "pandas",
+    "plotly",
+    "plotly",
+    "pydeck",
+    "python",
+    "python",
+    "scikit-learn",
+    "scikit-learn",
+    "sql",
+    "sql",
+    "streamlit"
+  ],
+  "team_size": 1,
+  "repository_metrics": {
+    "repo_url": "https://github.com/MayaOum05/saviney",
+    "status": "accessible",
+    "default_branch": "main",
+    "file_count": 11,
+    "approx_loc": 282,
+    "loc_by_language": {
+      "Python": 282
+    },
+    "primary_languages": [
+      "Python"
+    ],
+    "tech_stack": {
+      "frontend_frameworks": [],
+      "backend_frameworks": [
+        "Express.js"
+      ],
+      "databases": [],
+      "ai_ml_libraries": [
+        "Scikit-Learn"
+      ],
+      "model_providers": [],
+      "cloud_devops": [],
+      "third_party_apis": [],
+      "hardware_components": [],
+      "package_dependencies": [
+        "express",
+        "geopandas",
+        "google-genai",
+        "numpy",
+        "pandas",
+        "plotly",
+        "pydeck",
+        "python-dotenv",
+        "scikit-learn",
+        "sklearn",
+        "streamlit"
+      ]
+    },
+    "git_timeline": {
+      "total_commits": 14,
+      "commits_in_window": 14,
+      "first_commit_time": "2025-09-27T03:33:06Z",
+      "last_commit_time": "2025-09-28T14:23:54Z",
+      "commit_timestamps": [
+        "2025-09-27T03:33:06Z",
+        "2025-09-27T17:40:53Z",
+        "2025-09-27T19:50:48Z",
+        "2025-09-27T20:13:17Z",
+        "2025-09-27T20:16:45Z",
+        "2025-09-27T20:16:49Z",
+        "2025-09-28T00:40:53Z",
+        "2025-09-28T01:46:55Z",
+        "2025-09-28T13:47:50Z",
+        "2025-09-28T14:11:57Z",
+        "2025-09-28T14:13:26Z",
+        "2025-09-28T14:16:13Z",
+        "2025-09-28T14:19:15Z",
+        "2025-09-28T14:23:54Z"
+      ],
+      "late_rewrites_detected": false,
+      "deadline_crunch_ratio": 0.43,
+      "final_stage_focus": "polish",
+      "history_is_squashed_or_minimal": false,
+      "contributor_count": 2,
+      "contributors": [
+        "Maya",
+        "Maya Oum"
+      ]
+    },
+    "test_files_count": 0,
+    "test_frameworks": [],
+    "has_ci": false,
+    "ci_configs": [],
+    "has_docker": false,
+    "has_env_template": false,
+    "readme_size_bytes": 39,
+    "has_architecture_docs": false,
+    "api_routes_count": 0,
+    "db_migrations_or_schema_count": 0,
+    "mock_data_detected": false,
+    "mock_data_indicators": [],
+    "todo_fixme_count": 0,
+    "boilerplate_detected": false,
+    "boilerplate_indicators": [],
+    "deployment_check": null,
+    "consistency_with_claims": "consistent",
+    "consistency_explanation": "Strong evidence: 12/17 claimed technologies verified in codebase.",
+    "actual_integrations_found": [
+      "numpy",
+      "numpy",
+      "pandas",
+      "pandas",
+      "plotly",
+      "plotly",
+      "pydeck",
+      "python",
+      "python",
+      "scikit-learn",
+      "scikit-learn",
+      "streamlit"
+    ],
+    "readme_claims_unsupported_by_code": [
+      "csv",
+      "gemini",
+      "gemini",
+      "sql",
+      "sql"
+    ],
+    "provenance": [
+      {
+        "claim": "Inspected repository https://github.com/MayaOum05/saviney",
+        "evidence_type": "repository",
+        "source": "https://github.com/MayaOum05/saviney",
+        "location": "root",
+        "confidence": 1.0,
+        "details": null
+      }
+    ]
+  },
+  "demo_summary": {
+    "has_video_demo": true,
+    "video_platform": "youtube",
+    "video_url": "https://www.youtube.com/embed/HESV-uQvW_M?enablejsapi=1&hl=en_US&rel=0&start=&version=3&wmode=transparent",
+    "duration_seconds": null,
+    "has_live_deployment": false,
+    "deployment_url": "",
+    "deployment_reachable": null,
+    "has_slide_deck": false,
+    "observations": []
+  },
+  "sponsor_technologies_mentioned": [],
+  "bundle_sha256": "f4bfa933ec23a092dd32ac02ff05f28643ed51fa8fc9be682752a20ae3e344d8",
+  "created_at": "2026-09-25T15:48:33.844998Z"
+}
