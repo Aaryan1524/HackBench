@@ -49,9 +49,7 @@
       "backend_frameworks": [
         "Flask"
       ],
-      "databases": [
-        "PostgreSQL"
-      ],
+      "databases": [],
       "ai_ml_libraries": [],
       "model_providers": [],
       "cloud_devops": [],
@@ -61,7 +59,6 @@
       ],
       "package_dependencies": [
         "flask",
-        "pg",
         "react",
         "react-dom",
         "react-scripts",
@@ -129,11 +126,11 @@
       "history_is_squashed_or_minimal": false,
       "contributor_count": 5,
       "contributors": [
-        "Susan Lee",
-        "jennixi",
-        "SemaKalawi",
         "jen",
-        "Eva Mae Miller"
+        "jennixi",
+        "Eva Mae Miller",
+        "SemaKalawi",
+        "Susan Lee"
       ]
     },
     "test_files_count": 0,
@@ -190,6 +187,6 @@
     "observations": []
   },
   "sponsor_technologies_mentioned": [],
-  "bundle_sha256": "6a9936e11016aa4715e69a877df062351fec076ccf62c99953e3b779a42d2438",
-  "created_at": "2026-09-25T15:00:11.496917Z"
+  "bundle_sha256": "10d9565cb033848e7ba78c2cbacad5063fea9891720c27661f9a0ab31f6d9d29",
+  "created_at": "2026-09-25T15:48:33.481485Z"
 }

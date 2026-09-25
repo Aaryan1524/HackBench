@@ -1,0 +1,178 @@
+{
+  "project_id": "1069114",
+  "slug": "peerlens",
+  "title": "PeerLens",
+  "tagline": "We built an AI research assistant using Google ADK and Gemini API that analyzes uploaded papers, identifies research gaps, and uses parallel agents to debate and score publication potential.",
+  "problem_statement": "",
+  "inspiration": "",
+  "what_it_does": "",
+  "how_it_was_built": "",
+  "challenges": "",
+  "accomplishments": "",
+  "lessons_learned": "",
+  "future_plans": "",
+  "tech_tags": [
+    "fastapi",
+    "firebase",
+    "firebase",
+    "gemini",
+    "gemini",
+    "git",
+    "git",
+    "github",
+    "github",
+    "googleadk",
+    "oauth",
+    "oauth",
+    "python",
+    "python",
+    "react",
+    "react"
+  ],
+  "team_size": 3,
+  "repository_metrics": {
+    "repo_url": "https://github.com/SkSadaf/PeerLens",
+    "status": "accessible",
+    "default_branch": "main",
+    "file_count": 50,
+    "approx_loc": 2083,
+    "loc_by_language": {
+      "Python": 783,
+      "HTML": 45,
+      "CSS": 527,
+      "JavaScript": 728
+    },
+    "primary_languages": [
+      "Python",
+      "JavaScript",
+      "CSS",
+      "HTML"
+    ],
+    "tech_stack": {
+      "frontend_frameworks": [
+        "React"
+      ],
+      "backend_frameworks": [
+        "FastAPI"
+      ],
+      "databases": [],
+      "ai_ml_libraries": [],
+      "model_providers": [],
+      "cloud_devops": [],
+      "third_party_apis": [],
+      "hardware_components": [],
+      "package_dependencies": [
+        "fastapi",
+        "google-adk",
+        "google-cloud-aiplatform",
+        "pydantic",
+        "pypdf2",
+        "python-dotenv",
+        "python-multipart",
+        "react",
+        "react-markdown",
+        "remark-gfm",
+        "requests",
+        "uvicorn[standard]"
+      ]
+    },
+    "git_timeline": {
+      "total_commits": 18,
+      "commits_in_window": 18,
+      "first_commit_time": "2025-09-27T17:14:25Z",
+      "last_commit_time": "2025-09-28T12:38:57Z",
+      "commit_timestamps": [
+        "2025-09-27T17:14:25Z",
+        "2025-09-27T17:15:40Z",
+        "2025-09-27T17:19:14Z",
+        "2025-09-27T17:19:51Z",
+        "2025-09-27T18:53:54Z",
+        "2025-09-27T18:57:28Z",
+        "2025-09-27T19:03:13Z",
+        "2025-09-27T19:07:34Z",
+        "2025-09-27T19:43:24Z",
+        "2025-09-27T21:52:50Z",
+        "2025-09-27T21:58:05Z",
+        "2025-09-28T04:47:57Z",
+        "2025-09-28T09:00:12Z",
+        "2025-09-28T12:23:07Z",
+        "2025-09-28T12:23:59Z",
+        "2025-09-28T12:28:27Z",
+        "2025-09-28T12:32:48Z",
+        "2025-09-28T12:38:57Z"
+      ],
+      "late_rewrites_detected": false,
+      "deadline_crunch_ratio": 0.33,
+      "final_stage_focus": "docs",
+      "history_is_squashed_or_minimal": false,
+      "contributor_count": 3,
+      "contributors": [
+        "Sadaf",
+        "SkSadaf",
+        "Swaroopa1097"
+      ]
+    },
+    "test_files_count": 1,
+    "test_frameworks": [],
+    "has_ci": false,
+    "ci_configs": [],
+    "has_docker": false,
+    "has_env_template": false,
+    "readme_size_bytes": 2042,
+    "has_architecture_docs": false,
+    "api_routes_count": 3,
+    "db_migrations_or_schema_count": 0,
+    "mock_data_detected": false,
+    "mock_data_indicators": [],
+    "todo_fixme_count": 0,
+    "boilerplate_detected": false,
+    "boilerplate_indicators": [],
+    "deployment_check": null,
+    "consistency_with_claims": "partial",
+    "consistency_explanation": "Partial evidence: 5/16 claimed technologies found in codebase.",
+    "actual_integrations_found": [
+      "fastapi",
+      "python",
+      "python",
+      "react",
+      "react"
+    ],
+    "readme_claims_unsupported_by_code": [
+      "firebase",
+      "firebase",
+      "gemini",
+      "gemini",
+      "git",
+      "git",
+      "github",
+      "github",
+      "googleadk",
+      "oauth",
+      "oauth"
+    ],
+    "provenance": [
+      {
+        "claim": "Inspected repository https://github.com/SkSadaf/PeerLens",
+        "evidence_type": "repository",
+        "source": "https://github.com/SkSadaf/PeerLens",
+        "location": "root",
+        "confidence": 1.0,
+        "details": null
+      }
+    ]
+  },
+  "demo_summary": {
+    "has_video_demo": true,
+    "video_platform": "youtube",
+    "video_url": "https://www.youtube.com/embed/vNXZI_ZoCEo?enablejsapi=1&hl=en_US&rel=0&start=&version=3&wmode=transparent",
+    "duration_seconds": null,
+    "has_live_deployment": false,
+    "deployment_url": "",
+    "deployment_reachable": null,
+    "has_slide_deck": false,
+    "observations": []
+  },
+  "sponsor_technologies_mentioned": [],
+  "bundle_sha256": "32c2fed54061406f213495bb8221fc141033c571cd4a9eced5b613338ce7de5a",
+  "created_at": "2026-09-25T15:48:33.670892Z"
+}

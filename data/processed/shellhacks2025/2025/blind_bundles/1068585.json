@@ -1,0 +1,154 @@
+{
+  "project_id": "1068585",
+  "slug": "multi-agent-smart-contract-security-system",
+  "title": "Multi-Agent Smart Contract Security System",
+  "tagline": "Multi-agent smart contract auditor (Google’s ADK and A2A protocol) using autonomous agents that monitor, audit, and predict vulnerabilities in blockchain contracts.",
+  "problem_statement": "",
+  "inspiration": "",
+  "what_it_does": "",
+  "how_it_was_built": "",
+  "challenges": "",
+  "accomplishments": "",
+  "lessons_learned": "",
+  "future_plans": "",
+  "tech_tags": [
+    "a2a",
+    "chart.js",
+    "chart.js",
+    "css3",
+    "css3",
+    "express.js",
+    "express.js",
+    "google-adk",
+    "html5",
+    "html5",
+    "javascript",
+    "javascript",
+    "node.js",
+    "node.js",
+    "solidity",
+    "solidity"
+  ],
+  "team_size": 1,
+  "repository_metrics": {
+    "repo_url": "https://github.com/aleenasid12/smart-contract-security-agents.git",
+    "status": "accessible",
+    "default_branch": "main",
+    "file_count": 31,
+    "approx_loc": 9999,
+    "loc_by_language": {
+      "JavaScript": 8129,
+      "HTML": 293,
+      "CSS": 1577
+    },
+    "primary_languages": [
+      "JavaScript",
+      "CSS",
+      "HTML"
+    ],
+    "tech_stack": {
+      "frontend_frameworks": [],
+      "backend_frameworks": [
+        "Express.js"
+      ],
+      "databases": [],
+      "ai_ml_libraries": [],
+      "model_providers": [],
+      "cloud_devops": [],
+      "third_party_apis": [],
+      "hardware_components": [],
+      "package_dependencies": [
+        "axios",
+        "cors",
+        "dotenv",
+        "ethers",
+        "express",
+        "nodemon",
+        "open"
+      ]
+    },
+    "git_timeline": {
+      "total_commits": 2,
+      "commits_in_window": 2,
+      "first_commit_time": "2025-09-28T14:07:28Z",
+      "last_commit_time": "2025-09-28T14:15:14Z",
+      "commit_timestamps": [
+        "2025-09-28T14:07:28Z",
+        "2025-09-28T14:15:14Z"
+      ],
+      "late_rewrites_detected": false,
+      "deadline_crunch_ratio": 0.0,
+      "final_stage_focus": "squashed",
+      "history_is_squashed_or_minimal": true,
+      "contributor_count": 2,
+      "contributors": [
+        "aleenasid12",
+        "Aleena Siddiqui"
+      ]
+    },
+    "test_files_count": 0,
+    "test_frameworks": [],
+    "has_ci": false,
+    "ci_configs": [],
+    "has_docker": false,
+    "has_env_template": false,
+    "readme_size_bytes": 18993,
+    "has_architecture_docs": true,
+    "api_routes_count": 10,
+    "db_migrations_or_schema_count": 0,
+    "mock_data_detected": true,
+    "mock_data_indicators": [
+      "Mock text inside claude.js"
+    ],
+    "todo_fixme_count": 0,
+    "boilerplate_detected": false,
+    "boilerplate_indicators": [],
+    "deployment_check": null,
+    "consistency_with_claims": "inconsistent",
+    "consistency_explanation": "Weak evidence: Only 2/16 claimed technologies detected in codebase.",
+    "actual_integrations_found": [
+      "express.js",
+      "express.js"
+    ],
+    "readme_claims_unsupported_by_code": [
+      "a2a",
+      "chart.js",
+      "chart.js",
+      "css3",
+      "css3",
+      "google-adk",
+      "html5",
+      "html5",
+      "javascript",
+      "javascript",
+      "node.js",
+      "node.js",
+      "solidity",
+      "solidity"
+    ],
+    "provenance": [
+      {
+        "claim": "Inspected repository https://github.com/aleenasid12/smart-contract-security-agents.git",
+        "evidence_type": "repository",
+        "source": "https://github.com/aleenasid12/smart-contract-security-agents.git",
+        "location": "root",
+        "confidence": 1.0,
+        "details": null
+      }
+    ]
+  },
+  "demo_summary": {
+    "has_video_demo": true,
+    "video_platform": "youtube",
+    "video_url": "https://www.youtube.com/embed/lLcIEmOw2X0?enablejsapi=1&hl=en_US&rel=0&start=&version=3&wmode=transparent",
+    "duration_seconds": null,
+    "has_live_deployment": false,
+    "deployment_url": "",
+    "deployment_reachable": null,
+    "has_slide_deck": false,
+    "observations": []
+  },
+  "sponsor_technologies_mentioned": [],
+  "bundle_sha256": "602ad7d122551ef71b406e84c2867226532cee9ab9e48b6ffa4f92e2660e83f7",
+  "created_at": "2026-09-25T15:48:33.747985Z"
+}

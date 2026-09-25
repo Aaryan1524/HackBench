@@ -1,0 +1,160 @@
+{
+  "project_id": "1070530",
+  "slug": "scholarshipai",
+  "title": "ScholarshipAI",
+  "tagline": "Don't let financial barriers stop you from achieving your educational dreams. Start your scholarship search today and unlock opportunities you never knew existed.",
+  "problem_statement": "",
+  "inspiration": "",
+  "what_it_does": "",
+  "how_it_was_built": "",
+  "challenges": "",
+  "accomplishments": "",
+  "lessons_learned": "",
+  "future_plans": "",
+  "tech_tags": [
+    "adk",
+    "cloud",
+    "css",
+    "css",
+    "google",
+    "google",
+    "javascript",
+    "javascript",
+    "python",
+    "python",
+    "react",
+    "react",
+    "tailwind",
+    "typescript",
+    "typescript"
+  ],
+  "team_size": 2,
+  "repository_metrics": {
+    "repo_url": "https://github.com/dquin144/ShellHacks2025",
+    "status": "accessible",
+    "default_branch": "main",
+    "file_count": 62,
+    "approx_loc": 2878,
+    "loc_by_language": {
+      "Python": 335,
+      "HTML": 27,
+      "JavaScript": 348,
+      "CSS": 200,
+      "TypeScript": 1968
+    },
+    "primary_languages": [
+      "TypeScript",
+      "JavaScript",
+      "Python",
+      "CSS",
+      "HTML"
+    ],
+    "tech_stack": {
+      "frontend_frameworks": [
+        "React",
+        "Vite",
+        "TailwindCSS"
+      ],
+      "backend_frameworks": [
+        "FastAPI"
+      ],
+      "databases": [],
+      "ai_ml_libraries": [],
+      "model_providers": [],
+      "cloud_devops": [],
+      "third_party_apis": [],
+      "hardware_components": [],
+      "package_dependencies": [
+        "fastapi",
+        "react",
+        "tailwindcss",
+        "vite"
+      ]
+    },
+    "git_timeline": {
+      "total_commits": 7,
+      "commits_in_window": 7,
+      "first_commit_time": "2025-09-27T18:12:51Z",
+      "last_commit_time": "2025-09-28T08:09:16Z",
+      "commit_timestamps": [
+        "2025-09-27T18:12:51Z",
+        "2025-09-27T20:57:52Z",
+        "2025-09-28T03:43:51Z",
+        "2025-09-28T04:01:20Z",
+        "2025-09-28T08:05:45Z",
+        "2025-09-28T08:07:28Z",
+        "2025-09-28T08:09:16Z"
+      ],
+      "late_rewrites_detected": false,
+      "deadline_crunch_ratio": 0.43,
+      "final_stage_focus": "docs",
+      "history_is_squashed_or_minimal": false,
+      "contributor_count": 2,
+      "contributors": [
+        "david",
+        "dquin144"
+      ]
+    },
+    "test_files_count": 0,
+    "test_frameworks": [],
+    "has_ci": false,
+    "ci_configs": [],
+    "has_docker": false,
+    "has_env_template": false,
+    "readme_size_bytes": 489,
+    "has_architecture_docs": false,
+    "api_routes_count": 2,
+    "db_migrations_or_schema_count": 0,
+    "mock_data_detected": false,
+    "mock_data_indicators": [],
+    "todo_fixme_count": 0,
+    "boilerplate_detected": false,
+    "boilerplate_indicators": [],
+    "deployment_check": null,
+    "consistency_with_claims": "partial",
+    "consistency_explanation": "Partial evidence: 5/15 claimed technologies found in codebase.",
+    "actual_integrations_found": [
+      "css",
+      "css",
+      "react",
+      "react",
+      "tailwind"
+    ],
+    "readme_claims_unsupported_by_code": [
+      "adk",
+      "cloud",
+      "google",
+      "google",
+      "javascript",
+      "javascript",
+      "python",
+      "python",
+      "typescript",
+      "typescript"
+    ],
+    "provenance": [
+      {
+        "claim": "Inspected repository https://github.com/dquin144/ShellHacks2025",
+        "evidence_type": "repository",
+        "source": "https://github.com/dquin144/ShellHacks2025",
+        "location": "root",
+        "confidence": 1.0,
+        "details": null
+      }
+    ]
+  },
+  "demo_summary": {
+    "has_video_demo": true,
+    "video_platform": "youtube",
+    "video_url": "https://www.youtube.com/embed/FyhSTmCr-sk?enablejsapi=1&hl=en_US&rel=0&start=&version=3&wmode=transparent",
+    "duration_seconds": null,
+    "has_live_deployment": false,
+    "deployment_url": "",
+    "deployment_reachable": null,
+    "has_slide_deck": false,
+    "observations": []
+  },
+  "sponsor_technologies_mentioned": [],
+  "bundle_sha256": "faeaec827f277c76a65411f25d00b5111334b2bee0190e5dc1355515122c2835",
+  "created_at": "2026-09-25T15:48:34.018023Z"
+}

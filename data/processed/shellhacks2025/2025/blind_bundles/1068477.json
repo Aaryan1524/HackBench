@@ -53,15 +53,13 @@
     ],
     "tech_stack": {
       "frontend_frameworks": [
-        "Next.js",
-        "React"
+        "React",
+        "Next.js"
       ],
       "backend_frameworks": [
         "Flask"
       ],
-      "databases": [
-        "PostgreSQL"
-      ],
+      "databases": [],
       "ai_ml_libraries": [],
       "model_providers": [],
       "cloud_devops": [],
@@ -70,7 +68,6 @@
       "package_dependencies": [
         "flask",
         "next",
-        "pg",
         "react"
       ]
     },
@@ -143,12 +140,12 @@
       "history_is_squashed_or_minimal": false,
       "contributor_count": 7,
       "contributors": [
-        "Arthur Teng",
         "Bowen",
-        "Arthur1asdf",
-        "bowen",
-        "ncano1025",
         "BatsCrow",
+        "Arthur1asdf",
+        "ncano1025",
+        "Arthur Teng",
+        "bowen",
         "Natalia Cano"
       ]
     },
@@ -218,6 +215,6 @@
     "observations": []
   },
   "sponsor_technologies_mentioned": [],
-  "bundle_sha256": "7a33d10bd1453177d64e137899b92efcd0baad4b2bb5728d68e9ecb57177bb4b",
-  "created_at": "2026-09-25T15:00:11.531047Z"
+  "bundle_sha256": "a21d0307a472d3715bef54b986f0cb558a468b8f1acbd9828e950103a9924a04",
+  "created_at": "2026-09-25T15:48:33.535104Z"
 }

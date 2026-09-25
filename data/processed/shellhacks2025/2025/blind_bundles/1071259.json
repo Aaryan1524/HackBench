@@ -34,9 +34,7 @@
       "Python"
     ],
     "tech_stack": {
-      "frontend_frameworks": [
-        "Next.js"
-      ],
+      "frontend_frameworks": [],
       "backend_frameworks": [],
       "databases": [],
       "ai_ml_libraries": [],
@@ -61,8 +59,7 @@
         "\u0000s\u0000o\u0000u\u0000n\u0000d\u0000f\u0000i\u0000l\u0000e\u0000",
         "\u0000s\u0000t\u0000r\u0000e\u0000a\u0000m\u0000l\u0000i\u0000t\u0000",
         "\u0000t\u0000q\u0000d\u0000m\u0000",
-        "genkit",
-        "next"
+        "genkit"
       ]
     },
     "git_timeline": {
@@ -102,8 +99,8 @@
       "history_is_squashed_or_minimal": false,
       "contributor_count": 3,
       "contributors": [
-        "greenzanman",
         "Zane Manning",
+        "greenzanman",
         "Yikazoid"
       ]
     },
@@ -118,7 +115,7 @@
     "readme_size_bytes": 3470,
     "has_architecture_docs": false,
     "api_routes_count": 0,
-    "db_migrations_or_schema_count": 52,
+    "db_migrations_or_schema_count": 0,
     "mock_data_detected": false,
     "mock_data_indicators": [],
     "todo_fixme_count": 0,
@@ -160,6 +157,6 @@
     "observations": []
   },
   "sponsor_technologies_mentioned": [],
-  "bundle_sha256": "58d74beb1ae77939697ccfde4b89533f04801d96f3dbbe51cace5c068322e14f",
-  "created_at": "2026-09-25T15:00:11.546684Z"
+  "bundle_sha256": "643d096cd7cb33805d4ffb78a75b28ee8b672e2f0e46a39c5a8601f4332dc451",
+  "created_at": "2026-09-25T15:48:33.566679Z"
 }

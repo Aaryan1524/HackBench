@@ -1,0 +1,147 @@
+{
+  "project_id": "1070199",
+  "slug": "f-r-a-n-k",
+  "title": "F.R.A.N.K.",
+  "tagline": "Meet FRANK: Financial Responsibility And New Knowledge. Be frank with your money track, learn, and take control with simple, honest guidance. That’s FRANK.",
+  "problem_statement": "",
+  "inspiration": "",
+  "what_it_does": "",
+  "how_it_was_built": "",
+  "challenges": "",
+  "accomplishments": "",
+  "lessons_learned": "",
+  "future_plans": "",
+  "tech_tags": [
+    "javascript",
+    "javascript",
+    "scc",
+    "shell",
+    "shell",
+    "typescript",
+    "typescript"
+  ],
+  "team_size": 2,
+  "repository_metrics": {
+    "repo_url": "https://github.com/NathanaelCastro914/F.R.A.N.K.",
+    "status": "accessible",
+    "default_branch": "main",
+    "file_count": 28,
+    "approx_loc": 1452,
+    "loc_by_language": {
+      "Shell": 224,
+      "JavaScript": 521,
+      "TypeScript": 699,
+      "CSS": 8
+    },
+    "primary_languages": [
+      "TypeScript",
+      "JavaScript",
+      "Shell",
+      "CSS"
+    ],
+    "tech_stack": {
+      "frontend_frameworks": [
+        "Next.js",
+        "React"
+      ],
+      "backend_frameworks": [
+        "Express.js"
+      ],
+      "databases": [],
+      "ai_ml_libraries": [],
+      "model_providers": [],
+      "cloud_devops": [],
+      "third_party_apis": [],
+      "hardware_components": [],
+      "package_dependencies": [
+        "express",
+        "next",
+        "react"
+      ]
+    },
+    "git_timeline": {
+      "total_commits": 13,
+      "commits_in_window": 13,
+      "first_commit_time": "2025-09-27T04:17:29Z",
+      "last_commit_time": "2025-09-29T15:16:00Z",
+      "commit_timestamps": [
+        "2025-09-27T04:17:29Z",
+        "2025-09-27T04:17:42Z",
+        "2025-09-27T04:25:43Z",
+        "2025-09-27T06:36:17Z",
+        "2025-09-27T06:37:48Z",
+        "2025-09-27T15:53:59Z",
+        "2025-09-27T16:29:45Z",
+        "2025-09-28T03:29:32Z",
+        "2025-09-28T12:56:00Z",
+        "2025-09-28T12:58:06Z",
+        "2025-09-28T13:09:49Z",
+        "2025-09-28T13:27:01Z",
+        "2025-09-29T15:16:00Z"
+      ],
+      "late_rewrites_detected": false,
+      "deadline_crunch_ratio": 0.08,
+      "final_stage_focus": "debugging",
+      "history_is_squashed_or_minimal": false,
+      "contributor_count": 2,
+      "contributors": [
+        "NathanaelCastro914",
+        "Nathanael Castro"
+      ]
+    },
+    "test_files_count": 0,
+    "test_frameworks": [],
+    "has_ci": false,
+    "ci_configs": [],
+    "has_docker": false,
+    "has_env_template": false,
+    "readme_size_bytes": 9796,
+    "has_architecture_docs": true,
+    "api_routes_count": 3,
+    "db_migrations_or_schema_count": 0,
+    "mock_data_detected": true,
+    "mock_data_indicators": [
+      "Mock text inside ideas.js"
+    ],
+    "todo_fixme_count": 0,
+    "boilerplate_detected": false,
+    "boilerplate_indicators": [],
+    "deployment_check": null,
+    "consistency_with_claims": "inconsistent",
+    "consistency_explanation": "Weak evidence: Only 0/7 claimed technologies detected in codebase.",
+    "actual_integrations_found": [],
+    "readme_claims_unsupported_by_code": [
+      "javascript",
+      "javascript",
+      "scc",
+      "shell",
+      "shell",
+      "typescript",
+      "typescript"
+    ],
+    "provenance": [
+      {
+        "claim": "Inspected repository https://github.com/NathanaelCastro914/F.R.A.N.K.",
+        "evidence_type": "repository",
+        "source": "https://github.com/NathanaelCastro914/F.R.A.N.K.",
+        "location": "root",
+        "confidence": 1.0,
+        "details": null
+      }
+    ]
+  },
+  "demo_summary": {
+    "has_video_demo": true,
+    "video_platform": "youtube",
+    "video_url": "https://www.youtube.com/embed/eMZqiT0cimM?enablejsapi=1&hl=en_US&rel=0&start=&version=3&wmode=transparent",
+    "duration_seconds": null,
+    "has_live_deployment": false,
+    "deployment_url": "",
+    "deployment_reachable": null,
+    "has_slide_deck": false,
+    "observations": []
+  },
+  "sponsor_technologies_mentioned": [],
+  "bundle_sha256": "8569d2088e1c7d472b0956484f3abe12dc49709e5ff020cfd1ca062f627f1d8f",
+  "created_at": "2026-09-25T15:48:33.870340Z"
+}

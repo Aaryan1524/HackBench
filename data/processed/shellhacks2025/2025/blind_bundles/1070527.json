@@ -1,0 +1,142 @@
+{
+  "project_id": "1070527",
+  "slug": "pixel-closet",
+  "title": "Pixel Closet",
+  "tagline": "Pixel Closet turns your Pinterest boards into shoppable outfits. Four AI agents analyze your style, search real products from major retailers, and create complete looks you can buy instantly.",
+  "problem_statement": "",
+  "inspiration": "",
+  "what_it_does": "",
+  "how_it_was_built": "",
+  "challenges": "",
+  "accomplishments": "",
+  "lessons_learned": "",
+  "future_plans": "",
+  "tech_tags": [],
+  "team_size": 4,
+  "repository_metrics": {
+    "repo_url": "https://github.com/AaxHamm3r/pixel-closet-shellhacks-2025",
+    "status": "accessible",
+    "default_branch": "main",
+    "file_count": 69,
+    "approx_loc": 9656,
+    "loc_by_language": {
+      "Python": 1565,
+      "Shell": 21,
+      "HTML": 14,
+      "JavaScript": 8013,
+      "CSS": 43
+    },
+    "primary_languages": [
+      "JavaScript",
+      "Python",
+      "CSS",
+      "Shell",
+      "HTML"
+    ],
+    "tech_stack": {
+      "frontend_frameworks": [
+        "React"
+      ],
+      "backend_frameworks": [
+        "Flask"
+      ],
+      "databases": [
+        "PostgreSQL"
+      ],
+      "ai_ml_libraries": [
+        "PyTorch"
+      ],
+      "model_providers": [
+        "OpenAI"
+      ],
+      "cloud_devops": [],
+      "third_party_apis": [],
+      "hardware_components": [],
+      "package_dependencies": [
+        "axios",
+        "cheerio",
+        "flask",
+        "framer-motion",
+        "openai",
+        "pg",
+        "pptxgenjs",
+        "puppeteer",
+        "react",
+        "react-dom",
+        "react-hot-toast",
+        "react-loading-skeleton",
+        "react-scripts",
+        "styled-components",
+        "torch",
+        "web-vitals"
+      ]
+    },
+    "git_timeline": {
+      "total_commits": 4,
+      "commits_in_window": 4,
+      "first_commit_time": "2025-09-27T22:01:23Z",
+      "last_commit_time": "2025-09-28T17:26:38Z",
+      "commit_timestamps": [
+        "2025-09-27T22:01:23Z",
+        "2025-09-27T22:36:19Z",
+        "2025-09-28T08:42:33Z",
+        "2025-09-28T17:26:38Z"
+      ],
+      "late_rewrites_detected": false,
+      "deadline_crunch_ratio": 0.25,
+      "final_stage_focus": "debugging",
+      "history_is_squashed_or_minimal": false,
+      "contributor_count": 2,
+      "contributors": [
+        "Nelli",
+        "AaxHamm3r"
+      ]
+    },
+    "test_files_count": 4,
+    "test_frameworks": [],
+    "has_ci": false,
+    "ci_configs": [],
+    "has_docker": false,
+    "has_env_template": false,
+    "readme_size_bytes": 4169,
+    "has_architecture_docs": true,
+    "api_routes_count": 0,
+    "db_migrations_or_schema_count": 0,
+    "mock_data_detected": true,
+    "mock_data_indicators": [
+      "Mock text inside adk_analysis.py"
+    ],
+    "todo_fixme_count": 1,
+    "boilerplate_detected": false,
+    "boilerplate_indicators": [],
+    "deployment_check": null,
+    "consistency_with_claims": "unverifiable",
+    "consistency_explanation": "No tech tags claimed on submission page.",
+    "actual_integrations_found": [],
+    "readme_claims_unsupported_by_code": [],
+    "provenance": [
+      {
+        "claim": "Inspected repository https://github.com/AaxHamm3r/pixel-closet-shellhacks-2025",
+        "evidence_type": "repository",
+        "source": "https://github.com/AaxHamm3r/pixel-closet-shellhacks-2025",
+        "location": "root",
+        "confidence": 1.0,
+        "details": null
+      }
+    ]
+  },
+  "demo_summary": {
+    "has_video_demo": true,
+    "video_platform": "youtube",
+    "video_url": "https://www.youtube.com/embed/cvBUj4QJaVw?enablejsapi=1&hl=en_US&rel=0&start=&version=3&wmode=transparent",
+    "duration_seconds": null,
+    "has_live_deployment": false,
+    "deployment_url": "",
+    "deployment_reachable": null,
+    "has_slide_deck": false,
+    "observations": []
+  },
+  "sponsor_technologies_mentioned": [],
+  "bundle_sha256": "eecb6e2ada7840f42ec2879e58e45f499ca4d62379975f340cc842ca3de72696",
+  "created_at": "2026-09-25T15:48:34.008276Z"
+}

@@ -1,0 +1,167 @@
+{
+  "project_id": "1069109",
+  "slug": "goodwill-hunting",
+  "title": "Goodwill Hunting",
+  "tagline": "Goodwill Hunting: Gamified giving that crowns local champions where help is needed most.",
+  "problem_statement": "",
+  "inspiration": "",
+  "what_it_does": "",
+  "how_it_was_built": "",
+  "challenges": "",
+  "accomplishments": "",
+  "lessons_learned": "",
+  "future_plans": "",
+  "tech_tags": [
+    "adk",
+    "fastapi",
+    "gemini",
+    "gemini",
+    "python",
+    "python",
+    "sql",
+    "sql",
+    "sqlite",
+    "sqlite",
+    "streamlit"
+  ],
+  "team_size": 4,
+  "repository_metrics": {
+    "repo_url": "https://github.com/kashyap0729/good-will-hunting",
+    "status": "accessible",
+    "default_branch": "main",
+    "file_count": 43,
+    "approx_loc": 4056,
+    "loc_by_language": {
+      "Shell": 30,
+      "Python": 4026
+    },
+    "primary_languages": [
+      "Python",
+      "Shell"
+    ],
+    "tech_stack": {
+      "frontend_frameworks": [],
+      "backend_frameworks": [
+        "FastAPI",
+        "Express.js"
+      ],
+      "databases": [],
+      "ai_ml_libraries": [],
+      "model_providers": [
+        "Gemini"
+      ],
+      "cloud_devops": [],
+      "third_party_apis": [],
+      "hardware_components": [],
+      "package_dependencies": [
+        "email-validator",
+        "express",
+        "fastapi",
+        "folium",
+        "google-generativeai",
+        "pandas",
+        "plotly",
+        "pydantic",
+        "python-dateutil",
+        "python-dotenv",
+        "python-multipart",
+        "requests",
+        "streamlit",
+        "streamlit-folium",
+        "uvicorn[standard]"
+      ]
+    },
+    "git_timeline": {
+      "total_commits": 16,
+      "commits_in_window": 16,
+      "first_commit_time": "2025-09-28T03:29:24Z",
+      "last_commit_time": "2025-10-09T15:17:40Z",
+      "commit_timestamps": [
+        "2025-09-28T03:29:24Z",
+        "2025-09-28T08:00:36Z",
+        "2025-09-28T08:07:13Z",
+        "2025-09-28T08:17:52Z",
+        "2025-09-28T08:41:12Z",
+        "2025-09-28T08:42:23Z",
+        "2025-09-28T11:07:12Z",
+        "2025-09-28T11:11:17Z",
+        "2025-09-28T11:18:41Z",
+        "2025-09-28T11:19:12Z",
+        "2025-09-28T11:26:33Z",
+        "2025-09-28T12:08:50Z",
+        "2025-09-28T13:38:12Z",
+        "2025-09-28T14:46:50Z",
+        "2025-09-28T14:55:25Z",
+        "2025-10-09T15:17:40Z"
+      ],
+      "late_rewrites_detected": false,
+      "deadline_crunch_ratio": 0.06,
+      "final_stage_focus": "debugging",
+      "history_is_squashed_or_minimal": false,
+      "contributor_count": 4,
+      "contributors": [
+        "Srikanth-Ganti7",
+        "nikhilsai-52",
+        "Rama Chandra Kashyap Mamidipalli",
+        "kashyap0729"
+      ]
+    },
+    "test_files_count": 14,
+    "test_frameworks": [],
+    "has_ci": false,
+    "ci_configs": [],
+    "has_docker": false,
+    "has_env_template": false,
+    "readme_size_bytes": 4729,
+    "has_architecture_docs": false,
+    "api_routes_count": 18,
+    "db_migrations_or_schema_count": 0,
+    "mock_data_detected": false,
+    "mock_data_indicators": [],
+    "todo_fixme_count": 0,
+    "boilerplate_detected": false,
+    "boilerplate_indicators": [],
+    "deployment_check": null,
+    "consistency_with_claims": "partial",
+    "consistency_explanation": "Partial evidence: 6/11 claimed technologies found in codebase.",
+    "actual_integrations_found": [
+      "fastapi",
+      "gemini",
+      "gemini",
+      "python",
+      "python",
+      "streamlit"
+    ],
+    "readme_claims_unsupported_by_code": [
+      "adk",
+      "sql",
+      "sql",
+      "sqlite",
+      "sqlite"
+    ],
+    "provenance": [
+      {
+        "claim": "Inspected repository https://github.com/kashyap0729/good-will-hunting",
+        "evidence_type": "repository",
+        "source": "https://github.com/kashyap0729/good-will-hunting",
+        "location": "root",
+        "confidence": 1.0,
+        "details": null
+      }
+    ]
+  },
+  "demo_summary": {
+    "has_video_demo": true,
+    "video_platform": "youtube",
+    "video_url": "https://www.youtube.com/embed/U-yVFMdiQLY?enablejsapi=1&hl=en_US&rel=0&start=&version=3&wmode=transparent",
+    "duration_seconds": null,
+    "has_live_deployment": false,
+    "deployment_url": "",
+    "deployment_reachable": null,
+    "has_slide_deck": false,
+    "observations": []
+  },
+  "sponsor_technologies_mentioned": [],
+  "bundle_sha256": "afd23a12cf86d3106a022b331c8d2ed8240cef267d22d65c71689eda269b8c0f",
+  "created_at": "2026-09-25T15:48:33.665206Z"
+}

@@ -46,11 +46,8 @@
       "CSS"
     ],
     "tech_stack": {
-      "frontend_frameworks": [
-        "Next.js"
-      ],
+      "frontend_frameworks": [],
       "backend_frameworks": [
-        "Express.js",
         "FastAPI"
       ],
       "databases": [],
@@ -60,9 +57,7 @@
       "third_party_apis": [],
       "hardware_components": [],
       "package_dependencies": [
-        "express",
-        "fastapi",
-        "next"
+        "fastapi"
       ]
     },
     "git_timeline": {
@@ -103,8 +98,8 @@
       "history_is_squashed_or_minimal": false,
       "contributor_count": 3,
       "contributors": [
-        "RemiBougie",
         "Abe",
+        "RemiBougie",
         "Ibrahim Raouh"
       ]
     },
@@ -168,6 +163,6 @@
     "observations": []
   },
   "sponsor_technologies_mentioned": [],
-  "bundle_sha256": "ae5a4808e9edf36e76d0f34e12d64a8848c63302a0afe3159cc9ec725c2b0b27",
-  "created_at": "2026-09-25T15:00:11.502192Z"
+  "bundle_sha256": "7e48814ee7ee1234ef8af5d766680f22b7fcaea6cd53e172a846476a7bc35739",
+  "created_at": "2026-09-25T15:48:33.488254Z"
 }

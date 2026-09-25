@@ -49,10 +49,8 @@
     ],
     "tech_stack": {
       "frontend_frameworks": [
-        "React",
-        "TailwindCSS",
         "Vite",
-        "Next.js"
+        "React"
       ],
       "backend_frameworks": [
         "Django"
@@ -65,9 +63,7 @@
       "hardware_components": [],
       "package_dependencies": [
         "django",
-        "next",
         "react",
-        "tailwindcss",
         "vite"
       ]
     },
@@ -130,11 +126,11 @@
       "history_is_squashed_or_minimal": false,
       "contributor_count": 5,
       "contributors": [
-        "Nick Pastrana",
+        "npastrami",
         "Alex Arguelles",
+        "Nick Pastrana",
         "MiguelOchoa1",
-        "Emilio Laurenti",
-        "npastrami"
+        "Emilio Laurenti"
       ]
     },
     "test_files_count": 0,
@@ -153,14 +149,13 @@
     "boilerplate_detected": false,
     "boilerplate_indicators": [],
     "deployment_check": null,
-    "consistency_with_claims": "partial",
-    "consistency_explanation": "Partial evidence: 5/15 claimed technologies found in codebase.",
+    "consistency_with_claims": "inconsistent",
+    "consistency_explanation": "Weak evidence: Only 4/15 claimed technologies detected in codebase.",
     "actual_integrations_found": [
       "django",
       "django",
       "react",
-      "react",
-      "tailwindcss"
+      "react"
     ],
     "readme_claims_unsupported_by_code": [
       "git",
@@ -171,6 +166,7 @@
       "postgresql",
       "python",
       "python",
+      "tailwindcss",
       "wolfram-technologies",
       "wolfram-technologies"
     ],
@@ -197,6 +193,6 @@
     "observations": []
   },
   "sponsor_technologies_mentioned": [],
-  "bundle_sha256": "3c039d37670e3639ce2d3ba3a895bcb5c0fcc90eedc15ff0bf4e9f0d0981e41d",
-  "created_at": "2026-09-25T15:00:11.528552Z"
+  "bundle_sha256": "2affaef00b966f9c1f15a4e05a328641e6d859d539912a399eaf5277bc06ef6f",
+  "created_at": "2026-09-25T15:48:33.530328Z"
 }

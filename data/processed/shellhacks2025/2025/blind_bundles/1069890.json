@@ -1,0 +1,136 @@
+{
+  "project_id": "1069890",
+  "slug": "mimicin",
+  "title": "MimicIn",
+  "tagline": "Practice your coffee chat pitch. Any time, any place.",
+  "problem_statement": "",
+  "inspiration": "",
+  "what_it_does": "",
+  "how_it_was_built": "",
+  "challenges": "",
+  "accomplishments": "",
+  "lessons_learned": "",
+  "future_plans": "",
+  "tech_tags": [
+    "a2a",
+    "adk",
+    "c#",
+    "c#",
+    "python",
+    "python",
+    "unity",
+    "unity"
+  ],
+  "team_size": 4,
+  "repository_metrics": {
+    "repo_url": "https://github.com/whats-going-on-im-scared/mimicIn-agent",
+    "status": "accessible",
+    "default_branch": "main",
+    "file_count": 16,
+    "approx_loc": 1636,
+    "loc_by_language": {
+      "Python": 1166,
+      "HTML": 23,
+      "JavaScript": 447
+    },
+    "primary_languages": [
+      "Python",
+      "JavaScript",
+      "HTML"
+    ],
+    "tech_stack": {
+      "frontend_frameworks": [],
+      "backend_frameworks": [
+        "FastAPI"
+      ],
+      "databases": [],
+      "ai_ml_libraries": [],
+      "model_providers": [],
+      "cloud_devops": [],
+      "third_party_apis": [],
+      "hardware_components": [],
+      "package_dependencies": [
+        "fastapi"
+      ]
+    },
+    "git_timeline": {
+      "total_commits": 9,
+      "commits_in_window": 9,
+      "first_commit_time": "2025-09-27T03:01:20Z",
+      "last_commit_time": "2025-09-28T14:05:58Z",
+      "commit_timestamps": [
+        "2025-09-27T03:01:20Z",
+        "2025-09-27T04:31:45Z",
+        "2025-09-27T04:48:20Z",
+        "2025-09-27T07:27:35Z",
+        "2025-09-27T13:56:27Z",
+        "2025-09-27T15:10:37Z",
+        "2025-09-27T18:58:06Z",
+        "2025-09-27T23:14:07Z",
+        "2025-09-28T14:05:58Z"
+      ],
+      "late_rewrites_detected": false,
+      "deadline_crunch_ratio": 0.11,
+      "final_stage_focus": "features",
+      "history_is_squashed_or_minimal": false,
+      "contributor_count": 2,
+      "contributors": [
+        "Nova",
+        "Suprnova"
+      ]
+    },
+    "test_files_count": 0,
+    "test_frameworks": [],
+    "has_ci": false,
+    "ci_configs": [],
+    "has_docker": false,
+    "has_env_template": false,
+    "readme_size_bytes": 0,
+    "has_architecture_docs": false,
+    "api_routes_count": 1,
+    "db_migrations_or_schema_count": 0,
+    "mock_data_detected": false,
+    "mock_data_indicators": [],
+    "todo_fixme_count": 0,
+    "boilerplate_detected": false,
+    "boilerplate_indicators": [],
+    "deployment_check": null,
+    "consistency_with_claims": "inconsistent",
+    "consistency_explanation": "Weak evidence: Only 0/8 claimed technologies detected in codebase.",
+    "actual_integrations_found": [],
+    "readme_claims_unsupported_by_code": [
+      "a2a",
+      "adk",
+      "c#",
+      "c#",
+      "python",
+      "python",
+      "unity",
+      "unity"
+    ],
+    "provenance": [
+      {
+        "claim": "Inspected repository https://github.com/whats-going-on-im-scared/mimicIn-agent",
+        "evidence_type": "repository",
+        "source": "https://github.com/whats-going-on-im-scared/mimicIn-agent",
+        "location": "root",
+        "confidence": 1.0,
+        "details": null
+      }
+    ]
+  },
+  "demo_summary": {
+    "has_video_demo": true,
+    "video_platform": "youtube",
+    "video_url": "https://www.youtube.com/embed/DGa-Lnfdh-U?enablejsapi=1&hl=en_US&rel=0&start=&version=3&wmode=transparent",
+    "duration_seconds": null,
+    "has_live_deployment": false,
+    "deployment_url": "",
+    "deployment_reachable": null,
+    "has_slide_deck": false,
+    "observations": []
+  },
+  "sponsor_technologies_mentioned": [],
+  "bundle_sha256": "254da7aa0cd0f9f6afd28ff3608913c88ccaf768224aada364b6f3b93c9eac12",
+  "created_at": "2026-09-25T15:48:33.780300Z"
+}

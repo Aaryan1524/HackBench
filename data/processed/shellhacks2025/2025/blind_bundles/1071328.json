@@ -1,0 +1,129 @@
+{
+  "project_id": "1071328",
+  "slug": "cfpb-government-bot-remastered",
+  "title": "CFPB Government Bot remastered",
+  "tagline": "I took an old open source with outdated modules with Hubot and made it more modern and lighter on system resources",
+  "problem_statement": "",
+  "inspiration": "",
+  "what_it_does": "",
+  "how_it_was_built": "",
+  "challenges": "",
+  "accomplishments": "",
+  "lessons_learned": "",
+  "future_plans": "",
+  "tech_tags": [
+    "bolt",
+    "dotenv",
+    "javascript",
+    "javascript",
+    "json",
+    "json",
+    "node.js",
+    "node.js",
+    "slack",
+    "slack"
+  ],
+  "team_size": 1,
+  "repository_metrics": {
+    "repo_url": "https://github.com/bruhdev1290/CFPBot-unoffical-Slack-",
+    "status": "accessible",
+    "default_branch": "main",
+    "file_count": 7,
+    "approx_loc": 207,
+    "loc_by_language": {
+      "JavaScript": 207
+    },
+    "primary_languages": [
+      "JavaScript"
+    ],
+    "tech_stack": {
+      "frontend_frameworks": [],
+      "backend_frameworks": [],
+      "databases": [],
+      "ai_ml_libraries": [],
+      "model_providers": [],
+      "cloud_devops": [],
+      "third_party_apis": [],
+      "hardware_components": [],
+      "package_dependencies": [
+        "@slack/bolt",
+        "dotenv"
+      ]
+    },
+    "git_timeline": {
+      "total_commits": 3,
+      "commits_in_window": 3,
+      "first_commit_time": "2025-09-27T21:14:35Z",
+      "last_commit_time": "2025-09-27T21:26:34Z",
+      "commit_timestamps": [
+        "2025-09-27T21:14:35Z",
+        "2025-09-27T21:26:10Z",
+        "2025-09-27T21:26:34Z"
+      ],
+      "late_rewrites_detected": false,
+      "deadline_crunch_ratio": 0.0,
+      "final_stage_focus": "features",
+      "history_is_squashed_or_minimal": false,
+      "contributor_count": 1,
+      "contributors": [
+        "bruhdev1290"
+      ]
+    },
+    "test_files_count": 0,
+    "test_frameworks": [],
+    "has_ci": false,
+    "ci_configs": [],
+    "has_docker": false,
+    "has_env_template": true,
+    "readme_size_bytes": 2045,
+    "has_architecture_docs": false,
+    "api_routes_count": 0,
+    "db_migrations_or_schema_count": 0,
+    "mock_data_detected": false,
+    "mock_data_indicators": [],
+    "todo_fixme_count": 0,
+    "boilerplate_detected": false,
+    "boilerplate_indicators": [],
+    "deployment_check": null,
+    "consistency_with_claims": "partial",
+    "consistency_explanation": "Partial evidence: 4/10 claimed technologies found in codebase.",
+    "actual_integrations_found": [
+      "bolt",
+      "dotenv",
+      "slack",
+      "slack"
+    ],
+    "readme_claims_unsupported_by_code": [
+      "javascript",
+      "javascript",
+      "json",
+      "json",
+      "node.js",
+      "node.js"
+    ],
+    "provenance": [
+      {
+        "claim": "Inspected repository https://github.com/bruhdev1290/CFPBot-unoffical-Slack-",
+        "evidence_type": "repository",
+        "source": "https://github.com/bruhdev1290/CFPBot-unoffical-Slack-",
+        "location": "root",
+        "confidence": 1.0,
+        "details": null
+      }
+    ]
+  },
+  "demo_summary": {
+    "has_video_demo": true,
+    "video_platform": "vimeo",
+    "video_url": "https://player.vimeo.com/video/1122626033?byline=0&portrait=0&title=0#t=",
+    "duration_seconds": null,
+    "has_live_deployment": false,
+    "deployment_url": "",
+    "deployment_reachable": null,
+    "has_slide_deck": false,
+    "observations": []
+  },
+  "sponsor_technologies_mentioned": [],
+  "bundle_sha256": "b5279d5f5a10bb70677981be263f31a68a648c53a2b76afce964ef608a8d97d7",
+  "created_at": "2026-09-25T15:48:33.623665Z"
+}

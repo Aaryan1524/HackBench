@@ -1,0 +1,39 @@
+{
+  "project_id": "1071194",
+  "slug": "cloudlens-ai-dashbaord-cloud-service-audit",
+  "title": "CloudLens AI Dashbaord - Cloud Service Audit",
+  "tagline": "AI Cloud Auditor is a live, AI-powered platform that helps teams cut cloud costs and boost performanceperfect for medium-to-large projects where infrastructure complexity can spiral out of control.",
+  "problem_statement": "",
+  "inspiration": "",
+  "what_it_does": "",
+  "how_it_was_built": "",
+  "challenges": "",
+  "accomplishments": "",
+  "lessons_learned": "",
+  "future_plans": "",
+  "tech_tags": [
+    "google-gemini",
+    "html",
+    "html",
+    "javascript",
+    "javascript",
+    "python",
+    "python"
+  ],
+  "team_size": 3,
+  "repository_metrics": null,
+  "demo_summary": {
+    "has_video_demo": true,
+    "video_platform": "youtube",
+    "video_url": "https://www.youtube.com/embed/OO0-MoZlqK0?enablejsapi=1&hl=en_US&rel=0&start=&version=3&wmode=transparent",
+    "duration_seconds": null,
+    "has_live_deployment": false,
+    "deployment_url": "",
+    "deployment_reachable": null,
+    "has_slide_deck": false,
+    "observations": []
+  },
+  "sponsor_technologies_mentioned": [],
+  "bundle_sha256": "f827dfadf9672c8363e69d5a778902312af9990486987fcf2618d1c94b429f03",
+  "created_at": "2026-09-25T15:48:33.702001Z"
+}

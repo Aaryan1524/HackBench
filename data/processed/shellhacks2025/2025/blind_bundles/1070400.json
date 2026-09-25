@@ -1,0 +1,195 @@
+{
+  "project_id": "1070400",
+  "slug": "unified-hackathon-platform",
+  "title": "Unified Hackathon Platform",
+  "tagline": "A production-ready, comprehensive hackathon web platform featuring AI-powered team formation, real-time tracking, and intelligent resume analysis built with a modern microservices architecture.",
+  "problem_statement": "",
+  "inspiration": "",
+  "what_it_does": "",
+  "how_it_was_built": "",
+  "challenges": "",
+  "accomplishments": "",
+  "lessons_learned": "",
+  "future_plans": "",
+  "tech_tags": [
+    "custom-algorithms",
+    "elk-stack",
+    "express.js",
+    "express.js",
+    "framer-motion.-backend:-node.js",
+    "frontend:-react",
+    "gcp-deployment.-security:-oauth",
+    "genetic-algorithms.-devops:-docker",
+    "grafana",
+    "jwt",
+    "kubernetes",
+    "kubernetes",
+    "mongodb",
+    "mongodb",
+    "postgresql",
+    "postgresql",
+    "prometheus",
+    "rbac",
+    "redis.-ai-&-ml:-openai-gpt",
+    "shadcn/ui",
+    "socket.io",
+    "socket.io",
+    "tailwind",
+    "typescript",
+    "typescript",
+    "validation",
+    "vite"
+  ],
+  "team_size": 4,
+  "repository_metrics": {
+    "repo_url": "https://github.com/SaiBalusu-usf/UnifiedHackathonPlatform",
+    "status": "accessible",
+    "default_branch": "master",
+    "file_count": 136,
+    "approx_loc": 21227,
+    "loc_by_language": {
+      "HTML": 13,
+      "JavaScript": 10145,
+      "CSS": 120,
+      "TypeScript": 10511,
+      "SQL": 438
+    },
+    "primary_languages": [
+      "TypeScript",
+      "JavaScript",
+      "SQL",
+      "CSS",
+      "HTML"
+    ],
+    "tech_stack": {
+      "frontend_frameworks": [
+        "Vite",
+        "React",
+        "TailwindCSS",
+        "Next.js"
+      ],
+      "backend_frameworks": [
+        "Express.js"
+      ],
+      "databases": [
+        "MongoDB",
+        "PostgreSQL"
+      ],
+      "ai_ml_libraries": [],
+      "model_providers": [],
+      "cloud_devops": [],
+      "third_party_apis": [],
+      "hardware_components": [],
+      "package_dependencies": [
+        "@types/node",
+        "concurrently",
+        "express",
+        "mongoose",
+        "next",
+        "pg",
+        "react",
+        "tailwindcss",
+        "vite"
+      ]
+    },
+    "git_timeline": {
+      "total_commits": 6,
+      "commits_in_window": 6,
+      "first_commit_time": "2025-09-27T20:53:47Z",
+      "last_commit_time": "2025-09-28T12:58:18Z",
+      "commit_timestamps": [
+        "2025-09-27T20:53:47Z",
+        "2025-09-27T20:54:27Z",
+        "2025-09-28T03:02:47Z",
+        "2025-09-28T05:50:20Z",
+        "2025-09-28T12:52:47Z",
+        "2025-09-28T12:58:18Z"
+      ],
+      "late_rewrites_detected": false,
+      "deadline_crunch_ratio": 0.33,
+      "final_stage_focus": "features",
+      "history_is_squashed_or_minimal": false,
+      "contributor_count": 2,
+      "contributors": [
+        "SaiBalusu-usf",
+        "Sai Balusu"
+      ]
+    },
+    "test_files_count": 5,
+    "test_frameworks": [
+      "vitest/jest",
+      "jest"
+    ],
+    "has_ci": false,
+    "ci_configs": [],
+    "has_docker": true,
+    "has_env_template": true,
+    "readme_size_bytes": 12529,
+    "has_architecture_docs": true,
+    "api_routes_count": 69,
+    "db_migrations_or_schema_count": 2,
+    "mock_data_detected": false,
+    "mock_data_indicators": [],
+    "todo_fixme_count": 0,
+    "boilerplate_detected": false,
+    "boilerplate_indicators": [],
+    "deployment_check": null,
+    "consistency_with_claims": "partial",
+    "consistency_explanation": "Partial evidence: 9/27 claimed technologies found in codebase.",
+    "actual_integrations_found": [
+      "express.js",
+      "express.js",
+      "frontend:-react",
+      "mongodb",
+      "mongodb",
+      "postgresql",
+      "postgresql",
+      "tailwind",
+      "vite"
+    ],
+    "readme_claims_unsupported_by_code": [
+      "custom-algorithms",
+      "elk-stack",
+      "framer-motion.-backend:-node.js",
+      "gcp-deployment.-security:-oauth",
+      "genetic-algorithms.-devops:-docker",
+      "grafana",
+      "jwt",
+      "kubernetes",
+      "kubernetes",
+      "prometheus",
+      "rbac",
+      "redis.-ai-&-ml:-openai-gpt",
+      "shadcn/ui",
+      "socket.io",
+      "socket.io",
+      "typescript",
+      "typescript",
+      "validation"
+    ],
+    "provenance": [
+      {
+        "claim": "Inspected repository https://github.com/SaiBalusu-usf/UnifiedHackathonPlatform",
+        "evidence_type": "repository",
+        "source": "https://github.com/SaiBalusu-usf/UnifiedHackathonPlatform",
+        "location": "root",
+        "confidence": 1.0,
+        "details": null
+      }
+    ]
+  },
+  "demo_summary": {
+    "has_video_demo": true,
+    "video_platform": "youtube",
+    "video_url": "https://www.youtube.com/watch?v=IeF3ByJmHF0",
+    "duration_seconds": null,
+    "has_live_deployment": false,
+    "deployment_url": "",
+    "deployment_reachable": null,
+    "has_slide_deck": false,
+    "observations": []
+  },
+  "sponsor_technologies_mentioned": [],
+  "bundle_sha256": "a75a9f0b2e1f11a0c244d54c58e3ce37652b68818959dfc4ee81f9f7dcc1f4e8",
+  "created_at": "2026-09-25T15:48:33.927041Z"
+}

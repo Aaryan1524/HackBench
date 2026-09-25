@@ -11,7 +11,7 @@
 
 # SECTION 1: BLIND ANALYSIS
 *This section was completed and cryptographically sealed prior to revealing judging outcomes.*
-*Integrity Hash: `ff40776c56a2aaad5b94102b6eaf095899ad71eb47f7d84c6ffe608bd25144aa`*
+*Integrity Hash: `3317750f7936114cd689a65ef2380be0539e68e72061917c9cef4be73a5041b7`*
 
 ### Diagnostic Evaluation
 - **Problem Statement**: EcoQuest is an educational game that promotes ecological awareness, while using Google’s ADK to reduce coding redundancy and improve workflow efficiency for developers.

@@ -184,6 +184,8 @@ def evaluate_blind(
     Evaluations are sealed with SHA256 hashes.
     """
     slug, year, _ = _resolve_event(event_id)
+    if not isinstance(num_passes, int):
+        num_passes = 3
     projects = _load_projects(slug, year)
     repos_map = _load_repos_map(slug, year)
 
@@ -374,7 +376,7 @@ def run_pipeline(
     collect_repos(event_url, all_repos=all_projects, max_repos=max_repos)
 
     # 4. Blind evaluate
-    evaluate_blind(event_url)
+    evaluate_blind(event_url, num_passes=3)
 
     # 5. Reveal results
     reveal_results(event_url)

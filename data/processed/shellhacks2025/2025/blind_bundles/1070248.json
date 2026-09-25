@@ -33,7 +33,7 @@
     "repo_url": "http://github.com/BonelessWater/shellHacks_1",
     "status": "accessible",
     "default_branch": "main",
-    "file_count": 310,
+    "file_count": 295,
     "approx_loc": 38859,
     "loc_by_language": {
       "Python": 28330,
@@ -51,27 +51,21 @@
     ],
     "tech_stack": {
       "frontend_frameworks": [
-        "React",
-        "Next.js",
-        "TailwindCSS"
+        "React"
       ],
       "backend_frameworks": [
         "Express.js",
         "FastAPI"
       ],
-      "databases": [
-        "PostgreSQL"
-      ],
+      "databases": [],
       "ai_ml_libraries": [
-        "TensorFlow",
         "Scikit-Learn",
         "PyTorch",
-        "HuggingFace Transformers"
+        "TensorFlow"
       ],
       "model_providers": [
         "OpenAI",
-        "Anthropic",
-        "Gemini"
+        "Anthropic"
       ],
       "cloud_devops": [],
       "third_party_apis": [],
@@ -87,13 +81,10 @@
         "fastapi",
         "google-cloud-bigquery",
         "google-cloud-bigquery-storage",
-        "google-generativeai",
         "gunicorn",
         "httpx",
-        "next",
         "openai",
         "pandas",
-        "pg",
         "pyarrow",
         "pydantic",
         "python-dotenv",
@@ -101,10 +92,8 @@
         "react",
         "react-chartjs-2",
         "sklearn",
-        "tailwindcss",
         "tensorflow",
         "torch",
-        "transformers",
         "uvicorn[standard]"
       ]
     },
@@ -206,13 +195,13 @@
       "history_is_squashed_or_minimal": false,
       "contributor_count": 7,
       "contributors": [
-        "IlanDanial",
-        "BonelessWater",
-        "Jbadro",
         "copilot-swe-agent[bot]",
+        "IlanDanial",
         "Dominick Dupuy",
         "Ilan Danial",
-        "John Riley"
+        "Jbadro",
+        "John Riley",
+        "BonelessWater"
       ]
     },
     "test_files_count": 28,
@@ -239,20 +228,20 @@
     "boilerplate_indicators": [],
     "deployment_check": null,
     "consistency_with_claims": "partial",
-    "consistency_explanation": "Partial evidence: 10/15 claimed technologies found in codebase.",
+    "consistency_explanation": "Partial evidence: 8/15 claimed technologies found in codebase.",
     "actual_integrations_found": [
       "bigquery",
       "express.js",
       "express.js",
       "fastapi",
-      "gemini",
-      "gemini",
       "pyarrow",
       "react",
       "react",
       "tensorflow"
     ],
     "readme_claims_unsupported_by_code": [
+      "gemini",
+      "gemini",
       "node.js",
       "node.js",
       "typescript",
@@ -282,6 +271,6 @@
     "observations": []
   },
   "sponsor_technologies_mentioned": [],
-  "bundle_sha256": "b2a98b176c60bafb5df94bca1836277da31f194dc3ebbdb6beff100e580b935a",
-  "created_at": "2026-09-25T15:00:11.523345Z"
+  "bundle_sha256": "e632ed1146ed44310bbb2c804cd638327fae2d155d145fdee2d7a8e7e8886d88",
+  "created_at": "2026-09-25T15:48:33.522154Z"
 }

@@ -50,9 +50,7 @@
       "backend_frameworks": [
         "Django"
       ],
-      "databases": [
-        "SQLite"
-      ],
+      "databases": [],
       "ai_ml_libraries": [],
       "model_providers": [
         "OpenAI"
@@ -62,8 +60,7 @@
       "hardware_components": [],
       "package_dependencies": [
         "django",
-        "openai",
-        "sqlite"
+        "openai"
       ]
     },
     "git_timeline": {
@@ -146,6 +143,6 @@
     "observations": []
   },
   "sponsor_technologies_mentioned": [],
-  "bundle_sha256": "cdff892a3d529dcd0d5d4af3b0f4cc9947cc411596c9e82999f620a312dcfdd9",
-  "created_at": "2026-09-25T15:00:11.506113Z"
+  "bundle_sha256": "9b1e19ffa7e2b62908fa534c0f4d76a4130fecda8893887af935f8cc11205c84",
+  "created_at": "2026-09-25T15:48:33.491758Z"
 }

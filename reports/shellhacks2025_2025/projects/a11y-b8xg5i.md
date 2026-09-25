@@ -11,7 +11,7 @@
 
 # SECTION 1: BLIND ANALYSIS
 *This section was completed and cryptographically sealed prior to revealing judging outcomes.*
-*Integrity Hash: `3eb681734f080abe15b85d5b297dcfb41adf541c5b67022a1a76d71d79f175f0`*
+*Integrity Hash: `9d1d9fdf481e73e47087756fe9296d22f515e3b78a411005f0018d1360f9da75`*
 
 ### Diagnostic Evaluation
 - **Problem Statement**: A Google Chrome extension that elevates the limitations of people with disabilities and makes web pages accessible to a wider audience.

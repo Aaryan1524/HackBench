@@ -1,0 +1,148 @@
+{
+  "project_id": "1068537",
+  "slug": "profitpilot-isqha0",
+  "title": "ProfitPilot",
+  "tagline": "As a dropshipper, I struggled to efficiently track profitability across dozens of weekly orders. That's why I created ProfitPilot - a web app that transforms the tedious process into 2 simple clicks.",
+  "problem_statement": "",
+  "inspiration": "",
+  "what_it_does": "",
+  "how_it_was_built": "",
+  "challenges": "",
+  "accomplishments": "",
+  "lessons_learned": "",
+  "future_plans": "",
+  "tech_tags": [
+    "css",
+    "css",
+    "cursor",
+    "html",
+    "html",
+    "huggingface",
+    "javascript",
+    "javascript",
+    "python",
+    "python"
+  ],
+  "team_size": 1,
+  "repository_metrics": {
+    "repo_url": "https://github.com/Brandon0815/ProfitPilot",
+    "status": "accessible",
+    "default_branch": "main",
+    "file_count": 10,
+    "approx_loc": 1207,
+    "loc_by_language": {
+      "Python": 373,
+      "JavaScript": 51,
+      "CSS": 413,
+      "HTML": 370
+    },
+    "primary_languages": [
+      "CSS",
+      "Python",
+      "HTML",
+      "JavaScript"
+    ],
+    "tech_stack": {
+      "frontend_frameworks": [],
+      "backend_frameworks": [
+        "Flask"
+      ],
+      "databases": [],
+      "ai_ml_libraries": [],
+      "model_providers": [],
+      "cloud_devops": [],
+      "third_party_apis": [],
+      "hardware_components": [],
+      "package_dependencies": [
+        "flask"
+      ]
+    },
+    "git_timeline": {
+      "total_commits": 15,
+      "commits_in_window": 15,
+      "first_commit_time": "2025-09-27T04:29:28Z",
+      "last_commit_time": "2025-09-28T01:58:13Z",
+      "commit_timestamps": [
+        "2025-09-27T04:29:28Z",
+        "2025-09-27T04:32:35Z",
+        "2025-09-27T04:42:36Z",
+        "2025-09-27T10:34:26Z",
+        "2025-09-27T13:07:10Z",
+        "2025-09-27T13:09:31Z",
+        "2025-09-27T13:10:44Z",
+        "2025-09-27T21:09:20Z",
+        "2025-09-27T21:13:24Z",
+        "2025-09-27T21:17:03Z",
+        "2025-09-28T01:34:36Z",
+        "2025-09-28T01:37:01Z",
+        "2025-09-28T01:37:46Z",
+        "2025-09-28T01:52:41Z",
+        "2025-09-28T01:58:13Z"
+      ],
+      "late_rewrites_detected": false,
+      "deadline_crunch_ratio": 0.53,
+      "final_stage_focus": "docs",
+      "history_is_squashed_or_minimal": false,
+      "contributor_count": 2,
+      "contributors": [
+        "Brandon0815",
+        "Brandon Lopez"
+      ]
+    },
+    "test_files_count": 0,
+    "test_frameworks": [],
+    "has_ci": false,
+    "ci_configs": [],
+    "has_docker": false,
+    "has_env_template": false,
+    "readme_size_bytes": 397,
+    "has_architecture_docs": false,
+    "api_routes_count": 0,
+    "db_migrations_or_schema_count": 0,
+    "mock_data_detected": false,
+    "mock_data_indicators": [],
+    "todo_fixme_count": 0,
+    "boilerplate_detected": false,
+    "boilerplate_indicators": [],
+    "deployment_check": null,
+    "consistency_with_claims": "inconsistent",
+    "consistency_explanation": "Weak evidence: Only 0/10 claimed technologies detected in codebase.",
+    "actual_integrations_found": [],
+    "readme_claims_unsupported_by_code": [
+      "css",
+      "css",
+      "cursor",
+      "html",
+      "html",
+      "huggingface",
+      "javascript",
+      "javascript",
+      "python",
+      "python"
+    ],
+    "provenance": [
+      {
+        "claim": "Inspected repository https://github.com/Brandon0815/ProfitPilot",
+        "evidence_type": "repository",
+        "source": "https://github.com/Brandon0815/ProfitPilot",
+        "location": "root",
+        "confidence": 1.0,
+        "details": null
+      }
+    ]
+  },
+  "demo_summary": {
+    "has_video_demo": true,
+    "video_platform": "youtube",
+    "video_url": "https://www.youtube.com/embed/_7kN3Ui4FUw?enablejsapi=1&hl=en_US&rel=0&start=&version=3&wmode=transparent",
+    "duration_seconds": null,
+    "has_live_deployment": false,
+    "deployment_url": "",
+    "deployment_reachable": null,
+    "has_slide_deck": false,
+    "observations": []
+  },
+  "sponsor_technologies_mentioned": [],
+  "bundle_sha256": "52a218cf73ba458a1fa0e343d72cf174e3ae7c7b7f70a4c95907ac5e8843fcb3",
+  "created_at": "2026-09-25T15:48:34.050876Z"
+}

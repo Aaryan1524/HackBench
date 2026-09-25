@@ -1,0 +1,146 @@
+{
+  "project_id": "1068583",
+  "slug": "documentation-schmockentation",
+  "title": "CodeDoc",
+  "tagline": "A Software that automates making code Documentation",
+  "problem_statement": "",
+  "inspiration": "",
+  "what_it_does": "",
+  "how_it_was_built": "",
+  "challenges": "",
+  "accomplishments": "",
+  "lessons_learned": "",
+  "future_plans": "",
+  "tech_tags": [
+    "adk",
+    "api",
+    "python",
+    "python",
+    "server",
+    "streamlit"
+  ],
+  "team_size": 4,
+  "repository_metrics": {
+    "repo_url": "https://github.com/Mattquin45/CodeDoc",
+    "status": "accessible",
+    "default_branch": "main",
+    "file_count": 16,
+    "approx_loc": 556,
+    "loc_by_language": {
+      "Python": 556
+    },
+    "primary_languages": [
+      "Python"
+    ],
+    "tech_stack": {
+      "frontend_frameworks": [],
+      "backend_frameworks": [],
+      "databases": [],
+      "ai_ml_libraries": [],
+      "model_providers": [],
+      "cloud_devops": [],
+      "third_party_apis": [],
+      "hardware_components": [],
+      "package_dependencies": [
+        "google-adk",
+        "python-dotenv",
+        "streamlit",
+        "uvicorn"
+      ]
+    },
+    "git_timeline": {
+      "total_commits": 25,
+      "commits_in_window": 25,
+      "first_commit_time": "2025-09-27T15:15:15Z",
+      "last_commit_time": "2025-09-28T11:07:16Z",
+      "commit_timestamps": [
+        "2025-09-27T15:15:15Z",
+        "2025-09-27T17:27:19Z",
+        "2025-09-27T17:30:01Z",
+        "2025-09-27T17:30:17Z",
+        "2025-09-27T17:30:28Z",
+        "2025-09-27T17:30:37Z",
+        "2025-09-27T17:30:48Z",
+        "2025-09-27T17:31:01Z",
+        "2025-09-27T17:31:14Z",
+        "2025-09-27T17:31:29Z",
+        "2025-09-27T17:31:37Z",
+        "2025-09-27T17:31:45Z",
+        "2025-09-28T05:29:29Z",
+        "2025-09-28T06:14:12Z",
+        "2025-09-28T06:15:12Z",
+        "2025-09-28T06:27:53Z",
+        "2025-09-28T06:28:46Z",
+        "2025-09-28T06:29:13Z",
+        "2025-09-28T10:10:18Z",
+        "2025-09-28T10:42:38Z",
+        "2025-09-28T10:42:38Z",
+        "2025-09-28T10:42:39Z",
+        "2025-09-28T10:43:58Z",
+        "2025-09-28T10:44:22Z",
+        "2025-09-28T11:07:16Z"
+      ],
+      "late_rewrites_detected": false,
+      "deadline_crunch_ratio": 0.48,
+      "final_stage_focus": "docs",
+      "history_is_squashed_or_minimal": false,
+      "contributor_count": 2,
+      "contributors": [
+        "HuevoDeProfecia46",
+        "Matthew Quintero"
+      ]
+    },
+    "test_files_count": 0,
+    "test_frameworks": [],
+    "has_ci": false,
+    "ci_configs": [],
+    "has_docker": false,
+    "has_env_template": false,
+    "readme_size_bytes": 3487,
+    "has_architecture_docs": false,
+    "api_routes_count": 0,
+    "db_migrations_or_schema_count": 0,
+    "mock_data_detected": false,
+    "mock_data_indicators": [],
+    "todo_fixme_count": 0,
+    "boilerplate_detected": false,
+    "boilerplate_indicators": [],
+    "deployment_check": null,
+    "consistency_with_claims": "partial",
+    "consistency_explanation": "Partial evidence: 4/6 claimed technologies found in codebase.",
+    "actual_integrations_found": [
+      "adk",
+      "python",
+      "python",
+      "streamlit"
+    ],
+    "readme_claims_unsupported_by_code": [
+      "api",
+      "server"
+    ],
+    "provenance": [
+      {
+        "claim": "Inspected repository https://github.com/Mattquin45/CodeDoc",
+        "evidence_type": "repository",
+        "source": "https://github.com/Mattquin45/CodeDoc",
+        "location": "root",
+        "confidence": 1.0,
+        "details": null
+      }
+    ]
+  },
+  "demo_summary": {
+    "has_video_demo": true,
+    "video_platform": "youtube",
+    "video_url": "https://www.youtube.com/embed/xrHBKyyD4Xc?enablejsapi=1&hl=en_US&rel=0&start=&version=3&wmode=transparent",
+    "duration_seconds": null,
+    "has_live_deployment": false,
+    "deployment_url": "",
+    "deployment_reachable": null,
+    "has_slide_deck": false,
+    "observations": []
+  },
+  "sponsor_technologies_mentioned": [],
+  "bundle_sha256": "4ceef11be2a706f40aef0781fe1cd28a5595dca7393f9229c2af7a6f094c36fa",
+  "created_at": "2026-09-25T15:48:33.973720Z"
+}
