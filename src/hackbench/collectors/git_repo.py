@@ -1,6 +1,7 @@
 import os
 import re
 import shutil
+import time
 import subprocess
 import logging
 from pathlib import Path
@@ -18,6 +19,10 @@ from ..models import (
     ProvenanceRecord,
     EvidenceType,
 )
+
+MAX_REPO_BYTES = 300 * 1024 * 1024  # abort analysis of anything larger
+
+from ..netsafety import safe_fetch_text
 
 logger = logging.getLogger("hackbench.git_repo")
 
@@ -116,9 +121,61 @@ class RepositoryAnalyzer:
     git commit history, stack dependencies, code quality signals, and live deployment status.
     """
 
-    def __init__(self, repos_storage_dir: Path):
+    def __init__(
+        self,
+        repos_storage_dir: Path,
+        max_files: Optional[int] = None,
+        max_read_bytes: Optional[int] = None,
+        budget_seconds: Optional[float] = None,
+    ):
+        """
+        The limits are for analysing repositories submitted by strangers: at most `max_files` files are looked
+        at, no file is read past `max_read_bytes`, and analysis stops after `budget_seconds`. All default to
+        unlimited so the offline research pipeline behaves exactly as before.
+        """
         self.repos_storage_dir = repos_storage_dir
         self.repos_storage_dir.mkdir(parents=True, exist_ok=True)
+        self.max_files = max_files
+        self.max_read_bytes = max_read_bytes
+        self.budget_seconds = budget_seconds
+        self._deadline: Optional[float] = None
+        self.analysis_truncated = False
+
+    def _walk(self, top: Path):
+        """os.walk that stops at the file-count limit or the time budget (and says so)."""
+        seen = 0
+        for root, dirs, files in os.walk(top):
+            if self._deadline is not None and time.monotonic() > self._deadline:
+                self.analysis_truncated = True
+                return
+            if self.max_files is not None:
+                room = self.max_files - seen
+                if room <= 0:
+                    self.analysis_truncated = True
+                    return
+                if len(files) > room:
+                    files = files[:room]
+                    self.analysis_truncated = True
+            seen += len(files)
+            yield root, dirs, files
+
+    def _read(self, path: Path) -> str:
+        """Read a text file, never more than max_read_bytes of it."""
+        if self.max_read_bytes is None:
+            return Path(path).read_text(encoding="utf-8", errors="ignore")
+        with open(path, "rb") as fh:
+            return fh.read(self.max_read_bytes).decode("utf-8", errors="ignore")
+
+    def _count_lines(self, path: Path) -> int:
+        if self.max_read_bytes is None:
+            with open(path, "r", encoding="utf-8", errors="ignore") as fp:
+                return sum(1 for _ in fp)
+        size = os.path.getsize(path)
+        with open(path, "rb") as fh:
+            chunk = fh.read(self.max_read_bytes)
+        lines = chunk.count(b"\n") + (1 if chunk and not chunk.endswith(b"\n") else 0)
+        # Beyond the cap, extrapolate from what was read instead of reading it all.
+        return int(lines * size / len(chunk)) if chunk and size > len(chunk) else lines
 
     def analyze_repository(
         self,
@@ -158,20 +215,36 @@ class RepositoryAnalyzer:
         repo = None
         if not target_dir.exists() or not (target_dir / ".git").exists():
             try:
-                logger.info(f"Cloning {clean_url} into {target_dir}...")
+                logger.info("Cloning repository into %s", target_dir)
                 target_dir.mkdir(parents=True, exist_ok=True)
                 env = {
                     **os.environ,
                     "GIT_TERMINAL_PROMPT": "0",
                     "GIT_ASKPASS": "/bin/echo",
                 }
-                cmd = ["git", "clone", "--depth", "50", "--single-branch", clean_url, str(target_dir)]
+                env.update({
+                    "GIT_CONFIG_NOSYSTEM": "1",
+                    "GIT_CONFIG_GLOBAL": os.devnull,
+                    "GIT_ALLOW_PROTOCOL": "https",  # nothing but https, even if a config or submodule asks
+                    "GIT_LFS_SKIP_SMUDGE": "1",  # never download Git LFS payloads (can be gigabytes)
+                })
+                # Untrusted repo: https only, no hooks, no symlinks (a symlinked README must not read local files).
+                cmd = [
+                    "git", "-c", "core.symlinks=false", "-c", f"core.hooksPath={os.devnull}",
+                    "-c", "protocol.allow=never", "-c", "protocol.https.allow=always",
+                    "clone", "--depth", "50", "--single-branch", "--no-tags", clean_url, str(target_dir),
+                ]
                 proc = subprocess.run(cmd, env=env, stdout=subprocess.PIPE, stderr=subprocess.PIPE, timeout=25, text=True)
                 if proc.returncode != 0:
                     raise RuntimeError(f"git clone failed (code {proc.returncode}): {proc.stderr[:200]}")
                 repo = git.Repo(target_dir)
+                if self._dir_size(target_dir) > MAX_REPO_BYTES:
+                    shutil.rmtree(target_dir, ignore_errors=True)
+                    return RepositoryMetrics(repo_url=repo_url, status="repo_too_large", provenance=provenance)
+                self._remove_symlinks(target_dir)
             except subprocess.TimeoutExpired:
-                logger.warning(f"Git clone timed out for {repo_url} (repository may contain giant binary assets)")
+                logger.warning("Git clone timed out (repository may contain giant binary assets)")
+                shutil.rmtree(target_dir, ignore_errors=True)
                 dep_check = self._check_deployment(deployment_url, project_name=project_name) if deployment_url else None
                 return RepositoryMetrics(
                     repo_url=repo_url,
@@ -180,7 +253,8 @@ class RepositoryAnalyzer:
                     provenance=provenance,
                 )
             except Exception as e:
-                logger.warning(f"Failed to clone repository {repo_url}: {e}")
+                logger.warning("Failed to clone repository: %s", str(e)[:120])
+                shutil.rmtree(target_dir, ignore_errors=True)
                 status = "not_found" if "not found" in str(e).lower() else "private_or_failed"
                 # Check deployment status anyway if deployment_url provided
                 dep_check = self._check_deployment(deployment_url, project_name=project_name) if deployment_url else None
@@ -200,6 +274,9 @@ class RepositoryAnalyzer:
                     status="corrupt_local_clone",
                     provenance=provenance,
                 )
+
+        self.analysis_truncated = False
+        self._deadline = (time.monotonic() + self.budget_seconds) if self.budget_seconds else None
 
         # 1. Default branch & commit timeline
         try:
@@ -225,13 +302,16 @@ class RepositoryAnalyzer:
         
         # README inspection
         readme_size = 0
+        readme_excerpt = ""
         has_arch_docs = False
         for fname in ["README.md", "README", "readme.md", "Readme.md"]:
             rpath = target_dir / fname
             if rpath.exists():
                 readme_size = rpath.stat().st_size
                 try:
-                    rtext = rpath.read_text(encoding="utf-8", errors="replace").lower()
+                    raw_readme = self._read(rpath)
+                    readme_excerpt = self._readme_excerpt(raw_readme)
+                    rtext = raw_readme.lower()
                     if any(term in rtext for term in ["architecture", "system design", "diagram", "workflow", "flowchart"]):
                         has_arch_docs = True
                 except Exception:
@@ -274,6 +354,7 @@ class RepositoryAnalyzer:
             has_docker=has_docker,
             has_env_template=has_env,
             readme_size_bytes=readme_size,
+            readme_excerpt=readme_excerpt,
             has_architecture_docs=has_arch_docs,
             api_routes_count=api_routes,
             db_migrations_or_schema_count=db_schemas,
@@ -289,6 +370,39 @@ class RepositoryAnalyzer:
             readme_claims_unsupported_by_code=unsupported,
             provenance=provenance,
         )
+
+    @staticmethod
+    def _dir_size(path: Path) -> int:
+        total = 0
+        for root, _dirs, files in os.walk(path):
+            for f in files:
+                try:
+                    total += os.lstat(os.path.join(root, f)).st_size
+                except OSError:
+                    pass
+        return total
+
+    @staticmethod
+    def _remove_symlinks(path: Path) -> None:
+        for root, dirs, files in os.walk(path):
+            for name in dirs + files:
+                full = os.path.join(root, name)
+                if os.path.islink(full):
+                    try:
+                        os.unlink(full)
+                    except OSError:
+                        pass
+
+    @staticmethod
+    def _readme_excerpt(text: str, limit: int = 2500) -> str:
+        """Readable prose from a README: no badges, images, HTML, code blocks, or bare link lines."""
+        text = re.sub(r"```.*?```", " ", text, flags=re.DOTALL)
+        text = re.sub(r"<[^>]+>", " ", text)
+        text = re.sub(r"!\[[^\]]*\]\([^)]*\)", " ", text)
+        text = re.sub(r"\[([^\]]*)\]\([^)]*\)", r"\1", text)
+        lines = [ln.strip() for ln in text.splitlines()]
+        kept = [ln for ln in lines if ln and not re.fullmatch(r"[-=*_ |:#]+", ln)]
+        return "\n".join(kept)[:limit].strip()
 
     def _analyze_git_history(
         self,
@@ -368,7 +482,7 @@ class RepositoryAnalyzer:
         approx_loc = 0
         loc_by_lang: Dict[str, int] = {}
 
-        for root, dirs, files in os.walk(target_dir):
+        for root, dirs, files in self._walk(target_dir):
             dirs[:] = [d for d in dirs if d not in DEFAULT_IGNORE_DIRS]
             for f in files:
                 file_count += 1
@@ -380,8 +494,7 @@ class RepositoryAnalyzer:
                 f_path = Path(root) / f
                 try:
                     # quick line count
-                    with open(f_path, "r", encoding="utf-8", errors="ignore") as fp:
-                        lines = sum(1 for _ in fp)
+                    lines = self._count_lines(f_path)
                     approx_loc += lines
                     loc_by_lang[lang] = loc_by_lang.get(lang, 0) + lines
                 except Exception:
@@ -400,7 +513,7 @@ class RepositoryAnalyzer:
         if p_json.exists():
             try:
                 import json
-                data = json.loads(p_json.read_text(encoding="utf-8", errors="ignore"))
+                data = json.loads(self._read(p_json))
                 deps = {**data.get("dependencies", {}), **data.get("devDependencies", {})}
                 for d in deps:
                     all_deps.add(d.lower())
@@ -411,7 +524,7 @@ class RepositoryAnalyzer:
         req_txt = target_dir / "requirements.txt"
         if req_txt.exists():
             try:
-                for line in req_txt.read_text(encoding="utf-8", errors="ignore").splitlines():
+                for line in self._read(req_txt).splitlines():
                     dep = re.split(r"[=<>]", line.strip())[0].strip().lower()
                     if dep and not dep.startswith("#"):
                         all_deps.add(dep)
@@ -419,12 +532,12 @@ class RepositoryAnalyzer:
                 pass
 
         # Scan code files for key import signatures
-        for root, dirs, files in os.walk(target_dir):
+        for root, dirs, files in self._walk(target_dir):
             dirs[:] = [d for d in dirs if d not in DEFAULT_IGNORE_DIRS]
             for f in files:
                 if f.endswith((".py", ".js", ".ts", ".jsx", ".tsx")):
                     try:
-                        content = (Path(root) / f).read_text(encoding="utf-8", errors="ignore")
+                        content = self._read(Path(root) / f)
                         for sig in FRAMEWORK_SIGNATURES:
                             pat = rf"(?:import\s+.*?\b{re.escape(sig)}\b|from\s+{re.escape(sig)}\b|require\s*\(\s*['\"][^'\"]*{re.escape(sig)}|from\s+['\"][^'\"]*{re.escape(sig)})"
                             if re.search(pat, content, re.IGNORECASE):
@@ -457,13 +570,13 @@ class RepositoryAnalyzer:
         frameworks = set()
         test_patterns = [r"test_.*\.py$", r".*_test\.py$", r".*\.test\.[jt]sx?$", r".*\.spec\.[jt]sx?$"]
 
-        for root, dirs, files in os.walk(target_dir):
+        for root, dirs, files in self._walk(target_dir):
             dirs[:] = [d for d in dirs if d not in DEFAULT_IGNORE_DIRS]
             for f in files:
                 if any(re.match(pat, f) for pat in test_patterns):
                     test_count += 1
                     try:
-                        content = (Path(root) / f).read_text(encoding="utf-8", errors="ignore").lower()
+                        content = self._read(Path(root) / f).lower()
                         if "pytest" in content:
                             frameworks.add("pytest")
                         if "unittest" in content:
@@ -495,12 +608,12 @@ class RepositoryAnalyzer:
         ]
         regex = re.compile("|".join(patterns))
 
-        for root, dirs, files in os.walk(target_dir):
+        for root, dirs, files in self._walk(target_dir):
             dirs[:] = [d for d in dirs if d not in DEFAULT_IGNORE_DIRS]
             for f in files:
                 if f.endswith((".py", ".js", ".ts")):
                     try:
-                        content = (Path(root) / f).read_text(encoding="utf-8", errors="ignore")
+                        content = self._read(Path(root) / f)
                         count += len(regex.findall(content))
                     except Exception:
                         pass
@@ -508,7 +621,7 @@ class RepositoryAnalyzer:
 
     def _count_db_schemas(self, target_dir: Path) -> int:
         count = 0
-        for root, dirs, files in os.walk(target_dir):
+        for root, dirs, files in self._walk(target_dir):
             dirs[:] = [d for d in dirs if d not in DEFAULT_IGNORE_DIRS]
             for f in files:
                 if f.endswith((".prisma", ".sql")) or "migration" in f.lower() or "schema" in f.lower():
@@ -518,7 +631,7 @@ class RepositoryAnalyzer:
     def _detect_mock_data(self, target_dir: Path) -> List[str]:
         indicators = []
         mock_keywords = ["mock_data", "dummy_data", "fake_users", "mock_response", "sample_json"]
-        for root, dirs, files in os.walk(target_dir):
+        for root, dirs, files in self._walk(target_dir):
             dirs[:] = [d for d in dirs if d not in DEFAULT_IGNORE_DIRS]
             for f in files:
                 f_lower = f.lower()
@@ -526,7 +639,7 @@ class RepositoryAnalyzer:
                     indicators.append(f"Mock file: {f}")
                 elif f.endswith((".json", ".js", ".ts", ".py")):
                     try:
-                        sample = (Path(root) / f).read_text(encoding="utf-8", errors="ignore")[:3000].lower()
+                        sample = self._read(Path(root) / f)[:3000].lower()
                         if "mock response" in sample or "hardcoded for demo" in sample:
                             indicators.append(f"Mock text inside {f}")
                     except Exception:
@@ -535,12 +648,12 @@ class RepositoryAnalyzer:
 
     def _count_todos(self, target_dir: Path) -> int:
         count = 0
-        for root, dirs, files in os.walk(target_dir):
+        for root, dirs, files in self._walk(target_dir):
             dirs[:] = [d for d in dirs if d not in DEFAULT_IGNORE_DIRS]
             for f in files:
                 if f.endswith((".py", ".js", ".ts", ".jsx", ".tsx", ".go", ".rs", ".java", ".c", ".cpp")):
                     try:
-                        content = (Path(root) / f).read_text(encoding="utf-8", errors="ignore")
+                        content = self._read(Path(root) / f)
                         count += len(re.findall(r"\b(?:TODO|FIXME|XXX)\b", content))
                     except Exception:
                         pass
@@ -552,7 +665,7 @@ class RepositoryAnalyzer:
         if p_json.exists():
             try:
                 import json
-                data = json.loads(p_json.read_text(encoding="utf-8", errors="ignore"))
+                data = json.loads(self._read(p_json))
                 name = data.get("name", "")
                 if any(b in name for b in ["create-react-app", "nextjs-starter", "my-app", "template", "vite-project"]):
                     indicators.append(f"Default starter package name: '{name}'")
@@ -564,79 +677,81 @@ class RepositoryAnalyzer:
         check = DeploymentCheck(url=url)
         try:
             start_t = datetime.now()
-            with httpx.Client(timeout=6.0, follow_redirects=True, headers={"User-Agent": "HackBench-Forensics/1.0"}) as client:
-                resp = client.get(url)
-                check.status_code = resp.status_code
-                check.is_reachable = resp.status_code < 400
-                check.response_time_ms = round((datetime.now() - start_t).total_seconds() * 1000, 1)
+            # Redirects are validated hop by hop and the body is capped: see safe_fetch_text.
+            status_code, page_text, _final_url = safe_fetch_text(url, headers={"User-Agent": "HackBench-Forensics/1.0"})
+            check.status_code = status_code
+            check.is_reachable = status_code < 400
+            check.response_time_ms = round((datetime.now() - start_t).total_seconds() * 1000, 1)
 
-                if not check.is_reachable:
-                    check.deployment_url_status = "unreachable"
-                    check.deployment_verification = "unrelated"
-                    check.verification_evidence = f"Deployment URL returned HTTP error {resp.status_code}."
-                    return check
+            if not check.is_reachable:
+                check.deployment_url_status = "unreachable"
+                check.deployment_verification = "unrelated"
+                check.verification_evidence = f"Deployment URL returned HTTP error {status_code}."
+                return check
 
-                check.deployment_url_status = "reachable"
+            check.deployment_url_status = "reachable"
 
-                # Parse domain to identify generic or unrelated domains
-                parsed = urllib.parse.urlparse(url)
-                domain = parsed.netloc.lower()
-                if domain.startswith("www."):
-                    domain = domain[4:]
+            # Parse domain to identify generic or unrelated domains
+            parsed = urllib.parse.urlparse(url)
+            domain = parsed.netloc.lower()
+            if domain.startswith("www."):
+                domain = domain[4:]
 
-                generic_domains = {
-                    "example.com", "example.org", "example.net",
-                    "google.com", "github.com", "gitlab.com",
-                    "apple.com", "microsoft.com", "facebook.com",
-                    "wikipedia.org", "twitter.com", "x.com",
-                    "linkedin.com", "youtube.com", "youtu.be",
-                    "devpost.com", "medium.com"
-                }
+            generic_domains = {
+                "example.com", "example.org", "example.net",
+                "google.com", "github.com", "gitlab.com",
+                "apple.com", "microsoft.com", "facebook.com",
+                "wikipedia.org", "twitter.com", "x.com",
+                "linkedin.com", "youtube.com", "youtu.be",
+                "devpost.com", "medium.com"
+            }
 
-                if domain in generic_domains:
-                    check.deployment_verification = "unrelated"
-                    check.verification_evidence = (
-                        f"URL is reachable (HTTP {resp.status_code}), but points to an unrelated public domain '{domain}', "
-                        "not a dedicated project deployment."
-                    )
-                    return check
-
-                # Inspect page title and body content
-                body_text = resp.text[:100000] if resp.text else ""
-                title_match = re.search(r"<title[^>]*>(.*?)</title>", body_text, re.IGNORECASE | re.DOTALL)
-                page_title = title_match.group(1).strip() if title_match else ""
-
-                meta_desc_match = re.search(
-                    r'<meta\s+(?:name|property)=["\'](?:description|og:title|og:description)["\']\s+content=["\'](.*?)["\']',
-                    body_text,
-                    re.IGNORECASE,
+            if domain in generic_domains:
+                check.deployment_verification = "unrelated"
+                check.verification_evidence = (
+                    f"URL is reachable (HTTP {status_code}), but points to an unrelated public domain '{domain}', "
+                    "not a dedicated project deployment."
                 )
-                meta_desc = meta_desc_match.group(1).strip() if meta_desc_match else ""
+                return check
 
-                if project_name and len(project_name.strip()) > 2:
-                    pname = project_name.strip().lower()
-                    pname_no_spaces = pname.replace(" ", "")
+            # Inspect page title and body content
+            body_text = page_text[:100000] if page_text else ""
+            title_match = re.search(r"<title[^>]*>(.*?)</title>", body_text, re.IGNORECASE | re.DOTALL)
+            page_title = title_match.group(1).strip() if title_match else ""
 
-                    if pname in page_title.lower() or pname in meta_desc.lower():
-                        check.deployment_verification = "verified_project"
-                        check.verification_evidence = f"Page title or meta description explicitly matches project '{project_name}'."
-                    elif pname_no_spaces in domain or pname in body_text.lower():
-                        check.deployment_verification = "likely_project"
-                        check.verification_evidence = f"Deployment domain or text content references '{project_name}'."
-                    else:
-                        check.deployment_verification = "unknown"
-                        check.verification_evidence = (
-                            f"Server responded (HTTP {resp.status_code}), but page title/content does not contain evidence "
-                            f"matching project '{project_name}'."
-                        )
+            meta_desc_match = re.search(
+                r'<meta\s+(?:name|property)=["\'](?:description|og:title|og:description)["\']\s+content=["\'](.*?)["\']',
+                body_text,
+                re.IGNORECASE,
+            )
+            meta_desc = meta_desc_match.group(1).strip() if meta_desc_match else ""
+
+            if project_name and len(project_name.strip()) > 2:
+                pname = project_name.strip().lower()
+                pname_no_spaces = pname.replace(" ", "")
+
+                if pname in page_title.lower() or pname in meta_desc.lower():
+                    check.deployment_verification = "verified_project"
+                    check.verification_evidence = f"Page title or meta description explicitly matches project '{project_name}'."
+                elif pname_no_spaces in domain or pname in body_text.lower():
+                    check.deployment_verification = "likely_project"
+                    check.verification_evidence = f"Deployment domain or text content references '{project_name}'."
                 else:
                     check.deployment_verification = "unknown"
-                    check.verification_evidence = f"Server responded (HTTP {resp.status_code}), but no project name was provided to verify content."
+                    check.verification_evidence = (
+                        f"Server responded (HTTP {status_code}), but page title/content does not contain evidence "
+                        f"matching project '{project_name}'."
+                    )
+            else:
+                check.deployment_verification = "unknown"
+                check.verification_evidence = f"Server responded (HTTP {status_code}), but no project name was provided to verify content."
         except Exception as e:
+            # Never reflect the underlying error: it can reveal what is (or is not) listening behind a redirect.
+            logger.warning("Deployment probe failed: %s", type(e).__name__)
             check.is_reachable = False
             check.deployment_url_status = "unreachable"
             check.deployment_verification = "unrelated"
-            check.verification_evidence = f"HTTP probe failed: {str(e)[:100]}"
+            check.verification_evidence = "The deployment could not be reached."
         return check
 
     def check_deployment(self, url: str, project_name: Optional[str] = None) -> DeploymentCheck:

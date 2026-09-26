@@ -114,6 +114,27 @@ RUBRIC_DEFINITIONS: Dict[str, Dict[str, str]] = {
         "strong": "Has a clear memorable concept, interaction, or outcome.",
         "very_strong": "Has a distinctive concept or demonstration likely to remain memorable after seeing many projects.",
     },
+    "originality": {
+        "very_weak": "Standard clone of well-known tutorial patterns with no novelty.",
+        "weak": "Conventional concept with minimal differentiation from existing hackathon submissions.",
+        "moderate": "Interesting angle or combination of ideas with moderate differentiation.",
+        "strong": "Distinctive concept or novel twist that stands out in a crowded track.",
+        "very_strong": "Exceptionally original problem framing or mechanism with high creative differentiation.",
+    },
+    "scope_clarity": {
+        "very_weak": "Scope is drastically overambitious or completely undefined for a hackathon timeframe.",
+        "weak": "Scope is too broad with too many unfocused features for a single weekend.",
+        "moderate": "Scope is feasible but lacks clear boundaries on what constitutes the MVP.",
+        "strong": "Scope has well-defined core boundaries achievable in a 36-hour build.",
+        "very_strong": "Scope is exceptionally disciplined: sharp core MVP with clear execution boundaries.",
+    },
+    "potential_demo_clarity": {
+        "very_weak": "No conceivable path to a 3-minute live demonstration.",
+        "weak": "Demo would rely almost entirely on mockups or abstract explanation.",
+        "moderate": "A viable demo flow is possible but lacks a punchy, observable aha moment.",
+        "strong": "Clear observable user journey suitable for a 2-3 minute judge walkthrough.",
+        "very_strong": "Immediate, high-impact demonstration concept with an unmistakable visual or audible proof of value.",
+    },
     "award_alignment": {
         "very_weak": "Little evidence that the project addresses the criteria.",
         "weak": "Touches the criteria superficially.",
@@ -131,6 +152,7 @@ SCORE_LEVEL_VALUES = {
     "strong": 4.0,
     "very_strong": 5.0,
     "insufficient_evidence": 0.0,
+    "not_evaluated": 0.0,
 }
 
 
@@ -215,8 +237,8 @@ class JevClient:
                         time.sleep(retry_after)
                         continue
                     else:
-                        logger.error(f"Jev API returned error status {resp.status_code}: {resp.text}")
-                        last_error = f"HTTP {resp.status_code}: {resp.text}"
+                        logger.error(f"Jev API returned error status {resp.status_code}: {resp.text[:200]}")
+                        last_error = f"HTTP {resp.status_code}: {resp.text[:200]}"
             except Exception as e:
                 logger.warning(f"Jev request failed on attempt {attempt + 1}: {e}")
                 last_error = str(e)

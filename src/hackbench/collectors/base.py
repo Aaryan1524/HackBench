@@ -5,6 +5,8 @@ from pathlib import Path
 from typing import Optional, Dict, Any
 import httpx
 
+from ..netsafety import safe_fetch_text
+
 logger = logging.getLogger("hackbench.collectors")
 
 
@@ -19,7 +21,13 @@ class CachedHttpClient:
         rate_limit_delay_seconds: float = 0.5,
         max_retries: int = 4,
         timeout: float = 25.0,
+        safe_mode: bool = False,
     ):
+        # safe_mode is for fetching user-supplied links: every redirect hop is validated, bodies are capped,
+        # there are no retries, and nothing is cached. The offline dataset pipeline leaves it off.
+        self.safe_mode = safe_mode
+        if safe_mode:
+            max_retries, timeout, cache_dir = 1, min(timeout, 8.0), None
         self.cache_dir = cache_dir
         if self.cache_dir:
             self.cache_dir.mkdir(parents=True, exist_ok=True)
@@ -44,6 +52,11 @@ class CachedHttpClient:
         return self.cache_dir / f"{url_hash}.html"
 
     def get(self, url: str, force_refresh: bool = False) -> str:
+        if self.safe_mode:
+            status, text, _final = safe_fetch_text(url, timeout=self.timeout, headers=self.headers)
+            if status >= 400:
+                raise RuntimeError(f"HTTP {status}")
+            return text
         cache_path = self._get_cache_path(url)
         if not force_refresh and cache_path and cache_path.exists():
             return cache_path.read_text(encoding="utf-8", errors="replace")

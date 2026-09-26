@@ -32,6 +32,18 @@ BOUNDED_JEV_DIMENSIONS = [
     "award_alignment",
 ]
 
+IDEA_ANALYSIS_DIMENSIONS = [
+    "problem_clarity",
+    "user_clarity",
+    "product_clarity",
+    "originality",
+    "practicality",
+    "scope_clarity",
+    "story_clarity",
+    "potential_demo_clarity",
+    "award_alignment",
+]
+
 
 class DimensionEvaluationResult(BaseModel):
     dimension: str
@@ -88,35 +100,55 @@ class EvaluationRouter:
         award_criteria_text: Optional[str] = None,
         has_video_demo: bool = False,
         has_live_deployment: bool = False,
+        analysis_mode: str = "project",
+        has_repository: bool = False,
+        text_from_readme: bool = False,
     ) -> Dict[str, DimensionEvaluationResult]:
         """
-        Evaluates the judge-facing presentation surface across all 9 canonical dimensions
-        using shared-state Jev batching and Gemini fallback gating.
+        Evaluates the judge-facing presentation surface.
+        In 'project' mode: evaluates all 9 canonical post-implementation dimensions.
+        In 'idea' mode: evaluates idea-stage dimensions and explicitly marks implementation/completion
+        as 'not_evaluated' (never 'weak').
         """
+        is_idea_mode = (analysis_mode == "idea")
+
         # 1. Construct compact, unified project state
-        state_parts = [
-            f"PROJECT: {project_name}",
-            f"TAGLINE: {tagline or 'N/A'}",
-            f"\nPROBLEM STATEMENT:\n{problem or 'N/A'}",
-            f"\nTARGET USER:\n{target_user or 'Inferred from description'}",
-            f"\nPRODUCT & WORKFLOW:\n{what_it_does or 'N/A'}\n{how_it_works or 'N/A'}",
-            f"\nDEMO EVIDENCE:\n{demo_evidence or ('Video demo present' if has_video_demo else 'No demo provided')}",
-        ]
+        if is_idea_mode:
+            state_parts = [
+                f"STAGE: Pre-pitch Idea (Unbuilt Concept)",
+                f"IDEA TITLE: {project_name}",
+                f"CONCEPT PITCH: {tagline or 'N/A'}",
+                f"\nPROBLEM STATEMENT:\n{problem or 'Not explicitly articulated'}",
+                f"\nTARGET USER:\n{target_user or 'Not specified'}",
+                f"\nPROPOSED PRODUCT & WORKFLOW:\n{what_it_does or 'N/A'}\n{how_it_works or 'N/A'}",
+                f"\nSTAGE INVARIANT: Neither repository, working code, deployment, nor video demo exist yet.",
+            ]
+        else:
+            state_parts = [
+                f"PROJECT: {project_name}",
+                f"TAGLINE: {tagline or 'N/A'}",
+                f"\nPROBLEM STATEMENT:\n{problem or 'N/A'}",
+                f"\nTARGET USER:\n{target_user or 'Inferred from description'}",
+                f"\nPRODUCT & WORKFLOW:\n{what_it_does or 'N/A'}\n{how_it_works or 'N/A'}",
+                f"\nDEMO EVIDENCE:\n{demo_evidence or ('Video demo present' if has_video_demo else 'No demo provided')}",
+            ]
+
         if award_criteria_text:
             state_parts.append(f"\nDOCUMENTED AWARD CRITERIA:\n{award_criteria_text}")
         else:
             state_parts.append("\nDOCUMENTED AWARD CRITERIA: None provided / general category.")
 
-        if not has_video_demo and not has_live_deployment:
+        if not is_idea_mode and not has_video_demo and not has_live_deployment:
             state_parts.append("\nEVIDENCE LIMITATIONS: Neither interactive deployment nor video demo available.")
 
         shared_state = "\n".join(state_parts)
 
-        # 2. Build Jev questions for bounded dimensions
+        # 2. Build Jev questions for active dimensions
+        active_dimensions = IDEA_ANALYSIS_DIMENSIONS if is_idea_mode else BOUNDED_JEV_DIMENSIONS
         questions: List[JevQuestion] = []
-        for dim in BOUNDED_JEV_DIMENSIONS:
+        for dim in active_dimensions:
             rubric = RUBRIC_DEFINITIONS.get(dim, {})
-            instructions = f"Evaluate the project's '{dim.replace('_', ' ')}' against the explicit rubric anchors."
+            instructions = f"Evaluate the candidate's '{dim.replace('_', ' ')}' against the explicit rubric anchors."
             questions.append(
                 JevQuestion(
                     id=dim,
@@ -131,19 +163,39 @@ class EvaluationRouter:
         # 3. Check cache
         cache_key = self.cache.compute_cache_key(
             evidence=shared_state,
-            dimension_or_type="judge_surface_batch",
-            model_version=f"{self.jev.model}_{self.gemini.model}",
+            dimension_or_type=f"judge_surface_batch_{analysis_mode}",
+            model_version=f"{self.jev.model}_{self.gemini.model}_jev{int(self.jev.is_configured)}_gpt{int(self.gemini.is_configured)}",
             rubric_version=RUBRIC_VERSION,
         )
         cached_result = self.cache.get(cache_key)
         if cached_result:
-            return {
-                k: DimensionEvaluationResult.model_validate(v)
-                for k, v in cached_result.items()
-            }
+            cached = {k: DimensionEvaluationResult.model_validate(v) for k, v in cached_result.items()}
+            return self._gate_on_evidence(
+                cached, is_idea_mode, problem, target_user, what_it_does, how_it_works, tagline,
+                has_video_demo, has_live_deployment, has_repository, text_from_readme,
+            )
 
         # 4. Evaluation Routing: Jev (Layer 2) if configured, else ChatGPT batch classification
         results: Dict[str, DimensionEvaluationResult] = {}
+
+        # Critical Invariant: In Idea Mode, completion and demo MUST be marked not_evaluated (not weak)
+        if is_idea_mode:
+            results["completion_appearance"] = DimensionEvaluationResult(
+                dimension="completion_appearance",
+                label="not_evaluated",
+                score=0.0,
+                confidence=1.0,
+                provider="deterministic_rule",
+                is_insufficient_evidence=False,
+            )
+            results["demo_strength"] = DimensionEvaluationResult(
+                dimension="demo_strength",
+                label="not_evaluated",
+                score=0.0,
+                confidence=1.0,
+                provider="deterministic_rule",
+                is_insufficient_evidence=False,
+            )
 
         if self.jev.is_configured:
             # Jev Layer 2 with confidence gating to ChatGPT
@@ -214,13 +266,17 @@ class EvaluationRouter:
             logger.info("JEV_API_KEY not configured. Evaluating rubric dimensions via ChatGPT batch classification.")
             batch_evals = self.gemini.classify_batch(
                 untrusted_evidence=shared_state,
-                dimensions=BOUNDED_JEV_DIMENSIONS,
+                dimensions=active_dimensions,
                 rubrics=RUBRIC_DEFINITIONS,
             )
             for q in questions:
                 dim = q.id
 
-                if dim == "demo_strength" and not has_video_demo and not has_live_deployment:
+                if dim in results:
+                    # Pre-populated invariant (e.g. not_evaluated in idea mode)
+                    continue
+
+                if dim == "demo_strength" and not is_idea_mode and not has_video_demo and not has_live_deployment:
                     results[dim] = DimensionEvaluationResult(
                         dimension=dim,
                         label="insufficient_evidence",
@@ -262,6 +318,8 @@ class EvaluationRouter:
             jev_resp = self.jev.evaluate(shared_state, questions)
             for q in questions:
                 dim = q.id
+                if dim in results:
+                    continue
                 q_res = jev_resp.results.get(dim)
                 best_label = str(q_res.value) if q_res else "moderate"
                 if q_res and isinstance(q_res.value, (int, float)):
@@ -277,6 +335,12 @@ class EvaluationRouter:
                     fallback_reason="no_api_keys_configured",
                 )
 
+        # Cross-map originality and memorability for shared schemas
+        if "originality" in results and "memorability" not in results:
+            results["memorability"] = results["originality"]
+        elif "memorability" in results and "originality" not in results:
+            results["originality"] = results["memorability"]
+
         # Log router provider telemetry for auditability
         for dim, res in results.items():
             logger.info(
@@ -285,8 +349,76 @@ class EvaluationRouter:
             )
 
         # Cache final results
-        self.cache.set(cache_key, {k: v.model_dump() for k, v in results.items()})
-        return results
+        # Never cache offline fallback ratings: they would be served later even once an AI provider is available.
+        if not any(v.provider == "offline_calibrated" for v in results.values()):
+            self.cache.set(cache_key, {k: v.model_dump() for k, v in results.items()})
+        return self._gate_on_evidence(
+            results, is_idea_mode, problem, target_user, what_it_does, how_it_works, tagline,
+            has_video_demo, has_live_deployment, has_repository, text_from_readme,
+        )
+
+    @staticmethod
+    def _gate_on_evidence(
+        results: Dict[str, "DimensionEvaluationResult"],
+        is_idea_mode: bool,
+        problem: Optional[str],
+        target_user: Optional[str],
+        what_it_does: Optional[str],
+        how_it_works: Optional[str],
+        tagline: Optional[str],
+        has_video_demo: bool,
+        has_live_deployment: bool,
+        has_repository: bool,
+        text_from_readme: bool = False,
+    ) -> Dict[str, "DimensionEvaluationResult"]:
+        """
+        Whatever provider produced the labels, a dimension with no submitted evidence is
+        'insufficient_evidence', never 'weak'. Idea mode is handled separately (not_evaluated).
+        """
+        if is_idea_mode:
+            return results
+
+        text = {
+            "problem": (problem or "").strip(),
+            "user": (target_user or "").strip(),
+            "what": (what_it_does or "").strip(),
+            "how": (how_it_works or "").strip(),
+            "tagline": (tagline or "").strip(),
+        }
+        no_description = not any(text.values())
+        no_product_text = not (text["what"] or text["how"] or text["tagline"])
+        no_build_evidence = not (has_repository or has_live_deployment or has_video_demo)
+
+        missing = set()
+        # A README is one block of prose, not separate problem/user fields: let the reviewer judge those from it.
+        if not text["problem"] and not text_from_readme:
+            missing.add("problem_clarity")
+        if not text["user"] and not text_from_readme:
+            missing.add("user_clarity")
+        if no_product_text:
+            missing.add("product_clarity")
+        if not (has_video_demo or has_live_deployment):
+            missing.add("demo_strength")
+        if no_build_evidence:
+            missing.add("completion_appearance")
+        if no_description:
+            missing.update({
+                "story_clarity", "memorability", "originality", "practicality", "award_alignment",
+                "completion_appearance", "demo_strength",
+            })
+
+        gated = dict(results)
+        for dim in missing:
+            if dim in gated:
+                gated[dim] = DimensionEvaluationResult(
+                    dimension=dim,
+                    label="insufficient_evidence",
+                    score=0.0,
+                    confidence=1.0,
+                    provider="deterministic_rule",
+                    is_insufficient_evidence=True,
+                )
+        return gated
 
     def _score_to_label(self, score: float) -> str:
         if score >= 4.5:

@@ -58,6 +58,7 @@ class RepositoryMetrics(BaseModel):
     has_docker: bool = False
     has_env_template: bool = False
     readme_size_bytes: int = 0
+    readme_excerpt: str = ""
     has_architecture_docs: bool = False
     api_routes_count: int = 0
     db_migrations_or_schema_count: int = 0

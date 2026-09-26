@@ -17,7 +17,7 @@
       "title": "1st, 2nd, & 3rd Best Overall",
       "prize_type": "overall",
       "sponsor_name": null,
-      "description": "Best overall in-person projects",
+      "description": "Best overall in-person projects based on creativity, technical execution, and user impact.",
       "value_usd": null,
       "number_of_winners": 3,
       "technologies_required_or_encouraged": [],
@@ -197,6 +197,17 @@
       "value_usd": null,
       "number_of_winners": 1,
       "technologies_required_or_encouraged": [],
+      "source_url": "https://shellhacks2025.devpost.com/"
+    },
+    {
+      "prize_id": "prize_elevenlabs",
+      "title": "ElevenLabs — Best Use of Conversational AI & Voice",
+      "prize_type": "sponsor",
+      "sponsor_name": "ElevenLabs",
+      "description": "Build an engaging voice-first application using ElevenLabs Conversational AI or Voice APIs. Projects must demonstrate real-time adaptive voice interaction and practical conversational utility.",
+      "value_usd": null,
+      "number_of_winners": 1,
+      "technologies_required_or_encouraged": ["ElevenLabs"],
       "source_url": "https://shellhacks2025.devpost.com/"
     }
   ],

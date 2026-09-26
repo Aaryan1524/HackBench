@@ -1,6 +1,12 @@
 "use client";
 
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
+import {
+  durationBucket, failureStageFor, inputTypeFor, safeEventId, safePrizeEventId, statusClass,
+  trackAnalysisCompleted, trackAnalysisFailed, trackAnalysisStarted, trackEvidenceOpened,
+  trackModeSelected, trackPrizeFitViewed, trackReviewAgainClicked,
+  type FailureStage, type StatusClass,
+} from "@/lib/analytics";
 
 // Types matching the HackBench backend API
 interface Strength {
@@ -28,8 +34,49 @@ interface DimensionComparison {
   interpretation: string;
 }
 
+interface PrizeFit {
+  prize_id: string;
+  award_title: string;
+  sponsor_name?: string | null;
+  prize_type: string;
+  fit_level: "very_strong" | "strong" | "moderate" | "weak" | "very_weak" | "insufficient_criteria" | "insufficient_evidence";
+  fit_label: string;
+  why_it_fits: string;
+  why_it_may_not_fit: string;
+  documented_requirements: string[];
+  what_must_be_demonstrated: string[];
+  biggest_missing_requirement: string;
+  sponsor_tech_role: "central" | "decorative" | "absent" | "not_applicable";
+  historical_context?: string | null;
+  insufficient_criteria: boolean;
+}
+
+interface PrizeFitResult {
+  targeting_mode: "auto" | "specific";
+  top_fits: PrizeFit[];
+  evaluated_count: number;
+  insufficient_criteria_count: number;
+  summary: string;
+}
+
 interface AnalysisResult {
   analysis_id: string;
+  analysis_mode?: "idea" | "project";
+  idea?: {
+    description: string;
+    technologies_of_interest: string[];
+    extracted?: {
+      problem?: string;
+      target_user?: string;
+      proposed_product?: string;
+      core_workflow?: string;
+      intended_technologies?: string[];
+      likely_sponsor_technologies?: string[];
+      user_outcome?: string;
+      notable_constraints?: string;
+    };
+  };
+  prize_fits?: PrizeFitResult;
   project: {
     name: string;
     tagline: string;
@@ -53,7 +100,7 @@ interface AnalysisResult {
       is_insufficient_evidence?: boolean;
     }
   >;
-  engineering: {
+  engineering?: {
     status: string;
     approx_loc: number;
     primary_languages: string[];
@@ -79,6 +126,8 @@ interface AnalysisResult {
       cohort_description?: string;
     };
     dimensions: Record<string, DimensionComparison>;
+    takeaway?: string | null;
+    baseline_label?: string;
   };
   criteria_alignment: {
     target_award: string;
@@ -86,6 +135,8 @@ interface AnalysisResult {
     alignment_level: string;
     sponsor_requirements?: string;
   };
+  notes?: string[];
+  telemetry?: { jev_used: boolean; gemini_used: boolean; fallback_used: boolean; result_quality: "full" | "partial" };
   recommendations: {
     summary: string;
     main_gap_headline?: string;
@@ -93,16 +144,42 @@ interface AnalysisResult {
     gaps: Gap[];
     next_actions: NextAction[];
     limitations: string[];
+    build_first?: string;
+    dont_build_yet?: string[];
+    historical_takeaway?: string;
   };
   disclaimer: string;
 }
 
-const PROGRESS_STEPS = [
+const IDEA_PROGRESS_STEPS = [
+  "Reading your idea",
+  "Extracting core workflow and target user",
+  "Checking scope and demo potential",
+  "Comparing against historical winners",
+  "Preparing your build guidance",
+];
+
+const PROJECT_PROGRESS_STEPS = [
   "Reading project",
   "Checking the implementation",
   "Comparing judging criteria",
   "Comparing historical projects",
   "Preparing your analysis",
+];
+
+// Which past hackathon(s) prizes and winner comparisons come from. Must match the backend's baselines.
+const BASELINE_OPTIONS = [
+  { id: "shellhacks2025:2025", label: "ShellHacks 2025" },
+  { id: "shellhacks2024:2024", label: "ShellHacks 2024" },
+  { id: "shellhacks-2023:2023", label: "ShellHacks 2023" },
+  { id: "all:combined", label: "All years combined (2023–2025)" },
+];
+
+// Where the prizes you are matched against come from. ShellHacks 2026 is this year's challenges: it has no
+// results yet, so it is a prize source only and is not offered as a comparison baseline.
+const PRIZE_EVENT_OPTIONS = [
+  { id: "shellhacks2026:2026", label: "ShellHacks 2026 (this year)" },
+  ...BASELINE_OPTIONS.map((o) => ({ id: o.id, label: o.label })),
 ];
 
 const TRACK_OPTIONS = [
@@ -123,6 +200,7 @@ function formatLabel(raw: string): string {
   if (clean === "weak") return "Needs work";
   if (clean === "very weak") return "Needs work";
   if (clean === "insufficient evidence") return "Insufficient evidence";
+  if (clean === "not evaluated") return "Not evaluated (idea stage)";
   return raw.replace(/_/g, " ");
 }
 
@@ -135,11 +213,23 @@ function getEditorialHeadline(result: AnalysisResult): string {
   const strengths = result.recommendations.strengths || [];
   const dims = result.judge_surface || {};
 
-  const demoScore = dims.demo_strength?.score ?? 3;
+  // Missing evidence is unknown, not weak: treat it as neutral.
+  const scoreOf = (key: string) => {
+    const d = dims[key];
+    return !d || d.label === "insufficient_evidence" || d.label === "not_evaluated" ? 3 : d.score;
+  };
+  const demoScore = scoreOf("demo_strength");
   const engLoc = result.engineering?.approx_loc ?? 0;
-  const probScore = dims.problem_clarity?.score ?? 3;
-  const userScore = dims.user_clarity?.score ?? 3;
-  const alignScore = dims.award_alignment?.score ?? 3;
+  const probScore = scoreOf("problem_clarity");
+  const userScore = scoreOf("user_clarity");
+  const alignScore = scoreOf("award_alignment");
+
+  if (result.analysis_mode === "idea") {
+    if (strengths.length > 0 && gaps.length > 0) {
+      return `${strengths[0].title}.\n${gaps[0].title} needs sharpening.`;
+    }
+    return "Clear problem.\nThe product hook needs sharpening.";
+  }
 
   if (engLoc > 200 && demoScore <= 3) {
     return "Strong engineering. Demo proof is the gap.";
@@ -161,8 +251,79 @@ function getEditorialHeadline(result: AnalysisResult): string {
   return "Solid execution. The clearest gap is presentation.";
 }
 
+function ComparisonSection({ result, embedded = false }: { result: AnalysisResult; embedded?: boolean }) {
+  return (
+  <section className={embedded ? "" : "max-w-3xl border-b border-edge pb-16"}>
+    {embedded ? (
+      <h3 className="text-xs uppercase font-semibold tracking-wider text-ink-secondary font-mono mb-2">
+        How your concept compares
+      </h3>
+    ) : (
+      <h2 className="font-serif text-2xl sm:text-3xl font-normal text-ink mb-2">
+        How you compare
+      </h2>
+    )}
+    <p className="text-sm text-ink-secondary mb-8">
+      {result.analysis_mode === "idea"
+        ? "How your concept reads across judging areas, next to past ShellHacks winners."
+        : "How your project reads across nine judging areas, next to past ShellHacks winners."}
+    </p>
+
+    <div className="border border-edge rounded bg-white overflow-hidden shadow-xs">
+      <div className="grid grid-cols-12 px-5 py-3 bg-canvas-subtle border-b border-edge text-xs font-semibold uppercase tracking-wider text-ink-secondary">
+        <span className="col-span-5 sm:col-span-5">Dimension</span>
+        <span className="col-span-3 sm:col-span-3">Your Assessment</span>
+        <span className="col-span-4 sm:col-span-4">
+            {result.historical_comparison?.baseline_label ? `Winners, ${result.historical_comparison.baseline_label}` : "Past winners"}
+          </span>
+      </div>
+      <div className="divide-y divide-edge">
+        {Object.entries(result.judge_surface).map(([key, dim]) => {
+          const comp = result.historical_comparison?.dimensions?.[key];
+          const winnerStat = comp?.historical_overall_winners?.split(" (")[0] || "No historical data";
+          const isNotEval = dim.label === "not_evaluated" || dim.label === "insufficient_evidence";
+
+          return (
+            <div key={key} className="grid grid-cols-12 px-5 py-3.5 items-center text-sm">
+              <span className="col-span-5 sm:col-span-5 font-medium text-ink capitalize">
+                {key.replace(/_/g, " ")}
+              </span>
+              <span className="col-span-3 sm:col-span-3">
+                <span
+                  className={`inline-block px-2.5 py-0.5 rounded text-xs font-medium ${
+                    isNotEval
+                      ? "bg-slate-100 text-slate-600 border border-slate-200"
+                      : dim.label === "very_strong" || dim.label === "strong"
+                      ? "bg-emerald-50 text-emerald-800 border border-emerald-200"
+                      : dim.label === "moderate"
+                      ? "bg-neutral-100 text-neutral-800 border border-neutral-200"
+                      : "bg-amber-50 text-amber-900 border border-amber-200"
+                  }`}
+                >
+                  {formatLabel(dim.label)}
+                </span>
+              </span>
+              <span className="col-span-4 sm:col-span-4 text-xs text-ink-secondary font-mono">
+                {winnerStat}
+              </span>
+            </div>
+          );
+        })}
+      </div>
+    </div>
+
+    <p className="mt-4 text-xs text-ink-muted">
+      {result.historical_comparison?.sample_sizes?.cohort_description || "No historical data is available for this baseline."}
+    </p>
+  </section>
+  );
+}
+
 export default function Home() {
-  const [inputMode, setInputMode] = useState<"link" | "manual">("link");
+  // Primary flow is "idea", secondary flow is "project"
+  const [analysisMode, setAnalysisMode] = useState<"idea" | "project">("idea");
+  const [projectInputSubmode, setProjectInputSubmode] = useState<"link" | "manual">("link");
+
   const [analyzing, setAnalyzing] = useState(false);
   const [progressIdx, setProgressIdx] = useState(0);
   const [error, setError] = useState<string | null>(null);
@@ -170,10 +331,55 @@ export default function Home() {
   const [showMethodology, setShowMethodology] = useState(false);
   const [showAdditionalSources, setShowAdditionalSources] = useState(false);
 
-  // Form Fields
-  const [primaryLink, setPrimaryLink] = useState("");
-  const [targetHackathon, setTargetHackathon] = useState("shellhacks2025:2025");
+  // Common Fields
+  const [targetHackathon, setTargetHackathon] = useState("shellhacks2025:2025"); // past results to compare against
+  const [prizeEvent, setPrizeEvent] = useState("shellhacks2026:2026"); // whose prizes to match against
   const [targetAward, setTargetAward] = useState("best_overall");
+  const [prizeTargetingMode, setPrizeTargetingMode] = useState<"auto" | "specific">("auto");
+  const [availablePrizes, setAvailablePrizes] = useState<Array<{ id: string; label: string }>>(TRACK_OPTIONS);
+
+  // Fetch documented prizes for hackathon
+  useEffect(() => {
+    let isMounted = true;
+    async function fetchPrizes() {
+      try {
+        const res = await fetch(`/api/events/${encodeURIComponent(prizeEvent)}/prizes`);
+        if (res.ok) {
+          const data = await res.json();
+          if (data.prizes && Array.isArray(data.prizes)) {
+            const valid = data.prizes
+              .filter((p: { has_sufficient_criteria: boolean }) => p.has_sufficient_criteria)
+              .map((p: { prize_id: string; title: string }) => ({
+                id: p.prize_id,
+                label: p.title,
+              }));
+            if (isMounted && valid.length > 0) {
+              setAvailablePrizes(valid);
+              // A prize picked for another year may not exist in this one.
+              setTargetAward((current) => (valid.some((v: { id: string }) => v.id === current) ? current : valid[0].id));
+              return;
+            }
+          }
+        }
+      } catch {
+        // Fallback to static TRACK_OPTIONS
+      }
+      if (isMounted) {
+        setAvailablePrizes(TRACK_OPTIONS);
+      }
+    }
+    fetchPrizes();
+    return () => {
+      isMounted = false;
+    };
+  }, [prizeEvent]);
+
+  // Idea Mode Fields
+  const [ideaDescription, setIdeaDescription] = useState("");
+  const [technologiesOfInterest, setTechnologiesOfInterest] = useState("");
+
+  // Project Mode Fields
+  const [primaryLink, setPrimaryLink] = useState("");
   const [githubUrl, setGithubUrl] = useState("");
   const [devpostUrl, setDevpostUrl] = useState("");
   const [demoUrl, setDemoUrl] = useState("");
@@ -186,65 +392,85 @@ export default function Home() {
   const [targetUser, setTargetUser] = useState("");
   const [whatItDoes, setWhatItDoes] = useState("");
   const [howItWorks, setHowItWorks] = useState("");
-  const [techTags, setTechTags] = useState("");
+  const [techTags] = useState("");
+
+  const activeSteps = analysisMode === "idea" ? IDEA_PROGRESS_STEPS : PROJECT_PROGRESS_STEPS;
 
   // Cycle progress messages during analysis
   useEffect(() => {
     let timer: NodeJS.Timeout;
     if (analyzing) {
       timer = setInterval(() => {
-        setProgressIdx((prev) => (prev < PROGRESS_STEPS.length - 1 ? prev + 1 : prev));
+        setProgressIdx((prev) => (prev < activeSteps.length - 1 ? prev + 1 : prev));
       }, 1400);
     } else {
       setProgressIdx(0);
     }
     return () => clearInterval(timer);
-  }, [analyzing]);
+  }, [analyzing, activeSteps.length]);
 
   // Smart detect link type when primaryLink changes
+  // The link is classified once, at submit. Classifying per keystroke saved half-typed text as a deployment URL.
   const handlePrimaryLinkChange = (value: string) => {
     setPrimaryLink(value);
-    const trimmed = value.trim();
-    if (trimmed.includes("github.com")) {
-      setGithubUrl(trimmed);
-    } else if (trimmed.includes("devpost.com")) {
-      setDevpostUrl(trimmed);
-    } else if (trimmed.includes("youtube.com") || trimmed.includes("youtu.be") || trimmed.includes("loom.com")) {
-      setDemoUrl(trimmed);
-    } else if (trimmed.startsWith("http://") || trimmed.startsWith("https://")) {
-      setDeploymentUrl(trimmed);
-    }
   };
 
-  const loadSample = (sampleType: "hotelbot" | "ecoquest") => {
-    if (sampleType === "hotelbot") {
-      setInputMode("manual");
-      setName("ConciergePulse");
-      setTagline("Autonomous guest feedback phone system extracting operational bottlenecks");
-      setProblem(
-        "Hotels suffer from low guest review rates (under 8%) and only discover operational failures like AC breakdowns or poor housekeeping after negative public reviews are posted on TripAdvisor."
-      );
-      setTargetUser("Independent boutique hotel general managers and operations directors.");
-      setSponsorRequirements("Must provide an autonomous voice integration using Twilio or telephony API and output structured operational metrics rather than free-form text.");
-      setWhatItDoes(
-        "Calls hotel guests via an autonomous voice agent post-checkout, conducts an empathetic 2-minute conversation, and extracts structured operational metrics."
-      );
-      setHowItWorks(
-        "Uses Twilio for telephony, FastAPI backend to stream audio, OpenAI Whisper for transcription, and PostgreSQL to aggregate guest sentiment."
-      );
-      setTechTags("Python, FastAPI, Twilio, PostgreSQL, React, Next.js");
-      setDeploymentUrl("https://concierge-pulse.vercel.app");
-      setTargetAward("best_overall");
+  const RANDOM_IDEAS = [
+    {
+      description: "An offline peer-to-peer mesh communication app for university campuses that lets students broadcast emergency alerts and coordinate safe walks during cellular network blackouts.",
+      technologies: "Bluetooth Low Energy, React Native, SQLite",
+      award: "best_overall",
+    },
+    {
+      description: "A smart pantry assistant that scans grocery receipts, monitors shelf life, and dynamically generates zero-waste dinner recipes based on ingredients expiring soon.",
+      technologies: "Next.js, Python, OCR, Supabase",
+      award: "best_overall",
+    },
+    {
+      description: "An ambient clinical note-taking assistant for ER triage nurses that listens to patient intake check-ins and auto-populates structured EHR vitals and symptoms in real time.",
+      technologies: "Whisper, FastAPI, WebSockets, Python",
+      award: "best_overall",
+    },
+    {
+      description: "A browser accessibility tool that converts complex financial dashboards and charts into interactive acoustic sonifications for visually impaired analysts.",
+      technologies: "Web Audio API, Chrome Extensions API, TypeScript",
+      award: "best_overall",
+    },
+    {
+      description: "A hyper-local flood navigation app combining municipal storm drain sensor feeds with crowdsourced road hazard reports to guide drivers around sudden flash floods.",
+      technologies: "Mapbox, Go, MQTT, React",
+      award: "best_overall",
+    },
+  ];
+
+  const loadSample = (sampleType: "idea" | "ecoquest") => {
+    if (sampleType === "idea") {
+      setAnalysisMode("idea");
+      const available = RANDOM_IDEAS.filter((i) => i.description !== ideaDescription);
+      const chosen = available.length > 0 ? available[Math.floor(Math.random() * available.length)] : RANDOM_IDEAS[0];
+      setIdeaDescription(chosen.description);
+      setTechnologiesOfInterest(chosen.technologies);
+      setTargetHackathon("shellhacks2025:2025");
+      setPrizeEvent("shellhacks2026:2026");
+      setTargetAward(chosen.award);
+      setPrizeTargetingMode("auto");
     } else {
-      setInputMode("link");
-      setPrimaryLink("https://devpost.com/software/ecoquest");
-      setGithubUrl("https://github.com/example/ecoquest");
-      setDevpostUrl("https://devpost.com/software/ecoquest");
-      setDeploymentUrl("https://ecoquest-demo.vercel.app");
+      setAnalysisMode("project");
+      setProjectInputSubmode("manual");
+      setPrimaryLink("");
+      setGithubUrl("");
+      setDevpostUrl("");
+      setDeploymentUrl("");
       setName("EcoQuest");
       setTagline("Gamifying urban sustainability through verifiable recycling missions");
+      setProblem("People want to recycle correctly but get no feedback, so contamination in recycling bins stays high.");
+      setTargetUser("City residents in apartment buildings");
+      setWhatItDoes("Residents scan an item, learn which bin it belongs in, and earn points for completed recycling missions.");
+      setHowItWorks("A React app sends item photos to a vision model, which returns the bin type; a Flask API tracks points.");
       setSponsorRequirements("");
-      setTargetAward("best_social_good");
+      setTargetAward("best_overall");
+      setTargetHackathon("shellhacks2025:2025");
+      setPrizeEvent("shellhacks2026:2026");
     }
   };
 
@@ -254,45 +480,103 @@ export default function Home() {
     setError(null);
     setResult(null);
 
-    // Resolve URLs from primaryLink if set
-    let finalGithub = githubUrl.trim();
-    let finalDevpost = devpostUrl.trim();
-    let finalDemo = demoUrl.trim();
-    let finalDeployment = deploymentUrl.trim();
+    let payload: Record<string, unknown>;
 
-    if (inputMode === "link" && primaryLink.trim()) {
-      const link = primaryLink.trim();
-      if (link.includes("github.com") && !finalGithub) finalGithub = link;
-      else if (link.includes("devpost.com") && !finalDevpost) finalDevpost = link;
-      else if ((link.includes("youtube.com") || link.includes("youtu.be")) && !finalDemo) finalDemo = link;
-      else if (!finalDeployment && !finalGithub && !finalDevpost) finalDeployment = link;
+    if (analysisMode === "idea") {
+      if (!ideaDescription.trim()) {
+        setError("Please describe what you are thinking of building.");
+        setAnalyzing(false);
+        return;
+      }
+      payload = {
+        analysis_mode: "idea",
+        prize_targeting_mode: prizeTargetingMode,
+        event_id: targetHackathon,
+        prize_event_id: prizeEvent,
+        award_id: prizeTargetingMode === "specific" ? targetAward : "best_overall",
+        idea: {
+          description: ideaDescription.trim(),
+          technologies_of_interest: technologiesOfInterest
+            ? technologiesOfInterest
+                .split(",")
+                .map((t) => t.trim())
+                .filter(Boolean)
+            : [],
+        },
+      };
+    } else {
+      // Resolve URLs from primaryLink if set
+      let finalGithub = githubUrl.trim();
+      let finalDevpost = devpostUrl.trim();
+      let finalDemo = demoUrl.trim();
+      let finalDeployment = deploymentUrl.trim();
+
+      if (projectInputSubmode === "link" && primaryLink.trim()) {
+        const link = primaryLink.trim();
+        if (link.includes("github.com") && !finalGithub) finalGithub = link;
+        else if (link.includes("devpost.com") && !finalDevpost) finalDevpost = link;
+        else if ((link.includes("youtube.com") || link.includes("youtu.be") || link.includes("loom.com")) && !finalDemo) finalDemo = link;
+        else if (!finalDeployment && !finalGithub && !finalDevpost) finalDeployment = link;
+      }
+
+      payload = {
+        analysis_mode: "project",
+        event_id: targetHackathon,
+        prize_event_id: prizeEvent,
+        award_id: targetAward,
+        input_mode: projectInputSubmode,
+        github_url: finalGithub || undefined,
+        devpost_url: finalDevpost || undefined,
+        demo_url: finalDemo || undefined,
+        deployment_url: finalDeployment || undefined,
+        sponsor_requirements: sponsorRequirements.trim() || undefined,
+        project: {
+          name: name.trim(),
+          tagline: tagline.trim(),
+          problem: problem.trim(),
+          target_user: targetUser.trim(),
+          sponsor_requirements: sponsorRequirements.trim() || "",
+          what_it_does: whatItDoes.trim(),
+          how_it_works: howItWorks.trim(),
+          tech_tags: techTags
+            ? techTags
+                .split(",")
+                .map((t) => t.trim())
+                .filter(Boolean)
+            : [],
+        },
+      };
     }
 
-    const payload = {
-      event_id: targetHackathon,
-      award_id: targetAward,
-      input_mode: inputMode,
-      github_url: finalGithub || undefined,
-      devpost_url: finalDevpost || undefined,
-      demo_url: finalDemo || undefined,
-      deployment_url: finalDeployment || undefined,
-      sponsor_requirements: sponsorRequirements.trim() || undefined,
-      project: {
-        name: name.trim() || (finalDevpost ? finalDevpost.split("/").pop() || "Candidate Project" : "Candidate Project"),
-        tagline: tagline.trim(),
-        problem: problem.trim(),
-        target_user: targetUser.trim(),
-        sponsor_requirements: sponsorRequirements.trim() || "",
-        what_it_does: whatItDoes.trim(),
-        how_it_works: howItWorks.trim(),
-        tech_tags: techTags
-          ? techTags
-              .split(",")
-              .map((t) => t.trim())
-              .filter(Boolean)
-          : [],
-      },
+    // Analytics: structured metadata only. Never the idea text, descriptions, or URLs.
+    const analyticsCtx = {
+      mode: analysisMode,
+      event_id: safeEventId(targetHackathon),
+      prize_event: safePrizeEventId(prizeEvent),
+      input_type: inputTypeFor({
+        mode: analysisMode,
+        manualSubmode: projectInputSubmode === "manual",
+        github: Boolean(payload.github_url),
+        devpost: Boolean(payload.devpost_url),
+      }),
+      prize_targeting:
+        analysisMode === "idea" ? (prizeTargetingMode === "specific" ? "specific" : "automatic") : "none",
+      has_repo: Boolean(payload.github_url),
+      has_demo: Boolean(payload.demo_url || payload.deployment_url),
+    } as const;
+    const startedAt = performance.now();
+    let failureTracked = false;
+    const trackFailure = (stage: FailureStage, cls: StatusClass) => {
+      failureTracked = true;
+      trackAnalysisFailed({
+        mode: analyticsCtx.mode,
+        event_id: analyticsCtx.event_id,
+        input_type: analyticsCtx.input_type,
+        failure_stage: stage,
+        http_status_class: cls,
+      });
     };
+    trackAnalysisStarted(analyticsCtx);
 
     try {
       const res = await fetch("/api/analyze", {
@@ -302,15 +586,39 @@ export default function Home() {
       });
 
       if (!res.ok) {
+        trackFailure(failureStageFor(res.status, res.headers.get("x-failure-stage")), statusClass(res.status));
         const errData = await res.json().catch(() => ({}));
-        throw new Error(errData.detail || `Server returned error status ${res.status}`);
+        const detail = typeof errData.detail === "string" ? errData.detail : "";
+        if (detail) throw new Error(detail);
+        if (res.status === 429) throw new Error("Too many reviews in a short time. Wait a minute and try again.");
+        if (res.status >= 500) throw new Error("Something went wrong on our side. Try again in a moment.");
+        throw new Error("We couldn't review that. Check your input and try again.");
       }
 
       const data: AnalysisResult = await res.json();
+      if (!data || !data.recommendations) {
+        trackFailure("unknown", "5xx");
+        throw new Error("We couldn't finish that review. Try again in a moment.");
+      }
       setResult(data);
+      trackAnalysisCompleted({
+        ...analyticsCtx,
+        duration_bucket: durationBucket(performance.now() - startedAt),
+        jev_used: data.telemetry?.jev_used ?? false,
+        gemini_used: data.telemetry?.gemini_used ?? false,
+        fallback_used: data.telemetry?.fallback_used ?? false,
+        result_quality: data.telemetry?.result_quality ?? "partial",
+      });
     } catch (err: unknown) {
-      const errorMsg = err instanceof Error ? err.message : "Failed to analyze project.";
-      setError(errorMsg);
+      const isNetwork = err instanceof TypeError;
+      if (!failureTracked) trackFailure("unknown", isNetwork ? "network" : "5xx");
+      setError(
+        isNetwork
+          ? "We couldn't reach the review service. Check your connection and try again."
+          : err instanceof Error
+          ? err.message
+          : "Something went wrong. Try again."
+      );
     } finally {
       setAnalyzing(false);
     }
@@ -320,6 +628,44 @@ export default function Home() {
     setResult(null);
     setError(null);
   };
+
+  // Analytics: record that the prize-fit section was actually seen (once per result).
+  const prizeSectionRef = useRef<HTMLElement | null>(null);
+  useEffect(() => {
+    if (!result || result.analysis_mode !== "idea" || !result.prize_fits) return;
+    const el = prizeSectionRef.current;
+    if (!el) return;
+    let fired = false;
+    const fire = () => {
+      if (fired) return;
+      fired = true;
+      const shown = (result.prize_fits?.top_fits ?? []).filter((f) =>
+        ["very_strong", "strong", "moderate"].includes(f.fit_level)
+      ).length;
+      trackPrizeFitViewed({
+        event_id: safeEventId(targetHackathon),
+        prize_event: safePrizeEventId(prizeEvent),
+        fit_count: Math.min(shown, 3),
+        automatic_targeting: result.prize_fits?.targeting_mode === "auto",
+      });
+    };
+    if (typeof IntersectionObserver === "undefined") {
+      fire();
+      return;
+    }
+    const io = new IntersectionObserver(
+      (entries) => {
+        if (entries.some((e) => e.isIntersecting)) {
+          fire();
+          io.disconnect();
+        }
+      },
+      { threshold: 0.3 }
+    );
+    io.observe(el);
+    return () => io.disconnect();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [result]);
 
   return (
     <div className="min-h-screen bg-canvas text-ink flex flex-col justify-between selection:bg-[#EAE7DF] selection:text-ink">
@@ -343,7 +689,7 @@ export default function Home() {
               Methodology
             </button>
             <a
-              href="https://github.com/Aaryan1524/ShellhacksHackathonAnalysis"
+              href="https://github.com/Aaryan1524/HackBench"
               target="_blank"
               rel="noreferrer"
               className="text-ink-secondary hover:text-ink transition-colors"
@@ -359,45 +705,61 @@ export default function Home() {
         {/* State A: Input Flow (Hero + Form) */}
         {!result && !analyzing && (
           <div>
-            {/* Hero */}
+            {/* Hero Section */}
             <section className="mb-14 md:mb-20 max-w-3xl">
               <div className="h-[2px] w-12 bg-gradient-to-r from-amber-600 via-rose-500 to-sky-600 mb-8" />
               <h1 className="font-serif text-5xl sm:text-7xl font-normal tracking-[-0.025em] leading-[1.06] text-ink text-balance">
-                See how your hackathon project compares.
+                {analysisMode === "idea" ? (
+                  <>
+                    Know what to build
+                    <br />
+                    before the hackathon starts.
+                  </>
+                ) : (
+                  <>
+                    See how your project
+                    <br />
+                    looks to judges.
+                  </>
+                )}
               </h1>
               <p className="mt-6 text-lg sm:text-xl text-ink-secondary font-normal leading-relaxed max-w-2xl text-pretty">
-                Add your project and compare it with historical winners, strong non-winners, and documented judging
-                criteria.
+                See what is strong, what is missing, and what to do next, based on past ShellHacks projects and published prize criteria.
               </p>
             </section>
 
             {/* Input Container */}
             <section className="max-w-2xl">
-              {/* Mode Switcher */}
-              <div className="flex items-center gap-3 mb-8 text-sm">
-                <button
-                  type="button"
-                  onClick={() => setInputMode("link")}
-                  className={`pb-1.5 transition-all border-b-2 ${
-                    inputMode === "link"
-                      ? "border-ink font-medium text-ink"
-                      : "border-transparent text-ink-secondary hover:text-ink"
-                  }`}
-                >
-                  Analyze from links
-                </button>
-                <span className="text-edge">/</span>
-                <button
-                  type="button"
-                  onClick={() => setInputMode("manual")}
-                  className={`pb-1.5 transition-all border-b-2 ${
-                    inputMode === "manual"
-                      ? "border-ink font-medium text-ink"
-                      : "border-transparent text-ink-secondary hover:text-ink"
-                  }`}
-                >
-                  Enter manually
-                </button>
+              {/* Primary Mode Switcher */}
+              <div role="tablist" aria-label="What do you want reviewed?" className="grid grid-cols-1 sm:grid-cols-2 gap-3 mb-8">
+                {(
+                  [
+                    { id: "idea", title: "Review an idea", hint: "For before you start building." },
+                    { id: "project", title: "Review a project", hint: "For when you already have something working." },
+                  ] as const
+                ).map((m) => (
+                  <button
+                    key={m.id}
+                    type="button"
+                    role="tab"
+                    aria-selected={analysisMode === m.id}
+                    onClick={() => {
+                      if (m.id !== analysisMode) trackModeSelected({ mode: m.id });
+                      setAnalysisMode(m.id);
+                      setError(null);
+                    }}
+                    className={`text-left px-4 py-3.5 rounded border transition-colors cursor-pointer ${
+                      analysisMode === m.id
+                        ? "border-ink bg-white shadow-xs"
+                        : "border-edge bg-transparent hover:border-ink"
+                    }`}
+                  >
+                    <span className={`block text-sm ${analysisMode === m.id ? "font-semibold text-ink" : "font-medium text-ink-secondary"}`}>
+                      {m.title}
+                    </span>
+                    <span className="block text-xs text-ink-secondary mt-0.5">{m.hint}</span>
+                  </button>
+                ))}
               </div>
 
               {/* Error Notice */}
@@ -409,42 +771,292 @@ export default function Home() {
 
               {/* Form */}
               <form onSubmit={handleAnalyze} className="space-y-8">
-                {inputMode === "link" ? (
-                  /* --- Mode 1: Links --- */
+                {analysisMode === "idea" ? (
+                  /* ======================================================== */
+                  /* FLOW 1: IDEA REVIEW MODE (PRIMARY)                      */
+                  /* ======================================================== */
                   <div className="space-y-6">
                     <div>
-                      <label htmlFor="primaryLink" className="block text-xs font-semibold uppercase tracking-wider text-ink-secondary mb-2">
-                        Project link
+                      <label htmlFor="ideaDescription" className="block text-xs font-semibold uppercase tracking-wider text-ink-secondary mb-2">
+                        Tell us what you&apos;re thinking of building <span className="text-rose-600">*</span>
                       </label>
-                      <input
-                        id="primaryLink"
-                        type="url"
-                        value={primaryLink}
-                        onChange={(e) => handlePrimaryLinkChange(e.target.value)}
-                        placeholder="GitHub or Devpost URL"
+                      <textarea
+                        id="ideaDescription"
+                        rows={5}
+                        value={ideaDescription}
+                        onChange={(e) => setIdeaDescription(e.target.value)}
                         required
-                        className="w-full px-4 py-3.5 bg-white border border-edge rounded text-base text-ink placeholder:text-ink-muted focus:outline-none focus:border-ink transition-colors"
+                        placeholder="e.g. An app that turns a photo of your fridge into a dinner recipe, and lists what you are missing."
+                        className="w-full px-4 py-3.5 bg-white border border-edge rounded text-base text-ink placeholder:text-ink-muted focus:outline-none focus:border-ink transition-colors resize-y leading-relaxed"
                       />
                       <p className="mt-2 text-xs text-ink-secondary">
-                        We&apos;ll pull the project information we can find.
+                        Say who it is for and what happens from start to finish. A few sentences is enough. No GitHub or demo needed.
                       </p>
                     </div>
 
-                    {/* Secondary Sources (Expandable) */}
                     <div>
-                      {!showAdditionalSources ? (
-                        <button
-                          type="button"
-                          onClick={() => setShowAdditionalSources(true)}
-                          className="text-xs text-ink-secondary hover:text-ink underline underline-offset-4"
-                        >
-                          + Add another source (GitHub, Devpost, Demo)
-                        </button>
-                      ) : (
-                        <div className="space-y-4 pt-2 border-t border-edge">
+                      <label htmlFor="technologiesOfInterest" className="block text-xs font-semibold uppercase tracking-wider text-ink-secondary mb-2">
+                        Anything you already want to use? (optional)
+                      </label>
+                      <input
+                        id="technologiesOfInterest"
+                        type="text"
+                        value={technologiesOfInterest}
+                        onChange={(e) => setTechnologiesOfInterest(e.target.value)}
+                        placeholder="“ElevenLabs, Google Cloud, Twilio…”"
+                        className="w-full px-4 py-3 bg-white border border-edge rounded text-sm text-ink placeholder:text-ink-muted focus:outline-none focus:border-ink"
+                      />
+                      <p className="mt-1.5 text-xs text-ink-secondary">
+                        Optional. Helps us match your idea to sponsor challenges.
+                      </p>
+                    </div>
+                  </div>
+                ) : (
+                  /* ======================================================== */
+                  /* FLOW 2: PROJECT REVIEW MODE (SECONDARY / PRESERVED)      */
+                  /* ======================================================== */
+                  <div className="space-y-6">
+                    {/* Submode Switcher: Links vs Manual */}
+                    <div className="flex items-center gap-2 mb-2 text-xs text-ink-secondary">
+                      <span>Input format:</span>
+                      <button
+                        type="button"
+                        onClick={() => setProjectInputSubmode("link")}
+                        className={`px-2.5 py-1 rounded border transition-colors cursor-pointer ${
+                          projectInputSubmode === "link"
+                            ? "border-ink text-ink font-medium bg-canvas"
+                            : "border-edge hover:border-ink hover:text-ink"
+                        }`}
+                      >
+                        Public links
+                      </button>
+                      <button
+                        type="button"
+                        onClick={() => setProjectInputSubmode("manual")}
+                        className={`px-2.5 py-1 rounded border transition-colors cursor-pointer ${
+                          projectInputSubmode === "manual"
+                            ? "border-ink text-ink font-medium bg-canvas"
+                            : "border-edge hover:border-ink hover:text-ink"
+                        }`}
+                      >
+                        Manual details
+                      </button>
+                    </div>
+
+                    {projectInputSubmode === "link" ? (
+                      <div className="space-y-6">
+                        <div>
+                          <label htmlFor="primaryLink" className="block text-xs font-semibold uppercase tracking-wider text-ink-secondary mb-2">
+                            Project link
+                          </label>
+                          <input
+                            id="primaryLink"
+                            type="url"
+                            value={primaryLink}
+                            onChange={(e) => handlePrimaryLinkChange(e.target.value)}
+                            placeholder="GitHub or Devpost URL"
+                            required
+                            className="w-full px-4 py-3.5 bg-white border border-edge rounded text-base text-ink placeholder:text-ink-muted focus:outline-none focus:border-ink transition-colors"
+                          />
+                          <p className="mt-2 text-xs text-ink-secondary">
+                            We&apos;ll pull the repository code and public submission information we can find.
+                          </p>
+                        </div>
+
+                        <div>
+                          <label htmlFor="quickDescription" className="block text-xs font-semibold uppercase tracking-wider text-ink-secondary mb-2">
+                            What does it do? (optional)
+                          </label>
+                          <input
+                            id="quickDescription"
+                            type="text"
+                            value={whatItDoes}
+                            onChange={(e) => setWhatItDoes(e.target.value)}
+                            placeholder="One sentence. Helps if your repo has no README."
+                            className="w-full px-3.5 py-2.5 bg-white border border-edge rounded text-sm text-ink placeholder:text-ink-muted focus:outline-none focus:border-ink"
+                          />
+                        </div>
+
+                        {/* Secondary Sources (Expandable) */}
+                        <div>
+                          {!showAdditionalSources ? (
+                            <button
+                              type="button"
+                              onClick={() => setShowAdditionalSources(true)}
+                              className="text-xs text-ink-secondary hover:text-ink underline underline-offset-4 cursor-pointer"
+                            >
+                              + Add another source (GitHub, Devpost, Demo, Deployment)
+                            </button>
+                          ) : (
+                            <div className="space-y-4 pt-2 border-t border-edge">
+                              <div>
+                                <label className="block text-xs font-semibold uppercase tracking-wider text-ink-secondary mb-1">
+                                  GitHub repository
+                                </label>
+                                <input
+                                  type="url"
+                                  value={githubUrl}
+                                  onChange={(e) => setGithubUrl(e.target.value)}
+                                  placeholder="https://github.com/..."
+                                  className="w-full px-3.5 py-2.5 bg-white border border-edge rounded text-sm text-ink focus:outline-none focus:border-ink"
+                                />
+                              </div>
+                              <div>
+                                <label className="block text-xs font-semibold uppercase tracking-wider text-ink-secondary mb-1">
+                                  Devpost URL
+                                </label>
+                                <input
+                                  type="url"
+                                  value={devpostUrl}
+                                  onChange={(e) => setDevpostUrl(e.target.value)}
+                                  placeholder="https://devpost.com/software/..."
+                                  className="w-full px-3.5 py-2.5 bg-white border border-edge rounded text-sm text-ink focus:outline-none focus:border-ink"
+                                />
+                              </div>
+                              <div>
+                                <label className="block text-xs font-semibold uppercase tracking-wider text-ink-secondary mb-1">
+                                  Live demo or video
+                                </label>
+                                <input
+                                  type="url"
+                                  value={demoUrl}
+                                  onChange={(e) => setDemoUrl(e.target.value)}
+                                  placeholder="https://youtube.com/... or https://..."
+                                  className="w-full px-3.5 py-2.5 bg-white border border-edge rounded text-sm text-ink focus:outline-none focus:border-ink"
+                                />
+                              </div>
+                              <div>
+                                <label className="block text-xs font-semibold uppercase tracking-wider text-ink-secondary mb-1">
+                                  Live deployment URL
+                                </label>
+                                <input
+                                  type="url"
+                                  value={deploymentUrl}
+                                  onChange={(e) => setDeploymentUrl(e.target.value)}
+                                  placeholder="https://my-project.vercel.app"
+                                  className="w-full px-3.5 py-2.5 bg-white border border-edge rounded text-sm text-ink focus:outline-none focus:border-ink"
+                                />
+                              </div>
+                            </div>
+                          )}
+                        </div>
+
+                        <div>
+                          <label htmlFor="sponsorReqLink" className="block text-xs font-semibold uppercase tracking-wider text-ink-secondary mb-1">
+                            Sponsor or Track Requirements (optional)
+                          </label>
+                          <input
+                            id="sponsorReqLink"
+                            type="text"
+                            value={sponsorRequirements}
+                            onChange={(e) => setSponsorRequirements(e.target.value)}
+                            placeholder="e.g. Must integrate sponsor XYZ API or address specific track prompt"
+                            className="w-full px-3.5 py-2.5 bg-white border border-edge rounded text-sm text-ink placeholder:text-ink-muted focus:outline-none focus:border-ink"
+                          />
+                        </div>
+                      </div>
+                    ) : (
+                      <div className="space-y-6">
+                        <div>
+                          <label className="block text-xs font-semibold uppercase tracking-wider text-ink-secondary mb-2">
+                            Project name <span className="text-rose-600">*</span>
+                          </label>
+                          <input
+                            type="text"
+                            value={name}
+                            onChange={(e) => setName(e.target.value)}
+                            placeholder="e.g. TrailBuddy"
+                            required
+                            className="w-full px-4 py-3 bg-white border border-edge rounded text-base text-ink focus:outline-none focus:border-ink"
+                          />
+                        </div>
+
+                        <div>
+                          <label className="block text-xs font-semibold uppercase tracking-wider text-ink-secondary mb-2">
+                            One-line pitch
+                          </label>
+                          <input
+                            type="text"
+                            value={tagline}
+                            onChange={(e) => setTagline(e.target.value)}
+                            placeholder="What does it do in one crisp sentence?"
+                            className="w-full px-4 py-3 bg-white border border-edge rounded text-base text-ink focus:outline-none focus:border-ink"
+                          />
+                        </div>
+
+                        <div>
+                          <label className="block text-xs font-semibold uppercase tracking-wider text-ink-secondary mb-2">
+                            What problem are you solving? <span className="text-rose-600">*</span>
+                          </label>
+                          <textarea
+                            rows={3}
+                            value={problem}
+                            onChange={(e) => setProblem(e.target.value)}
+                            placeholder="Describe the specific pain point..."
+                            required
+                            className="w-full px-4 py-3 bg-white border border-edge rounded text-base text-ink focus:outline-none focus:border-ink resize-y"
+                          />
+                        </div>
+
+                        <div>
+                          <label className="block text-xs font-semibold uppercase tracking-wider text-ink-secondary mb-2">
+                            Who is it for? <span className="text-rose-600">*</span>
+                          </label>
+                          <input
+                            type="text"
+                            value={targetUser}
+                            onChange={(e) => setTargetUser(e.target.value)}
+                            placeholder="e.g. First-year college students"
+                            required
+                            className="w-full px-4 py-3 bg-white border border-edge rounded text-base text-ink focus:outline-none focus:border-ink"
+                          />
+                        </div>
+
+                        <div>
+                          <label className="block text-xs font-semibold uppercase tracking-wider text-ink-secondary mb-2">
+                            Sponsor or track requirements (optional)
+                          </label>
+                          <textarea
+                            rows={3}
+                            value={sponsorRequirements}
+                            onChange={(e) => setSponsorRequirements(e.target.value)}
+                            placeholder="Paste the sponsor challenge, required API/SDK, or prize criteria..."
+                            className="w-full px-4 py-3 bg-white border border-edge rounded text-base text-ink focus:outline-none focus:border-ink resize-y"
+                          />
+                        </div>
+
+                        <div>
+                          <label className="block text-xs font-semibold uppercase tracking-wider text-ink-secondary mb-2">
+                            What does it do? <span className="text-rose-600">*</span>
+                          </label>
+                          <textarea
+                            rows={3}
+                            value={whatItDoes}
+                            onChange={(e) => setWhatItDoes(e.target.value)}
+                            placeholder="What happens when a user touches your product?"
+                            required
+                            className="w-full px-4 py-3 bg-white border border-edge rounded text-base text-ink focus:outline-none focus:border-ink resize-y"
+                          />
+                        </div>
+
+                        <div>
+                          <label className="block text-xs font-semibold uppercase tracking-wider text-ink-secondary mb-2">
+                            How does the core flow work? <span className="text-rose-600">*</span>
+                          </label>
+                          <textarea
+                            rows={3}
+                            value={howItWorks}
+                            onChange={(e) => setHowItWorks(e.target.value)}
+                            placeholder="Key technical components and user steps..."
+                            required
+                            className="w-full px-4 py-3 bg-white border border-edge rounded text-base text-ink focus:outline-none focus:border-ink resize-y"
+                          />
+                        </div>
+
+                        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                           <div>
                             <label className="block text-xs font-semibold uppercase tracking-wider text-ink-secondary mb-1">
-                              GitHub repository
+                              GitHub repository (optional)
                             </label>
                             <input
                               type="url"
@@ -456,242 +1068,203 @@ export default function Home() {
                           </div>
                           <div>
                             <label className="block text-xs font-semibold uppercase tracking-wider text-ink-secondary mb-1">
-                              Devpost URL
-                            </label>
-                            <input
-                              type="url"
-                              value={devpostUrl}
-                              onChange={(e) => setDevpostUrl(e.target.value)}
-                              placeholder="https://devpost.com/software/..."
-                              className="w-full px-3.5 py-2.5 bg-white border border-edge rounded text-sm text-ink focus:outline-none focus:border-ink"
-                            />
-                          </div>
-                          <div>
-                            <label className="block text-xs font-semibold uppercase tracking-wider text-ink-secondary mb-1">
-                              Live demo or video
+                              Demo link (optional)
                             </label>
                             <input
                               type="url"
                               value={demoUrl}
                               onChange={(e) => setDemoUrl(e.target.value)}
-                              placeholder="https://youtube.com/... or https://..."
+                              placeholder="https://..."
                               className="w-full px-3.5 py-2.5 bg-white border border-edge rounded text-sm text-ink focus:outline-none focus:border-ink"
                             />
                           </div>
                         </div>
-                      )}
-                    </div>
-
-                    <div>
-                      <label htmlFor="sponsorReqLink" className="block text-xs font-semibold uppercase tracking-wider text-ink-secondary mb-1">
-                        Sponsor or Track Requirements (optional)
-                      </label>
-                      <input
-                        id="sponsorReqLink"
-                        type="text"
-                        value={sponsorRequirements}
-                        onChange={(e) => setSponsorRequirements(e.target.value)}
-                        placeholder="e.g. Must integrate sponsor XYZ API or address specific track prompt"
-                        className="w-full px-3.5 py-2.5 bg-white border border-edge rounded text-sm text-ink placeholder:text-ink-muted focus:outline-none focus:border-ink"
-                      />
-                      <p className="mt-1 text-xs text-ink-secondary">
-                        If targeting a specific sponsor challenge, describe what they require.
-                      </p>
-                    </div>
+                      </div>
+                    )}
                   </div>
-                ) : (
-                  /* --- Mode 2: Manual Fields --- */
-                  <div className="space-y-6">
-                    <div>
-                      <label className="block text-xs font-semibold uppercase tracking-wider text-ink-secondary mb-2">
-                        Project name <span className="text-rose-600">*</span>
-                      </label>
-                      <input
-                        type="text"
-                        value={name}
-                        onChange={(e) => setName(e.target.value)}
-                        placeholder="e.g. ConciergePulse"
-                        required
-                        className="w-full px-4 py-3 bg-white border border-edge rounded text-base text-ink focus:outline-none focus:border-ink"
-                      />
-                    </div>
+                )}
 
-                    <div>
-                      <label className="block text-xs font-semibold uppercase tracking-wider text-ink-secondary mb-2">
-                        One-line pitch
-                      </label>
-                      <input
-                        type="text"
-                        value={tagline}
-                        onChange={(e) => setTagline(e.target.value)}
-                        placeholder="What does it do in one crisp sentence?"
-                        className="w-full px-4 py-3 bg-white border border-edge rounded text-base text-ink focus:outline-none focus:border-ink"
-                      />
-                    </div>
-
-                    <div>
-                      <label className="block text-xs font-semibold uppercase tracking-wider text-ink-secondary mb-2">
-                        What problem are you solving? <span className="text-rose-600">*</span>
-                      </label>
-                      <textarea
-                        rows={3}
-                        value={problem}
-                        onChange={(e) => setProblem(e.target.value)}
-                        placeholder="Describe the specific pain point..."
-                        required
-                        className="w-full px-4 py-3 bg-white border border-edge rounded text-base text-ink focus:outline-none focus:border-ink resize-y"
-                      />
-                    </div>
-
-                    <div>
-                      <label className="block text-xs font-semibold uppercase tracking-wider text-ink-secondary mb-2">
-                        Who is it for? <span className="text-rose-600">*</span>
-                      </label>
-                      <input
-                        type="text"
-                        value={targetUser}
-                        onChange={(e) => setTargetUser(e.target.value)}
-                        placeholder="e.g. Boutique hotel general managers"
-                        required
-                        className="w-full px-4 py-3 bg-white border border-edge rounded text-base text-ink focus:outline-none focus:border-ink"
-                      />
-                    </div>
-
-                    {/* Mandatory Sponsor Requirements */}
-                    <div>
-                      <label className="block text-xs font-semibold uppercase tracking-wider text-ink-secondary mb-2">
-                        Sponsor or Track Requirements <span className="text-rose-600">*</span>
-                      </label>
-                      <textarea
-                        rows={3}
-                        value={sponsorRequirements}
-                        onChange={(e) => setSponsorRequirements(e.target.value)}
-                        placeholder="Paste the sponsor challenge, required API/SDK, or prize criteria (e.g. Must integrate Twilio voice, or best use of Hedera)..."
-                        required
-                        className="w-full px-4 py-3 bg-white border border-edge rounded text-base text-ink focus:outline-none focus:border-ink resize-y"
-                      />
-                      <p className="mt-1.5 text-xs text-ink-secondary">
-                        Mandatory. Tells us what the sponsor specifically expects so we can evaluate actual requirement fit without guessing.
-                      </p>
-                    </div>
-
-                    <div>
-                      <label className="block text-xs font-semibold uppercase tracking-wider text-ink-secondary mb-2">
-                        What does it do? <span className="text-rose-600">*</span>
-                      </label>
-                      <textarea
-                        rows={3}
-                        value={whatItDoes}
-                        onChange={(e) => setWhatItDoes(e.target.value)}
-                        placeholder="What happens when a user touches your product?"
-                        required
-                        className="w-full px-4 py-3 bg-white border border-edge rounded text-base text-ink focus:outline-none focus:border-ink resize-y"
-                      />
-                    </div>
-
-                    <div>
-                      <label className="block text-xs font-semibold uppercase tracking-wider text-ink-secondary mb-2">
-                        How does the core flow work? <span className="text-rose-600">*</span>
-                      </label>
-                      <textarea
-                        rows={3}
-                        value={howItWorks}
-                        onChange={(e) => setHowItWorks(e.target.value)}
-                        placeholder="Key technical components and user steps..."
-                        required
-                        className="w-full px-4 py-3 bg-white border border-edge rounded text-base text-ink focus:outline-none focus:border-ink resize-y"
-                      />
-                    </div>
-
+                {/* Baseline & Prize Targeting Selectors */}
+                {analysisMode === "idea" ? (
+                  <div className="pt-6 border-t border-edge space-y-4">
                     <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                       <div>
-                        <label className="block text-xs font-semibold uppercase tracking-wider text-ink-secondary mb-1">
-                          GitHub (optional)
+                        <label className="block text-xs font-semibold uppercase tracking-wider text-ink-secondary mb-1.5">
+                          Prizes from
                         </label>
-                        <input
-                          type="url"
-                          value={githubUrl}
-                          onChange={(e) => setGithubUrl(e.target.value)}
-                          placeholder="https://github.com/..."
-                          className="w-full px-3.5 py-2.5 bg-white border border-edge rounded text-sm text-ink focus:outline-none focus:border-ink"
-                        />
+                        <select
+                          value={prizeEvent}
+                          onChange={(e) => setPrizeEvent(e.target.value)}
+                          className="w-full px-3.5 py-2.5 bg-white border border-edge rounded text-sm text-ink focus:outline-none focus:border-ink cursor-pointer"
+                        >
+                          {PRIZE_EVENT_OPTIONS.map((o) => (
+                            <option key={o.id} value={o.id}>
+                              {o.label}
+                            </option>
+                          ))}
+                        </select>
+                        <p className="mt-1.5 text-xs text-ink-secondary">
+                          Whose sponsor challenges and awards your idea is matched against.
+                        </p>
                       </div>
+
                       <div>
-                        <label className="block text-xs font-semibold uppercase tracking-wider text-ink-secondary mb-1">
-                          Demo link (optional)
+                        <label className="block text-xs font-semibold uppercase tracking-wider text-ink-secondary mb-1.5">
+                          Compare against
                         </label>
-                        <input
-                          type="url"
-                          value={demoUrl}
-                          onChange={(e) => setDemoUrl(e.target.value)}
-                          placeholder="https://..."
-                          className="w-full px-3.5 py-2.5 bg-white border border-edge rounded text-sm text-ink focus:outline-none focus:border-ink"
-                        />
+                        <select
+                          value={targetHackathon}
+                          onChange={(e) => setTargetHackathon(e.target.value)}
+                          className="w-full px-3.5 py-2.5 bg-white border border-edge rounded text-sm text-ink focus:outline-none focus:border-ink cursor-pointer"
+                        >
+                          {BASELINE_OPTIONS.map((o) => (
+                            <option key={o.id} value={o.id}>
+                              {o.label}
+                            </option>
+                          ))}
+                        </select>
+                        <p className="mt-1.5 text-xs text-ink-secondary">
+                          The past results your idea is compared with. ShellHacks 2026 has none yet.
+                        </p>
                       </div>
+
+                      <div>
+                        <label className="block text-xs font-semibold uppercase tracking-wider text-ink-secondary mb-1.5">
+                          Prize targeting
+                        </label>
+                        <div className="flex items-center gap-2">
+                          <button
+                            type="button"
+                            onClick={() => setPrizeTargetingMode("auto")}
+                            className={`flex-1 px-3 py-2 text-xs rounded border transition-colors cursor-pointer text-center ${
+                              prizeTargetingMode === "auto"
+                                ? "border-ink text-ink font-medium bg-canvas"
+                                : "border-edge text-ink-secondary hover:border-ink hover:text-ink bg-white"
+                            }`}
+                          >
+                            Find the best fits for me
+                          </button>
+                          <button
+                            type="button"
+                            onClick={() => setPrizeTargetingMode("specific")}
+                            className={`flex-1 px-3 py-2 text-xs rounded border transition-colors cursor-pointer text-center ${
+                              prizeTargetingMode === "specific"
+                                ? "border-ink text-ink font-medium bg-canvas"
+                                : "border-edge text-ink-secondary hover:border-ink hover:text-ink bg-white"
+                            }`}
+                          >
+                            Choose a specific prize
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+
+                    {prizeTargetingMode === "auto" ? (
+                      <p className="text-xs text-ink-muted">
+                        We&apos;ll compare your idea with every ShellHacks track and sponsor challenge that has published criteria.
+                      </p>
+                    ) : (
+                      <div className="pt-1">
+                        <label className="block text-xs font-semibold uppercase tracking-wider text-ink-secondary mb-1.5">
+                          Select target prize or track
+                        </label>
+                        <select
+                          value={targetAward}
+                          onChange={(e) => setTargetAward(e.target.value)}
+                          className="w-full sm:max-w-md px-3.5 py-2.5 bg-white border border-edge rounded text-sm text-ink focus:outline-none focus:border-ink cursor-pointer"
+                        >
+                          {availablePrizes.map((p) => (
+                            <option key={p.id} value={p.id}>
+                              {p.label}
+                            </option>
+                          ))}
+                        </select>
+                        <p className="mt-1.5 text-xs text-ink-secondary">
+                          Checked against this award&apos;s published criteria.
+                        </p>
+                      </div>
+                    )}
+                  </div>
+                ) : (
+                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-4 border-t border-edge">
+                    <div>
+                      <label className="block text-xs font-semibold uppercase tracking-wider text-ink-secondary mb-1.5">
+                        Prizes from
+                      </label>
+                      <select
+                        value={prizeEvent}
+                        onChange={(e) => setPrizeEvent(e.target.value)}
+                        className="w-full px-3.5 py-2.5 bg-white border border-edge rounded text-sm text-ink focus:outline-none focus:border-ink cursor-pointer"
+                      >
+                        {PRIZE_EVENT_OPTIONS.map((o) => (
+                          <option key={o.id} value={o.id}>
+                            {o.label}
+                          </option>
+                        ))}
+                      </select>
+                    </div>
+
+                    <div>
+                      <label className="block text-xs font-semibold uppercase tracking-wider text-ink-secondary mb-1.5">
+                        Compare against
+                      </label>
+                      <select
+                        value={targetHackathon}
+                        onChange={(e) => setTargetHackathon(e.target.value)}
+                        className="w-full px-3.5 py-2.5 bg-white border border-edge rounded text-sm text-ink focus:outline-none focus:border-ink cursor-pointer"
+                      >
+                        {BASELINE_OPTIONS.map((o) => (
+                          <option key={o.id} value={o.id}>
+                            {o.label}
+                          </option>
+                        ))}
+                      </select>
+                    </div>
+
+                    <div>
+                      <label className="block text-xs font-semibold uppercase tracking-wider text-ink-secondary mb-1.5">
+                        Target Track / Award
+                      </label>
+                      <select
+                        value={targetAward}
+                        onChange={(e) => setTargetAward(e.target.value)}
+                        className="w-full px-3.5 py-2.5 bg-white border border-edge rounded text-sm text-ink focus:outline-none focus:border-ink cursor-pointer"
+                      >
+                        {availablePrizes.map((track) => (
+                          <option key={track.id} value={track.id}>
+                            {track.label}
+                          </option>
+                        ))}
+                      </select>
                     </div>
                   </div>
                 )}
 
-                {/* Common Track / Benchmark Selectors */}
-                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-2 border-t border-edge">
-                  <div>
-                    <label className="block text-xs font-semibold uppercase tracking-wider text-ink-secondary mb-1.5">
-                      Hackathon baseline
-                    </label>
-                    <select
-                      value={targetHackathon}
-                      onChange={(e) => setTargetHackathon(e.target.value)}
-                      className="w-full px-3.5 py-2.5 bg-white border border-edge rounded text-sm text-ink focus:outline-none focus:border-ink cursor-pointer"
-                    >
-                      <option value="shellhacks2025:2025">ShellHacks 2025</option>
-                      <option value="shellhacks2024:2024">ShellHacks 2024</option>
-                      <option value="shellhacks-2023:2023">ShellHacks 2023</option>
-                      <option value="shellhacks2026:2026">ShellHacks 2026 (Preparation)</option>
-                    </select>
-                  </div>
-                  <div>
-                    <label className="block text-xs font-semibold uppercase tracking-wider text-ink-secondary mb-1.5">
-                      Target award
-                    </label>
-                    <select
-                      value={targetAward}
-                      onChange={(e) => setTargetAward(e.target.value)}
-                      className="w-full px-3.5 py-2.5 bg-white border border-edge rounded text-sm text-ink focus:outline-none focus:border-ink cursor-pointer"
-                    >
-                      {TRACK_OPTIONS.map((t) => (
-                        <option key={t.id} value={t.id}>
-                          {t.label}
-                        </option>
-                      ))}
-                    </select>
-                  </div>
-                </div>
-
-                {/* Action CTA Button */}
-                <div className="pt-4 flex flex-col sm:flex-row sm:items-center gap-4">
+                {/* Submit Action */}
+                <div className="pt-2 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
                   <button
                     type="submit"
-                    className="px-8 py-3.5 bg-ink text-white rounded text-base font-medium hover:bg-neutral-800 transition-colors inline-flex items-center justify-center gap-2 cursor-pointer shadow-sm"
+                    className="inline-flex items-center justify-center px-6 py-3.5 bg-ink text-white font-medium rounded text-sm hover:bg-neutral-800 transition-colors shadow-xs cursor-pointer"
                   >
-                    Analyze project →
+                    {analysisMode === "idea" ? "Review this idea →" : "Review this project →"}
                   </button>
 
                   <div className="text-xs text-ink-secondary">
                     Or try a sample:{" "}
                     <button
                       type="button"
-                      onClick={() => loadSample("hotelbot")}
-                      className="text-ink font-medium underline underline-offset-2 hover:text-neutral-700"
+                      onClick={() => loadSample("idea")}
+                      className="text-ink font-medium underline underline-offset-2 hover:text-neutral-700 cursor-pointer"
                     >
-                      ConciergePulse
+                      Random Idea
                     </button>{" "}
                     ·{" "}
                     <button
                       type="button"
                       onClick={() => loadSample("ecoquest")}
-                      className="text-ink font-medium underline underline-offset-2 hover:text-neutral-700"
+                      className="text-ink font-medium underline underline-offset-2 hover:text-neutral-700 cursor-pointer"
                     >
-                      EcoQuest
+                      EcoQuest (Project)
                     </button>
                   </div>
                 </div>
@@ -704,10 +1277,10 @@ export default function Home() {
         {analyzing && (
           <section className="py-24 sm:py-36 max-w-xl">
             <h2 className="font-serif text-4xl sm:text-5xl font-normal tracking-tight text-ink mb-8">
-              Looking at your project.
+              {analysisMode === "idea" ? "Reviewing your idea." : "Looking at your project."}
             </h2>
             <div className="space-y-4">
-              {PROGRESS_STEPS.map((step, idx) => (
+              {activeSteps.map((step, idx) => (
                 <div
                   key={step}
                   className={`flex items-center gap-3 text-sm transition-opacity duration-300 ${
@@ -741,10 +1314,13 @@ export default function Home() {
             <div>
               <button
                 type="button"
-                onClick={resetAnalysis}
+                onClick={() => {
+                  trackReviewAgainClicked({ mode: result.analysis_mode === "idea" ? "idea" : "project" });
+                  resetAnalysis();
+                }}
                 className="text-xs text-ink-secondary hover:text-ink font-medium flex items-center gap-1.5 cursor-pointer"
               >
-                ← Analyze another project
+                ← {result.analysis_mode === "idea" ? "Review another idea" : "Review another project"}
               </button>
             </div>
 
@@ -752,22 +1328,32 @@ export default function Home() {
             <section className="max-w-3xl border-b border-edge pb-12 sm:pb-16">
               <div className="flex items-center gap-2 mb-3">
                 <span className="text-xs uppercase font-semibold tracking-widest text-ink font-mono">
-                  {result.project.name}
+                  {result.analysis_mode === "idea" ? "Your Idea" : "Your Project"} · {result.project?.name || "Candidate"}
                 </span>
                 <span className="text-edge">·</span>
                 <span className="text-xs uppercase font-medium tracking-wider text-ink-secondary">
                   What stands out
                 </span>
               </div>
-              <h1 className="font-serif text-4xl sm:text-6xl font-normal tracking-tight leading-[1.1] text-ink text-balance">
+              <h1 className="font-serif text-4xl sm:text-6xl font-normal tracking-tight leading-[1.1] text-ink text-balance whitespace-pre-line">
                 {getEditorialHeadline(result)}
               </h1>
-              {result.recommendations.summary && (
+              {result.analysis_mode !== "idea" && result.recommendations?.summary && (
                 <p className="mt-6 text-lg sm:text-xl text-ink-secondary leading-relaxed text-pretty">
                   {result.recommendations.summary}
                 </p>
               )}
             </section>
+
+            {result.notes && result.notes.length > 0 && (
+              <section className="max-w-3xl -mt-8 space-y-2" aria-label="Things to know about this review">
+                {result.notes.map((n) => (
+                  <p key={n} className="text-sm text-ink-secondary border-l-2 border-edge pl-3 leading-relaxed">
+                    {n}
+                  </p>
+                ))}
+              </section>
+            )}
 
             {/* 2. Top Analysis: 3 Concise Blocks */}
             <section className="grid grid-cols-1 md:grid-cols-3 gap-8 sm:gap-12 border-b border-edge pb-16">
@@ -776,11 +1362,11 @@ export default function Home() {
                   Strongest
                 </span>
                 <h3 className="font-serif text-xl sm:text-2xl font-normal text-ink mb-2">
-                  {result.recommendations.strengths[0]?.title || "Problem & user clarity"}
+                  {result.recommendations?.strengths?.[0]?.title || "Not enough to judge yet"}
                 </h3>
                 <p className="text-sm text-ink-secondary leading-relaxed">
-                  {result.recommendations.strengths[0]?.evidence ||
-                    "Demonstrated software progress and structured problem framing."}
+                  {result.recommendations?.strengths?.[0]?.evidence ||
+                    "Add a project description or a link to a submission page to see what stands out."}
                 </p>
               </div>
 
@@ -789,122 +1375,235 @@ export default function Home() {
                   Biggest Gap
                 </span>
                 <h3 className="font-serif text-xl sm:text-2xl font-normal text-ink mb-2">
-                  {result.recommendations.gaps[0]?.title || "Observable proof"}
+                  {result.recommendations?.gaps?.[0]?.title || "No clear gap found"}
                 </h3>
                 <p className="text-sm text-ink-secondary leading-relaxed">
-                  {result.recommendations.gaps[0]?.evidence ||
-                    "The judge must infer key user workflows rather than seeing them immediately verified."}
+                  {result.recommendations?.gaps?.[0]?.evidence ||
+                    "Nothing in what was submitted points to a specific gap."}
                 </p>
               </div>
 
               <div>
                 <span className="text-xs uppercase font-semibold tracking-wider text-ink-secondary block mb-3 font-mono">
-                  Improve Next
+                  {result.analysis_mode === "idea" ? "Build First" : "Improve Next"}
                 </span>
-                <h3 className="font-serif text-xl sm:text-2xl font-normal text-ink mb-2">
-                  {result.recommendations.next_actions[0]?.action || "Clarify the first 30 seconds"}
-                </h3>
-                <p className="text-sm text-ink-secondary leading-relaxed">
-                  {result.recommendations.next_actions[0]?.reason ||
-                    "Show the complete user outcome before detailing the underlying technical architecture."}
-                </p>
+                {result.analysis_mode === "idea" && result.recommendations?.build_first ? (
+                  <ol className="space-y-2 text-sm text-ink leading-snug">
+                    {result.recommendations.build_first.split("→").map((step, i, all) => (
+                      <li key={i} className="flex items-start gap-2.5">
+                        <span className="font-mono text-xs text-ink-muted pt-0.5">
+                          {i < all.length - 1 ? `${i + 1}` : "✓"}
+                        </span>
+                        <span>{step.trim()}</span>
+                      </li>
+                    ))}
+                  </ol>
+                ) : (
+                  <>
+                    <h3 className="font-serif text-xl sm:text-2xl font-normal text-ink mb-2 whitespace-pre-line">
+                      {result.recommendations?.next_actions[0]?.action || "Clarify the core loop"}
+                    </h3>
+                    <p className="text-sm text-ink-secondary leading-relaxed">
+                      {result.recommendations?.next_actions[0]?.reason ||
+                        "Proves the complete user outcome before detailing the underlying technical architecture."}
+                    </p>
+                  </>
+                )}
               </div>
             </section>
 
-            {/* 3. Streamlined Comparison Table */}
-            <section className="max-w-3xl border-b border-edge pb-16">
-              <h2 className="font-serif text-2xl sm:text-3xl font-normal text-ink mb-2">
-                How you compare
-              </h2>
-              <p className="text-sm text-ink-secondary mb-8">
-                Your evaluation across the 9 canonical hackathon dimensions compared directly against historical ShellHacks winners.
-              </p>
-
-              <div className="border border-edge rounded bg-white overflow-hidden shadow-xs">
-                <div className="grid grid-cols-12 px-5 py-3 bg-canvas-subtle border-b border-edge text-xs font-semibold uppercase tracking-wider text-ink-secondary">
-                  <span className="col-span-5 sm:col-span-5">Dimension</span>
-                  <span className="col-span-3 sm:col-span-3">Your Assessment</span>
-                  <span className="col-span-4 sm:col-span-4">Historical Winners</span>
-                </div>
-                <div className="divide-y divide-edge">
-                  {Object.entries(result.judge_surface).map(([key, dim]) => {
-                    const comp = result.historical_comparison.dimensions?.[key];
-                    const winnerStat = comp?.historical_overall_winners?.split(" (")[0] || "Strong → Very strong";
-                    return (
-                      <div key={key} className="grid grid-cols-12 px-5 py-3.5 items-center text-sm">
-                        <span className="col-span-5 sm:col-span-5 font-medium text-ink capitalize">
-                          {dim.dimension.replace(/_/g, " ")}
-                        </span>
-                        <span className="col-span-3 sm:col-span-3">
-                          <span
-                            className={`inline-block px-2.5 py-0.5 rounded text-xs font-medium ${
-                              dim.label === "very_strong" || dim.label === "strong"
-                                ? "bg-emerald-50 text-emerald-800 border border-emerald-200"
-                                : dim.label === "moderate"
-                                ? "bg-neutral-100 text-neutral-800 border border-neutral-200"
-                                : "bg-amber-50 text-amber-900 border border-amber-200"
-                            }`}
-                          >
-                            {formatLabel(dim.label)}
-                          </span>
-                        </span>
-                        <span className="col-span-4 sm:col-span-4 text-xs text-ink-secondary font-mono">
-                          {winnerStat}
-                        </span>
-                      </div>
-                    );
-                  })}
-                </div>
-              </div>
-
-              <p className="mt-4 text-xs text-ink-muted">
-                {result.historical_comparison.sample_sizes.cohort_description ||
-                  `50 analyzed projects: ${result.historical_comparison.sample_sizes.historical_winners} award-winning projects and ${result.historical_comparison.sample_sizes.non_winners || 21} non-winners, including ${result.historical_comparison.sample_sizes.strong_non_winners} strong non-winners.`}
-              </p>
-            </section>
-
-            {/* 4. Criteria Alignment */}
-            <section className="max-w-2xl border-b border-edge pb-16">
-              <h2 className="font-serif text-2xl sm:text-3xl font-normal text-ink mb-4">
-                Alignment with {TRACK_OPTIONS.find((t) => t.id === targetAward)?.label || "Target Award"}
-              </h2>
-              <p className="text-sm sm:text-base text-ink-secondary leading-relaxed mb-6">
-                {result.criteria_alignment.criteria_summary}
-              </p>
-              <div className="p-4 bg-white border border-edge rounded text-sm flex items-center justify-between">
-                <span className="text-ink font-medium">Documented Track Fit</span>
-                <span className="text-ink-secondary font-medium capitalize">
-                  {result.criteria_alignment.alignment_level}
-                </span>
-              </div>
-              {result.criteria_alignment.sponsor_requirements && (
-                <div className="mt-4 p-4 bg-canvas-subtle border border-edge rounded text-xs space-y-1.5">
-                  <span className="font-semibold text-ink uppercase tracking-wider block">
-                    Targeted Sponsor Criteria:
-                  </span>
-                  <p className="text-ink-secondary leading-relaxed">
-                    {result.criteria_alignment.sponsor_requirements}
+            {/* 3. Where This Idea Fits (Criteria Alignment) */}
+            {result.prize_fits && (
+              <section ref={prizeSectionRef} className="max-w-3xl border-b border-edge pb-16 space-y-8">
+                <div>
+                  <div className="flex items-center gap-2 mb-2">
+                    <span className="text-xs uppercase font-semibold tracking-wider text-ink-secondary font-mono">
+                      Where this idea fits
+                    </span>
+                    <span className="text-edge">·</span>
+                    <span className="text-xs uppercase font-medium tracking-wider text-ink-muted">
+                      Documented tracks &amp; sponsors
+                    </span>
+                  </div>
+                  <h2 className="font-serif text-2xl sm:text-3xl font-normal text-ink">
+                    Closest documented fits
+                  </h2>
+                  <p className="mt-1 text-sm text-ink-secondary">
+                    {result.prize_fits.targeting_mode === "specific"
+                      ? "Alignment against your chosen award based on documented requirements."
+                      : "Documented hackathon tracks and sponsor categories aligned with your concept. Ranked by how closely they match the published criteria."}
                   </p>
                 </div>
-              )}
-            </section>
 
-            {/* 5. What To Fix Before Judging: The Speakeasy Dark Card */}
+                {/* If no strong fit exists */}
+                {(!result.prize_fits.top_fits ||
+                  result.prize_fits.top_fits.length === 0 ||
+                  !result.prize_fits.top_fits.some(
+                    (f) => f.fit_level === "very_strong" || f.fit_level === "strong"
+                  )) && (
+                  <div className="p-4 bg-canvas-subtle border border-edge rounded text-sm text-ink-secondary leading-relaxed">
+                    No clearly strong sponsor fit yet. Best Overall currently aligns better than the available sponsor tracks based on the documented criteria.
+                  </div>
+                )}
+
+                {/* Top Fits Cards (Up to 3) */}
+                {result.prize_fits.top_fits && result.prize_fits.top_fits.length > 0 && (
+                  <div className="space-y-6">
+                    {result.prize_fits.top_fits
+                      .filter((f) => ["very_strong", "strong", "moderate"].includes(f.fit_level))
+                      .slice(0, 3)
+                      .map((fit, idx) => {
+                      const isStrong = fit.fit_level === "very_strong" || fit.fit_level === "strong";
+                      const isModerate = fit.fit_level === "moderate";
+                      return (
+                        <div
+                          key={fit.prize_id || idx}
+                          className="border border-edge rounded-lg bg-white p-6 sm:p-7 shadow-xs space-y-5"
+                        >
+                          {/* Header: Rank + Title + Fit Badge */}
+                          <div className="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-3 border-b border-edge pb-4">
+                            <div className="flex items-start gap-3">
+                              <span className="font-mono text-xs font-semibold text-ink-muted pt-1">
+                                {String(idx + 1).padStart(2, "0")}
+                              </span>
+                              <div>
+                                <h3 className="font-serif text-xl sm:text-2xl font-normal text-ink">
+                                  {fit.award_title}
+                                </h3>
+                                {fit.sponsor_name && (
+                                  <span className="text-xs text-ink-secondary block mt-0.5">
+                                    Sponsor: <span className="font-medium text-ink">{fit.sponsor_name}</span>
+                                  </span>
+                                )}
+                              </div>
+                            </div>
+
+                            <div className="flex flex-wrap items-center gap-2 self-start sm:self-auto">
+                              {fit.sponsor_tech_role === "central" && (
+                                <span className="px-2.5 py-0.5 rounded text-xs font-medium bg-slate-100 text-slate-700 border border-slate-200">
+                                  Central dependency
+                                </span>
+                              )}
+                              {fit.sponsor_tech_role === "decorative" && (
+                                <span className="px-2.5 py-0.5 rounded text-xs font-medium bg-amber-50 text-amber-800 border border-amber-200">
+                                  Sponsor tech is a side feature
+                                </span>
+                              )}
+                              <span
+                                className={`px-2.5 py-0.5 rounded text-xs font-medium ${
+                                  isStrong
+                                    ? "bg-emerald-50 text-emerald-800 border border-emerald-200"
+                                    : isModerate
+                                    ? "bg-neutral-100 text-neutral-800 border border-neutral-200"
+                                    : "bg-amber-50 text-amber-900 border border-amber-200"
+                                }`}
+                              >
+                                {fit.fit_label}
+                              </span>
+                            </div>
+                          </div>
+
+                          {/* Why it fits / Why it may not fit */}
+                          <div className="grid grid-cols-1 md:grid-cols-2 gap-4 text-sm">
+                            <div className="p-3.5 bg-canvas-subtle rounded border border-edge">
+                              <span className="text-xs font-semibold uppercase tracking-wider text-emerald-800 block mb-1">
+                                Why it fits
+                              </span>
+                              <p className="text-ink leading-relaxed">
+                                {fit.why_it_fits}
+                              </p>
+                            </div>
+
+                            <div className="p-3.5 bg-canvas-subtle rounded border border-edge">
+                              <span className="text-xs font-semibold uppercase tracking-wider text-ink-secondary block mb-1">
+                                Main gap / Why it may not fit
+                              </span>
+                              <p className="text-ink-secondary leading-relaxed">
+                                {fit.why_it_may_not_fit}
+                              </p>
+                            </div>
+                          </div>
+
+                          {/* What must be demonstrated */}
+                          {fit.what_must_be_demonstrated && fit.what_must_be_demonstrated.length > 0 && (
+                            <div className="space-y-1.5">
+                              <span className="text-xs font-semibold uppercase tracking-wider text-ink-secondary block font-mono">
+                                Must visibly demonstrate
+                              </span>
+                              <ol className="list-decimal pl-5 text-sm text-ink-secondary space-y-1">
+                                {fit.what_must_be_demonstrated.map((item, dIdx) => (
+                                  <li key={dIdx}>{item}</li>
+                                ))}
+                              </ol>
+                            </div>
+                          )}
+
+                        </div>
+                      );
+                    })}
+                  </div>
+                )}
+              </section>
+            )}
+
+            {/* 4. Comparison Table (project mode; idea mode keeps it inside "Why this analysis?") */}
+            {result.analysis_mode !== "idea" && <ComparisonSection result={result} />}
+
+            {/* 5. Criteria Alignment (Project Mode) */}
+            {result.analysis_mode === "project" && (
+              <section className="max-w-2xl border-b border-edge pb-16">
+                <h2 className="font-serif text-2xl sm:text-3xl font-normal text-ink mb-4">
+                  Alignment with {result.criteria_alignment?.target_award || "your target award"}
+                </h2>
+                <p className="text-sm sm:text-base text-ink-secondary leading-relaxed mb-6">
+                  {result.criteria_alignment?.criteria_summary}
+                </p>
+                <div className="p-4 bg-white border border-edge rounded text-sm flex items-center justify-between">
+                  <span className="text-ink font-medium">Documented Track Fit</span>
+                  <span className="text-ink-secondary font-medium capitalize">
+                    {result.criteria_alignment?.alignment_level}
+                  </span>
+                </div>
+                {result.criteria_alignment?.sponsor_requirements && (
+                  <div className="mt-4 p-4 bg-canvas-subtle border border-edge rounded text-xs space-y-1.5">
+                    <span className="font-semibold text-ink uppercase tracking-wider block">
+                      Targeted Sponsor Criteria:
+                    </span>
+                    <p className="text-ink-secondary leading-relaxed">
+                      {result.criteria_alignment.sponsor_requirements}
+                    </p>
+                  </div>
+                )}
+              </section>
+            )}
+
+            {/* 5. What To Fix / Prioritize */}
             <section className="bg-night text-white rounded-xl p-8 sm:p-14 border border-night-edge">
+              {result.analysis_mode === "idea" && (
+                <span className="text-xs uppercase font-semibold tracking-widest text-neutral-400 font-mono block mb-4">
+                  Before the hackathon
+                </span>
+              )}
               <h2 className="font-serif text-3xl sm:text-5xl font-normal tracking-tight text-white mb-10 text-balance">
-                What to fix
-                <br />
-                before judging.
+                {result.analysis_mode === "idea" ? (
+                  <>Do these three things first.</>
+                ) : (
+                  <>
+                    What to fix
+                    <br />
+                    before judging.
+                  </>
+                )}
               </h2>
 
               <div className="space-y-8 max-w-2xl">
-                {result.recommendations.next_actions.slice(0, 3).map((action, idx) => (
+                {result.recommendations?.next_actions.slice(0, 3).map((action, idx) => (
                   <div key={action.action} className="flex items-start gap-5">
                     <span className="font-serif text-2xl text-neutral-500 font-light pt-0.5">
                       {String(idx + 1).padStart(2, "0")}
                     </span>
                     <div className="space-y-1.5">
-                      <h3 className="text-base sm:text-lg font-medium text-neutral-100">
+                      <h3 className="text-base sm:text-lg font-medium text-neutral-100 whitespace-pre-line">
                         {action.action}
                       </h3>
                       <p className="text-sm text-neutral-400 leading-relaxed">
@@ -916,183 +1615,233 @@ export default function Home() {
               </div>
             </section>
 
-            {/* 6. Advanced Technical Details & Evidence (Collapsed by Default) */}
+            {/* Idea mode: what to skip (only when the idea text points at something specific) */}
+            {result.analysis_mode === "idea" && (result.recommendations?.dont_build_yet?.length ?? 0) > 0 && (
+              <section className="max-w-3xl border-b border-edge pb-16">
+                <span className="text-xs uppercase font-semibold tracking-wider text-ink-secondary block mb-3 font-mono">
+                  Don&apos;t spend time on yet
+                </span>
+                <ul className="space-y-3">
+                  {result.recommendations.dont_build_yet!.map((item) => {
+                    const [label, ...rest] = item.split(" — ");
+                    return (
+                      <li key={item} className="text-sm sm:text-base text-ink leading-relaxed">
+                        <strong className="font-medium">{label}</strong>
+                        {rest.length > 0 && <span className="text-ink-secondary"> — {rest.join(" — ")}</span>}
+                      </li>
+                    );
+                  })}
+                </ul>
+              </section>
+            )}
+
+            {/* 6. Technical Details & Evidence Drawer */}
             <section className="max-w-3xl pt-4">
-              <details className="group border border-edge rounded bg-white p-5 cursor-pointer">
+              <details
+                className="group border border-edge rounded bg-white p-5 cursor-pointer"
+                onToggle={(e) => {
+                  if (e.currentTarget.open) trackEvidenceOpened({ mode: result.analysis_mode === "idea" ? "idea" : "project" });
+                }}
+              >
                 <summary className="text-xs uppercase font-semibold tracking-wider text-ink-secondary flex items-center justify-between focus:outline-none select-none">
-                  <span>View evidence & engineering telemetry</span>
+                  <span>
+                    {result.analysis_mode === "idea"
+                      ? "Why this analysis?"
+                      : "View the evidence behind this review"}
+                  </span>
                   <span className="text-ink-muted group-open:rotate-180 transition-transform">↓</span>
                 </summary>
 
                 <div className="mt-6 pt-4 border-t border-edge space-y-6 text-sm">
-                  <p className="text-xs text-ink-secondary">
-                    Deterministic metrics extracted directly from repository structures and deployment checks:
-                  </p>
+                  {result.analysis_mode === "idea" ? (
+                    <div className="space-y-4">
+                      <div className="space-y-3">
+                        <h3 className="text-xs uppercase font-semibold tracking-wider text-ink-secondary font-mono">
+                          Historical evidence
+                        </h3>
+                        {result.historical_comparison?.takeaway ? (
+                          <p className="text-sm text-ink leading-relaxed">{result.historical_comparison.takeaway}</p>
+                        ) : (
+                          <p className="text-sm text-ink-secondary leading-relaxed">
+                            The historical data did not support a specific takeaway for this idea.
+                          </p>
+                        )}
+                        {Object.values(result.judge_surface || {}).some(
+                          (d) => d.provider !== "offline_calibrated" && d.provider !== "deterministic_rule"
+                        ) && (
+                          <ComparisonSection result={result} embedded />
+                        )}
+                      </div>
 
-                  <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 text-xs">
-                    <div className="p-3 bg-canvas rounded border border-edge">
-                      <span className="text-ink-muted block mb-1">Code volume</span>
-                      <strong className="text-ink font-semibold">
-                        ~{result.engineering.approx_loc.toLocaleString()} LOC
-                      </strong>
-                    </div>
-                    <div className="p-3 bg-canvas rounded border border-edge">
-                      <span className="text-ink-muted block mb-1">Test files</span>
-                      <strong className="text-ink font-semibold">
-                        {result.engineering.test_files_count} test files
-                      </strong>
-                    </div>
-                    <div className="p-3 bg-canvas rounded border border-edge">
-                      <span className="text-ink-muted block mb-1">API endpoints</span>
-                      <strong className="text-ink font-semibold">
-                        {result.engineering.api_routes_count} routes
-                      </strong>
-                    </div>
-                    <div className="p-3 bg-canvas rounded border border-edge">
-                      <span className="text-ink-muted block mb-1">TODO/FIXME</span>
-                      <strong className="text-ink font-semibold">
-                        {result.engineering.todo_fixme_count} markers
-                      </strong>
-                    </div>
-                  </div>
+                      <div className="space-y-3 pt-4 border-t border-edge">
+                        <h3 className="text-xs uppercase font-semibold tracking-wider text-ink-secondary font-mono">
+                          Criteria sources
+                        </h3>
+                        <p className="text-sm text-ink-secondary leading-relaxed">
+                          Prize fits use only documented prize descriptions and required technologies. Where a prize
+                          has no published criteria, it is left out rather than guessed.
+                        </p>
+                        {result.criteria_alignment?.criteria_summary && (
+                          <p className="text-xs text-ink-secondary leading-relaxed">
+                            <strong className="text-ink font-medium">{result.criteria_alignment.target_award}:</strong>{" "}
+                            {result.criteria_alignment.criteria_summary}
+                          </p>
+                        )}
+                        {result.prize_fits?.top_fits
+                          ?.filter((f) => f.documented_requirements?.length > 0)
+                          .slice(0, 3)
+                          .map((f) => (
+                            <div key={f.prize_id} className="text-xs">
+                              <span className="text-ink font-medium">{f.award_title}</span>
+                              <div className="flex flex-wrap gap-1.5 mt-1">
+                                {f.documented_requirements.map((req) => (
+                                  <span key={req} className="px-2 py-0.5 bg-canvas border border-edge rounded text-ink-secondary">
+                                    {req}
+                                  </span>
+                                ))}
+                              </div>
+                            </div>
+                          ))}
+                      </div>
 
-                  {/* Deployment Verification Block */}
-                  <div className="p-4 bg-canvas rounded border border-edge space-y-2 text-xs">
-                    <div className="flex items-center justify-between">
-                      <span className="font-semibold text-ink uppercase tracking-wider">Deployment Verification</span>
-                      <span
-                        className={`px-2 py-0.5 rounded font-mono text-[11px] ${
-                          result.engineering.deployment_verification === "verified_project"
-                            ? "bg-emerald-100 text-emerald-800"
-                            : result.engineering.deployment_verification === "likely_project"
-                            ? "bg-sky-100 text-sky-800"
-                            : result.engineering.deployment_verification === "unrelated"
-                            ? "bg-rose-100 text-rose-800"
-                            : "bg-neutral-100 text-neutral-700"
-                        }`}
-                      >
-                        {result.engineering.deployment_verification || "none"}
-                      </span>
-                    </div>
-                    <div className="text-ink-secondary leading-relaxed">
-                      <strong>Reachable:</strong> {result.engineering.live_deployment_reachable ? "Yes (HTTP 200)" : "No"} ·{" "}
-                      <strong>Evidence:</strong> {result.engineering.deployment_evidence || "No deployment URL checked."}
-                    </div>
-                  </div>
-
-                  {result.engineering.primary_languages?.length > 0 && (
-                    <div className="text-xs text-ink-secondary">
-                      <span className="font-medium text-ink">Languages & frameworks:</span>{" "}
-                      {[
-                        ...result.engineering.primary_languages,
-                        ...result.engineering.frontend_frameworks,
-                        ...result.engineering.backend_frameworks,
-                      ].join(", ") || "Standard web stack"}
-                    </div>
-                  )}
-
-                  {/* Routing & Provider Audit */}
-                  <div className="border-t border-edge pt-3 space-y-2 text-xs">
-                    <span className="font-semibold text-ink uppercase tracking-wider block">
-                      Evaluation Routing Audit
-                    </span>
-                    <div className="grid grid-cols-2 sm:grid-cols-3 gap-2 font-mono text-[11px]">
-                      {Object.entries(result.judge_surface).map(([k, v]) => (
-                        <div key={k} className="p-2 bg-canvas-subtle rounded border border-edge/60">
-                          <span className="text-ink font-medium capitalize block">{k.replace(/_/g, " ")}</span>
-                          <span className="text-ink-muted">
-                            {v.provider} ({(v.confidence * 100).toFixed(0)}%)
-                            {v.fallback_used && ` [fallback: ${v.fallback_reason || "active"}]`}
-                          </span>
+                      {result.idea?.extracted && (
+                        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 text-xs pt-4 border-t border-edge">
+                          <div className="p-3.5 bg-canvas rounded border border-edge">
+                            <span className="text-ink-muted block mb-1">Proposed Product</span>
+                            <strong className="text-ink font-semibold">
+                              {result.idea.extracted.proposed_product || "Not specified"}
+                            </strong>
+                          </div>
+                          <div className="p-3.5 bg-canvas rounded border border-edge">
+                            <span className="text-ink-muted block mb-1">Target User</span>
+                            <strong className="text-ink font-semibold">
+                              {result.idea.extracted.target_user || "Not specified"}
+                            </strong>
+                          </div>
+                          <div className="p-3.5 bg-canvas rounded border border-edge sm:col-span-2">
+                            <span className="text-ink-muted block mb-1">Core Workflow Loop</span>
+                            <p className="text-ink font-medium leading-relaxed">
+                              {result.idea.extracted.core_workflow || "Workflow outlined in idea description."}
+                            </p>
+                          </div>
+                          {result.idea.extracted.intended_technologies && result.idea.extracted.intended_technologies.length > 0 && (
+                            <div className="p-3.5 bg-canvas rounded border border-edge sm:col-span-2">
+                              <span className="text-ink-muted block mb-1">Intended Technologies & Sponsors</span>
+                              <div className="flex flex-wrap gap-1.5 mt-1">
+                                {result.idea.extracted.intended_technologies.map((tech) => (
+                                  <span key={tech} className="px-2 py-0.5 bg-white border border-edge rounded text-xs text-ink">
+                                    {tech}
+                                  </span>
+                                ))}
+                              </div>
+                            </div>
+                          )}
                         </div>
-                      ))}
+                      )}
                     </div>
-                  </div>
+                  ) : (
+                    <>
+                      <p className="text-xs text-ink-secondary">
+                        What we found in the repository and deployment:
+                      </p>
 
-                  <div className="text-xs text-ink-muted border-t border-edge pt-3">
-                    {result.historical_comparison.sample_sizes.cohort_description ||
-                      `Calibrated on 50 analyzed projects: 29 award-winning projects and 21 non-winners, including 6 strong non-winners from ShellHacks.`}
-                  </div>
+                      <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 text-xs">
+                        <div className="p-3 bg-canvas rounded border border-edge">
+                          <span className="text-ink-muted block mb-1">Code volume</span>
+                          <strong className="text-ink font-semibold">
+                            ~{result.engineering?.approx_loc.toLocaleString()} LOC
+                          </strong>
+                        </div>
+                        <div className="p-3 bg-canvas rounded border border-edge">
+                          <span className="text-ink-muted block mb-1">Test files</span>
+                          <strong className="text-ink font-semibold">
+                            {result.engineering?.test_files_count} test files
+                          </strong>
+                        </div>
+                        <div className="p-3 bg-canvas rounded border border-edge">
+                          <span className="text-ink-muted block mb-1">API endpoints</span>
+                          <strong className="text-ink font-semibold">
+                            {result.engineering?.api_routes_count} routes
+                          </strong>
+                        </div>
+                        <div className="p-3 bg-canvas rounded border border-edge">
+                          <span className="text-ink-muted block mb-1">Deployment status</span>
+                          <strong className="text-ink font-semibold capitalize">
+                            {result.engineering?.deployment_verification || (result.engineering?.live_deployment_reachable ? "Reachable" : "None")}
+                          </strong>
+                        </div>
+                      </div>
+
+                      {result.engineering?.deployment_evidence && (
+                        <div className="p-3 bg-canvas rounded border border-edge text-xs space-y-1">
+                          <span className="text-ink-muted block font-semibold uppercase tracking-wider">
+                            Deployment Evidence:
+                          </span>
+                          <p className="text-ink-secondary font-mono leading-relaxed">
+                            {result.engineering.deployment_evidence}
+                          </p>
+                        </div>
+                      )}
+                    </>
+                  )}
                 </div>
               </details>
             </section>
-
-            {/* Reset Button */}
-            <div className="pt-8">
-              <button
-                type="button"
-                onClick={resetAnalysis}
-                className="px-6 py-3 bg-white border border-edge text-ink text-sm font-medium rounded hover:border-ink transition-colors cursor-pointer"
-              >
-                ← Analyze another project
-              </button>
-            </div>
           </article>
         )}
       </main>
 
-      {/* 3. Minimal Methodology Dialog */}
+      {/* 3. Methodology Drawer */}
       {showMethodology && (
-        <div className="fixed inset-0 bg-black/40 backdrop-blur-xs flex items-center justify-center p-4 z-50">
-          <div className="bg-canvas border border-edge max-w-xl w-full p-8 rounded-lg shadow-xl space-y-6">
-            <div className="flex items-baseline justify-between border-b border-edge pb-4">
-              <h2 className="font-serif text-2xl font-normal text-ink">Methodology</h2>
+        <div className="fixed inset-0 z-50 bg-ink/40 backdrop-blur-xs flex items-center justify-center p-6">
+          <div className="bg-canvas border border-edge rounded-xl max-w-2xl w-full p-8 sm:p-12 shadow-xl space-y-6">
+            <div className="flex items-center justify-between border-b border-edge pb-4">
+              <h2 className="font-serif text-2xl font-normal text-ink">Evaluation Methodology</h2>
               <button
                 onClick={() => setShowMethodology(false)}
-                className="text-xs text-ink-secondary hover:text-ink cursor-pointer"
+                className="text-ink-secondary hover:text-ink text-sm cursor-pointer"
               >
                 Close ✕
               </button>
             </div>
-            <div className="text-sm text-ink-secondary space-y-4 leading-relaxed">
+            <div className="space-y-4 text-sm text-ink-secondary leading-relaxed">
               <p>
-                HackBench is an open-source evaluation system built on historical hackathon submissions (starting with
-                ShellHacks 2025). Calibrated across 50 analyzed projects: 29 award-winning projects and 21 non-winners,
-                including 6 strong non-winners.
+                <strong>HackBench</strong> evaluates hackathon submissions across two distinct workflows:
               </p>
-              <p>
-                Every project is evaluated blindly on publicly observable artifacts—Devpost descriptions, repository
-                commits, test suites, and demo workflows—using consistent judging rubrics.
+              <ul className="list-disc pl-5 space-y-2">
+                <li>
+                  <strong>Review an idea (before you start building):</strong> Looks at the problem, the user, and the core workflow. It does not penalize an idea for having no code, repo, or demo yet. </li>
+                <li>
+                  <strong>Review a project (once you have something working):</strong> Looks at your public repository, live deployment, and demo, and compares them with past winners. Anything we can&apos;t see is marked as unavailable rather than weak. </li>
+              </ul>
+              <p className="text-xs text-ink-muted pt-4 border-t border-edge">
+                Notice: HackBench is based on public evidence. It does not predict winners or guarantee outcomes. We measure anonymous usage (page visits and which actions are taken). We never collect what you type, your links, or your results.
               </p>
-              <p>
-                <strong>HackBench does not predict hackathon winners.</strong> Instead, it provides participants with
-                evidence-grounded perspective on how their presentation and implementation compare against past
-                distributions before they submit.
-              </p>
-            </div>
-            <div className="pt-4 border-t border-edge flex justify-end">
-              <button
-                onClick={() => setShowMethodology(false)}
-                className="px-4 py-2 bg-ink text-white text-xs font-medium rounded hover:bg-neutral-800 transition-colors cursor-pointer"
-              >
-                Understood
-              </button>
             </div>
           </div>
         </div>
       )}
 
-      {/* 4. Small Editorial Footer */}
+      {/* 4. Editorial Footer */}
       <footer className="border-t border-edge py-8 mt-20">
-        <div className="max-w-5xl mx-auto px-6 flex flex-col sm:flex-row items-baseline justify-between gap-4 text-xs text-ink-muted">
-          <div>
-            <span className="font-serif font-bold text-ink text-sm mr-3">HackBench</span>
-            <span>Empirical hackathon analysis. We do not predict winners.</span>
-          </div>
+        <div className="max-w-5xl mx-auto px-6 flex flex-col sm:flex-row items-center justify-between text-xs text-ink-secondary gap-4">
+          <p>
+            HackBench · Feedback on hackathon ideas and projects, based on past ShellHacks entries.
+          </p>
           <div className="flex items-center gap-6">
             <button
               onClick={() => setShowMethodology(true)}
               className="hover:text-ink transition-colors cursor-pointer"
             >
-              How it works
+              Methodology
             </button>
             <a
-              href="https://github.com/Aaryan1524/ShellhacksHackathonAnalysis"
+              href="https://github.com/Aaryan1524/HackBench"
               target="_blank"
               rel="noreferrer"
               className="hover:text-ink transition-colors"
             >
-              Source code
+              GitHub
             </a>
           </div>
         </div>
