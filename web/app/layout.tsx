@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import localFont from "next/font/local";
 import { Lora } from "next/font/google";
 import "./globals.css";
+import AnalyticsInit from "@/components/AnalyticsInit";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -22,9 +23,9 @@ const lora = Lora({
 });
 
 export const metadata: Metadata = {
-  title: "HackBench — See how your hackathon project compares",
+  title: "HackBench — Feedback on your hackathon idea or project",
   description:
-    "Add your project and compare it with historical winners, strong non-winners, and documented judging criteria.",
+    "Review an idea before you build, or a project once it works. See what is strong, what is missing, and what to do next.",
 };
 
 export default function RootLayout({
@@ -37,6 +38,7 @@ export default function RootLayout({
       <body
         className={`${lora.variable} ${geistSans.variable} ${geistMono.variable} antialiased bg-canvas text-ink font-sans min-h-screen selection:bg-[#EBE8DF] selection:text-ink`}
       >
+        <AnalyticsInit />
         {children}
       </body>
     </html>

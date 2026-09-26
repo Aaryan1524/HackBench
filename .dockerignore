@@ -1,0 +1,12 @@
+.env
+.env.*
+!.env.example
+.git
+.venv
+web/node_modules
+web/.next
+data/raw/participant_repos
+data/cache
+**/__pycache__
+.pytest_cache
+tests

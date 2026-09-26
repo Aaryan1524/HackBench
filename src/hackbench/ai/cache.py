@@ -1,12 +1,16 @@
 import hashlib
 import json
 import logging
+import time
 from pathlib import Path
 from typing import Optional, Dict, Any
 
 logger = logging.getLogger("hackbench.ai.cache")
 
 RUBRIC_VERSION = "v1.0.0"
+
+CACHE_TTL_SECONDS = 7 * 24 * 3600
+CACHE_MAX_ENTRIES = 2000
 
 
 class AICache:
@@ -33,6 +37,9 @@ class AICache:
         path = self.cache_dir / f"{cache_key}.json"
         if path.exists():
             try:
+                if time.time() - path.stat().st_mtime > CACHE_TTL_SECONDS:
+                    path.unlink(missing_ok=True)
+                    return None
                 return json.loads(path.read_text(encoding="utf-8"))
             except Exception as e:
                 logger.warning(f"Failed to read cache file {path}: {e}")
@@ -42,5 +49,18 @@ class AICache:
         path = self.cache_dir / f"{cache_key}.json"
         try:
             path.write_text(json.dumps(data, indent=2), encoding="utf-8")
+            self.prune(keep=path)
         except Exception as e:
             logger.warning(f"Failed to write cache file {path}: {e}")
+
+    def prune(self, keep: Optional[Path] = None) -> None:
+        """Drop expired entries, then the oldest ones beyond the size cap."""
+        files = sorted(self.cache_dir.glob("*.json"), key=lambda p: p.stat().st_mtime)
+        now = time.time()
+        for p in files:
+            if now - p.stat().st_mtime > CACHE_TTL_SECONDS:
+                p.unlink(missing_ok=True)
+        files = [p for p in files if p.exists()]
+        removable = [p for p in files if p != keep]
+        for p in removable[: max(0, len(files) - CACHE_MAX_ENTRIES)]:
+            p.unlink(missing_ok=True)
