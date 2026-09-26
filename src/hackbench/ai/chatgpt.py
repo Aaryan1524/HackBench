@@ -314,6 +314,9 @@ Generate a structured JSON synthesis adhering strictly to this schema:
                 "8. STATISTICAL LANGUAGE HYGIENE: Never claim 'top quartile' or invent percentiles without a computed quantile.\n"
                 "   - Use safe, grounded phrasing: 'consistent with the observed range of historical overall winners' or 'sits below the historical winner baseline'.\n"
                 "9. NO GENERIC FILLER: every next action must point at something specific in the submission. Do not suggest backup recordings, venue Wi-Fi contingencies, or generic presentation tips unless the evidence shows the demo depends on them. Fewer than three actions is fine."
+                "\n"
+                "10. CHALLENGE FIT: criteria_alignment.criteria is the selected challenge's own published description and criteria_alignment.prize_fit is a computed comparison. If prize_fit.fit_level is weak or very_weak, say plainly that the project does not address that challenge (as a gap) and name criteria_alignment.prize_fit.closer_fits if any. NEVER advise adding text, docs or features merely to manufacture a connection to a challenge the project is not about. If it does fit, tie actions to prize_fit.must_demonstrate.\n"
+                "11. README-ONLY SUBMISSIONS: if the evidence says the description is the repository README, do not treat blank Problem, User or Tagline fields as gaps."
             )
             structured_context = {
                 "project_name": project_name,

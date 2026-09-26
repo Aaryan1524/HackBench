@@ -1,4 +1,5 @@
 import os
+import re
 import json
 import logging
 import uuid
@@ -32,6 +33,8 @@ from ..ai.router import EvaluationRouter
 from ..ai.jev import JevClient, SCORE_LEVEL_VALUES
 from ..ai.chatgpt import ChatGPTClient, GeminiClient
 from ..ai.idea_guidance import historical_takeaway
+from ..ai.prize_matcher import PrizeMatcher, PrizeFitResult
+from ..ai.idea_extractor import IdeaExtractor
 from ..ai.baselines import prize_has_criteria, DEFAULT_BASELINE, load_history, is_known, is_known_prize_event, label_for, YEAR_BASELINES, ALL_YEARS_ID
 from ..collectors.git_repo import RepositoryAnalyzer
 from ..collectors.devpost import DevpostCollector
@@ -542,6 +545,8 @@ def _analyze(req: AnalyzeRequest):
             logger.warning("Could not scrape Devpost link: %s. Proceeding with manual fields.", str(e)[:120])
             notes.append("We couldn't read the Devpost page, so its description was not used.")
 
+    if not name and req.github_url:
+        name = _project_name_from_repo_url(req.github_url)
     name = name or "Candidate Project"
 
     # 4. Deterministic Code Analysis (Layer 1)
@@ -647,10 +652,22 @@ def _analyze(req: AnalyzeRequest):
     demo_evidence = f"Video: {req.demo_url}" if req.demo_url else ("Live URL: " + req.deployment_url if req.deployment_url else "")
     
     sponsor_req = sanitize_untrusted_text(proj.sponsor_requirements or req.sponsor_requirements or "")
-    if sponsor_req:
+
+    # The prize the user picked is judged on its own published description, not a generic line.
+    prize_event = req.prize_event_id or req.event_id
+    prize_fit_result, target_prize = _project_prize_fit(
+        prize_event, req.award_id, name, tagline, problem, target_user, what_it_does, how_it_works, tech_tags,
+    )
+    if target_prize is not None and prize_has_criteria(target_prize):
+        award_criteria_text = f"{target_prize.title}: {target_prize.description}"[:1500]
+        if sponsor_req:
+            award_criteria_text += f"\nAdditional requirements entered by the user: {sponsor_req}"
+    elif sponsor_req:
         award_criteria_text = f"Sponsor & Track Requirements: {sponsor_req}"
     else:
         award_criteria_text = "Overall excellence in innovation, technical depth, design, and practical utility."
+    target_award_title = target_prize.title if target_prize is not None else req.award_id.replace("_", " ").title()
+    target_fit = prize_fit_result.top_fits[0] if prize_fit_result and prize_fit_result.top_fits else None
 
     judge_evals = router.evaluate_judge_surface(
         project_name=name,
@@ -680,10 +697,15 @@ def _analyze(req: AnalyzeRequest):
     synthesis_client = ChatGPTClient()
     untrusted_evidence_block = (
         f"Title: {name}\nTagline: {tagline}\nProblem: {problem}\nUser: {target_user}\n"
-        f"Target Award: {req.award_id}\nSponsor / Track Requirements: {sponsor_req}\n"
+        f"Target Award: {target_award_title}\nSponsor / Track Requirements: {sponsor_req}\n"
         f"What: {what_it_does}\nHow: {how_it_works}\nCode LOC: {deterministic_metrics.get('approx_loc')}\n"
         f"Frameworks: {deterministic_metrics.get('frontend_frameworks') + deterministic_metrics.get('backend_frameworks')}"
     )
+    if text_from_readme:
+        untrusted_evidence_block += (
+            "\nNote: nothing was submitted except the repository, so the description above is the README. "
+            "Blank Problem, User and Tagline fields are not gaps in the project."
+        )
 
     synthesis_resp = synthesis_client.synthesize_report(
         project_name=name,
@@ -691,7 +713,11 @@ def _analyze(req: AnalyzeRequest):
         deterministic_metrics=deterministic_metrics,
         jev_classifications={k: v.model_dump() for k, v in judge_evals.items()},
         historical_comparisons=historical_stats,
-        criteria_alignment={"award_title": req.award_id.replace("_", " ").title(), "criteria": award_criteria_text},
+        criteria_alignment={
+            "award_title": target_award_title,
+            "criteria": award_criteria_text,
+            "prize_fit": _fit_summary_for_model(target_fit, prize_fit_result),
+        },
     )
 
     return {
@@ -709,11 +735,13 @@ def _analyze(req: AnalyzeRequest):
         "judge_surface": {k: v.model_dump() for k, v in judge_evals.items()},
         "engineering": deterministic_metrics,
         "historical_comparison": historical_stats,
+        "prize_fits": prize_fit_result.model_dump() if prize_fit_result else None,
+        "prize_event_id": prize_event,
         "criteria_alignment": {
-            "target_award": req.award_id.replace("_", " ").title(),
-            "criteria_summary": award_criteria_text,
-            "alignment_level": judge_evals.get("award_alignment", {}).label if "award_alignment" in judge_evals else "moderate",
-            "sponsor_requirements": sponsor_req,
+            "target_award": target_award_title,
+            "criteria_summary": (target_prize.description[:500] if target_prize is not None and prize_has_criteria(target_prize) else award_criteria_text),
+            "alignment_level": (target_fit.fit_level.value if target_fit else (judge_evals["award_alignment"].label if "award_alignment" in judge_evals else "moderate")),
+            "sponsor_requirements": (target_prize.sponsor_name if target_prize is not None and target_prize.sponsor_name else sponsor_req) or "",
         },
         "recommendations": synthesis_resp.synthesis.model_dump(),
         "notes": notes,
@@ -751,6 +779,63 @@ def _routing_telemetry(judge_evals: Dict[str, Any], synthesis_model: str, notes:
 
 def _ai_unavailable(judge_evals: Dict[str, Any]) -> bool:
     return any(getattr(v, "provider", "") == "offline_calibrated" for v in judge_evals.values())
+
+
+def _project_name_from_repo_url(url: str) -> str:
+    """'https://github.com/owner/Claude-Sentinel/tree/main' -> 'Claude Sentinel'."""
+    parts = [p for p in urlparse(url).path.split("/") if p]
+    slug = parts[1] if len(parts) >= 2 else (parts[0] if parts else "")
+    slug = re.sub(r"\.git$", "", slug)
+    return sanitize_untrusted_text(re.sub(r"[-_]+", " ", slug).strip())[:80]
+
+
+def _project_prize_fit(prize_event, award_id, name, tagline, problem, target_user, what_it_does, how_it_works, tech_tags):
+    """
+    Evaluate the project against the challenge it targeted, using that challenge's published description,
+    and add up to two strictly closer documented fits when the chosen one is a poor match.
+    Returns (PrizeFitResult | None, PrizeCategory | None). Never raises: a review must not fail over prize data.
+    """
+    try:
+        matcher = PrizeMatcher()
+        prizes = matcher.load_event_prizes(prize_event)
+        target = matcher.find_prize(prizes, award_id)
+        if target is None:
+            return None, None
+        text = "\n".join(t for t in (name, tagline, problem, target_user, what_it_does, how_it_works) if t)[:4000]
+        idea = IdeaExtractor().extract_offline(text, tech_tags)
+        chosen = matcher.evaluate_specific_prize(idea, tech_tags, prize_event, target.prize_id)
+        target_fit = chosen.top_fits[0]
+
+        order = {"very_strong": 5, "strong": 4, "moderate": 3, "weak": 2, "very_weak": 1}
+        level = lambda f: order.get(f.fit_level.value, 0)
+        alternatives = [
+            f for f in matcher.match_prizes(idea, tech_tags, event_id=prize_event).top_fits
+            if f.prize_id != target.prize_id and level(f) >= 3 and level(f) > level(target_fit)
+        ][:2]
+        summary = f"Evaluated directly against {target.title}."
+        if alternatives:
+            summary += " Closer documented fits: " + ", ".join(f.award_title for f in alternatives) + "."
+        return PrizeFitResult(
+            targeting_mode="specific", top_fits=[target_fit] + alternatives, evaluated_count=1 + len(alternatives),
+            insufficient_criteria_count=0, summary=summary,
+        ), target
+    except Exception as e:  # noqa: BLE001
+        logger.warning("Project prize-fit failed: %s", type(e).__name__)
+        return None, None
+
+
+def _fit_summary_for_model(target_fit, result) -> Optional[Dict[str, Any]]:
+    """The facts the model needs to judge alignment honestly, without any user text."""
+    if target_fit is None:
+        return None
+    return {
+        "fit_level": target_fit.fit_level.value,
+        "why_it_fits": target_fit.why_it_fits,
+        "why_it_may_not_fit": target_fit.why_it_may_not_fit,
+        "biggest_missing_requirement": target_fit.biggest_missing_requirement,
+        "must_demonstrate": target_fit.what_must_be_demonstrated,
+        "closer_fits": [f.award_title for f in (result.top_fits[1:] if result else [])],
+    }
 
 
 def _event_notes(event_id: str, prize_event_id: Optional[str] = None) -> List[str]:

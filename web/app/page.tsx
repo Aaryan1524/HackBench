@@ -1418,7 +1418,7 @@ export default function Home() {
                 <div>
                   <div className="flex items-center gap-2 mb-2">
                     <span className="text-xs uppercase font-semibold tracking-wider text-ink-secondary font-mono">
-                      Where this idea fits
+                      {result.analysis_mode === "idea" ? "Where this idea fits" : "Where this project fits"}
                     </span>
                     <span className="text-edge">·</span>
                     <span className="text-xs uppercase font-medium tracking-wider text-ink-muted">
@@ -1442,7 +1442,10 @@ export default function Home() {
                     (f) => f.fit_level === "very_strong" || f.fit_level === "strong"
                   )) && (
                   <div className="p-4 bg-canvas-subtle border border-edge rounded text-sm text-ink-secondary leading-relaxed">
-                    No clearly strong sponsor fit yet. Best Overall currently aligns better than the available sponsor tracks based on the documented criteria.
+                    {result.prize_fits.targeting_mode === "specific"
+                      ? result.prize_fits.summary ||
+                        "This is not a strong match for the challenge you chose, judged on its published description."
+                      : "No clearly strong sponsor fit yet. Best Overall currently aligns better than the available sponsor tracks based on the documented criteria."}
                   </div>
                 )}
 
@@ -1450,7 +1453,12 @@ export default function Home() {
                 {result.prize_fits.top_fits && result.prize_fits.top_fits.length > 0 && (
                   <div className="space-y-6">
                     {result.prize_fits.top_fits
-                      .filter((f) => ["very_strong", "strong", "moderate"].includes(f.fit_level))
+                      // In "specific" mode the first card is the challenge you chose: always show it, even if it is weak.
+                      .filter(
+                        (f, i) =>
+                          (result.prize_fits?.targeting_mode === "specific" && i === 0) ||
+                          ["very_strong", "strong", "moderate"].includes(f.fit_level)
+                      )
                       .slice(0, 3)
                       .map((fit, idx) => {
                       const isStrong = fit.fit_level === "very_strong" || fit.fit_level === "strong";
@@ -1550,7 +1558,7 @@ export default function Home() {
             {result.analysis_mode !== "idea" && <ComparisonSection result={result} />}
 
             {/* 5. Criteria Alignment (Project Mode) */}
-            {result.analysis_mode === "project" && (
+            {result.analysis_mode === "project" && !result.prize_fits && (
               <section className="max-w-2xl border-b border-edge pb-16">
                 <h2 className="font-serif text-2xl sm:text-3xl font-normal text-ink mb-4">
                   Alignment with {result.criteria_alignment?.target_award || "your target award"}
