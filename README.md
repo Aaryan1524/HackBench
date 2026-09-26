@@ -215,6 +215,9 @@ Idea text, project descriptions, README or source code, repository contents, gen
 
 This is enforced in `web/lib/analytics.ts`: every event has an explicit list of allowed properties and allowed values, and anything else is dropped before it reaches PostHog. Query strings on the page URL are stripped, except `utm_*` and `ref`, so attribution still works. Visitors with browser Do Not Track enabled are not counted.
 
+### Vercel Analytics (page views)
+The site also includes Vercel Analytics for simple page-view and visitor counts, next to PostHog. It is cookieless and collects no page content, and query strings are stripped (except `utm_*` and `ref`) before anything is sent. It only reports on a Vercel deployment: turn it on under the project's **Analytics** tab in the Vercel dashboard. `NEXT_PUBLIC_ANALYTICS_ENABLED=false` switches off both PostHog and Vercel Analytics. The package is pinned to `@vercel/analytics@1.3.2` because newer versions declare an optional SvelteKit peer that conflicts with the test tooling's Vite version, and the app does not use Svelte.
+
 ### Event schema
 
 | Event | When | Properties |
