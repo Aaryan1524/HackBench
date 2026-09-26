@@ -1,0 +1,2998 @@
+{
+  "720399": {
+    "project_id": "720399",
+    "is_winner": true,
+    "is_overall_winner": true,
+    "is_sponsor_winner": false,
+    "is_track_winner": true,
+    "is_beginner_winner": false,
+    "awards": [
+      {
+        "name": "Best Overall",
+        "award_type": "overall",
+        "sponsor": null,
+        "placement": null,
+        "official_source": "https://devpost.com/software/esper-fy6xeh",
+        "raw_badge_text": "Best Overall"
+      },
+      {
+        "name": "Assurant",
+        "award_type": "track",
+        "sponsor": null,
+        "placement": null,
+        "official_source": "https://devpost.com/software/esper-fy6xeh",
+        "raw_badge_text": "Assurant"
+      }
+    ],
+    "unsealed_at": "2026-09-26T02:03:23.793733Z"
+  },
+  "720230": {
+    "project_id": "720230",
+    "is_winner": true,
+    "is_overall_winner": true,
+    "is_sponsor_winner": true,
+    "is_track_winner": false,
+    "is_beginner_winner": false,
+    "awards": [
+      {
+        "name": "Second Best Overall",
+        "award_type": "overall",
+        "sponsor": null,
+        "placement": "2nd",
+        "official_source": "https://devpost.com/software/arsl-vr-asl-learning",
+        "raw_badge_text": "Second Best Overall"
+      },
+      {
+        "name": "Microsoft",
+        "award_type": "sponsor",
+        "sponsor": null,
+        "placement": null,
+        "official_source": "https://devpost.com/software/arsl-vr-asl-learning",
+        "raw_badge_text": "Microsoft"
+      },
+      {
+        "name": "Google",
+        "award_type": "sponsor",
+        "sponsor": null,
+        "placement": null,
+        "official_source": "https://devpost.com/software/arsl-vr-asl-learning",
+        "raw_badge_text": "Google"
+      }
+    ],
+    "unsealed_at": "2026-09-26T02:03:23.793733Z"
+  },
+  "719316": {
+    "project_id": "719316",
+    "is_winner": true,
+    "is_overall_winner": true,
+    "is_sponsor_winner": false,
+    "is_track_winner": false,
+    "is_beginner_winner": false,
+    "awards": [
+      {
+        "name": "Third Best Overall",
+        "award_type": "overall",
+        "sponsor": null,
+        "placement": "3rd",
+        "official_source": "https://devpost.com/software/diffusion-earth",
+        "raw_badge_text": "Third Best Overall"
+      }
+    ],
+    "unsealed_at": "2026-09-26T02:03:23.793733Z"
+  },
+  "720361": {
+    "project_id": "720361",
+    "is_winner": true,
+    "is_overall_winner": false,
+    "is_sponsor_winner": false,
+    "is_track_winner": false,
+    "is_beginner_winner": true,
+    "awards": [
+      {
+        "name": "Best First-Time Hackers",
+        "award_type": "beginner",
+        "sponsor": null,
+        "placement": "1st",
+        "official_source": "https://devpost.com/software/commander-coco-s-stellar-domination",
+        "raw_badge_text": "Best First-Time Hackers"
+      }
+    ],
+    "unsealed_at": "2026-09-26T02:03:23.793733Z"
+  },
+  "719915": {
+    "project_id": "719915",
+    "is_winner": true,
+    "is_overall_winner": false,
+    "is_sponsor_winner": false,
+    "is_track_winner": false,
+    "is_beginner_winner": true,
+    "awards": [
+      {
+        "name": "Best First-Time Hackers",
+        "award_type": "beginner",
+        "sponsor": null,
+        "placement": "1st",
+        "official_source": "https://devpost.com/software/med-memory",
+        "raw_badge_text": "Best First-Time Hackers"
+      }
+    ],
+    "unsealed_at": "2026-09-26T02:03:23.793733Z"
+  },
+  "719118": {
+    "project_id": "719118",
+    "is_winner": true,
+    "is_overall_winner": false,
+    "is_sponsor_winner": false,
+    "is_track_winner": false,
+    "is_beginner_winner": true,
+    "awards": [
+      {
+        "name": "Best First-Time Hackers",
+        "award_type": "beginner",
+        "sponsor": null,
+        "placement": "1st",
+        "official_source": "https://devpost.com/software/pantherplates",
+        "raw_badge_text": "Best First-Time Hackers"
+      }
+    ],
+    "unsealed_at": "2026-09-26T02:03:23.793733Z"
+  },
+  "720341": {
+    "project_id": "720341",
+    "is_winner": true,
+    "is_overall_winner": false,
+    "is_sponsor_winner": true,
+    "is_track_winner": false,
+    "is_beginner_winner": false,
+    "awards": [
+      {
+        "name": "Microsoft",
+        "award_type": "sponsor",
+        "sponsor": null,
+        "placement": null,
+        "official_source": "https://devpost.com/software/around-the-world-in-70-frames",
+        "raw_badge_text": "Microsoft"
+      }
+    ],
+    "unsealed_at": "2026-09-26T02:03:23.793733Z"
+  },
+  "720008": {
+    "project_id": "720008",
+    "is_winner": true,
+    "is_overall_winner": false,
+    "is_sponsor_winner": true,
+    "is_track_winner": true,
+    "is_beginner_winner": false,
+    "awards": [
+      {
+        "name": "Microsoft",
+        "award_type": "sponsor",
+        "sponsor": null,
+        "placement": null,
+        "official_source": "https://devpost.com/software/lotion-ai-ar",
+        "raw_badge_text": "Microsoft"
+      },
+      {
+        "name": "Assurant",
+        "award_type": "track",
+        "sponsor": null,
+        "placement": null,
+        "official_source": "https://devpost.com/software/lotion-ai-ar",
+        "raw_badge_text": "Assurant"
+      },
+      {
+        "name": "[MLH] Best Domain Name from GoDaddy Registry",
+        "award_type": "track",
+        "sponsor": null,
+        "placement": null,
+        "official_source": "https://devpost.com/software/lotion-ai-ar",
+        "raw_badge_text": "[MLH] Best Domain Name from GoDaddy Registry"
+      }
+    ],
+    "unsealed_at": "2026-09-26T02:03:23.793733Z"
+  },
+  "720333": {
+    "project_id": "720333",
+    "is_winner": true,
+    "is_overall_winner": false,
+    "is_sponsor_winner": false,
+    "is_track_winner": true,
+    "is_beginner_winner": false,
+    "awards": [
+      {
+        "name": "Waymo",
+        "award_type": "track",
+        "sponsor": null,
+        "placement": null,
+        "official_source": "https://devpost.com/software/localpulse-uwr83x",
+        "raw_badge_text": "Waymo"
+      }
+    ],
+    "unsealed_at": "2026-09-26T02:03:23.793733Z"
+  },
+  "720045": {
+    "project_id": "720045",
+    "is_winner": true,
+    "is_overall_winner": false,
+    "is_sponsor_winner": false,
+    "is_track_winner": true,
+    "is_beginner_winner": false,
+    "awards": [
+      {
+        "name": "Waymo",
+        "award_type": "track",
+        "sponsor": null,
+        "placement": null,
+        "official_source": "https://devpost.com/software/emergencyact",
+        "raw_badge_text": "Waymo"
+      }
+    ],
+    "unsealed_at": "2026-09-26T02:03:23.793733Z"
+  },
+  "719499": {
+    "project_id": "719499",
+    "is_winner": true,
+    "is_overall_winner": false,
+    "is_sponsor_winner": false,
+    "is_track_winner": true,
+    "is_beginner_winner": false,
+    "awards": [
+      {
+        "name": "Waymo",
+        "award_type": "track",
+        "sponsor": null,
+        "placement": null,
+        "official_source": "https://devpost.com/software/evac-for-all",
+        "raw_badge_text": "Waymo"
+      }
+    ],
+    "unsealed_at": "2026-09-26T02:03:23.793733Z"
+  },
+  "719537": {
+    "project_id": "719537",
+    "is_winner": true,
+    "is_overall_winner": false,
+    "is_sponsor_winner": true,
+    "is_track_winner": false,
+    "is_beginner_winner": false,
+    "awards": [
+      {
+        "name": "Google",
+        "award_type": "sponsor",
+        "sponsor": null,
+        "placement": null,
+        "official_source": "https://devpost.com/software/drowsydriver-e31tn6",
+        "raw_badge_text": "Google"
+      }
+    ],
+    "unsealed_at": "2026-09-26T02:03:23.793733Z"
+  },
+  "719868": {
+    "project_id": "719868",
+    "is_winner": true,
+    "is_overall_winner": false,
+    "is_sponsor_winner": true,
+    "is_track_winner": false,
+    "is_beginner_winner": false,
+    "awards": [
+      {
+        "name": "Google",
+        "award_type": "sponsor",
+        "sponsor": null,
+        "placement": null,
+        "official_source": "https://devpost.com/software/voiceboard-83vn1e",
+        "raw_badge_text": "Google"
+      }
+    ],
+    "unsealed_at": "2026-09-26T02:03:23.793733Z"
+  },
+  "720022": {
+    "project_id": "720022",
+    "is_winner": true,
+    "is_overall_winner": false,
+    "is_sponsor_winner": false,
+    "is_track_winner": true,
+    "is_beginner_winner": false,
+    "awards": [
+      {
+        "name": "Patient Safety Technology",
+        "award_type": "track",
+        "sponsor": null,
+        "placement": null,
+        "official_source": "https://devpost.com/software/bigback",
+        "raw_badge_text": "Patient Safety Technology"
+      }
+    ],
+    "unsealed_at": "2026-09-26T02:03:23.793733Z"
+  },
+  "719589": {
+    "project_id": "719589",
+    "is_winner": true,
+    "is_overall_winner": false,
+    "is_sponsor_winner": false,
+    "is_track_winner": true,
+    "is_beginner_winner": false,
+    "awards": [
+      {
+        "name": "ETH Miami",
+        "award_type": "track",
+        "sponsor": null,
+        "placement": null,
+        "official_source": "https://devpost.com/software/levelup-m95ou8",
+        "raw_badge_text": "ETH Miami"
+      }
+    ],
+    "unsealed_at": "2026-09-26T02:03:23.793733Z"
+  },
+  "719826": {
+    "project_id": "719826",
+    "is_winner": true,
+    "is_overall_winner": false,
+    "is_sponsor_winner": false,
+    "is_track_winner": true,
+    "is_beginner_winner": false,
+    "awards": [
+      {
+        "name": "ETH Miami",
+        "award_type": "track",
+        "sponsor": null,
+        "placement": null,
+        "official_source": "https://devpost.com/software/blockchainaied",
+        "raw_badge_text": "ETH Miami"
+      }
+    ],
+    "unsealed_at": "2026-09-26T02:03:23.793733Z"
+  },
+  "720351": {
+    "project_id": "720351",
+    "is_winner": true,
+    "is_overall_winner": false,
+    "is_sponsor_winner": false,
+    "is_track_winner": true,
+    "is_beginner_winner": false,
+    "awards": [
+      {
+        "name": "Statefarm",
+        "award_type": "track",
+        "sponsor": null,
+        "placement": null,
+        "official_source": "https://devpost.com/software/fivehacks",
+        "raw_badge_text": "Statefarm"
+      }
+    ],
+    "unsealed_at": "2026-09-26T02:03:23.793733Z"
+  },
+  "720271": {
+    "project_id": "720271",
+    "is_winner": true,
+    "is_overall_winner": false,
+    "is_sponsor_winner": false,
+    "is_track_winner": true,
+    "is_beginner_winner": false,
+    "awards": [
+      {
+        "name": "Statefarm",
+        "award_type": "track",
+        "sponsor": null,
+        "placement": null,
+        "official_source": "https://devpost.com/software/treasure-keepers",
+        "raw_badge_text": "Statefarm"
+      }
+    ],
+    "unsealed_at": "2026-09-26T02:03:23.793733Z"
+  },
+  "720257": {
+    "project_id": "720257",
+    "is_winner": true,
+    "is_overall_winner": false,
+    "is_sponsor_winner": false,
+    "is_track_winner": true,
+    "is_beginner_winner": false,
+    "awards": [
+      {
+        "name": "Vanguard",
+        "award_type": "track",
+        "sponsor": null,
+        "placement": null,
+        "official_source": "https://devpost.com/software/financio-xg15bp",
+        "raw_badge_text": "Vanguard"
+      }
+    ],
+    "unsealed_at": "2026-09-26T02:03:23.793733Z"
+  },
+  "720046": {
+    "project_id": "720046",
+    "is_winner": true,
+    "is_overall_winner": false,
+    "is_sponsor_winner": false,
+    "is_track_winner": true,
+    "is_beginner_winner": false,
+    "awards": [
+      {
+        "name": "Vanguard",
+        "award_type": "track",
+        "sponsor": null,
+        "placement": null,
+        "official_source": "https://devpost.com/software/clarifina",
+        "raw_badge_text": "Vanguard"
+      }
+    ],
+    "unsealed_at": "2026-09-26T02:03:23.793733Z"
+  },
+  "720115": {
+    "project_id": "720115",
+    "is_winner": true,
+    "is_overall_winner": false,
+    "is_sponsor_winner": false,
+    "is_track_winner": true,
+    "is_beginner_winner": false,
+    "awards": [
+      {
+        "name": "Vanguard",
+        "award_type": "track",
+        "sponsor": null,
+        "placement": null,
+        "official_source": "https://devpost.com/software/prospera-1bpnya",
+        "raw_badge_text": "Vanguard"
+      }
+    ],
+    "unsealed_at": "2026-09-26T02:03:23.793733Z"
+  },
+  "719844": {
+    "project_id": "719844",
+    "is_winner": true,
+    "is_overall_winner": false,
+    "is_sponsor_winner": false,
+    "is_track_winner": true,
+    "is_beginner_winner": false,
+    "awards": [
+      {
+        "name": "Assurant",
+        "award_type": "track",
+        "sponsor": null,
+        "placement": null,
+        "official_source": "https://devpost.com/software/jet-setter",
+        "raw_badge_text": "Assurant"
+      }
+    ],
+    "unsealed_at": "2026-09-26T02:03:23.793733Z"
+  },
+  "718810": {
+    "project_id": "718810",
+    "is_winner": true,
+    "is_overall_winner": false,
+    "is_sponsor_winner": false,
+    "is_track_winner": true,
+    "is_beginner_winner": false,
+    "awards": [
+      {
+        "name": "Capital One",
+        "award_type": "track",
+        "sponsor": null,
+        "placement": null,
+        "official_source": "https://devpost.com/software/smartcards-qxdusb",
+        "raw_badge_text": "Capital One"
+      }
+    ],
+    "unsealed_at": "2026-09-26T02:03:23.793733Z"
+  },
+  "719703": {
+    "project_id": "719703",
+    "is_winner": true,
+    "is_overall_winner": false,
+    "is_sponsor_winner": false,
+    "is_track_winner": true,
+    "is_beginner_winner": false,
+    "awards": [
+      {
+        "name": "Capital One",
+        "award_type": "track",
+        "sponsor": null,
+        "placement": null,
+        "official_source": "https://devpost.com/software/lease-saving-plan",
+        "raw_badge_text": "Capital One"
+      }
+    ],
+    "unsealed_at": "2026-09-26T02:03:23.793733Z"
+  },
+  "720463": {
+    "project_id": "720463",
+    "is_winner": true,
+    "is_overall_winner": false,
+    "is_sponsor_winner": false,
+    "is_track_winner": true,
+    "is_beginner_winner": false,
+    "awards": [
+      {
+        "name": "Snap AR Dream it. Build it.",
+        "award_type": "track",
+        "sponsor": null,
+        "placement": null,
+        "official_source": "https://devpost.com/software/pellet-panic",
+        "raw_badge_text": "Snap AR Dream it. Build it."
+      }
+    ],
+    "unsealed_at": "2026-09-26T02:03:23.793733Z"
+  },
+  "719251": {
+    "project_id": "719251",
+    "is_winner": true,
+    "is_overall_winner": false,
+    "is_sponsor_winner": false,
+    "is_track_winner": true,
+    "is_beginner_winner": false,
+    "awards": [
+      {
+        "name": "Snap AR Dream it. Build it.",
+        "award_type": "track",
+        "sponsor": null,
+        "placement": null,
+        "official_source": "https://devpost.com/software/snapchat-ar-tower-defense",
+        "raw_badge_text": "Snap AR Dream it. Build it."
+      }
+    ],
+    "unsealed_at": "2026-09-26T02:03:23.793733Z"
+  },
+  "720158": {
+    "project_id": "720158",
+    "is_winner": true,
+    "is_overall_winner": false,
+    "is_sponsor_winner": false,
+    "is_track_winner": true,
+    "is_beginner_winner": false,
+    "awards": [
+      {
+        "name": "Snap AR Dream it. Build it.",
+        "award_type": "track",
+        "sponsor": null,
+        "placement": null,
+        "official_source": "https://devpost.com/software/shuttle-run",
+        "raw_badge_text": "Snap AR Dream it. Build it."
+      }
+    ],
+    "unsealed_at": "2026-09-26T02:03:23.793733Z"
+  },
+  "718433": {
+    "project_id": "718433",
+    "is_winner": true,
+    "is_overall_winner": false,
+    "is_sponsor_winner": false,
+    "is_track_winner": true,
+    "is_beginner_winner": false,
+    "awards": [
+      {
+        "name": "Wolfi OS Container Security Hackathon",
+        "award_type": "track",
+        "sponsor": null,
+        "placement": null,
+        "official_source": "https://devpost.com/software/cloud-vault",
+        "raw_badge_text": "Wolfi OS Container Security Hackathon"
+      }
+    ],
+    "unsealed_at": "2026-09-26T02:03:23.793733Z"
+  },
+  "720315": {
+    "project_id": "720315",
+    "is_winner": true,
+    "is_overall_winner": false,
+    "is_sponsor_winner": false,
+    "is_track_winner": true,
+    "is_beginner_winner": false,
+    "awards": [
+      {
+        "name": "Wolfi OS Container Security Hackathon",
+        "award_type": "track",
+        "sponsor": null,
+        "placement": null,
+        "official_source": "https://devpost.com/software/lootcode-10",
+        "raw_badge_text": "Wolfi OS Container Security Hackathon"
+      }
+    ],
+    "unsealed_at": "2026-09-26T02:03:23.793733Z"
+  },
+  "719821": {
+    "project_id": "719821",
+    "is_winner": true,
+    "is_overall_winner": false,
+    "is_sponsor_winner": false,
+    "is_track_winner": true,
+    "is_beginner_winner": false,
+    "awards": [
+      {
+        "name": "Wolfi OS Container Security Hackathon",
+        "award_type": "track",
+        "sponsor": null,
+        "placement": null,
+        "official_source": "https://devpost.com/software/ai-image-recognition",
+        "raw_badge_text": "Wolfi OS Container Security Hackathon"
+      }
+    ],
+    "unsealed_at": "2026-09-26T02:03:23.793733Z"
+  },
+  "720424": {
+    "project_id": "720424",
+    "is_winner": true,
+    "is_overall_winner": false,
+    "is_sponsor_winner": false,
+    "is_track_winner": true,
+    "is_beginner_winner": false,
+    "awards": [
+      {
+        "name": "Cafe Cultura Latine' Heritage Month Digital Divide Challenge",
+        "award_type": "track",
+        "sponsor": null,
+        "placement": null,
+        "official_source": "https://devpost.com/software/tastelatino",
+        "raw_badge_text": "Cafe Cultura Latine' Heritage Month Digital Divide Challenge"
+      }
+    ],
+    "unsealed_at": "2026-09-26T02:03:23.793733Z"
+  },
+  "720043": {
+    "project_id": "720043",
+    "is_winner": true,
+    "is_overall_winner": false,
+    "is_sponsor_winner": false,
+    "is_track_winner": true,
+    "is_beginner_winner": false,
+    "awards": [
+      {
+        "name": "Cafe Cultura Latine' Heritage Month Digital Divide Challenge",
+        "award_type": "track",
+        "sponsor": null,
+        "placement": null,
+        "official_source": "https://devpost.com/software/mercado",
+        "raw_badge_text": "Cafe Cultura Latine' Heritage Month Digital Divide Challenge"
+      }
+    ],
+    "unsealed_at": "2026-09-26T02:03:23.793733Z"
+  },
+  "718897": {
+    "project_id": "718897",
+    "is_winner": true,
+    "is_overall_winner": false,
+    "is_sponsor_winner": false,
+    "is_track_winner": true,
+    "is_beginner_winner": false,
+    "awards": [
+      {
+        "name": "Cafe Cultura Latine' Heritage Month Digital Divide Challenge",
+        "award_type": "track",
+        "sponsor": null,
+        "placement": null,
+        "official_source": "https://devpost.com/software/latinconnect",
+        "raw_badge_text": "Cafe Cultura Latine' Heritage Month Digital Divide Challenge"
+      }
+    ],
+    "unsealed_at": "2026-09-26T02:03:23.793733Z"
+  },
+  "718438": {
+    "project_id": "718438",
+    "is_winner": true,
+    "is_overall_winner": false,
+    "is_sponsor_winner": false,
+    "is_track_winner": true,
+    "is_beginner_winner": false,
+    "awards": [
+      {
+        "name": "Break Through Tech",
+        "award_type": "track",
+        "sponsor": null,
+        "placement": null,
+        "official_source": "https://devpost.com/software/shellhacked",
+        "raw_badge_text": "Break Through Tech"
+      }
+    ],
+    "unsealed_at": "2026-09-26T02:03:23.793733Z"
+  },
+  "720368": {
+    "project_id": "720368",
+    "is_winner": true,
+    "is_overall_winner": false,
+    "is_sponsor_winner": false,
+    "is_track_winner": true,
+    "is_beginner_winner": false,
+    "awards": [
+      {
+        "name": "BNY AI-powered Financial Fraud Detection System",
+        "award_type": "track",
+        "sponsor": null,
+        "placement": null,
+        "official_source": "https://devpost.com/software/fraudguard-3gxd0w",
+        "raw_badge_text": "BNY AI-powered Financial Fraud Detection System"
+      }
+    ],
+    "unsealed_at": "2026-09-26T02:03:23.793733Z"
+  },
+  "719917": {
+    "project_id": "719917",
+    "is_winner": true,
+    "is_overall_winner": false,
+    "is_sponsor_winner": false,
+    "is_track_winner": true,
+    "is_beginner_winner": false,
+    "awards": [
+      {
+        "name": "BNY AI-powered Financial Fraud Detection System",
+        "award_type": "track",
+        "sponsor": null,
+        "placement": null,
+        "official_source": "https://devpost.com/software/h2a-bank",
+        "raw_badge_text": "BNY AI-powered Financial Fraud Detection System"
+      }
+    ],
+    "unsealed_at": "2026-09-26T02:03:23.793733Z"
+  },
+  "719119": {
+    "project_id": "719119",
+    "is_winner": true,
+    "is_overall_winner": false,
+    "is_sponsor_winner": false,
+    "is_track_winner": true,
+    "is_beginner_winner": false,
+    "awards": [
+      {
+        "name": "[MLH] Best Use of Auth0",
+        "award_type": "track",
+        "sponsor": null,
+        "placement": null,
+        "official_source": "https://devpost.com/software/watchdog-vz03q8",
+        "raw_badge_text": "[MLH] Best Use of Auth0"
+      }
+    ],
+    "unsealed_at": "2026-09-26T02:03:23.793733Z"
+  },
+  "720039": {
+    "project_id": "720039",
+    "is_winner": true,
+    "is_overall_winner": false,
+    "is_sponsor_winner": false,
+    "is_track_winner": true,
+    "is_beginner_winner": false,
+    "awards": [
+      {
+        "name": "[MLH] Best DEI Hack",
+        "award_type": "track",
+        "sponsor": null,
+        "placement": null,
+        "official_source": "https://devpost.com/software/fair-share-nt0qx7",
+        "raw_badge_text": "[MLH] Best DEI Hack"
+      }
+    ],
+    "unsealed_at": "2026-09-26T02:03:23.793733Z"
+  },
+  "718411": {
+    "project_id": "718411",
+    "is_winner": true,
+    "is_overall_winner": false,
+    "is_sponsor_winner": false,
+    "is_track_winner": true,
+    "is_beginner_winner": false,
+    "awards": [
+      {
+        "name": "[MLH] Best Use of Defang",
+        "award_type": "track",
+        "sponsor": null,
+        "placement": null,
+        "official_source": "https://devpost.com/software/financial-education-for-women-at-fiu",
+        "raw_badge_text": "[MLH] Best Use of Defang"
+      }
+    ],
+    "unsealed_at": "2026-09-26T02:03:23.793733Z"
+  },
+  "719798": {
+    "project_id": "719798",
+    "is_winner": true,
+    "is_overall_winner": false,
+    "is_sponsor_winner": false,
+    "is_track_winner": true,
+    "is_beginner_winner": false,
+    "awards": [
+      {
+        "name": "[MLH] Best Use of Streamlit",
+        "award_type": "track",
+        "sponsor": null,
+        "placement": null,
+        "official_source": "https://devpost.com/software/water-quality-predictor-with-ml-and-data-visualizatio",
+        "raw_badge_text": "[MLH] Best Use of Streamlit"
+      }
+    ],
+    "unsealed_at": "2026-09-26T02:03:23.793733Z"
+  },
+  "718534": {
+    "project_id": "718534",
+    "is_winner": true,
+    "is_overall_winner": false,
+    "is_sponsor_winner": false,
+    "is_track_winner": true,
+    "is_beginner_winner": false,
+    "awards": [
+      {
+        "name": "Clout prize",
+        "award_type": "track",
+        "sponsor": null,
+        "placement": null,
+        "official_source": "https://devpost.com/software/dinojourney",
+        "raw_badge_text": "Clout prize"
+      }
+    ],
+    "unsealed_at": "2026-09-26T02:03:23.793733Z"
+  },
+  "720293": {
+    "project_id": "720293",
+    "is_winner": false,
+    "is_overall_winner": false,
+    "is_sponsor_winner": false,
+    "is_track_winner": false,
+    "is_beginner_winner": false,
+    "awards": [],
+    "unsealed_at": "2026-09-26T02:03:23.793733Z"
+  },
+  "720712": {
+    "project_id": "720712",
+    "is_winner": false,
+    "is_overall_winner": false,
+    "is_sponsor_winner": false,
+    "is_track_winner": false,
+    "is_beginner_winner": false,
+    "awards": [],
+    "unsealed_at": "2026-09-26T02:03:23.793733Z"
+  },
+  "720708": {
+    "project_id": "720708",
+    "is_winner": false,
+    "is_overall_winner": false,
+    "is_sponsor_winner": false,
+    "is_track_winner": false,
+    "is_beginner_winner": false,
+    "awards": [],
+    "unsealed_at": "2026-09-26T02:03:23.793733Z"
+  },
+  "720522": {
+    "project_id": "720522",
+    "is_winner": false,
+    "is_overall_winner": false,
+    "is_sponsor_winner": false,
+    "is_track_winner": false,
+    "is_beginner_winner": false,
+    "awards": [],
+    "unsealed_at": "2026-09-26T02:03:23.793733Z"
+  },
+  "719871": {
+    "project_id": "719871",
+    "is_winner": false,
+    "is_overall_winner": false,
+    "is_sponsor_winner": false,
+    "is_track_winner": false,
+    "is_beginner_winner": false,
+    "awards": [],
+    "unsealed_at": "2026-09-26T02:03:23.793733Z"
+  },
+  "719260": {
+    "project_id": "719260",
+    "is_winner": false,
+    "is_overall_winner": false,
+    "is_sponsor_winner": false,
+    "is_track_winner": false,
+    "is_beginner_winner": false,
+    "awards": [],
+    "unsealed_at": "2026-09-26T02:03:23.793733Z"
+  },
+  "720555": {
+    "project_id": "720555",
+    "is_winner": false,
+    "is_overall_winner": false,
+    "is_sponsor_winner": false,
+    "is_track_winner": false,
+    "is_beginner_winner": false,
+    "awards": [],
+    "unsealed_at": "2026-09-26T02:03:23.793733Z"
+  },
+  "720587": {
+    "project_id": "720587",
+    "is_winner": false,
+    "is_overall_winner": false,
+    "is_sponsor_winner": false,
+    "is_track_winner": false,
+    "is_beginner_winner": false,
+    "awards": [],
+    "unsealed_at": "2026-09-26T02:03:23.793733Z"
+  },
+  "720407": {
+    "project_id": "720407",
+    "is_winner": false,
+    "is_overall_winner": false,
+    "is_sponsor_winner": false,
+    "is_track_winner": false,
+    "is_beginner_winner": false,
+    "awards": [],
+    "unsealed_at": "2026-09-26T02:03:23.793733Z"
+  },
+  "718491": {
+    "project_id": "718491",
+    "is_winner": false,
+    "is_overall_winner": false,
+    "is_sponsor_winner": false,
+    "is_track_winner": false,
+    "is_beginner_winner": false,
+    "awards": [],
+    "unsealed_at": "2026-09-26T02:03:23.793733Z"
+  },
+  "720575": {
+    "project_id": "720575",
+    "is_winner": false,
+    "is_overall_winner": false,
+    "is_sponsor_winner": false,
+    "is_track_winner": false,
+    "is_beginner_winner": false,
+    "awards": [],
+    "unsealed_at": "2026-09-26T02:03:23.793733Z"
+  },
+  "720569": {
+    "project_id": "720569",
+    "is_winner": false,
+    "is_overall_winner": false,
+    "is_sponsor_winner": false,
+    "is_track_winner": false,
+    "is_beginner_winner": false,
+    "awards": [],
+    "unsealed_at": "2026-09-26T02:03:23.793733Z"
+  },
+  "720483": {
+    "project_id": "720483",
+    "is_winner": false,
+    "is_overall_winner": false,
+    "is_sponsor_winner": false,
+    "is_track_winner": false,
+    "is_beginner_winner": false,
+    "awards": [],
+    "unsealed_at": "2026-09-26T02:03:23.793733Z"
+  },
+  "720583": {
+    "project_id": "720583",
+    "is_winner": false,
+    "is_overall_winner": false,
+    "is_sponsor_winner": false,
+    "is_track_winner": false,
+    "is_beginner_winner": false,
+    "awards": [],
+    "unsealed_at": "2026-09-26T02:03:23.793733Z"
+  },
+  "720306": {
+    "project_id": "720306",
+    "is_winner": false,
+    "is_overall_winner": false,
+    "is_sponsor_winner": false,
+    "is_track_winner": false,
+    "is_beginner_winner": false,
+    "awards": [],
+    "unsealed_at": "2026-09-26T02:03:23.793733Z"
+  },
+  "720602": {
+    "project_id": "720602",
+    "is_winner": false,
+    "is_overall_winner": false,
+    "is_sponsor_winner": false,
+    "is_track_winner": false,
+    "is_beginner_winner": false,
+    "awards": [],
+    "unsealed_at": "2026-09-26T02:03:23.793733Z"
+  },
+  "718419": {
+    "project_id": "718419",
+    "is_winner": false,
+    "is_overall_winner": false,
+    "is_sponsor_winner": false,
+    "is_track_winner": false,
+    "is_beginner_winner": false,
+    "awards": [],
+    "unsealed_at": "2026-09-26T02:03:23.793733Z"
+  },
+  "720563": {
+    "project_id": "720563",
+    "is_winner": false,
+    "is_overall_winner": false,
+    "is_sponsor_winner": false,
+    "is_track_winner": false,
+    "is_beginner_winner": false,
+    "awards": [],
+    "unsealed_at": "2026-09-26T02:03:23.793733Z"
+  },
+  "719788": {
+    "project_id": "719788",
+    "is_winner": false,
+    "is_overall_winner": false,
+    "is_sponsor_winner": false,
+    "is_track_winner": false,
+    "is_beginner_winner": false,
+    "awards": [],
+    "unsealed_at": "2026-09-26T02:03:23.793733Z"
+  },
+  "720598": {
+    "project_id": "720598",
+    "is_winner": false,
+    "is_overall_winner": false,
+    "is_sponsor_winner": false,
+    "is_track_winner": false,
+    "is_beginner_winner": false,
+    "awards": [],
+    "unsealed_at": "2026-09-26T02:03:23.793733Z"
+  },
+  "719835": {
+    "project_id": "719835",
+    "is_winner": false,
+    "is_overall_winner": false,
+    "is_sponsor_winner": false,
+    "is_track_winner": false,
+    "is_beginner_winner": false,
+    "awards": [],
+    "unsealed_at": "2026-09-26T02:03:23.793733Z"
+  },
+  "719560": {
+    "project_id": "719560",
+    "is_winner": false,
+    "is_overall_winner": false,
+    "is_sponsor_winner": false,
+    "is_track_winner": false,
+    "is_beginner_winner": false,
+    "awards": [],
+    "unsealed_at": "2026-09-26T02:03:23.793733Z"
+  },
+  "720322": {
+    "project_id": "720322",
+    "is_winner": false,
+    "is_overall_winner": false,
+    "is_sponsor_winner": false,
+    "is_track_winner": false,
+    "is_beginner_winner": false,
+    "awards": [],
+    "unsealed_at": "2026-09-26T02:03:23.793733Z"
+  },
+  "720423": {
+    "project_id": "720423",
+    "is_winner": false,
+    "is_overall_winner": false,
+    "is_sponsor_winner": false,
+    "is_track_winner": false,
+    "is_beginner_winner": false,
+    "awards": [],
+    "unsealed_at": "2026-09-26T02:03:23.793733Z"
+  },
+  "720376": {
+    "project_id": "720376",
+    "is_winner": false,
+    "is_overall_winner": false,
+    "is_sponsor_winner": false,
+    "is_track_winner": false,
+    "is_beginner_winner": false,
+    "awards": [],
+    "unsealed_at": "2026-09-26T02:03:23.793733Z"
+  },
+  "719751": {
+    "project_id": "719751",
+    "is_winner": false,
+    "is_overall_winner": false,
+    "is_sponsor_winner": false,
+    "is_track_winner": false,
+    "is_beginner_winner": false,
+    "awards": [],
+    "unsealed_at": "2026-09-26T02:03:23.793733Z"
+  },
+  "720450": {
+    "project_id": "720450",
+    "is_winner": false,
+    "is_overall_winner": false,
+    "is_sponsor_winner": false,
+    "is_track_winner": false,
+    "is_beginner_winner": false,
+    "awards": [],
+    "unsealed_at": "2026-09-26T02:03:23.793733Z"
+  },
+  "718454": {
+    "project_id": "718454",
+    "is_winner": false,
+    "is_overall_winner": false,
+    "is_sponsor_winner": false,
+    "is_track_winner": false,
+    "is_beginner_winner": false,
+    "awards": [],
+    "unsealed_at": "2026-09-26T02:03:23.793733Z"
+  },
+  "720240": {
+    "project_id": "720240",
+    "is_winner": false,
+    "is_overall_winner": false,
+    "is_sponsor_winner": false,
+    "is_track_winner": false,
+    "is_beginner_winner": false,
+    "awards": [],
+    "unsealed_at": "2026-09-26T02:03:23.793733Z"
+  },
+  "720154": {
+    "project_id": "720154",
+    "is_winner": false,
+    "is_overall_winner": false,
+    "is_sponsor_winner": false,
+    "is_track_winner": false,
+    "is_beginner_winner": false,
+    "awards": [],
+    "unsealed_at": "2026-09-26T02:03:23.793733Z"
+  },
+  "720428": {
+    "project_id": "720428",
+    "is_winner": false,
+    "is_overall_winner": false,
+    "is_sponsor_winner": false,
+    "is_track_winner": false,
+    "is_beginner_winner": false,
+    "awards": [],
+    "unsealed_at": "2026-09-26T02:03:23.793733Z"
+  },
+  "720558": {
+    "project_id": "720558",
+    "is_winner": false,
+    "is_overall_winner": false,
+    "is_sponsor_winner": false,
+    "is_track_winner": false,
+    "is_beginner_winner": false,
+    "awards": [],
+    "unsealed_at": "2026-09-26T02:03:23.793733Z"
+  },
+  "720433": {
+    "project_id": "720433",
+    "is_winner": false,
+    "is_overall_winner": false,
+    "is_sponsor_winner": false,
+    "is_track_winner": false,
+    "is_beginner_winner": false,
+    "awards": [],
+    "unsealed_at": "2026-09-26T02:03:23.793733Z"
+  },
+  "720209": {
+    "project_id": "720209",
+    "is_winner": false,
+    "is_overall_winner": false,
+    "is_sponsor_winner": false,
+    "is_track_winner": false,
+    "is_beginner_winner": false,
+    "awards": [],
+    "unsealed_at": "2026-09-26T02:03:23.793733Z"
+  },
+  "719570": {
+    "project_id": "719570",
+    "is_winner": false,
+    "is_overall_winner": false,
+    "is_sponsor_winner": false,
+    "is_track_winner": false,
+    "is_beginner_winner": false,
+    "awards": [],
+    "unsealed_at": "2026-09-26T02:03:23.793733Z"
+  },
+  "718439": {
+    "project_id": "718439",
+    "is_winner": false,
+    "is_overall_winner": false,
+    "is_sponsor_winner": false,
+    "is_track_winner": false,
+    "is_beginner_winner": false,
+    "awards": [],
+    "unsealed_at": "2026-09-26T02:03:23.793733Z"
+  },
+  "720582": {
+    "project_id": "720582",
+    "is_winner": false,
+    "is_overall_winner": false,
+    "is_sponsor_winner": false,
+    "is_track_winner": false,
+    "is_beginner_winner": false,
+    "awards": [],
+    "unsealed_at": "2026-09-26T02:03:23.793733Z"
+  },
+  "720491": {
+    "project_id": "720491",
+    "is_winner": false,
+    "is_overall_winner": false,
+    "is_sponsor_winner": false,
+    "is_track_winner": false,
+    "is_beginner_winner": false,
+    "awards": [],
+    "unsealed_at": "2026-09-26T02:03:23.793733Z"
+  },
+  "720319": {
+    "project_id": "720319",
+    "is_winner": false,
+    "is_overall_winner": false,
+    "is_sponsor_winner": false,
+    "is_track_winner": false,
+    "is_beginner_winner": false,
+    "awards": [],
+    "unsealed_at": "2026-09-26T02:03:23.793733Z"
+  },
+  "720490": {
+    "project_id": "720490",
+    "is_winner": false,
+    "is_overall_winner": false,
+    "is_sponsor_winner": false,
+    "is_track_winner": false,
+    "is_beginner_winner": false,
+    "awards": [],
+    "unsealed_at": "2026-09-26T02:03:23.793733Z"
+  },
+  "719980": {
+    "project_id": "719980",
+    "is_winner": false,
+    "is_overall_winner": false,
+    "is_sponsor_winner": false,
+    "is_track_winner": false,
+    "is_beginner_winner": false,
+    "awards": [],
+    "unsealed_at": "2026-09-26T02:03:23.793733Z"
+  },
+  "718423": {
+    "project_id": "718423",
+    "is_winner": false,
+    "is_overall_winner": false,
+    "is_sponsor_winner": false,
+    "is_track_winner": false,
+    "is_beginner_winner": false,
+    "awards": [],
+    "unsealed_at": "2026-09-26T02:03:23.793733Z"
+  },
+  "719405": {
+    "project_id": "719405",
+    "is_winner": false,
+    "is_overall_winner": false,
+    "is_sponsor_winner": false,
+    "is_track_winner": false,
+    "is_beginner_winner": false,
+    "awards": [],
+    "unsealed_at": "2026-09-26T02:03:23.793733Z"
+  },
+  "720494": {
+    "project_id": "720494",
+    "is_winner": false,
+    "is_overall_winner": false,
+    "is_sponsor_winner": false,
+    "is_track_winner": false,
+    "is_beginner_winner": false,
+    "awards": [],
+    "unsealed_at": "2026-09-26T02:03:23.793733Z"
+  },
+  "720556": {
+    "project_id": "720556",
+    "is_winner": false,
+    "is_overall_winner": false,
+    "is_sponsor_winner": false,
+    "is_track_winner": false,
+    "is_beginner_winner": false,
+    "awards": [],
+    "unsealed_at": "2026-09-26T02:03:23.793733Z"
+  },
+  "719984": {
+    "project_id": "719984",
+    "is_winner": false,
+    "is_overall_winner": false,
+    "is_sponsor_winner": false,
+    "is_track_winner": false,
+    "is_beginner_winner": false,
+    "awards": [],
+    "unsealed_at": "2026-09-26T02:03:23.793733Z"
+  },
+  "720417": {
+    "project_id": "720417",
+    "is_winner": false,
+    "is_overall_winner": false,
+    "is_sponsor_winner": false,
+    "is_track_winner": false,
+    "is_beginner_winner": false,
+    "awards": [],
+    "unsealed_at": "2026-09-26T02:03:23.793733Z"
+  },
+  "720542": {
+    "project_id": "720542",
+    "is_winner": false,
+    "is_overall_winner": false,
+    "is_sponsor_winner": false,
+    "is_track_winner": false,
+    "is_beginner_winner": false,
+    "awards": [],
+    "unsealed_at": "2026-09-26T02:03:23.793733Z"
+  },
+  "720134": {
+    "project_id": "720134",
+    "is_winner": false,
+    "is_overall_winner": false,
+    "is_sponsor_winner": false,
+    "is_track_winner": false,
+    "is_beginner_winner": false,
+    "awards": [],
+    "unsealed_at": "2026-09-26T02:03:23.793733Z"
+  },
+  "719820": {
+    "project_id": "719820",
+    "is_winner": false,
+    "is_overall_winner": false,
+    "is_sponsor_winner": false,
+    "is_track_winner": false,
+    "is_beginner_winner": false,
+    "awards": [],
+    "unsealed_at": "2026-09-26T02:03:23.793733Z"
+  },
+  "720384": {
+    "project_id": "720384",
+    "is_winner": false,
+    "is_overall_winner": false,
+    "is_sponsor_winner": false,
+    "is_track_winner": false,
+    "is_beginner_winner": false,
+    "awards": [],
+    "unsealed_at": "2026-09-26T02:03:23.793733Z"
+  },
+  "720342": {
+    "project_id": "720342",
+    "is_winner": false,
+    "is_overall_winner": false,
+    "is_sponsor_winner": false,
+    "is_track_winner": false,
+    "is_beginner_winner": false,
+    "awards": [],
+    "unsealed_at": "2026-09-26T02:03:23.793733Z"
+  },
+  "720529": {
+    "project_id": "720529",
+    "is_winner": false,
+    "is_overall_winner": false,
+    "is_sponsor_winner": false,
+    "is_track_winner": false,
+    "is_beginner_winner": false,
+    "awards": [],
+    "unsealed_at": "2026-09-26T02:03:23.793733Z"
+  },
+  "720548": {
+    "project_id": "720548",
+    "is_winner": false,
+    "is_overall_winner": false,
+    "is_sponsor_winner": false,
+    "is_track_winner": false,
+    "is_beginner_winner": false,
+    "awards": [],
+    "unsealed_at": "2026-09-26T02:03:23.793733Z"
+  },
+  "719805": {
+    "project_id": "719805",
+    "is_winner": false,
+    "is_overall_winner": false,
+    "is_sponsor_winner": false,
+    "is_track_winner": false,
+    "is_beginner_winner": false,
+    "awards": [],
+    "unsealed_at": "2026-09-26T02:03:23.793733Z"
+  },
+  "720475": {
+    "project_id": "720475",
+    "is_winner": false,
+    "is_overall_winner": false,
+    "is_sponsor_winner": false,
+    "is_track_winner": false,
+    "is_beginner_winner": false,
+    "awards": [],
+    "unsealed_at": "2026-09-26T02:03:23.793733Z"
+  },
+  "720572": {
+    "project_id": "720572",
+    "is_winner": false,
+    "is_overall_winner": false,
+    "is_sponsor_winner": false,
+    "is_track_winner": false,
+    "is_beginner_winner": false,
+    "awards": [],
+    "unsealed_at": "2026-09-26T02:03:23.793733Z"
+  },
+  "720378": {
+    "project_id": "720378",
+    "is_winner": false,
+    "is_overall_winner": false,
+    "is_sponsor_winner": false,
+    "is_track_winner": false,
+    "is_beginner_winner": false,
+    "awards": [],
+    "unsealed_at": "2026-09-26T02:03:23.793733Z"
+  },
+  "720485": {
+    "project_id": "720485",
+    "is_winner": false,
+    "is_overall_winner": false,
+    "is_sponsor_winner": false,
+    "is_track_winner": false,
+    "is_beginner_winner": false,
+    "awards": [],
+    "unsealed_at": "2026-09-26T02:03:23.793733Z"
+  },
+  "720311": {
+    "project_id": "720311",
+    "is_winner": false,
+    "is_overall_winner": false,
+    "is_sponsor_winner": false,
+    "is_track_winner": false,
+    "is_beginner_winner": false,
+    "awards": [],
+    "unsealed_at": "2026-09-26T02:03:23.793733Z"
+  },
+  "720375": {
+    "project_id": "720375",
+    "is_winner": false,
+    "is_overall_winner": false,
+    "is_sponsor_winner": false,
+    "is_track_winner": false,
+    "is_beginner_winner": false,
+    "awards": [],
+    "unsealed_at": "2026-09-26T02:03:23.793733Z"
+  },
+  "720318": {
+    "project_id": "720318",
+    "is_winner": false,
+    "is_overall_winner": false,
+    "is_sponsor_winner": false,
+    "is_track_winner": false,
+    "is_beginner_winner": false,
+    "awards": [],
+    "unsealed_at": "2026-09-26T02:03:23.793733Z"
+  },
+  "720468": {
+    "project_id": "720468",
+    "is_winner": false,
+    "is_overall_winner": false,
+    "is_sponsor_winner": false,
+    "is_track_winner": false,
+    "is_beginner_winner": false,
+    "awards": [],
+    "unsealed_at": "2026-09-26T02:03:23.793733Z"
+  },
+  "720297": {
+    "project_id": "720297",
+    "is_winner": false,
+    "is_overall_winner": false,
+    "is_sponsor_winner": false,
+    "is_track_winner": false,
+    "is_beginner_winner": false,
+    "awards": [],
+    "unsealed_at": "2026-09-26T02:03:23.793733Z"
+  },
+  "720393": {
+    "project_id": "720393",
+    "is_winner": false,
+    "is_overall_winner": false,
+    "is_sponsor_winner": false,
+    "is_track_winner": false,
+    "is_beginner_winner": false,
+    "awards": [],
+    "unsealed_at": "2026-09-26T02:03:23.793733Z"
+  },
+  "720388": {
+    "project_id": "720388",
+    "is_winner": false,
+    "is_overall_winner": false,
+    "is_sponsor_winner": false,
+    "is_track_winner": false,
+    "is_beginner_winner": false,
+    "awards": [],
+    "unsealed_at": "2026-09-26T02:03:23.793733Z"
+  },
+  "720449": {
+    "project_id": "720449",
+    "is_winner": false,
+    "is_overall_winner": false,
+    "is_sponsor_winner": false,
+    "is_track_winner": false,
+    "is_beginner_winner": false,
+    "awards": [],
+    "unsealed_at": "2026-09-26T02:03:23.793733Z"
+  },
+  "719312": {
+    "project_id": "719312",
+    "is_winner": false,
+    "is_overall_winner": false,
+    "is_sponsor_winner": false,
+    "is_track_winner": false,
+    "is_beginner_winner": false,
+    "awards": [],
+    "unsealed_at": "2026-09-26T02:03:23.793733Z"
+  },
+  "720185": {
+    "project_id": "720185",
+    "is_winner": false,
+    "is_overall_winner": false,
+    "is_sponsor_winner": false,
+    "is_track_winner": false,
+    "is_beginner_winner": false,
+    "awards": [],
+    "unsealed_at": "2026-09-26T02:03:23.793733Z"
+  },
+  "720401": {
+    "project_id": "720401",
+    "is_winner": false,
+    "is_overall_winner": false,
+    "is_sponsor_winner": false,
+    "is_track_winner": false,
+    "is_beginner_winner": false,
+    "awards": [],
+    "unsealed_at": "2026-09-26T02:03:23.793733Z"
+  },
+  "720430": {
+    "project_id": "720430",
+    "is_winner": false,
+    "is_overall_winner": false,
+    "is_sponsor_winner": false,
+    "is_track_winner": false,
+    "is_beginner_winner": false,
+    "awards": [],
+    "unsealed_at": "2026-09-26T02:03:23.793733Z"
+  },
+  "720440": {
+    "project_id": "720440",
+    "is_winner": false,
+    "is_overall_winner": false,
+    "is_sponsor_winner": false,
+    "is_track_winner": false,
+    "is_beginner_winner": false,
+    "awards": [],
+    "unsealed_at": "2026-09-26T02:03:23.793733Z"
+  },
+  "719954": {
+    "project_id": "719954",
+    "is_winner": false,
+    "is_overall_winner": false,
+    "is_sponsor_winner": false,
+    "is_track_winner": false,
+    "is_beginner_winner": false,
+    "awards": [],
+    "unsealed_at": "2026-09-26T02:03:23.793733Z"
+  },
+  "718424": {
+    "project_id": "718424",
+    "is_winner": false,
+    "is_overall_winner": false,
+    "is_sponsor_winner": false,
+    "is_track_winner": false,
+    "is_beginner_winner": false,
+    "awards": [],
+    "unsealed_at": "2026-09-26T02:03:23.793733Z"
+  },
+  "718523": {
+    "project_id": "718523",
+    "is_winner": false,
+    "is_overall_winner": false,
+    "is_sponsor_winner": false,
+    "is_track_winner": false,
+    "is_beginner_winner": false,
+    "awards": [],
+    "unsealed_at": "2026-09-26T02:03:23.793733Z"
+  },
+  "720392": {
+    "project_id": "720392",
+    "is_winner": false,
+    "is_overall_winner": false,
+    "is_sponsor_winner": false,
+    "is_track_winner": false,
+    "is_beginner_winner": false,
+    "awards": [],
+    "unsealed_at": "2026-09-26T02:03:23.793733Z"
+  },
+  "718976": {
+    "project_id": "718976",
+    "is_winner": false,
+    "is_overall_winner": false,
+    "is_sponsor_winner": false,
+    "is_track_winner": false,
+    "is_beginner_winner": false,
+    "awards": [],
+    "unsealed_at": "2026-09-26T02:03:23.793733Z"
+  },
+  "720274": {
+    "project_id": "720274",
+    "is_winner": false,
+    "is_overall_winner": false,
+    "is_sponsor_winner": false,
+    "is_track_winner": false,
+    "is_beginner_winner": false,
+    "awards": [],
+    "unsealed_at": "2026-09-26T02:03:23.793733Z"
+  },
+  "720263": {
+    "project_id": "720263",
+    "is_winner": false,
+    "is_overall_winner": false,
+    "is_sponsor_winner": false,
+    "is_track_winner": false,
+    "is_beginner_winner": false,
+    "awards": [],
+    "unsealed_at": "2026-09-26T02:03:23.793733Z"
+  },
+  "720406": {
+    "project_id": "720406",
+    "is_winner": false,
+    "is_overall_winner": false,
+    "is_sponsor_winner": false,
+    "is_track_winner": false,
+    "is_beginner_winner": false,
+    "awards": [],
+    "unsealed_at": "2026-09-26T02:03:23.793733Z"
+  },
+  "720303": {
+    "project_id": "720303",
+    "is_winner": false,
+    "is_overall_winner": false,
+    "is_sponsor_winner": false,
+    "is_track_winner": false,
+    "is_beginner_winner": false,
+    "awards": [],
+    "unsealed_at": "2026-09-26T02:03:23.793733Z"
+  },
+  "720379": {
+    "project_id": "720379",
+    "is_winner": false,
+    "is_overall_winner": false,
+    "is_sponsor_winner": false,
+    "is_track_winner": false,
+    "is_beginner_winner": false,
+    "awards": [],
+    "unsealed_at": "2026-09-26T02:03:23.793733Z"
+  },
+  "720380": {
+    "project_id": "720380",
+    "is_winner": false,
+    "is_overall_winner": false,
+    "is_sponsor_winner": false,
+    "is_track_winner": false,
+    "is_beginner_winner": false,
+    "awards": [],
+    "unsealed_at": "2026-09-26T02:03:23.793733Z"
+  },
+  "720317": {
+    "project_id": "720317",
+    "is_winner": false,
+    "is_overall_winner": false,
+    "is_sponsor_winner": false,
+    "is_track_winner": false,
+    "is_beginner_winner": false,
+    "awards": [],
+    "unsealed_at": "2026-09-26T02:03:23.793733Z"
+  },
+  "719962": {
+    "project_id": "719962",
+    "is_winner": false,
+    "is_overall_winner": false,
+    "is_sponsor_winner": false,
+    "is_track_winner": false,
+    "is_beginner_winner": false,
+    "awards": [],
+    "unsealed_at": "2026-09-26T02:03:23.793733Z"
+  },
+  "720047": {
+    "project_id": "720047",
+    "is_winner": false,
+    "is_overall_winner": false,
+    "is_sponsor_winner": false,
+    "is_track_winner": false,
+    "is_beginner_winner": false,
+    "awards": [],
+    "unsealed_at": "2026-09-26T02:03:23.793733Z"
+  },
+  "720048": {
+    "project_id": "720048",
+    "is_winner": false,
+    "is_overall_winner": false,
+    "is_sponsor_winner": false,
+    "is_track_winner": false,
+    "is_beginner_winner": false,
+    "awards": [],
+    "unsealed_at": "2026-09-26T02:03:23.793733Z"
+  },
+  "720411": {
+    "project_id": "720411",
+    "is_winner": false,
+    "is_overall_winner": false,
+    "is_sponsor_winner": false,
+    "is_track_winner": false,
+    "is_beginner_winner": false,
+    "awards": [],
+    "unsealed_at": "2026-09-26T02:03:23.793733Z"
+  },
+  "720204": {
+    "project_id": "720204",
+    "is_winner": false,
+    "is_overall_winner": false,
+    "is_sponsor_winner": false,
+    "is_track_winner": false,
+    "is_beginner_winner": false,
+    "awards": [],
+    "unsealed_at": "2026-09-26T02:03:23.793733Z"
+  },
+  "720248": {
+    "project_id": "720248",
+    "is_winner": false,
+    "is_overall_winner": false,
+    "is_sponsor_winner": false,
+    "is_track_winner": false,
+    "is_beginner_winner": false,
+    "awards": [],
+    "unsealed_at": "2026-09-26T02:03:23.793733Z"
+  },
+  "719617": {
+    "project_id": "719617",
+    "is_winner": false,
+    "is_overall_winner": false,
+    "is_sponsor_winner": false,
+    "is_track_winner": false,
+    "is_beginner_winner": false,
+    "awards": [],
+    "unsealed_at": "2026-09-26T02:03:23.793733Z"
+  },
+  "720391": {
+    "project_id": "720391",
+    "is_winner": false,
+    "is_overall_winner": false,
+    "is_sponsor_winner": false,
+    "is_track_winner": false,
+    "is_beginner_winner": false,
+    "awards": [],
+    "unsealed_at": "2026-09-26T02:03:23.793733Z"
+  },
+  "720410": {
+    "project_id": "720410",
+    "is_winner": false,
+    "is_overall_winner": false,
+    "is_sponsor_winner": false,
+    "is_track_winner": false,
+    "is_beginner_winner": false,
+    "awards": [],
+    "unsealed_at": "2026-09-26T02:03:23.793733Z"
+  },
+  "720363": {
+    "project_id": "720363",
+    "is_winner": false,
+    "is_overall_winner": false,
+    "is_sponsor_winner": false,
+    "is_track_winner": false,
+    "is_beginner_winner": false,
+    "awards": [],
+    "unsealed_at": "2026-09-26T02:03:23.793733Z"
+  },
+  "719346": {
+    "project_id": "719346",
+    "is_winner": false,
+    "is_overall_winner": false,
+    "is_sponsor_winner": false,
+    "is_track_winner": false,
+    "is_beginner_winner": false,
+    "awards": [],
+    "unsealed_at": "2026-09-26T02:03:23.793733Z"
+  },
+  "720264": {
+    "project_id": "720264",
+    "is_winner": false,
+    "is_overall_winner": false,
+    "is_sponsor_winner": false,
+    "is_track_winner": false,
+    "is_beginner_winner": false,
+    "awards": [],
+    "unsealed_at": "2026-09-26T02:03:23.793733Z"
+  },
+  "719151": {
+    "project_id": "719151",
+    "is_winner": false,
+    "is_overall_winner": false,
+    "is_sponsor_winner": false,
+    "is_track_winner": false,
+    "is_beginner_winner": false,
+    "awards": [],
+    "unsealed_at": "2026-09-26T02:03:23.793733Z"
+  },
+  "718466": {
+    "project_id": "718466",
+    "is_winner": false,
+    "is_overall_winner": false,
+    "is_sponsor_winner": false,
+    "is_track_winner": false,
+    "is_beginner_winner": false,
+    "awards": [],
+    "unsealed_at": "2026-09-26T02:03:23.793733Z"
+  },
+  "720394": {
+    "project_id": "720394",
+    "is_winner": false,
+    "is_overall_winner": false,
+    "is_sponsor_winner": false,
+    "is_track_winner": false,
+    "is_beginner_winner": false,
+    "awards": [],
+    "unsealed_at": "2026-09-26T02:03:23.793733Z"
+  },
+  "720377": {
+    "project_id": "720377",
+    "is_winner": false,
+    "is_overall_winner": false,
+    "is_sponsor_winner": false,
+    "is_track_winner": false,
+    "is_beginner_winner": false,
+    "awards": [],
+    "unsealed_at": "2026-09-26T02:03:23.793733Z"
+  },
+  "720302": {
+    "project_id": "720302",
+    "is_winner": false,
+    "is_overall_winner": false,
+    "is_sponsor_winner": false,
+    "is_track_winner": false,
+    "is_beginner_winner": false,
+    "awards": [],
+    "unsealed_at": "2026-09-26T02:03:23.793733Z"
+  },
+  "720189": {
+    "project_id": "720189",
+    "is_winner": false,
+    "is_overall_winner": false,
+    "is_sponsor_winner": false,
+    "is_track_winner": false,
+    "is_beginner_winner": false,
+    "awards": [],
+    "unsealed_at": "2026-09-26T02:03:23.793733Z"
+  },
+  "720358": {
+    "project_id": "720358",
+    "is_winner": false,
+    "is_overall_winner": false,
+    "is_sponsor_winner": false,
+    "is_track_winner": false,
+    "is_beginner_winner": false,
+    "awards": [],
+    "unsealed_at": "2026-09-26T02:03:23.793733Z"
+  },
+  "720381": {
+    "project_id": "720381",
+    "is_winner": false,
+    "is_overall_winner": false,
+    "is_sponsor_winner": false,
+    "is_track_winner": false,
+    "is_beginner_winner": false,
+    "awards": [],
+    "unsealed_at": "2026-09-26T02:03:23.793733Z"
+  },
+  "720291": {
+    "project_id": "720291",
+    "is_winner": false,
+    "is_overall_winner": false,
+    "is_sponsor_winner": false,
+    "is_track_winner": false,
+    "is_beginner_winner": false,
+    "awards": [],
+    "unsealed_at": "2026-09-26T02:03:23.793733Z"
+  },
+  "720307": {
+    "project_id": "720307",
+    "is_winner": false,
+    "is_overall_winner": false,
+    "is_sponsor_winner": false,
+    "is_track_winner": false,
+    "is_beginner_winner": false,
+    "awards": [],
+    "unsealed_at": "2026-09-26T02:03:23.793733Z"
+  },
+  "720207": {
+    "project_id": "720207",
+    "is_winner": false,
+    "is_overall_winner": false,
+    "is_sponsor_winner": false,
+    "is_track_winner": false,
+    "is_beginner_winner": false,
+    "awards": [],
+    "unsealed_at": "2026-09-26T02:03:23.793733Z"
+  },
+  "720364": {
+    "project_id": "720364",
+    "is_winner": false,
+    "is_overall_winner": false,
+    "is_sponsor_winner": false,
+    "is_track_winner": false,
+    "is_beginner_winner": false,
+    "awards": [],
+    "unsealed_at": "2026-09-26T02:03:23.793733Z"
+  },
+  "720320": {
+    "project_id": "720320",
+    "is_winner": false,
+    "is_overall_winner": false,
+    "is_sponsor_winner": false,
+    "is_track_winner": false,
+    "is_beginner_winner": false,
+    "awards": [],
+    "unsealed_at": "2026-09-26T02:03:23.793733Z"
+  },
+  "720213": {
+    "project_id": "720213",
+    "is_winner": false,
+    "is_overall_winner": false,
+    "is_sponsor_winner": false,
+    "is_track_winner": false,
+    "is_beginner_winner": false,
+    "awards": [],
+    "unsealed_at": "2026-09-26T02:03:23.793733Z"
+  },
+  "720357": {
+    "project_id": "720357",
+    "is_winner": false,
+    "is_overall_winner": false,
+    "is_sponsor_winner": false,
+    "is_track_winner": false,
+    "is_beginner_winner": false,
+    "awards": [],
+    "unsealed_at": "2026-09-26T02:03:23.793733Z"
+  },
+  "719686": {
+    "project_id": "719686",
+    "is_winner": false,
+    "is_overall_winner": false,
+    "is_sponsor_winner": false,
+    "is_track_winner": false,
+    "is_beginner_winner": false,
+    "awards": [],
+    "unsealed_at": "2026-09-26T02:03:23.793733Z"
+  },
+  "719417": {
+    "project_id": "719417",
+    "is_winner": false,
+    "is_overall_winner": false,
+    "is_sponsor_winner": false,
+    "is_track_winner": false,
+    "is_beginner_winner": false,
+    "awards": [],
+    "unsealed_at": "2026-09-26T02:03:23.793733Z"
+  },
+  "720332": {
+    "project_id": "720332",
+    "is_winner": false,
+    "is_overall_winner": false,
+    "is_sponsor_winner": false,
+    "is_track_winner": false,
+    "is_beginner_winner": false,
+    "awards": [],
+    "unsealed_at": "2026-09-26T02:03:23.793733Z"
+  },
+  "720292": {
+    "project_id": "720292",
+    "is_winner": false,
+    "is_overall_winner": false,
+    "is_sponsor_winner": false,
+    "is_track_winner": false,
+    "is_beginner_winner": false,
+    "awards": [],
+    "unsealed_at": "2026-09-26T02:03:23.793733Z"
+  },
+  "718985": {
+    "project_id": "718985",
+    "is_winner": false,
+    "is_overall_winner": false,
+    "is_sponsor_winner": false,
+    "is_track_winner": false,
+    "is_beginner_winner": false,
+    "awards": [],
+    "unsealed_at": "2026-09-26T02:03:23.793733Z"
+  },
+  "720036": {
+    "project_id": "720036",
+    "is_winner": false,
+    "is_overall_winner": false,
+    "is_sponsor_winner": false,
+    "is_track_winner": false,
+    "is_beginner_winner": false,
+    "awards": [],
+    "unsealed_at": "2026-09-26T02:03:23.793733Z"
+  },
+  "719983": {
+    "project_id": "719983",
+    "is_winner": false,
+    "is_overall_winner": false,
+    "is_sponsor_winner": false,
+    "is_track_winner": false,
+    "is_beginner_winner": false,
+    "awards": [],
+    "unsealed_at": "2026-09-26T02:03:23.793733Z"
+  },
+  "720299": {
+    "project_id": "720299",
+    "is_winner": false,
+    "is_overall_winner": false,
+    "is_sponsor_winner": false,
+    "is_track_winner": false,
+    "is_beginner_winner": false,
+    "awards": [],
+    "unsealed_at": "2026-09-26T02:03:23.793733Z"
+  },
+  "720337": {
+    "project_id": "720337",
+    "is_winner": false,
+    "is_overall_winner": false,
+    "is_sponsor_winner": false,
+    "is_track_winner": false,
+    "is_beginner_winner": false,
+    "awards": [],
+    "unsealed_at": "2026-09-26T02:03:23.793733Z"
+  },
+  "719553": {
+    "project_id": "719553",
+    "is_winner": false,
+    "is_overall_winner": false,
+    "is_sponsor_winner": false,
+    "is_track_winner": false,
+    "is_beginner_winner": false,
+    "awards": [],
+    "unsealed_at": "2026-09-26T02:03:23.793733Z"
+  },
+  "719922": {
+    "project_id": "719922",
+    "is_winner": false,
+    "is_overall_winner": false,
+    "is_sponsor_winner": false,
+    "is_track_winner": false,
+    "is_beginner_winner": false,
+    "awards": [],
+    "unsealed_at": "2026-09-26T02:03:23.793733Z"
+  },
+  "720326": {
+    "project_id": "720326",
+    "is_winner": false,
+    "is_overall_winner": false,
+    "is_sponsor_winner": false,
+    "is_track_winner": false,
+    "is_beginner_winner": false,
+    "awards": [],
+    "unsealed_at": "2026-09-26T02:03:23.793733Z"
+  },
+  "719207": {
+    "project_id": "719207",
+    "is_winner": false,
+    "is_overall_winner": false,
+    "is_sponsor_winner": false,
+    "is_track_winner": false,
+    "is_beginner_winner": false,
+    "awards": [],
+    "unsealed_at": "2026-09-26T02:03:23.793733Z"
+  },
+  "720275": {
+    "project_id": "720275",
+    "is_winner": false,
+    "is_overall_winner": false,
+    "is_sponsor_winner": false,
+    "is_track_winner": false,
+    "is_beginner_winner": false,
+    "awards": [],
+    "unsealed_at": "2026-09-26T02:03:23.793733Z"
+  },
+  "709385": {
+    "project_id": "709385",
+    "is_winner": true,
+    "is_overall_winner": false,
+    "is_sponsor_winner": false,
+    "is_track_winner": true,
+    "is_beginner_winner": false,
+    "awards": [
+      {
+        "name": "XYZ Domain",
+        "award_type": "track",
+        "sponsor": null,
+        "placement": null,
+        "official_source": "https://devpost.com/software/aviationhub-9cz8v6",
+        "raw_badge_text": "XYZ Domain"
+      },
+      {
+        "name": "Full Access License for Interview Cake",
+        "award_type": "track",
+        "sponsor": null,
+        "placement": null,
+        "official_source": "https://devpost.com/software/aviationhub-9cz8v6",
+        "raw_badge_text": "Full Access License for Interview Cake"
+      }
+    ],
+    "unsealed_at": "2026-09-26T02:03:23.793733Z"
+  },
+  "719575": {
+    "project_id": "719575",
+    "is_winner": false,
+    "is_overall_winner": false,
+    "is_sponsor_winner": false,
+    "is_track_winner": false,
+    "is_beginner_winner": false,
+    "awards": [],
+    "unsealed_at": "2026-09-26T02:03:23.793733Z"
+  },
+  "719594": {
+    "project_id": "719594",
+    "is_winner": false,
+    "is_overall_winner": false,
+    "is_sponsor_winner": false,
+    "is_track_winner": false,
+    "is_beginner_winner": false,
+    "awards": [],
+    "unsealed_at": "2026-09-26T02:03:23.793733Z"
+  },
+  "720280": {
+    "project_id": "720280",
+    "is_winner": false,
+    "is_overall_winner": false,
+    "is_sponsor_winner": false,
+    "is_track_winner": false,
+    "is_beginner_winner": false,
+    "awards": [],
+    "unsealed_at": "2026-09-26T02:03:23.793733Z"
+  },
+  "718451": {
+    "project_id": "718451",
+    "is_winner": false,
+    "is_overall_winner": false,
+    "is_sponsor_winner": false,
+    "is_track_winner": false,
+    "is_beginner_winner": false,
+    "awards": [],
+    "unsealed_at": "2026-09-26T02:03:23.793733Z"
+  },
+  "720298": {
+    "project_id": "720298",
+    "is_winner": false,
+    "is_overall_winner": false,
+    "is_sponsor_winner": false,
+    "is_track_winner": false,
+    "is_beginner_winner": false,
+    "awards": [],
+    "unsealed_at": "2026-09-26T02:03:23.793733Z"
+  },
+  "719583": {
+    "project_id": "719583",
+    "is_winner": false,
+    "is_overall_winner": false,
+    "is_sponsor_winner": false,
+    "is_track_winner": false,
+    "is_beginner_winner": false,
+    "awards": [],
+    "unsealed_at": "2026-09-26T02:03:23.793733Z"
+  },
+  "720163": {
+    "project_id": "720163",
+    "is_winner": false,
+    "is_overall_winner": false,
+    "is_sponsor_winner": false,
+    "is_track_winner": false,
+    "is_beginner_winner": false,
+    "awards": [],
+    "unsealed_at": "2026-09-26T02:03:23.793733Z"
+  },
+  "720284": {
+    "project_id": "720284",
+    "is_winner": false,
+    "is_overall_winner": false,
+    "is_sponsor_winner": false,
+    "is_track_winner": false,
+    "is_beginner_winner": false,
+    "awards": [],
+    "unsealed_at": "2026-09-26T02:03:23.793733Z"
+  },
+  "720236": {
+    "project_id": "720236",
+    "is_winner": false,
+    "is_overall_winner": false,
+    "is_sponsor_winner": false,
+    "is_track_winner": false,
+    "is_beginner_winner": false,
+    "awards": [],
+    "unsealed_at": "2026-09-26T02:03:23.793733Z"
+  },
+  "719522": {
+    "project_id": "719522",
+    "is_winner": false,
+    "is_overall_winner": false,
+    "is_sponsor_winner": false,
+    "is_track_winner": false,
+    "is_beginner_winner": false,
+    "awards": [],
+    "unsealed_at": "2026-09-26T02:03:23.793733Z"
+  },
+  "718420": {
+    "project_id": "718420",
+    "is_winner": false,
+    "is_overall_winner": false,
+    "is_sponsor_winner": false,
+    "is_track_winner": false,
+    "is_beginner_winner": false,
+    "awards": [],
+    "unsealed_at": "2026-09-26T02:03:23.793733Z"
+  },
+  "720195": {
+    "project_id": "720195",
+    "is_winner": false,
+    "is_overall_winner": false,
+    "is_sponsor_winner": false,
+    "is_track_winner": false,
+    "is_beginner_winner": false,
+    "awards": [],
+    "unsealed_at": "2026-09-26T02:03:23.793733Z"
+  },
+  "720114": {
+    "project_id": "720114",
+    "is_winner": false,
+    "is_overall_winner": false,
+    "is_sponsor_winner": false,
+    "is_track_winner": false,
+    "is_beginner_winner": false,
+    "awards": [],
+    "unsealed_at": "2026-09-26T02:03:23.793733Z"
+  },
+  "719010": {
+    "project_id": "719010",
+    "is_winner": false,
+    "is_overall_winner": false,
+    "is_sponsor_winner": false,
+    "is_track_winner": false,
+    "is_beginner_winner": false,
+    "awards": [],
+    "unsealed_at": "2026-09-26T02:03:23.793733Z"
+  },
+  "720255": {
+    "project_id": "720255",
+    "is_winner": false,
+    "is_overall_winner": false,
+    "is_sponsor_winner": false,
+    "is_track_winner": false,
+    "is_beginner_winner": false,
+    "awards": [],
+    "unsealed_at": "2026-09-26T02:03:23.793733Z"
+  },
+  "720193": {
+    "project_id": "720193",
+    "is_winner": false,
+    "is_overall_winner": false,
+    "is_sponsor_winner": false,
+    "is_track_winner": false,
+    "is_beginner_winner": false,
+    "awards": [],
+    "unsealed_at": "2026-09-26T02:03:23.793733Z"
+  },
+  "720059": {
+    "project_id": "720059",
+    "is_winner": false,
+    "is_overall_winner": false,
+    "is_sponsor_winner": false,
+    "is_track_winner": false,
+    "is_beginner_winner": false,
+    "awards": [],
+    "unsealed_at": "2026-09-26T02:03:23.793733Z"
+  },
+  "720153": {
+    "project_id": "720153",
+    "is_winner": false,
+    "is_overall_winner": false,
+    "is_sponsor_winner": false,
+    "is_track_winner": false,
+    "is_beginner_winner": false,
+    "awards": [],
+    "unsealed_at": "2026-09-26T02:03:23.793733Z"
+  },
+  "720232": {
+    "project_id": "720232",
+    "is_winner": false,
+    "is_overall_winner": false,
+    "is_sponsor_winner": false,
+    "is_track_winner": false,
+    "is_beginner_winner": false,
+    "awards": [],
+    "unsealed_at": "2026-09-26T02:03:23.793733Z"
+  },
+  "720197": {
+    "project_id": "720197",
+    "is_winner": false,
+    "is_overall_winner": false,
+    "is_sponsor_winner": false,
+    "is_track_winner": false,
+    "is_beginner_winner": false,
+    "awards": [],
+    "unsealed_at": "2026-09-26T02:03:23.793733Z"
+  },
+  "719429": {
+    "project_id": "719429",
+    "is_winner": false,
+    "is_overall_winner": false,
+    "is_sponsor_winner": false,
+    "is_track_winner": false,
+    "is_beginner_winner": false,
+    "awards": [],
+    "unsealed_at": "2026-09-26T02:03:23.793733Z"
+  },
+  "719485": {
+    "project_id": "719485",
+    "is_winner": false,
+    "is_overall_winner": false,
+    "is_sponsor_winner": false,
+    "is_track_winner": false,
+    "is_beginner_winner": false,
+    "awards": [],
+    "unsealed_at": "2026-09-26T02:03:23.793733Z"
+  },
+  "720210": {
+    "project_id": "720210",
+    "is_winner": false,
+    "is_overall_winner": false,
+    "is_sponsor_winner": false,
+    "is_track_winner": false,
+    "is_beginner_winner": false,
+    "awards": [],
+    "unsealed_at": "2026-09-26T02:03:23.793733Z"
+  },
+  "720172": {
+    "project_id": "720172",
+    "is_winner": false,
+    "is_overall_winner": false,
+    "is_sponsor_winner": false,
+    "is_track_winner": false,
+    "is_beginner_winner": false,
+    "awards": [],
+    "unsealed_at": "2026-09-26T02:03:23.793733Z"
+  },
+  "719833": {
+    "project_id": "719833",
+    "is_winner": false,
+    "is_overall_winner": false,
+    "is_sponsor_winner": false,
+    "is_track_winner": false,
+    "is_beginner_winner": false,
+    "awards": [],
+    "unsealed_at": "2026-09-26T02:03:23.793733Z"
+  },
+  "718457": {
+    "project_id": "718457",
+    "is_winner": false,
+    "is_overall_winner": false,
+    "is_sponsor_winner": false,
+    "is_track_winner": false,
+    "is_beginner_winner": false,
+    "awards": [],
+    "unsealed_at": "2026-09-26T02:03:23.793733Z"
+  },
+  "719825": {
+    "project_id": "719825",
+    "is_winner": false,
+    "is_overall_winner": false,
+    "is_sponsor_winner": false,
+    "is_track_winner": false,
+    "is_beginner_winner": false,
+    "awards": [],
+    "unsealed_at": "2026-09-26T02:03:23.793733Z"
+  },
+  "720084": {
+    "project_id": "720084",
+    "is_winner": false,
+    "is_overall_winner": false,
+    "is_sponsor_winner": false,
+    "is_track_winner": false,
+    "is_beginner_winner": false,
+    "awards": [],
+    "unsealed_at": "2026-09-26T02:03:23.793733Z"
+  },
+  "720011": {
+    "project_id": "720011",
+    "is_winner": false,
+    "is_overall_winner": false,
+    "is_sponsor_winner": false,
+    "is_track_winner": false,
+    "is_beginner_winner": false,
+    "awards": [],
+    "unsealed_at": "2026-09-26T02:03:23.793733Z"
+  },
+  "718434": {
+    "project_id": "718434",
+    "is_winner": false,
+    "is_overall_winner": false,
+    "is_sponsor_winner": false,
+    "is_track_winner": false,
+    "is_beginner_winner": false,
+    "awards": [],
+    "unsealed_at": "2026-09-26T02:03:23.793733Z"
+  },
+  "719149": {
+    "project_id": "719149",
+    "is_winner": false,
+    "is_overall_winner": false,
+    "is_sponsor_winner": false,
+    "is_track_winner": false,
+    "is_beginner_winner": false,
+    "awards": [],
+    "unsealed_at": "2026-09-26T02:03:23.793733Z"
+  },
+  "720016": {
+    "project_id": "720016",
+    "is_winner": false,
+    "is_overall_winner": false,
+    "is_sponsor_winner": false,
+    "is_track_winner": false,
+    "is_beginner_winner": false,
+    "awards": [],
+    "unsealed_at": "2026-09-26T02:03:23.793733Z"
+  },
+  "718443": {
+    "project_id": "718443",
+    "is_winner": false,
+    "is_overall_winner": false,
+    "is_sponsor_winner": false,
+    "is_track_winner": false,
+    "is_beginner_winner": false,
+    "awards": [],
+    "unsealed_at": "2026-09-26T02:03:23.793733Z"
+  },
+  "719969": {
+    "project_id": "719969",
+    "is_winner": false,
+    "is_overall_winner": false,
+    "is_sponsor_winner": false,
+    "is_track_winner": false,
+    "is_beginner_winner": false,
+    "awards": [],
+    "unsealed_at": "2026-09-26T02:03:23.793733Z"
+  },
+  "718505": {
+    "project_id": "718505",
+    "is_winner": false,
+    "is_overall_winner": false,
+    "is_sponsor_winner": false,
+    "is_track_winner": false,
+    "is_beginner_winner": false,
+    "awards": [],
+    "unsealed_at": "2026-09-26T02:03:23.793733Z"
+  },
+  "720019": {
+    "project_id": "720019",
+    "is_winner": false,
+    "is_overall_winner": false,
+    "is_sponsor_winner": false,
+    "is_track_winner": false,
+    "is_beginner_winner": false,
+    "awards": [],
+    "unsealed_at": "2026-09-26T02:03:23.793733Z"
+  },
+  "719740": {
+    "project_id": "719740",
+    "is_winner": false,
+    "is_overall_winner": false,
+    "is_sponsor_winner": false,
+    "is_track_winner": false,
+    "is_beginner_winner": false,
+    "awards": [],
+    "unsealed_at": "2026-09-26T02:03:23.793733Z"
+  },
+  "719716": {
+    "project_id": "719716",
+    "is_winner": false,
+    "is_overall_winner": false,
+    "is_sponsor_winner": false,
+    "is_track_winner": false,
+    "is_beginner_winner": false,
+    "awards": [],
+    "unsealed_at": "2026-09-26T02:03:23.793733Z"
+  },
+  "719842": {
+    "project_id": "719842",
+    "is_winner": false,
+    "is_overall_winner": false,
+    "is_sponsor_winner": false,
+    "is_track_winner": false,
+    "is_beginner_winner": false,
+    "awards": [],
+    "unsealed_at": "2026-09-26T02:03:23.793733Z"
+  },
+  "719879": {
+    "project_id": "719879",
+    "is_winner": false,
+    "is_overall_winner": false,
+    "is_sponsor_winner": false,
+    "is_track_winner": false,
+    "is_beginner_winner": false,
+    "awards": [],
+    "unsealed_at": "2026-09-26T02:03:23.793733Z"
+  },
+  "719769": {
+    "project_id": "719769",
+    "is_winner": false,
+    "is_overall_winner": false,
+    "is_sponsor_winner": false,
+    "is_track_winner": false,
+    "is_beginner_winner": false,
+    "awards": [],
+    "unsealed_at": "2026-09-26T02:03:23.793733Z"
+  },
+  "719902": {
+    "project_id": "719902",
+    "is_winner": false,
+    "is_overall_winner": false,
+    "is_sponsor_winner": false,
+    "is_track_winner": false,
+    "is_beginner_winner": false,
+    "awards": [],
+    "unsealed_at": "2026-09-26T02:03:23.793733Z"
+  },
+  "719807": {
+    "project_id": "719807",
+    "is_winner": false,
+    "is_overall_winner": false,
+    "is_sponsor_winner": false,
+    "is_track_winner": false,
+    "is_beginner_winner": false,
+    "awards": [],
+    "unsealed_at": "2026-09-26T02:03:23.793733Z"
+  },
+  "719814": {
+    "project_id": "719814",
+    "is_winner": false,
+    "is_overall_winner": false,
+    "is_sponsor_winner": false,
+    "is_track_winner": false,
+    "is_beginner_winner": false,
+    "awards": [],
+    "unsealed_at": "2026-09-26T02:03:23.793733Z"
+  },
+  "719847": {
+    "project_id": "719847",
+    "is_winner": false,
+    "is_overall_winner": false,
+    "is_sponsor_winner": false,
+    "is_track_winner": false,
+    "is_beginner_winner": false,
+    "awards": [],
+    "unsealed_at": "2026-09-26T02:03:23.793733Z"
+  },
+  "719869": {
+    "project_id": "719869",
+    "is_winner": false,
+    "is_overall_winner": false,
+    "is_sponsor_winner": false,
+    "is_track_winner": false,
+    "is_beginner_winner": false,
+    "awards": [],
+    "unsealed_at": "2026-09-26T02:03:23.793733Z"
+  },
+  "719741": {
+    "project_id": "719741",
+    "is_winner": false,
+    "is_overall_winner": false,
+    "is_sponsor_winner": false,
+    "is_track_winner": false,
+    "is_beginner_winner": false,
+    "awards": [],
+    "unsealed_at": "2026-09-26T02:03:23.793733Z"
+  },
+  "719840": {
+    "project_id": "719840",
+    "is_winner": false,
+    "is_overall_winner": false,
+    "is_sponsor_winner": false,
+    "is_track_winner": false,
+    "is_beginner_winner": false,
+    "awards": [],
+    "unsealed_at": "2026-09-26T02:03:23.793733Z"
+  },
+  "718471": {
+    "project_id": "718471",
+    "is_winner": false,
+    "is_overall_winner": false,
+    "is_sponsor_winner": false,
+    "is_track_winner": false,
+    "is_beginner_winner": false,
+    "awards": [],
+    "unsealed_at": "2026-09-26T02:03:23.793733Z"
+  },
+  "719744": {
+    "project_id": "719744",
+    "is_winner": false,
+    "is_overall_winner": false,
+    "is_sponsor_winner": false,
+    "is_track_winner": false,
+    "is_beginner_winner": false,
+    "awards": [],
+    "unsealed_at": "2026-09-26T02:03:23.793733Z"
+  },
+  "719719": {
+    "project_id": "719719",
+    "is_winner": false,
+    "is_overall_winner": false,
+    "is_sponsor_winner": false,
+    "is_track_winner": false,
+    "is_beginner_winner": false,
+    "awards": [],
+    "unsealed_at": "2026-09-26T02:03:23.793733Z"
+  },
+  "719799": {
+    "project_id": "719799",
+    "is_winner": false,
+    "is_overall_winner": false,
+    "is_sponsor_winner": false,
+    "is_track_winner": false,
+    "is_beginner_winner": false,
+    "awards": [],
+    "unsealed_at": "2026-09-26T02:03:23.793733Z"
+  },
+  "719841": {
+    "project_id": "719841",
+    "is_winner": false,
+    "is_overall_winner": false,
+    "is_sponsor_winner": false,
+    "is_track_winner": false,
+    "is_beginner_winner": false,
+    "awards": [],
+    "unsealed_at": "2026-09-26T02:03:23.793733Z"
+  },
+  "719803": {
+    "project_id": "719803",
+    "is_winner": false,
+    "is_overall_winner": false,
+    "is_sponsor_winner": false,
+    "is_track_winner": false,
+    "is_beginner_winner": false,
+    "awards": [],
+    "unsealed_at": "2026-09-26T02:03:23.793733Z"
+  },
+  "719787": {
+    "project_id": "719787",
+    "is_winner": false,
+    "is_overall_winner": false,
+    "is_sponsor_winner": false,
+    "is_track_winner": false,
+    "is_beginner_winner": false,
+    "awards": [],
+    "unsealed_at": "2026-09-26T02:03:23.793733Z"
+  },
+  "718440": {
+    "project_id": "718440",
+    "is_winner": false,
+    "is_overall_winner": false,
+    "is_sponsor_winner": false,
+    "is_track_winner": false,
+    "is_beginner_winner": false,
+    "awards": [],
+    "unsealed_at": "2026-09-26T02:03:23.793733Z"
+  },
+  "719337": {
+    "project_id": "719337",
+    "is_winner": false,
+    "is_overall_winner": false,
+    "is_sponsor_winner": false,
+    "is_track_winner": false,
+    "is_beginner_winner": false,
+    "awards": [],
+    "unsealed_at": "2026-09-26T02:03:23.793733Z"
+  },
+  "719243": {
+    "project_id": "719243",
+    "is_winner": false,
+    "is_overall_winner": false,
+    "is_sponsor_winner": false,
+    "is_track_winner": false,
+    "is_beginner_winner": false,
+    "awards": [],
+    "unsealed_at": "2026-09-26T02:03:23.793733Z"
+  },
+  "719649": {
+    "project_id": "719649",
+    "is_winner": false,
+    "is_overall_winner": false,
+    "is_sponsor_winner": false,
+    "is_track_winner": false,
+    "is_beginner_winner": false,
+    "awards": [],
+    "unsealed_at": "2026-09-26T02:03:23.793733Z"
+  },
+  "719755": {
+    "project_id": "719755",
+    "is_winner": false,
+    "is_overall_winner": false,
+    "is_sponsor_winner": false,
+    "is_track_winner": false,
+    "is_beginner_winner": false,
+    "awards": [],
+    "unsealed_at": "2026-09-26T02:03:23.793733Z"
+  },
+  "719699": {
+    "project_id": "719699",
+    "is_winner": false,
+    "is_overall_winner": false,
+    "is_sponsor_winner": false,
+    "is_track_winner": false,
+    "is_beginner_winner": false,
+    "awards": [],
+    "unsealed_at": "2026-09-26T02:03:23.793733Z"
+  },
+  "719658": {
+    "project_id": "719658",
+    "is_winner": false,
+    "is_overall_winner": false,
+    "is_sponsor_winner": false,
+    "is_track_winner": false,
+    "is_beginner_winner": false,
+    "awards": [],
+    "unsealed_at": "2026-09-26T02:03:23.793733Z"
+  },
+  "718597": {
+    "project_id": "718597",
+    "is_winner": false,
+    "is_overall_winner": false,
+    "is_sponsor_winner": false,
+    "is_track_winner": false,
+    "is_beginner_winner": false,
+    "awards": [],
+    "unsealed_at": "2026-09-26T02:03:23.793733Z"
+  },
+  "719664": {
+    "project_id": "719664",
+    "is_winner": false,
+    "is_overall_winner": false,
+    "is_sponsor_winner": false,
+    "is_track_winner": false,
+    "is_beginner_winner": false,
+    "awards": [],
+    "unsealed_at": "2026-09-26T02:03:23.793733Z"
+  },
+  "719667": {
+    "project_id": "719667",
+    "is_winner": false,
+    "is_overall_winner": false,
+    "is_sponsor_winner": false,
+    "is_track_winner": false,
+    "is_beginner_winner": false,
+    "awards": [],
+    "unsealed_at": "2026-09-26T02:03:23.793733Z"
+  },
+  "719694": {
+    "project_id": "719694",
+    "is_winner": false,
+    "is_overall_winner": false,
+    "is_sponsor_winner": false,
+    "is_track_winner": false,
+    "is_beginner_winner": false,
+    "awards": [],
+    "unsealed_at": "2026-09-26T02:03:23.793733Z"
+  },
+  "719261": {
+    "project_id": "719261",
+    "is_winner": false,
+    "is_overall_winner": false,
+    "is_sponsor_winner": false,
+    "is_track_winner": false,
+    "is_beginner_winner": false,
+    "awards": [],
+    "unsealed_at": "2026-09-26T02:03:23.793733Z"
+  },
+  "719671": {
+    "project_id": "719671",
+    "is_winner": false,
+    "is_overall_winner": false,
+    "is_sponsor_winner": false,
+    "is_track_winner": false,
+    "is_beginner_winner": false,
+    "awards": [],
+    "unsealed_at": "2026-09-26T02:03:23.793733Z"
+  },
+  "719371": {
+    "project_id": "719371",
+    "is_winner": false,
+    "is_overall_winner": false,
+    "is_sponsor_winner": false,
+    "is_track_winner": false,
+    "is_beginner_winner": false,
+    "awards": [],
+    "unsealed_at": "2026-09-26T02:03:23.793733Z"
+  },
+  "719419": {
+    "project_id": "719419",
+    "is_winner": false,
+    "is_overall_winner": false,
+    "is_sponsor_winner": false,
+    "is_track_winner": false,
+    "is_beginner_winner": false,
+    "awards": [],
+    "unsealed_at": "2026-09-26T02:03:23.793733Z"
+  },
+  "719650": {
+    "project_id": "719650",
+    "is_winner": false,
+    "is_overall_winner": false,
+    "is_sponsor_winner": false,
+    "is_track_winner": false,
+    "is_beginner_winner": false,
+    "awards": [],
+    "unsealed_at": "2026-09-26T02:03:23.793733Z"
+  },
+  "719435": {
+    "project_id": "719435",
+    "is_winner": false,
+    "is_overall_winner": false,
+    "is_sponsor_winner": false,
+    "is_track_winner": false,
+    "is_beginner_winner": false,
+    "awards": [],
+    "unsealed_at": "2026-09-26T02:03:23.793733Z"
+  },
+  "719613": {
+    "project_id": "719613",
+    "is_winner": false,
+    "is_overall_winner": false,
+    "is_sponsor_winner": false,
+    "is_track_winner": false,
+    "is_beginner_winner": false,
+    "awards": [],
+    "unsealed_at": "2026-09-26T02:03:23.793733Z"
+  },
+  "719358": {
+    "project_id": "719358",
+    "is_winner": false,
+    "is_overall_winner": false,
+    "is_sponsor_winner": false,
+    "is_track_winner": false,
+    "is_beginner_winner": false,
+    "awards": [],
+    "unsealed_at": "2026-09-26T02:03:23.793733Z"
+  },
+  "719385": {
+    "project_id": "719385",
+    "is_winner": false,
+    "is_overall_winner": false,
+    "is_sponsor_winner": false,
+    "is_track_winner": false,
+    "is_beginner_winner": false,
+    "awards": [],
+    "unsealed_at": "2026-09-26T02:03:23.793733Z"
+  },
+  "719599": {
+    "project_id": "719599",
+    "is_winner": false,
+    "is_overall_winner": false,
+    "is_sponsor_winner": false,
+    "is_track_winner": false,
+    "is_beginner_winner": false,
+    "awards": [],
+    "unsealed_at": "2026-09-26T02:03:23.793733Z"
+  },
+  "718415": {
+    "project_id": "718415",
+    "is_winner": false,
+    "is_overall_winner": false,
+    "is_sponsor_winner": false,
+    "is_track_winner": false,
+    "is_beginner_winner": false,
+    "awards": [],
+    "unsealed_at": "2026-09-26T02:03:23.793733Z"
+  },
+  "719548": {
+    "project_id": "719548",
+    "is_winner": false,
+    "is_overall_winner": false,
+    "is_sponsor_winner": false,
+    "is_track_winner": false,
+    "is_beginner_winner": false,
+    "awards": [],
+    "unsealed_at": "2026-09-26T02:03:23.793733Z"
+  },
+  "719549": {
+    "project_id": "719549",
+    "is_winner": false,
+    "is_overall_winner": false,
+    "is_sponsor_winner": false,
+    "is_track_winner": false,
+    "is_beginner_winner": false,
+    "awards": [],
+    "unsealed_at": "2026-09-26T02:03:23.793733Z"
+  },
+  "719464": {
+    "project_id": "719464",
+    "is_winner": false,
+    "is_overall_winner": false,
+    "is_sponsor_winner": false,
+    "is_track_winner": false,
+    "is_beginner_winner": false,
+    "awards": [],
+    "unsealed_at": "2026-09-26T02:03:23.793733Z"
+  },
+  "719442": {
+    "project_id": "719442",
+    "is_winner": false,
+    "is_overall_winner": false,
+    "is_sponsor_winner": false,
+    "is_track_winner": false,
+    "is_beginner_winner": false,
+    "awards": [],
+    "unsealed_at": "2026-09-26T02:03:23.793733Z"
+  },
+  "719366": {
+    "project_id": "719366",
+    "is_winner": false,
+    "is_overall_winner": false,
+    "is_sponsor_winner": false,
+    "is_track_winner": false,
+    "is_beginner_winner": false,
+    "awards": [],
+    "unsealed_at": "2026-09-26T02:03:23.793733Z"
+  },
+  "719190": {
+    "project_id": "719190",
+    "is_winner": false,
+    "is_overall_winner": false,
+    "is_sponsor_winner": false,
+    "is_track_winner": false,
+    "is_beginner_winner": false,
+    "awards": [],
+    "unsealed_at": "2026-09-26T02:03:23.793733Z"
+  },
+  "718698": {
+    "project_id": "718698",
+    "is_winner": false,
+    "is_overall_winner": false,
+    "is_sponsor_winner": false,
+    "is_track_winner": false,
+    "is_beginner_winner": false,
+    "awards": [],
+    "unsealed_at": "2026-09-26T02:03:23.793733Z"
+  },
+  "719017": {
+    "project_id": "719017",
+    "is_winner": false,
+    "is_overall_winner": false,
+    "is_sponsor_winner": false,
+    "is_track_winner": false,
+    "is_beginner_winner": false,
+    "awards": [],
+    "unsealed_at": "2026-09-26T02:03:23.793733Z"
+  },
+  "719057": {
+    "project_id": "719057",
+    "is_winner": false,
+    "is_overall_winner": false,
+    "is_sponsor_winner": false,
+    "is_track_winner": false,
+    "is_beginner_winner": false,
+    "awards": [],
+    "unsealed_at": "2026-09-26T02:03:23.793733Z"
+  },
+  "718431": {
+    "project_id": "718431",
+    "is_winner": false,
+    "is_overall_winner": false,
+    "is_sponsor_winner": false,
+    "is_track_winner": false,
+    "is_beginner_winner": false,
+    "awards": [],
+    "unsealed_at": "2026-09-26T02:03:23.793733Z"
+  },
+  "718456": {
+    "project_id": "718456",
+    "is_winner": false,
+    "is_overall_winner": false,
+    "is_sponsor_winner": false,
+    "is_track_winner": false,
+    "is_beginner_winner": false,
+    "awards": [],
+    "unsealed_at": "2026-09-26T02:03:23.793733Z"
+  },
+  "718497": {
+    "project_id": "718497",
+    "is_winner": false,
+    "is_overall_winner": false,
+    "is_sponsor_winner": false,
+    "is_track_winner": false,
+    "is_beginner_winner": false,
+    "awards": [],
+    "unsealed_at": "2026-09-26T02:03:23.793733Z"
+  },
+  "718426": {
+    "project_id": "718426",
+    "is_winner": false,
+    "is_overall_winner": false,
+    "is_sponsor_winner": false,
+    "is_track_winner": false,
+    "is_beginner_winner": false,
+    "awards": [],
+    "unsealed_at": "2026-09-26T02:03:23.793733Z"
+  }
+}

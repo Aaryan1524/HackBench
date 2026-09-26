@@ -1,0 +1,159 @@
+{
+  "project_id": "719835",
+  "slug": "fluentify-ov9ys0",
+  "title": "Fluentify",
+  "tagline": "Master grammar and pronunciation in multiple languages. Speak in real-time, and get instant feedback. Mess up? No worries, Fluentify shows you what went wrong and how to crush it next time.",
+  "problem_statement": "",
+  "inspiration": "",
+  "what_it_does": "",
+  "how_it_was_built": "",
+  "challenges": "",
+  "accomplishments": "",
+  "lessons_learned": "",
+  "future_plans": "",
+  "tech_tags": [
+    "css",
+    "css",
+    "flask",
+    "flask",
+    "html",
+    "html",
+    "javascript",
+    "javascript",
+    "openai",
+    "pydub",
+    "python",
+    "python",
+    "whisper"
+  ],
+  "team_size": 4,
+  "repository_metrics": {
+    "repo_url": "https://github.com/Mundzuk-Uldin/FluentlyApp",
+    "status": "accessible",
+    "default_branch": "main",
+    "file_count": 10,
+    "approx_loc": 710,
+    "loc_by_language": {
+      "Python": 133,
+      "JavaScript": 235,
+      "CSS": 190,
+      "HTML": 152
+    },
+    "primary_languages": [
+      "JavaScript",
+      "CSS",
+      "HTML",
+      "Python"
+    ],
+    "tech_stack": {
+      "frontend_frameworks": [],
+      "backend_frameworks": [
+        "Flask"
+      ],
+      "databases": [],
+      "ai_ml_libraries": [],
+      "model_providers": [
+        "OpenAI"
+      ],
+      "cloud_devops": [],
+      "third_party_apis": [],
+      "hardware_components": [],
+      "package_dependencies": [
+        "ffmpeg-python",
+        "flask",
+        "git+https://github.com/openai/whisper.git",
+        "openai",
+        "pydub",
+        "python-dotenv"
+      ]
+    },
+    "git_timeline": {
+      "total_commits": 10,
+      "commits_in_window": 10,
+      "first_commit_time": "2024-09-29T04:31:27Z",
+      "last_commit_time": "2024-09-29T17:08:40Z",
+      "commit_timestamps": [
+        "2024-09-29T04:31:27Z",
+        "2024-09-29T04:47:07Z",
+        "2024-09-29T07:04:42Z",
+        "2024-09-29T13:36:45Z",
+        "2024-09-29T13:38:40Z",
+        "2024-09-29T14:12:12Z",
+        "2024-09-29T14:22:25Z",
+        "2024-09-29T17:03:25Z",
+        "2024-09-29T17:07:29Z",
+        "2024-09-29T17:08:40Z"
+      ],
+      "late_rewrites_detected": false,
+      "deadline_crunch_ratio": 0.5,
+      "final_stage_focus": "debugging",
+      "history_is_squashed_or_minimal": false,
+      "contributor_count": 3,
+      "contributors": [
+        "Victor Soares",
+        "Mundzuk Uldin",
+        "amytzsch"
+      ]
+    },
+    "test_files_count": 0,
+    "test_frameworks": [],
+    "has_ci": false,
+    "ci_configs": [],
+    "has_docker": false,
+    "has_env_template": false,
+    "readme_size_bytes": 1850,
+    "readme_excerpt": "# Fluentify\nFluentify is an innovative language learning app designed to help users master grammar and pronunciation across multiple languages. With Fluentify, learners can practice speaking in real-time, receive immediate feedback on their pronunciation, and gain insightful explanations on how to improve. Whether you're looking to refine your accent, perfect your grammar, or speak with more confidence, Fluentify provides personalized corrections and actionable steps to take your language skills to the next level. It's like having a language coach in your pocket, helping you become fluent faster and more effectively.\nMess up? No worries, Fluentify shows you what went wrong and how to crush it next time. Whether you want to sound like a local or just impress your friends, Fluentify has your back, making language learning fun, fast, and fearless!\n## Features\n- **Language**: Select any language you would like to learn.\n- **Real-time Pronunciation Feedback**: Get instant feedback on your pronunciation to improve your speaking skills.\n- **Grammar Correction**: Receive personalized corrections to refine your grammar and sentence structure.\n- **Interactive explanations**: Understand why you made a mistake and how to avoid it in the future.\n## Supported Languages\n- English\n- Spanish\n- French\n- German\n- Italian\n- Portuguese\n- Russian\n- Chinese\n- Japanese\n- Korean\n## How to use it\n1. Download the required packages by running\n`\n2. Insert your own API Key by creating a `.env` file in the root directory and adding the following line:\n3. Run the app by executing the following command:\n## Technologies\n-⁠  ⁠Python\n-⁠  ⁠Flask\n-⁠  ⁠OpenAI API\n-⁠  ⁠JavaScript\n-⁠  ⁠HTML/CSS\n-⁠  ⁠Bootstrap",
+    "has_architecture_docs": false,
+    "api_routes_count": 0,
+    "db_migrations_or_schema_count": 0,
+    "mock_data_detected": false,
+    "mock_data_indicators": [],
+    "todo_fixme_count": 0,
+    "boilerplate_detected": false,
+    "boilerplate_indicators": [],
+    "deployment_check": null,
+    "consistency_with_claims": "partial",
+    "consistency_explanation": "Partial evidence: 7/13 claimed technologies found in codebase.",
+    "actual_integrations_found": [
+      "flask",
+      "flask",
+      "openai",
+      "pydub",
+      "python",
+      "python",
+      "whisper"
+    ],
+    "readme_claims_unsupported_by_code": [
+      "css",
+      "css",
+      "html",
+      "html",
+      "javascript",
+      "javascript"
+    ],
+    "provenance": [
+      {
+        "claim": "Inspected repository https://github.com/Mundzuk-Uldin/FluentlyApp",
+        "evidence_type": "repository",
+        "source": "https://github.com/Mundzuk-Uldin/FluentlyApp",
+        "location": "root",
+        "confidence": 1.0,
+        "details": null
+      }
+    ]
+  },
+  "demo_summary": {
+    "has_video_demo": true,
+    "video_platform": "youtube",
+    "video_url": "https://www.youtube.com/embed/mqigC_BFo90?enablejsapi=1&hl=en_US&rel=0&start=&version=3&wmode=transparent",
+    "duration_seconds": null,
+    "has_live_deployment": false,
+    "deployment_url": "",
+    "deployment_reachable": null,
+    "has_slide_deck": false,
+    "observations": []
+  },
+  "sponsor_technologies_mentioned": [],
+  "bundle_sha256": "16dd737d0d85b5df2b3fe4518c3cb044aea60395e489a0996ef3e71e39c487d9",
+  "created_at": "2026-09-26T02:03:23.111332Z"
+}

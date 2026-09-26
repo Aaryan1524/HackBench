@@ -1,0 +1,36 @@
+{
+  "project_id": "720351",
+  "slug": "fivehacks",
+  "title": "FiveHacks",
+  "tagline": "Many college students lack the initiative to get started with their own insurance accounts. Our goal is to educate and guide students in a simple and fun way!",
+  "problem_statement": "",
+  "inspiration": "",
+  "what_it_does": "",
+  "how_it_was_built": "",
+  "challenges": "",
+  "accomplishments": "",
+  "lessons_learned": "",
+  "future_plans": "",
+  "tech_tags": [
+    "css",
+    "css",
+    "html",
+    "html"
+  ],
+  "team_size": 4,
+  "repository_metrics": null,
+  "demo_summary": {
+    "has_video_demo": false,
+    "video_platform": "",
+    "video_url": "",
+    "duration_seconds": null,
+    "has_live_deployment": false,
+    "deployment_url": "",
+    "deployment_reachable": null,
+    "has_slide_deck": false,
+    "observations": []
+  },
+  "sponsor_technologies_mentioned": [],
+  "bundle_sha256": "f39e38bfffda2ad013e1589e7922933600fbf53a90fa30e981d2efa391fdfb8d",
+  "created_at": "2026-09-26T02:03:23.004461Z"
+}

@@ -1,0 +1,152 @@
+{
+  "project_id": "569248",
+  "slug": "karavan-travel-planner",
+  "title": "Karavan - Travel Planner",
+  "tagline": "Traveling to a new country can be overwhelming, but it doesn't have to be! Learn how to make the most of your travels with a personalized plan in moments with Karavan.",
+  "problem_statement": "",
+  "inspiration": "",
+  "what_it_does": "",
+  "how_it_was_built": "",
+  "challenges": "",
+  "accomplishments": "",
+  "lessons_learned": "",
+  "future_plans": "",
+  "tech_tags": [
+    "balsamiq",
+    "balsamiq",
+    "openai",
+    "python",
+    "python",
+    "streamlit"
+  ],
+  "team_size": 4,
+  "repository_metrics": {
+    "repo_url": "https://github.com/BilgeBengisu/streamlit_app",
+    "status": "accessible",
+    "default_branch": "main",
+    "file_count": 5,
+    "approx_loc": 53,
+    "loc_by_language": {
+      "Python": 53
+    },
+    "primary_languages": [
+      "Python"
+    ],
+    "tech_stack": {
+      "frontend_frameworks": [],
+      "backend_frameworks": [],
+      "databases": [],
+      "ai_ml_libraries": [
+        "Scikit-Learn"
+      ],
+      "model_providers": [
+        "OpenAI"
+      ],
+      "cloud_devops": [],
+      "third_party_apis": [],
+      "hardware_components": [],
+      "package_dependencies": [
+        "geonamescache",
+        "openai",
+        "scikit-learn",
+        "streamlit"
+      ]
+    },
+    "git_timeline": {
+      "total_commits": 24,
+      "commits_in_window": 24,
+      "first_commit_time": "2023-09-16T19:34:30Z",
+      "last_commit_time": "2023-09-17T08:33:57Z",
+      "commit_timestamps": [
+        "2023-09-16T19:34:30Z",
+        "2023-09-16T19:35:09Z",
+        "2023-09-17T03:28:20Z",
+        "2023-09-17T04:18:47Z",
+        "2023-09-17T04:22:30Z",
+        "2023-09-17T04:27:18Z",
+        "2023-09-17T04:37:59Z",
+        "2023-09-17T05:03:51Z",
+        "2023-09-17T05:30:07Z",
+        "2023-09-17T05:31:57Z",
+        "2023-09-17T05:33:32Z",
+        "2023-09-17T05:35:06Z",
+        "2023-09-17T05:36:27Z",
+        "2023-09-17T07:27:15Z",
+        "2023-09-17T07:35:01Z",
+        "2023-09-17T07:35:37Z",
+        "2023-09-17T07:48:43Z",
+        "2023-09-17T07:49:52Z",
+        "2023-09-17T07:54:07Z",
+        "2023-09-17T08:11:35Z",
+        "2023-09-17T08:22:41Z",
+        "2023-09-17T08:23:24Z",
+        "2023-09-17T08:32:29Z",
+        "2023-09-17T08:33:57Z"
+      ],
+      "late_rewrites_detected": false,
+      "deadline_crunch_ratio": 0.67,
+      "final_stage_focus": "integration",
+      "history_is_squashed_or_minimal": false,
+      "contributor_count": 4,
+      "contributors": [
+        "Devon Gardner",
+        "ascemek",
+        "BilgeBengisu",
+        "Alex Wills"
+      ]
+    },
+    "test_files_count": 0,
+    "test_frameworks": [],
+    "has_ci": false,
+    "ci_configs": [],
+    "has_docker": false,
+    "has_env_template": false,
+    "readme_size_bytes": 15,
+    "readme_excerpt": "# streamlit_app",
+    "has_architecture_docs": false,
+    "api_routes_count": 0,
+    "db_migrations_or_schema_count": 0,
+    "mock_data_detected": false,
+    "mock_data_indicators": [],
+    "todo_fixme_count": 0,
+    "boilerplate_detected": false,
+    "boilerplate_indicators": [],
+    "deployment_check": null,
+    "consistency_with_claims": "partial",
+    "consistency_explanation": "Partial evidence: 2/6 claimed technologies found in codebase.",
+    "actual_integrations_found": [
+      "openai",
+      "streamlit"
+    ],
+    "readme_claims_unsupported_by_code": [
+      "balsamiq",
+      "balsamiq",
+      "python",
+      "python"
+    ],
+    "provenance": [
+      {
+        "claim": "Inspected repository https://github.com/BilgeBengisu/streamlit_app",
+        "evidence_type": "repository",
+        "source": "https://github.com/BilgeBengisu/streamlit_app",
+        "location": "root",
+        "confidence": 1.0,
+        "details": null
+      }
+    ]
+  },
+  "demo_summary": {
+    "has_video_demo": true,
+    "video_platform": "youtube",
+    "video_url": "https://www.youtube.com/embed/nN__Dbf53sQ?enablejsapi=1&hl=en_US&rel=0&start=&version=3&wmode=transparent",
+    "duration_seconds": null,
+    "has_live_deployment": false,
+    "deployment_url": "",
+    "deployment_reachable": null,
+    "has_slide_deck": false,
+    "observations": []
+  },
+  "sponsor_technologies_mentioned": [],
+  "bundle_sha256": "e35e01d328c5dd1fcee5c314df1b1fee6e264a18fb73c26eed2d86ecd90be647",
+  "created_at": "2026-09-26T02:11:35.844123Z"
+}

@@ -1,0 +1,190 @@
+{
+  "project_id": "570779",
+  "slug": "gitconnected",
+  "title": "GitConnected",
+  "tagline": "GitConnected is an AI-powered, full-stack web application aimed at revolutionizing networking for CS students facilitating more meaningful connections and opening doors to potential job referrals.",
+  "problem_statement": "",
+  "inspiration": "",
+  "what_it_does": "",
+  "how_it_was_built": "",
+  "challenges": "",
+  "accomplishments": "",
+  "lessons_learned": "",
+  "future_plans": "",
+  "tech_tags": [
+    "firebase",
+    "firebase",
+    "flask",
+    "flask",
+    "githubapi",
+    "openai",
+    "react.js",
+    "typescript",
+    "typescript"
+  ],
+  "team_size": 3,
+  "repository_metrics": {
+    "repo_url": "https://github.com/Tahmidbugs/shellhax2023",
+    "status": "accessible",
+    "default_branch": "main",
+    "file_count": 46,
+    "approx_loc": 3991,
+    "loc_by_language": {
+      "Python": 206,
+      "HTML": 43,
+      "CSS": 412,
+      "JavaScript": 1533,
+      "TypeScript": 1797
+    },
+    "primary_languages": [
+      "TypeScript",
+      "JavaScript",
+      "CSS",
+      "Python",
+      "HTML"
+    ],
+    "tech_stack": {
+      "frontend_frameworks": [
+        "React"
+      ],
+      "backend_frameworks": [
+        "Flask"
+      ],
+      "databases": [
+        "Firebase"
+      ],
+      "ai_ml_libraries": [],
+      "model_providers": [],
+      "cloud_devops": [],
+      "third_party_apis": [],
+      "hardware_components": [],
+      "package_dependencies": [
+        "firebase",
+        "flask",
+        "lottie-react",
+        "react"
+      ]
+    },
+    "git_timeline": {
+      "total_commits": 45,
+      "commits_in_window": 45,
+      "first_commit_time": "2023-09-16T05:33:28Z",
+      "last_commit_time": "2024-05-16T20:20:25Z",
+      "commit_timestamps": [
+        "2023-09-16T05:33:28Z",
+        "2023-09-16T05:36:57Z",
+        "2023-09-16T07:33:47Z",
+        "2023-09-16T12:07:37Z",
+        "2023-09-16T14:07:55Z",
+        "2023-09-16T14:55:04Z",
+        "2023-09-16T14:55:44Z",
+        "2023-09-16T15:02:04Z",
+        "2023-09-16T15:02:51Z",
+        "2023-09-16T15:04:48Z",
+        "2023-09-16T15:07:43Z",
+        "2023-09-16T15:29:00Z",
+        "2023-09-16T15:31:09Z",
+        "2023-09-16T15:32:06Z",
+        "2023-09-16T15:45:18Z",
+        "2023-09-16T15:51:10Z",
+        "2023-09-16T16:02:39Z",
+        "2023-09-16T17:08:51Z",
+        "2023-09-16T17:20:49Z",
+        "2023-09-16T18:41:53Z",
+        "2023-09-16T19:57:22Z",
+        "2023-09-16T20:04:44Z",
+        "2023-09-16T20:06:50Z",
+        "2023-09-16T20:07:02Z",
+        "2023-09-16T20:34:53Z",
+        "2023-09-16T20:35:40Z",
+        "2023-09-17T01:06:38Z",
+        "2023-09-17T01:13:24Z",
+        "2023-09-17T01:13:35Z",
+        "2023-09-17T01:50:58Z",
+        "2023-09-17T02:41:48Z",
+        "2023-09-17T03:55:29Z",
+        "2023-09-17T03:58:50Z",
+        "2023-09-17T08:36:53Z",
+        "2023-09-17T08:38:22Z",
+        "2023-09-17T12:53:46Z",
+        "2023-09-17T12:54:10Z",
+        "2023-09-17T13:44:57Z",
+        "2023-09-17T14:22:06Z",
+        "2023-09-17T14:23:35Z",
+        "2023-09-17T14:47:34Z",
+        "2023-09-17T14:48:25Z",
+        "2023-09-19T16:08:21Z",
+        "2023-09-19T16:30:58Z",
+        "2024-05-16T20:20:25Z"
+      ],
+      "late_rewrites_detected": false,
+      "deadline_crunch_ratio": 0.02,
+      "final_stage_focus": "docs",
+      "history_is_squashed_or_minimal": false,
+      "contributor_count": 5,
+      "contributors": [
+        "khan162",
+        "tahmidbugs",
+        "FuriousApe",
+        "Tahmidbugs",
+        "Umar Khan"
+      ]
+    },
+    "test_files_count": 0,
+    "test_frameworks": [],
+    "has_ci": false,
+    "ci_configs": [],
+    "has_docker": false,
+    "has_env_template": false,
+    "readme_size_bytes": 8558,
+    "readme_excerpt": "# Backend\n## Instructions\n1. Use   or click download zip to download the repository to your local system.\n2. After the code is downloaded into your local machine, move into the server folder and run   for Windows or   for macOS/Linux to activate the virtual environment.\n3. Next, Run   to install all dependencies from the requirements.txt file.\n4. Finally, run the server in a debugging mode using  .\nHow we created it?\nWe started by writing a Python script that would make API calls to GitHub's public API and create a graph connecting the user's neighbors.\n## Endpoints\nWe made use of two endpoints: 1. https://api.github.com/users/khan168 2.https://api.github.com/users/khan168/followers\nThe first endpoint provided the complete current user information but only the number of followers. The second endpoint shows the current user's followers' information but doesn't provide complete info about them thus going back to 1st endpoint again. This forced me to have, 2 API calls/User\n## Reason for building the graph\nIt's very easy to visualize that a graph data structure represents this scenario. Each user has followers and then those followers have their followers and so on. I could just make API calls without building a graph to find a list of neighboring users working at a company, however, I also had to visualize this information which is why I needed to build the graph.\n## Building the graph\nWe used a Breath First Search approach to build the graph from API calls. BFS is a very common graph traversal algorithm that uses a queue to iteratively process the neighboring nodes first. The structure of the graph we used is a Map data structure where the key for me was the username (string) and the value was an array of users' information encapsulated in a class Map . We started by making the API call to the 1st endpoint to get the root user info and added it to the queue. Due to reasons talked about in the Endpoints paragraph, we made another API call to the 2nd endpoint to get the directly connected users' incomplete info. We then go over these users, making an API call to the 1st endpoint again for each user, and adding them to the queue. This finishes the 1st level and now the cycle will repeat for the next levels.\n## Building the paths leading to hired Users\nData structure [[ User ]]: An array with each array leading to a hired User.\nWe implemented this by keeping track of the path till each User inside of that User object in an attribute called path. So, while buildi",
+    "has_architecture_docs": false,
+    "api_routes_count": 0,
+    "db_migrations_or_schema_count": 0,
+    "mock_data_detected": false,
+    "mock_data_indicators": [],
+    "todo_fixme_count": 1,
+    "boilerplate_detected": false,
+    "boilerplate_indicators": [],
+    "deployment_check": null,
+    "consistency_with_claims": "partial",
+    "consistency_explanation": "Partial evidence: 5/9 claimed technologies found in codebase.",
+    "actual_integrations_found": [
+      "firebase",
+      "firebase",
+      "flask",
+      "flask",
+      "react.js"
+    ],
+    "readme_claims_unsupported_by_code": [
+      "githubapi",
+      "openai",
+      "typescript",
+      "typescript"
+    ],
+    "provenance": [
+      {
+        "claim": "Inspected repository https://github.com/Tahmidbugs/shellhax2023",
+        "evidence_type": "repository",
+        "source": "https://github.com/Tahmidbugs/shellhax2023",
+        "location": "root",
+        "confidence": 1.0,
+        "details": null
+      }
+    ]
+  },
+  "demo_summary": {
+    "has_video_demo": false,
+    "video_platform": "",
+    "video_url": "",
+    "duration_seconds": null,
+    "has_live_deployment": false,
+    "deployment_url": "",
+    "deployment_reachable": null,
+    "has_slide_deck": false,
+    "observations": []
+  },
+  "sponsor_technologies_mentioned": [],
+  "bundle_sha256": "f44f04b4fb66a092a12d038c5df39565b6a9ff7660bab54f965d4d35ff954b11",
+  "created_at": "2026-09-26T02:11:35.572985Z"
+}

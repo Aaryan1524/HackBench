@@ -1,0 +1,136 @@
+{
+  "project_id": "719984",
+  "slug": "guiltbytes",
+  "title": "GuiltBytes",
+  "tagline": "Obesity Free USA!",
+  "problem_statement": "",
+  "inspiration": "",
+  "what_it_does": "",
+  "how_it_was_built": "",
+  "challenges": "",
+  "accomplishments": "",
+  "lessons_learned": "",
+  "future_plans": "",
+  "tech_tags": [
+    "bootstrap",
+    "bootstrap",
+    "css3",
+    "css3",
+    "html5",
+    "html5",
+    "javascript",
+    "javascript"
+  ],
+  "team_size": 3,
+  "repository_metrics": {
+    "repo_url": "https://github.com/nafiulkhalid/GuiltBytes.git",
+    "status": "accessible",
+    "default_branch": "main",
+    "file_count": 17,
+    "approx_loc": 887,
+    "loc_by_language": {
+      "CSS": 180,
+      "HTML": 323,
+      "JavaScript": 384
+    },
+    "primary_languages": [
+      "JavaScript",
+      "HTML",
+      "CSS"
+    ],
+    "tech_stack": {
+      "frontend_frameworks": [],
+      "backend_frameworks": [],
+      "databases": [],
+      "ai_ml_libraries": [],
+      "model_providers": [],
+      "cloud_devops": [],
+      "third_party_apis": [],
+      "hardware_components": [],
+      "package_dependencies": []
+    },
+    "git_timeline": {
+      "total_commits": 12,
+      "commits_in_window": 12,
+      "first_commit_time": "2024-09-29T09:44:55Z",
+      "last_commit_time": "2025-04-02T13:21:27Z",
+      "commit_timestamps": [
+        "2024-09-29T09:44:55Z",
+        "2024-09-29T09:45:42Z",
+        "2024-09-29T15:06:07Z",
+        "2025-01-20T16:02:34Z",
+        "2025-01-20T16:13:50Z",
+        "2025-01-20T16:16:21Z",
+        "2025-01-20T16:47:10Z",
+        "2025-01-20T16:47:52Z",
+        "2025-03-24T23:16:40Z",
+        "2025-04-02T13:14:38Z",
+        "2025-04-02T13:15:59Z",
+        "2025-04-02T13:21:27Z"
+      ],
+      "late_rewrites_detected": false,
+      "deadline_crunch_ratio": 0.33,
+      "final_stage_focus": "docs",
+      "history_is_squashed_or_minimal": false,
+      "contributor_count": 2,
+      "contributors": [
+        "Nafiul Khalid",
+        "nafiulkhalid"
+      ]
+    },
+    "test_files_count": 0,
+    "test_frameworks": [],
+    "has_ci": false,
+    "ci_configs": [],
+    "has_docker": false,
+    "has_env_template": false,
+    "readme_size_bytes": 3032,
+    "readme_excerpt": "# GuiltBytes\n***Obesity Free USA!***\n## **Inspiration**\n= In America, 1 every 3 adults is overweight. While brainstorming topic for ShellHacks-2024 we ordered Dunkin at 2 o’clock of the night. Then while eating those donuts, we had a talk on how healthy foods we had earlier today that cross those donuts and coffee. And we realized, we had Burger King in morning and Burger King for lunch. There we got the idea for GuiltBytes - a platform where you log all your unhealthy eatings.\n## **What it does**\n= GuiltByte is a platform where user can log all their unhealthy eatings. The main problem with a fast and busy life is that we eat but we hardly notice what we are eating for the hunger. But we all are aware of what Obesity is and we all want to be fit - at least most of us. GuiltBytes: Log all your unhealthy eatings. Give you an instant statistics about eating that food in that quantity, therefore with every log, you will get a fact that you may know but not surely or a fact that you need to recall at that moment! Calculates your BMI. Instantly shows your BMI report and category so you do not need to think about what is you on the scale. You have a record section personal to only you that has every food and BMI report you every input.\n## **How we built it**\n= GuiltBytes is made on HTML5, CSS, and heavily on JavaScript. For the time being and as new hackers, we did not include Backend and database, but if we have a plan to work on it in near future.\n## **Challenges we ran into**\n= GuiltBytes has a social value and anyone regardless of color, race, sex, origin, or minority can take the advantage - in short, we serve the entire umbrella of humankind with a motto “Obesity Free USA!” Our project matched with, and therefore we are grateful to take challenges of: Google Vanguard\n## **Accomplishments that we're proud of**\n= As new Hackers, we have no idea that we could too complete a project. Initially it was really tough just to finalize an idea. Then the coding part and taking our imagination into reality was another challenge. We are glad and grateful that as first-time hackers, we explored different interesting workshops, had experienced our first career fair, and finally made an effective memento of our ShellHacks-2024, that is GuiltBytes.\n## **What we learned**\n= ShellHacks taught us that it is the teamwork that matters over how we are in the team. We have a group of three, where no one have any good idea on coding. But even after, we had our roles and responsibi",
+    "has_architecture_docs": false,
+    "api_routes_count": 0,
+    "db_migrations_or_schema_count": 0,
+    "mock_data_detected": false,
+    "mock_data_indicators": [],
+    "todo_fixme_count": 0,
+    "boilerplate_detected": false,
+    "boilerplate_indicators": [],
+    "deployment_check": null,
+    "consistency_with_claims": "inconsistent",
+    "consistency_explanation": "Weak evidence: Only 0/8 claimed technologies detected in codebase.",
+    "actual_integrations_found": [],
+    "readme_claims_unsupported_by_code": [
+      "bootstrap",
+      "bootstrap",
+      "css3",
+      "css3",
+      "html5",
+      "html5",
+      "javascript",
+      "javascript"
+    ],
+    "provenance": [
+      {
+        "claim": "Inspected repository https://github.com/nafiulkhalid/GuiltBytes.git",
+        "evidence_type": "repository",
+        "source": "https://github.com/nafiulkhalid/GuiltBytes.git",
+        "location": "root",
+        "confidence": 1.0,
+        "details": null
+      }
+    ]
+  },
+  "demo_summary": {
+    "has_video_demo": false,
+    "video_platform": "",
+    "video_url": "",
+    "duration_seconds": null,
+    "has_live_deployment": false,
+    "deployment_url": "",
+    "deployment_reachable": null,
+    "has_slide_deck": false,
+    "observations": []
+  },
+  "sponsor_technologies_mentioned": [],
+  "bundle_sha256": "e32034ffd8d8dc487aa4e1d415d9efaaeaacd67e4ac297de58b03910269b9873",
+  "created_at": "2026-09-26T02:03:23.172374Z"
+}

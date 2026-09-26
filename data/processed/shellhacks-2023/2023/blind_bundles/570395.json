@@ -1,0 +1,155 @@
+{
+  "project_id": "570395",
+  "slug": "earny-multilingual-personal-financial-advisor",
+  "title": "Earny - Multilingual Personal Financial Advisor",
+  "tagline": "A chatbot that integrates a ChatGPT API in order to provide the user with financial advising based on user input to the prompted questions.",
+  "problem_statement": "",
+  "inspiration": "",
+  "what_it_does": "",
+  "how_it_was_built": "",
+  "challenges": "",
+  "accomplishments": "",
+  "lessons_learned": "",
+  "future_plans": "",
+  "tech_tags": [
+    "angular.js",
+    "angular.js",
+    "css",
+    "css",
+    "html",
+    "html",
+    "python",
+    "python",
+    "typescript",
+    "typescript"
+  ],
+  "team_size": 3,
+  "repository_metrics": {
+    "repo_url": "https://github.com/victort29/Earny",
+    "status": "accessible",
+    "default_branch": "main",
+    "file_count": 25,
+    "approx_loc": 236,
+    "loc_by_language": {
+      "Python": 111,
+      "HTML": 29,
+      "TypeScript": 90,
+      "CSS": 6
+    },
+    "primary_languages": [
+      "Python",
+      "TypeScript",
+      "HTML",
+      "CSS"
+    ],
+    "tech_stack": {
+      "frontend_frameworks": [
+        "Angular"
+      ],
+      "backend_frameworks": [
+        "Flask"
+      ],
+      "databases": [],
+      "ai_ml_libraries": [],
+      "model_providers": [
+        "OpenAI"
+      ],
+      "cloud_devops": [],
+      "third_party_apis": [],
+      "hardware_components": [],
+      "package_dependencies": [
+        "angular",
+        "flask",
+        "openai"
+      ]
+    },
+    "git_timeline": {
+      "total_commits": 10,
+      "commits_in_window": 10,
+      "first_commit_time": "2023-09-16T23:43:37Z",
+      "last_commit_time": "2023-09-17T10:20:11Z",
+      "commit_timestamps": [
+        "2023-09-16T23:43:37Z",
+        "2023-09-17T00:11:13Z",
+        "2023-09-17T00:15:22Z",
+        "2023-09-17T01:16:45Z",
+        "2023-09-17T01:28:03Z",
+        "2023-09-17T08:03:45Z",
+        "2023-09-17T09:51:49Z",
+        "2023-09-17T10:00:40Z",
+        "2023-09-17T10:06:28Z",
+        "2023-09-17T10:20:11Z"
+      ],
+      "late_rewrites_detected": false,
+      "deadline_crunch_ratio": 0.5,
+      "final_stage_focus": "features",
+      "history_is_squashed_or_minimal": false,
+      "contributor_count": 4,
+      "contributors": [
+        "Victor Teixeira",
+        "Franklin",
+        "Anthony",
+        "victort29"
+      ]
+    },
+    "test_files_count": 1,
+    "test_frameworks": [
+      "vitest/jest"
+    ],
+    "has_ci": false,
+    "ci_configs": [],
+    "has_docker": false,
+    "has_env_template": false,
+    "readme_size_bytes": 4135,
+    "readme_excerpt": "# Earny - Multilinigual Personal Financial Advisor\n# Overview\nEarny is a Python program designed to provide personalized financial advice on investments using the power of the Chat GPT API. What sets Earny apart is its multilingual capabilities, allowing users to communicate with Earny in their preferred language. The chatbot engages users in a conversation, asking a series of questions to gather essential information about their financial goals, risk tolerance, and investment preferences. Based on the user's responses, Earny offers tailored investment recommendations to help users make informed financial decisions.\n# Features\nMultilingual chat-based interface for gathering user information.\nUtilizes the Chat GPT API to generate responses and offer financial advice.\nProvides personalized investment recommendations.\nAssists users in understanding their risk tolerance and financial objectives.\n# Getting Started\n## Prerequisites\nBefore you can use Earny - Multilingual Personal Financial Advisor, ensure that you meet the following prerequisites:\nPython 3.7 or a later version installed on your system.\nSolid understanding of Angular.\nAn API key for the Chat GPT API. You can obtain one from OpenAI.\n# Installation\nClone this repository to your local machine:\nNavigate to the project directory:\nInstall the required Python packages:\nConfiguration\nOpen the config.py file and replace YOUR_API_KEY with your actual Chat GPT API key:\n# Usage\nRun Earny - Multilingual Personal Financial Advisor using the following command:\nThe chatbot will initiate a conversation with you, asking questions related to your financial situation and goals. Simply respond to the prompts, and Earny will provide investment recommendations based on your input.\n# Examples\nHere are some example interactions with Earny:\n# Example:\nHere are examples of interactions with Earny, where it first asks for the user's preferred language and then gathers information to provide financial advice:\nPlease choose your preferred language:\nEnglish\nEspañol\nFrançais\nDeutsch\nOther (Specify)\n(User selects their preferred language)\nEarny: Great! Now, let's gather some information to provide you with personalized investment advice:\nWhat is your age?\nAre you saving for a short-term goal, like buying a car, or a long-term goal like retirement?\nOn a scale of 1 to 10, where 1 is very conservative (low risk) and 10 is very aggressive (high risk), how would you rate your risk tolerance?\n(User answers all three questions)\nEarny:",
+    "has_architecture_docs": false,
+    "api_routes_count": 0,
+    "db_migrations_or_schema_count": 0,
+    "mock_data_detected": false,
+    "mock_data_indicators": [],
+    "todo_fixme_count": 0,
+    "boilerplate_detected": false,
+    "boilerplate_indicators": [],
+    "deployment_check": null,
+    "consistency_with_claims": "inconsistent",
+    "consistency_explanation": "Weak evidence: Only 2/10 claimed technologies detected in codebase.",
+    "actual_integrations_found": [
+      "angular.js",
+      "angular.js"
+    ],
+    "readme_claims_unsupported_by_code": [
+      "css",
+      "css",
+      "html",
+      "html",
+      "python",
+      "python",
+      "typescript",
+      "typescript"
+    ],
+    "provenance": [
+      {
+        "claim": "Inspected repository https://github.com/victort29/Earny",
+        "evidence_type": "repository",
+        "source": "https://github.com/victort29/Earny",
+        "location": "root",
+        "confidence": 1.0,
+        "details": null
+      }
+    ]
+  },
+  "demo_summary": {
+    "has_video_demo": false,
+    "video_platform": "",
+    "video_url": "",
+    "duration_seconds": null,
+    "has_live_deployment": false,
+    "deployment_url": "",
+    "deployment_reachable": null,
+    "has_slide_deck": false,
+    "observations": []
+  },
+  "sponsor_technologies_mentioned": [],
+  "bundle_sha256": "f9332d361c80ec464b1022add720f48b5e2a731bc59b94fc3adf60be428c24f9",
+  "created_at": "2026-09-26T02:11:35.842764Z"
+}

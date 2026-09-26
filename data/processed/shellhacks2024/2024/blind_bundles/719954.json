@@ -1,0 +1,175 @@
+{
+  "project_id": "719954",
+  "slug": "areaafford",
+  "title": "AreaAfford",
+  "tagline": "Area Afford is an easy-to-use web app that uses GenAI to produce accurate living costs associated with the user's input.",
+  "problem_statement": "",
+  "inspiration": "",
+  "what_it_does": "",
+  "how_it_was_built": "",
+  "challenges": "",
+  "accomplishments": "",
+  "lessons_learned": "",
+  "future_plans": "",
+  "tech_tags": [
+    "css",
+    "css",
+    "flask",
+    "flask",
+    "javascript",
+    "javascript",
+    "openaiapi",
+    "python",
+    "python",
+    "react",
+    "react"
+  ],
+  "team_size": 3,
+  "repository_metrics": {
+    "repo_url": "https://github.com/Norky101/Shellhacks2024/tree/sub-branch-1",
+    "status": "accessible",
+    "default_branch": "natan",
+    "file_count": 30,
+    "approx_loc": 443,
+    "loc_by_language": {
+      "Python": 58,
+      "JavaScript": 286,
+      "HTML": 43,
+      "CSS": 56
+    },
+    "primary_languages": [
+      "JavaScript",
+      "Python",
+      "CSS",
+      "HTML"
+    ],
+    "tech_stack": {
+      "frontend_frameworks": [
+        "React"
+      ],
+      "backend_frameworks": [
+        "Flask"
+      ],
+      "databases": [],
+      "ai_ml_libraries": [],
+      "model_providers": [
+        "OpenAI"
+      ],
+      "cloud_devops": [],
+      "third_party_apis": [],
+      "hardware_components": [],
+      "package_dependencies": [
+        "\u0000",
+        "\u0000c\u0000e\u0000r\u0000t\u0000i\u0000f\u0000i\u0000",
+        "\u0000c\u0000h\u0000a\u0000r\u0000s\u0000e\u0000t\u0000-\u0000n\u0000o\u0000r\u0000m\u0000a\u0000l\u0000i\u0000z\u0000e\u0000r\u0000",
+        "\u0000c\u0000l\u0000i\u0000c\u0000k\u0000",
+        "\u0000c\u0000o\u0000l\u0000o\u0000r\u0000a\u0000m\u0000a\u0000",
+        "\u0000f\u0000l\u0000a\u0000s\u0000k\u0000",
+        "\u0000i\u0000d\u0000n\u0000a\u0000",
+        "\u0000i\u0000t\u0000s\u0000d\u0000a\u0000n\u0000g\u0000e\u0000r\u0000o\u0000u\u0000s\u0000",
+        "\u0000j\u0000i\u0000n\u0000j\u0000a\u00002\u0000",
+        "\u0000m\u0000a\u0000r\u0000k\u0000u\u0000p\u0000s\u0000a\u0000f\u0000e\u0000",
+        "\u0000r\u0000e\u0000q\u0000u\u0000e\u0000s\u0000t\u0000s\u0000",
+        "\u0000u\u0000r\u0000l\u0000l\u0000i\u0000b\u00003\u0000",
+        "\u0000w\u0000e\u0000r\u0000k\u0000z\u0000e\u0000u\u0000g\u0000",
+        "b\u0000l\u0000i\u0000n\u0000k\u0000e\u0000r\u0000",
+        "flask",
+        "openai",
+        "react"
+      ]
+    },
+    "git_timeline": {
+      "total_commits": 16,
+      "commits_in_window": 16,
+      "first_commit_time": "2024-09-28T23:22:21Z",
+      "last_commit_time": "2024-11-26T17:18:14Z",
+      "commit_timestamps": [
+        "2024-09-28T23:22:21Z",
+        "2024-09-28T23:24:38Z",
+        "2024-09-28T23:48:23Z",
+        "2024-09-28T23:49:01Z",
+        "2024-09-28T23:58:07Z",
+        "2024-09-29T03:51:04Z",
+        "2024-09-29T08:22:47Z",
+        "2024-11-09T19:12:39Z",
+        "2024-11-09T19:28:54Z",
+        "2024-11-09T21:56:02Z",
+        "2024-11-09T21:56:21Z",
+        "2024-11-09T21:57:11Z",
+        "2024-11-09T22:04:31Z",
+        "2024-11-09T22:05:29Z",
+        "2024-11-09T23:12:58Z",
+        "2024-11-26T17:18:14Z"
+      ],
+      "late_rewrites_detected": false,
+      "deadline_crunch_ratio": 0.06,
+      "final_stage_focus": "docs",
+      "history_is_squashed_or_minimal": false,
+      "contributor_count": 4,
+      "contributors": [
+        "Norky101",
+        "Noah Pilkington",
+        "ishaan",
+        "Natanf002"
+      ]
+    },
+    "test_files_count": 1,
+    "test_frameworks": [],
+    "has_ci": false,
+    "ci_configs": [],
+    "has_docker": false,
+    "has_env_template": false,
+    "readme_size_bytes": 2491,
+    "readme_excerpt": "# RelocateWise 🌎\nA smart cost-of-living analysis tool that helps you make informed decisions about relocating by providing personalized insights based on your lifestyle preferences and economic requirements.\n## 🎯 Overview\nRelocateWise empowers users to:\n- Compare living costs across different geographical areas\n- Get personalized cost estimates based on lifestyle preferences\n- Access real-time market data for housing, groceries, utilities, and more\n- Visualize cost breakdowns and economic factors in easy-to-understand graphs\n- Make data-driven decisions about relocation\n## ⚙️ Features\n- **Location-Based Analysis**\n- Real-time rental market data\n- Local grocery and retail pricing\n- Utility cost estimates\n- Transportation expenses\n- Entertainment and dining costs\n- **Lifestyle Customization**\n- Multiple lifestyle presets (Budget, Moderate, Luxury)\n- Customizable expense categories\n- Personalized priority settings\n- Family size adjustments\n- **Smart Recommendations**\n- AI-powered cost predictions\n- Neighborhood suggestions\n- Budget optimization tips\n- Cost-saving opportunities\n## 🛠️ Tech Stack\n- **Frontend**\n- React.js\n- HTML5/CSS3\n- Material-UI/Bootstrap\n- Chart.js for data visualization\n- **Backend**\n- Python\n- Flask/Django\n- RESTful API architecture\n- **AI Integration**\n- OpenAI API for cost analysis\n## 🚀 Getting Started\n### Prerequisites\n### Installation\n1. Clone the repository\n2. Install frontend dependencies\n3. Install backend dependencies\n4. Set up environment variables\n5. Run the application\n## 🤝 Contributing\nWe welcome contributions! Please follow these steps:\n1. Fork the repository\n2. Create your feature branch (`git checkout -b feature/AmazingFeature`)\n3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)\n4. Push to the branch (`git push origin feature/AmazingFeature`)\n5. Open a Pull Request\n## How to run\n1. Run the 'app.py' in one terminal (backend)\n2. Run 'npm start' to build react frontend",
+    "has_architecture_docs": true,
+    "api_routes_count": 0,
+    "db_migrations_or_schema_count": 0,
+    "mock_data_detected": false,
+    "mock_data_indicators": [],
+    "todo_fixme_count": 0,
+    "boilerplate_detected": false,
+    "boilerplate_indicators": [],
+    "deployment_check": null,
+    "consistency_with_claims": "partial",
+    "consistency_explanation": "Partial evidence: 5/11 claimed technologies found in codebase.",
+    "actual_integrations_found": [
+      "flask",
+      "flask",
+      "openaiapi",
+      "react",
+      "react"
+    ],
+    "readme_claims_unsupported_by_code": [
+      "css",
+      "css",
+      "javascript",
+      "javascript",
+      "python",
+      "python"
+    ],
+    "provenance": [
+      {
+        "claim": "Inspected repository https://github.com/Norky101/Shellhacks2024/tree/sub-branch-1",
+        "evidence_type": "repository",
+        "source": "https://github.com/Norky101/Shellhacks2024/tree/sub-branch-1",
+        "location": "root",
+        "confidence": 1.0,
+        "details": null
+      }
+    ]
+  },
+  "demo_summary": {
+    "has_video_demo": false,
+    "video_platform": "",
+    "video_url": "",
+    "duration_seconds": null,
+    "has_live_deployment": false,
+    "deployment_url": "",
+    "deployment_reachable": null,
+    "has_slide_deck": false,
+    "observations": []
+  },
+  "sponsor_technologies_mentioned": [],
+  "bundle_sha256": "73397324fb84098a11638a1ffb720c2c08e97d1e927d40faf5dbd4e112300bd5",
+  "created_at": "2026-09-26T02:03:23.225427Z"
+}

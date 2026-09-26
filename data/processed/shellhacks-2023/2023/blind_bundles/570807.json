@@ -1,0 +1,35 @@
+{
+  "project_id": "570807",
+  "slug": "sustainability-stock",
+  "title": "Sustainability Stock",
+  "tagline": "This project focuses on helping those make smart decisions when it comes to their investments and their correlation with sustainability.",
+  "problem_statement": "",
+  "inspiration": "",
+  "what_it_does": "",
+  "how_it_was_built": "",
+  "challenges": "",
+  "accomplishments": "",
+  "lessons_learned": "",
+  "future_plans": "",
+  "tech_tags": [
+    "python",
+    "python",
+    "taipy"
+  ],
+  "team_size": 3,
+  "repository_metrics": null,
+  "demo_summary": {
+    "has_video_demo": false,
+    "video_platform": "",
+    "video_url": "",
+    "duration_seconds": null,
+    "has_live_deployment": false,
+    "deployment_url": "",
+    "deployment_reachable": null,
+    "has_slide_deck": false,
+    "observations": []
+  },
+  "sponsor_technologies_mentioned": [],
+  "bundle_sha256": "055f4bae3f1f46774a3d26528b666f08738486f6343d9be2e27ec210fc868933",
+  "created_at": "2026-09-26T02:11:35.640652Z"
+}

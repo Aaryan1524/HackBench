@@ -1,0 +1,124 @@
+{
+  "project_id": "720298",
+  "slug": "yumhub",
+  "title": "YumHub",
+  "tagline": "Ever wanted to spice things up in your kitchen but everyone's offering the same 3 recipes? Our streamlit randomized recipe browser will be sure to kick things up a notch with intuitive controls!",
+  "problem_statement": "",
+  "inspiration": "",
+  "what_it_does": "",
+  "how_it_was_built": "",
+  "challenges": "",
+  "accomplishments": "",
+  "lessons_learned": "",
+  "future_plans": "",
+  "tech_tags": [
+    "python",
+    "python",
+    "streamlit"
+  ],
+  "team_size": 2,
+  "repository_metrics": {
+    "repo_url": "https://github.com/Jaesuru/YumHub",
+    "status": "accessible",
+    "default_branch": "master",
+    "file_count": 12,
+    "approx_loc": 186,
+    "loc_by_language": {
+      "Python": 186
+    },
+    "primary_languages": [
+      "Python"
+    ],
+    "tech_stack": {
+      "frontend_frameworks": [],
+      "backend_frameworks": [],
+      "databases": [],
+      "ai_ml_libraries": [],
+      "model_providers": [],
+      "cloud_devops": [],
+      "third_party_apis": [],
+      "hardware_components": [],
+      "package_dependencies": []
+    },
+    "git_timeline": {
+      "total_commits": 15,
+      "commits_in_window": 15,
+      "first_commit_time": "2024-08-18T18:07:53Z",
+      "last_commit_time": "2024-09-29T13:58:49Z",
+      "commit_timestamps": [
+        "2024-08-18T18:07:53Z",
+        "2024-09-27T21:01:33Z",
+        "2024-09-28T01:21:04Z",
+        "2024-09-28T16:59:53Z",
+        "2024-09-28T17:51:40Z",
+        "2024-09-29T01:13:56Z",
+        "2024-09-29T01:14:03Z",
+        "2024-09-29T01:16:20Z",
+        "2024-09-29T01:22:15Z",
+        "2024-09-29T01:22:34Z",
+        "2024-09-29T01:22:50Z",
+        "2024-09-29T02:17:55Z",
+        "2024-09-29T02:23:22Z",
+        "2024-09-29T03:41:48Z",
+        "2024-09-29T13:58:49Z"
+      ],
+      "late_rewrites_detected": false,
+      "deadline_crunch_ratio": 0.93,
+      "final_stage_focus": "docs",
+      "history_is_squashed_or_minimal": false,
+      "contributor_count": 1,
+      "contributors": [
+        "Jason"
+      ]
+    },
+    "test_files_count": 0,
+    "test_frameworks": [],
+    "has_ci": false,
+    "ci_configs": [],
+    "has_docker": false,
+    "has_env_template": false,
+    "readme_size_bytes": 1890,
+    "readme_excerpt": "# Recipe Finder Application\n## Overview\nThe Recipe Finder application allows users to effortlessly discover delicious recipes based on their chosen ingredients. Users can input any ingredient, and the application provides a variety of recipes instantly.\n## Features\n- **Ingredient Search**: Input any ingredient to find related recipes.\n- **Optional Filters**: Users can filter recipes based on meal type and allergens.\n- **Recipe Display**: View recipes along with images, calories, servings, and ingredient count.\n- **Quick Access to Sources**: Click on recipe images to navigate directly to the source website for more details.\n## Technologies Used\n- **Python**: The programming language used to build the application.\n- **Streamlit**: A framework for building interactive web applications in Python.\n- **Requests**: A library for making HTTP requests to fetch recipe data from an API.\n- **dotenv**: A module to load environment variables from a `.env` file.\n- **Edamam API**: An API used to fetch recipe data based on user input.\n## Installation\n1. **Clone the Repository**:\n- bash\n- Copy code\n- git clone\n- cd\n2. **Set Up Environment Variables:** Create a .env file in the root directory of the project with the following content:\nEDAMAM_APP_ID=\nEDAMAM_APP_KEY=\nRECIPE_APP_ID=\nRECIPE_APP_KEY=\n3. **Install Required Packages:**\n- bash\n- Copy code\n- pip install -r requirements.txt\n## Usage\n- Run the application:\n- bash\n- Copy code\n- streamlit run app.py\n- Open your browser and go to http://localhost:8501 to view the application.\n- Enter your desired ingredients into the search box and optionally select filters for meal type and allergens.\n- Click on the recipe images to view the full recipe on the source website.",
+    "has_architecture_docs": false,
+    "api_routes_count": 0,
+    "db_migrations_or_schema_count": 0,
+    "mock_data_detected": false,
+    "mock_data_indicators": [],
+    "todo_fixme_count": 0,
+    "boilerplate_detected": false,
+    "boilerplate_indicators": [],
+    "deployment_check": null,
+    "consistency_with_claims": "inconsistent",
+    "consistency_explanation": "Weak evidence: Only 0/3 claimed technologies detected in codebase.",
+    "actual_integrations_found": [],
+    "readme_claims_unsupported_by_code": [
+      "python",
+      "python",
+      "streamlit"
+    ],
+    "provenance": [
+      {
+        "claim": "Inspected repository https://github.com/Jaesuru/YumHub",
+        "evidence_type": "repository",
+        "source": "https://github.com/Jaesuru/YumHub",
+        "location": "root",
+        "confidence": 1.0,
+        "details": null
+      }
+    ]
+  },
+  "demo_summary": {
+    "has_video_demo": false,
+    "video_platform": "",
+    "video_url": "",
+    "duration_seconds": null,
+    "has_live_deployment": false,
+    "deployment_url": "",
+    "deployment_reachable": null,
+    "has_slide_deck": false,
+    "observations": []
+  },
+  "sponsor_technologies_mentioned": [],
+  "bundle_sha256": "d23455ab1f33026439963189447f30129db18d50ec0d51f144916b5a0a84af67",
+  "created_at": "2026-09-26T02:03:23.352092Z"
+}

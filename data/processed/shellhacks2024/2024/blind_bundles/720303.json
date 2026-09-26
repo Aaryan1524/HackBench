@@ -1,0 +1,162 @@
+{
+  "project_id": "720303",
+  "slug": "peerscript",
+  "title": "PeerScript",
+  "tagline": "PeerScript is a web app that helps physicians automate medication prescriptions, calculate doses, recommend alternatives, and manage patient data through an easily updatable database.",
+  "problem_statement": "",
+  "inspiration": "",
+  "what_it_does": "",
+  "how_it_was_built": "",
+  "challenges": "",
+  "accomplishments": "",
+  "lessons_learned": "",
+  "future_plans": "",
+  "tech_tags": [
+    "database",
+    "groq",
+    "groq",
+    "mongodb",
+    "mongodb",
+    "node.js",
+    "node.js",
+    "postman",
+    "postman",
+    "react",
+    "react"
+  ],
+  "team_size": 3,
+  "repository_metrics": {
+    "repo_url": "https://github.com/NeilBhandari/ShellHacksProject/tree/workingbuild",
+    "status": "accessible",
+    "default_branch": "main",
+    "file_count": 25,
+    "approx_loc": 1601,
+    "loc_by_language": {
+      "HTML": 13,
+      "JavaScript": 975,
+      "CSS": 613
+    },
+    "primary_languages": [
+      "JavaScript",
+      "CSS",
+      "HTML"
+    ],
+    "tech_stack": {
+      "frontend_frameworks": [
+        "Vite",
+        "React"
+      ],
+      "backend_frameworks": [],
+      "databases": [],
+      "ai_ml_libraries": [],
+      "model_providers": [],
+      "cloud_devops": [],
+      "third_party_apis": [],
+      "hardware_components": [],
+      "package_dependencies": [
+        "react",
+        "vite"
+      ]
+    },
+    "git_timeline": {
+      "total_commits": 23,
+      "commits_in_window": 23,
+      "first_commit_time": "2024-09-27T21:52:20Z",
+      "last_commit_time": "2026-04-30T23:58:27Z",
+      "commit_timestamps": [
+        "2024-09-27T21:52:20Z",
+        "2024-09-28T21:33:10Z",
+        "2024-09-28T21:34:44Z",
+        "2024-09-28T21:35:57Z",
+        "2024-09-28T21:36:38Z",
+        "2024-09-28T22:44:32Z",
+        "2024-09-28T23:42:04Z",
+        "2024-09-28T23:43:50Z",
+        "2024-09-28T23:44:57Z",
+        "2024-09-28T23:56:16Z",
+        "2024-09-29T00:02:51Z",
+        "2024-09-29T00:09:54Z",
+        "2024-09-29T03:25:28Z",
+        "2024-09-29T03:27:30Z",
+        "2024-09-29T03:28:04Z",
+        "2024-09-29T03:30:23Z",
+        "2024-09-29T03:34:28Z",
+        "2024-09-29T04:54:42Z",
+        "2025-04-01T22:52:15Z",
+        "2025-05-10T23:59:18Z",
+        "2025-05-10T23:59:28Z",
+        "2025-05-10T23:59:40Z",
+        "2026-04-30T23:58:27Z"
+      ],
+      "late_rewrites_detected": false,
+      "deadline_crunch_ratio": 0.04,
+      "final_stage_focus": "docs",
+      "history_is_squashed_or_minimal": false,
+      "contributor_count": 4,
+      "contributors": [
+        "Victoria Huynh",
+        "megane18",
+        "gacay",
+        "Neil Bhandari"
+      ]
+    },
+    "test_files_count": 0,
+    "test_frameworks": [],
+    "has_ci": false,
+    "ci_configs": [],
+    "has_docker": false,
+    "has_env_template": false,
+    "readme_size_bytes": 3096,
+    "readme_excerpt": "# PeerScript: AI-Assisted Clinical Workflow & Prescription System\n## Overview\nPeerScript is an AI-powered web application designed to help physicians streamline clinical workflows, automate medication prescriptions, and manage patient data through an intelligent interface.\nThe system combines structured patient data management with AI-assisted prescription support, enabling faster, more consistent, and data-driven decision-making.\nBuilt as a team project with a focus on real-world healthcare challenges, PeerScript demonstrates how AI can be integrated into clinical workflows to reduce friction and improve accuracy.\n## Problem\nHealthcare providers face several challenges in day-to-day workflows:\n* Manual prescription processes are time-consuming\n* Dosage calculations can be error-prone\n* Switching between systems slows down decision-making\n* Patient data is often fragmented or difficult to manage\nThese inefficiencies can impact both provider productivity and patient outcomes.\n## Solution\nPeerScript provides a unified interface that:\n* Automates prescription workflows\n* Assists with dosage calculations\n* Suggests alternative medications\n* Stores and organizes patient data\n* Integrates AI to enhance decision support\nThis reduces cognitive load for physicians while improving workflow efficiency.\n## Key Features\n* AI-assisted prescription recommendations\n* Automated dosage calculations\n* Alternative medication suggestions\n* Patient record management system\n* Searchable and updatable database\n* Clean, responsive UI for clinical workflows\n## System Architecture\n1. User input → patient and prescription data\n2. Frontend → structured UI (React)\n3. Backend → API and data processing\n4. Database → MongoDB patient records\n5. AI layer → Groq API for recommendation logic\n6. UI → results and workflow outputs\n## Tech Stack\nFrontend:\n* React.js\nBackend:\n* Node.js (assumed API layer)\nDatabase:\n* MongoDB\nAI:\n* Groq API\nLanguage:\n* JavaScript\n## Demo\nWatch the demo here:\nhttps://www.youtube.com/watch?v=-84fjgNM6PY\nDevpost:\nhttps://devpost.com/software/peerscript\n## What I Built\nAs part of a 3-person team (Neil, Victoria, Megane), I contributed to:\n* Core application logic and workflow design\n* Integration of AI-assisted recommendation system\n* Database interaction and data handling\n* Frontend components for user interaction\n* Overall system architecture and feature implementation\n## Limitations\n* Not a production-ready medical system\n* AI recommendations are advisory only\n* No",
+    "has_architecture_docs": true,
+    "api_routes_count": 0,
+    "db_migrations_or_schema_count": 0,
+    "mock_data_detected": false,
+    "mock_data_indicators": [],
+    "todo_fixme_count": 0,
+    "boilerplate_detected": false,
+    "boilerplate_indicators": [],
+    "deployment_check": null,
+    "consistency_with_claims": "inconsistent",
+    "consistency_explanation": "Weak evidence: Only 2/11 claimed technologies detected in codebase.",
+    "actual_integrations_found": [
+      "react",
+      "react"
+    ],
+    "readme_claims_unsupported_by_code": [
+      "database",
+      "groq",
+      "groq",
+      "mongodb",
+      "mongodb",
+      "node.js",
+      "node.js",
+      "postman",
+      "postman"
+    ],
+    "provenance": [
+      {
+        "claim": "Inspected repository https://github.com/NeilBhandari/ShellHacksProject/tree/workingbuild",
+        "evidence_type": "repository",
+        "source": "https://github.com/NeilBhandari/ShellHacksProject/tree/workingbuild",
+        "location": "root",
+        "confidence": 1.0,
+        "details": null
+      }
+    ]
+  },
+  "demo_summary": {
+    "has_video_demo": true,
+    "video_platform": "youtube",
+    "video_url": "https://www.youtube.com/embed/-84fjgNM6PY?enablejsapi=1&hl=en_US&rel=0&start=&version=3&wmode=transparent",
+    "duration_seconds": null,
+    "has_live_deployment": false,
+    "deployment_url": "",
+    "deployment_reachable": null,
+    "has_slide_deck": false,
+    "observations": []
+  },
+  "sponsor_technologies_mentioned": [],
+  "bundle_sha256": "895b503f574405a8e6b87fd501398418310e2442bb0829c8815e915ac79d65f7",
+  "created_at": "2026-09-26T02:03:23.242955Z"
+}

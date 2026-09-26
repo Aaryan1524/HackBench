@@ -1,0 +1,147 @@
+{
+  "project_id": "719560",
+  "slug": "swift-response",
+  "title": "Swift Response",
+  "tagline": "Swift Response is a web-App platform designed to help first responders prioritize and manage disaster relief in realtime. Our program provides optimized routes and supplies to victims of disasters.",
+  "problem_statement": "",
+  "inspiration": "",
+  "what_it_does": "",
+  "how_it_was_built": "",
+  "challenges": "",
+  "accomplishments": "",
+  "lessons_learned": "",
+  "future_plans": "",
+  "tech_tags": [
+    "css",
+    "css",
+    "flask",
+    "flask",
+    "html",
+    "html",
+    "javascript",
+    "javascript"
+  ],
+  "team_size": 4,
+  "repository_metrics": {
+    "repo_url": "https://github.com/sanonrickny/Shellhacks2024",
+    "status": "accessible",
+    "default_branch": "main",
+    "file_count": 979,
+    "approx_loc": 326777,
+    "loc_by_language": {
+      "Python": 324860,
+      "CSS": 208,
+      "C": 320,
+      "JavaScript": 344,
+      "HTML": 1045
+    },
+    "primary_languages": [
+      "Python",
+      "HTML",
+      "JavaScript",
+      "C",
+      "CSS"
+    ],
+    "tech_stack": {
+      "frontend_frameworks": [],
+      "backend_frameworks": [
+        "Django",
+        "Flask"
+      ],
+      "databases": [],
+      "ai_ml_libraries": [],
+      "model_providers": [],
+      "cloud_devops": [],
+      "third_party_apis": [],
+      "hardware_components": [],
+      "package_dependencies": [
+        "django",
+        "flask",
+        "gunicorn"
+      ]
+    },
+    "git_timeline": {
+      "total_commits": 9,
+      "commits_in_window": 9,
+      "first_commit_time": "2024-09-28T21:31:58Z",
+      "last_commit_time": "2024-09-29T16:37:35Z",
+      "commit_timestamps": [
+        "2024-09-28T21:31:58Z",
+        "2024-09-29T03:42:25Z",
+        "2024-09-29T03:58:16Z",
+        "2024-09-29T04:05:21Z",
+        "2024-09-29T04:05:25Z",
+        "2024-09-29T15:29:43Z",
+        "2024-09-29T15:30:46Z",
+        "2024-09-29T15:31:08Z",
+        "2024-09-29T16:37:35Z"
+      ],
+      "late_rewrites_detected": false,
+      "deadline_crunch_ratio": 0.44,
+      "final_stage_focus": "features",
+      "history_is_squashed_or_minimal": false,
+      "contributor_count": 2,
+      "contributors": [
+        "Rickny Sanon",
+        "Levis Cardoso"
+      ]
+    },
+    "test_files_count": 10,
+    "test_frameworks": [
+      "unittest"
+    ],
+    "has_ci": false,
+    "ci_configs": [],
+    "has_docker": false,
+    "has_env_template": false,
+    "readme_size_bytes": 1504,
+    "readme_excerpt": "# Shellhacks2024\nInspiration\nWith the recent events, we were reminded of the chaos and disaster that comes with hurricanes. Often times in these situations, first responders fail to distribute aid and supplies in an efficient manner due to lack of data and lack of intelligent pathfinding systems.\nWhat it does\nThe purpose of this project is to empower first responders with intelligent solutions to resource allocation by leveraging powerful search algorithms and visualizing data in real-time.\nHow we built it\nSwift Response utilizes Flask as its web app framework and uses JavaScript for the backend. Swift Response is powered by a variation of Uniform Cost Search that uses a custom cost function that factors in distance and priority to return the optimal path.\nChallenges we ran into\nOne of the challenges we faced was coming up with the right cost function for our algorithm. Early iterations were biased or inadmissible. Another challenge was integrating the algorithm into our program in a way that worked with our front end.\nAccomplishments that we're proud of\nWe are proud of succeeding in our purpose and successfully applying algorithms to real-world problems.\nWhat we learned\nOne of the biggest skills we gained with this project was connecting back and front ends together. No one on our team had any full-stack experience but together we found solutions to our hardest problems\nTry it out here: https://shellhacks2024.onrender.com/\nyoutube video here: https://youtu.be/U4T9eCoNsgY",
+    "has_architecture_docs": false,
+    "api_routes_count": 7,
+    "db_migrations_or_schema_count": 2,
+    "mock_data_detected": false,
+    "mock_data_indicators": [],
+    "todo_fixme_count": 298,
+    "boilerplate_detected": false,
+    "boilerplate_indicators": [],
+    "deployment_check": null,
+    "consistency_with_claims": "inconsistent",
+    "consistency_explanation": "Weak evidence: Only 2/8 claimed technologies detected in codebase.",
+    "actual_integrations_found": [
+      "flask",
+      "flask"
+    ],
+    "readme_claims_unsupported_by_code": [
+      "css",
+      "css",
+      "html",
+      "html",
+      "javascript",
+      "javascript"
+    ],
+    "provenance": [
+      {
+        "claim": "Inspected repository https://github.com/sanonrickny/Shellhacks2024",
+        "evidence_type": "repository",
+        "source": "https://github.com/sanonrickny/Shellhacks2024",
+        "location": "root",
+        "confidence": 1.0,
+        "details": null
+      }
+    ]
+  },
+  "demo_summary": {
+    "has_video_demo": false,
+    "video_platform": "",
+    "video_url": "",
+    "duration_seconds": null,
+    "has_live_deployment": false,
+    "deployment_url": "",
+    "deployment_reachable": null,
+    "has_slide_deck": false,
+    "observations": []
+  },
+  "sponsor_technologies_mentioned": [],
+  "bundle_sha256": "a7a7f4c331463941bd4accea9f83830ea98a286ebd3e204ede6493b8fe4f65de",
+  "created_at": "2026-09-26T02:03:23.113667Z"
+}

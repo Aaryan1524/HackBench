@@ -1,0 +1,138 @@
+{
+  "project_id": "569432",
+  "slug": "book-buddies-a-educational-platform-elevating-reading",
+  "title": "Book Buddies: An Educational Platform to Elevate Reading",
+  "tagline": "\"BookBuddies: Your reading companion! Our API/AI uses student info to recommend books from your school's database, rewarding you with reading points for top online bookstores.",
+  "problem_statement": "",
+  "inspiration": "",
+  "what_it_does": "",
+  "how_it_was_built": "",
+  "challenges": "",
+  "accomplishments": "",
+  "lessons_learned": "",
+  "future_plans": "",
+  "tech_tags": [
+    "css",
+    "css",
+    "html",
+    "html",
+    "javascript",
+    "javascript",
+    "openai",
+    "replit"
+  ],
+  "team_size": 2,
+  "repository_metrics": {
+    "repo_url": "https://github.com/Mimi120/Book-Buddies-An-Educational-Platform-to-Elevate-Reading",
+    "status": "accessible",
+    "default_branch": "main",
+    "file_count": 6,
+    "approx_loc": 508,
+    "loc_by_language": {
+      "HTML": 120,
+      "JavaScript": 86,
+      "CSS": 302
+    },
+    "primary_languages": [
+      "CSS",
+      "HTML",
+      "JavaScript"
+    ],
+    "tech_stack": {
+      "frontend_frameworks": [],
+      "backend_frameworks": [
+        "Express.js"
+      ],
+      "databases": [],
+      "ai_ml_libraries": [],
+      "model_providers": [
+        "OpenAI"
+      ],
+      "cloud_devops": [],
+      "third_party_apis": [],
+      "hardware_components": [],
+      "package_dependencies": [
+        "express",
+        "openai"
+      ]
+    },
+    "git_timeline": {
+      "total_commits": 7,
+      "commits_in_window": 7,
+      "first_commit_time": "2023-09-17T13:48:51Z",
+      "last_commit_time": "2023-09-17T14:26:27Z",
+      "commit_timestamps": [
+        "2023-09-17T13:48:51Z",
+        "2023-09-17T13:52:26Z",
+        "2023-09-17T14:21:12Z",
+        "2023-09-17T14:23:31Z",
+        "2023-09-17T14:24:25Z",
+        "2023-09-17T14:25:38Z",
+        "2023-09-17T14:26:27Z"
+      ],
+      "late_rewrites_detected": false,
+      "deadline_crunch_ratio": 0.0,
+      "final_stage_focus": "features",
+      "history_is_squashed_or_minimal": false,
+      "contributor_count": 1,
+      "contributors": [
+        "Mimi120"
+      ]
+    },
+    "test_files_count": 0,
+    "test_frameworks": [],
+    "has_ci": false,
+    "ci_configs": [],
+    "has_docker": false,
+    "has_env_template": false,
+    "readme_size_bytes": 4658,
+    "readme_excerpt": "# Book-Buddies-An-Educational-Platform-to-Elevate-Reading\nBook Buddies utilizes advanced APIs and AI to tailor book recommendations directly from the Open AI database. Recommendations are personalized based on genre, reading timeline, and the user's school affiliation.\nBookBuddies Algorithm: Tailored Reading Experience\n1. **User Registration and Profile Creation:**\n1.1. **User Registration:**\n- Users initiate their BookBuddies journey by signing up, providing essential information like name, school ID, and email.\n1.2. **Profile Creation:**\n- Upon registration, the system orchestrates the creation of user profiles, securely storing their data in the BookBuddies database.\n2. **Book Recommendation System:**\n2.1. **User Preferences Input:**\n- Users engage by sharing their unique reading preferences, encompassing favored genres, preferred reading timelines, and current grade levels.\n2.2. **Integration with OpenAI:**\n- BookBuddies synergizes with OpenAI, harnessing the profound capabilities of natural language processing to craft personalized book recommendations.\n2.3. **Data Transmission:**\n- User preferences, treated with utmost security, journey to OpenAI's servers for meticulous processing.\n2.4. **AI Processing:**\n- OpenAI's advanced language models meticulously dissect and decipher user preferences, sculpting tailor-made book recommendations.\n2.5. **Book Recommendations:**\n- A meticulously curated list of book recommendations, finely attuned to the user's preferences, is returned by OpenAI.\n2.6. **Display Recommendations:**\n- BookBuddies orchestrates an elegant presentation of the recommended books, complete with captivating cover images, immersive descriptions, and easy accessibility at local libraries.\n3. **Reading and Quiz System:**\n3.1. **Reading Completion:**\n- Users embark on their literary journeys, savoring the recommended books at their own pace.\n3.2. **Quiz Engagement:**\n- Upon finishing a book, users have the option to immerse themselves in engaging quizzes, meticulously crafted to reflect the essence of the read.\n3.3. **Quiz Attempts:**\n- A two-fold opportunity awaits users for each quiz. They can tackle the quiz challenge up to two times, striving for a commendable minimum score of 80%.\n3.4. **Points Accumulation:**\n- Proficiency in quizzes translates to the accumulation of redeemable points, signifying reading achievements and knowledge growth.\n3.5. **Milestone Rewards:**\n- Users can bask in the gratification of their literary accomplishments",
+    "has_architecture_docs": false,
+    "api_routes_count": 0,
+    "db_migrations_or_schema_count": 0,
+    "mock_data_detected": false,
+    "mock_data_indicators": [],
+    "todo_fixme_count": 0,
+    "boilerplate_detected": false,
+    "boilerplate_indicators": [],
+    "deployment_check": null,
+    "consistency_with_claims": "inconsistent",
+    "consistency_explanation": "Weak evidence: Only 1/8 claimed technologies detected in codebase.",
+    "actual_integrations_found": [
+      "openai"
+    ],
+    "readme_claims_unsupported_by_code": [
+      "css",
+      "css",
+      "html",
+      "html",
+      "javascript",
+      "javascript",
+      "replit"
+    ],
+    "provenance": [
+      {
+        "claim": "Inspected repository https://github.com/Mimi120/Book-Buddies-An-Educational-Platform-to-Elevate-Reading",
+        "evidence_type": "repository",
+        "source": "https://github.com/Mimi120/Book-Buddies-An-Educational-Platform-to-Elevate-Reading",
+        "location": "root",
+        "confidence": 1.0,
+        "details": null
+      }
+    ]
+  },
+  "demo_summary": {
+    "has_video_demo": true,
+    "video_platform": "youtube",
+    "video_url": "https://www.youtube.com/embed/knY7mthqIBE?enablejsapi=1&hl=en_US&rel=0&start=&version=3&wmode=transparent",
+    "duration_seconds": null,
+    "has_live_deployment": false,
+    "deployment_url": "",
+    "deployment_reachable": null,
+    "has_slide_deck": false,
+    "observations": []
+  },
+  "sponsor_technologies_mentioned": [],
+  "bundle_sha256": "a6830b9d801707e17184d44bb8c4a9249a38081d46265cdcfa9d8c5d0baab90a",
+  "created_at": "2026-09-26T02:11:35.763897Z"
+}

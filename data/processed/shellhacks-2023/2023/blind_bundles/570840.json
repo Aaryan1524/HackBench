@@ -1,0 +1,140 @@
+{
+  "project_id": "570840",
+  "slug": "linguabeats",
+  "title": "LinguaBeats",
+  "tagline": "App combines Spotify's API with AI text gen for real-time translation, music tracking, and interactive language tests.",
+  "problem_statement": "",
+  "inspiration": "",
+  "what_it_does": "",
+  "how_it_was_built": "",
+  "challenges": "",
+  "accomplishments": "",
+  "lessons_learned": "",
+  "future_plans": "",
+  "tech_tags": [
+    "css",
+    "css",
+    "html",
+    "html",
+    "javascript",
+    "javascript",
+    "python",
+    "python",
+    "spotify",
+    "spotify",
+    "spotipy"
+  ],
+  "team_size": 2,
+  "repository_metrics": {
+    "repo_url": "https://github.com/Rebecca-Calderon/LinguaBeats.git",
+    "status": "accessible",
+    "default_branch": "main",
+    "file_count": 8,
+    "approx_loc": 1689,
+    "loc_by_language": {
+      "Python": 71,
+      "HTML": 240,
+      "CSS": 1378
+    },
+    "primary_languages": [
+      "CSS",
+      "HTML",
+      "Python"
+    ],
+    "tech_stack": {
+      "frontend_frameworks": [],
+      "backend_frameworks": [
+        "Flask"
+      ],
+      "databases": [],
+      "ai_ml_libraries": [],
+      "model_providers": [],
+      "cloud_devops": [],
+      "third_party_apis": [],
+      "hardware_components": [],
+      "package_dependencies": [
+        "flask"
+      ]
+    },
+    "git_timeline": {
+      "total_commits": 6,
+      "commits_in_window": 6,
+      "first_commit_time": "2023-09-16T23:01:45Z",
+      "last_commit_time": "2024-06-17T01:46:16Z",
+      "commit_timestamps": [
+        "2023-09-16T23:01:45Z",
+        "2023-09-17T14:08:57Z",
+        "2023-09-17T14:14:12Z",
+        "2023-09-17T14:15:12Z",
+        "2023-09-17T15:21:16Z",
+        "2024-06-17T01:46:16Z"
+      ],
+      "late_rewrites_detected": false,
+      "deadline_crunch_ratio": 0.17,
+      "final_stage_focus": "polish",
+      "history_is_squashed_or_minimal": false,
+      "contributor_count": 2,
+      "contributors": [
+        "Rebecca-Calderon",
+        "camzxx"
+      ]
+    },
+    "test_files_count": 0,
+    "test_frameworks": [],
+    "has_ci": false,
+    "ci_configs": [],
+    "has_docker": false,
+    "has_env_template": false,
+    "readme_size_bytes": 327,
+    "readme_excerpt": "# LinguaBeats\nBy connecting Spotify’s API to open AI’s chat based text generation, this application will track a user’s non-native music listening, offer translations in realtime, and allow them to take AI generated tests. The tests are meant to increase understanding and language learning in a fun and interactive way!",
+    "has_architecture_docs": false,
+    "api_routes_count": 0,
+    "db_migrations_or_schema_count": 0,
+    "mock_data_detected": false,
+    "mock_data_indicators": [],
+    "todo_fixme_count": 0,
+    "boilerplate_detected": false,
+    "boilerplate_indicators": [],
+    "deployment_check": null,
+    "consistency_with_claims": "inconsistent",
+    "consistency_explanation": "Weak evidence: Only 0/11 claimed technologies detected in codebase.",
+    "actual_integrations_found": [],
+    "readme_claims_unsupported_by_code": [
+      "css",
+      "css",
+      "html",
+      "html",
+      "javascript",
+      "javascript",
+      "python",
+      "python",
+      "spotify",
+      "spotify",
+      "spotipy"
+    ],
+    "provenance": [
+      {
+        "claim": "Inspected repository https://github.com/Rebecca-Calderon/LinguaBeats.git",
+        "evidence_type": "repository",
+        "source": "https://github.com/Rebecca-Calderon/LinguaBeats.git",
+        "location": "root",
+        "confidence": 1.0,
+        "details": null
+      }
+    ]
+  },
+  "demo_summary": {
+    "has_video_demo": false,
+    "video_platform": "",
+    "video_url": "",
+    "duration_seconds": null,
+    "has_live_deployment": false,
+    "deployment_url": "",
+    "deployment_reachable": null,
+    "has_slide_deck": false,
+    "observations": []
+  },
+  "sponsor_technologies_mentioned": [],
+  "bundle_sha256": "0752c87c8a5a3777d0a81bd8c04d1a7b559af5ab799829df75aaa4b4061ebbc9",
+  "created_at": "2026-09-26T02:11:35.599399Z"
+}

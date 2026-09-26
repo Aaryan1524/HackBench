@@ -1,0 +1,42 @@
+{
+  "project_id": "720392",
+  "slug": "evil-scientist-search-ivcgpz",
+  "title": "Evil Scientist Search",
+  "tagline": "Filters through thousands of data points to find social media links that match the desired name.",
+  "problem_statement": "",
+  "inspiration": "",
+  "what_it_does": "",
+  "how_it_was_built": "",
+  "challenges": "",
+  "accomplishments": "",
+  "lessons_learned": "",
+  "future_plans": "",
+  "tech_tags": [
+    "css",
+    "css",
+    "flask",
+    "flask",
+    "html",
+    "html",
+    "javascript",
+    "javascript",
+    "python",
+    "python"
+  ],
+  "team_size": 2,
+  "repository_metrics": null,
+  "demo_summary": {
+    "has_video_demo": false,
+    "video_platform": "",
+    "video_url": "",
+    "duration_seconds": null,
+    "has_live_deployment": false,
+    "deployment_url": "",
+    "deployment_reachable": null,
+    "has_slide_deck": false,
+    "observations": []
+  },
+  "sponsor_technologies_mentioned": [],
+  "bundle_sha256": "6708c97d8ebfb299e59f03f7bb574c12f7bc04faacd75a2bfa2340c54a3be213",
+  "created_at": "2026-09-26T02:03:23.231510Z"
+}

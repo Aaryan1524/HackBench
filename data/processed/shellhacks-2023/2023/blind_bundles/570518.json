@@ -1,0 +1,161 @@
+{
+  "project_id": "570518",
+  "slug": "thrive-t7hyoc",
+  "title": "Thrive",
+  "tagline": "This is a project for the vanguard challenge\r\nWe built a site that has resources to help international students with international student loans and compiled information that may be useful for them.",
+  "problem_statement": "",
+  "inspiration": "",
+  "what_it_does": "",
+  "how_it_was_built": "",
+  "challenges": "",
+  "accomplishments": "",
+  "lessons_learned": "",
+  "future_plans": "",
+  "tech_tags": [
+    "css",
+    "css",
+    "html",
+    "html",
+    "javascript",
+    "javascript",
+    "react",
+    "react",
+    "vite"
+  ],
+  "team_size": 4,
+  "repository_metrics": {
+    "repo_url": "https://github.com/Dauntlesshokage/Thrive-Shellhacks",
+    "status": "accessible",
+    "default_branch": "main",
+    "file_count": 34,
+    "approx_loc": 999,
+    "loc_by_language": {
+      "HTML": 16,
+      "JavaScript": 563,
+      "CSS": 420
+    },
+    "primary_languages": [
+      "JavaScript",
+      "CSS",
+      "HTML"
+    ],
+    "tech_stack": {
+      "frontend_frameworks": [
+        "React",
+        "Vite"
+      ],
+      "backend_frameworks": [],
+      "databases": [],
+      "ai_ml_libraries": [],
+      "model_providers": [],
+      "cloud_devops": [],
+      "third_party_apis": [],
+      "hardware_components": [],
+      "package_dependencies": [
+        "@types/react",
+        "@types/react-dom",
+        "@vitejs/plugin-react",
+        "eslint",
+        "eslint-plugin-react",
+        "eslint-plugin-react-hooks",
+        "eslint-plugin-react-refresh",
+        "react",
+        "react-dom",
+        "react-scroll",
+        "react-youtube",
+        "vite"
+      ]
+    },
+    "git_timeline": {
+      "total_commits": 9,
+      "commits_in_window": 9,
+      "first_commit_time": "2023-09-16T17:41:01Z",
+      "last_commit_time": "2023-09-17T14:59:56Z",
+      "commit_timestamps": [
+        "2023-09-16T17:41:01Z",
+        "2023-09-16T17:41:23Z",
+        "2023-09-16T18:38:33Z",
+        "2023-09-16T23:56:12Z",
+        "2023-09-17T03:05:52Z",
+        "2023-09-17T12:20:39Z",
+        "2023-09-17T14:45:39Z",
+        "2023-09-17T14:56:10Z",
+        "2023-09-17T14:59:56Z"
+      ],
+      "late_rewrites_detected": false,
+      "deadline_crunch_ratio": 0.44,
+      "final_stage_focus": "docs",
+      "history_is_squashed_or_minimal": false,
+      "contributor_count": 2,
+      "contributors": [
+        "Nate Clark",
+        "Ananth Lakshman Kumar"
+      ]
+    },
+    "test_files_count": 0,
+    "test_frameworks": [],
+    "has_ci": false,
+    "ci_configs": [],
+    "has_docker": false,
+    "has_env_template": false,
+    "readme_size_bytes": 1984,
+    "readme_excerpt": "Try Thrive\n## Inspiration\nThis project was done for the Vanguard challenge that required us to make a project that contributes to a better financial future for those in underrepresented minority communities. We wanted to create a platform that would give international students information they would need to get student loans and pay off student loans.  Since our team has 2 international students who have had experience with international student loans we wanted to use our experience to make sure future students have the resources they need to have the best experience.\n## What it does\nWe built a web page that has things that international students may need.  There is a loan repayment calculator that shows international students how much they need to pay per month in order to pay off their loans on time.  We have informational resources like a FAQ, links to external resources, and an educational quiz.\n## How we built it\nWe built Thrive using React, Vite, HTML, CSS, and JavaScript.\n## Challenges we ran into\nMaking sure the calculator gave proper output and styling the web page properly.\n## Accomplishments that we're proud of\nBuilding a web page that has multiple different resources.  Like a loan repayment calculator, a FAQ that may answer common questions, and an educational quiz to help reinforce learning.\n## What we learned\nOur team was built with team members with vastly different skill levels.  So we all learned different things, for example one of our team members learned how to better format web pages while another team member had their first experience .with HTML and CSS.  We also learned team work and team management\n## What's next for Thrive\nAdd more features and resources for international students.  Like a budgeting tool and a calculator that calculates how much faster can a loan be payed off if a student paid over the minimum requirement per month and also how much they would save off of intrest.",
+    "has_architecture_docs": false,
+    "api_routes_count": 0,
+    "db_migrations_or_schema_count": 0,
+    "mock_data_detected": false,
+    "mock_data_indicators": [],
+    "todo_fixme_count": 0,
+    "boilerplate_detected": false,
+    "boilerplate_indicators": [],
+    "deployment_check": {
+      "url": "https://thrive-shellhacks.netlify.app/",
+      "is_reachable": true,
+      "status_code": 200,
+      "response_time_ms": 1196.9,
+      "checked_at": "2026-09-26T02:09:00.333792Z",
+      "deployment_url_status": "reachable",
+      "deployment_verification": "unknown",
+      "verification_evidence": "Server responded (HTTP 200), but no project name was provided to verify content."
+    },
+    "consistency_with_claims": "partial",
+    "consistency_explanation": "Partial evidence: 3/9 claimed technologies found in codebase.",
+    "actual_integrations_found": [
+      "react",
+      "react",
+      "vite"
+    ],
+    "readme_claims_unsupported_by_code": [
+      "css",
+      "css",
+      "html",
+      "html",
+      "javascript",
+      "javascript"
+    ],
+    "provenance": [
+      {
+        "claim": "Inspected repository https://github.com/Dauntlesshokage/Thrive-Shellhacks",
+        "evidence_type": "repository",
+        "source": "https://github.com/Dauntlesshokage/Thrive-Shellhacks",
+        "location": "root",
+        "confidence": 1.0,
+        "details": null
+      }
+    ]
+  },
+  "demo_summary": {
+    "has_video_demo": false,
+    "video_platform": "",
+    "video_url": "",
+    "duration_seconds": null,
+    "has_live_deployment": true,
+    "deployment_url": "https://thrive-shellhacks.netlify.app/",
+    "deployment_reachable": true,
+    "has_slide_deck": false,
+    "observations": []
+  },
+  "sponsor_technologies_mentioned": [],
+  "bundle_sha256": "5c21db22222519641370ff4ab3b526b484bb4ccae4a081212b696a53e18adf1f",
+  "created_at": "2026-09-26T02:11:35.804208Z"
+}

@@ -1,0 +1,157 @@
+{
+  "project_id": "720011",
+  "slug": "chatbot-disease-prediction",
+  "title": "Chatbot Disease Prediction",
+  "tagline": "User friendly chatbot to allow for the user to identify a possible medical condition based on symptoms.",
+  "problem_statement": "",
+  "inspiration": "",
+  "what_it_does": "",
+  "how_it_was_built": "",
+  "challenges": "",
+  "accomplishments": "",
+  "lessons_learned": "",
+  "future_plans": "",
+  "tech_tags": [
+    "numpy",
+    "numpy",
+    "open-api",
+    "pandas",
+    "pandas",
+    "python",
+    "python",
+    "scikit-learn",
+    "scikit-learn",
+    "streamlit"
+  ],
+  "team_size": 4,
+  "repository_metrics": {
+    "repo_url": "https://github.com/chandratejatiriveedhi/Chatbot-Disease-Prediction.git",
+    "status": "accessible",
+    "default_branch": "main",
+    "file_count": 8,
+    "approx_loc": 1041,
+    "loc_by_language": {
+      "Python": 1041
+    },
+    "primary_languages": [
+      "Python"
+    ],
+    "tech_stack": {
+      "frontend_frameworks": [],
+      "backend_frameworks": [],
+      "databases": [],
+      "ai_ml_libraries": [
+        "Scikit-Learn",
+        "LangChain"
+      ],
+      "model_providers": [
+        "OpenAI"
+      ],
+      "cloud_devops": [],
+      "third_party_apis": [],
+      "hardware_components": [],
+      "package_dependencies": [
+        "langchain",
+        "openai",
+        "sklearn"
+      ]
+    },
+    "git_timeline": {
+      "total_commits": 24,
+      "commits_in_window": 24,
+      "first_commit_time": "2024-09-29T10:47:45Z",
+      "last_commit_time": "2024-09-29T16:10:09Z",
+      "commit_timestamps": [
+        "2024-09-29T10:47:45Z",
+        "2024-09-29T10:49:45Z",
+        "2024-09-29T10:51:56Z",
+        "2024-09-29T10:52:23Z",
+        "2024-09-29T10:54:00Z",
+        "2024-09-29T10:54:20Z",
+        "2024-09-29T10:54:33Z",
+        "2024-09-29T10:54:43Z",
+        "2024-09-29T10:54:53Z",
+        "2024-09-29T10:55:51Z",
+        "2024-09-29T10:56:18Z",
+        "2024-09-29T10:56:39Z",
+        "2024-09-29T10:57:46Z",
+        "2024-09-29T10:58:11Z",
+        "2024-09-29T11:02:09Z",
+        "2024-09-29T11:02:34Z",
+        "2024-09-29T11:03:14Z",
+        "2024-09-29T11:04:39Z",
+        "2024-09-29T11:05:38Z",
+        "2024-09-29T11:07:05Z",
+        "2024-09-29T11:07:25Z",
+        "2024-09-29T16:01:36Z",
+        "2024-09-29T16:03:23Z",
+        "2024-09-29T16:10:09Z"
+      ],
+      "late_rewrites_detected": false,
+      "deadline_crunch_ratio": 0.12,
+      "final_stage_focus": "docs",
+      "history_is_squashed_or_minimal": false,
+      "contributor_count": 1,
+      "contributors": [
+        "chandratejatiriveedhi"
+      ]
+    },
+    "test_files_count": 0,
+    "test_frameworks": [],
+    "has_ci": false,
+    "ci_configs": [],
+    "has_docker": false,
+    "has_env_template": false,
+    "readme_size_bytes": 1263,
+    "readme_excerpt": "# Chatbot-Disease-Prediction\nThe code files in python directory consists of the Jupyter Notebook used to train ML models for predictions of the disease and its outcomes based on the user input. Jupyter notebook files consist of exploratory data analysis, ML model training, testing and validation processes. Additionally, there is a python script version of this notebook. You need your api key to run a chatbot in this notebook. Additionally, csv file of the dataset used is uploaded in this folder.\nThe code files in app consist of streamlit app script. To run the script place all the files in same directory and run the following commands. Additionally, pickle files of the trained ML models to generate outcomes of the user prompt input, is provided here.\n!pip install pyngrok streamlit\n!streamlit run app7.py &>/dev/null&\nOnce the application opens you can input in the textbox in the following format.\nFever: Yes, Cough: No, Fatigue: Yes, Difficulty Breathing: Yes, Age: 45, Blood Pressure: High, Cholesterol Level: Low\nYou can leave some parameters blank, however it might not give an accurate/desired results\nNote: When cloning the github repo files, you might want to ensure that the files are renamed if needed.\nFor eg. app7 (1).py to app7.py",
+    "has_architecture_docs": false,
+    "api_routes_count": 0,
+    "db_migrations_or_schema_count": 0,
+    "mock_data_detected": false,
+    "mock_data_indicators": [],
+    "todo_fixme_count": 0,
+    "boilerplate_detected": false,
+    "boilerplate_indicators": [],
+    "deployment_check": null,
+    "consistency_with_claims": "inconsistent",
+    "consistency_explanation": "Weak evidence: Only 2/10 claimed technologies detected in codebase.",
+    "actual_integrations_found": [
+      "scikit-learn",
+      "scikit-learn"
+    ],
+    "readme_claims_unsupported_by_code": [
+      "numpy",
+      "numpy",
+      "open-api",
+      "pandas",
+      "pandas",
+      "python",
+      "python",
+      "streamlit"
+    ],
+    "provenance": [
+      {
+        "claim": "Inspected repository https://github.com/chandratejatiriveedhi/Chatbot-Disease-Prediction.git",
+        "evidence_type": "repository",
+        "source": "https://github.com/chandratejatiriveedhi/Chatbot-Disease-Prediction.git",
+        "location": "root",
+        "confidence": 1.0,
+        "details": null
+      }
+    ]
+  },
+  "demo_summary": {
+    "has_video_demo": true,
+    "video_platform": "youtube",
+    "video_url": "https://www.youtube.com/embed/8wu3Ev44ZcM?enablejsapi=1&hl=en_US&rel=0&start=&version=3&wmode=transparent",
+    "duration_seconds": null,
+    "has_live_deployment": false,
+    "deployment_url": "",
+    "deployment_reachable": null,
+    "has_slide_deck": false,
+    "observations": []
+  },
+  "sponsor_technologies_mentioned": [],
+  "bundle_sha256": "d958b722fec6072499cbf83ebb58ea2cf152ebd502e20a6e183e0ef0ee9ef3f7",
+  "created_at": "2026-09-26T02:03:23.398983Z"
+}

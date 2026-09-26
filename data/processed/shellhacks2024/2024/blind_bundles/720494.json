@@ -1,0 +1,160 @@
+{
+  "project_id": "720494",
+  "slug": "broketoboss",
+  "title": "BrokeToBoss",
+  "tagline": "People make unwise financial decisions all the time, all around the world. We're here to help them out by teaching everyone about financial literacy in a free, easy way.",
+  "problem_statement": "",
+  "inspiration": "",
+  "what_it_does": "",
+  "how_it_was_built": "",
+  "challenges": "",
+  "accomplishments": "",
+  "lessons_learned": "",
+  "future_plans": "",
+  "tech_tags": [
+    "css",
+    "css",
+    "git",
+    "git",
+    "github",
+    "github",
+    "html",
+    "html",
+    "javascript",
+    "javascript"
+  ],
+  "team_size": 4,
+  "repository_metrics": {
+    "repo_url": "https://github.com/KhangHo10/Broke-To-Boss.git",
+    "status": "accessible",
+    "default_branch": "main",
+    "file_count": 67,
+    "approx_loc": 5582,
+    "loc_by_language": {
+      "HTML": 1308,
+      "CSS": 3747,
+      "JavaScript": 527
+    },
+    "primary_languages": [
+      "CSS",
+      "HTML",
+      "JavaScript"
+    ],
+    "tech_stack": {
+      "frontend_frameworks": [],
+      "backend_frameworks": [
+        "Express.js"
+      ],
+      "databases": [],
+      "ai_ml_libraries": [],
+      "model_providers": [],
+      "cloud_devops": [],
+      "third_party_apis": [],
+      "hardware_components": [],
+      "package_dependencies": [
+        "express"
+      ]
+    },
+    "git_timeline": {
+      "total_commits": 25,
+      "commits_in_window": 25,
+      "first_commit_time": "2024-09-28T15:26:18Z",
+      "last_commit_time": "2025-02-28T03:17:33Z",
+      "commit_timestamps": [
+        "2024-09-28T15:26:18Z",
+        "2024-09-28T22:24:31Z",
+        "2024-09-29T05:52:11Z",
+        "2024-09-29T06:00:33Z",
+        "2024-09-29T06:00:39Z",
+        "2024-09-29T06:12:05Z",
+        "2024-09-29T06:15:51Z",
+        "2024-09-29T06:40:43Z",
+        "2024-09-29T06:43:42Z",
+        "2024-09-29T06:47:53Z",
+        "2024-09-29T09:02:50Z",
+        "2024-09-29T10:40:26Z",
+        "2024-09-29T10:46:27Z",
+        "2024-09-29T12:22:08Z",
+        "2024-09-29T12:46:47Z",
+        "2024-09-29T12:48:09Z",
+        "2024-09-29T13:28:01Z",
+        "2024-09-29T13:29:01Z",
+        "2024-09-29T14:38:24Z",
+        "2024-09-29T14:53:33Z",
+        "2024-09-29T18:13:03Z",
+        "2024-09-29T18:13:31Z",
+        "2024-10-01T20:36:58Z",
+        "2024-10-01T20:46:00Z",
+        "2025-02-28T03:17:33Z"
+      ],
+      "late_rewrites_detected": false,
+      "deadline_crunch_ratio": 0.04,
+      "final_stage_focus": "docs",
+      "history_is_squashed_or_minimal": false,
+      "contributor_count": 5,
+      "contributors": [
+        "Aryan",
+        "tain7566",
+        "2Natti",
+        "Khang Ho",
+        "Zara"
+      ]
+    },
+    "test_files_count": 0,
+    "test_frameworks": [],
+    "has_ci": false,
+    "ci_configs": [],
+    "has_docker": false,
+    "has_env_template": false,
+    "readme_size_bytes": 786,
+    "readme_excerpt": "# GhostB 🏆\nBroke To Boss is a web platform designed to help minority groups and the general public improve their financial literacy. This platform features an AI-powered chatbot, multilingual support, and structured financial courses to increase user engagement and improve financial education worldwide.\n## Features 🚀\n- **Financial Literacy Courses**\n- **AI Chatbot**\n- **Multilingual Support**\n- **User Progress Tracking**\n- **Fast and Responsive**\n## Tech Stack 🏗️\n- **Frontend: HTML, CSS, JavaScript**\n- **Backend: Node.js, Express.js, MySQL, Google Gemini API**\n## Visual 📸\n## Installation 🔧\n1. Create a codespace within GitHub\n2. Type \"npm install\"\n3. Then type \"npm start\"\n4. Then type localhost:3000 on your browser",
+    "has_architecture_docs": false,
+    "api_routes_count": 1,
+    "db_migrations_or_schema_count": 0,
+    "mock_data_detected": false,
+    "mock_data_indicators": [],
+    "todo_fixme_count": 0,
+    "boilerplate_detected": false,
+    "boilerplate_indicators": [],
+    "deployment_check": null,
+    "consistency_with_claims": "inconsistent",
+    "consistency_explanation": "Weak evidence: Only 0/10 claimed technologies detected in codebase.",
+    "actual_integrations_found": [],
+    "readme_claims_unsupported_by_code": [
+      "css",
+      "css",
+      "git",
+      "git",
+      "github",
+      "github",
+      "html",
+      "html",
+      "javascript",
+      "javascript"
+    ],
+    "provenance": [
+      {
+        "claim": "Inspected repository https://github.com/KhangHo10/Broke-To-Boss.git",
+        "evidence_type": "repository",
+        "source": "https://github.com/KhangHo10/Broke-To-Boss.git",
+        "location": "root",
+        "confidence": 1.0,
+        "details": null
+      }
+    ]
+  },
+  "demo_summary": {
+    "has_video_demo": false,
+    "video_platform": "",
+    "video_url": "",
+    "duration_seconds": null,
+    "has_live_deployment": false,
+    "deployment_url": "",
+    "deployment_reachable": null,
+    "has_slide_deck": false,
+    "observations": []
+  },
+  "sponsor_technologies_mentioned": [],
+  "bundle_sha256": "e66edb87f6b1e0cb2751e2ce0cdf5f73191057ba01fb4671862299d50ae5626c",
+  "created_at": "2026-09-26T02:03:23.168908Z"
+}

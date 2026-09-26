@@ -1,0 +1,181 @@
+{
+  "project_id": "719316",
+  "slug": "diffusion-earth",
+  "title": "Diffusion Earth",
+  "tagline": "Infinite Environments, Endless Exploration",
+  "problem_statement": "",
+  "inspiration": "",
+  "what_it_does": "",
+  "how_it_was_built": "",
+  "challenges": "",
+  "accomplishments": "",
+  "lessons_learned": "",
+  "future_plans": "",
+  "tech_tags": [
+    "nextjs",
+    "open3d",
+    "python",
+    "python",
+    "stablediffusion",
+    "tailwind"
+  ],
+  "team_size": 3,
+  "repository_metrics": {
+    "repo_url": "https://github.com/mbruckert/diffusionearth",
+    "status": "accessible",
+    "default_branch": "main",
+    "file_count": 43,
+    "approx_loc": 2021,
+    "loc_by_language": {
+      "Python": 1368,
+      "JavaScript": 650,
+      "CSS": 3
+    },
+    "primary_languages": [
+      "Python",
+      "JavaScript",
+      "CSS"
+    ],
+    "tech_stack": {
+      "frontend_frameworks": [
+        "Next.js",
+        "React"
+      ],
+      "backend_frameworks": [
+        "Flask"
+      ],
+      "databases": [],
+      "ai_ml_libraries": [],
+      "model_providers": [],
+      "cloud_devops": [],
+      "third_party_apis": [],
+      "hardware_components": [],
+      "package_dependencies": [
+        "flask",
+        "next",
+        "react"
+      ]
+    },
+    "git_timeline": {
+      "total_commits": 50,
+      "commits_in_window": 50,
+      "first_commit_time": "2024-09-28T03:01:44Z",
+      "last_commit_time": "2024-10-10T16:11:20Z",
+      "commit_timestamps": [
+        "2024-09-28T03:01:44Z",
+        "2024-09-28T04:25:25Z",
+        "2024-09-28T04:25:55Z",
+        "2024-09-28T12:56:47Z",
+        "2024-09-28T13:14:12Z",
+        "2024-09-28T16:09:59Z",
+        "2024-09-28T16:32:40Z",
+        "2024-09-28T16:59:02Z",
+        "2024-09-28T16:59:09Z",
+        "2024-09-28T18:37:53Z",
+        "2024-09-28T18:41:04Z",
+        "2024-09-28T18:42:23Z",
+        "2024-09-28T18:42:31Z",
+        "2024-09-28T18:55:24Z",
+        "2024-09-28T19:00:49Z",
+        "2024-09-28T19:23:31Z",
+        "2024-09-28T19:30:08Z",
+        "2024-09-28T19:31:00Z",
+        "2024-09-28T19:38:10Z",
+        "2024-09-28T20:07:34Z",
+        "2024-09-28T20:07:36Z",
+        "2024-09-28T20:24:04Z",
+        "2024-09-28T20:24:09Z",
+        "2024-09-28T21:27:24Z",
+        "2024-09-28T21:39:53Z",
+        "2024-09-28T21:40:47Z",
+        "2024-09-29T00:04:10Z",
+        "2024-09-29T01:30:42Z",
+        "2024-09-29T03:03:42Z",
+        "2024-09-29T03:56:08Z",
+        "2024-09-29T03:57:42Z",
+        "2024-09-29T04:46:13Z",
+        "2024-09-29T04:46:15Z",
+        "2024-09-29T05:24:42Z",
+        "2024-09-29T08:06:50Z",
+        "2024-09-29T09:22:43Z",
+        "2024-09-29T09:28:25Z",
+        "2024-09-29T09:42:46Z",
+        "2024-09-29T10:14:36Z",
+        "2024-09-29T10:50:58Z",
+        "2024-09-29T10:54:19Z",
+        "2024-09-29T10:56:43Z",
+        "2024-09-29T11:10:43Z",
+        "2024-09-29T11:13:37Z",
+        "2024-09-29T11:13:45Z",
+        "2024-09-29T11:44:31Z",
+        "2024-09-29T12:14:37Z",
+        "2024-09-29T14:06:38Z",
+        "2024-09-29T14:37:59Z",
+        "2024-10-10T16:11:20Z"
+      ],
+      "late_rewrites_detected": false,
+      "deadline_crunch_ratio": 0.02,
+      "final_stage_focus": "debugging",
+      "history_is_squashed_or_minimal": false,
+      "contributor_count": 3,
+      "contributors": [
+        "Owen Burns",
+        "Mark Bruckert",
+        "Nate8888"
+      ]
+    },
+    "test_files_count": 0,
+    "test_frameworks": [],
+    "has_ci": false,
+    "ci_configs": [],
+    "has_docker": false,
+    "has_env_template": false,
+    "readme_size_bytes": 41,
+    "readme_excerpt": "# diffusionearth\nShellHacks 2024 Project",
+    "has_architecture_docs": false,
+    "api_routes_count": 0,
+    "db_migrations_or_schema_count": 0,
+    "mock_data_detected": false,
+    "mock_data_indicators": [],
+    "todo_fixme_count": 0,
+    "boilerplate_detected": false,
+    "boilerplate_indicators": [],
+    "deployment_check": null,
+    "consistency_with_claims": "inconsistent",
+    "consistency_explanation": "Weak evidence: Only 1/6 claimed technologies detected in codebase.",
+    "actual_integrations_found": [
+      "nextjs"
+    ],
+    "readme_claims_unsupported_by_code": [
+      "open3d",
+      "python",
+      "python",
+      "stablediffusion",
+      "tailwind"
+    ],
+    "provenance": [
+      {
+        "claim": "Inspected repository https://github.com/mbruckert/diffusionearth",
+        "evidence_type": "repository",
+        "source": "https://github.com/mbruckert/diffusionearth",
+        "location": "root",
+        "confidence": 1.0,
+        "details": null
+      }
+    ]
+  },
+  "demo_summary": {
+    "has_video_demo": true,
+    "video_platform": "youtube",
+    "video_url": "https://www.youtube.com/embed/JvPimkp8LVY?enablejsapi=1&hl=en_US&rel=0&start=&version=3&wmode=transparent",
+    "duration_seconds": null,
+    "has_live_deployment": false,
+    "deployment_url": "",
+    "deployment_reachable": null,
+    "has_slide_deck": false,
+    "observations": []
+  },
+  "sponsor_technologies_mentioned": [],
+  "bundle_sha256": "c17e70977e5aab35108e357c433ba01a176d5184abf6f749e52da67349688a05",
+  "created_at": "2026-09-26T02:03:22.975993Z"
+}

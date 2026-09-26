@@ -1,0 +1,286 @@
+# ShellHacks 2026: general awards and sponsor challenges, as provided by the organizers.
+# This file is the human-edited source. `scripts/import_event_yaml.py` turns it into event_metadata.json,
+# which is what HackBench reads. No results exist yet for 2026, so there is no historical data for it.
+event:
+  id: shellhacks_2026
+  name: ShellHacks 2026
+
+general_awards:
+  - name: Best Overall
+    placements:
+      - 1st Place
+      - 2nd Place
+      - 3rd Place
+
+  - name: Best First-Time Hacker
+
+
+sponsor_challenges:
+
+  - sponsor: Sperry Tech
+    challenge: The GridLock Challenge
+    description: >
+      Power grid companies ("utilities") each plan future construction
+      projects years in advance. Neighboring utilities in different states
+      often plan this work without much visibility into what the other is
+      doing nearby.
+
+      Build a tool that compares at least two utilities' public future
+      construction plans and flags where their planned work overlaps,
+      either because the projects are physically close to each other or
+      because they're scheduled around the same time.
+
+      The goal is to help utilities coordinate nearby projects so they can
+      potentially share labor, equipment, and other critical resources.
+
+    prizes:
+      - place: 1st
+        prize: Guaranteed internships and MacBook Airs
+      - place: 2nd
+        prize: Interviews and iPads
+      - place: 3rd
+        prize: Interviews
+
+    additional_information:
+      - Challenge Specifications
+      - Project Video
+
+
+  - sponsor: Assurant
+    challenge: Take Control of AI
+    description: >
+      AI is reshaping daily life, but most users don't know what data
+      they're sharing, what they're spending, or whether they've picked
+      the right tool.
+
+      Build something that gives people real control through privacy
+      protection, spending visibility, or confident tool selection.
+
+      The broader question is: How do we make sure people in a connected
+      world use AI mindfully?
+
+    prizes:
+      - place: 1st
+        prize: Shokz OpenRun Bone-Conduction Open-Ear Sport Headphones, Black
+      - place: 2nd
+        prize: Staples Easy Desktop Set, Keyboard, Mouse, Mouse Pad, Laptop Stand, ProGel Pens & Sticky Notes
+      - place: 3rd
+        prize: Logitech ERGO M575S Wireless Ergonomic Trackball Mouse, Black
+
+
+  - sponsor: Waymo
+    challenge: The Waymo Mobility Challenge
+    description: >
+      Create a hack that improves transportation using publicly available
+      data.
+
+      Possible approaches include APIs for directions, 360-degree street
+      view, aerial view, elevation data, time zones, and other public data.
+
+      Example ideas include an app helping students carpool to campus or a
+      social network for sharing and reviewing cafes for studying.
+
+      Publicly available data such as Google Maps data may be used.
+
+    prize:
+      status: TBA
+
+
+  - sponsor: Microsoft
+    challenge: "What's Missing?"
+    description: >
+      Pick something that feels unnecessarily difficult, inaccessible,
+      outdated, or simply missing, and build an AI-powered experience that
+      makes it better.
+
+      The goal is to use AI as part of the experience rather than making
+      AI the entire experience.
+
+      Build something that helps a person do something they couldn't
+      easily do before and demonstrate the difference it makes.
+
+    requirements:
+      - The core experience cannot be a chatbot or depend on a chat window.
+      - >
+        The demo should show someone accomplishing a real task, making
+        something, discovering something, testing something, or improving
+        something, rather than simply asking AI for an answer.
+
+    prize:
+      status: Not visible in provided screenshots
+
+
+  - sponsor: Blackstone
+    challenge: Reimagining the Investor Experience
+    description: >
+      Build a product that reimagines how investors understand their
+      current investments and research new opportunities.
+
+      Potential solutions may help users analyze existing portfolios,
+      compare investment opportunities, discover trends and risks,
+      summarize complex information, visualize performance, or ask
+      questions in natural language.
+
+      Publicly available financial or economic data may be used, and any
+      technology stack may be chosen.
+
+      Solutions should make financial information more accessible,
+      actionable, and engaging.
+
+    prizes:
+      - "$350 Visa gift card"
+
+
+  - sponsor: State Farm
+    challenge: Auto Insurance Challenge
+    description: >
+      Create a hack that makes auto insurance simpler and more helpful for
+      students and helps reduce everyday risks such as theft, fire, or
+      accidents where students live, study, or travel.
+
+      Features could include helpful tools, gamified experiences, or
+      education.
+
+    prizes:
+      - State Farm backpacks
+      - Personal safes
+
+
+  - sponsor: INIT National
+    challenge: Building Together
+    description: >
+      Build technology that helps student builders collaborate to create
+      great projects together.
+
+      Explore challenges students face when working together beyond a
+      short hackathon, whether over weeks or months and whether working
+      in-person or remotely.
+
+      Solutions may help students find teammates, learn from one another,
+      share knowledge, ask for help, receive mentorship, overcome
+      roadblocks, and stay engaged.
+
+      The solution should not only manage work. It should help people build
+      relationships, contribute at different skill levels, and become
+      better builders together.
+
+    prizes:
+      - Claude subscriptions for each team member
+
+
+  - sponsor: MLH - ElevenLabs
+    challenge: Best Use of ElevenLabs
+    description: >
+      Deploy natural, human-sounding audio with ElevenLabs.
+
+      Projects may create realistic, dynamic, and emotionally expressive
+      voices for experiences such as interactive AI companions, narrated
+      stories, and voice-enabled applications.
+
+      Integrate fully autonomous audio experiences into the hack using
+      ElevenLabs.
+
+    prizes:
+      - Wireless Earbuds
+
+
+  - sponsor: MLH - Google Cloud
+    challenge: Best Use of Gemini API
+    description: >
+      Use the Google Gemini API to build an AI-powered hackathon project.
+
+      Examples given include understanding language to provide personalized
+      advice, analyzing and summarizing complex research information, and
+      generating creative content such as code, scripts, and music.
+
+    requirement:
+      - Use the Gemini API in the hackathon project.
+
+    prizes:
+      - MLH Swag Kits
+
+
+  - sponsor: MLH - Solana
+    challenge: Best Use of Solana
+    description: >
+      Build applications using Solana's fast execution and near-zero
+      transaction costs.
+
+      Suggested directions include games, social apps, or consumer products
+      using instant high-frequency transactions; sophisticated trading,
+      lending, or decentralized exchanges; and prototypes involving supply
+      chain, identity, or payments at large real-world scale.
+
+    prizes:
+      - Ledger Nano S Plus
+
+
+  - sponsor: MLH - Tiger Data
+    challenge: Best Use of Tiger Data
+    description: >
+      Use Tiger Data's PostgreSQL-based platform for high-performance
+      applications involving real-time data, time-series metrics, and
+      complex analytics.
+
+      Highlighted capabilities include standard SQL over large datasets,
+      storing relational profiles alongside high-frequency metric streams,
+      real-time dashboards using Continuous Aggregates, and data
+      compression.
+
+      Example projects include real-time IoT monitoring, AI-driven
+      analytics dashboards, and financial prediction engines.
+
+    prizes:
+      - Stream Deck Mini
+
+
+  - sponsor: MLH - DigitalOcean
+    challenge: Best Use of DigitalOcean
+    description: >
+      Build, deploy, and scale a project using DigitalOcean.
+
+      Relevant services mentioned include Droplets, Managed Databases,
+      App Platform, and DigitalOcean Gradient AI for building, training,
+      deploying, and serving machine-learning models.
+
+    prizes:
+      - Retro Wireless Mouse
+
+
+  - sponsor: MLH - Snowflake
+    challenge: Best Use of Snowflake API
+    description: >
+      Use Snowflake APIs to add AI capabilities to an application.
+
+      Suggested approaches include customized applications, RAG-powered
+      chatbots, or embedding AI-powered functionality using Snowflake's
+      APIs.
+
+      The challenge information also mentions a student 120-day Snowflake
+      trial and an example repository demonstrating the Snowflake REST API.
+
+    prizes:
+      - Raspberry Pi 4
+
+
+  - sponsor: MLH - MongoDB
+    challenge: Best Use of MongoDB Atlas
+    description: >
+      Build a hack using MongoDB Atlas.
+
+      MongoDB Atlas provides cloud database services and related
+      functionality, with student resources and MongoDB University
+      resources available.
+
+    prizes:
+      - M5Stack IoT Kit for you and each member of your group
+
+
+  - sponsor: MLH - GoDaddy Registry
+    challenge: Best Domain Name from GoDaddy Registry
+    description: >
+      Register and use a domain name with GoDaddy Registry as part of the
+      hack.
+
+    prizes:
+      - Digital Gift Card

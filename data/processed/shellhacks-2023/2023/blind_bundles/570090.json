@@ -1,0 +1,113 @@
+{
+  "project_id": "570090",
+  "slug": "fairlink",
+  "title": "FairLink",
+  "tagline": "FairLink: Transform your career fair experience with virtual avatars. Connect, network, and explore opportunities from anywhere in the world.",
+  "problem_statement": "",
+  "inspiration": "",
+  "what_it_does": "",
+  "how_it_was_built": "",
+  "challenges": "",
+  "accomplishments": "",
+  "lessons_learned": "",
+  "future_plans": "",
+  "tech_tags": [
+    "c#",
+    "c#",
+    "unity",
+    "unity"
+  ],
+  "team_size": 4,
+  "repository_metrics": {
+    "repo_url": "https://github.com/KaitLand12/FairLink",
+    "status": "accessible",
+    "default_branch": "main",
+    "file_count": 127,
+    "approx_loc": 0,
+    "loc_by_language": {},
+    "primary_languages": [],
+    "tech_stack": {
+      "frontend_frameworks": [],
+      "backend_frameworks": [],
+      "databases": [],
+      "ai_ml_libraries": [],
+      "model_providers": [],
+      "cloud_devops": [],
+      "third_party_apis": [],
+      "hardware_components": [],
+      "package_dependencies": []
+    },
+    "git_timeline": {
+      "total_commits": 6,
+      "commits_in_window": 6,
+      "first_commit_time": "2023-09-17T13:45:56Z",
+      "last_commit_time": "2023-09-17T14:40:59Z",
+      "commit_timestamps": [
+        "2023-09-17T13:45:56Z",
+        "2023-09-17T13:57:33Z",
+        "2023-09-17T13:59:12Z",
+        "2023-09-17T14:37:48Z",
+        "2023-09-17T14:39:05Z",
+        "2023-09-17T14:40:59Z"
+      ],
+      "late_rewrites_detected": false,
+      "deadline_crunch_ratio": 0.0,
+      "final_stage_focus": "features",
+      "history_is_squashed_or_minimal": false,
+      "contributor_count": 1,
+      "contributors": [
+        "KaitLand12"
+      ]
+    },
+    "test_files_count": 0,
+    "test_frameworks": [],
+    "has_ci": false,
+    "ci_configs": [],
+    "has_docker": false,
+    "has_env_template": false,
+    "readme_size_bytes": 1155,
+    "readme_excerpt": "# FairLink\n# FairLink Virtual Career Fair Platform\n## Overview\nFairLink is a virtual platform designed to host and participate in virtual career fairs. It provides a dynamic and immersive environment for job seekers and employers to connect, network, and explore career opportunities from anywhere in the world.\n## Features\n- **Virtual Career Fairs**: Host and participate in virtual career fairs, eliminating the need for physical attendance.\n- **Exhibitor Booths**: Explore virtual booths hosted by employers and organizations to learn about job openings and company profiles.\n- **Job Exploration**: Browse and apply for job listings directly through the platform. Employers can review resumes and connect with potential candidates.\n## What's Next\n- **Avatar-Based Interaction**: Create personalized avatars to represent yourself and engage in real-time conversations with other users.\n- **Networking Tools**: Utilize text, voice, and video chat to network with potential employers, industry professionals, and other job seekers.\n- **Virtual Workshops and Seminars**: Attend virtual sessions related to career development and industry trends.",
+    "has_architecture_docs": false,
+    "api_routes_count": 0,
+    "db_migrations_or_schema_count": 0,
+    "mock_data_detected": false,
+    "mock_data_indicators": [],
+    "todo_fixme_count": 0,
+    "boilerplate_detected": false,
+    "boilerplate_indicators": [],
+    "deployment_check": null,
+    "consistency_with_claims": "inconsistent",
+    "consistency_explanation": "Weak evidence: Only 0/4 claimed technologies detected in codebase.",
+    "actual_integrations_found": [],
+    "readme_claims_unsupported_by_code": [
+      "c#",
+      "c#",
+      "unity",
+      "unity"
+    ],
+    "provenance": [
+      {
+        "claim": "Inspected repository https://github.com/KaitLand12/FairLink",
+        "evidence_type": "repository",
+        "source": "https://github.com/KaitLand12/FairLink",
+        "location": "root",
+        "confidence": 1.0,
+        "details": null
+      }
+    ]
+  },
+  "demo_summary": {
+    "has_video_demo": true,
+    "video_platform": "youtube",
+    "video_url": "https://www.youtube.com/embed/EaSc6uqWyxo?enablejsapi=1&hl=en_US&rel=0&start=&version=3&wmode=transparent",
+    "duration_seconds": null,
+    "has_live_deployment": false,
+    "deployment_url": "",
+    "deployment_reachable": null,
+    "has_slide_deck": false,
+    "observations": []
+  },
+  "sponsor_technologies_mentioned": [],
+  "bundle_sha256": "e47a6619417ce82665faadc817c2508654862d3601519bf9f144dadf27284871",
+  "created_at": "2026-09-26T02:11:35.865466Z"
+}

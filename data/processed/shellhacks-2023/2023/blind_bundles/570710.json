@@ -1,0 +1,151 @@
+{
+  "project_id": "570710",
+  "slug": "a-i-movie-generator",
+  "title": "A.I. Movie Generator",
+  "tagline": "Simplify the movie concept creation process! Our program takes your selected setting, characters, atmosphere, and font type to generate a movie poster, title, and plot in your preferred genre.",
+  "problem_statement": "",
+  "inspiration": "",
+  "what_it_does": "",
+  "how_it_was_built": "",
+  "challenges": "",
+  "accomplishments": "",
+  "lessons_learned": "",
+  "future_plans": "",
+  "tech_tags": [
+    "css",
+    "css",
+    "html",
+    "html",
+    "openai",
+    "python",
+    "python",
+    "streamlit"
+  ],
+  "team_size": 4,
+  "repository_metrics": {
+    "repo_url": "https://github.com/murphyrjessica/ShellHacks-2023",
+    "status": "accessible",
+    "default_branch": "main",
+    "file_count": 15,
+    "approx_loc": 241,
+    "loc_by_language": {
+      "Python": 241
+    },
+    "primary_languages": [
+      "Python"
+    ],
+    "tech_stack": {
+      "frontend_frameworks": [],
+      "backend_frameworks": [],
+      "databases": [],
+      "ai_ml_libraries": [],
+      "model_providers": [
+        "OpenAI"
+      ],
+      "cloud_devops": [],
+      "third_party_apis": [],
+      "hardware_components": [],
+      "package_dependencies": [
+        "openai"
+      ]
+    },
+    "git_timeline": {
+      "total_commits": 22,
+      "commits_in_window": 22,
+      "first_commit_time": "2023-09-16T03:09:54Z",
+      "last_commit_time": "2023-09-17T14:54:17Z",
+      "commit_timestamps": [
+        "2023-09-16T03:09:54Z",
+        "2023-09-16T09:26:28Z",
+        "2023-09-16T17:28:59Z",
+        "2023-09-17T01:50:25Z",
+        "2023-09-17T02:25:32Z",
+        "2023-09-17T02:51:50Z",
+        "2023-09-17T02:54:11Z",
+        "2023-09-17T03:15:51Z",
+        "2023-09-17T03:20:27Z",
+        "2023-09-17T03:25:11Z",
+        "2023-09-17T03:28:05Z",
+        "2023-09-17T03:50:06Z",
+        "2023-09-17T03:50:30Z",
+        "2023-09-17T04:17:59Z",
+        "2023-09-17T05:44:58Z",
+        "2023-09-17T06:17:35Z",
+        "2023-09-17T06:17:49Z",
+        "2023-09-17T06:47:28Z",
+        "2023-09-17T07:01:01Z",
+        "2023-09-17T08:48:32Z",
+        "2023-09-17T09:28:08Z",
+        "2023-09-17T14:54:17Z"
+      ],
+      "late_rewrites_detected": false,
+      "deadline_crunch_ratio": 0.32,
+      "final_stage_focus": "docs",
+      "history_is_squashed_or_minimal": false,
+      "contributor_count": 6,
+      "contributors": [
+        "SrinilaiK",
+        "KevKurian",
+        "Jessica Murphy",
+        "DarkShadowNova",
+        "Ryan Eduardo Bori",
+        "root"
+      ]
+    },
+    "test_files_count": 0,
+    "test_frameworks": [],
+    "has_ci": false,
+    "ci_configs": [],
+    "has_docker": false,
+    "has_env_template": false,
+    "readme_size_bytes": 350,
+    "readme_excerpt": "# ShellHacks-2023\nMake sure to:\nWhen running the program, type:\ninto the termninal. Ensure you are in the same directory as the files before running the above command in the terminal.",
+    "has_architecture_docs": false,
+    "api_routes_count": 0,
+    "db_migrations_or_schema_count": 0,
+    "mock_data_detected": false,
+    "mock_data_indicators": [],
+    "todo_fixme_count": 0,
+    "boilerplate_detected": false,
+    "boilerplate_indicators": [],
+    "deployment_check": null,
+    "consistency_with_claims": "inconsistent",
+    "consistency_explanation": "Weak evidence: Only 1/8 claimed technologies detected in codebase.",
+    "actual_integrations_found": [
+      "openai"
+    ],
+    "readme_claims_unsupported_by_code": [
+      "css",
+      "css",
+      "html",
+      "html",
+      "python",
+      "python",
+      "streamlit"
+    ],
+    "provenance": [
+      {
+        "claim": "Inspected repository https://github.com/murphyrjessica/ShellHacks-2023",
+        "evidence_type": "repository",
+        "source": "https://github.com/murphyrjessica/ShellHacks-2023",
+        "location": "root",
+        "confidence": 1.0,
+        "details": null
+      }
+    ]
+  },
+  "demo_summary": {
+    "has_video_demo": false,
+    "video_platform": "",
+    "video_url": "",
+    "duration_seconds": null,
+    "has_live_deployment": false,
+    "deployment_url": "",
+    "deployment_reachable": null,
+    "has_slide_deck": false,
+    "observations": []
+  },
+  "sponsor_technologies_mentioned": [],
+  "bundle_sha256": "edd42681bc838c6e5ea343a0f5de731e941dbb7657d6e9706013fa664b1f648d",
+  "created_at": "2026-09-26T02:11:35.720506Z"
+}

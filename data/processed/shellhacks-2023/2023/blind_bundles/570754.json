@@ -1,0 +1,37 @@
+{
+  "project_id": "570754",
+  "slug": "oddjobs",
+  "title": "OddJobs",
+  "tagline": "Where large websites like LinkedIn offer connections and an outlet for hiring for full-time and part-time jobs, we found that we're missing a community based system in which ppl can find \"OddJobs\"",
+  "problem_statement": "",
+  "inspiration": "",
+  "what_it_does": "",
+  "how_it_was_built": "",
+  "challenges": "",
+  "accomplishments": "",
+  "lessons_learned": "",
+  "future_plans": "",
+  "tech_tags": [
+    "djan",
+    "django",
+    "django",
+    "react",
+    "react"
+  ],
+  "team_size": 1,
+  "repository_metrics": null,
+  "demo_summary": {
+    "has_video_demo": false,
+    "video_platform": "",
+    "video_url": "",
+    "duration_seconds": null,
+    "has_live_deployment": false,
+    "deployment_url": "",
+    "deployment_reachable": null,
+    "has_slide_deck": false,
+    "observations": []
+  },
+  "sponsor_technologies_mentioned": [],
+  "bundle_sha256": "d3476554e51b625c0fbdc56073d912eccb32548ad5345bc821f362eb3e1008ef",
+  "created_at": "2026-09-26T02:11:35.727748Z"
+}

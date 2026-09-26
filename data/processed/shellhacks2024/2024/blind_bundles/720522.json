@@ -1,0 +1,176 @@
+{
+  "project_id": "720522",
+  "slug": "mentormind-ai",
+  "title": "MentorMind.ai",
+  "tagline": "Your AI-powered personal coach for any skill mastery. From coding to cooking, our app creates a personalized roadmap adapted to your pace and expertise, suggests resources, and tracks progress.",
+  "problem_statement": "",
+  "inspiration": "",
+  "what_it_does": "",
+  "how_it_was_built": "",
+  "challenges": "",
+  "accomplishments": "",
+  "lessons_learned": "",
+  "future_plans": "",
+  "tech_tags": [
+    "django",
+    "django",
+    "openai",
+    "react",
+    "react"
+  ],
+  "team_size": 3,
+  "repository_metrics": {
+    "repo_url": "https://github.com/bahetyshyam/generate-learning-roadmaps",
+    "status": "accessible",
+    "default_branch": "master",
+    "file_count": 69,
+    "approx_loc": 2365,
+    "loc_by_language": {
+      "HTML": 13,
+      "JavaScript": 28,
+      "TypeScript": 1228,
+      "CSS": 661,
+      "Python": 435
+    },
+    "primary_languages": [
+      "TypeScript",
+      "CSS",
+      "Python",
+      "JavaScript",
+      "HTML"
+    ],
+    "tech_stack": {
+      "frontend_frameworks": [
+        "Vite",
+        "Next.js",
+        "React"
+      ],
+      "backend_frameworks": [
+        "Django"
+      ],
+      "databases": [],
+      "ai_ml_libraries": [],
+      "model_providers": [
+        "OpenAI"
+      ],
+      "cloud_devops": [],
+      "third_party_apis": [],
+      "hardware_components": [],
+      "package_dependencies": [
+        "django",
+        "next",
+        "openai",
+        "react",
+        "vite"
+      ]
+    },
+    "git_timeline": {
+      "total_commits": 37,
+      "commits_in_window": 37,
+      "first_commit_time": "2024-09-28T20:09:05Z",
+      "last_commit_time": "2024-09-29T17:59:22Z",
+      "commit_timestamps": [
+        "2024-09-28T20:09:05Z",
+        "2024-09-28T20:10:01Z",
+        "2024-09-28T21:21:28Z",
+        "2024-09-28T22:15:11Z",
+        "2024-09-28T23:07:24Z",
+        "2024-09-28T23:10:46Z",
+        "2024-09-28T23:17:33Z",
+        "2024-09-28T23:19:23Z",
+        "2024-09-28T23:20:14Z",
+        "2024-09-28T23:21:51Z",
+        "2024-09-28T23:22:05Z",
+        "2024-09-29T08:42:13Z",
+        "2024-09-29T08:49:09Z",
+        "2024-09-29T09:42:34Z",
+        "2024-09-29T09:42:53Z",
+        "2024-09-29T09:44:40Z",
+        "2024-09-29T09:55:24Z",
+        "2024-09-29T09:57:39Z",
+        "2024-09-29T11:18:27Z",
+        "2024-09-29T11:54:26Z",
+        "2024-09-29T11:56:00Z",
+        "2024-09-29T12:16:45Z",
+        "2024-09-29T13:39:10Z",
+        "2024-09-29T13:39:40Z",
+        "2024-09-29T14:50:12Z",
+        "2024-09-29T15:07:44Z",
+        "2024-09-29T15:33:42Z",
+        "2024-09-29T16:11:24Z",
+        "2024-09-29T16:16:14Z",
+        "2024-09-29T16:16:24Z",
+        "2024-09-29T16:30:23Z",
+        "2024-09-29T16:44:45Z",
+        "2024-09-29T16:57:31Z",
+        "2024-09-29T16:58:25Z",
+        "2024-09-29T17:20:32Z",
+        "2024-09-29T17:20:48Z",
+        "2024-09-29T17:59:22Z"
+      ],
+      "late_rewrites_detected": false,
+      "deadline_crunch_ratio": 0.41,
+      "final_stage_focus": "debugging",
+      "history_is_squashed_or_minimal": false,
+      "contributor_count": 5,
+      "contributors": [
+        "bahetyshyam",
+        "Shyam Bahety",
+        "pranman11",
+        "Ronit Bhatia",
+        "rb3198"
+      ]
+    },
+    "test_files_count": 0,
+    "test_frameworks": [],
+    "has_ci": false,
+    "ci_configs": [],
+    "has_docker": false,
+    "has_env_template": false,
+    "readme_size_bytes": 0,
+    "readme_excerpt": "",
+    "has_architecture_docs": false,
+    "api_routes_count": 0,
+    "db_migrations_or_schema_count": 0,
+    "mock_data_detected": false,
+    "mock_data_indicators": [],
+    "todo_fixme_count": 1,
+    "boilerplate_detected": false,
+    "boilerplate_indicators": [],
+    "deployment_check": null,
+    "consistency_with_claims": "consistent",
+    "consistency_explanation": "Strong evidence: 5/5 claimed technologies verified in codebase.",
+    "actual_integrations_found": [
+      "django",
+      "django",
+      "openai",
+      "react",
+      "react"
+    ],
+    "readme_claims_unsupported_by_code": [],
+    "provenance": [
+      {
+        "claim": "Inspected repository https://github.com/bahetyshyam/generate-learning-roadmaps",
+        "evidence_type": "repository",
+        "source": "https://github.com/bahetyshyam/generate-learning-roadmaps",
+        "location": "root",
+        "confidence": 1.0,
+        "details": null
+      }
+    ]
+  },
+  "demo_summary": {
+    "has_video_demo": false,
+    "video_platform": "",
+    "video_url": "",
+    "duration_seconds": null,
+    "has_live_deployment": false,
+    "deployment_url": "",
+    "deployment_reachable": null,
+    "has_slide_deck": false,
+    "observations": []
+  },
+  "sponsor_technologies_mentioned": [],
+  "bundle_sha256": "c02912728a3cdffa29f25c8e9a2752b8d0e42fc27830bfa980c14d51c550981e",
+  "created_at": "2026-09-26T02:03:23.062575Z"
+}

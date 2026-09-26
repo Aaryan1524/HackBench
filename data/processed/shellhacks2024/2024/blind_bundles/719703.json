@@ -1,0 +1,119 @@
+{
+  "project_id": "719703",
+  "slug": "lease-saving-plan",
+  "title": "Lease Saving Plan",
+  "tagline": "Calculate car lease payments, insurance, and track savings in one tool! Tailored for your budget, with support for English/Spanish. Simplify car leasing and budgeting with ease!",
+  "problem_statement": "",
+  "inspiration": "",
+  "what_it_does": "",
+  "how_it_was_built": "",
+  "challenges": "",
+  "accomplishments": "",
+  "lessons_learned": "",
+  "future_plans": "",
+  "tech_tags": [
+    "customtkinter",
+    "matplotlib",
+    "python",
+    "python",
+    "sqlite",
+    "sqlite"
+  ],
+  "team_size": 1,
+  "repository_metrics": {
+    "repo_url": "https://github.com/Jackal-HQ/Lease-Saving-Guide/tree/master",
+    "status": "accessible",
+    "default_branch": "master",
+    "file_count": 9,
+    "approx_loc": 451,
+    "loc_by_language": {
+      "Python": 451
+    },
+    "primary_languages": [
+      "Python"
+    ],
+    "tech_stack": {
+      "frontend_frameworks": [],
+      "backend_frameworks": [],
+      "databases": [],
+      "ai_ml_libraries": [],
+      "model_providers": [],
+      "cloud_devops": [],
+      "third_party_apis": [],
+      "hardware_components": [],
+      "package_dependencies": []
+    },
+    "git_timeline": {
+      "total_commits": 4,
+      "commits_in_window": 4,
+      "first_commit_time": "2024-09-29T05:01:34Z",
+      "last_commit_time": "2025-05-21T05:43:43Z",
+      "commit_timestamps": [
+        "2024-09-29T05:01:34Z",
+        "2024-09-29T05:09:38Z",
+        "2024-10-01T17:55:26Z",
+        "2025-05-21T05:43:43Z"
+      ],
+      "late_rewrites_detected": false,
+      "deadline_crunch_ratio": 0.25,
+      "final_stage_focus": "docs",
+      "history_is_squashed_or_minimal": false,
+      "contributor_count": 1,
+      "contributors": [
+        "Jackal-HQ"
+      ]
+    },
+    "test_files_count": 0,
+    "test_frameworks": [],
+    "has_ci": false,
+    "ci_configs": [],
+    "has_docker": false,
+    "has_env_template": false,
+    "readme_size_bytes": 3512,
+    "readme_excerpt": "Lease Saving Plan\nLease Saving Plan is a car lease and insurance calculator that helps users make informed decisions about car leasing. It allows users to calculate monthly lease payments, estimate insurance costs, and track savings toward their down payment goals. The program supports both English and Spanish for broader accessibility.\n📝 Inspiration\nCar leasing can be complex, especially when trying to understand the total cost, including lease payments, insurance, and budgeting. I was inspired to create a tool that simplifies this process, allowing users to manage their car lease decisions with ease and confidence.\n🚗 What It Does\nLease Calculator: Calculates monthly lease payments based on user inputs like car selection, down payment, and lease term.\nInsurance Estimator: Estimates monthly insurance costs based on the user’s age, driving history, and location.\nSavings Tracker: Helps users track their savings toward the down payment goal.\nMulti-Language Support: The app supports both English and Spanish.\n🔧 How I Built It\nProgramming Language: Python\nLibraries:\nCustomTkinter for building the graphical user interface (GUI).\nSQLite for database management to store and retrieve car data.\nMatplotlib for visual representation of data (pie charts).\nThe program dynamically calculates lease payments and insurance based on user inputs, while also allowing the user to toggle between English and Spanish interfaces.\n🚧 Challenges I Faced\nOne of the biggest challenges was ensuring that the dynamic calculations for lease payments and insurance worked seamlessly with user inputs. Another challenge was managing a smooth language toggle for all UI components, ensuring technical terms were translated appropriately.\n🏆 Accomplishments\nI’m proud of building a user-friendly, intuitive tool that simplifies the car leasing process for users of varying financial literacy levels. The successful implementation of a language toggle feature expanded the app’s accessibility, making it usable by a wider audience.\n📚 What I Learned\nThroughout this project, I learned the importance of making financial tools simple to use, even when handling complex calculations. I also gained experience in integrating databases with dynamic UIs, and the significance of multi-language support in expanding user accessibility.\n🔮 What’s Next\nCredit-Based Interest Rates: Add the option to factor in the user’s credit score to determine interest rates.\nCustomizable Insurance Options: Allow users to customize their",
+    "has_architecture_docs": false,
+    "api_routes_count": 0,
+    "db_migrations_or_schema_count": 0,
+    "mock_data_detected": false,
+    "mock_data_indicators": [],
+    "todo_fixme_count": 0,
+    "boilerplate_detected": false,
+    "boilerplate_indicators": [],
+    "deployment_check": null,
+    "consistency_with_claims": "inconsistent",
+    "consistency_explanation": "Weak evidence: Only 0/6 claimed technologies detected in codebase.",
+    "actual_integrations_found": [],
+    "readme_claims_unsupported_by_code": [
+      "customtkinter",
+      "matplotlib",
+      "python",
+      "python",
+      "sqlite",
+      "sqlite"
+    ],
+    "provenance": [
+      {
+        "claim": "Inspected repository https://github.com/Jackal-HQ/Lease-Saving-Guide/tree/master",
+        "evidence_type": "repository",
+        "source": "https://github.com/Jackal-HQ/Lease-Saving-Guide/tree/master",
+        "location": "root",
+        "confidence": 1.0,
+        "details": null
+      }
+    ]
+  },
+  "demo_summary": {
+    "has_video_demo": false,
+    "video_platform": "",
+    "video_url": "",
+    "duration_seconds": null,
+    "has_live_deployment": false,
+    "deployment_url": "",
+    "deployment_reachable": null,
+    "has_slide_deck": false,
+    "observations": []
+  },
+  "sponsor_technologies_mentioned": [],
+  "bundle_sha256": "256f5ae495450802eddc3047fd13e75239baabd098d30775080d7605c2a11af2",
+  "created_at": "2026-09-26T02:03:23.018427Z"
+}

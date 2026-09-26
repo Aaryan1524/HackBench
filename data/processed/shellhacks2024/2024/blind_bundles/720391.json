@@ -1,0 +1,35 @@
+{
+  "project_id": "720391",
+  "slug": "financial-futures",
+  "title": "Financial Futures",
+  "tagline": "Build a financial application to help low-income families. The goal is to create a road map to build a savings account for 6 months - primarily so families feel comfortable.",
+  "problem_statement": "",
+  "inspiration": "",
+  "what_it_does": "",
+  "how_it_was_built": "",
+  "challenges": "",
+  "accomplishments": "",
+  "lessons_learned": "",
+  "future_plans": "",
+  "tech_tags": [
+    "flask",
+    "flask",
+    "vanilla"
+  ],
+  "team_size": 1,
+  "repository_metrics": null,
+  "demo_summary": {
+    "has_video_demo": false,
+    "video_platform": "",
+    "video_url": "",
+    "duration_seconds": null,
+    "has_live_deployment": false,
+    "deployment_url": "",
+    "deployment_reachable": null,
+    "has_slide_deck": false,
+    "observations": []
+  },
+  "sponsor_technologies_mentioned": [],
+  "bundle_sha256": "bfc81cb407aa3f6820c807a78cc7821d7e6d9cc9a712f791be4156e100578468",
+  "created_at": "2026-09-26T02:03:23.264743Z"
+}

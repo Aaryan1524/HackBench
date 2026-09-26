@@ -1,0 +1,41 @@
+{
+  "project_id": "570703",
+  "slug": "pacino-ai",
+  "title": "Pacino.ai",
+  "tagline": "Pacino.ai is a tool where a recruiter can put resumes they have and job information they have into our system to get the compatibility of the applicant they are analyzing for that particular job.",
+  "problem_statement": "",
+  "inspiration": "",
+  "what_it_does": "",
+  "how_it_was_built": "",
+  "challenges": "",
+  "accomplishments": "",
+  "lessons_learned": "",
+  "future_plans": "",
+  "tech_tags": [
+    "git",
+    "git",
+    "github",
+    "github",
+    "javascript",
+    "javascript",
+    "nextjs",
+    "tailwindcss",
+    "vercel"
+  ],
+  "team_size": 4,
+  "repository_metrics": null,
+  "demo_summary": {
+    "has_video_demo": false,
+    "video_platform": "",
+    "video_url": "",
+    "duration_seconds": null,
+    "has_live_deployment": false,
+    "deployment_url": "",
+    "deployment_reachable": null,
+    "has_slide_deck": false,
+    "observations": []
+  },
+  "sponsor_technologies_mentioned": [],
+  "bundle_sha256": "0a3725e66dc052bf2e596a9757992e19cb616a007e698398761728415a5186a1",
+  "created_at": "2026-09-26T02:11:35.741706Z"
+}

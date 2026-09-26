@@ -1,0 +1,166 @@
+{
+  "project_id": "570491",
+  "slug": "education-ai",
+  "title": "education.ai",
+  "tagline": "A one stop platform to learn any topic of choice with tailored content from generative AI.",
+  "problem_statement": "",
+  "inspiration": "",
+  "what_it_does": "",
+  "how_it_was_built": "",
+  "challenges": "",
+  "accomplishments": "",
+  "lessons_learned": "",
+  "future_plans": "",
+  "tech_tags": [
+    "ai",
+    "angular.js",
+    "angular.js",
+    "css",
+    "css",
+    "html",
+    "html",
+    "java",
+    "java",
+    "javascript",
+    "javascript",
+    "rest-api"
+  ],
+  "team_size": 4,
+  "repository_metrics": {
+    "repo_url": "https://github.com/ChrisGeo7/AiEdu",
+    "status": "accessible",
+    "default_branch": "master",
+    "file_count": 65,
+    "approx_loc": 1405,
+    "loc_by_language": {
+      "HTML": 181,
+      "TypeScript": 310,
+      "CSS": 191,
+      "Java": 723
+    },
+    "primary_languages": [
+      "Java",
+      "TypeScript",
+      "CSS",
+      "HTML"
+    ],
+    "tech_stack": {
+      "frontend_frameworks": [
+        "Angular"
+      ],
+      "backend_frameworks": [],
+      "databases": [],
+      "ai_ml_libraries": [],
+      "model_providers": [],
+      "cloud_devops": [],
+      "third_party_apis": [],
+      "hardware_components": [],
+      "package_dependencies": [
+        "angular"
+      ]
+    },
+    "git_timeline": {
+      "total_commits": 21,
+      "commits_in_window": 21,
+      "first_commit_time": "2023-09-16T14:03:33Z",
+      "last_commit_time": "2023-09-19T01:03:18Z",
+      "commit_timestamps": [
+        "2023-09-16T14:03:33Z",
+        "2023-09-16T14:15:36Z",
+        "2023-09-16T14:26:11Z",
+        "2023-09-16T15:48:33Z",
+        "2023-09-16T19:09:32Z",
+        "2023-09-16T21:29:53Z",
+        "2023-09-16T22:49:42Z",
+        "2023-09-17T00:33:45Z",
+        "2023-09-17T02:53:21Z",
+        "2023-09-17T03:26:01Z",
+        "2023-09-17T06:30:34Z",
+        "2023-09-17T07:25:42Z",
+        "2023-09-17T07:27:38Z",
+        "2023-09-17T08:00:07Z",
+        "2023-09-17T12:32:16Z",
+        "2023-09-17T13:26:12Z",
+        "2023-09-17T14:00:22Z",
+        "2023-09-17T14:48:31Z",
+        "2023-09-17T14:54:42Z",
+        "2023-09-19T00:47:40Z",
+        "2023-09-19T01:03:18Z"
+      ],
+      "late_rewrites_detected": false,
+      "deadline_crunch_ratio": 0.1,
+      "final_stage_focus": "debugging",
+      "history_is_squashed_or_minimal": false,
+      "contributor_count": 6,
+      "contributors": [
+        "Christy George",
+        "ChrisGeo7",
+        "Suriyan Subbarayan",
+        "VineethVuyyuru",
+        "saisruti98",
+        "Suriyan S"
+      ]
+    },
+    "test_files_count": 4,
+    "test_frameworks": [
+      "vitest/jest"
+    ],
+    "has_ci": false,
+    "ci_configs": [],
+    "has_docker": false,
+    "has_env_template": false,
+    "readme_size_bytes": 763,
+    "readme_excerpt": "# AI EDU\nA powerful and user-friendly educational platform powered by Generative AI that is designed to facilitate the learning of any topic.\n# Steps to build and run frontend\nRequirement: node version 18+\n* Navigate to the frontend sub-directory\n* Install the dependencies and build the code using: npm -i\n* start the web-app using: npm start\n* Frontend will be accessible by default on port 4200\n# Steps to build and run backend\nRequirement: JDK 17, maven 3.8+, postgres with a database named: gen_edu\n* Navigate to the gen-edu-backend sub-directory\n* Build the project using: mvn clean install\n* Start the server as: java -jar target/gen-edu-backend-0.0.1-SNAPSHOT.jar\n* Tomcat server will run the application and expose the service by default on port 8080",
+    "has_architecture_docs": false,
+    "api_routes_count": 0,
+    "db_migrations_or_schema_count": 0,
+    "mock_data_detected": false,
+    "mock_data_indicators": [],
+    "todo_fixme_count": 0,
+    "boilerplate_detected": false,
+    "boilerplate_indicators": [],
+    "deployment_check": null,
+    "consistency_with_claims": "inconsistent",
+    "consistency_explanation": "Weak evidence: Only 2/12 claimed technologies detected in codebase.",
+    "actual_integrations_found": [
+      "angular.js",
+      "angular.js"
+    ],
+    "readme_claims_unsupported_by_code": [
+      "ai",
+      "css",
+      "css",
+      "html",
+      "html",
+      "java",
+      "java",
+      "javascript",
+      "javascript",
+      "rest-api"
+    ],
+    "provenance": [
+      {
+        "claim": "Inspected repository https://github.com/ChrisGeo7/AiEdu",
+        "evidence_type": "repository",
+        "source": "https://github.com/ChrisGeo7/AiEdu",
+        "location": "root",
+        "confidence": 1.0,
+        "details": null
+      }
+    ]
+  },
+  "demo_summary": {
+    "has_video_demo": false,
+    "video_platform": "",
+    "video_url": "",
+    "duration_seconds": null,
+    "has_live_deployment": false,
+    "deployment_url": "",
+    "deployment_reachable": null,
+    "has_slide_deck": false,
+    "observations": []
+  },
+  "sponsor_technologies_mentioned": [],
+  "bundle_sha256": "62a03c2a40ff07dfff9ac6b1e177aef2af18df5085cd6103c7b2ed118a86de22",
+  "created_at": "2026-09-26T02:11:35.819359Z"
+}

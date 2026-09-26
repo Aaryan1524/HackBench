@@ -1,0 +1,159 @@
+{
+  "project_id": "570281",
+  "slug": "judge-doody",
+  "title": "JudgeTruly",
+  "tagline": "Settle discords in court through Discord's very own... JudgeTruly!",
+  "problem_statement": "",
+  "inspiration": "",
+  "what_it_does": "",
+  "how_it_was_built": "",
+  "challenges": "",
+  "accomplishments": "",
+  "lessons_learned": "",
+  "future_plans": "",
+  "tech_tags": [
+    "chatgpt",
+    "openai",
+    "python",
+    "python",
+    "react",
+    "react"
+  ],
+  "team_size": 3,
+  "repository_metrics": {
+    "repo_url": "https://github.com/nate80801/JudgeDoody",
+    "status": "accessible",
+    "default_branch": "main",
+    "file_count": 36,
+    "approx_loc": 808,
+    "loc_by_language": {
+      "HTML": 13,
+      "JavaScript": 222,
+      "CSS": 298,
+      "Python": 275
+    },
+    "primary_languages": [
+      "CSS",
+      "Python",
+      "JavaScript",
+      "HTML"
+    ],
+    "tech_stack": {
+      "frontend_frameworks": [
+        "React",
+        "Vite"
+      ],
+      "backend_frameworks": [],
+      "databases": [
+        "PostgreSQL"
+      ],
+      "ai_ml_libraries": [],
+      "model_providers": [
+        "OpenAI"
+      ],
+      "cloud_devops": [],
+      "third_party_apis": [],
+      "hardware_components": [],
+      "package_dependencies": [
+        "openai",
+        "pg",
+        "react",
+        "vite"
+      ]
+    },
+    "git_timeline": {
+      "total_commits": 23,
+      "commits_in_window": 23,
+      "first_commit_time": "2023-09-16T04:42:19Z",
+      "last_commit_time": "2023-09-17T15:00:20Z",
+      "commit_timestamps": [
+        "2023-09-16T04:42:19Z",
+        "2023-09-16T04:55:21Z",
+        "2023-09-16T05:03:21Z",
+        "2023-09-16T06:16:45Z",
+        "2023-09-16T06:53:44Z",
+        "2023-09-16T06:59:44Z",
+        "2023-09-16T10:36:16Z",
+        "2023-09-16T13:32:27Z",
+        "2023-09-16T13:32:38Z",
+        "2023-09-16T15:09:02Z",
+        "2023-09-16T15:18:07Z",
+        "2023-09-16T15:27:51Z",
+        "2023-09-16T18:13:15Z",
+        "2023-09-16T19:08:39Z",
+        "2023-09-16T19:08:48Z",
+        "2023-09-16T19:13:25Z",
+        "2023-09-16T19:58:37Z",
+        "2023-09-16T19:58:44Z",
+        "2023-09-16T21:02:24Z",
+        "2023-09-16T21:25:00Z",
+        "2023-09-16T23:23:18Z",
+        "2023-09-17T07:46:03Z",
+        "2023-09-17T15:00:20Z"
+      ],
+      "late_rewrites_detected": false,
+      "deadline_crunch_ratio": 0.09,
+      "final_stage_focus": "docs",
+      "history_is_squashed_or_minimal": false,
+      "contributor_count": 3,
+      "contributors": [
+        "Darren Bansil",
+        "DannyG75",
+        "Nathan"
+      ]
+    },
+    "test_files_count": 0,
+    "test_frameworks": [],
+    "has_ci": false,
+    "ci_configs": [],
+    "has_docker": false,
+    "has_env_template": false,
+    "readme_size_bytes": 0,
+    "readme_excerpt": "",
+    "has_architecture_docs": false,
+    "api_routes_count": 0,
+    "db_migrations_or_schema_count": 0,
+    "mock_data_detected": false,
+    "mock_data_indicators": [],
+    "todo_fixme_count": 0,
+    "boilerplate_detected": false,
+    "boilerplate_indicators": [],
+    "deployment_check": null,
+    "consistency_with_claims": "partial",
+    "consistency_explanation": "Partial evidence: 3/6 claimed technologies found in codebase.",
+    "actual_integrations_found": [
+      "openai",
+      "react",
+      "react"
+    ],
+    "readme_claims_unsupported_by_code": [
+      "chatgpt",
+      "python",
+      "python"
+    ],
+    "provenance": [
+      {
+        "claim": "Inspected repository https://github.com/nate80801/JudgeDoody",
+        "evidence_type": "repository",
+        "source": "https://github.com/nate80801/JudgeDoody",
+        "location": "root",
+        "confidence": 1.0,
+        "details": null
+      }
+    ]
+  },
+  "demo_summary": {
+    "has_video_demo": false,
+    "video_platform": "",
+    "video_url": "",
+    "duration_seconds": null,
+    "has_live_deployment": false,
+    "deployment_url": "",
+    "deployment_reachable": null,
+    "has_slide_deck": false,
+    "observations": []
+  },
+  "sponsor_technologies_mentioned": [],
+  "bundle_sha256": "d115cc53c604a52aa0bda98c87566c269d95549ebeb2a728d44e2fd4f2a7b77f",
+  "created_at": "2026-09-26T02:11:35.712788Z"
+}

@@ -1,0 +1,184 @@
+{
+  "project_id": "569137",
+  "slug": "vaibot",
+  "title": "VAI-BOT",
+  "tagline": "Elevate accessibility and empower ALL with VAI-BOT: The Voice Activation Intelligence Chatbot, bridging the gap for inclusive communication and seamless access to information!",
+  "problem_statement": "",
+  "inspiration": "",
+  "what_it_does": "",
+  "how_it_was_built": "",
+  "challenges": "",
+  "accomplishments": "",
+  "lessons_learned": "",
+  "future_plans": "",
+  "tech_tags": [
+    "firebase",
+    "firebase",
+    "html&css",
+    "node.js",
+    "node.js",
+    "react.js"
+  ],
+  "team_size": 3,
+  "repository_metrics": {
+    "repo_url": "https://github.com/hashlol/shellhackteam3.git",
+    "status": "accessible",
+    "default_branch": "main",
+    "file_count": 34,
+    "approx_loc": 1268,
+    "loc_by_language": {
+      "HTML": 43,
+      "JavaScript": 654,
+      "CSS": 571
+    },
+    "primary_languages": [
+      "JavaScript",
+      "CSS",
+      "HTML"
+    ],
+    "tech_stack": {
+      "frontend_frameworks": [
+        "React"
+      ],
+      "backend_frameworks": [],
+      "databases": [
+        "Firebase"
+      ],
+      "ai_ml_libraries": [],
+      "model_providers": [
+        "OpenAI"
+      ],
+      "cloud_devops": [],
+      "third_party_apis": [],
+      "hardware_components": [],
+      "package_dependencies": [
+        "create-react-app",
+        "firebase",
+        "firebase-admin",
+        "openai",
+        "react",
+        "react-dom",
+        "react-firebase-hooks",
+        "react-router-dom",
+        "react-scripts",
+        "react-speech-kit",
+        "react-speech-recognition",
+        "web-vitals"
+      ]
+    },
+    "git_timeline": {
+      "total_commits": 44,
+      "commits_in_window": 44,
+      "first_commit_time": "2023-09-16T07:44:44Z",
+      "last_commit_time": "2023-09-17T14:39:14Z",
+      "commit_timestamps": [
+        "2023-09-16T07:44:44Z",
+        "2023-09-16T09:23:04Z",
+        "2023-09-16T10:08:35Z",
+        "2023-09-16T11:08:53Z",
+        "2023-09-16T20:52:24Z",
+        "2023-09-17T02:58:43Z",
+        "2023-09-17T03:04:49Z",
+        "2023-09-17T03:06:27Z",
+        "2023-09-17T05:13:37Z",
+        "2023-09-17T05:16:29Z",
+        "2023-09-17T05:17:44Z",
+        "2023-09-17T05:37:21Z",
+        "2023-09-17T05:40:09Z",
+        "2023-09-17T05:40:13Z",
+        "2023-09-17T05:43:31Z",
+        "2023-09-17T05:43:37Z",
+        "2023-09-17T05:43:39Z",
+        "2023-09-17T05:57:57Z",
+        "2023-09-17T05:58:03Z",
+        "2023-09-17T06:24:50Z",
+        "2023-09-17T06:24:54Z",
+        "2023-09-17T08:02:24Z",
+        "2023-09-17T08:03:49Z",
+        "2023-09-17T08:04:06Z",
+        "2023-09-17T08:05:43Z",
+        "2023-09-17T08:10:12Z",
+        "2023-09-17T08:10:26Z",
+        "2023-09-17T08:14:20Z",
+        "2023-09-17T09:20:07Z",
+        "2023-09-17T09:23:21Z",
+        "2023-09-17T09:24:29Z",
+        "2023-09-17T09:48:07Z",
+        "2023-09-17T09:48:44Z",
+        "2023-09-17T09:49:37Z",
+        "2023-09-17T10:00:07Z",
+        "2023-09-17T10:01:48Z",
+        "2023-09-17T12:21:28Z",
+        "2023-09-17T12:22:09Z",
+        "2023-09-17T12:25:54Z",
+        "2023-09-17T12:29:03Z",
+        "2023-09-17T12:30:44Z",
+        "2023-09-17T12:30:50Z",
+        "2023-09-17T12:43:51Z",
+        "2023-09-17T14:39:14Z"
+      ],
+      "late_rewrites_detected": false,
+      "deadline_crunch_ratio": 0.52,
+      "final_stage_focus": "features",
+      "history_is_squashed_or_minimal": false,
+      "contributor_count": 2,
+      "contributors": [
+        "SalmanNA",
+        "hashlol"
+      ]
+    },
+    "test_files_count": 1,
+    "test_frameworks": [],
+    "has_ci": false,
+    "ci_configs": [],
+    "has_docker": false,
+    "has_env_template": false,
+    "readme_size_bytes": 16,
+    "readme_excerpt": "# shellhackteam3",
+    "has_architecture_docs": false,
+    "api_routes_count": 0,
+    "db_migrations_or_schema_count": 0,
+    "mock_data_detected": false,
+    "mock_data_indicators": [],
+    "todo_fixme_count": 1,
+    "boilerplate_detected": false,
+    "boilerplate_indicators": [],
+    "deployment_check": null,
+    "consistency_with_claims": "partial",
+    "consistency_explanation": "Partial evidence: 3/6 claimed technologies found in codebase.",
+    "actual_integrations_found": [
+      "firebase",
+      "firebase",
+      "react.js"
+    ],
+    "readme_claims_unsupported_by_code": [
+      "html&css",
+      "node.js",
+      "node.js"
+    ],
+    "provenance": [
+      {
+        "claim": "Inspected repository https://github.com/hashlol/shellhackteam3.git",
+        "evidence_type": "repository",
+        "source": "https://github.com/hashlol/shellhackteam3.git",
+        "location": "root",
+        "confidence": 1.0,
+        "details": null
+      }
+    ]
+  },
+  "demo_summary": {
+    "has_video_demo": true,
+    "video_platform": "youtube",
+    "video_url": "https://www.youtube.com/embed/MOU23TvEqlY?enablejsapi=1&hl=en_US&rel=0&start=&version=3&wmode=transparent",
+    "duration_seconds": null,
+    "has_live_deployment": false,
+    "deployment_url": "",
+    "deployment_reachable": null,
+    "has_slide_deck": false,
+    "observations": []
+  },
+  "sponsor_technologies_mentioned": [],
+  "bundle_sha256": "346b76f2bf531446a9a032606fc455598ff0e47cf868329027ec062426be261d",
+  "created_at": "2026-09-26T02:11:35.626187Z"
+}

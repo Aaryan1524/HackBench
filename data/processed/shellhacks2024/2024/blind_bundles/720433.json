@@ -1,0 +1,127 @@
+{
+  "project_id": "720433",
+  "slug": "project-replicant-bringing-humanity-to-ai",
+  "title": "Project Replicant; Bringing Humanity to AI",
+  "tagline": "Project Replicant is a program which uses a subset of systems such as Ollama, Hermes 2 Vision, UltimateXR and the spatial capabilities of XR to bring value to how AI/XR can be used in everyday life.",
+  "problem_statement": "",
+  "inspiration": "",
+  "what_it_does": "",
+  "how_it_was_built": "",
+  "challenges": "",
+  "accomplishments": "",
+  "lessons_learned": "",
+  "future_plans": "",
+  "tech_tags": [
+    "c#",
+    "c#",
+    "hermes2vision",
+    "ollama",
+    "pipertts",
+    "python",
+    "python",
+    "unity",
+    "unity"
+  ],
+  "team_size": 4,
+  "repository_metrics": {
+    "repo_url": "https://github.com/Macoron/piper.unity",
+    "status": "accessible",
+    "default_branch": "master",
+    "file_count": 587,
+    "approx_loc": 264,
+    "loc_by_language": {
+      "C#": 264
+    },
+    "primary_languages": [
+      "C#"
+    ],
+    "tech_stack": {
+      "frontend_frameworks": [],
+      "backend_frameworks": [],
+      "databases": [],
+      "ai_ml_libraries": [],
+      "model_providers": [],
+      "cloud_devops": [],
+      "third_party_apis": [],
+      "hardware_components": [],
+      "package_dependencies": []
+    },
+    "git_timeline": {
+      "total_commits": 6,
+      "commits_in_window": 6,
+      "first_commit_time": "2024-02-14T00:02:19Z",
+      "last_commit_time": "2024-02-14T15:14:58Z",
+      "commit_timestamps": [
+        "2024-02-14T00:02:19Z",
+        "2024-02-14T00:14:54Z",
+        "2024-02-14T00:44:00Z",
+        "2024-02-14T15:10:16Z",
+        "2024-02-14T15:11:15Z",
+        "2024-02-14T15:14:58Z"
+      ],
+      "late_rewrites_detected": false,
+      "deadline_crunch_ratio": 0.5,
+      "final_stage_focus": "debugging",
+      "history_is_squashed_or_minimal": false,
+      "contributor_count": 1,
+      "contributors": [
+        "Alex Evgrashin"
+      ]
+    },
+    "test_files_count": 0,
+    "test_frameworks": [],
+    "has_ci": false,
+    "ci_configs": [],
+    "has_docker": false,
+    "has_env_template": false,
+    "readme_size_bytes": 2251,
+    "readme_excerpt": "# piper.unity\nThis is the Unity3d port of Piper text-to-speech (TTS) library. It provides fast, local, and high-quality speech generation for multiple languages. Inference is done by using Unity Sentis.\nSupports only Windows x86-64.\n## Samples\nhttps://github.com/Macoron/piper.unity/assets/6161335/7ab818f0-acd6-46cf-ab5b-09c847aca2dc\n*\"en_US-lessac-medium\" model tested on English text*\nhttps://github.com/Macoron/piper.unity/assets/6161335/fd6a5826-23e7-4dca-acdd-00469d71c882\n*\"ru_RU-ruslan-medium\" model tested on Russian text*\n## Getting started\n1. Clone this repository and open it as a regular Unity project.\n2. Download a `.onnx` model file, such as en_US-lessac-medium.onnx\n3. Place it somewhere inside your `Assets` folder. Sentis should automatically transform it into model asset\n4. Open `Assets/Piper/Samples/PiperSample` scene in Unity Editor\n5. Find `Piper` GameObject and set `PiperManager.Model` field to previously downloaded model\n6. Press Play and test speech generation\nYou can find more piper models here. Each model comes with a model card describing the training dataset and license (for example en_US-lessac-medium model card).\nYou would also need to set correct the  \"voice\" (language code) and sample rate for the model. This can be find in json located near the model, like in en_US-lessac-medium.onnx.json.\n## License\npiper.unity is released under the GPLv3 license.\nIt uses eSpeak NG compiled libraries and data which are under GPLv3 license.\nIt also uses Piper Phonemization fork compiled library which is under MIT license.\nModels aren't included in this repository. Please contact the original model's creators to learn more about their licenses.",
+    "has_architecture_docs": false,
+    "api_routes_count": 0,
+    "db_migrations_or_schema_count": 0,
+    "mock_data_detected": false,
+    "mock_data_indicators": [],
+    "todo_fixme_count": 0,
+    "boilerplate_detected": false,
+    "boilerplate_indicators": [],
+    "deployment_check": null,
+    "consistency_with_claims": "inconsistent",
+    "consistency_explanation": "Weak evidence: Only 0/9 claimed technologies detected in codebase.",
+    "actual_integrations_found": [],
+    "readme_claims_unsupported_by_code": [
+      "c#",
+      "c#",
+      "hermes2vision",
+      "ollama",
+      "pipertts",
+      "python",
+      "python",
+      "unity",
+      "unity"
+    ],
+    "provenance": [
+      {
+        "claim": "Inspected repository https://github.com/Macoron/piper.unity",
+        "evidence_type": "repository",
+        "source": "https://github.com/Macoron/piper.unity",
+        "location": "root",
+        "confidence": 1.0,
+        "details": null
+      }
+    ]
+  },
+  "demo_summary": {
+    "has_video_demo": false,
+    "video_platform": "",
+    "video_url": "",
+    "duration_seconds": null,
+    "has_live_deployment": false,
+    "deployment_url": "",
+    "deployment_reachable": null,
+    "has_slide_deck": false,
+    "observations": []
+  },
+  "sponsor_technologies_mentioned": [],
+  "bundle_sha256": "ec499cdb9b2af2678dc6daa859e7dec33c67b568c579fec690b44c3f0a0933d1",
+  "created_at": "2026-09-26T02:03:23.141806Z"
+}

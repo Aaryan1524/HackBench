@@ -1,0 +1,39 @@
+{
+  "project_id": "570214",
+  "slug": "sustainability-calculator",
+  "title": "Sustainability Calculator",
+  "tagline": "We developed a neural network model to analyze the sustainability of S&P 500 stocks. Our model will give each stock a sustainability score which analysts can use when choosing stocks.",
+  "problem_statement": "",
+  "inspiration": "",
+  "what_it_does": "",
+  "how_it_was_built": "",
+  "challenges": "",
+  "accomplishments": "",
+  "lessons_learned": "",
+  "future_plans": "",
+  "tech_tags": [
+    "csv",
+    "numpy",
+    "numpy",
+    "pandas",
+    "pandas",
+    "streamlit",
+    "tensorflow"
+  ],
+  "team_size": 4,
+  "repository_metrics": null,
+  "demo_summary": {
+    "has_video_demo": false,
+    "video_platform": "",
+    "video_url": "",
+    "duration_seconds": null,
+    "has_live_deployment": false,
+    "deployment_url": "",
+    "deployment_reachable": null,
+    "has_slide_deck": false,
+    "observations": []
+  },
+  "sponsor_technologies_mentioned": [],
+  "bundle_sha256": "cacba841590e5dbdbace809c2f739fb9e6f556ed347fc7c437795102b17228a5",
+  "created_at": "2026-09-26T02:11:35.766105Z"
+}

@@ -1,0 +1,141 @@
+{
+  "project_id": "570545",
+  "slug": "citipath",
+  "title": "CitiPath",
+  "tagline": "Gamification for students and immigrants of financial literacy for the US. Making concepts such as insurance and tracking life expenses easier and more accessible.",
+  "problem_statement": "",
+  "inspiration": "",
+  "what_it_does": "",
+  "how_it_was_built": "",
+  "challenges": "",
+  "accomplishments": "",
+  "lessons_learned": "",
+  "future_plans": "",
+  "tech_tags": [
+    "flask",
+    "flask",
+    "html",
+    "html",
+    "python",
+    "python"
+  ],
+  "team_size": 4,
+  "repository_metrics": {
+    "repo_url": "https://github.com/iheyn001/CitiPath",
+    "status": "accessible",
+    "default_branch": "main",
+    "file_count": 24,
+    "approx_loc": 443,
+    "loc_by_language": {
+      "CSS": 117,
+      "HTML": 164,
+      "Python": 162
+    },
+    "primary_languages": [
+      "HTML",
+      "Python",
+      "CSS"
+    ],
+    "tech_stack": {
+      "frontend_frameworks": [],
+      "backend_frameworks": [
+        "Flask"
+      ],
+      "databases": [],
+      "ai_ml_libraries": [],
+      "model_providers": [],
+      "cloud_devops": [],
+      "third_party_apis": [],
+      "hardware_components": [],
+      "package_dependencies": [
+        "flask"
+      ]
+    },
+    "git_timeline": {
+      "total_commits": 15,
+      "commits_in_window": 15,
+      "first_commit_time": "2023-09-16T06:26:38Z",
+      "last_commit_time": "2023-09-17T14:24:06Z",
+      "commit_timestamps": [
+        "2023-09-16T06:26:38Z",
+        "2023-09-16T06:35:08Z",
+        "2023-09-16T21:52:10Z",
+        "2023-09-17T08:13:44Z",
+        "2023-09-17T13:35:51Z",
+        "2023-09-17T13:36:41Z",
+        "2023-09-17T13:38:05Z",
+        "2023-09-17T13:38:52Z",
+        "2023-09-17T13:39:12Z",
+        "2023-09-17T13:39:33Z",
+        "2023-09-17T13:47:17Z",
+        "2023-09-17T13:55:25Z",
+        "2023-09-17T13:59:34Z",
+        "2023-09-17T14:23:47Z",
+        "2023-09-17T14:24:06Z"
+      ],
+      "late_rewrites_detected": false,
+      "deadline_crunch_ratio": 0.8,
+      "final_stage_focus": "features",
+      "history_is_squashed_or_minimal": false,
+      "contributor_count": 3,
+      "contributors": [
+        "allisonr5002",
+        "iheyfiu",
+        "petroneCode"
+      ]
+    },
+    "test_files_count": 0,
+    "test_frameworks": [],
+    "has_ci": false,
+    "ci_configs": [],
+    "has_docker": false,
+    "has_env_template": false,
+    "readme_size_bytes": 0,
+    "readme_excerpt": "",
+    "has_architecture_docs": false,
+    "api_routes_count": 0,
+    "db_migrations_or_schema_count": 0,
+    "mock_data_detected": false,
+    "mock_data_indicators": [],
+    "todo_fixme_count": 0,
+    "boilerplate_detected": false,
+    "boilerplate_indicators": [],
+    "deployment_check": null,
+    "consistency_with_claims": "partial",
+    "consistency_explanation": "Partial evidence: 2/6 claimed technologies found in codebase.",
+    "actual_integrations_found": [
+      "flask",
+      "flask"
+    ],
+    "readme_claims_unsupported_by_code": [
+      "html",
+      "html",
+      "python",
+      "python"
+    ],
+    "provenance": [
+      {
+        "claim": "Inspected repository https://github.com/iheyn001/CitiPath",
+        "evidence_type": "repository",
+        "source": "https://github.com/iheyn001/CitiPath",
+        "location": "root",
+        "confidence": 1.0,
+        "details": null
+      }
+    ]
+  },
+  "demo_summary": {
+    "has_video_demo": false,
+    "video_platform": "",
+    "video_url": "",
+    "duration_seconds": null,
+    "has_live_deployment": false,
+    "deployment_url": "",
+    "deployment_reachable": null,
+    "has_slide_deck": false,
+    "observations": []
+  },
+  "sponsor_technologies_mentioned": [],
+  "bundle_sha256": "52c0d4a6f38d645227e8355a70f6e7d18a09a6b01b6d4a446bb5adedfbf9913e",
+  "created_at": "2026-09-26T02:11:35.816935Z"
+}

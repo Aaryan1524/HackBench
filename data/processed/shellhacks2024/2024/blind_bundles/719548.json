@@ -1,0 +1,157 @@
+{
+  "project_id": "719548",
+  "slug": "transactai",
+  "title": "TransactAI",
+  "tagline": "Know Your Subscriptions, Save Your Money",
+  "problem_statement": "",
+  "inspiration": "",
+  "what_it_does": "",
+  "how_it_was_built": "",
+  "challenges": "",
+  "accomplishments": "",
+  "lessons_learned": "",
+  "future_plans": "",
+  "tech_tags": [
+    "javascript",
+    "javascript",
+    "next.js",
+    "openai",
+    "react.js"
+  ],
+  "team_size": 3,
+  "repository_metrics": {
+    "repo_url": "https://github.com/spaaacy/transact-ai",
+    "status": "accessible",
+    "default_branch": "main",
+    "file_count": 18,
+    "approx_loc": 270,
+    "loc_by_language": {
+      "JavaScript": 255,
+      "CSS": 15
+    },
+    "primary_languages": [
+      "JavaScript",
+      "CSS"
+    ],
+    "tech_stack": {
+      "frontend_frameworks": [
+        "TailwindCSS",
+        "Next.js",
+        "React"
+      ],
+      "backend_frameworks": [],
+      "databases": [],
+      "ai_ml_libraries": [],
+      "model_providers": [
+        "OpenAI"
+      ],
+      "cloud_devops": [],
+      "third_party_apis": [],
+      "hardware_components": [],
+      "package_dependencies": [
+        "bootstrap",
+        "next",
+        "openai",
+        "postcss",
+        "react",
+        "react-dom",
+        "react-dropzone",
+        "reactstrap",
+        "tailwindcss"
+      ]
+    },
+    "git_timeline": {
+      "total_commits": 21,
+      "commits_in_window": 21,
+      "first_commit_time": "2024-09-28T19:27:51Z",
+      "last_commit_time": "2024-09-30T13:02:45Z",
+      "commit_timestamps": [
+        "2024-09-28T19:27:51Z",
+        "2024-09-28T19:50:30Z",
+        "2024-09-28T20:04:36Z",
+        "2024-09-28T20:18:04Z",
+        "2024-09-28T20:20:52Z",
+        "2024-09-28T20:48:11Z",
+        "2024-09-28T21:18:08Z",
+        "2024-09-28T21:18:43Z",
+        "2024-09-28T21:21:42Z",
+        "2024-09-28T21:24:04Z",
+        "2024-09-28T21:24:33Z",
+        "2024-09-28T21:26:29Z",
+        "2024-09-28T21:28:21Z",
+        "2024-09-28T21:32:51Z",
+        "2024-09-29T01:29:20Z",
+        "2024-09-29T03:07:35Z",
+        "2024-09-29T03:12:09Z",
+        "2024-09-29T18:22:27Z",
+        "2024-09-29T19:54:32Z",
+        "2024-09-30T13:02:16Z",
+        "2024-09-30T13:02:45Z"
+      ],
+      "late_rewrites_detected": false,
+      "deadline_crunch_ratio": 0.1,
+      "final_stage_focus": "docs",
+      "history_is_squashed_or_minimal": false,
+      "contributor_count": 5,
+      "contributors": [
+        "Sebastian Kloster",
+        "spaaacy",
+        "Aakif Mohamed",
+        "Seba Kloster",
+        "Kevin"
+      ]
+    },
+    "test_files_count": 0,
+    "test_frameworks": [],
+    "has_ci": false,
+    "ci_configs": [],
+    "has_docker": false,
+    "has_env_template": false,
+    "readme_size_bytes": 1110,
+    "readme_excerpt": "A ShellHacks 2024 Project, built using Next.js and Bootstrap, also using the OpenAI API.\n## What is TransactAI?\nTransactAI is your means of using bank statements to keep track of monthly subscriptions. No longer will Big Tech pocket your money without your knowledge, once again, giving power back to the consumer.\n## How it works\nUsers can upload their PDF for their latest bank statements to our website, which will then use AI to analyze and detect monthly payments to subscription services you might have not been aware of.\n## The Problem\nMost companies capitalize on consumer ignorance to essentially charge them for services they do not use. Meanwhile, consumers are paying for these services with zero-knowledge as small payments to subscription services often get overlooked when one going through their bank statements.\n## Future ideas\n- Automated cancellation of services directly from the website itself\n- Monthly email service of all services used for that month",
+    "has_architecture_docs": false,
+    "api_routes_count": 1,
+    "db_migrations_or_schema_count": 0,
+    "mock_data_detected": false,
+    "mock_data_indicators": [],
+    "todo_fixme_count": 0,
+    "boilerplate_detected": false,
+    "boilerplate_indicators": [],
+    "deployment_check": null,
+    "consistency_with_claims": "partial",
+    "consistency_explanation": "Partial evidence: 3/5 claimed technologies found in codebase.",
+    "actual_integrations_found": [
+      "next.js",
+      "openai",
+      "react.js"
+    ],
+    "readme_claims_unsupported_by_code": [
+      "javascript",
+      "javascript"
+    ],
+    "provenance": [
+      {
+        "claim": "Inspected repository https://github.com/spaaacy/transact-ai",
+        "evidence_type": "repository",
+        "source": "https://github.com/spaaacy/transact-ai",
+        "location": "root",
+        "confidence": 1.0,
+        "details": null
+      }
+    ]
+  },
+  "demo_summary": {
+    "has_video_demo": true,
+    "video_platform": "youtube",
+    "video_url": "https://www.youtube.com/embed/rmgrLsMVDc0?enablejsapi=1&hl=en_US&rel=0&start=&version=3&wmode=transparent",
+    "duration_seconds": null,
+    "has_live_deployment": false,
+    "deployment_url": "",
+    "deployment_reachable": null,
+    "has_slide_deck": false,
+    "observations": []
+  },
+  "sponsor_technologies_mentioned": [],
+  "bundle_sha256": "b74596a04f5e2e392fec3953f9c85ed1eff530e67ace5b1c6608103c1a4e7770",
+  "created_at": "2026-09-26T02:03:23.487556Z"
+}

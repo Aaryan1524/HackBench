@@ -1,0 +1,149 @@
+{
+  "project_id": "719649",
+  "slug": "summarizeit",
+  "title": "SummarizeIt",
+  "tagline": "Discover information effortlessly with our AI-powered research assistant, summarizing online content and providing translations, making information accessible for everyone.",
+  "problem_statement": "",
+  "inspiration": "",
+  "what_it_does": "",
+  "how_it_was_built": "",
+  "challenges": "",
+  "accomplishments": "",
+  "lessons_learned": "",
+  "future_plans": "",
+  "tech_tags": [
+    "css3",
+    "css3",
+    "flask",
+    "flask",
+    "html5",
+    "html5",
+    "javascript",
+    "javascript",
+    "openai",
+    "python",
+    "python"
+  ],
+  "team_size": 2,
+  "repository_metrics": {
+    "repo_url": "https://github.com/ElmerPonce07/researchV2",
+    "status": "accessible",
+    "default_branch": "master",
+    "file_count": 7,
+    "approx_loc": 308,
+    "loc_by_language": {
+      "HTML": 32,
+      "CSS": 108,
+      "JavaScript": 47,
+      "Python": 121
+    },
+    "primary_languages": [
+      "Python",
+      "CSS",
+      "JavaScript",
+      "HTML"
+    ],
+    "tech_stack": {
+      "frontend_frameworks": [],
+      "backend_frameworks": [
+        "Flask",
+        "Express.js"
+      ],
+      "databases": [],
+      "ai_ml_libraries": [],
+      "model_providers": [
+        "OpenAI"
+      ],
+      "cloud_devops": [],
+      "third_party_apis": [],
+      "hardware_components": [],
+      "package_dependencies": [
+        "axios",
+        "cheerio",
+        "dotenv",
+        "express",
+        "flask",
+        "openai"
+      ]
+    },
+    "git_timeline": {
+      "total_commits": 5,
+      "commits_in_window": 5,
+      "first_commit_time": "2024-09-29T01:08:04Z",
+      "last_commit_time": "2024-09-29T04:31:22Z",
+      "commit_timestamps": [
+        "2024-09-29T01:08:04Z",
+        "2024-09-29T02:42:49Z",
+        "2024-09-29T03:01:25Z",
+        "2024-09-29T03:12:46Z",
+        "2024-09-29T04:31:22Z"
+      ],
+      "late_rewrites_detected": false,
+      "deadline_crunch_ratio": 0.2,
+      "final_stage_focus": "features",
+      "history_is_squashed_or_minimal": false,
+      "contributor_count": 1,
+      "contributors": [
+        "EP0923"
+      ]
+    },
+    "test_files_count": 0,
+    "test_frameworks": [],
+    "has_ci": false,
+    "ci_configs": [],
+    "has_docker": false,
+    "has_env_template": false,
+    "readme_size_bytes": 0,
+    "readme_excerpt": "",
+    "has_architecture_docs": false,
+    "api_routes_count": 0,
+    "db_migrations_or_schema_count": 0,
+    "mock_data_detected": false,
+    "mock_data_indicators": [],
+    "todo_fixme_count": 0,
+    "boilerplate_detected": false,
+    "boilerplate_indicators": [],
+    "deployment_check": null,
+    "consistency_with_claims": "inconsistent",
+    "consistency_explanation": "Weak evidence: Only 3/11 claimed technologies detected in codebase.",
+    "actual_integrations_found": [
+      "flask",
+      "flask",
+      "openai"
+    ],
+    "readme_claims_unsupported_by_code": [
+      "css3",
+      "css3",
+      "html5",
+      "html5",
+      "javascript",
+      "javascript",
+      "python",
+      "python"
+    ],
+    "provenance": [
+      {
+        "claim": "Inspected repository https://github.com/ElmerPonce07/researchV2",
+        "evidence_type": "repository",
+        "source": "https://github.com/ElmerPonce07/researchV2",
+        "location": "root",
+        "confidence": 1.0,
+        "details": null
+      }
+    ]
+  },
+  "demo_summary": {
+    "has_video_demo": true,
+    "video_platform": "youtube",
+    "video_url": "https://www.youtube.com/embed/9-j61xkRHTo?enablejsapi=1&hl=en_US&rel=0&start=&version=3&wmode=transparent",
+    "duration_seconds": null,
+    "has_live_deployment": false,
+    "deployment_url": "",
+    "deployment_reachable": null,
+    "has_slide_deck": false,
+    "observations": []
+  },
+  "sponsor_technologies_mentioned": [],
+  "bundle_sha256": "7c6e02cab62df991feacfcde50e230811a8ded36a30928c0a5a16914b41d030a",
+  "created_at": "2026-09-26T02:03:23.452275Z"
+}

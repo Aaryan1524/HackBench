@@ -1,0 +1,34 @@
+{
+  "project_id": "570645",
+  "slug": "verdeventures",
+  "title": "VerdeVentures",
+  "tagline": "Invest For a Greener Tomorrow.",
+  "problem_statement": "",
+  "inspiration": "",
+  "what_it_does": "",
+  "how_it_was_built": "",
+  "challenges": "",
+  "accomplishments": "",
+  "lessons_learned": "",
+  "future_plans": "",
+  "tech_tags": [
+    "python",
+    "python"
+  ],
+  "team_size": 4,
+  "repository_metrics": null,
+  "demo_summary": {
+    "has_video_demo": false,
+    "video_platform": "",
+    "video_url": "",
+    "duration_seconds": null,
+    "has_live_deployment": true,
+    "deployment_url": "https://shell-hacks-six.vercel.app/",
+    "deployment_reachable": null,
+    "has_slide_deck": false,
+    "observations": []
+  },
+  "sponsor_technologies_mentioned": [],
+  "bundle_sha256": "fe72903668bd7c3b2a6032b454a5f03552eaf8777fb6204a988a8e33e20b0e0d",
+  "created_at": "2026-09-26T02:11:35.744132Z"
+}

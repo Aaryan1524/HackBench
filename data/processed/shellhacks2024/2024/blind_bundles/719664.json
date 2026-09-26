@@ -1,0 +1,42 @@
+{
+  "project_id": "719664",
+  "slug": "yourpersonaldietai",
+  "title": "YourPersonalDietAI",
+  "tagline": "YourPersonalDietAI is a web app that offers a seamless experience generating low-cost and personal meal plans. Powered by Google's AI Gemini YourPersonalDietAI offers an easy and practical solution.",
+  "problem_statement": "",
+  "inspiration": "",
+  "what_it_does": "",
+  "how_it_was_built": "",
+  "challenges": "",
+  "accomplishments": "",
+  "lessons_learned": "",
+  "future_plans": "",
+  "tech_tags": [
+    "api",
+    "gemini",
+    "gemini",
+    "github",
+    "github",
+    "html",
+    "html",
+    "python",
+    "python",
+    "streamlit"
+  ],
+  "team_size": 4,
+  "repository_metrics": null,
+  "demo_summary": {
+    "has_video_demo": true,
+    "video_platform": "vimeo",
+    "video_url": "https://player.vimeo.com/video/1013941725?byline=0&portrait=0&title=0#t=",
+    "duration_seconds": null,
+    "has_live_deployment": false,
+    "deployment_url": "",
+    "deployment_reachable": null,
+    "has_slide_deck": false,
+    "observations": []
+  },
+  "sponsor_technologies_mentioned": [],
+  "bundle_sha256": "a01412554626b779992523c9ea7bec4dbe1e58f70ef1bf710f3da03563ecb6c5",
+  "created_at": "2026-09-26T02:03:23.461560Z"
+}

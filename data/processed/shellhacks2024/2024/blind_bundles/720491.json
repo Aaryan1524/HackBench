@@ -1,0 +1,162 @@
+{
+  "project_id": "720491",
+  "slug": "safe-step-dc25u8",
+  "title": "Safe Step",
+  "tagline": "Providing safety for every step",
+  "problem_statement": "",
+  "inspiration": "",
+  "what_it_does": "",
+  "how_it_was_built": "",
+  "challenges": "",
+  "accomplishments": "",
+  "lessons_learned": "",
+  "future_plans": "",
+  "tech_tags": [
+    "css",
+    "css",
+    "flask",
+    "flask",
+    "flask-cors",
+    "googlecolab",
+    "javascript",
+    "javascript",
+    "opencv",
+    "opencv",
+    "python",
+    "python",
+    "pytorch",
+    "pytorch",
+    "react",
+    "react",
+    "reactrouter",
+    "ultralytics",
+    "webspeechapi",
+    "yolov8"
+  ],
+  "team_size": 3,
+  "repository_metrics": {
+    "repo_url": "https://github.com/TreyBernard/SafeStep.git",
+    "status": "accessible",
+    "default_branch": "main",
+    "file_count": 14,
+    "approx_loc": 425,
+    "loc_by_language": {
+      "Python": 102,
+      "JavaScript": 201,
+      "CSS": 122
+    },
+    "primary_languages": [
+      "JavaScript",
+      "CSS",
+      "Python"
+    ],
+    "tech_stack": {
+      "frontend_frameworks": [
+        "React"
+      ],
+      "backend_frameworks": [
+        "Flask"
+      ],
+      "databases": [],
+      "ai_ml_libraries": [],
+      "model_providers": [],
+      "cloud_devops": [],
+      "third_party_apis": [],
+      "hardware_components": [],
+      "package_dependencies": [
+        "flask",
+        "react"
+      ]
+    },
+    "git_timeline": {
+      "total_commits": 7,
+      "commits_in_window": 7,
+      "first_commit_time": "2024-09-29T15:11:21Z",
+      "last_commit_time": "2025-01-17T20:17:01Z",
+      "commit_timestamps": [
+        "2024-09-29T15:11:21Z",
+        "2024-09-29T15:12:30Z",
+        "2024-09-29T15:14:16Z",
+        "2024-09-29T17:07:18Z",
+        "2024-09-29T17:08:54Z",
+        "2024-09-29T17:16:48Z",
+        "2025-01-17T20:17:01Z"
+      ],
+      "late_rewrites_detected": false,
+      "deadline_crunch_ratio": 0.14,
+      "final_stage_focus": "docs",
+      "history_is_squashed_or_minimal": false,
+      "contributor_count": 1,
+      "contributors": [
+        "Trey Bernard"
+      ]
+    },
+    "test_files_count": 1,
+    "test_frameworks": [],
+    "has_ci": false,
+    "ci_configs": [],
+    "has_docker": false,
+    "has_env_template": false,
+    "readme_size_bytes": 622,
+    "readme_excerpt": "Hello, world! This is currently the beta for the Safe Step app hopefully to be fully launched to the app store soon.\nIt is an AI based program that uses OpenCV and Yolov8 to detect objects in the real live world that may appear when\nsomeone is crossing the street, it was designed to assist visually impaired individuals with a daily problem they may face\nCurrently this repository does not include the datasets, node_modules, and the virtual environment unfortunately due to\nthe sheer size of those files, however if you do wish to see them please send one of us a message via discord: pohzz, thejoshperez, briansprs",
+    "has_architecture_docs": false,
+    "api_routes_count": 0,
+    "db_migrations_or_schema_count": 0,
+    "mock_data_detected": false,
+    "mock_data_indicators": [],
+    "todo_fixme_count": 0,
+    "boilerplate_detected": false,
+    "boilerplate_indicators": [],
+    "deployment_check": null,
+    "consistency_with_claims": "partial",
+    "consistency_explanation": "Partial evidence: 6/20 claimed technologies found in codebase.",
+    "actual_integrations_found": [
+      "flask",
+      "flask",
+      "flask-cors",
+      "react",
+      "react",
+      "reactrouter"
+    ],
+    "readme_claims_unsupported_by_code": [
+      "css",
+      "css",
+      "googlecolab",
+      "javascript",
+      "javascript",
+      "opencv",
+      "opencv",
+      "python",
+      "python",
+      "pytorch",
+      "pytorch",
+      "ultralytics",
+      "webspeechapi",
+      "yolov8"
+    ],
+    "provenance": [
+      {
+        "claim": "Inspected repository https://github.com/TreyBernard/SafeStep.git",
+        "evidence_type": "repository",
+        "source": "https://github.com/TreyBernard/SafeStep.git",
+        "location": "root",
+        "confidence": 1.0,
+        "details": null
+      }
+    ]
+  },
+  "demo_summary": {
+    "has_video_demo": false,
+    "video_platform": "",
+    "video_url": "",
+    "duration_seconds": null,
+    "has_live_deployment": false,
+    "deployment_url": "",
+    "deployment_reachable": null,
+    "has_slide_deck": false,
+    "observations": []
+  },
+  "sponsor_technologies_mentioned": [],
+  "bundle_sha256": "fbef68eb0d496297ccb899a1715001aa0f8409e392a790605d6bc8ecf4b1f5ac",
+  "created_at": "2026-09-26T02:03:23.153382Z"
+}

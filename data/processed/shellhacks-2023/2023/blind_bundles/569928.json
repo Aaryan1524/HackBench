@@ -1,0 +1,144 @@
+{
+  "project_id": "569928",
+  "slug": "toneiq",
+  "title": "ToneIQ",
+  "tagline": "Ever had a misunderstood text? Struggle with social cues? Our app analyzes your text's tone in seconds, providing instant feedback. Aim to communicate effectively. Like a pocket communication coach!",
+  "problem_statement": "",
+  "inspiration": "",
+  "what_it_does": "",
+  "how_it_was_built": "",
+  "challenges": "",
+  "accomplishments": "",
+  "lessons_learned": "",
+  "future_plans": "",
+  "tech_tags": [
+    "chatgpt",
+    "css",
+    "css",
+    "flask",
+    "flask",
+    "gpt-api",
+    "html",
+    "html",
+    "javascript",
+    "javascript",
+    "jquery",
+    "jquery",
+    "python",
+    "python",
+    "web-based"
+  ],
+  "team_size": 4,
+  "repository_metrics": {
+    "repo_url": "https://github.com/bellynap/ToneIQ",
+    "status": "accessible",
+    "default_branch": "main",
+    "file_count": 5,
+    "approx_loc": 226,
+    "loc_by_language": {
+      "Python": 58,
+      "HTML": 168
+    },
+    "primary_languages": [
+      "HTML",
+      "Python"
+    ],
+    "tech_stack": {
+      "frontend_frameworks": [],
+      "backend_frameworks": [
+        "Flask"
+      ],
+      "databases": [],
+      "ai_ml_libraries": [],
+      "model_providers": [],
+      "cloud_devops": [],
+      "third_party_apis": [],
+      "hardware_components": [],
+      "package_dependencies": [
+        "flask"
+      ]
+    },
+    "git_timeline": {
+      "total_commits": 4,
+      "commits_in_window": 4,
+      "first_commit_time": "2023-09-17T03:26:39Z",
+      "last_commit_time": "2023-09-17T03:36:03Z",
+      "commit_timestamps": [
+        "2023-09-17T03:26:39Z",
+        "2023-09-17T03:27:55Z",
+        "2023-09-17T03:33:06Z",
+        "2023-09-17T03:36:03Z"
+      ],
+      "late_rewrites_detected": false,
+      "deadline_crunch_ratio": 0.0,
+      "final_stage_focus": "docs",
+      "history_is_squashed_or_minimal": false,
+      "contributor_count": 1,
+      "contributors": [
+        "Iggy Monsalve"
+      ]
+    },
+    "test_files_count": 0,
+    "test_frameworks": [],
+    "has_ci": false,
+    "ci_configs": [],
+    "has_docker": false,
+    "has_env_template": false,
+    "readme_size_bytes": 2859,
+    "readme_excerpt": "# ToneIQ\nOur app analyzes your text's tone in seconds, providing instant feedback. Aim to communicate effectively. Like a pocket communication coach!\nInspiration\nWhether it's in dating, friendships, or family interactions, effective communication is crucial for everyone. However, text messages often fail to convey our intended tone, leading to misunderstandings. Some of us struggle with reading social cues, or our sarcasm doesn't land as expected, causing strained communication. Inspired by these challenges, we created an app to help people understand the tone of their messages better. Our goal is to make digital communication as clear and effective as possible.\n# How to use\nThis app runs on a local host. Open your terminal, cd into the app file, and run the program by entering the command line ' python app.py '. You can then input (http://127.0.0.1:5000) on your browser and VOILA!\n# What it does\nThe app analyzes the tone of your text messages in real-time to provide immediate feedback on how your words may be perceived. Whether you're aiming for a professional, friendly, or persuasive tone, the app helps you fine-tune your message to ensure it resonates the way you intend. It serves as a pocket communication coach, making digital communication clearer and more effective by helping you understand and adjust the emotional tone of your messages. (English and Spanish available)\n# How we built it\nLeveraging advanced natural language processing algorithms, we built the app to scan and interpret the emotional tone of text messages. The front-end is designed for user-friendly interaction, featuring a simple text input field and a display area for immediate feedback. On the back-end, we implemented a RESTful API that receives the text, analyzes its tone, and returns the results. The entire process takes just a few seconds, offering users a seamless experience. The app is essentially a blend of cutting-edge technology and intuitive design, aimed at making digital communication as clear and effective as possible.\n# Challenges we ran into\nOne of the primary hurdles was fine-tuning the natural language processing algorithms to accurately interpret emotional tone, as language can be highly nuanced and context-dependent. We grappled with creating a user-friendly interface that could provide immediate, actionable feedback without overwhelming the user. We also wanted to integrate either a plugin to use for an existing messaging app or develop our own. We did both but had",
+    "has_architecture_docs": false,
+    "api_routes_count": 0,
+    "db_migrations_or_schema_count": 0,
+    "mock_data_detected": false,
+    "mock_data_indicators": [],
+    "todo_fixme_count": 0,
+    "boilerplate_detected": false,
+    "boilerplate_indicators": [],
+    "deployment_check": null,
+    "consistency_with_claims": "inconsistent",
+    "consistency_explanation": "Weak evidence: Only 2/15 claimed technologies detected in codebase.",
+    "actual_integrations_found": [
+      "flask",
+      "flask"
+    ],
+    "readme_claims_unsupported_by_code": [
+      "chatgpt",
+      "css",
+      "css",
+      "gpt-api",
+      "html",
+      "html",
+      "javascript",
+      "javascript",
+      "jquery",
+      "jquery",
+      "python",
+      "python",
+      "web-based"
+    ],
+    "provenance": [
+      {
+        "claim": "Inspected repository https://github.com/bellynap/ToneIQ",
+        "evidence_type": "repository",
+        "source": "https://github.com/bellynap/ToneIQ",
+        "location": "root",
+        "confidence": 1.0,
+        "details": null
+      }
+    ]
+  },
+  "demo_summary": {
+    "has_video_demo": false,
+    "video_platform": "",
+    "video_url": "",
+    "duration_seconds": null,
+    "has_live_deployment": false,
+    "deployment_url": "",
+    "deployment_reachable": null,
+    "has_slide_deck": false,
+    "observations": []
+  },
+  "sponsor_technologies_mentioned": [],
+  "bundle_sha256": "e0031d6ab4fdb17ed32c2421cc4892c5c4bc87e14e5ef4d34af4c95e92ee5b03",
+  "created_at": "2026-09-26T02:11:35.869366Z"
+}

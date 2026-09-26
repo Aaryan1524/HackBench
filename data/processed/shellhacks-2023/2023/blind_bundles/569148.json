@@ -1,0 +1,186 @@
+{
+  "project_id": "569148",
+  "slug": "sundered-starlight",
+  "title": "Sundered Starlight",
+  "tagline": "Sundered Starlight is a Sentimental AI Storytelling RPG Dungeon.",
+  "problem_statement": "",
+  "inspiration": "",
+  "what_it_does": "",
+  "how_it_was_built": "",
+  "challenges": "",
+  "accomplishments": "",
+  "lessons_learned": "",
+  "future_plans": "",
+  "tech_tags": [
+    "asperite",
+    "chatgpt",
+    "javascript",
+    "javascript",
+    "pixi.js",
+    "texturepacker"
+  ],
+  "team_size": 4,
+  "repository_metrics": {
+    "repo_url": "https://github.com/JaviTrek/SunderedStarlight",
+    "status": "accessible",
+    "default_branch": "main",
+    "file_count": 218,
+    "approx_loc": 834,
+    "loc_by_language": {
+      "HTML": 35,
+      "JavaScript": 670,
+      "CSS": 129
+    },
+    "primary_languages": [
+      "JavaScript",
+      "CSS",
+      "HTML"
+    ],
+    "tech_stack": {
+      "frontend_frameworks": [
+        "Vite"
+      ],
+      "backend_frameworks": [
+        "Express.js"
+      ],
+      "databases": [],
+      "ai_ml_libraries": [],
+      "model_providers": [
+        "OpenAI"
+      ],
+      "cloud_devops": [],
+      "third_party_apis": [],
+      "hardware_components": [],
+      "package_dependencies": [
+        "axios",
+        "cors",
+        "dotenv",
+        "express",
+        "nodemon",
+        "openai",
+        "pixi.js",
+        "vite"
+      ]
+    },
+    "git_timeline": {
+      "total_commits": 45,
+      "commits_in_window": 45,
+      "first_commit_time": "2023-09-16T03:39:40Z",
+      "last_commit_time": "2023-09-17T14:55:45Z",
+      "commit_timestamps": [
+        "2023-09-16T03:39:40Z",
+        "2023-09-16T07:20:54Z",
+        "2023-09-16T12:38:23Z",
+        "2023-09-16T13:08:30Z",
+        "2023-09-16T18:27:13Z",
+        "2023-09-16T20:34:43Z",
+        "2023-09-16T20:35:38Z",
+        "2023-09-16T20:36:33Z",
+        "2023-09-16T20:41:35Z",
+        "2023-09-16T20:41:58Z",
+        "2023-09-16T20:42:26Z",
+        "2023-09-17T02:24:31Z",
+        "2023-09-17T02:26:39Z",
+        "2023-09-17T03:15:42Z",
+        "2023-09-17T03:29:17Z",
+        "2023-09-17T03:33:24Z",
+        "2023-09-17T05:57:42Z",
+        "2023-09-17T06:28:19Z",
+        "2023-09-17T06:31:18Z",
+        "2023-09-17T06:34:18Z",
+        "2023-09-17T06:35:23Z",
+        "2023-09-17T06:38:02Z",
+        "2023-09-17T06:38:58Z",
+        "2023-09-17T06:39:38Z",
+        "2023-09-17T06:40:27Z",
+        "2023-09-17T06:41:26Z",
+        "2023-09-17T06:41:59Z",
+        "2023-09-17T06:42:49Z",
+        "2023-09-17T06:43:12Z",
+        "2023-09-17T06:43:53Z",
+        "2023-09-17T06:44:42Z",
+        "2023-09-17T06:45:08Z",
+        "2023-09-17T06:45:44Z",
+        "2023-09-17T06:46:24Z",
+        "2023-09-17T13:04:20Z",
+        "2023-09-17T13:05:32Z",
+        "2023-09-17T13:08:03Z",
+        "2023-09-17T13:10:08Z",
+        "2023-09-17T13:11:22Z",
+        "2023-09-17T14:32:56Z",
+        "2023-09-17T14:33:15Z",
+        "2023-09-17T14:38:34Z",
+        "2023-09-17T14:52:33Z",
+        "2023-09-17T14:52:41Z",
+        "2023-09-17T14:55:45Z"
+      ],
+      "late_rewrites_detected": false,
+      "deadline_crunch_ratio": 0.62,
+      "final_stage_focus": "docs",
+      "history_is_squashed_or_minimal": false,
+      "contributor_count": 5,
+      "contributors": [
+        "Alejandro Mijares",
+        "Andy Terra",
+        "amija004",
+        "Gabi Lecusay",
+        "JaviTrek"
+      ]
+    },
+    "test_files_count": 0,
+    "test_frameworks": [],
+    "has_ci": false,
+    "ci_configs": [],
+    "has_docker": false,
+    "has_env_template": false,
+    "readme_size_bytes": 7088,
+    "readme_excerpt": "**Sundered Starlight**\n_an AI-Assisted Story Telling RPG about Overcoming Grief_\n**Musical Score Credits**\nNathan Jefferson! @mistereagleman\n## Inspiration\nWe, as a whole, are nostalgically inspired by meaningful video games that broaden your sense of curiosity and self-discovery. Dungeon Crawler games such as Enter the Gungeon, Legend of Zelda, and Crypt of the Necrodancer are just a few of the more popular options in the ocean of new titles released over our lifetimes. Our group believes the emotional impact video games have on individuals through immersive experiences can be as impactful as more traditional Artistic mediums like film and canvas. By implementing AI we are using it as a vehicle to drive our delivery of this message and hoping to give our audience a portion of compassion from each minute spent completing this project.\nFundamentally, our overall aesthetic approach was to create unique characters and environments that interact with levels of light throughout the course. Our characters are based on the stages of grief, specifically representing: Anger, Denial, Depression, Guilt, and Acceptance.\n## What it does\nUsing Procedurally Generated Mapping, our page is laid out differently with each refresh of the browser. While it may be dark, there is nothing to fear! NPCs are scattered throughout the cave that your character may run into and begin a conversation. We are using Chat GPT 4.0 to generate dialogue and plot for our audience to engage with in order to learn more about the mysterious cave they've unfortunately found themselves in. There are 5 different NPCs to discover in order to progress through the storyline.\n## How we built it\nPixieJS, Chat GPT, Asperite, & TexturePacker.\n## Challenges we ran into\n**Unfamiliar Software**\nWhile one member was familiar with PixieJS, the rest of us had never touched the engine before. Chat GPT as a Coding Assistant proved to be extremely helpful in not only automating the script for the game but with aiding in asset design inspiration, instructions, and plot generation. The ShellHacks mentors, likewise, proved an invaluable asset; we received technical advice that helped us avoid several rabbit holes, and moral support that encouraged us on our path.\n**Group Consistency**\nStarting as a group of 4 made it difficult to reassign roles between our remaining 3 but we understandably were able to know each other's strengths and weaknesses the more we grew to know one another over the weekend. We had never met one",
+    "has_architecture_docs": false,
+    "api_routes_count": 2,
+    "db_migrations_or_schema_count": 0,
+    "mock_data_detected": false,
+    "mock_data_indicators": [],
+    "todo_fixme_count": 0,
+    "boilerplate_detected": true,
+    "boilerplate_indicators": [
+      "Default starter package name: 'vite-project'"
+    ],
+    "deployment_check": null,
+    "consistency_with_claims": "inconsistent",
+    "consistency_explanation": "Weak evidence: Only 1/6 claimed technologies detected in codebase.",
+    "actual_integrations_found": [
+      "pixi.js"
+    ],
+    "readme_claims_unsupported_by_code": [
+      "asperite",
+      "chatgpt",
+      "javascript",
+      "javascript",
+      "texturepacker"
+    ],
+    "provenance": [
+      {
+        "claim": "Inspected repository https://github.com/JaviTrek/SunderedStarlight",
+        "evidence_type": "repository",
+        "source": "https://github.com/JaviTrek/SunderedStarlight",
+        "location": "root",
+        "confidence": 1.0,
+        "details": null
+      }
+    ]
+  },
+  "demo_summary": {
+    "has_video_demo": true,
+    "video_platform": "youtube",
+    "video_url": "https://www.youtube.com/embed/c9-QBb-WZZI?enablejsapi=1&hl=en_US&rel=0&start=&version=3&wmode=transparent",
+    "duration_seconds": null,
+    "has_live_deployment": false,
+    "deployment_url": "",
+    "deployment_reachable": null,
+    "has_slide_deck": false,
+    "observations": []
+  },
+  "sponsor_technologies_mentioned": [],
+  "bundle_sha256": "671fe51d53a306901d5e300d0acdd25b52469a7a83d3dd3d01b81028ccf67b76",
+  "created_at": "2026-09-26T02:11:35.563878Z"
+}

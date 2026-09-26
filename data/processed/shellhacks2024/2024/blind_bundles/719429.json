@@ -1,0 +1,42 @@
+{
+  "project_id": "719429",
+  "slug": "financial-management-app",
+  "title": "Financial Manager",
+  "tagline": "Have a better understanding of your finances, with this budgeting app to track your income, pesky expenses and manage your money efficiently.",
+  "problem_statement": "",
+  "inspiration": "",
+  "what_it_does": "",
+  "how_it_was_built": "",
+  "challenges": "",
+  "accomplishments": "",
+  "lessons_learned": "",
+  "future_plans": "",
+  "tech_tags": [
+    "css",
+    "css",
+    "firebase",
+    "firebase",
+    "html",
+    "html",
+    "javascript",
+    "javascript",
+    "react",
+    "react"
+  ],
+  "team_size": 3,
+  "repository_metrics": null,
+  "demo_summary": {
+    "has_video_demo": false,
+    "video_platform": "",
+    "video_url": "",
+    "duration_seconds": null,
+    "has_live_deployment": true,
+    "deployment_url": "https://shellhacks-project.vercel.app",
+    "deployment_reachable": null,
+    "has_slide_deck": false,
+    "observations": []
+  },
+  "sponsor_technologies_mentioned": [],
+  "bundle_sha256": "c837bf4ea15c32e58f9b7b9cdb78e02cbbfec1d85b48860b33188d5eb312d1d9",
+  "created_at": "2026-09-26T02:03:23.384287Z"
+}

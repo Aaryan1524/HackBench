@@ -1,0 +1,149 @@
+{
+  "project_id": "570726",
+  "slug": "shelly-1oedgl",
+  "title": "SHELLY",
+  "tagline": "IDEA-The basic idea is to create a chatbot with integrated functionalities for face detection, interaction with the user based on detected face, and providing personalized banking advice and services.",
+  "problem_statement": "",
+  "inspiration": "",
+  "what_it_does": "",
+  "how_it_was_built": "",
+  "challenges": "",
+  "accomplishments": "",
+  "lessons_learned": "",
+  "future_plans": "",
+  "tech_tags": [
+    "css",
+    "css",
+    "flask",
+    "flask",
+    "html",
+    "html",
+    "mui",
+    "python",
+    "python",
+    "react",
+    "react",
+    "transformers"
+  ],
+  "team_size": 3,
+  "repository_metrics": {
+    "repo_url": "https://github.com/bhanumusuluri/SHELLY",
+    "status": "accessible",
+    "default_branch": "master",
+    "file_count": 160,
+    "approx_loc": 1113,
+    "loc_by_language": {
+      "Python": 225,
+      "HTML": 43,
+      "CSS": 548,
+      "JavaScript": 297
+    },
+    "primary_languages": [
+      "CSS",
+      "JavaScript",
+      "Python",
+      "HTML"
+    ],
+    "tech_stack": {
+      "frontend_frameworks": [
+        "React"
+      ],
+      "backend_frameworks": [],
+      "databases": [],
+      "ai_ml_libraries": [
+        "HuggingFace Transformers"
+      ],
+      "model_providers": [],
+      "cloud_devops": [],
+      "third_party_apis": [],
+      "hardware_components": [],
+      "package_dependencies": [
+        "react",
+        "transformers"
+      ]
+    },
+    "git_timeline": {
+      "total_commits": 5,
+      "commits_in_window": 5,
+      "first_commit_time": "2023-09-17T06:19:03Z",
+      "last_commit_time": "2023-09-17T14:19:24Z",
+      "commit_timestamps": [
+        "2023-09-17T06:19:03Z",
+        "2023-09-17T06:22:43Z",
+        "2023-09-17T06:24:12Z",
+        "2023-09-17T14:13:12Z",
+        "2023-09-17T14:19:24Z"
+      ],
+      "late_rewrites_detected": false,
+      "deadline_crunch_ratio": 0.4,
+      "final_stage_focus": "docs",
+      "history_is_squashed_or_minimal": false,
+      "contributor_count": 4,
+      "contributors": [
+        "loki",
+        "LOKESH MEESALA",
+        "Bhanu Rekha Musuluri",
+        "Bunny's Laptop"
+      ]
+    },
+    "test_files_count": 0,
+    "test_frameworks": [],
+    "has_ci": false,
+    "ci_configs": [],
+    "has_docker": false,
+    "has_env_template": false,
+    "readme_size_bytes": 1658,
+    "readme_excerpt": "## SHELLHACKS - CapitalONE\n**How will you reimagine banking?**\nThis will be an opportunity for participating hackers to use their creativity on how they can positively influence the banking industry. The industry has already has already welcomed technological advances with Cyber Security, Machine Learning, Data Analytics and Software Engineering. The door is open for more ideas!\nIDEA - The basic idea is to create a chatbot with integrated functionalities for face detection, interaction with the user based on detected face, and providing personalized banking advice and services. Here's a step-by-step breakdown:\n### Face Detection:\nThe system first detects a face, identifying it as belonging to a specific person (Person A).\n### Initiating Interaction:\nThe chatbot takes over, addressing the identified person by name (Person A) and initiates a conversation.\n### User Response:\nPerson A responds to the chatbot's greeting.\n### Data Analysis:\nThe system runs an analysis on Person A's data, likely retrieving information such as bank balance, credit score, loan status, bill status, and any disputed amounts from a database.\n### Service Recommendations:\nBased on the analysis, the chatbot offers a menu of possible services tailored to Person A's financial situation.\nFAQ Training:\nTraining the chatBot with FAQs and mapping to relevant answers using BERT\n#### TO-DO :\nThe chatbot is integrated with OpenAI's GPT-3 for small talk, allowing it to engage in casual conversation and maintain a friendly tone.\nAllow to train FAQs and use the\n## Authors\nBhanu Musuluri\nLokesh Meesala",
+    "has_architecture_docs": false,
+    "api_routes_count": 0,
+    "db_migrations_or_schema_count": 0,
+    "mock_data_detected": false,
+    "mock_data_indicators": [],
+    "todo_fixme_count": 0,
+    "boilerplate_detected": false,
+    "boilerplate_indicators": [],
+    "deployment_check": null,
+    "consistency_with_claims": "inconsistent",
+    "consistency_explanation": "Weak evidence: Only 3/12 claimed technologies detected in codebase.",
+    "actual_integrations_found": [
+      "react",
+      "react",
+      "transformers"
+    ],
+    "readme_claims_unsupported_by_code": [
+      "css",
+      "css",
+      "flask",
+      "flask",
+      "html",
+      "html",
+      "mui",
+      "python",
+      "python"
+    ],
+    "provenance": [
+      {
+        "claim": "Inspected repository https://github.com/bhanumusuluri/SHELLY",
+        "evidence_type": "repository",
+        "source": "https://github.com/bhanumusuluri/SHELLY",
+        "location": "root",
+        "confidence": 1.0,
+        "details": null
+      }
+    ]
+  },
+  "demo_summary": {
+    "has_video_demo": false,
+    "video_platform": "",
+    "video_url": "",
+    "duration_seconds": null,
+    "has_live_deployment": false,
+    "deployment_url": "",
+    "deployment_reachable": null,
+    "has_slide_deck": false,
+    "observations": []
+  },
+  "sponsor_technologies_mentioned": [],
+  "bundle_sha256": "d574267add621cff46e94dc4a1b352606cc202cd61c1e3a863e64878ac3d1337",
+  "created_at": "2026-09-26T02:11:35.776467Z"
+}

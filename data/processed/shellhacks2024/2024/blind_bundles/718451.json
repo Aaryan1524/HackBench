@@ -1,0 +1,157 @@
+{
+  "project_id": "718451",
+  "slug": "snapreport",
+  "title": "SnapReport",
+  "tagline": "Bridging the gap in emergencies with AI-Powered Platform.\r\nWhen seconds count, we connect those in need with first responders faster.",
+  "problem_statement": "",
+  "inspiration": "",
+  "what_it_does": "",
+  "how_it_was_built": "",
+  "challenges": "",
+  "accomplishments": "",
+  "lessons_learned": "",
+  "future_plans": "",
+  "tech_tags": [
+    "ai",
+    "api",
+    "flask",
+    "flask",
+    "machine-learning",
+    "machine-learning",
+    "mongodb",
+    "mongodb",
+    "python",
+    "python",
+    "react-native",
+    "react-native",
+    "react.js",
+    "tailwind"
+  ],
+  "team_size": 4,
+  "repository_metrics": {
+    "repo_url": "https://github.com/hlohaangit/snap_report",
+    "status": "accessible",
+    "default_branch": "main",
+    "file_count": 31,
+    "approx_loc": 860,
+    "loc_by_language": {
+      "JavaScript": 776,
+      "HTML": 43,
+      "CSS": 41
+    },
+    "primary_languages": [
+      "JavaScript",
+      "HTML",
+      "CSS"
+    ],
+    "tech_stack": {
+      "frontend_frameworks": [
+        "React",
+        "TailwindCSS"
+      ],
+      "backend_frameworks": [],
+      "databases": [],
+      "ai_ml_libraries": [],
+      "model_providers": [],
+      "cloud_devops": [],
+      "third_party_apis": [],
+      "hardware_components": [],
+      "package_dependencies": [
+        "@headlessui/react",
+        "@heroicons/react",
+        "@material-tailwind/react",
+        "@testing-library/jest-dom",
+        "@testing-library/react",
+        "@testing-library/user-event",
+        "exif",
+        "exif-js",
+        "react",
+        "react-dom",
+        "react-router-dom",
+        "react-scripts",
+        "tailwindcss",
+        "web-vitals"
+      ]
+    },
+    "git_timeline": {
+      "total_commits": 3,
+      "commits_in_window": 3,
+      "first_commit_time": "2024-09-29T09:54:26Z",
+      "last_commit_time": "2024-09-29T10:46:32Z",
+      "commit_timestamps": [
+        "2024-09-29T09:54:26Z",
+        "2024-09-29T09:55:06Z",
+        "2024-09-29T10:46:32Z"
+      ],
+      "late_rewrites_detected": false,
+      "deadline_crunch_ratio": 0.0,
+      "final_stage_focus": "docs",
+      "history_is_squashed_or_minimal": false,
+      "contributor_count": 1,
+      "contributors": [
+        "Harshit Lohaan"
+      ]
+    },
+    "test_files_count": 1,
+    "test_frameworks": [],
+    "has_ci": false,
+    "ci_configs": [],
+    "has_docker": false,
+    "has_env_template": false,
+    "readme_size_bytes": 0,
+    "readme_excerpt": "",
+    "has_architecture_docs": false,
+    "api_routes_count": 0,
+    "db_migrations_or_schema_count": 0,
+    "mock_data_detected": false,
+    "mock_data_indicators": [],
+    "todo_fixme_count": 0,
+    "boilerplate_detected": false,
+    "boilerplate_indicators": [],
+    "deployment_check": null,
+    "consistency_with_claims": "partial",
+    "consistency_explanation": "Partial evidence: 5/14 claimed technologies found in codebase.",
+    "actual_integrations_found": [
+      "ai",
+      "react-native",
+      "react-native",
+      "react.js",
+      "tailwind"
+    ],
+    "readme_claims_unsupported_by_code": [
+      "api",
+      "flask",
+      "flask",
+      "machine-learning",
+      "machine-learning",
+      "mongodb",
+      "mongodb",
+      "python",
+      "python"
+    ],
+    "provenance": [
+      {
+        "claim": "Inspected repository https://github.com/hlohaangit/snap_report",
+        "evidence_type": "repository",
+        "source": "https://github.com/hlohaangit/snap_report",
+        "location": "root",
+        "confidence": 1.0,
+        "details": null
+      }
+    ]
+  },
+  "demo_summary": {
+    "has_video_demo": true,
+    "video_platform": "youtube",
+    "video_url": "https://www.youtube.com/embed/-VEBjBKQT_Q?enablejsapi=1&hl=en_US&rel=0&start=&version=3&wmode=transparent",
+    "duration_seconds": null,
+    "has_live_deployment": false,
+    "deployment_url": "",
+    "deployment_reachable": null,
+    "has_slide_deck": false,
+    "observations": []
+  },
+  "sponsor_technologies_mentioned": [],
+  "bundle_sha256": "4ccf2b27e378ce76bed0c9f16433fc39b07c8d18cffd51b137ba270172a7fe4a",
+  "created_at": "2026-09-26T02:03:23.350030Z"
+}

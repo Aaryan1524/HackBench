@@ -1,0 +1,162 @@
+{
+  "project_id": "570815",
+  "slug": "grammarnauts",
+  "title": "GrammarNauts",
+  "tagline": "In this Educational Tech project, students from 2nd to 5th grade can practice their understanding of  Nouns, Verbs, and Adjectives by traveling through space and destroying asteroids in their path.",
+  "problem_statement": "",
+  "inspiration": "",
+  "what_it_does": "",
+  "how_it_was_built": "",
+  "challenges": "",
+  "accomplishments": "",
+  "lessons_learned": "",
+  "future_plans": "",
+  "tech_tags": [
+    "amazon-web-services",
+    "amazon-web-services",
+    "express.js",
+    "express.js",
+    "node.js",
+    "node.js",
+    "react",
+    "react",
+    "robloxstudio"
+  ],
+  "team_size": 4,
+  "repository_metrics": {
+    "repo_url": "https://github.com/tylerwong1/WordNauts",
+    "status": "accessible",
+    "default_branch": "master",
+    "file_count": 38,
+    "approx_loc": 927,
+    "loc_by_language": {
+      "JavaScript": 435,
+      "HTML": 50,
+      "CSS": 442
+    },
+    "primary_languages": [
+      "CSS",
+      "JavaScript",
+      "HTML"
+    ],
+    "tech_stack": {
+      "frontend_frameworks": [
+        "React"
+      ],
+      "backend_frameworks": [
+        "Express.js"
+      ],
+      "databases": [
+        "Firebase"
+      ],
+      "ai_ml_libraries": [],
+      "model_providers": [],
+      "cloud_devops": [],
+      "third_party_apis": [],
+      "hardware_components": [],
+      "package_dependencies": [
+        "express",
+        "firebase",
+        "react"
+      ]
+    },
+    "git_timeline": {
+      "total_commits": 25,
+      "commits_in_window": 25,
+      "first_commit_time": "2023-09-16T04:23:56Z",
+      "last_commit_time": "2023-09-19T12:46:38Z",
+      "commit_timestamps": [
+        "2023-09-16T04:23:56Z",
+        "2023-09-16T05:47:28Z",
+        "2023-09-16T13:07:17Z",
+        "2023-09-16T13:19:35Z",
+        "2023-09-16T14:28:33Z",
+        "2023-09-16T14:36:12Z",
+        "2023-09-16T14:44:00Z",
+        "2023-09-16T14:53:51Z",
+        "2023-09-16T15:08:48Z",
+        "2023-09-16T15:10:46Z",
+        "2023-09-16T20:03:24Z",
+        "2023-09-16T20:03:38Z",
+        "2023-09-16T20:05:40Z",
+        "2023-09-16T21:03:57Z",
+        "2023-09-16T21:10:06Z",
+        "2023-09-17T00:24:28Z",
+        "2023-09-17T01:09:57Z",
+        "2023-09-17T01:19:05Z",
+        "2023-09-17T01:26:31Z",
+        "2023-09-17T01:56:18Z",
+        "2023-09-17T03:07:50Z",
+        "2023-09-17T05:38:34Z",
+        "2023-09-17T14:52:12Z",
+        "2023-09-17T14:56:15Z",
+        "2023-09-19T12:46:38Z"
+      ],
+      "late_rewrites_detected": false,
+      "deadline_crunch_ratio": 0.04,
+      "final_stage_focus": "docs",
+      "history_is_squashed_or_minimal": false,
+      "contributor_count": 2,
+      "contributors": [
+        "tylerwong1",
+        "Tuan Dang"
+      ]
+    },
+    "test_files_count": 0,
+    "test_frameworks": [],
+    "has_ci": false,
+    "ci_configs": [],
+    "has_docker": false,
+    "has_env_template": false,
+    "readme_size_bytes": 320,
+    "readme_excerpt": "# Mathnauts\nSpace-themed Roblox game with full-stack web application giving real-time analytics of players in-game.\n## Details\nReactJS front-end, NodeJS/ExpressJS backend. No database, information received from post request sent from Roblox and information from backend is directly sent to frontend with a websocket.",
+    "has_architecture_docs": false,
+    "api_routes_count": 2,
+    "db_migrations_or_schema_count": 0,
+    "mock_data_detected": false,
+    "mock_data_indicators": [],
+    "todo_fixme_count": 1,
+    "boilerplate_detected": false,
+    "boilerplate_indicators": [],
+    "deployment_check": null,
+    "consistency_with_claims": "partial",
+    "consistency_explanation": "Partial evidence: 4/9 claimed technologies found in codebase.",
+    "actual_integrations_found": [
+      "express.js",
+      "express.js",
+      "react",
+      "react"
+    ],
+    "readme_claims_unsupported_by_code": [
+      "amazon-web-services",
+      "amazon-web-services",
+      "node.js",
+      "node.js",
+      "robloxstudio"
+    ],
+    "provenance": [
+      {
+        "claim": "Inspected repository https://github.com/tylerwong1/WordNauts",
+        "evidence_type": "repository",
+        "source": "https://github.com/tylerwong1/WordNauts",
+        "location": "root",
+        "confidence": 1.0,
+        "details": null
+      }
+    ]
+  },
+  "demo_summary": {
+    "has_video_demo": false,
+    "video_platform": "",
+    "video_url": "",
+    "duration_seconds": null,
+    "has_live_deployment": false,
+    "deployment_url": "",
+    "deployment_reachable": null,
+    "has_slide_deck": false,
+    "observations": []
+  },
+  "sponsor_technologies_mentioned": [],
+  "bundle_sha256": "a83f54db869e7b28b167e9df14bc68461f40c95f9a0864e53c732000a8954aa7",
+  "created_at": "2026-09-26T02:11:35.596497Z"
+}

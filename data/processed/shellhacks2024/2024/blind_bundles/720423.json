@@ -1,0 +1,164 @@
+{
+  "project_id": "720423",
+  "slug": "her-safe-journey",
+  "title": "Her Safe Journey",
+  "tagline": "A women's safety-focused event-finding bot designed to empower women travelers by helping them discover safe, women-friendly events in new cities and make new memories.",
+  "problem_statement": "",
+  "inspiration": "",
+  "what_it_does": "",
+  "how_it_was_built": "",
+  "challenges": "",
+  "accomplishments": "",
+  "lessons_learned": "",
+  "future_plans": "",
+  "tech_tags": [
+    "eventbrite",
+    "eventbrite",
+    "flask",
+    "flask",
+    "postman",
+    "postman",
+    "python",
+    "python",
+    "telegram",
+    "telegram",
+    "ticketmaster",
+    "ticketmaster"
+  ],
+  "team_size": 3,
+  "repository_metrics": {
+    "repo_url": "https://github.com/camz1421/HerSafeJourney",
+    "status": "accessible",
+    "default_branch": "main",
+    "file_count": 1266,
+    "approx_loc": 300908,
+    "loc_by_language": {
+      "Python": 300087,
+      "C": 320,
+      "CSS": 150,
+      "JavaScript": 344,
+      "HTML": 7
+    },
+    "primary_languages": [
+      "Python",
+      "JavaScript",
+      "C",
+      "CSS",
+      "HTML"
+    ],
+    "tech_stack": {
+      "frontend_frameworks": [],
+      "backend_frameworks": [
+        "Django",
+        "Flask"
+      ],
+      "databases": [
+        "Redis"
+      ],
+      "ai_ml_libraries": [],
+      "model_providers": [],
+      "cloud_devops": [],
+      "third_party_apis": [],
+      "hardware_components": [],
+      "package_dependencies": [
+        "django",
+        "flask",
+        "redis"
+      ]
+    },
+    "git_timeline": {
+      "total_commits": 14,
+      "commits_in_window": 14,
+      "first_commit_time": "2024-09-28T03:17:33Z",
+      "last_commit_time": "2024-09-29T14:57:56Z",
+      "commit_timestamps": [
+        "2024-09-28T03:17:33Z",
+        "2024-09-28T17:15:00Z",
+        "2024-09-28T17:22:01Z",
+        "2024-09-28T17:29:05Z",
+        "2024-09-28T18:06:21Z",
+        "2024-09-28T21:16:52Z",
+        "2024-09-28T22:30:00Z",
+        "2024-09-28T22:32:03Z",
+        "2024-09-28T22:32:57Z",
+        "2024-09-29T05:51:01Z",
+        "2024-09-29T13:53:04Z",
+        "2024-09-29T13:56:46Z",
+        "2024-09-29T14:57:05Z",
+        "2024-09-29T14:57:56Z"
+      ],
+      "late_rewrites_detected": false,
+      "deadline_crunch_ratio": 0.29,
+      "final_stage_focus": "features",
+      "history_is_squashed_or_minimal": false,
+      "contributor_count": 3,
+      "contributors": [
+        "Rebecca-Calderon",
+        "camz1421",
+        "RebeccaCalderon"
+      ]
+    },
+    "test_files_count": 97,
+    "test_frameworks": [
+      "pytest",
+      "unittest"
+    ],
+    "has_ci": false,
+    "ci_configs": [],
+    "has_docker": false,
+    "has_env_template": false,
+    "readme_size_bytes": 97,
+    "readme_excerpt": "# HerSafeJourney\nA Telegram bot and platform for safe event recommendations for women travelers.",
+    "has_architecture_docs": false,
+    "api_routes_count": 7,
+    "db_migrations_or_schema_count": 4,
+    "mock_data_detected": false,
+    "mock_data_indicators": [],
+    "todo_fixme_count": 328,
+    "boilerplate_detected": false,
+    "boilerplate_indicators": [],
+    "deployment_check": null,
+    "consistency_with_claims": "inconsistent",
+    "consistency_explanation": "Weak evidence: Only 2/12 claimed technologies detected in codebase.",
+    "actual_integrations_found": [
+      "flask",
+      "flask"
+    ],
+    "readme_claims_unsupported_by_code": [
+      "eventbrite",
+      "eventbrite",
+      "postman",
+      "postman",
+      "python",
+      "python",
+      "telegram",
+      "telegram",
+      "ticketmaster",
+      "ticketmaster"
+    ],
+    "provenance": [
+      {
+        "claim": "Inspected repository https://github.com/camz1421/HerSafeJourney",
+        "evidence_type": "repository",
+        "source": "https://github.com/camz1421/HerSafeJourney",
+        "location": "root",
+        "confidence": 1.0,
+        "details": null
+      }
+    ]
+  },
+  "demo_summary": {
+    "has_video_demo": false,
+    "video_platform": "",
+    "video_url": "",
+    "duration_seconds": null,
+    "has_live_deployment": false,
+    "deployment_url": "",
+    "deployment_reachable": null,
+    "has_slide_deck": false,
+    "observations": []
+  },
+  "sponsor_technologies_mentioned": [],
+  "bundle_sha256": "1eee2de7db2c5fd7c2638a2ee22cb4eac2281a803adab8da86c2b3764cb931e8",
+  "created_at": "2026-09-26T02:03:23.118636Z"
+}

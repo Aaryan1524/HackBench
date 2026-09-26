@@ -1,0 +1,176 @@
+{
+  "project_id": "569170",
+  "slug": "nearus-connect-beyond-the-classroom",
+  "title": "Nearus: Connect Beyond the Classroom",
+  "tagline": "Nearus is a web application designed to aid students in making the most of their college years. Nearus finds events, opportunities, or student discounts going on near us.",
+  "problem_statement": "",
+  "inspiration": "",
+  "what_it_does": "",
+  "how_it_was_built": "",
+  "challenges": "",
+  "accomplishments": "",
+  "lessons_learned": "",
+  "future_plans": "",
+  "tech_tags": [
+    "css3",
+    "css3",
+    "docker",
+    "docker",
+    "flask",
+    "flask",
+    "github",
+    "github",
+    "google-cloud-build",
+    "google-cloud-run",
+    "google-cloud-sql",
+    "google-cloud-sql",
+    "html5",
+    "html5",
+    "javascript",
+    "javascript",
+    "postgis",
+    "postgresql",
+    "postgresql",
+    "python",
+    "python"
+  ],
+  "team_size": 4,
+  "repository_metrics": {
+    "repo_url": "https://github.com/webbgamers/discount-hub-api/",
+    "status": "accessible",
+    "default_branch": "main",
+    "file_count": 7,
+    "approx_loc": 192,
+    "loc_by_language": {
+      "Python": 192
+    },
+    "primary_languages": [
+      "Python"
+    ],
+    "tech_stack": {
+      "frontend_frameworks": [],
+      "backend_frameworks": [
+        "Flask"
+      ],
+      "databases": [
+        "PostgreSQL"
+      ],
+      "ai_ml_libraries": [],
+      "model_providers": [],
+      "cloud_devops": [],
+      "third_party_apis": [],
+      "hardware_components": [],
+      "package_dependencies": [
+        "flask",
+        "flask-cors",
+        "gunicorn",
+        "psycopg2",
+        "python-dotenv"
+      ]
+    },
+    "git_timeline": {
+      "total_commits": 19,
+      "commits_in_window": 19,
+      "first_commit_time": "2023-09-15T22:53:58Z",
+      "last_commit_time": "2023-09-20T20:00:37Z",
+      "commit_timestamps": [
+        "2023-09-15T22:53:58Z",
+        "2023-09-16T15:05:45Z",
+        "2023-09-16T15:22:11Z",
+        "2023-09-16T20:14:43Z",
+        "2023-09-16T22:49:37Z",
+        "2023-09-17T01:08:17Z",
+        "2023-09-17T02:57:11Z",
+        "2023-09-17T04:02:44Z",
+        "2023-09-17T05:36:43Z",
+        "2023-09-17T06:37:25Z",
+        "2023-09-17T06:38:48Z",
+        "2023-09-17T06:44:21Z",
+        "2023-09-17T06:54:54Z",
+        "2023-09-17T13:15:30Z",
+        "2023-09-17T13:25:09Z",
+        "2023-09-17T13:27:02Z",
+        "2023-09-17T13:47:56Z",
+        "2023-09-17T13:56:32Z",
+        "2023-09-20T20:00:37Z"
+      ],
+      "late_rewrites_detected": false,
+      "deadline_crunch_ratio": 0.05,
+      "final_stage_focus": "debugging",
+      "history_is_squashed_or_minimal": false,
+      "contributor_count": 2,
+      "contributors": [
+        "Garrett Webb",
+        "webbgamers"
+      ]
+    },
+    "test_files_count": 0,
+    "test_frameworks": [],
+    "has_ci": false,
+    "ci_configs": [],
+    "has_docker": true,
+    "has_env_template": false,
+    "readme_size_bytes": 4965,
+    "readme_excerpt": "# Nearus API (ShellHacks 2023)\nThis program interfaces with a PostgreSQL database with PostGIS to provide information about nearby student discounts. For ShellHacks 2023 this is deployed on GCP Cloud Run. The database is running in GCP CloudSQL. The program itself is an extremely simple Flask/Gunicorn server that responds to the following endpoints.\n# Endpoints\n## \\[POST\\] /register\nRegisters a new user in the database and returns the user ID.\n### Arguments\n`email` - Email of the user.\n### Returns (JSON)\n`id` - Numeric ID of the newly created user.\n### Example\n`/register?email=webbgamers@gmail.com`\nResponse (201/CREATED): `{\"id\": 3}`\n## \\[POST\\] /discount\nAdds a new discount location to the database and returns the ID of said discount. Also automatically creates a rating by the specified user upvoting the discount.\n### Arguments\n`user` - Email of the user adding the discount.\n`loc` - Coordinates of where the discount is in the format of `latitude longitude`.\n`t` - Title of the location providing the discount.\n`desc` - Description of the discount. (OPTIONAL)\n`req` - Requirements to get the discount. Currently `student` should the only value given to this argument.\n`amnt` - Amount of the discount. Just a string so could be anything such as `-20%`, `-$5`, or `FREE`.\n### Returns (JSON)\n`id` - Numeric ID of the newly created discount.\n### Example\n`/discount?user=webbgamers@gmail.com&loc=25.9127655%20-80.1557999&t=ShellHacks&desc=Located%20in%20the%20FIU%20Kovens%20Center&req=student&amnt=FREE`\nResponse (201/CREATED): `{\"id\": 8}`\n## \\[GET\\] /discount\nFetches information about a discount using the discount's numeric ID.\n### Arguments\n`id` - Numeric ID of the discount.\n### Returns (JSON)\n`id` - Numeric ID of the discount.\n`user` - Email of the user adding the discount.\n`loc` - Coordinates of where the discount is in the format of `latitude longitude`.\n`t` - Title of the location providing the discount.\n`desc` - Description of the discount. (OPTIONAL)\n`req` - Requirements to get the discount. Currently `student` should the only value given to this argument.\n`amnt` - Amount of the discount. Just a string so could be anything such as `-20%`, `-$5`, or `FREE`.\n### Example\n`/discount?id=10`\nResponse (200/OK): `{\"amount\":\"FREE\",\"description\":\"Located in the FIU Kovens Center\",\"id\":12,\"location\":\"25.9127655 -80.1557999\",\"requirement\":\"student\",\"title\":\"ShellHacks\"}`\n## \\[GET\\] /nearby\nReturns a list of nearby discounts and related information.\n### Arguments\n`loc` - Cente",
+    "has_architecture_docs": false,
+    "api_routes_count": 0,
+    "db_migrations_or_schema_count": 0,
+    "mock_data_detected": false,
+    "mock_data_indicators": [],
+    "todo_fixme_count": 0,
+    "boilerplate_detected": false,
+    "boilerplate_indicators": [],
+    "deployment_check": null,
+    "consistency_with_claims": "inconsistent",
+    "consistency_explanation": "Weak evidence: Only 6/21 claimed technologies detected in codebase.",
+    "actual_integrations_found": [
+      "flask",
+      "flask",
+      "postgresql",
+      "postgresql",
+      "python",
+      "python"
+    ],
+    "readme_claims_unsupported_by_code": [
+      "css3",
+      "css3",
+      "docker",
+      "docker",
+      "github",
+      "github",
+      "google-cloud-build",
+      "google-cloud-run",
+      "google-cloud-sql",
+      "google-cloud-sql",
+      "html5",
+      "html5",
+      "javascript",
+      "javascript",
+      "postgis"
+    ],
+    "provenance": [
+      {
+        "claim": "Inspected repository https://github.com/webbgamers/discount-hub-api/",
+        "evidence_type": "repository",
+        "source": "https://github.com/webbgamers/discount-hub-api/",
+        "location": "root",
+        "confidence": 1.0,
+        "details": null
+      }
+    ]
+  },
+  "demo_summary": {
+    "has_video_demo": false,
+    "video_platform": "",
+    "video_url": "",
+    "duration_seconds": null,
+    "has_live_deployment": false,
+    "deployment_url": "",
+    "deployment_reachable": null,
+    "has_slide_deck": false,
+    "observations": []
+  },
+  "sponsor_technologies_mentioned": [],
+  "bundle_sha256": "2af9c72b0ccdf2ae8c15c6bbd41bf8fbe72c44afcd11de60ac6cf81dc4848f80",
+  "created_at": "2026-09-26T02:11:35.536216Z"
+}

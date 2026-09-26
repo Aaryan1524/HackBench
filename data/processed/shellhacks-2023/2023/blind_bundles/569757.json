@@ -1,0 +1,41 @@
+{
+  "project_id": "569757",
+  "slug": "tag-up",
+  "title": "Tag Up!",
+  "tagline": "Using computer vision and your own body movements, see if you can get the highest score in this fast-paced game!",
+  "problem_statement": "",
+  "inspiration": "",
+  "what_it_does": "",
+  "how_it_was_built": "",
+  "challenges": "",
+  "accomplishments": "",
+  "lessons_learned": "",
+  "future_plans": "",
+  "tech_tags": [
+    "mediapipe",
+    "numpy",
+    "numpy",
+    "opencv",
+    "opencv",
+    "pygame",
+    "pygame",
+    "python",
+    "python"
+  ],
+  "team_size": 1,
+  "repository_metrics": null,
+  "demo_summary": {
+    "has_video_demo": false,
+    "video_platform": "",
+    "video_url": "",
+    "duration_seconds": null,
+    "has_live_deployment": false,
+    "deployment_url": "",
+    "deployment_reachable": null,
+    "has_slide_deck": false,
+    "observations": []
+  },
+  "sponsor_technologies_mentioned": [],
+  "bundle_sha256": "d0e4e7362b07970a536b22c99212bda1fce3c32767ab1930a3493063dd162e23",
+  "created_at": "2026-09-26T02:11:35.873591Z"
+}

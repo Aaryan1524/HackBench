@@ -1,0 +1,120 @@
+{
+  "project_id": "719442",
+  "slug": "smartchoices",
+  "title": "SmartChoices",
+  "tagline": "Smart Choices is an engaging educational game designed for high school students that teaches financial literacy and budgeting skills through real-life scenarios.",
+  "problem_statement": "",
+  "inspiration": "",
+  "what_it_does": "",
+  "how_it_was_built": "",
+  "challenges": "",
+  "accomplishments": "",
+  "lessons_learned": "",
+  "future_plans": "",
+  "tech_tags": [
+    "python",
+    "python",
+    "streamlit"
+  ],
+  "team_size": 2,
+  "repository_metrics": {
+    "repo_url": "https://github.com/stevenrodriguezz/SmartChoices",
+    "status": "accessible",
+    "default_branch": "main",
+    "file_count": 22,
+    "approx_loc": 553,
+    "loc_by_language": {
+      "Python": 553
+    },
+    "primary_languages": [
+      "Python"
+    ],
+    "tech_stack": {
+      "frontend_frameworks": [],
+      "backend_frameworks": [],
+      "databases": [],
+      "ai_ml_libraries": [],
+      "model_providers": [],
+      "cloud_devops": [],
+      "third_party_apis": [],
+      "hardware_components": [],
+      "package_dependencies": []
+    },
+    "git_timeline": {
+      "total_commits": 9,
+      "commits_in_window": 9,
+      "first_commit_time": "2024-09-28T05:15:19Z",
+      "last_commit_time": "2024-09-29T13:14:56Z",
+      "commit_timestamps": [
+        "2024-09-28T05:15:19Z",
+        "2024-09-28T05:25:34Z",
+        "2024-09-28T05:26:41Z",
+        "2024-09-28T05:32:29Z",
+        "2024-09-28T13:32:40Z",
+        "2024-09-28T20:12:44Z",
+        "2024-09-28T22:09:45Z",
+        "2024-09-29T01:11:41Z",
+        "2024-09-29T13:14:56Z"
+      ],
+      "late_rewrites_detected": false,
+      "deadline_crunch_ratio": 0.11,
+      "final_stage_focus": "docs",
+      "history_is_squashed_or_minimal": false,
+      "contributor_count": 3,
+      "contributors": [
+        "stevenrodriguezzz",
+        "Samuel Ovalle",
+        "Steven Rodriguez"
+      ]
+    },
+    "test_files_count": 0,
+    "test_frameworks": [],
+    "has_ci": false,
+    "ci_configs": [],
+    "has_docker": false,
+    "has_env_template": false,
+    "readme_size_bytes": 2734,
+    "readme_excerpt": "# SmartChoices\nSmart Choices is an engaging educational game designed for high school students (grades 9-12) that teaches financial literacy and budgeting skills through real-life scenarios. It was made with the intention of promoting classroom socratic discussion of how everyday people might experience finances in a fun, engaging way.\n**Topics covered:**\n- Budgeting\n- Paying Taxes\n- Credit score and lines of credit\n- Investing\n- Student Loans\n- Interest\n- Emergency Savings\n**What is this for:**\nThis project is for Shell-hacks 2024, a hackathon sponsored by the INIT student organization\n*This is our submission for the Vanguard challenge* : *\"Take a stand for all communities. Hack on any topic that you’re passionate about which impacts minority communities.\"*\n**Why are we doing this?**\n- Financial literacy education is lacking in K-12 programs around the country\n- Financial literacy enabled our team made up of two hispanic first-generational immigrants to achieve financial stability and social mobility\n- As part of the university that is #1 in social mobility in the United States, we want to champion this ideal beyond our campus into our broader community\n- We believe that there can be fun, engaging, and thought-provoking ways to teach financial literacy in a school setting\n- We believe that high school students are the most vulnerable group to making unwise financial decisions during the transition into adulthood, so they are our target audience\n**Our Team:**\n- Steven - FIU B.S. Mechanical Engineering 2024\n- Samuel - FIU B.S. Mechanical Engineering 2024\n**Technology Used:**\n- Python ( Programming Language )\n- Streamlit ( Frontend Development for UI )\n- Git, Github, WSL\n**CS Subjects Covered:**\n- Data structures\n- Object Oriented Programming\n**How does it work?**\n*User Interface:*\n- login credentials for teacher\n- Intiate a new game or (pending) enter a previously started game\n- Enter a number of student players up to 50\n- Each student will receive a role with: a job, income, student loans\n- The teacher can enable or disable credit cards, interest, emergency scenarios per round\n- Students will have to try to stay within budget while paying common bills every round\n- Bills and scenarios presented to students will depend on their character\n- Students will also have to try to diminish a stress score and raise a happiness score per round\n- The teacher can monitor student activities, change their roles, and mediate classroom discussions\n**Future V2:**\nHardware\n-",
+    "has_architecture_docs": false,
+    "api_routes_count": 0,
+    "db_migrations_or_schema_count": 0,
+    "mock_data_detected": false,
+    "mock_data_indicators": [],
+    "todo_fixme_count": 0,
+    "boilerplate_detected": false,
+    "boilerplate_indicators": [],
+    "deployment_check": null,
+    "consistency_with_claims": "inconsistent",
+    "consistency_explanation": "Weak evidence: Only 0/3 claimed technologies detected in codebase.",
+    "actual_integrations_found": [],
+    "readme_claims_unsupported_by_code": [
+      "python",
+      "python",
+      "streamlit"
+    ],
+    "provenance": [
+      {
+        "claim": "Inspected repository https://github.com/stevenrodriguezz/SmartChoices",
+        "evidence_type": "repository",
+        "source": "https://github.com/stevenrodriguezz/SmartChoices",
+        "location": "root",
+        "confidence": 1.0,
+        "details": null
+      }
+    ]
+  },
+  "demo_summary": {
+    "has_video_demo": false,
+    "video_platform": "",
+    "video_url": "",
+    "duration_seconds": null,
+    "has_live_deployment": false,
+    "deployment_url": "",
+    "deployment_reachable": null,
+    "has_slide_deck": false,
+    "observations": []
+  },
+  "sponsor_technologies_mentioned": [],
+  "bundle_sha256": "d2bfd0d877ccdb5792f375012ddac8e8594c868cf7a3a24d97a0d15ff802c9c1",
+  "created_at": "2026-09-26T02:03:23.493127Z"
+}

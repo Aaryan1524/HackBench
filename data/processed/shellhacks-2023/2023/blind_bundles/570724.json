@@ -1,0 +1,172 @@
+{
+  "project_id": "570724",
+  "slug": "jamz-81ge3o",
+  "title": "JamZ",
+  "tagline": "A document simplifier",
+  "problem_statement": "",
+  "inspiration": "",
+  "what_it_does": "",
+  "how_it_was_built": "",
+  "challenges": "",
+  "accomplishments": "",
+  "lessons_learned": "",
+  "future_plans": "",
+  "tech_tags": [
+    "figma",
+    "javascript",
+    "javascript",
+    "nextjs",
+    "openai",
+    "typescript",
+    "typescript",
+    "visual-studio",
+    "visual-studio"
+  ],
+  "team_size": 3,
+  "repository_metrics": {
+    "repo_url": "https://github.com/jareddj34/JamZ",
+    "status": "accessible",
+    "default_branch": "master",
+    "file_count": 27,
+    "approx_loc": 796,
+    "loc_by_language": {
+      "JavaScript": 280,
+      "TypeScript": 429,
+      "CSS": 87
+    },
+    "primary_languages": [
+      "TypeScript",
+      "JavaScript",
+      "CSS"
+    ],
+    "tech_stack": {
+      "frontend_frameworks": [
+        "React",
+        "Next.js",
+        "TailwindCSS"
+      ],
+      "backend_frameworks": [
+        "Express.js"
+      ],
+      "databases": [],
+      "ai_ml_libraries": [],
+      "model_providers": [
+        "OpenAI"
+      ],
+      "cloud_devops": [],
+      "third_party_apis": [],
+      "hardware_components": [],
+      "package_dependencies": [
+        "@hookform/resolvers",
+        "@radix-ui/react-label",
+        "@radix-ui/react-slot",
+        "@types/node",
+        "@types/react",
+        "@types/react-dom",
+        "autoprefixer",
+        "axios",
+        "class-variance-authority",
+        "clsx",
+        "cors",
+        "dotenv",
+        "eslint",
+        "eslint-config-next",
+        "express",
+        "file-loader",
+        "lucide-react",
+        "next",
+        "openai",
+        "pdf-parse",
+        "pdf.js",
+        "pdf.js-extract",
+        "pdfjs-dist",
+        "postcss",
+        "react",
+        "react-dom",
+        "react-drag-drop-files",
+        "react-dropzone",
+        "react-fs",
+        "react-hook-form",
+        "tailwind-merge",
+        "tailwindcss",
+        "tailwindcss-animate",
+        "typescript",
+        "zod"
+      ]
+    },
+    "git_timeline": {
+      "total_commits": 2,
+      "commits_in_window": 2,
+      "first_commit_time": "2023-09-16T20:47:40Z",
+      "last_commit_time": "2023-09-17T14:25:05Z",
+      "commit_timestamps": [
+        "2023-09-16T20:47:40Z",
+        "2023-09-17T14:25:05Z"
+      ],
+      "late_rewrites_detected": false,
+      "deadline_crunch_ratio": 0.0,
+      "final_stage_focus": "squashed",
+      "history_is_squashed_or_minimal": true,
+      "contributor_count": 1,
+      "contributors": [
+        "Jared"
+      ]
+    },
+    "test_files_count": 0,
+    "test_frameworks": [],
+    "has_ci": false,
+    "ci_configs": [],
+    "has_docker": false,
+    "has_env_template": false,
+    "readme_size_bytes": 1370,
+    "readme_excerpt": "This is a Next.js project bootstrapped with `create-next-app`.\n## Getting Started\nFirst, run the development server:\nOpen http://localhost:3000 with your browser to see the result.\nYou can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.\nThis project uses `next/font` to automatically optimize and load Inter, a custom Google Font.\n## Learn More\nTo learn more about Next.js, take a look at the following resources:\n- Next.js Documentation - learn about Next.js features and API.\n- Learn Next.js - an interactive Next.js tutorial.\nYou can check out the Next.js GitHub repository - your feedback and contributions are welcome!\n## Deploy on Vercel\nThe easiest way to deploy your Next.js app is to use the Vercel Platform from the creators of Next.js.\nCheck out our Next.js deployment documentation for more details.",
+    "has_architecture_docs": false,
+    "api_routes_count": 1,
+    "db_migrations_or_schema_count": 0,
+    "mock_data_detected": false,
+    "mock_data_indicators": [],
+    "todo_fixme_count": 0,
+    "boilerplate_detected": false,
+    "boilerplate_indicators": [],
+    "deployment_check": null,
+    "consistency_with_claims": "partial",
+    "consistency_explanation": "Partial evidence: 4/9 claimed technologies found in codebase.",
+    "actual_integrations_found": [
+      "nextjs",
+      "openai",
+      "typescript",
+      "typescript"
+    ],
+    "readme_claims_unsupported_by_code": [
+      "figma",
+      "javascript",
+      "javascript",
+      "visual-studio",
+      "visual-studio"
+    ],
+    "provenance": [
+      {
+        "claim": "Inspected repository https://github.com/jareddj34/JamZ",
+        "evidence_type": "repository",
+        "source": "https://github.com/jareddj34/JamZ",
+        "location": "root",
+        "confidence": 1.0,
+        "details": null
+      }
+    ]
+  },
+  "demo_summary": {
+    "has_video_demo": false,
+    "video_platform": "",
+    "video_url": "",
+    "duration_seconds": null,
+    "has_live_deployment": false,
+    "deployment_url": "",
+    "deployment_reachable": null,
+    "has_slide_deck": false,
+    "observations": []
+  },
+  "sponsor_technologies_mentioned": [],
+  "bundle_sha256": "3230126db19dabff33a135406d301c1ce7039b4c5ebe5d8a98e33d79d726b84f",
+  "created_at": "2026-09-26T02:11:35.726618Z"
+}

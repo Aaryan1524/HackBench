@@ -1,0 +1,135 @@
+{
+  "project_id": "570786",
+  "slug": "studywithu",
+  "title": "StudyWithU",
+  "tagline": "This is a study app with features such as stop-watcher, note taking, video streaming, and a cute cat can entertain you and respond actively as the background image changes.",
+  "problem_statement": "",
+  "inspiration": "",
+  "what_it_does": "",
+  "how_it_was_built": "",
+  "challenges": "",
+  "accomplishments": "",
+  "lessons_learned": "",
+  "future_plans": "",
+  "tech_tags": [
+    "css",
+    "css",
+    "html",
+    "html",
+    "javascript",
+    "javascript"
+  ],
+  "team_size": 3,
+  "repository_metrics": {
+    "repo_url": "https://github.com/ball2004244/shell-hack-game.git",
+    "status": "accessible",
+    "default_branch": "main",
+    "file_count": 19,
+    "approx_loc": 1032,
+    "loc_by_language": {
+      "HTML": 84,
+      "CSS": 520,
+      "JavaScript": 428
+    },
+    "primary_languages": [
+      "CSS",
+      "JavaScript",
+      "HTML"
+    ],
+    "tech_stack": {
+      "frontend_frameworks": [
+        "Next.js"
+      ],
+      "backend_frameworks": [],
+      "databases": [
+        "PostgreSQL"
+      ],
+      "ai_ml_libraries": [
+        "TensorFlow"
+      ],
+      "model_providers": [],
+      "cloud_devops": [],
+      "third_party_apis": [],
+      "hardware_components": [],
+      "package_dependencies": [
+        "next",
+        "pg",
+        "tensorflow"
+      ]
+    },
+    "git_timeline": {
+      "total_commits": 5,
+      "commits_in_window": 5,
+      "first_commit_time": "2023-09-16T04:58:20Z",
+      "last_commit_time": "2023-09-20T14:24:52Z",
+      "commit_timestamps": [
+        "2023-09-16T04:58:20Z",
+        "2023-09-16T08:47:17Z",
+        "2023-09-17T08:54:02Z",
+        "2023-09-17T14:54:07Z",
+        "2023-09-20T14:24:52Z"
+      ],
+      "late_rewrites_detected": false,
+      "deadline_crunch_ratio": 0.2,
+      "final_stage_focus": "docs",
+      "history_is_squashed_or_minimal": false,
+      "contributor_count": 2,
+      "contributors": [
+        "Jack Nguyen",
+        "Tam Nguyen"
+      ]
+    },
+    "test_files_count": 0,
+    "test_frameworks": [],
+    "has_ci": false,
+    "ci_configs": [],
+    "has_docker": false,
+    "has_env_template": false,
+    "readme_size_bytes": 697,
+    "readme_excerpt": "# Study With You\nThis is my project at ShellHack 2023 in Miami.\nOur team have 3 members:\n- Jack Nguyen\n- Annie Pham\n- Tony Nguyen\nThis project create a virtual study room, bringing the best learning experience for users.\nHere are some basic features:\n- Neko the cat: an interactive mascot, can look at you and hear your voice and encourage you whenever you need!\n- Notes: Just a basic note taking features with high privacy, nothing is stored on the server!\n- Compact timer: Help you to do all productivity hack!\n- Aesthetic backgrounds: Change circularly, we have different background which can leverage your experience with us! Bonus, our mascot can interact with the background as well!",
+    "has_architecture_docs": false,
+    "api_routes_count": 0,
+    "db_migrations_or_schema_count": 0,
+    "mock_data_detected": false,
+    "mock_data_indicators": [],
+    "todo_fixme_count": 0,
+    "boilerplate_detected": false,
+    "boilerplate_indicators": [],
+    "deployment_check": null,
+    "consistency_with_claims": "inconsistent",
+    "consistency_explanation": "Weak evidence: Only 0/6 claimed technologies detected in codebase.",
+    "actual_integrations_found": [],
+    "readme_claims_unsupported_by_code": [
+      "css",
+      "css",
+      "html",
+      "html",
+      "javascript",
+      "javascript"
+    ],
+    "provenance": [
+      {
+        "claim": "Inspected repository https://github.com/ball2004244/shell-hack-game.git",
+        "evidence_type": "repository",
+        "source": "https://github.com/ball2004244/shell-hack-game.git",
+        "location": "root",
+        "confidence": 1.0,
+        "details": null
+      }
+    ]
+  },
+  "demo_summary": {
+    "has_video_demo": true,
+    "video_platform": "youtube",
+    "video_url": "https://www.youtube.com/embed/c-7VNOgLnAY?enablejsapi=1&hl=en_US&rel=0&start=&version=3&wmode=transparent",
+    "duration_seconds": null,
+    "has_live_deployment": false,
+    "deployment_url": "",
+    "deployment_reachable": null,
+    "has_slide_deck": false,
+    "observations": []
+  },
+  "sponsor_technologies_mentioned": [],
+  "bundle_sha256": "e1cdd41c5739966586a2e3d341c732721b4bf54f63c6cb5593215943703f14da",
+  "created_at": "2026-09-26T02:11:35.724089Z"
+}

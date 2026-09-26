@@ -1,0 +1,36 @@
+{
+  "project_id": "719485",
+  "slug": "healthify-hub",
+  "title": "Healthify Hub",
+  "tagline": "Welcome to Healthify,your student health! Book virtual doctor appointments,chat online, and get prescriptions all from home. You set the price, and doctors choose to accept. Convenient and affordable!",
+  "problem_statement": "",
+  "inspiration": "",
+  "what_it_does": "",
+  "how_it_was_built": "",
+  "challenges": "",
+  "accomplishments": "",
+  "lessons_learned": "",
+  "future_plans": "",
+  "tech_tags": [
+    "ai",
+    "googleforms",
+    "landbot",
+    "qr"
+  ],
+  "team_size": 2,
+  "repository_metrics": null,
+  "demo_summary": {
+    "has_video_demo": false,
+    "video_platform": "",
+    "video_url": "",
+    "duration_seconds": null,
+    "has_live_deployment": false,
+    "deployment_url": "",
+    "deployment_reachable": null,
+    "has_slide_deck": false,
+    "observations": []
+  },
+  "sponsor_technologies_mentioned": [],
+  "bundle_sha256": "51fce91aa0a357ecf718a05d02d35416932449ae37f17e66aeb3a2bd81116d7c",
+  "created_at": "2026-09-26T02:03:23.386373Z"
+}

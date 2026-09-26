@@ -1,0 +1,36 @@
+{
+  "project_id": "719969",
+  "slug": "equihealth-mqdrub",
+  "title": "EquiHealth",
+  "tagline": "A Streamlit application with the goal of educating people on the issue of racial and gender bias in medical research and datasets, including an AI-powered tool to detect possible biases in datasets.",
+  "problem_statement": "",
+  "inspiration": "",
+  "what_it_does": "",
+  "how_it_was_built": "",
+  "challenges": "",
+  "accomplishments": "",
+  "lessons_learned": "",
+  "future_plans": "",
+  "tech_tags": [
+    "gpt",
+    "python",
+    "python",
+    "streamlit"
+  ],
+  "team_size": 1,
+  "repository_metrics": null,
+  "demo_summary": {
+    "has_video_demo": false,
+    "video_platform": "",
+    "video_url": "",
+    "duration_seconds": null,
+    "has_live_deployment": false,
+    "deployment_url": "",
+    "deployment_reachable": null,
+    "has_slide_deck": false,
+    "observations": []
+  },
+  "sponsor_technologies_mentioned": [],
+  "bundle_sha256": "e541aed7072235e22b2a74e5de2eb0a00b80dcf4ab16ba19681a0b07131835c4",
+  "created_at": "2026-09-26T02:03:23.407791Z"
+}

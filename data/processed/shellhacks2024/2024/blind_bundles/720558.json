@@ -1,0 +1,151 @@
+{
+  "project_id": "720558",
+  "slug": "asl-game-learner",
+  "title": "ASL Game Learner",
+  "tagline": "Enhancing American Sign Language (ASL) Literacy through Gaming and AI. We provide an immersive experience set in a 3D arcade game, where users will be able to earn points while learning ASL.",
+  "problem_statement": "",
+  "inspiration": "",
+  "what_it_does": "",
+  "how_it_was_built": "",
+  "challenges": "",
+  "accomplishments": "",
+  "lessons_learned": "",
+  "future_plans": "",
+  "tech_tags": [
+    "blender",
+    "blender",
+    "c#",
+    "c#",
+    "flask",
+    "flask",
+    "python",
+    "python",
+    "unity",
+    "unity",
+    "yolo"
+  ],
+  "team_size": 4,
+  "repository_metrics": {
+    "repo_url": "https://github.com/Colo2121/ShellHacksSubmission",
+    "status": "accessible",
+    "default_branch": "main",
+    "file_count": 26,
+    "approx_loc": 634,
+    "loc_by_language": {
+      "Python": 634
+    },
+    "primary_languages": [
+      "Python"
+    ],
+    "tech_stack": {
+      "frontend_frameworks": [],
+      "backend_frameworks": [
+        "Flask"
+      ],
+      "databases": [],
+      "ai_ml_libraries": [
+        "PyTorch"
+      ],
+      "model_providers": [],
+      "cloud_devops": [],
+      "third_party_apis": [],
+      "hardware_components": [],
+      "package_dependencies": [
+        "flask",
+        "torch"
+      ]
+    },
+    "git_timeline": {
+      "total_commits": 16,
+      "commits_in_window": 16,
+      "first_commit_time": "2024-09-28T18:12:44Z",
+      "last_commit_time": "2026-07-26T16:16:53Z",
+      "commit_timestamps": [
+        "2024-09-28T18:12:44Z",
+        "2024-09-28T21:48:03Z",
+        "2024-09-29T06:31:19Z",
+        "2024-09-29T07:26:57Z",
+        "2024-10-06T04:55:10Z",
+        "2026-07-25T04:41:12Z",
+        "2026-07-25T04:58:37Z",
+        "2026-07-25T05:10:22Z",
+        "2026-07-25T05:31:47Z",
+        "2026-07-25T05:44:05Z",
+        "2026-07-25T06:05:48Z",
+        "2026-07-25T06:31:16Z",
+        "2026-07-25T06:39:44Z",
+        "2026-07-26T03:32:27Z",
+        "2026-07-26T04:44:16Z",
+        "2026-07-26T16:16:53Z"
+      ],
+      "late_rewrites_detected": false,
+      "deadline_crunch_ratio": 0.69,
+      "final_stage_focus": "debugging",
+      "history_is_squashed_or_minimal": false,
+      "contributor_count": 1,
+      "contributors": [
+        "Franco Silvestri"
+      ]
+    },
+    "test_files_count": 1,
+    "test_frameworks": [
+      "pytest"
+    ],
+    "has_ci": false,
+    "ci_configs": [],
+    "has_docker": false,
+    "has_env_template": false,
+    "readme_size_bytes": 5370,
+    "readme_excerpt": "# ASL Arcade\n**Built in 36 hours of straight coding at ShellHacks 2024, Florida's largest hackathon.**\nA 3D arcade game that teaches the American Sign Language alphabet. The game asks\nthe player to sign a letter, watches through the webcam, and tells them whether\nthey got it right. Behind it is a fine-tuned YOLOv8 detector served over HTTP, so\nthe game itself never has to know anything about machine learning.\n*The shipped detector running on webcam footage recorded at the venue. Green means\nthe service accepted the sign at its 0.65 threshold, amber means it saw something\nbut was not confident enough to commit. Watch the clip.*\nMore footage, including the arcade loop being played, is in the project writeup on\nFranco Silvestri's portfolio.\n## How it fits together\nThe client sends one frame and the letter the player was asked for. The service\nanswers a single question: is the player making this sign right now, and how\nconfident are we? Keeping the verdict on the server side means the threshold, the\nclass list, and the model can all change without touching the game.\nThe published build was compiled in 2024 and posts to the root path, so the service\nstill serves that contract there. Anything new should use `/detect`.\nThe inference service is in `vision-service/`, with its own\nREADME covering setup, the API contract, and results.\nThe game is documented in `unity-client/`; its Unity source is not\npart of this repository, but the playable Windows build is attached to the\nv1.0.0 release.\n## What we shipped in 36 hours\n- Picked and prepared a 26-class ASL letter dataset.\n- Fine-tuned and compared two YOLOv8 backbones, small and medium, on a laptop GPU.\n- Stood up the inference service and got the Unity client talking to it live over\nthe venue network.\n- Built the 3D arcade loop around it.\nWhat we did not do in 36 hours: write tests, handle errors properly, or keep the\nrepository tidy. That part came later, see below.\n## Results, honestly\nThe shipped model reaches **mAP@50-95 of 0.861** on the held-out validation split\nand runs at **12.4 ms per frame, about 80 fps**, on an RTX 4060 Laptop GPU.\nOn real webcam footage recorded at the venue it is far less certain: at the 0.65\nthreshold the service used, it commits to an answer on **11.4% of frames**. The\ntraining set has limited signer and background diversity, so the validation\nnumbers are optimistic about the real world. The game's design absorbs this, since\nit only needs one confident detection to accept a sign, not",
+    "has_architecture_docs": false,
+    "api_routes_count": 3,
+    "db_migrations_or_schema_count": 0,
+    "mock_data_detected": false,
+    "mock_data_indicators": [],
+    "todo_fixme_count": 0,
+    "boilerplate_detected": false,
+    "boilerplate_indicators": [],
+    "deployment_check": null,
+    "consistency_with_claims": "inconsistent",
+    "consistency_explanation": "Weak evidence: Only 2/11 claimed technologies detected in codebase.",
+    "actual_integrations_found": [
+      "flask",
+      "flask"
+    ],
+    "readme_claims_unsupported_by_code": [
+      "blender",
+      "blender",
+      "c#",
+      "c#",
+      "python",
+      "python",
+      "unity",
+      "unity",
+      "yolo"
+    ],
+    "provenance": [
+      {
+        "claim": "Inspected repository https://github.com/Colo2121/ShellHacksSubmission",
+        "evidence_type": "repository",
+        "source": "https://github.com/Colo2121/ShellHacksSubmission",
+        "location": "root",
+        "confidence": 1.0,
+        "details": null
+      }
+    ]
+  },
+  "demo_summary": {
+    "has_video_demo": false,
+    "video_platform": "",
+    "video_url": "",
+    "duration_seconds": null,
+    "has_live_deployment": false,
+    "deployment_url": "",
+    "deployment_reachable": null,
+    "has_slide_deck": false,
+    "observations": []
+  },
+  "sponsor_technologies_mentioned": [],
+  "bundle_sha256": "d92ae63517a5b87da2c4a4a62df99274e17f6e54804b44256745b489b93e2932",
+  "created_at": "2026-09-26T02:03:23.138832Z"
+}

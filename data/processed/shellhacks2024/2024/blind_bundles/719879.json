@@ -1,0 +1,106 @@
+{
+  "project_id": "719879",
+  "slug": "is-like-a-boss-fight-game",
+  "title": "Is Like A Boss Fight Game",
+  "tagline": "PLAY IT NOW ITCH.IO LINK BELOW! EASILY THE HARDEST GAME YOU'LL EVER PLAY. o:",
+  "problem_statement": "",
+  "inspiration": "",
+  "what_it_does": "",
+  "how_it_was_built": "",
+  "challenges": "",
+  "accomplishments": "",
+  "lessons_learned": "",
+  "future_plans": "",
+  "tech_tags": [
+    "godot"
+  ],
+  "team_size": 1,
+  "repository_metrics": {
+    "repo_url": "https://github.com/ethanreleford/Shell-Hacks-Game-2024",
+    "status": "accessible",
+    "default_branch": "main",
+    "file_count": 989,
+    "approx_loc": 0,
+    "loc_by_language": {},
+    "primary_languages": [],
+    "tech_stack": {
+      "frontend_frameworks": [],
+      "backend_frameworks": [],
+      "databases": [],
+      "ai_ml_libraries": [],
+      "model_providers": [],
+      "cloud_devops": [],
+      "third_party_apis": [],
+      "hardware_components": [],
+      "package_dependencies": []
+    },
+    "git_timeline": {
+      "total_commits": 5,
+      "commits_in_window": 5,
+      "first_commit_time": "2024-09-28T01:10:53Z",
+      "last_commit_time": "2024-09-29T09:43:45Z",
+      "commit_timestamps": [
+        "2024-09-28T01:10:53Z",
+        "2024-09-28T01:11:56Z",
+        "2024-09-28T07:43:23Z",
+        "2024-09-28T20:56:54Z",
+        "2024-09-29T09:43:45Z"
+      ],
+      "late_rewrites_detected": false,
+      "deadline_crunch_ratio": 0.2,
+      "final_stage_focus": "features",
+      "history_is_squashed_or_minimal": false,
+      "contributor_count": 1,
+      "contributors": [
+        "Ethan Releford"
+      ]
+    },
+    "test_files_count": 0,
+    "test_frameworks": [],
+    "has_ci": false,
+    "ci_configs": [],
+    "has_docker": false,
+    "has_env_template": false,
+    "readme_size_bytes": 0,
+    "readme_excerpt": "",
+    "has_architecture_docs": false,
+    "api_routes_count": 0,
+    "db_migrations_or_schema_count": 0,
+    "mock_data_detected": false,
+    "mock_data_indicators": [],
+    "todo_fixme_count": 0,
+    "boilerplate_detected": false,
+    "boilerplate_indicators": [],
+    "deployment_check": null,
+    "consistency_with_claims": "inconsistent",
+    "consistency_explanation": "Weak evidence: Only 0/1 claimed technologies detected in codebase.",
+    "actual_integrations_found": [],
+    "readme_claims_unsupported_by_code": [
+      "godot"
+    ],
+    "provenance": [
+      {
+        "claim": "Inspected repository https://github.com/ethanreleford/Shell-Hacks-Game-2024",
+        "evidence_type": "repository",
+        "source": "https://github.com/ethanreleford/Shell-Hacks-Game-2024",
+        "location": "root",
+        "confidence": 1.0,
+        "details": null
+      }
+    ]
+  },
+  "demo_summary": {
+    "has_video_demo": false,
+    "video_platform": "",
+    "video_url": "",
+    "duration_seconds": null,
+    "has_live_deployment": false,
+    "deployment_url": "",
+    "deployment_reachable": null,
+    "has_slide_deck": false,
+    "observations": []
+  },
+  "sponsor_technologies_mentioned": [],
+  "bundle_sha256": "067c9dbdad03d1656481353e806b62bf1f03d2323de19be44a6667a5a12a7de0",
+  "created_at": "2026-09-26T02:03:23.419867Z"
+}

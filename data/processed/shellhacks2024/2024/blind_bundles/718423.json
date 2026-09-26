@@ -1,0 +1,158 @@
+{
+  "project_id": "718423",
+  "slug": "do-good-connect",
+  "title": "Do Good Connect",
+  "tagline": "Do Good Connect is a web application that helps connect people looking for volunteers with those seeking volunteer opportunities.",
+  "problem_statement": "",
+  "inspiration": "",
+  "what_it_does": "",
+  "how_it_was_built": "",
+  "challenges": "",
+  "accomplishments": "",
+  "lessons_learned": "",
+  "future_plans": "",
+  "tech_tags": [
+    "angular.js",
+    "angular.js",
+    "express.js",
+    "express.js",
+    "firebase",
+    "firebase"
+  ],
+  "team_size": 4,
+  "repository_metrics": {
+    "repo_url": "https://github.com/eugenechevski/DoGoodConnect",
+    "status": "accessible",
+    "default_branch": "main",
+    "file_count": 48,
+    "approx_loc": 643,
+    "loc_by_language": {
+      "HTML": 57,
+      "TypeScript": 239,
+      "CSS": 137,
+      "JavaScript": 210
+    },
+    "primary_languages": [
+      "TypeScript",
+      "JavaScript",
+      "CSS",
+      "HTML"
+    ],
+    "tech_stack": {
+      "frontend_frameworks": [
+        "Angular"
+      ],
+      "backend_frameworks": [
+        "Express.js"
+      ],
+      "databases": [
+        "Firebase"
+      ],
+      "ai_ml_libraries": [],
+      "model_providers": [],
+      "cloud_devops": [],
+      "third_party_apis": [],
+      "hardware_components": [],
+      "package_dependencies": [
+        "@angular/fire",
+        "angular",
+        "express",
+        "firebase"
+      ]
+    },
+    "git_timeline": {
+      "total_commits": 21,
+      "commits_in_window": 21,
+      "first_commit_time": "2024-09-28T15:25:59Z",
+      "last_commit_time": "2024-09-29T06:49:57Z",
+      "commit_timestamps": [
+        "2024-09-28T15:25:59Z",
+        "2024-09-28T15:49:10Z",
+        "2024-09-28T17:35:31Z",
+        "2024-09-28T17:49:24Z",
+        "2024-09-28T18:36:38Z",
+        "2024-09-28T19:10:52Z",
+        "2024-09-28T19:11:04Z",
+        "2024-09-28T20:13:06Z",
+        "2024-09-28T21:02:04Z",
+        "2024-09-28T21:26:31Z",
+        "2024-09-28T21:32:50Z",
+        "2024-09-28T21:44:14Z",
+        "2024-09-29T00:43:14Z",
+        "2024-09-29T01:34:44Z",
+        "2024-09-29T01:48:29Z",
+        "2024-09-29T02:14:41Z",
+        "2024-09-29T04:04:39Z",
+        "2024-09-29T05:17:25Z",
+        "2024-09-29T05:22:47Z",
+        "2024-09-29T05:28:29Z",
+        "2024-09-29T06:49:57Z"
+      ],
+      "late_rewrites_detected": false,
+      "deadline_crunch_ratio": 0.24,
+      "final_stage_focus": "features",
+      "history_is_squashed_or_minimal": false,
+      "contributor_count": 4,
+      "contributors": [
+        "Yauheni Khvashcheuski (Eugene Chevski)",
+        "Maksim Petrushin",
+        "Brendan-Smith529",
+        "Eugene Chevski"
+      ]
+    },
+    "test_files_count": 3,
+    "test_frameworks": [
+      "vitest/jest"
+    ],
+    "has_ci": false,
+    "ci_configs": [],
+    "has_docker": false,
+    "has_env_template": false,
+    "readme_size_bytes": 724,
+    "readme_excerpt": "# **Do Good Connect**\n## **Project Overview**\nDo Good Connect is a web application that helps connect people looking for volunteers with those seeking volunteer opportunities. Using Google APIs and AI-powered recommendations, the system personalizes search results based on user data, ensuring relevant matches for both parties. The core technologies include **Express**, **Angular**, **Firebase**, and **Google Cloud AI**.\n## **Tech Stack**\n- **Frontend**: Angular\n- **Backend**: Express.js (Node.js)\n- **Database & Authentication**: Firebase Firestore and Firebase Authentication\n- **Machine Learning**: Google Cloud Machine Learning APIs\n- **External APIs**: Google Maps API, Google Cloud AI, Firebase Cloud Messaging",
+    "has_architecture_docs": false,
+    "api_routes_count": 4,
+    "db_migrations_or_schema_count": 0,
+    "mock_data_detected": false,
+    "mock_data_indicators": [],
+    "todo_fixme_count": 0,
+    "boilerplate_detected": false,
+    "boilerplate_indicators": [],
+    "deployment_check": null,
+    "consistency_with_claims": "consistent",
+    "consistency_explanation": "Strong evidence: 6/6 claimed technologies verified in codebase.",
+    "actual_integrations_found": [
+      "angular.js",
+      "angular.js",
+      "express.js",
+      "express.js",
+      "firebase",
+      "firebase"
+    ],
+    "readme_claims_unsupported_by_code": [],
+    "provenance": [
+      {
+        "claim": "Inspected repository https://github.com/eugenechevski/DoGoodConnect",
+        "evidence_type": "repository",
+        "source": "https://github.com/eugenechevski/DoGoodConnect",
+        "location": "root",
+        "confidence": 1.0,
+        "details": null
+      }
+    ]
+  },
+  "demo_summary": {
+    "has_video_demo": false,
+    "video_platform": "",
+    "video_url": "",
+    "duration_seconds": null,
+    "has_live_deployment": false,
+    "deployment_url": "",
+    "deployment_reachable": null,
+    "has_slide_deck": false,
+    "observations": []
+  },
+  "sponsor_technologies_mentioned": [],
+  "bundle_sha256": "caede03f5336526be58f4ad506270ca0406e3b81f9f7325711ae019e97ca5d84",
+  "created_at": "2026-09-26T02:03:23.161359Z"
+}

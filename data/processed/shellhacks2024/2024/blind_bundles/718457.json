@@ -1,0 +1,39 @@
+{
+  "project_id": "718457",
+  "slug": "vigor-mindfullness",
+  "title": "VIGOR (mindfullness)",
+  "tagline": "\"Elevate your mind, Embrace your peace\"",
+  "problem_statement": "",
+  "inspiration": "",
+  "what_it_does": "",
+  "how_it_was_built": "",
+  "challenges": "",
+  "accomplishments": "",
+  "lessons_learned": "",
+  "future_plans": "",
+  "tech_tags": [
+    "android-studio",
+    "android-studio",
+    "dalle",
+    "java",
+    "java",
+    "kotlin",
+    "openai"
+  ],
+  "team_size": 4,
+  "repository_metrics": null,
+  "demo_summary": {
+    "has_video_demo": false,
+    "video_platform": "",
+    "video_url": "",
+    "duration_seconds": null,
+    "has_live_deployment": false,
+    "deployment_url": "",
+    "deployment_reachable": null,
+    "has_slide_deck": false,
+    "observations": []
+  },
+  "sponsor_technologies_mentioned": [],
+  "bundle_sha256": "77a1bb65c21a385f660c09d9c4895f7937e91fb453cba6ec579cd035f45e7bb9",
+  "created_at": "2026-09-26T02:03:23.393833Z"
+}

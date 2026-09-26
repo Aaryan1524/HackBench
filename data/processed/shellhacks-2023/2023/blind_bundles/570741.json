@@ -1,0 +1,192 @@
+{
+  "project_id": "570741",
+  "slug": "sustain-io",
+  "title": "Sustain.io",
+  "tagline": "Sustain.io is an aggregator that interprets investment data within the context of sustainability.",
+  "problem_statement": "",
+  "inspiration": "",
+  "what_it_does": "",
+  "how_it_was_built": "",
+  "challenges": "",
+  "accomplishments": "",
+  "lessons_learned": "",
+  "future_plans": "",
+  "tech_tags": [
+    "express.js",
+    "express.js",
+    "mongodb",
+    "mongodb",
+    "node.js",
+    "node.js",
+    "python",
+    "python",
+    "react",
+    "react",
+    "tailwind"
+  ],
+  "team_size": 4,
+  "repository_metrics": {
+    "repo_url": "https://github.com/taheralfayad/shell-hacks",
+    "status": "accessible",
+    "default_branch": "main",
+    "file_count": 45,
+    "approx_loc": 1562,
+    "loc_by_language": {
+      "JavaScript": 1341,
+      "HTML": 46,
+      "CSS": 79,
+      "Python": 96
+    },
+    "primary_languages": [
+      "JavaScript",
+      "Python",
+      "CSS",
+      "HTML"
+    ],
+    "tech_stack": {
+      "frontend_frameworks": [
+        "React",
+        "TailwindCSS"
+      ],
+      "backend_frameworks": [
+        "Express.js"
+      ],
+      "databases": [
+        "MongoDB"
+      ],
+      "ai_ml_libraries": [],
+      "model_providers": [],
+      "cloud_devops": [],
+      "third_party_apis": [],
+      "hardware_components": [],
+      "package_dependencies": [
+        "express",
+        "mongoose",
+        "react",
+        "tailwindcss"
+      ]
+    },
+    "git_timeline": {
+      "total_commits": 45,
+      "commits_in_window": 45,
+      "first_commit_time": "2023-09-16T03:39:26Z",
+      "last_commit_time": "2023-09-17T14:54:40Z",
+      "commit_timestamps": [
+        "2023-09-16T03:39:26Z",
+        "2023-09-16T07:14:44Z",
+        "2023-09-16T09:38:44Z",
+        "2023-09-16T09:39:33Z",
+        "2023-09-16T11:46:40Z",
+        "2023-09-16T12:49:06Z",
+        "2023-09-16T12:55:25Z",
+        "2023-09-16T14:00:59Z",
+        "2023-09-16T14:20:46Z",
+        "2023-09-16T14:22:03Z",
+        "2023-09-16T14:23:39Z",
+        "2023-09-16T14:31:58Z",
+        "2023-09-16T15:19:09Z",
+        "2023-09-16T20:35:48Z",
+        "2023-09-16T20:41:19Z",
+        "2023-09-16T21:50:46Z",
+        "2023-09-16T21:52:44Z",
+        "2023-09-16T23:52:58Z",
+        "2023-09-17T00:42:40Z",
+        "2023-09-17T00:58:46Z",
+        "2023-09-17T01:07:06Z",
+        "2023-09-17T01:17:42Z",
+        "2023-09-17T01:25:18Z",
+        "2023-09-17T01:25:39Z",
+        "2023-09-17T01:36:38Z",
+        "2023-09-17T01:43:19Z",
+        "2023-09-17T01:53:19Z",
+        "2023-09-17T04:20:28Z",
+        "2023-09-17T04:32:42Z",
+        "2023-09-17T04:42:14Z",
+        "2023-09-17T05:26:49Z",
+        "2023-09-17T05:52:01Z",
+        "2023-09-17T06:53:20Z",
+        "2023-09-17T07:36:12Z",
+        "2023-09-17T08:32:44Z",
+        "2023-09-17T08:49:34Z",
+        "2023-09-17T12:18:38Z",
+        "2023-09-17T13:45:11Z",
+        "2023-09-17T13:47:05Z",
+        "2023-09-17T13:55:49Z",
+        "2023-09-17T14:03:05Z",
+        "2023-09-17T14:04:13Z",
+        "2023-09-17T14:19:04Z",
+        "2023-09-17T14:38:14Z",
+        "2023-09-17T14:54:40Z"
+      ],
+      "late_rewrites_detected": false,
+      "deadline_crunch_ratio": 0.29,
+      "final_stage_focus": "polish",
+      "history_is_squashed_or_minimal": false,
+      "contributor_count": 4,
+      "contributors": [
+        "Ahmad Altaher Alfayad",
+        "Evan Goldsmith",
+        "Zander Preston",
+        "Daniel Gonzalez"
+      ]
+    },
+    "test_files_count": 0,
+    "test_frameworks": [],
+    "has_ci": false,
+    "ci_configs": [],
+    "has_docker": false,
+    "has_env_template": false,
+    "readme_size_bytes": 13,
+    "readme_excerpt": "# shellhacks",
+    "has_architecture_docs": false,
+    "api_routes_count": 8,
+    "db_migrations_or_schema_count": 0,
+    "mock_data_detected": false,
+    "mock_data_indicators": [],
+    "todo_fixme_count": 0,
+    "boilerplate_detected": false,
+    "boilerplate_indicators": [],
+    "deployment_check": null,
+    "consistency_with_claims": "partial",
+    "consistency_explanation": "Partial evidence: 7/11 claimed technologies found in codebase.",
+    "actual_integrations_found": [
+      "express.js",
+      "express.js",
+      "mongodb",
+      "mongodb",
+      "react",
+      "react",
+      "tailwind"
+    ],
+    "readme_claims_unsupported_by_code": [
+      "node.js",
+      "node.js",
+      "python",
+      "python"
+    ],
+    "provenance": [
+      {
+        "claim": "Inspected repository https://github.com/taheralfayad/shell-hacks",
+        "evidence_type": "repository",
+        "source": "https://github.com/taheralfayad/shell-hacks",
+        "location": "root",
+        "confidence": 1.0,
+        "details": null
+      }
+    ]
+  },
+  "demo_summary": {
+    "has_video_demo": false,
+    "video_platform": "",
+    "video_url": "",
+    "duration_seconds": null,
+    "has_live_deployment": false,
+    "deployment_url": "",
+    "deployment_reachable": null,
+    "has_slide_deck": false,
+    "observations": []
+  },
+  "sponsor_technologies_mentioned": [],
+  "bundle_sha256": "b30ea210c8a441ff6d42b0e54d91a26f1d2d1e85b4961455fcf888a03dbc9534",
+  "created_at": "2026-09-26T02:11:35.716199Z"
+}

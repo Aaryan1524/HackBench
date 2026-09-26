@@ -1,0 +1,35 @@
+{
+  "project_id": "720363",
+  "slug": "quotemates",
+  "title": "QuoteMates",
+  "tagline": "An insurance quote calculator offering instant health, auto, and renter insurance estimates. Users receive tailored quotes on a user-friendly interface.",
+  "problem_statement": "",
+  "inspiration": "",
+  "what_it_does": "",
+  "how_it_was_built": "",
+  "challenges": "",
+  "accomplishments": "",
+  "lessons_learned": "",
+  "future_plans": "",
+  "tech_tags": [
+    "python",
+    "python",
+    "streamlit"
+  ],
+  "team_size": 3,
+  "repository_metrics": null,
+  "demo_summary": {
+    "has_video_demo": false,
+    "video_platform": "",
+    "video_url": "",
+    "duration_seconds": null,
+    "has_live_deployment": false,
+    "deployment_url": "",
+    "deployment_reachable": null,
+    "has_slide_deck": false,
+    "observations": []
+  },
+  "sponsor_technologies_mentioned": [],
+  "bundle_sha256": "1e53eb28b539d1b711ed2f53dc5da6c08137f5bda7c4618e6fbc9a537419dba8",
+  "created_at": "2026-09-26T02:03:23.269725Z"
+}

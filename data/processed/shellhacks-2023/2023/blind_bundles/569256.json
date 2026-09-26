@@ -1,0 +1,156 @@
+{
+  "project_id": "569256",
+  "slug": "heath-hack",
+  "title": "Heath hack",
+  "tagline": "Embrace mental health awareness with us. Our website is your bridge to a more open, compassionate Haitian society. Let's talk, learn, and grow together.\"",
+  "problem_statement": "",
+  "inspiration": "",
+  "what_it_does": "",
+  "how_it_was_built": "",
+  "challenges": "",
+  "accomplishments": "",
+  "lessons_learned": "",
+  "future_plans": "",
+  "tech_tags": [
+    "css3",
+    "css3",
+    "html5",
+    "html5",
+    "javascript",
+    "javascript",
+    "react",
+    "react",
+    "vectary"
+  ],
+  "team_size": 3,
+  "repository_metrics": {
+    "repo_url": "https://github.com/sampremed/Health-Hack",
+    "status": "accessible",
+    "default_branch": "main",
+    "file_count": 38,
+    "approx_loc": 940,
+    "loc_by_language": {
+      "HTML": 48,
+      "JavaScript": 354,
+      "CSS": 538
+    },
+    "primary_languages": [
+      "CSS",
+      "JavaScript",
+      "HTML"
+    ],
+    "tech_stack": {
+      "frontend_frameworks": [
+        "React"
+      ],
+      "backend_frameworks": [],
+      "databases": [
+        "PostgreSQL"
+      ],
+      "ai_ml_libraries": [],
+      "model_providers": [],
+      "cloud_devops": [],
+      "third_party_apis": [],
+      "hardware_components": [],
+      "package_dependencies": [
+        "@testing-library/jest-dom",
+        "@testing-library/react",
+        "@testing-library/user-event",
+        "bootstrap",
+        "pg",
+        "react",
+        "react-bootstrap",
+        "react-dom",
+        "react-scripts",
+        "sweetalert",
+        "web-vitals"
+      ]
+    },
+    "git_timeline": {
+      "total_commits": 4,
+      "commits_in_window": 4,
+      "first_commit_time": "2023-09-17T14:56:56Z",
+      "last_commit_time": "2023-10-03T22:17:30Z",
+      "commit_timestamps": [
+        "2023-09-17T14:56:56Z",
+        "2023-09-27T01:41:42Z",
+        "2023-09-27T23:14:52Z",
+        "2023-10-03T22:17:30Z"
+      ],
+      "late_rewrites_detected": false,
+      "deadline_crunch_ratio": 0.25,
+      "final_stage_focus": "docs",
+      "history_is_squashed_or_minimal": false,
+      "contributor_count": 2,
+      "contributors": [
+        "Sam Premed",
+        "bracley.dev"
+      ]
+    },
+    "test_files_count": 1,
+    "test_frameworks": [],
+    "has_ci": false,
+    "ci_configs": [],
+    "has_docker": false,
+    "has_env_template": false,
+    "readme_size_bytes": 2744,
+    "readme_excerpt": "# Mental Hack\nEmbrace mental health awareness with us. Our website is your bridge to a more open, compassionate Haitian society. Let's talk, learn, and grow together.\"\n## Inspiration\nWe were motivated by the importance of mental health awareness, recognizing that educating people on this subject can help underscore its significance. Additionally, one of our group members had a personal experience involving a friend who tragically took their own life.\nhttps://65071179dad6734607371908--delicate-muffin-3336f5.netlify.app/\n## How we built it?\nWe use React. JS Html, CSS Third-party ( Vectary)\n## Features\nwhat it does It has many features like high-quality 3D model rendering. The possibility to view the models from any angle. Models manipulation (Zoom in, Zoom out rotation to any angle) to get a better understanding of the models. Pictures can be taken at any angle and the functionality is within the website no need for an external tool.\n## Challenges we ran into?\nSleep deprivation Issues to implement React.JS in the project.\n## Accomplishment that we’re proud of\nEffective team management after the sleep deprivation issues. Building a 3D model of the brain and different sections of the brain that are linked to mental disorders. Possibility to dive into those structures and better understand them. Creating a platform where people can go on to learn about mental disorders. Start fighting the stigma of social disorder in the Haitian/Black community through the creation of the project.\n## What's next?\nCommunity section where people with different mental health disorders can come and teach others about their struggles. Implement more models and discuss more precise topics with experts on the subjects. Make the project available to more students, faculties, or anyone interested. Add more interactions on the models present on the website.\nUse Ar/Vr technologies to make the website available to a greater number of people and show them that Ar/Vr is more than gaming and can be used in an educative setting as well.",
+    "has_architecture_docs": false,
+    "api_routes_count": 0,
+    "db_migrations_or_schema_count": 0,
+    "mock_data_detected": false,
+    "mock_data_indicators": [],
+    "todo_fixme_count": 0,
+    "boilerplate_detected": false,
+    "boilerplate_indicators": [],
+    "deployment_check": {
+      "url": "https://65071179dad6734607371908--delicate-muffin-3336f5.netlify.app/",
+      "is_reachable": true,
+      "status_code": 200,
+      "response_time_ms": 900.8,
+      "checked_at": "2026-09-26T02:05:14.231625Z",
+      "deployment_url_status": "reachable",
+      "deployment_verification": "unknown",
+      "verification_evidence": "Server responded (HTTP 200), but no project name was provided to verify content."
+    },
+    "consistency_with_claims": "inconsistent",
+    "consistency_explanation": "Weak evidence: Only 2/9 claimed technologies detected in codebase.",
+    "actual_integrations_found": [
+      "react",
+      "react"
+    ],
+    "readme_claims_unsupported_by_code": [
+      "css3",
+      "css3",
+      "html5",
+      "html5",
+      "javascript",
+      "javascript",
+      "vectary"
+    ],
+    "provenance": [
+      {
+        "claim": "Inspected repository https://github.com/sampremed/Health-Hack",
+        "evidence_type": "repository",
+        "source": "https://github.com/sampremed/Health-Hack",
+        "location": "root",
+        "confidence": 1.0,
+        "details": null
+      }
+    ]
+  },
+  "demo_summary": {
+    "has_video_demo": false,
+    "video_platform": "",
+    "video_url": "",
+    "duration_seconds": null,
+    "has_live_deployment": true,
+    "deployment_url": "https://65071179dad6734607371908--delicate-muffin-3336f5.netlify.app/",
+    "deployment_reachable": true,
+    "has_slide_deck": false,
+    "observations": []
+  },
+  "sponsor_technologies_mentioned": [],
+  "bundle_sha256": "83da1c8b2f27127d9be3266e0f98fdf5d2157eadfc3f6a167f8616da792695b7",
+  "created_at": "2026-09-26T02:11:35.611737Z"
+}

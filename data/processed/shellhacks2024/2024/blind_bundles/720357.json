@@ -1,0 +1,141 @@
+{
+  "project_id": "720357",
+  "slug": "money-way",
+  "title": "Money Way",
+  "tagline": "We wanted to help marginalized communities with less access to financial resources and literacy education get these resources tailored to their specific needs.",
+  "problem_statement": "",
+  "inspiration": "",
+  "what_it_does": "",
+  "how_it_was_built": "",
+  "challenges": "",
+  "accomplishments": "",
+  "lessons_learned": "",
+  "future_plans": "",
+  "tech_tags": [
+    "react",
+    "react",
+    "springboot"
+  ],
+  "team_size": 4,
+  "repository_metrics": {
+    "repo_url": "https://github.com/jincito/Money-Way",
+    "status": "accessible",
+    "default_branch": "main",
+    "file_count": 66,
+    "approx_loc": 2791,
+    "loc_by_language": {
+      "HTML": 44,
+      "JavaScript": 1097,
+      "CSS": 590,
+      "Java": 1060
+    },
+    "primary_languages": [
+      "JavaScript",
+      "Java",
+      "CSS",
+      "HTML"
+    ],
+    "tech_stack": {
+      "frontend_frameworks": [
+        "React"
+      ],
+      "backend_frameworks": [],
+      "databases": [],
+      "ai_ml_libraries": [],
+      "model_providers": [],
+      "cloud_devops": [],
+      "third_party_apis": [],
+      "hardware_components": [],
+      "package_dependencies": [
+        "react"
+      ]
+    },
+    "git_timeline": {
+      "total_commits": 16,
+      "commits_in_window": 16,
+      "first_commit_time": "2024-09-29T04:34:56Z",
+      "last_commit_time": "2024-10-02T20:11:55Z",
+      "commit_timestamps": [
+        "2024-09-29T04:34:56Z",
+        "2024-09-29T04:36:40Z",
+        "2024-09-29T04:47:42Z",
+        "2024-09-29T06:08:24Z",
+        "2024-09-29T06:34:58Z",
+        "2024-09-29T11:07:10Z",
+        "2024-09-29T11:37:59Z",
+        "2024-09-29T14:48:47Z",
+        "2024-09-29T14:50:24Z",
+        "2024-09-29T19:30:37Z",
+        "2024-09-29T19:43:23Z",
+        "2024-09-29T19:47:08Z",
+        "2024-09-30T21:28:44Z",
+        "2024-09-30T21:34:12Z",
+        "2024-09-30T21:34:39Z",
+        "2024-10-02T20:11:55Z"
+      ],
+      "late_rewrites_detected": false,
+      "deadline_crunch_ratio": 0.06,
+      "final_stage_focus": "docs",
+      "history_is_squashed_or_minimal": false,
+      "contributor_count": 6,
+      "contributors": [
+        "marc0an1",
+        "Diego Valero",
+        "Marco chaparro",
+        "Jin Carballosa",
+        "jincito",
+        "Luis Garcia Quintero"
+      ]
+    },
+    "test_files_count": 1,
+    "test_frameworks": [],
+    "has_ci": false,
+    "ci_configs": [],
+    "has_docker": false,
+    "has_env_template": false,
+    "readme_size_bytes": 2294,
+    "readme_excerpt": "# Money Way\nAn interactive platform designed to enhance financial literacy for individuals of all ages. Through personalized quizzes and engaging content, users can learn essential financial skills, including budgeting, saving, credit management, and more.\n## Table of Contents\n- Features\n- Installation\n- Usage\n- Technologies Used\n- Contributing\n- License\n- Contact\n## Features\n- **Personalized Learning:** Customized quizzes and recommendations based on user inputs.\n- **User-Friendly Interface:** Intuitive design for easy navigation and accessibility.\n- **Real-World Applications:** Practical financial skills that users can apply in everyday life.\n- **Interactive Modules:** Engaging content that makes learning fun and informative.\n- **Account Creation:** Users can create accounts to save their progress and access personalized content.\n## Installation\nTo set up the **Money Way** project locally, follow these steps:\n1. **Clone the repository:**\n`git clone https://github.com/yourusername/money-way.git`\n`cd money-way`\n2. Install dependencies:\n`cd frontend`\n`npm install`\n4. Start the development server:\n`npm start`\n`Open your browser and visit http://localhost:3000 to view the application.`\n## Usage\nTake the Quiz: Click on the \"Take the Quiz Now\" button to start assessing your financial knowledge.\nCreate an Account: Click on the \"Create Account\" button in the login modal to sign up and save your progress.\nExplore Options: Navigate through various topics, including Credit, Taxes, Budgeting, and Savings.\n## Technologies Used\nFrontend:\nReact.js\nAxios\nCSS\nBackend:\nNode.js\nExpress.js\nSQL (or any preferred database)\n## Contributing\nContributions are welcome! If you would like to contribute to Money Way, please follow these steps:\n## Fork the repository.\nCreate a new branch (git checkout -b feature/YourFeature).\nMake your changes and commit them (git commit -m 'Add some feature').\nPush to the branch (git push origin feature/YourFeature).\nOpen a pull request.\n### Contact\nFor any inquiries or feedback, please contact:\nThank you for checking out Money Way! Happy learning!\n- With ❤️ from Money Way team",
+    "has_architecture_docs": false,
+    "api_routes_count": 0,
+    "db_migrations_or_schema_count": 0,
+    "mock_data_detected": false,
+    "mock_data_indicators": [],
+    "todo_fixme_count": 0,
+    "boilerplate_detected": false,
+    "boilerplate_indicators": [],
+    "deployment_check": null,
+    "consistency_with_claims": "partial",
+    "consistency_explanation": "Partial evidence: 2/3 claimed technologies found in codebase.",
+    "actual_integrations_found": [
+      "react",
+      "react"
+    ],
+    "readme_claims_unsupported_by_code": [
+      "springboot"
+    ],
+    "provenance": [
+      {
+        "claim": "Inspected repository https://github.com/jincito/Money-Way",
+        "evidence_type": "repository",
+        "source": "https://github.com/jincito/Money-Way",
+        "location": "root",
+        "confidence": 1.0,
+        "details": null
+      }
+    ]
+  },
+  "demo_summary": {
+    "has_video_demo": false,
+    "video_platform": "",
+    "video_url": "",
+    "duration_seconds": null,
+    "has_live_deployment": false,
+    "deployment_url": "",
+    "deployment_reachable": null,
+    "has_slide_deck": false,
+    "observations": []
+  },
+  "sponsor_technologies_mentioned": [],
+  "bundle_sha256": "ae2a8a380d9a0d9f3d4f7581b24f710fcf9c60f03ff393a4839c33c13271909e",
+  "created_at": "2026-09-26T02:03:23.304537Z"
+}
