@@ -27,12 +27,6 @@ const nextConfig = {
   async headers() {
     return [{ source: "/:path*", headers: securityHeaders }];
   },
-  async rewrites() {
-    // /api is served by app/api/[...path]/route.ts (adds the shared secret and visitor address server-side).
-    // Only the health check is a plain rewrite.
-    const backendUrl = process.env.BACKEND_URL || "http://127.0.0.1:8000";
-    return [{ source: "/health", destination: `${backendUrl}/health` }];
-  },
 };
 
 export default nextConfig;
