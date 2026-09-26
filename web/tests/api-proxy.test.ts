@@ -38,6 +38,15 @@ describe("the /api proxy", () => {
     expect(everything).not.toContain("backend.internal");
   });
 
+  it("copes with a backend address entered without https://, or with /api on the end", async () => {
+    for (const typed of ["backend.internal", "backend.internal/", "https://backend.internal/api"]) {
+      upstream.mockClear();
+      vi.stubEnv("BACKEND_URL", typed);
+      await POST(req("POST", "analyze", "{}"), ctx("analyze"));
+      expect(upstream.mock.calls[0][0], typed).toBe("https://backend.internal/api/analyze");
+    }
+  });
+
   it("does not add a secret header when none is configured (local development)", async () => {
     vi.stubEnv("BACKEND_SHARED_SECRET", "");
     await POST(req("POST", "analyze", "{}"), ctx("analyze"));

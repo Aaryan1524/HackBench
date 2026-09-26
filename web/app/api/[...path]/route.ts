@@ -1,4 +1,5 @@
 import { NextRequest } from "next/server";
+import { normalizeBackendUrl } from "@/lib/backendUrl";
 
 /**
  * The browser only ever talks to this app. This handler forwards the two calls the UI makes to the private
@@ -46,7 +47,7 @@ async function proxy(req: NextRequest, ctx: { params: { path: string[] } }): Pro
     if (new TextEncoder().encode(body).length > MAX_BODY_BYTES) return json(413, "Request too large.");
   }
 
-  const backend = (process.env.BACKEND_URL || "http://127.0.0.1:8000").replace(/\/+$/, "");
+  const backend = normalizeBackendUrl(process.env.BACKEND_URL);
   const headers: Record<string, string> = { accept: "application/json" };
   if (body !== undefined) headers["content-type"] = "application/json";
   const secret = process.env.BACKEND_SHARED_SECRET;
