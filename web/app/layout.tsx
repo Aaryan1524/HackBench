@@ -3,6 +3,7 @@ import localFont from "next/font/local";
 import { Lora } from "next/font/google";
 import "./globals.css";
 import AnalyticsInit from "@/components/AnalyticsInit";
+import VercelAnalytics from "@/components/VercelAnalytics";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -39,6 +40,7 @@ export default function RootLayout({
         className={`${lora.variable} ${geistSans.variable} ${geistMono.variable} antialiased bg-canvas text-ink font-sans min-h-screen selection:bg-[#EBE8DF] selection:text-ink`}
       >
         <AnalyticsInit />
+        <VercelAnalytics />
         {children}
       </body>
     </html>
