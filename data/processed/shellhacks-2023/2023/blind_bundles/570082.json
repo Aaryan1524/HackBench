@@ -1,0 +1,120 @@
+{
+  "project_id": "570082",
+  "slug": "friendzy-1fbp6q",
+  "title": "Friendzy",
+  "tagline": "My app is like bumble but for post grad depression, after graduating not a lot know what to do and now you have the power to link up with someone in a similar situation or just meet new people",
+  "problem_statement": "",
+  "inspiration": "",
+  "what_it_does": "",
+  "how_it_was_built": "",
+  "challenges": "",
+  "accomplishments": "",
+  "lessons_learned": "",
+  "future_plans": "",
+  "tech_tags": [
+    "mysql",
+    "mysql",
+    "python",
+    "python",
+    "tkinter"
+  ],
+  "team_size": 1,
+  "repository_metrics": {
+    "repo_url": "https://github.com/changabanga567/Friendzy",
+    "status": "accessible",
+    "default_branch": "master",
+    "file_count": 12,
+    "approx_loc": 583,
+    "loc_by_language": {
+      "Python": 583
+    },
+    "primary_languages": [
+      "Python"
+    ],
+    "tech_stack": {
+      "frontend_frameworks": [],
+      "backend_frameworks": [],
+      "databases": [],
+      "ai_ml_libraries": [],
+      "model_providers": [],
+      "cloud_devops": [],
+      "third_party_apis": [],
+      "hardware_components": [],
+      "package_dependencies": []
+    },
+    "git_timeline": {
+      "total_commits": 6,
+      "commits_in_window": 6,
+      "first_commit_time": "2023-08-15T21:47:22Z",
+      "last_commit_time": "2023-09-17T14:37:13Z",
+      "commit_timestamps": [
+        "2023-08-15T21:47:22Z",
+        "2023-08-23T13:23:26Z",
+        "2023-08-29T17:00:11Z",
+        "2023-09-16T03:59:25Z",
+        "2023-09-17T14:33:27Z",
+        "2023-09-17T14:37:13Z"
+      ],
+      "late_rewrites_detected": false,
+      "deadline_crunch_ratio": 0.5,
+      "final_stage_focus": "features",
+      "history_is_squashed_or_minimal": false,
+      "contributor_count": 2,
+      "contributors": [
+        "Ebaad Ghouri",
+        "changabanga567"
+      ]
+    },
+    "test_files_count": 1,
+    "test_frameworks": [],
+    "has_ci": false,
+    "ci_configs": [],
+    "has_docker": false,
+    "has_env_template": false,
+    "readme_size_bytes": 353,
+    "readme_excerpt": "Project a friend wanted to do but doesnt know how to use github so we gonna start here. Built using python and MySQL for the database\nSo far Ive done the outline of it and got the database running along with user registration. Need to work on the interface and many more features like being able to find people based on distance along with upgraded UI",
+    "has_architecture_docs": false,
+    "api_routes_count": 0,
+    "db_migrations_or_schema_count": 0,
+    "mock_data_detected": false,
+    "mock_data_indicators": [],
+    "todo_fixme_count": 0,
+    "boilerplate_detected": false,
+    "boilerplate_indicators": [],
+    "deployment_check": null,
+    "consistency_with_claims": "inconsistent",
+    "consistency_explanation": "Weak evidence: Only 0/5 claimed technologies detected in codebase.",
+    "actual_integrations_found": [],
+    "readme_claims_unsupported_by_code": [
+      "mysql",
+      "mysql",
+      "python",
+      "python",
+      "tkinter"
+    ],
+    "provenance": [
+      {
+        "claim": "Inspected repository https://github.com/changabanga567/Friendzy",
+        "evidence_type": "repository",
+        "source": "https://github.com/changabanga567/Friendzy",
+        "location": "root",
+        "confidence": 1.0,
+        "details": null
+      }
+    ]
+  },
+  "demo_summary": {
+    "has_video_demo": true,
+    "video_platform": "vimeo",
+    "video_url": "https://player.vimeo.com/video/865296651?byline=0&portrait=0&title=0#t=",
+    "duration_seconds": null,
+    "has_live_deployment": false,
+    "deployment_url": "",
+    "deployment_reachable": null,
+    "has_slide_deck": false,
+    "observations": []
+  },
+  "sponsor_technologies_mentioned": [],
+  "bundle_sha256": "cda3d06b5da6074975dce864c666cfdfc040e5a9121c9be18e04ee4dc635ac35",
+  "created_at": "2026-09-26T02:11:35.756882Z"
+}

@@ -1,0 +1,174 @@
+{
+  "project_id": "719798",
+  "slug": "water-quality-predictor-with-ml-and-data-visualizatio",
+  "title": "FlowCast: Real-Time Water Monitoring and Prediction",
+  "tagline": "Our application leverages machine learning and real-time NOAA data to forecast essential water quality metrics like oxygen levels and pH with interactive data visualizations.",
+  "problem_statement": "",
+  "inspiration": "",
+  "what_it_does": "",
+  "how_it_was_built": "",
+  "challenges": "",
+  "accomplishments": "",
+  "lessons_learned": "",
+  "future_plans": "",
+  "tech_tags": [
+    "noaa-climate-data-online",
+    "noaa-climate-data-online",
+    "pycharm",
+    "python",
+    "python",
+    "streamlit"
+  ],
+  "team_size": 2,
+  "repository_metrics": {
+    "repo_url": "https://github.com/amart0513/shellhacks-mlh-streamlit",
+    "status": "accessible",
+    "default_branch": "main",
+    "file_count": 44,
+    "approx_loc": 3285,
+    "loc_by_language": {
+      "Python": 3285
+    },
+    "primary_languages": [
+      "Python"
+    ],
+    "tech_stack": {
+      "frontend_frameworks": [],
+      "backend_frameworks": [
+        "Express.js"
+      ],
+      "databases": [],
+      "ai_ml_libraries": [
+        "Scikit-Learn"
+      ],
+      "model_providers": [],
+      "cloud_devops": [],
+      "third_party_apis": [],
+      "hardware_components": [],
+      "package_dependencies": [
+        "express",
+        "sklearn"
+      ]
+    },
+    "git_timeline": {
+      "total_commits": 50,
+      "commits_in_window": 50,
+      "first_commit_time": "2024-11-30T19:49:10Z",
+      "last_commit_time": "2025-01-12T05:39:18Z",
+      "commit_timestamps": [
+        "2024-11-30T19:49:10Z",
+        "2024-11-30T20:04:52Z",
+        "2024-11-30T20:36:28Z",
+        "2024-11-30T21:53:19Z",
+        "2024-11-30T22:39:11Z",
+        "2024-12-01T00:58:13Z",
+        "2024-12-01T02:41:50Z",
+        "2024-12-01T02:44:01Z",
+        "2024-12-01T03:48:41Z",
+        "2024-12-01T03:54:08Z",
+        "2024-12-01T04:04:50Z",
+        "2024-12-01T04:43:02Z",
+        "2024-12-01T05:53:54Z",
+        "2024-12-01T06:05:52Z",
+        "2024-12-01T06:20:37Z",
+        "2024-12-01T06:34:45Z",
+        "2024-12-01T06:53:34Z",
+        "2024-12-01T07:03:24Z",
+        "2024-12-01T07:10:34Z",
+        "2024-12-01T07:14:23Z",
+        "2024-12-01T07:14:54Z",
+        "2024-12-01T07:16:55Z",
+        "2024-12-01T07:17:43Z",
+        "2024-12-01T07:18:16Z",
+        "2024-12-01T07:20:46Z",
+        "2024-12-01T22:15:56Z",
+        "2024-12-01T22:38:53Z",
+        "2024-12-01T23:54:59Z",
+        "2024-12-02T00:20:36Z",
+        "2024-12-02T00:25:14Z",
+        "2024-12-02T00:37:22Z",
+        "2024-12-02T01:42:37Z",
+        "2024-12-02T01:55:55Z",
+        "2024-12-02T02:43:01Z",
+        "2024-12-02T02:53:24Z",
+        "2024-12-02T04:14:09Z",
+        "2024-12-02T04:33:47Z",
+        "2024-12-03T23:31:11Z",
+        "2024-12-04T00:08:13Z",
+        "2024-12-04T00:11:22Z",
+        "2024-12-04T00:29:43Z",
+        "2024-12-06T05:11:19Z",
+        "2024-12-06T06:43:30Z",
+        "2024-12-06T13:17:15Z",
+        "2024-12-12T23:53:26Z",
+        "2024-12-13T02:06:51Z",
+        "2024-12-21T19:34:14Z",
+        "2024-12-21T19:55:10Z",
+        "2024-12-22T06:43:32Z",
+        "2025-01-12T05:39:18Z"
+      ],
+      "late_rewrites_detected": false,
+      "deadline_crunch_ratio": 0.02,
+      "final_stage_focus": "features",
+      "history_is_squashed_or_minimal": false,
+      "contributor_count": 1,
+      "contributors": [
+        "Angie Martinez"
+      ]
+    },
+    "test_files_count": 4,
+    "test_frameworks": [
+      "vitest/jest"
+    ],
+    "has_ci": false,
+    "ci_configs": [],
+    "has_docker": false,
+    "has_env_template": false,
+    "readme_size_bytes": 7436,
+    "readme_excerpt": "# FlowCast: Real-Time Water Monitoring and Prediction\n## Overview\nThis project is a water quality predictor built using Python, HTML, CSS, JavaScript, and Streamlit, an open-source Python library for creating web apps, and powered by machine learning for water quality prediction. The app focuses on predicting water quality in specific regions, such as Biscayne Bay and Haulover Beach, while visualizing and analyzing historical and real-time water quality data.\n## Features\n- [X] Real-time Data Integration: Fetches live water quality data from the NOAA API for continuous updates.\n- [X] Interactive Visualizations: Visualize water quality data through scatter plots, line charts, maps, and 3D plots.\n- [X] Machine Learning Predictions: Predict water quality parameters (e.g., oxygen levels, temperature) based on historical trends.\n- [X] Multiple Station Analysis: Compare data across different water stations by selecting multiple station IDs for side-by-side charts and visualizations.\n- [X] User Engagement: Users can upload their own water quality data, view past research summaries, and sign up for updates.\n## Table of Contents\n1. Installation Guide\n2. How It Works\n3. Data Sources\n4. Machine Learning Model\n5. Usage\n6. Features\n7. Contributing\n8. License\n## Installation Guide\n## Option 1: Set up locally via Command Line\nOpen your terminal (or command prompt) and execute the following commands:\n### 1. Clone the repository\ngit clone https://github.com/your-username/flowcast-web-app.git\n#### Navigate into the Project Directory\ncd flowcast-web-app\n### 2. Set Up Your Environment\n- Windows: Use python commands.\n- macOS/Linux: Use python3 or python based on your setup.\n### 3. Create a Virtual Environment (optional but highly recommended):\n- python -m venv venv\n### 4. Activate the Environment\n- **Windows**: venv\\Scripts\\activate\n- **macOS\\Linux**: source venv/bin/activate\n### 5. Install Required Dependencies\nInstall all required Python packages: pip install -r requirements.txt\n### 6. Run the Streamlit App\nStart the app by running the following command: streamlit run app.py\n### 7. Access the App\nOnce the app starts, you will see this in the terminal:\nYou can now view your Streamlit app in your browser.\nLocal URL: http://localhost:XXXX\nOpen it in your browser to view the app.\n## Option 2: Set Up via GitHub Desktop\n### 1. Clone the Repository Using GitHub Desktop\na. Open GitHub Desktop. Then, press Click on File > Clone Repository....\nb. Select the repository: If the repositor",
+    "has_architecture_docs": false,
+    "api_routes_count": 0,
+    "db_migrations_or_schema_count": 0,
+    "mock_data_detected": false,
+    "mock_data_indicators": [],
+    "todo_fixme_count": 0,
+    "boilerplate_detected": false,
+    "boilerplate_indicators": [],
+    "deployment_check": null,
+    "consistency_with_claims": "inconsistent",
+    "consistency_explanation": "Weak evidence: Only 0/6 claimed technologies detected in codebase.",
+    "actual_integrations_found": [],
+    "readme_claims_unsupported_by_code": [
+      "noaa-climate-data-online",
+      "noaa-climate-data-online",
+      "pycharm",
+      "python",
+      "python",
+      "streamlit"
+    ],
+    "provenance": [
+      {
+        "claim": "Inspected repository https://github.com/amart0513/shellhacks-mlh-streamlit",
+        "evidence_type": "repository",
+        "source": "https://github.com/amart0513/shellhacks-mlh-streamlit",
+        "location": "root",
+        "confidence": 1.0,
+        "details": null
+      }
+    ]
+  },
+  "demo_summary": {
+    "has_video_demo": false,
+    "video_platform": "",
+    "video_url": "",
+    "duration_seconds": null,
+    "has_live_deployment": false,
+    "deployment_url": "",
+    "deployment_reachable": null,
+    "has_slide_deck": false,
+    "observations": []
+  },
+  "sponsor_technologies_mentioned": [],
+  "bundle_sha256": "3d115174c64050914c190232c301c3c0168728f10aaa1b97e66999def28b769f",
+  "created_at": "2026-09-26T02:03:23.050722Z"
+}

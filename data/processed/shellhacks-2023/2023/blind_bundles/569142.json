@@ -1,0 +1,140 @@
+{
+  "project_id": "569142",
+  "slug": "xr-caption",
+  "title": "XR Caption",
+  "tagline": "Subtitles for Mixed Reality and a11y. OpenAI Whisper, Python, ThreeJS.",
+  "problem_statement": "",
+  "inspiration": "",
+  "what_it_does": "",
+  "how_it_was_built": "",
+  "challenges": "",
+  "accomplishments": "",
+  "lessons_learned": "",
+  "future_plans": "",
+  "tech_tags": [
+    "ai",
+    "augmented-reality",
+    "augmented-reality",
+    "flask",
+    "flask",
+    "openai",
+    "three.js",
+    "three.js",
+    "whisper"
+  ],
+  "team_size": 1,
+  "repository_metrics": {
+    "repo_url": "https://github.com/jayrosen-design/XR-Caption",
+    "status": "accessible",
+    "default_branch": "main",
+    "file_count": 7,
+    "approx_loc": 850,
+    "loc_by_language": {
+      "Python": 61,
+      "HTML": 789
+    },
+    "primary_languages": [
+      "HTML",
+      "Python"
+    ],
+    "tech_stack": {
+      "frontend_frameworks": [],
+      "backend_frameworks": [
+        "Flask"
+      ],
+      "databases": [],
+      "ai_ml_libraries": [],
+      "model_providers": [
+        "OpenAI"
+      ],
+      "cloud_devops": [],
+      "third_party_apis": [],
+      "hardware_components": [],
+      "package_dependencies": [
+        "flask",
+        "openai"
+      ]
+    },
+    "git_timeline": {
+      "total_commits": 9,
+      "commits_in_window": 9,
+      "first_commit_time": "2023-09-17T14:28:29Z",
+      "last_commit_time": "2025-01-26T00:21:20Z",
+      "commit_timestamps": [
+        "2023-09-17T14:28:29Z",
+        "2023-09-17T14:36:01Z",
+        "2023-09-17T14:37:33Z",
+        "2023-09-17T14:37:42Z",
+        "2023-09-17T14:37:52Z",
+        "2025-01-26T00:15:40Z",
+        "2025-01-26T00:18:38Z",
+        "2025-01-26T00:19:12Z",
+        "2025-01-26T00:21:20Z"
+      ],
+      "late_rewrites_detected": false,
+      "deadline_crunch_ratio": 0.44,
+      "final_stage_focus": "docs",
+      "history_is_squashed_or_minimal": false,
+      "contributor_count": 1,
+      "contributors": [
+        "Jay Rosen"
+      ]
+    },
+    "test_files_count": 0,
+    "test_frameworks": [],
+    "has_ci": false,
+    "ci_configs": [],
+    "has_docker": false,
+    "has_env_template": false,
+    "readme_size_bytes": 2469,
+    "readme_excerpt": "# XR Caption\n### Subtitles for Mixed Reality and Accessibility (a11y)\nXR Caption is an innovative solution for enhancing accessibility in mixed reality environments. This project enables real-time subtitles to appear in augmented reality (AR) settings, making information more accessible for individuals with hearing impairments. The project was prototyped at **FIU ShellHacks** for Microsoft's Mixed Reality Challenge and leverages cutting-edge AI and AR technologies.\n## Features\n- **Real-Time Subtitles**: Adds AI-generated captions to mixed reality experiences.\n- **Accessibility Focus**: Designed to help the hearing impaired \"hear with their eyes.\"\n- **Classroom Integration**: Enhances educational settings by improving accessibility.\n- **Open-Source AR Headset**: Utilizes a 3D-printed design that fits smartphones to reflect captions directly into the user’s view.\n## Technology Stack\n- **AI**: Built using OpenAI Whisper for real-time transcription and language processing.\n- **Web Framework**: Developed with Three.js for rendering AR experiences.\n- **Hardware**: An open-source, 3D-printed AR headset compatible with smartphones.\n## Gallery\n### Prototyping and Demonstrations\n*Caption: The open-source AR headset displaying captions.*\n*Caption: Classroom demonstration of AI-powered captioning.*\n## Video Demo\nExperience XR Caption in action:\n## Online Demos\nTest XR Caption live with the following interactive demos:\n- Standard View\n- Stereo View\n## Acknowledgments\nThis project was developed as part of the **FIU ShellHacks** for Microsoft's Mixed Reality Challenge. Special thanks to **OpenAI Whisper**, **Three.js**, and the open-source AR community for enabling this innovation.\n## How to Cite\nIf referencing this project, please use:\n**Jay Rosen – XR Caption: Subtitles for Mixed Reality and Accessibility.**\nDOI: 10.5281/zenodo.14739260",
+    "has_architecture_docs": false,
+    "api_routes_count": 0,
+    "db_migrations_or_schema_count": 0,
+    "mock_data_detected": false,
+    "mock_data_indicators": [],
+    "todo_fixme_count": 0,
+    "boilerplate_detected": false,
+    "boilerplate_indicators": [],
+    "deployment_check": null,
+    "consistency_with_claims": "partial",
+    "consistency_explanation": "Partial evidence: 4/9 claimed technologies found in codebase.",
+    "actual_integrations_found": [
+      "ai",
+      "flask",
+      "flask",
+      "openai"
+    ],
+    "readme_claims_unsupported_by_code": [
+      "augmented-reality",
+      "augmented-reality",
+      "three.js",
+      "three.js",
+      "whisper"
+    ],
+    "provenance": [
+      {
+        "claim": "Inspected repository https://github.com/jayrosen-design/XR-Caption",
+        "evidence_type": "repository",
+        "source": "https://github.com/jayrosen-design/XR-Caption",
+        "location": "root",
+        "confidence": 1.0,
+        "details": null
+      }
+    ]
+  },
+  "demo_summary": {
+    "has_video_demo": true,
+    "video_platform": "youtube",
+    "video_url": "https://www.youtube.com/embed/H6t_sk4uCRU?enablejsapi=1&hl=en_US&rel=0&start=&version=3&wmode=transparent",
+    "duration_seconds": null,
+    "has_live_deployment": false,
+    "deployment_url": "",
+    "deployment_reachable": null,
+    "has_slide_deck": false,
+    "observations": []
+  },
+  "sponsor_technologies_mentioned": [],
+  "bundle_sha256": "4a16fade8a968cc48aa65e939758cf4c0fb56e441cc32ea27ef1931d85de22ab",
+  "created_at": "2026-09-26T02:11:35.797553Z"
+}

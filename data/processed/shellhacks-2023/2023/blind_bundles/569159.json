@@ -1,0 +1,114 @@
+{
+  "project_id": "569159",
+  "slug": "tot-l1y7eg1tb-n-ing-pp",
+  "title": "Maze Game",
+  "tagline": "Just a simple maze adventure.",
+  "problem_statement": "",
+  "inspiration": "",
+  "what_it_does": "",
+  "how_it_was_built": "",
+  "challenges": "",
+  "accomplishments": "",
+  "lessons_learned": "",
+  "future_plans": "",
+  "tech_tags": [
+    "java",
+    "java"
+  ],
+  "team_size": 2,
+  "repository_metrics": {
+    "repo_url": "https://github.com/dactel/Shellhacks",
+    "status": "accessible",
+    "default_branch": "main",
+    "file_count": 7,
+    "approx_loc": 290,
+    "loc_by_language": {
+      "Java": 290
+    },
+    "primary_languages": [
+      "Java"
+    ],
+    "tech_stack": {
+      "frontend_frameworks": [],
+      "backend_frameworks": [],
+      "databases": [],
+      "ai_ml_libraries": [],
+      "model_providers": [],
+      "cloud_devops": [],
+      "third_party_apis": [],
+      "hardware_components": [],
+      "package_dependencies": []
+    },
+    "git_timeline": {
+      "total_commits": 7,
+      "commits_in_window": 7,
+      "first_commit_time": "2023-09-17T13:17:59Z",
+      "last_commit_time": "2023-09-17T14:41:30Z",
+      "commit_timestamps": [
+        "2023-09-17T13:17:59Z",
+        "2023-09-17T13:20:24Z",
+        "2023-09-17T13:32:13Z",
+        "2023-09-17T13:45:53Z",
+        "2023-09-17T14:39:04Z",
+        "2023-09-17T14:40:01Z",
+        "2023-09-17T14:41:30Z"
+      ],
+      "late_rewrites_detected": false,
+      "deadline_crunch_ratio": 0.43,
+      "final_stage_focus": "docs",
+      "history_is_squashed_or_minimal": false,
+      "contributor_count": 1,
+      "contributors": [
+        "dactel"
+      ]
+    },
+    "test_files_count": 0,
+    "test_frameworks": [],
+    "has_ci": false,
+    "ci_configs": [],
+    "has_docker": false,
+    "has_env_template": false,
+    "readme_size_bytes": 108,
+    "readme_excerpt": "# To RUN the game, the jar is the only file needed, to edit the game, the code and level files are included",
+    "has_architecture_docs": false,
+    "api_routes_count": 0,
+    "db_migrations_or_schema_count": 0,
+    "mock_data_detected": false,
+    "mock_data_indicators": [],
+    "todo_fixme_count": 0,
+    "boilerplate_detected": false,
+    "boilerplate_indicators": [],
+    "deployment_check": null,
+    "consistency_with_claims": "inconsistent",
+    "consistency_explanation": "Weak evidence: Only 0/2 claimed technologies detected in codebase.",
+    "actual_integrations_found": [],
+    "readme_claims_unsupported_by_code": [
+      "java",
+      "java"
+    ],
+    "provenance": [
+      {
+        "claim": "Inspected repository https://github.com/dactel/Shellhacks",
+        "evidence_type": "repository",
+        "source": "https://github.com/dactel/Shellhacks",
+        "location": "root",
+        "confidence": 1.0,
+        "details": null
+      }
+    ]
+  },
+  "demo_summary": {
+    "has_video_demo": false,
+    "video_platform": "",
+    "video_url": "",
+    "duration_seconds": null,
+    "has_live_deployment": false,
+    "deployment_url": "",
+    "deployment_reachable": null,
+    "has_slide_deck": false,
+    "observations": []
+  },
+  "sponsor_technologies_mentioned": [],
+  "bundle_sha256": "f6bb8e5a72844f13626761fb202a33ad473c484a5010cff3aeb2c773d1d476cb",
+  "created_at": "2026-09-26T02:11:35.666731Z"
+}

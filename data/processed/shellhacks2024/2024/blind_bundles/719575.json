@@ -1,0 +1,163 @@
+{
+  "project_id": "719575",
+  "slug": "inclusive-aid",
+  "title": "Inclusive Aid",
+  "tagline": "It is a Streamlit-based application that provides resources and assistance to individuals in need. It aims to create an inclusive approach to offering aid, regardless of background or location.",
+  "problem_statement": "",
+  "inspiration": "",
+  "what_it_does": "",
+  "how_it_was_built": "",
+  "challenges": "",
+  "accomplishments": "",
+  "lessons_learned": "",
+  "future_plans": "",
+  "tech_tags": [
+    "langchain",
+    "openaiapi",
+    "python",
+    "python",
+    "streamlit"
+  ],
+  "team_size": 3,
+  "repository_metrics": {
+    "repo_url": "https://github.com/varb24/ShellHacks-2024",
+    "status": "accessible",
+    "default_branch": "main",
+    "file_count": 26,
+    "approx_loc": 702,
+    "loc_by_language": {
+      "Python": 702
+    },
+    "primary_languages": [
+      "Python"
+    ],
+    "tech_stack": {
+      "frontend_frameworks": [],
+      "backend_frameworks": [],
+      "databases": [],
+      "ai_ml_libraries": [
+        "LangChain"
+      ],
+      "model_providers": [
+        "OpenAI"
+      ],
+      "cloud_devops": [],
+      "third_party_apis": [],
+      "hardware_components": [],
+      "package_dependencies": [
+        "langchain",
+        "langchain-openai",
+        "openai",
+        "python-dotenv",
+        "streamlit"
+      ]
+    },
+    "git_timeline": {
+      "total_commits": 38,
+      "commits_in_window": 38,
+      "first_commit_time": "2024-09-28T03:24:15Z",
+      "last_commit_time": "2024-09-29T14:48:01Z",
+      "commit_timestamps": [
+        "2024-09-28T03:24:15Z",
+        "2024-09-28T04:12:26Z",
+        "2024-09-28T04:16:18Z",
+        "2024-09-28T04:20:43Z",
+        "2024-09-28T06:01:25Z",
+        "2024-09-28T06:07:22Z",
+        "2024-09-28T06:09:23Z",
+        "2024-09-28T06:11:25Z",
+        "2024-09-28T06:15:40Z",
+        "2024-09-28T06:16:10Z",
+        "2024-09-28T18:13:49Z",
+        "2024-09-28T20:50:24Z",
+        "2024-09-28T21:09:19Z",
+        "2024-09-28T21:16:56Z",
+        "2024-09-28T21:59:20Z",
+        "2024-09-28T22:00:31Z",
+        "2024-09-28T22:45:32Z",
+        "2024-09-29T02:25:16Z",
+        "2024-09-29T02:26:14Z",
+        "2024-09-29T02:41:24Z",
+        "2024-09-29T02:56:50Z",
+        "2024-09-29T03:03:06Z",
+        "2024-09-29T03:04:17Z",
+        "2024-09-29T03:18:57Z",
+        "2024-09-29T03:19:47Z",
+        "2024-09-29T03:48:21Z",
+        "2024-09-29T04:16:13Z",
+        "2024-09-29T04:16:34Z",
+        "2024-09-29T06:44:46Z",
+        "2024-09-29T06:45:03Z",
+        "2024-09-29T13:16:52Z",
+        "2024-09-29T13:22:09Z",
+        "2024-09-29T13:48:11Z",
+        "2024-09-29T13:53:49Z",
+        "2024-09-29T14:00:31Z",
+        "2024-09-29T14:47:11Z",
+        "2024-09-29T14:47:41Z",
+        "2024-09-29T14:48:01Z"
+      ],
+      "late_rewrites_detected": false,
+      "deadline_crunch_ratio": 0.26,
+      "final_stage_focus": "docs",
+      "history_is_squashed_or_minimal": false,
+      "contributor_count": 3,
+      "contributors": [
+        "Gladiate10",
+        "OmarstevenDiaz",
+        "varb24"
+      ]
+    },
+    "test_files_count": 1,
+    "test_frameworks": [],
+    "has_ci": false,
+    "ci_configs": [],
+    "has_docker": false,
+    "has_env_template": false,
+    "readme_size_bytes": 3845,
+    "readme_excerpt": "# ShellHacks-2024\n# Inclusive Aid\nInclusive Aid is a Streamlit-based application that provides resources and assistance to individuals in need. It aims to create an inclusive approach to offering aid, regardless of background or location.\n## Features\n- Interactive questions to gather user information and provide tailored results.\n- Translate the main page and questions for users that does not know english (Work in Progress)\n- AI image generation for the results (Work in Progress)\n- AI-powered follow-up questions to refine the user’s needs.\n- Dynamic insights based on user input.\n- Links to external resources such as OpenAI API, Streamlit Docs, and LangGraph Documentation.\n## Installation\nTo install the required dependencies, run:\n## Usage\nTo run the application, use the following command:\n### Navigation\n- **Main Page**: Introduction to the platform and a button to start the questions.\n- **Questions Page**: Asks initial demographic and location-related questions.\n- **AI Questions Page**: Provides further questions based on AI-generated responses.\n- **Results Page**: Displays insights based on the answers provided.\n## File Structure\n## File Structure\n```\n.\n├── locales\n│   ├── en\n│   ├── es\n│   ├── main_page.pot                           # Translation template for main page in different languages\n│   └── questions.pot                           # Translation template for question-related content\n├── pages\n│   ├── ...                                     # Cache of compiled Python files\n│   ├── helpers\n│   │   ├── ...                                 # Cache of compiled Python files for helpers\n│   │   ├── __init__.py                         # Initializes the 'helpers' package\n│   │   ├── lang_prompt.py                      # Helper functions for handling language prompts\n│   │   ├── results_prompt.py                   # Helper functions for managing results prompts\n│   │   └── __init__.py                         # Initializes the 'helpers' sub-package\n│   ├── __init__.py                             # Initializes the 'pages' package\n│   ├── ai_questions.py                         # Handles AI-related questions logic\n│   ├── main_page.py                            # Main page functionality and logic\n│   ├── questions.py                            # General question-related logic\n│   └── results.py                              # Logic for managing and displaying results\n├── .env                                        # Environment variables for the project\n├── .git",
+    "has_architecture_docs": false,
+    "api_routes_count": 0,
+    "db_migrations_or_schema_count": 0,
+    "mock_data_detected": false,
+    "mock_data_indicators": [],
+    "todo_fixme_count": 0,
+    "boilerplate_detected": false,
+    "boilerplate_indicators": [],
+    "deployment_check": null,
+    "consistency_with_claims": "consistent",
+    "consistency_explanation": "Strong evidence: 5/5 claimed technologies verified in codebase.",
+    "actual_integrations_found": [
+      "langchain",
+      "openaiapi",
+      "python",
+      "python",
+      "streamlit"
+    ],
+    "readme_claims_unsupported_by_code": [],
+    "provenance": [
+      {
+        "claim": "Inspected repository https://github.com/varb24/ShellHacks-2024",
+        "evidence_type": "repository",
+        "source": "https://github.com/varb24/ShellHacks-2024",
+        "location": "root",
+        "confidence": 1.0,
+        "details": null
+      }
+    ]
+  },
+  "demo_summary": {
+    "has_video_demo": false,
+    "video_platform": "",
+    "video_url": "",
+    "duration_seconds": null,
+    "has_live_deployment": false,
+    "deployment_url": "",
+    "deployment_reachable": null,
+    "has_slide_deck": false,
+    "observations": []
+  },
+  "sponsor_technologies_mentioned": [],
+  "bundle_sha256": "2b7623521ce3ca77f1631d30724b22216702b261cf29afc6139a24bba9f97910",
+  "created_at": "2026-09-26T02:03:23.344212Z"
+}

@@ -1,0 +1,154 @@
+{
+  "project_id": "570799",
+  "slug": "learn2earn-g6xtsk",
+  "title": "Learn2Earn",
+  "tagline": "Debunking Financial Myths: Empowering College Students with Financial Literacy for a Debt-Free and Insured Future. Boost your know-how, not just your credit score or premium payments.",
+  "problem_statement": "",
+  "inspiration": "",
+  "what_it_does": "",
+  "how_it_was_built": "",
+  "challenges": "",
+  "accomplishments": "",
+  "lessons_learned": "",
+  "future_plans": "",
+  "tech_tags": [
+    "css",
+    "css",
+    "html",
+    "html",
+    "javascript",
+    "javascript",
+    "react",
+    "react"
+  ],
+  "team_size": 4,
+  "repository_metrics": {
+    "repo_url": "https://github.com/Lwilliams002/Learn2Earn",
+    "status": "accessible",
+    "default_branch": "main",
+    "file_count": 36,
+    "approx_loc": 1644,
+    "loc_by_language": {
+      "HTML": 43,
+      "CSS": 731,
+      "JavaScript": 870
+    },
+    "primary_languages": [
+      "JavaScript",
+      "CSS",
+      "HTML"
+    ],
+    "tech_stack": {
+      "frontend_frameworks": [
+        "React"
+      ],
+      "backend_frameworks": [],
+      "databases": [],
+      "ai_ml_libraries": [],
+      "model_providers": [],
+      "cloud_devops": [],
+      "third_party_apis": [],
+      "hardware_components": [],
+      "package_dependencies": [
+        "@emotion/react",
+        "@emotion/styled",
+        "@mui/material",
+        "@nivo/bar",
+        "@nivo/line",
+        "@nivo/pie",
+        "@testing-library/jest-dom",
+        "@testing-library/react",
+        "@testing-library/user-event",
+        "react",
+        "react-dom",
+        "react-router-dom",
+        "react-scripts",
+        "web-vitals"
+      ]
+    },
+    "git_timeline": {
+      "total_commits": 13,
+      "commits_in_window": 13,
+      "first_commit_time": "2023-09-16T04:10:05Z",
+      "last_commit_time": "2023-09-25T19:13:42Z",
+      "commit_timestamps": [
+        "2023-09-16T04:10:05Z",
+        "2023-09-16T04:11:02Z",
+        "2023-09-16T06:16:05Z",
+        "2023-09-16T07:04:46Z",
+        "2023-09-16T08:05:34Z",
+        "2023-09-16T21:49:14Z",
+        "2023-09-17T03:05:00Z",
+        "2023-09-17T03:48:10Z",
+        "2023-09-17T14:54:04Z",
+        "2023-09-17T14:55:31Z",
+        "2023-09-25T18:40:02Z",
+        "2023-09-25T18:40:16Z",
+        "2023-09-25T19:13:42Z"
+      ],
+      "late_rewrites_detected": false,
+      "deadline_crunch_ratio": 0.23,
+      "final_stage_focus": "features",
+      "history_is_squashed_or_minimal": false,
+      "contributor_count": 1,
+      "contributors": [
+        "Lesly Williams"
+      ]
+    },
+    "test_files_count": 0,
+    "test_frameworks": [],
+    "has_ci": false,
+    "ci_configs": [],
+    "has_docker": false,
+    "has_env_template": false,
+    "readme_size_bytes": 3359,
+    "readme_excerpt": "# Getting Started with Create React App\nThis project was bootstrapped with Create React App.\n## Available Scripts\nIn the project directory, you can run:\n### `npm start`\nRuns the app in the development mode.\\\nOpen http://localhost:3000 to view it in your browser.\nThe page will reload when you make changes.\\\nYou may also see any lint errors in the console.\n### `npm test`\nLaunches the test runner in the interactive watch mode.\\\nSee the section about running tests for more information.\n### `npm run build`\nBuilds the app for production to the `build` folder.\\\nIt correctly bundles React in production mode and optimizes the build for the best performance.\nThe build is minified and the filenames include the hashes.\\\nYour app is ready to be deployed!\nSee the section about deployment for more information.\n### `npm run eject`\n**Note: this is a one-way operation. Once you `eject`, you can't go back!**\nIf you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.\nInstead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.\nYou don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.\n## Learn More\nYou can learn more in the Create React App documentation.\nTo learn React, check out the React documentation.\n### Code Splitting\nThis section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting\n### Analyzing the Bundle Size\nThis section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size\n### Making a Progressive Web App\nThis section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app\n### Advanced Configuration\nThis section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration\n### Deployment\nThis section has moved here: https://facebook.github.io/create-react-app/docs/deployment\n### `npm run build` fails to minify\nThis section has moved here: https://facebook.github.",
+    "has_architecture_docs": false,
+    "api_routes_count": 0,
+    "db_migrations_or_schema_count": 0,
+    "mock_data_detected": false,
+    "mock_data_indicators": [],
+    "todo_fixme_count": 1,
+    "boilerplate_detected": false,
+    "boilerplate_indicators": [],
+    "deployment_check": null,
+    "consistency_with_claims": "inconsistent",
+    "consistency_explanation": "Weak evidence: Only 2/8 claimed technologies detected in codebase.",
+    "actual_integrations_found": [
+      "react",
+      "react"
+    ],
+    "readme_claims_unsupported_by_code": [
+      "css",
+      "css",
+      "html",
+      "html",
+      "javascript",
+      "javascript"
+    ],
+    "provenance": [
+      {
+        "claim": "Inspected repository https://github.com/Lwilliams002/Learn2Earn",
+        "evidence_type": "repository",
+        "source": "https://github.com/Lwilliams002/Learn2Earn",
+        "location": "root",
+        "confidence": 1.0,
+        "details": null
+      }
+    ]
+  },
+  "demo_summary": {
+    "has_video_demo": false,
+    "video_platform": "",
+    "video_url": "",
+    "duration_seconds": null,
+    "has_live_deployment": false,
+    "deployment_url": "",
+    "deployment_reachable": null,
+    "has_slide_deck": false,
+    "observations": []
+  },
+  "sponsor_technologies_mentioned": [],
+  "bundle_sha256": "38268fb640f48dd8f4a2dc2787717b7d52a7cb7c52c80ca7aaed12ca838bdca9",
+  "created_at": "2026-09-26T02:11:35.654064Z"
+}

@@ -1,0 +1,129 @@
+{
+  "project_id": "570748",
+  "slug": "ai-voice-music-control",
+  "title": "AI Voice Music Control",
+  "tagline": "I make it easy to control music using your voice. AI try to select the right genre of music depending on what are you saying.",
+  "problem_statement": "",
+  "inspiration": "",
+  "what_it_does": "",
+  "how_it_was_built": "",
+  "challenges": "",
+  "accomplishments": "",
+  "lessons_learned": "",
+  "future_plans": "",
+  "tech_tags": [
+    "css",
+    "css",
+    "html",
+    "html",
+    "javascript",
+    "javascript",
+    "node.js",
+    "node.js"
+  ],
+  "team_size": 1,
+  "repository_metrics": {
+    "repo_url": "https://github.com/HyxerPyth/VoiceMusic",
+    "status": "accessible",
+    "default_branch": "main",
+    "file_count": 10,
+    "approx_loc": 4987,
+    "loc_by_language": {
+      "JavaScript": 4817,
+      "HTML": 40,
+      "CSS": 130
+    },
+    "primary_languages": [
+      "JavaScript",
+      "CSS",
+      "HTML"
+    ],
+    "tech_stack": {
+      "frontend_frameworks": [],
+      "backend_frameworks": [],
+      "databases": [],
+      "ai_ml_libraries": [],
+      "model_providers": [
+        "OpenAI"
+      ],
+      "cloud_devops": [],
+      "third_party_apis": [],
+      "hardware_components": [],
+      "package_dependencies": [
+        "openai"
+      ]
+    },
+    "git_timeline": {
+      "total_commits": 2,
+      "commits_in_window": 2,
+      "first_commit_time": "2023-09-17T14:44:34Z",
+      "last_commit_time": "2023-10-17T16:35:48Z",
+      "commit_timestamps": [
+        "2023-09-17T14:44:34Z",
+        "2023-10-17T16:35:48Z"
+      ],
+      "late_rewrites_detected": false,
+      "deadline_crunch_ratio": 0.0,
+      "final_stage_focus": "squashed",
+      "history_is_squashed_or_minimal": true,
+      "contributor_count": 1,
+      "contributors": [
+        "Roman Loboda"
+      ]
+    },
+    "test_files_count": 0,
+    "test_frameworks": [],
+    "has_ci": false,
+    "ci_configs": [],
+    "has_docker": false,
+    "has_env_template": false,
+    "readme_size_bytes": 0,
+    "readme_excerpt": "",
+    "has_architecture_docs": false,
+    "api_routes_count": 0,
+    "db_migrations_or_schema_count": 0,
+    "mock_data_detected": false,
+    "mock_data_indicators": [],
+    "todo_fixme_count": 0,
+    "boilerplate_detected": false,
+    "boilerplate_indicators": [],
+    "deployment_check": null,
+    "consistency_with_claims": "inconsistent",
+    "consistency_explanation": "Weak evidence: Only 0/8 claimed technologies detected in codebase.",
+    "actual_integrations_found": [],
+    "readme_claims_unsupported_by_code": [
+      "css",
+      "css",
+      "html",
+      "html",
+      "javascript",
+      "javascript",
+      "node.js",
+      "node.js"
+    ],
+    "provenance": [
+      {
+        "claim": "Inspected repository https://github.com/HyxerPyth/VoiceMusic",
+        "evidence_type": "repository",
+        "source": "https://github.com/HyxerPyth/VoiceMusic",
+        "location": "root",
+        "confidence": 1.0,
+        "details": null
+      }
+    ]
+  },
+  "demo_summary": {
+    "has_video_demo": false,
+    "video_platform": "",
+    "video_url": "",
+    "duration_seconds": null,
+    "has_live_deployment": false,
+    "deployment_url": "",
+    "deployment_reachable": null,
+    "has_slide_deck": false,
+    "observations": []
+  },
+  "sponsor_technologies_mentioned": [],
+  "bundle_sha256": "70e0c53ecc8050ff5f7036a68eef7968e39ce6ab71a90309b288fcc47c26ffc1",
+  "created_at": "2026-09-26T02:11:35.672425Z"
+}

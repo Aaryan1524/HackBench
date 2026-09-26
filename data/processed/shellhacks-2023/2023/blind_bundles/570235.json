@@ -1,0 +1,122 @@
+{
+  "project_id": "570235",
+  "slug": "sand-dollar-exchange",
+  "title": "Sand Dollar Exchange",
+  "tagline": "Your risk-free cryptocurrency trading simulator. Learn, test strategies, and stay informed with real-time market data!",
+  "problem_statement": "",
+  "inspiration": "",
+  "what_it_does": "",
+  "how_it_was_built": "",
+  "challenges": "",
+  "accomplishments": "",
+  "lessons_learned": "",
+  "future_plans": "",
+  "tech_tags": [
+    "css",
+    "css",
+    "github",
+    "github",
+    "html",
+    "html",
+    "javascript",
+    "javascript"
+  ],
+  "team_size": 4,
+  "repository_metrics": {
+    "repo_url": "https://github.com/sodachives/SDE.git",
+    "status": "accessible",
+    "default_branch": "main",
+    "file_count": 5,
+    "approx_loc": 457,
+    "loc_by_language": {
+      "HTML": 283,
+      "CSS": 174
+    },
+    "primary_languages": [
+      "HTML",
+      "CSS"
+    ],
+    "tech_stack": {
+      "frontend_frameworks": [],
+      "backend_frameworks": [],
+      "databases": [],
+      "ai_ml_libraries": [],
+      "model_providers": [],
+      "cloud_devops": [],
+      "third_party_apis": [],
+      "hardware_components": [],
+      "package_dependencies": []
+    },
+    "git_timeline": {
+      "total_commits": 1,
+      "commits_in_window": 1,
+      "first_commit_time": "2023-09-17T14:03:22Z",
+      "last_commit_time": "2023-09-17T14:03:22Z",
+      "commit_timestamps": [
+        "2023-09-17T14:03:22Z"
+      ],
+      "late_rewrites_detected": false,
+      "deadline_crunch_ratio": 0.0,
+      "final_stage_focus": "squashed",
+      "history_is_squashed_or_minimal": true,
+      "contributor_count": 1,
+      "contributors": [
+        "Ivy"
+      ]
+    },
+    "test_files_count": 0,
+    "test_frameworks": [],
+    "has_ci": false,
+    "ci_configs": [],
+    "has_docker": false,
+    "has_env_template": false,
+    "readme_size_bytes": 0,
+    "readme_excerpt": "",
+    "has_architecture_docs": false,
+    "api_routes_count": 0,
+    "db_migrations_or_schema_count": 0,
+    "mock_data_detected": false,
+    "mock_data_indicators": [],
+    "todo_fixme_count": 0,
+    "boilerplate_detected": false,
+    "boilerplate_indicators": [],
+    "deployment_check": null,
+    "consistency_with_claims": "inconsistent",
+    "consistency_explanation": "Weak evidence: Only 0/8 claimed technologies detected in codebase.",
+    "actual_integrations_found": [],
+    "readme_claims_unsupported_by_code": [
+      "css",
+      "css",
+      "github",
+      "github",
+      "html",
+      "html",
+      "javascript",
+      "javascript"
+    ],
+    "provenance": [
+      {
+        "claim": "Inspected repository https://github.com/sodachives/SDE.git",
+        "evidence_type": "repository",
+        "source": "https://github.com/sodachives/SDE.git",
+        "location": "root",
+        "confidence": 1.0,
+        "details": null
+      }
+    ]
+  },
+  "demo_summary": {
+    "has_video_demo": false,
+    "video_platform": "",
+    "video_url": "",
+    "duration_seconds": null,
+    "has_live_deployment": false,
+    "deployment_url": "",
+    "deployment_reachable": null,
+    "has_slide_deck": false,
+    "observations": []
+  },
+  "sponsor_technologies_mentioned": [],
+  "bundle_sha256": "90ab6280119f019152423252c7dd571f0348c472207a33c95f62c0e2e72ec41c",
+  "created_at": "2026-09-26T02:11:35.801476Z"
+}

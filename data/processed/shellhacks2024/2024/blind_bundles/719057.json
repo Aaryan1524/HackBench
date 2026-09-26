@@ -1,0 +1,109 @@
+{
+  "project_id": "719057",
+  "slug": "password-generator-python",
+  "title": "password generator-python",
+  "tagline": "made a simple python project where the user tells us how many numbers symbols and letters to be put in the generator",
+  "problem_statement": "",
+  "inspiration": "",
+  "what_it_does": "",
+  "how_it_was_built": "",
+  "challenges": "",
+  "accomplishments": "",
+  "lessons_learned": "",
+  "future_plans": "",
+  "tech_tags": [
+    "python",
+    "python"
+  ],
+  "team_size": 1,
+  "repository_metrics": {
+    "repo_url": "https://github.com/yellowcurryninja/passWordGen-python",
+    "status": "accessible",
+    "default_branch": "main",
+    "file_count": 2,
+    "approx_loc": 29,
+    "loc_by_language": {
+      "Python": 29
+    },
+    "primary_languages": [
+      "Python"
+    ],
+    "tech_stack": {
+      "frontend_frameworks": [],
+      "backend_frameworks": [],
+      "databases": [],
+      "ai_ml_libraries": [],
+      "model_providers": [],
+      "cloud_devops": [],
+      "third_party_apis": [],
+      "hardware_components": [],
+      "package_dependencies": []
+    },
+    "git_timeline": {
+      "total_commits": 2,
+      "commits_in_window": 2,
+      "first_commit_time": "2024-09-28T19:12:55Z",
+      "last_commit_time": "2024-09-28T19:27:39Z",
+      "commit_timestamps": [
+        "2024-09-28T19:12:55Z",
+        "2024-09-28T19:27:39Z"
+      ],
+      "late_rewrites_detected": false,
+      "deadline_crunch_ratio": 0.0,
+      "final_stage_focus": "squashed",
+      "history_is_squashed_or_minimal": true,
+      "contributor_count": 1,
+      "contributors": [
+        "yellowcurryninja"
+      ]
+    },
+    "test_files_count": 0,
+    "test_frameworks": [],
+    "has_ci": false,
+    "ci_configs": [],
+    "has_docker": false,
+    "has_env_template": false,
+    "readme_size_bytes": 20,
+    "readme_excerpt": "# passWordGen-python",
+    "has_architecture_docs": false,
+    "api_routes_count": 0,
+    "db_migrations_or_schema_count": 0,
+    "mock_data_detected": false,
+    "mock_data_indicators": [],
+    "todo_fixme_count": 0,
+    "boilerplate_detected": false,
+    "boilerplate_indicators": [],
+    "deployment_check": null,
+    "consistency_with_claims": "inconsistent",
+    "consistency_explanation": "Weak evidence: Only 0/2 claimed technologies detected in codebase.",
+    "actual_integrations_found": [],
+    "readme_claims_unsupported_by_code": [
+      "python",
+      "python"
+    ],
+    "provenance": [
+      {
+        "claim": "Inspected repository https://github.com/yellowcurryninja/passWordGen-python",
+        "evidence_type": "repository",
+        "source": "https://github.com/yellowcurryninja/passWordGen-python",
+        "location": "root",
+        "confidence": 1.0,
+        "details": null
+      }
+    ]
+  },
+  "demo_summary": {
+    "has_video_demo": false,
+    "video_platform": "",
+    "video_url": "",
+    "duration_seconds": null,
+    "has_live_deployment": false,
+    "deployment_url": "",
+    "deployment_reachable": null,
+    "has_slide_deck": false,
+    "observations": []
+  },
+  "sponsor_technologies_mentioned": [],
+  "bundle_sha256": "239066a37f436b2df5341932db536cb12c78007edc89d6c8a97303973e7099ae",
+  "created_at": "2026-09-26T02:03:23.502294Z"
+}

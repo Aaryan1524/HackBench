@@ -1,0 +1,162 @@
+{
+  "project_id": "570847",
+  "slug": "resumex-ai-latex-resume-maker",
+  "title": "Resumex | AI Latex Resume Maker",
+  "tagline": "Create your latex resumes quickly, on the web, with our GPT-powered compiler!",
+  "problem_statement": "",
+  "inspiration": "",
+  "what_it_does": "",
+  "how_it_was_built": "",
+  "challenges": "",
+  "accomplishments": "",
+  "lessons_learned": "",
+  "future_plans": "",
+  "tech_tags": [
+    "amazon-web-services",
+    "amazon-web-services",
+    "openai",
+    "python",
+    "python",
+    "sveltekit"
+  ],
+  "team_size": 2,
+  "repository_metrics": {
+    "repo_url": "https://github.com/ryanata/resumex",
+    "status": "accessible",
+    "default_branch": "master",
+    "file_count": 35,
+    "approx_loc": 1535,
+    "loc_by_language": {
+      "JavaScript": 1523,
+      "HTML": 12
+    },
+    "primary_languages": [
+      "JavaScript",
+      "HTML"
+    ],
+    "tech_stack": {
+      "frontend_frameworks": [
+        "Svelte",
+        "Vite"
+      ],
+      "backend_frameworks": [],
+      "databases": [],
+      "ai_ml_libraries": [],
+      "model_providers": [],
+      "cloud_devops": [],
+      "third_party_apis": [],
+      "hardware_components": [],
+      "package_dependencies": [
+        "@codemirror/legacy-modes",
+        "@codemirror/merge",
+        "@iconify/svelte",
+        "@sveltejs/adapter-auto",
+        "@sveltejs/kit",
+        "codemirror",
+        "codemirror-extension-inline-suggestion",
+        "svelte",
+        "svelte-local-storage-store",
+        "thememirror",
+        "vite"
+      ]
+    },
+    "git_timeline": {
+      "total_commits": 19,
+      "commits_in_window": 19,
+      "first_commit_time": "2023-09-16T03:24:12Z",
+      "last_commit_time": "2023-09-17T11:52:56Z",
+      "commit_timestamps": [
+        "2023-09-16T03:24:12Z",
+        "2023-09-16T04:52:00Z",
+        "2023-09-16T07:00:41Z",
+        "2023-09-16T08:39:25Z",
+        "2023-09-16T08:59:51Z",
+        "2023-09-16T09:00:08Z",
+        "2023-09-16T09:22:27Z",
+        "2023-09-17T05:45:04Z",
+        "2023-09-17T06:01:40Z",
+        "2023-09-17T06:05:10Z",
+        "2023-09-17T06:29:20Z",
+        "2023-09-17T06:30:09Z",
+        "2023-09-17T06:30:15Z",
+        "2023-09-17T06:48:51Z",
+        "2023-09-17T08:01:57Z",
+        "2023-09-17T08:32:28Z",
+        "2023-09-17T11:27:12Z",
+        "2023-09-17T11:27:16Z",
+        "2023-09-17T11:52:56Z"
+      ],
+      "late_rewrites_detected": false,
+      "deadline_crunch_ratio": 0.63,
+      "final_stage_focus": "features",
+      "history_is_squashed_or_minimal": false,
+      "contributor_count": 2,
+      "contributors": [
+        "ryanata",
+        "Camila Sinelli"
+      ]
+    },
+    "test_files_count": 0,
+    "test_frameworks": [],
+    "has_ci": false,
+    "ci_configs": [],
+    "has_docker": false,
+    "has_env_template": false,
+    "readme_size_bytes": 944,
+    "readme_excerpt": "# create-svelte\nEverything you need to build a Svelte project, powered by `create-svelte`.\n## Creating a project\nIf you're seeing this, you've probably already done this step. Congrats!\n## Developing\nOnce you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:\n## Building\nTo create a production version of your app:\nYou can preview the production build with `npm run preview`.\n> To deploy your app, you may need to install an adapter for your target environment.",
+    "has_architecture_docs": false,
+    "api_routes_count": 0,
+    "db_migrations_or_schema_count": 0,
+    "mock_data_detected": false,
+    "mock_data_indicators": [],
+    "todo_fixme_count": 1,
+    "boilerplate_detected": false,
+    "boilerplate_indicators": [],
+    "deployment_check": {
+      "url": "https://resumex-vert.vercel.app/",
+      "is_reachable": true,
+      "status_code": 200,
+      "response_time_ms": 1508.9,
+      "checked_at": "2026-09-26T02:04:56.268380Z",
+      "deployment_url_status": "reachable",
+      "deployment_verification": "unknown",
+      "verification_evidence": "Server responded (HTTP 200), but no project name was provided to verify content."
+    },
+    "consistency_with_claims": "inconsistent",
+    "consistency_explanation": "Weak evidence: Only 1/6 claimed technologies detected in codebase.",
+    "actual_integrations_found": [
+      "sveltekit"
+    ],
+    "readme_claims_unsupported_by_code": [
+      "amazon-web-services",
+      "amazon-web-services",
+      "openai",
+      "python",
+      "python"
+    ],
+    "provenance": [
+      {
+        "claim": "Inspected repository https://github.com/ryanata/resumex",
+        "evidence_type": "repository",
+        "source": "https://github.com/ryanata/resumex",
+        "location": "root",
+        "confidence": 1.0,
+        "details": null
+      }
+    ]
+  },
+  "demo_summary": {
+    "has_video_demo": true,
+    "video_platform": "youtube",
+    "video_url": "https://www.youtube.com/embed/DVmYuIQ2Wvc?enablejsapi=1&hl=en_US&rel=0&start=&version=3&wmode=transparent",
+    "duration_seconds": null,
+    "has_live_deployment": true,
+    "deployment_url": "https://resumex-vert.vercel.app/",
+    "deployment_reachable": true,
+    "has_slide_deck": false,
+    "observations": []
+  },
+  "sponsor_technologies_mentioned": [],
+  "bundle_sha256": "837cc4e760346172d48fd144a7ef47f64294870a1ff2d47ae1e9bd9036e93ab4",
+  "created_at": "2026-09-26T02:11:35.604176Z"
+}

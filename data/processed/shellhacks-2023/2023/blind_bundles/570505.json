@@ -1,0 +1,166 @@
+{
+  "project_id": "570505",
+  "slug": "cookinghelper",
+  "title": "CookingHelper",
+  "tagline": "A web service for recipe storage and meal planning.",
+  "problem_statement": "",
+  "inspiration": "",
+  "what_it_does": "",
+  "how_it_was_built": "",
+  "challenges": "",
+  "accomplishments": "",
+  "lessons_learned": "",
+  "future_plans": "",
+  "tech_tags": [
+    "django",
+    "django",
+    "graphql",
+    "postgresql",
+    "postgresql",
+    "react",
+    "react"
+  ],
+  "team_size": 2,
+  "repository_metrics": {
+    "repo_url": "https://github.com/cass-dlcm/shellhacks2023",
+    "status": "accessible",
+    "default_branch": "main",
+    "file_count": 60,
+    "approx_loc": 1019,
+    "loc_by_language": {
+      "Python": 753,
+      "HTML": 13,
+      "JavaScript": 187,
+      "CSS": 66
+    },
+    "primary_languages": [
+      "Python",
+      "JavaScript",
+      "CSS",
+      "HTML"
+    ],
+    "tech_stack": {
+      "frontend_frameworks": [
+        "Vite",
+        "React"
+      ],
+      "backend_frameworks": [
+        "Django"
+      ],
+      "databases": [
+        "PostgreSQL"
+      ],
+      "ai_ml_libraries": [],
+      "model_providers": [],
+      "cloud_devops": [],
+      "third_party_apis": [],
+      "hardware_components": [],
+      "package_dependencies": [
+        "aniso8601",
+        "asgiref",
+        "django",
+        "graphene",
+        "graphene-django",
+        "graphql-core",
+        "graphql-relay",
+        "promise",
+        "psycopg",
+        "psycopg-binary",
+        "react",
+        "six",
+        "sqlparse",
+        "text-unidecode",
+        "typing_extensions",
+        "vite"
+      ]
+    },
+    "git_timeline": {
+      "total_commits": 18,
+      "commits_in_window": 18,
+      "first_commit_time": "2023-09-16T03:22:58Z",
+      "last_commit_time": "2023-09-17T12:59:58Z",
+      "commit_timestamps": [
+        "2023-09-16T03:22:58Z",
+        "2023-09-16T04:03:48Z",
+        "2023-09-16T04:41:15Z",
+        "2023-09-16T11:19:47Z",
+        "2023-09-16T11:26:20Z",
+        "2023-09-16T15:45:03Z",
+        "2023-09-16T17:10:08Z",
+        "2023-09-16T18:00:43Z",
+        "2023-09-16T19:44:04Z",
+        "2023-09-16T19:53:21Z",
+        "2023-09-16T20:06:21Z",
+        "2023-09-16T20:26:18Z",
+        "2023-09-16T21:54:45Z",
+        "2023-09-16T22:45:03Z",
+        "2023-09-16T23:54:43Z",
+        "2023-09-17T00:02:03Z",
+        "2023-09-17T02:07:42Z",
+        "2023-09-17T12:59:58Z"
+      ],
+      "late_rewrites_detected": false,
+      "deadline_crunch_ratio": 0.06,
+      "final_stage_focus": "docs",
+      "history_is_squashed_or_minimal": false,
+      "contributor_count": 2,
+      "contributors": [
+        "Cassandra de la Cruz-Munoz",
+        "voidplanet"
+      ]
+    },
+    "test_files_count": 0,
+    "test_frameworks": [],
+    "has_ci": false,
+    "ci_configs": [],
+    "has_docker": false,
+    "has_env_template": false,
+    "readme_size_bytes": 1592,
+    "readme_excerpt": "# CookingHelper\nCreated for ShellHacks 2023.\n## Inspiration\nCass was inspired to make this project by a 2023 LibrePlanet virtual talk fae attended titled \"The Immortal Cookbook\".\nThe idea for this project was to make a software that could take in all conventional forms of recipes, store them, allow users to share them, and to create combined ingredient shopping lists from multiple recipes.\n## What it does\nIn it's current state, we have a front-end and a back-end that don't yet communicate.\nThe back-end does serve up a GraphQL API, but the front-end does not consume that API.\n## How we built it\nCass primarily built the back-end, bringing faer internship experience of working with Django and GraphQL.\nEveryone except Cass worked on the front-end mockups.\nKameron made significant process on the front-end implementation.\n## Challenges we ran into\nWe primarily ran into time and human energy constraints.\nHackathons, including ShellHacks, feel simultaneously short and long; short in that there's never enough time for everything, and long in that one might want to leave early because they're just too tired.\n## Accomplishments that we're proud of\nThe back-end's GraphQL API works quite nicely.\n## What we learned\nCass: I was reminded of something very important for me: that I need a significant amount of sleep to be a good developer.\n## What's next for CookingHelper\nAuthentication is an important thing to add.\nRight now, it exists as a single user / everything shared service.\nAnyone with access to the service's API can preform any queries or mutations they want.",
+    "has_architecture_docs": false,
+    "api_routes_count": 0,
+    "db_migrations_or_schema_count": 1,
+    "mock_data_detected": false,
+    "mock_data_indicators": [],
+    "todo_fixme_count": 0,
+    "boilerplate_detected": false,
+    "boilerplate_indicators": [],
+    "deployment_check": null,
+    "consistency_with_claims": "consistent",
+    "consistency_explanation": "Strong evidence: 7/7 claimed technologies verified in codebase.",
+    "actual_integrations_found": [
+      "django",
+      "django",
+      "graphql",
+      "postgresql",
+      "postgresql",
+      "react",
+      "react"
+    ],
+    "readme_claims_unsupported_by_code": [],
+    "provenance": [
+      {
+        "claim": "Inspected repository https://github.com/cass-dlcm/shellhacks2023",
+        "evidence_type": "repository",
+        "source": "https://github.com/cass-dlcm/shellhacks2023",
+        "location": "root",
+        "confidence": 1.0,
+        "details": null
+      }
+    ]
+  },
+  "demo_summary": {
+    "has_video_demo": false,
+    "video_platform": "",
+    "video_url": "",
+    "duration_seconds": null,
+    "has_live_deployment": false,
+    "deployment_url": "",
+    "deployment_reachable": null,
+    "has_slide_deck": false,
+    "observations": []
+  },
+  "sponsor_technologies_mentioned": [],
+  "bundle_sha256": "d9c4587be0a9955d641d6673f1cea96665138372c6ebced1582d97f7ecf0af60",
+  "created_at": "2026-09-26T02:11:35.835430Z"
+}

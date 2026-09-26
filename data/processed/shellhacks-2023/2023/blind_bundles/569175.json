@@ -1,0 +1,154 @@
+{
+  "project_id": "569175",
+  "slug": "minesweeper-llm",
+  "title": "Minesweeper-LLM",
+  "tagline": "An AI-driven NPC with Visual Awareness in Minesweeper - reacts and strategizes based on the current state of the Game Grid.",
+  "problem_statement": "",
+  "inspiration": "",
+  "what_it_does": "",
+  "how_it_was_built": "",
+  "challenges": "",
+  "accomplishments": "",
+  "lessons_learned": "",
+  "future_plans": "",
+  "tech_tags": [
+    "github",
+    "github",
+    "llm",
+    "multi-threading",
+    "numpy",
+    "numpy",
+    "openai",
+    "opencv",
+    "opencv",
+    "prompt-engineering",
+    "python",
+    "python",
+    "tkinter"
+  ],
+  "team_size": 4,
+  "repository_metrics": {
+    "repo_url": "https://github.com/GowthamGottimukkala/minesweeper-llm",
+    "status": "accessible",
+    "default_branch": "main",
+    "file_count": 8,
+    "approx_loc": 568,
+    "loc_by_language": {
+      "Python": 568
+    },
+    "primary_languages": [
+      "Python"
+    ],
+    "tech_stack": {
+      "frontend_frameworks": [],
+      "backend_frameworks": [
+        "Flask"
+      ],
+      "databases": [],
+      "ai_ml_libraries": [],
+      "model_providers": [
+        "OpenAI"
+      ],
+      "cloud_devops": [],
+      "third_party_apis": [],
+      "hardware_components": [],
+      "package_dependencies": [
+        "flask",
+        "openai"
+      ]
+    },
+    "git_timeline": {
+      "total_commits": 14,
+      "commits_in_window": 14,
+      "first_commit_time": "2023-09-17T00:36:46Z",
+      "last_commit_time": "2023-09-17T15:00:38Z",
+      "commit_timestamps": [
+        "2023-09-17T00:36:46Z",
+        "2023-09-17T00:38:42Z",
+        "2023-09-17T00:39:01Z",
+        "2023-09-17T00:39:44Z",
+        "2023-09-17T00:46:36Z",
+        "2023-09-17T00:57:27Z",
+        "2023-09-17T02:35:46Z",
+        "2023-09-17T03:39:07Z",
+        "2023-09-17T07:30:46Z",
+        "2023-09-17T07:32:43Z",
+        "2023-09-17T14:41:31Z",
+        "2023-09-17T14:46:27Z",
+        "2023-09-17T14:59:36Z",
+        "2023-09-17T15:00:38Z"
+      ],
+      "late_rewrites_detected": false,
+      "deadline_crunch_ratio": 0.29,
+      "final_stage_focus": "docs",
+      "history_is_squashed_or_minimal": false,
+      "contributor_count": 4,
+      "contributors": [
+        "GowthamGottimukkala",
+        "VulliVarsha",
+        "akshayreddypulla",
+        "Shanmukha Anurag Sajja"
+      ]
+    },
+    "test_files_count": 0,
+    "test_frameworks": [],
+    "has_ci": false,
+    "ci_configs": [],
+    "has_docker": false,
+    "has_env_template": false,
+    "readme_size_bytes": 3202,
+    "readme_excerpt": "# Minesweeper-LLM\nShellHacks 2023 Hackathon Sponsor Challenge from Toren AI\n## What it does\nOur solution introduces an AI-powered NPC into a 2D game (Minesweeper) that dynamically responds to game events. By utilizing image processing and OCR, we extract grid information from in-game images, enabling the AI model to interpret and interact with the game grid effectively, providing informative and engaging outputs to the player. The outputs are then fed back and played by the NPC in the game.\n## How we built it\nWe built the solution by integrating AI into the Minesweeper game, instructing a language model to interpret grid inputs. Image processing, OCR, and OpenCV were employed to extract and denoise grid information from screenshots, allowing the model to generate responsive outputs, effectively using visual cues in gameplay.\n## Challenges we ran into\n- **Dynamic UI Implementation**:\n- Developing a dynamic user interface that effectively interacts with the game while seamlessly integrating multi-threading functionality with LLM for smooth execution.\n- **Optimizing Language Model Prompts**:\n- Crafting an appropriate prompt for the language model to ensure accurate and meaningful responses, involving significant experimentation and research into prompt engineering based on various papers and resources.\n- **Accurate Text Extraction from Images**:\n- Facing difficulties in precise text extraction from images using the language model directly, prompting the need for denoising images and leveraging OCR techniques to enhance text extraction accuracy from the grid.\n## Accomplishments that we're proud of\n- **Seamless Integration of AI NPC**:\n- Successful integration of an AI-driven NPC into Minesweeper, enabling intuitive interactions with the game world.\n- **Efficient Grid Information Processing**:\n- Developing an efficient algorithm that accurately extracts grid information from in-game images using OCR and denoising techniques, facilitating precise responses from the language model based on the extracted grid data.\n## What we learned\n- **Integrating and using LLMs to play games**:\n- We mastered the art of integrating AI seamlessly into games, empowering NPCs to dynamically react to game dynamics revolutionizing player immersion.\n- **Image Processing Expertise**:\n- Delving into image processing intricacies, particularly denoising and OCR, we honed skills essential for precise data extraction from in-game images, amplifying our understanding of AI's role and potenti",
+    "has_architecture_docs": false,
+    "api_routes_count": 0,
+    "db_migrations_or_schema_count": 0,
+    "mock_data_detected": false,
+    "mock_data_indicators": [],
+    "todo_fixme_count": 0,
+    "boilerplate_detected": false,
+    "boilerplate_indicators": [],
+    "deployment_check": null,
+    "consistency_with_claims": "inconsistent",
+    "consistency_explanation": "Weak evidence: Only 1/13 claimed technologies detected in codebase.",
+    "actual_integrations_found": [
+      "openai"
+    ],
+    "readme_claims_unsupported_by_code": [
+      "github",
+      "github",
+      "llm",
+      "multi-threading",
+      "numpy",
+      "numpy",
+      "opencv",
+      "opencv",
+      "prompt-engineering",
+      "python",
+      "python",
+      "tkinter"
+    ],
+    "provenance": [
+      {
+        "claim": "Inspected repository https://github.com/GowthamGottimukkala/minesweeper-llm",
+        "evidence_type": "repository",
+        "source": "https://github.com/GowthamGottimukkala/minesweeper-llm",
+        "location": "root",
+        "confidence": 1.0,
+        "details": null
+      }
+    ]
+  },
+  "demo_summary": {
+    "has_video_demo": false,
+    "video_platform": "",
+    "video_url": "",
+    "duration_seconds": null,
+    "has_live_deployment": false,
+    "deployment_url": "",
+    "deployment_reachable": null,
+    "has_slide_deck": false,
+    "observations": []
+  },
+  "sponsor_technologies_mentioned": [],
+  "bundle_sha256": "280afacdbf5d647e6739575767a3fa2c5d3a812f297cb199ef1a7cee5c5f038d",
+  "created_at": "2026-09-26T02:11:35.794877Z"
+}

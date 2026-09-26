@@ -1,0 +1,40 @@
+{
+  "project_id": "720317",
+  "slug": "shifty-connections",
+  "title": "Shifty Connections",
+  "tagline": "Connect them all",
+  "problem_statement": "",
+  "inspiration": "",
+  "what_it_does": "",
+  "how_it_was_built": "",
+  "challenges": "",
+  "accomplishments": "",
+  "lessons_learned": "",
+  "future_plans": "",
+  "tech_tags": [
+    "css",
+    "css",
+    "django",
+    "django",
+    "html",
+    "html",
+    "javascript",
+    "javascript"
+  ],
+  "team_size": 1,
+  "repository_metrics": null,
+  "demo_summary": {
+    "has_video_demo": false,
+    "video_platform": "",
+    "video_url": "",
+    "duration_seconds": null,
+    "has_live_deployment": false,
+    "deployment_url": "",
+    "deployment_reachable": null,
+    "has_slide_deck": false,
+    "observations": []
+  },
+  "sponsor_technologies_mentioned": [],
+  "bundle_sha256": "e2a52eeee74b1fefbeb05c67223ef64aa091d76a3ad99f5c018d0d50d6f4a99d",
+  "created_at": "2026-09-26T02:03:23.248446Z"
+}

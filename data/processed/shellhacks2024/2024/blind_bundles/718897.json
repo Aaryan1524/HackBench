@@ -1,0 +1,129 @@
+{
+  "project_id": "718897",
+  "slug": "latinconnect",
+  "title": "Latinnect",
+  "tagline": "Latinnect is a digital marketplace that connects Latine vendors with customers, allowing vendors to easily list and manage their products, and customers to browse, filter, and purchase goods.",
+  "problem_statement": "",
+  "inspiration": "",
+  "what_it_does": "",
+  "how_it_was_built": "",
+  "challenges": "",
+  "accomplishments": "",
+  "lessons_learned": "",
+  "future_plans": "",
+  "tech_tags": [
+    "supabase",
+    "swift",
+    "swift",
+    "swiftui"
+  ],
+  "team_size": 1,
+  "repository_metrics": {
+    "repo_url": "https://github.com/hlee18lee46/shellhacks",
+    "status": "accessible",
+    "default_branch": "main",
+    "file_count": 21,
+    "approx_loc": 957,
+    "loc_by_language": {
+      "Swift": 957
+    },
+    "primary_languages": [
+      "Swift"
+    ],
+    "tech_stack": {
+      "frontend_frameworks": [],
+      "backend_frameworks": [],
+      "databases": [],
+      "ai_ml_libraries": [],
+      "model_providers": [],
+      "cloud_devops": [],
+      "third_party_apis": [],
+      "hardware_components": [],
+      "package_dependencies": []
+    },
+    "git_timeline": {
+      "total_commits": 18,
+      "commits_in_window": 18,
+      "first_commit_time": "2024-09-29T00:14:42Z",
+      "last_commit_time": "2024-12-18T13:42:33Z",
+      "commit_timestamps": [
+        "2024-09-29T00:14:42Z",
+        "2024-09-29T00:16:18Z",
+        "2024-09-29T00:27:21Z",
+        "2024-09-29T01:17:04Z",
+        "2024-09-29T04:06:23Z",
+        "2024-09-29T08:51:27Z",
+        "2024-09-29T10:50:53Z",
+        "2024-09-29T11:46:11Z",
+        "2024-09-29T11:57:44Z",
+        "2024-09-29T12:47:21Z",
+        "2024-09-29T14:41:35Z",
+        "2024-09-29T14:46:48Z",
+        "2024-09-29T14:53:14Z",
+        "2024-09-29T14:53:41Z",
+        "2024-09-29T14:54:33Z",
+        "2024-09-29T14:54:49Z",
+        "2024-09-29T14:55:32Z",
+        "2024-12-18T13:42:33Z"
+      ],
+      "late_rewrites_detected": false,
+      "deadline_crunch_ratio": 0.06,
+      "final_stage_focus": "docs",
+      "history_is_squashed_or_minimal": false,
+      "contributor_count": 1,
+      "contributors": [
+        "Han Lee"
+      ]
+    },
+    "test_files_count": 0,
+    "test_frameworks": [],
+    "has_ci": false,
+    "ci_configs": [],
+    "has_docker": false,
+    "has_env_template": false,
+    "readme_size_bytes": 3497,
+    "readme_excerpt": "# Latinnect\n## Features\nLatinnect is a mobile iOS application of a digital marketplace that connects Latine vendors with customers, allowing vendors to easily list and manage their products, and customers to browse, filter, and purchase goods. Users can filter products by industry (e.g., Food, Construction, Others) and see detailed information such as item name, quantity, supply, and price. Vendors can easily upload product details directly from the app, and customers can discover Latine-owned businesses.\n## Technologies Used\niOS, Swift, SwiftUI, Supabase, Xcode\n## Inspiration\nThe inspiration for Latinnect came from our passion to support small businesses in the Latine community by giving them a platform to connect with customers and other vendors. We noticed a gap in the digital marketplace, where many small, local Latine vendors struggle to showcase their products and reach broader audiences. We wanted to create a solution that empowers these businesses and celebrates Latine culture.\n## What it does\nLatinnect is a digital marketplace that connects Latine vendors with customers, allowing vendors to easily list and manage their products, and customers to browse, filter, and purchase goods. Users can filter products by industry (e.g., Food, Construction, Others) and see detailed information such as item name, quantity, supply, and price. Vendors can easily upload product details directly from the app, and customers can discover Latine-owned businesses.\n## How we built it\nSwiftUI for the iOS front-end, creating a user-friendly and responsive interface.\nSupabase as the backend database to manage user data and product listings, leveraging its easy integration with Swift for real-time updates and data storage.\nGoogle Sign-In for user authentication, allowing vendors to log in securely and manage their listings.\nChallenges we ran into\nOne of the main challenges was handling real-time data syncing between the front-end and the Supabase backend. Ensuring that the app fetched the correct data based on user selections and updated the UI smoothly was tricky, especially when dealing with large datasets. We also faced some technical challenges with state management in SwiftUI, where the UI would not always update properly after data was fetched.\n## Accomplishments that we're proud of\nWe’re proud of building a fully functional marketplace app that not only empowers small Latine businesses but also celebrates their culture. The integration of filtering by industry and re",
+    "has_architecture_docs": false,
+    "api_routes_count": 0,
+    "db_migrations_or_schema_count": 0,
+    "mock_data_detected": false,
+    "mock_data_indicators": [],
+    "todo_fixme_count": 0,
+    "boilerplate_detected": false,
+    "boilerplate_indicators": [],
+    "deployment_check": null,
+    "consistency_with_claims": "inconsistent",
+    "consistency_explanation": "Weak evidence: Only 0/4 claimed technologies detected in codebase.",
+    "actual_integrations_found": [],
+    "readme_claims_unsupported_by_code": [
+      "supabase",
+      "swift",
+      "swift",
+      "swiftui"
+    ],
+    "provenance": [
+      {
+        "claim": "Inspected repository https://github.com/hlee18lee46/shellhacks",
+        "evidence_type": "repository",
+        "source": "https://github.com/hlee18lee46/shellhacks",
+        "location": "root",
+        "confidence": 1.0,
+        "details": null
+      }
+    ]
+  },
+  "demo_summary": {
+    "has_video_demo": false,
+    "video_platform": "",
+    "video_url": "",
+    "duration_seconds": null,
+    "has_live_deployment": false,
+    "deployment_url": "",
+    "deployment_reachable": null,
+    "has_slide_deck": false,
+    "observations": []
+  },
+  "sponsor_technologies_mentioned": [],
+  "bundle_sha256": "43d4b36146c22c8940d5840cadda329535698c121494baebd4b4d9293536517d",
+  "created_at": "2026-09-26T02:03:23.035885Z"
+}

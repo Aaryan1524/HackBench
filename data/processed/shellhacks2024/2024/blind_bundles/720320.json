@@ -1,0 +1,38 @@
+{
+  "project_id": "720320",
+  "slug": "divercial",
+  "title": "Divercial",
+  "tagline": "Divercial is a online website giving TLDR information on how to manage your finances in college, specifically for Women In Computer Science and minority students.",
+  "problem_statement": "",
+  "inspiration": "",
+  "what_it_does": "",
+  "how_it_was_built": "",
+  "challenges": "",
+  "accomplishments": "",
+  "lessons_learned": "",
+  "future_plans": "",
+  "tech_tags": [
+    "css",
+    "css",
+    "html",
+    "html",
+    "javascript",
+    "javascript"
+  ],
+  "team_size": 2,
+  "repository_metrics": null,
+  "demo_summary": {
+    "has_video_demo": false,
+    "video_platform": "",
+    "video_url": "",
+    "duration_seconds": null,
+    "has_live_deployment": false,
+    "deployment_url": "",
+    "deployment_reachable": null,
+    "has_slide_deck": false,
+    "observations": []
+  },
+  "sponsor_technologies_mentioned": [],
+  "bundle_sha256": "f871d3e5f3d60f0904cc4f1bf084305efaca43f95b24e20242381d7fecb17c8a",
+  "created_at": "2026-09-26T02:03:23.298931Z"
+}

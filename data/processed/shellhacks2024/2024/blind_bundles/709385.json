@@ -1,0 +1,141 @@
+{
+  "project_id": "709385",
+  "slug": "aviationhub-9cz8v6",
+  "title": "AviationHub",
+  "tagline": "Your go to pilot resource tailored for aspiring pilots and aviation enthusiasts!",
+  "problem_statement": "",
+  "inspiration": "",
+  "what_it_does": "",
+  "how_it_was_built": "",
+  "challenges": "",
+  "accomplishments": "",
+  "lessons_learned": "",
+  "future_plans": "",
+  "tech_tags": [
+    "css",
+    "css",
+    "flask",
+    "flask",
+    "html",
+    "html",
+    "javascript",
+    "javascript",
+    "python",
+    "python"
+  ],
+  "team_size": 1,
+  "repository_metrics": {
+    "repo_url": "https://github.com/pranitha05/AviationHub",
+    "status": "accessible",
+    "default_branch": "main",
+    "file_count": 27,
+    "approx_loc": 2777,
+    "loc_by_language": {
+      "Python": 168,
+      "HTML": 2609
+    },
+    "primary_languages": [
+      "HTML",
+      "Python"
+    ],
+    "tech_stack": {
+      "frontend_frameworks": [],
+      "backend_frameworks": [
+        "Flask"
+      ],
+      "databases": [],
+      "ai_ml_libraries": [],
+      "model_providers": [],
+      "cloud_devops": [],
+      "third_party_apis": [],
+      "hardware_components": [],
+      "package_dependencies": [
+        "flask"
+      ]
+    },
+    "git_timeline": {
+      "total_commits": 10,
+      "commits_in_window": 10,
+      "first_commit_time": "2024-09-08T09:51:35Z",
+      "last_commit_time": "2024-09-08T11:22:15Z",
+      "commit_timestamps": [
+        "2024-09-08T09:51:35Z",
+        "2024-09-08T09:59:28Z",
+        "2024-09-08T10:06:32Z",
+        "2024-09-08T10:20:38Z",
+        "2024-09-08T10:21:32Z",
+        "2024-09-08T10:37:21Z",
+        "2024-09-08T10:51:28Z",
+        "2024-09-08T10:53:04Z",
+        "2024-09-08T10:53:41Z",
+        "2024-09-08T11:22:15Z"
+      ],
+      "late_rewrites_detected": false,
+      "deadline_crunch_ratio": 0.1,
+      "final_stage_focus": "docs",
+      "history_is_squashed_or_minimal": false,
+      "contributor_count": 2,
+      "contributors": [
+        "Pranitha0512",
+        "Pranitha"
+      ]
+    },
+    "test_files_count": 0,
+    "test_frameworks": [],
+    "has_ci": false,
+    "ci_configs": [],
+    "has_docker": false,
+    "has_env_template": false,
+    "readme_size_bytes": 2821,
+    "readme_excerpt": "# AviationHub\n**AviationHub** is an all-in-one resource for aspiring pilots, offering features such as a \"How to Become a Pilot\" guide, DGCA Resources, a Flight Simulator, an AI Chatbot, Flying Schools sorted by country, and a network of pilot contacts. It aims to address common challenges faced by aviation enthusiasts and provide valuable information in a centralized platform.\n## Features\n- **How to Become a Pilot**: Detailed guidance on the steps to start a career in aviation.\n- **DGCA Resources**: Access to resources and regulations from the Directorate General of Civil Aviation (DGCA).\n- **Flight Simulator**: An interactive flight simulator to practice flying skills.\n- **AI Chatbot**: A chatbot to answer aviation-related queries and provide assistance.\n- **Flying Schools**: A directory of flying schools organized by country.\n- **Pilot Contacts**: A network of contacts in the aviation industry.\n## Installation\nTo run AviationHub locally, follow these steps:\n1. **Clone the Repository:**\n2. **Navigate to the Project Directory:**\n3. **Set Up the Backend:**\nEnsure you have Python installed. Create a virtual environment and install the required dependencies:\n4. **Run the Flask Application:**\n5. **Open the Web Application:**\nOpen your browser and navigate to `http://localhost:5000`.\n## Usage\n- **Homepage**: Access the main features and navigate through the different sections of the application.\n- **Chatbot**: Use the AI Chatbot to ask aviation-related questions and receive answers.\n- **Flight Simulator**: Interact with the flight simulator to practice flying.\n- **Resources**: Explore the DGCA resources and the guide on becoming a pilot.\n- **Flying Schools**: Find flying schools in your country and contact them for more information.\n## Contributing\nWe welcome contributions to enhance the AviationHub project. If you'd like to contribute:\n1. **Fork the Repository**\n2. **Create a New Branch**\n3. **Make Your Changes**\n4. **Commit Your Changes**\n5. **Push to Your Fork**\n6. **Create a Pull Request**\nPlease ensure your code follows the project's style guidelines and include appropriate tests for your changes.\n## License\nThis project is licensed under the MIT License - see the LICENSE file for details.\n## Contact\nFor questions or feedback, please contact us at your-email@example.com.\n**AviationHub** - A comprehensive resource for aspiring pilots and aviation enthusiasts. Happy flying!",
+    "has_architecture_docs": false,
+    "api_routes_count": 0,
+    "db_migrations_or_schema_count": 0,
+    "mock_data_detected": false,
+    "mock_data_indicators": [],
+    "todo_fixme_count": 0,
+    "boilerplate_detected": false,
+    "boilerplate_indicators": [],
+    "deployment_check": null,
+    "consistency_with_claims": "inconsistent",
+    "consistency_explanation": "Weak evidence: Only 2/10 claimed technologies detected in codebase.",
+    "actual_integrations_found": [
+      "flask",
+      "flask"
+    ],
+    "readme_claims_unsupported_by_code": [
+      "css",
+      "css",
+      "html",
+      "html",
+      "javascript",
+      "javascript",
+      "python",
+      "python"
+    ],
+    "provenance": [
+      {
+        "claim": "Inspected repository https://github.com/pranitha05/AviationHub",
+        "evidence_type": "repository",
+        "source": "https://github.com/pranitha05/AviationHub",
+        "location": "root",
+        "confidence": 1.0,
+        "details": null
+      }
+    ]
+  },
+  "demo_summary": {
+    "has_video_demo": true,
+    "video_platform": "youtube",
+    "video_url": "https://www.youtube.com/embed/1YSka-iUWUQ?enablejsapi=1&hl=en_US&rel=0&start=&version=3&wmode=transparent",
+    "duration_seconds": null,
+    "has_live_deployment": false,
+    "deployment_url": "",
+    "deployment_reachable": null,
+    "has_slide_deck": false,
+    "observations": []
+  },
+  "sponsor_technologies_mentioned": [],
+  "bundle_sha256": "8555b65cb8eb34e02145b10cb2a6a7ba614e30ef204b36ef0796bb429116cc96",
+  "created_at": "2026-09-26T02:03:23.342166Z"
+}

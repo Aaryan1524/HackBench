@@ -1,0 +1,130 @@
+{
+  "project_id": "720708",
+  "slug": "stock-analyzer-vtne4u",
+  "title": "Stock Analyzer",
+  "tagline": "Analyzes stocks using machine learning",
+  "problem_statement": "",
+  "inspiration": "",
+  "what_it_does": "",
+  "how_it_was_built": "",
+  "challenges": "",
+  "accomplishments": "",
+  "lessons_learned": "",
+  "future_plans": "",
+  "tech_tags": [
+    "javascript",
+    "javascript",
+    "python",
+    "python"
+  ],
+  "team_size": 4,
+  "repository_metrics": {
+    "repo_url": "https://github.com/aulindoraiyan/StockPredictor",
+    "status": "accessible",
+    "default_branch": "main",
+    "file_count": 29,
+    "approx_loc": 1723,
+    "loc_by_language": {
+      "CSS": 397,
+      "TypeScript": 29,
+      "Python": 754,
+      "JavaScript": 543
+    },
+    "primary_languages": [
+      "Python",
+      "JavaScript",
+      "CSS",
+      "TypeScript"
+    ],
+    "tech_stack": {
+      "frontend_frameworks": [
+        "React"
+      ],
+      "backend_frameworks": [],
+      "databases": [],
+      "ai_ml_libraries": [
+        "Scikit-Learn",
+        "TensorFlow"
+      ],
+      "model_providers": [
+        "OpenAI"
+      ],
+      "cloud_devops": [],
+      "third_party_apis": [],
+      "hardware_components": [],
+      "package_dependencies": [
+        "openai",
+        "react",
+        "sklearn",
+        "tensorflow"
+      ]
+    },
+    "git_timeline": {
+      "total_commits": 1,
+      "commits_in_window": 1,
+      "first_commit_time": "2024-09-29T15:23:00Z",
+      "last_commit_time": "2024-09-29T15:23:00Z",
+      "commit_timestamps": [
+        "2024-09-29T15:23:00Z"
+      ],
+      "late_rewrites_detected": false,
+      "deadline_crunch_ratio": 0.0,
+      "final_stage_focus": "squashed",
+      "history_is_squashed_or_minimal": true,
+      "contributor_count": 1,
+      "contributors": [
+        "Raiyan Mahfuz Aulindo"
+      ]
+    },
+    "test_files_count": 0,
+    "test_frameworks": [],
+    "has_ci": false,
+    "ci_configs": [],
+    "has_docker": false,
+    "has_env_template": false,
+    "readme_size_bytes": 0,
+    "readme_excerpt": "",
+    "has_architecture_docs": false,
+    "api_routes_count": 0,
+    "db_migrations_or_schema_count": 0,
+    "mock_data_detected": false,
+    "mock_data_indicators": [],
+    "todo_fixme_count": 0,
+    "boilerplate_detected": false,
+    "boilerplate_indicators": [],
+    "deployment_check": null,
+    "consistency_with_claims": "inconsistent",
+    "consistency_explanation": "Weak evidence: Only 0/4 claimed technologies detected in codebase.",
+    "actual_integrations_found": [],
+    "readme_claims_unsupported_by_code": [
+      "javascript",
+      "javascript",
+      "python",
+      "python"
+    ],
+    "provenance": [
+      {
+        "claim": "Inspected repository https://github.com/aulindoraiyan/StockPredictor",
+        "evidence_type": "repository",
+        "source": "https://github.com/aulindoraiyan/StockPredictor",
+        "location": "root",
+        "confidence": 1.0,
+        "details": null
+      }
+    ]
+  },
+  "demo_summary": {
+    "has_video_demo": false,
+    "video_platform": "",
+    "video_url": "",
+    "duration_seconds": null,
+    "has_live_deployment": false,
+    "deployment_url": "",
+    "deployment_reachable": null,
+    "has_slide_deck": false,
+    "observations": []
+  },
+  "sponsor_technologies_mentioned": [],
+  "bundle_sha256": "31a62c6a8a1c4c3d4ba9f5fecfbbb2030099d78dcf4c41cb1ef5b3964beff47d",
+  "created_at": "2026-09-26T02:03:23.060602Z"
+}

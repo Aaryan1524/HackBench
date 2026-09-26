@@ -1,0 +1,184 @@
+{
+  "project_id": "718985",
+  "slug": "hertechpath",
+  "title": "HerTechPath",
+  "tagline": "Empowering Women Innovators to Discover Their Journey in Tech!",
+  "problem_statement": "",
+  "inspiration": "",
+  "what_it_does": "",
+  "how_it_was_built": "",
+  "challenges": "",
+  "accomplishments": "",
+  "lessons_learned": "",
+  "future_plans": "",
+  "tech_tags": [
+    "css",
+    "css",
+    "express.js",
+    "express.js",
+    "gemini-api",
+    "git",
+    "git",
+    "node.js",
+    "node.js",
+    "postgresql",
+    "postgresql",
+    "react",
+    "react",
+    "vite"
+  ],
+  "team_size": 4,
+  "repository_metrics": {
+    "repo_url": "https://github.com/carolinhr/shellhacks2024",
+    "status": "accessible",
+    "default_branch": "main",
+    "file_count": 68,
+    "approx_loc": 1519,
+    "loc_by_language": {
+      "JavaScript": 1122,
+      "SQL": 85,
+      "HTML": 21,
+      "CSS": 291
+    },
+    "primary_languages": [
+      "JavaScript",
+      "CSS",
+      "SQL",
+      "HTML"
+    ],
+    "tech_stack": {
+      "frontend_frameworks": [
+        "Vite",
+        "React"
+      ],
+      "backend_frameworks": [
+        "Express.js"
+      ],
+      "databases": [
+        "Prisma"
+      ],
+      "ai_ml_libraries": [],
+      "model_providers": [],
+      "cloud_devops": [],
+      "third_party_apis": [],
+      "hardware_components": [],
+      "package_dependencies": [
+        "cors",
+        "express",
+        "morgan",
+        "prisma",
+        "react",
+        "vite"
+      ]
+    },
+    "git_timeline": {
+      "total_commits": 29,
+      "commits_in_window": 29,
+      "first_commit_time": "2024-09-28T03:02:05Z",
+      "last_commit_time": "2024-09-29T14:48:02Z",
+      "commit_timestamps": [
+        "2024-09-28T03:02:05Z",
+        "2024-09-28T03:07:18Z",
+        "2024-09-28T04:28:44Z",
+        "2024-09-28T04:32:13Z",
+        "2024-09-28T04:32:39Z",
+        "2024-09-28T04:46:53Z",
+        "2024-09-28T04:48:50Z",
+        "2024-09-28T15:01:40Z",
+        "2024-09-28T16:22:32Z",
+        "2024-09-28T16:34:35Z",
+        "2024-09-28T16:36:45Z",
+        "2024-09-28T17:56:07Z",
+        "2024-09-28T19:10:10Z",
+        "2024-09-28T20:18:01Z",
+        "2024-09-28T22:51:33Z",
+        "2024-09-28T23:36:20Z",
+        "2024-09-29T01:14:27Z",
+        "2024-09-29T01:25:54Z",
+        "2024-09-29T01:32:14Z",
+        "2024-09-29T01:45:02Z",
+        "2024-09-29T02:31:47Z",
+        "2024-09-29T03:02:15Z",
+        "2024-09-29T03:06:54Z",
+        "2024-09-29T03:14:53Z",
+        "2024-09-29T03:24:10Z",
+        "2024-09-29T05:38:02Z",
+        "2024-09-29T05:40:40Z",
+        "2024-09-29T13:44:08Z",
+        "2024-09-29T14:48:02Z"
+      ],
+      "late_rewrites_detected": false,
+      "deadline_crunch_ratio": 0.07,
+      "final_stage_focus": "docs",
+      "history_is_squashed_or_minimal": false,
+      "contributor_count": 4,
+      "contributors": [
+        "MariaPerez478",
+        "Carolin",
+        "Viviana",
+        "Carolin Heredia"
+      ]
+    },
+    "test_files_count": 0,
+    "test_frameworks": [],
+    "has_ci": false,
+    "ci_configs": [],
+    "has_docker": false,
+    "has_env_template": false,
+    "readme_size_bytes": 5873,
+    "readme_excerpt": "# HerTechPath\n## Inspiration\nIn the rapidly evolving tech industry, women often face unique challenges that can hinder their entry and progression. Despite significant advancements toward gender equality, many women encounter stereotypes and biases that suggest they are less capable in technical roles. This stigma can create a daunting environment, where women may doubt their skills or feel compelled to prove themselves constantly.\nFurthermore, the underrepresentation of women in tech can lead to feelings of isolation. In spaces dominated by men, women may struggle to find mentors, role models, and support networks, making it harder to navigate their careers. The lack of visibility for women in tech roles perpetuates the misconception that the field is not designed for them, discouraging young girls from pursuing their interests in technology.\n## What it does\nAt HerTechPath, we aim to dismantle these barriers by providing resources, community support, and pathways tailored for women. Our mission is to empower the next generation of female tech leaders to embrace their potential and redefine what it means to be a woman in tech. Here are some key features:\n1. **Personalized Quiz**\nDiscover which computer science pathway aligns with your interests and strengths. Our engaging quiz, powered by Gemini's API, evaluates your preferences and aspirations, pairing you with options tailored to your unique profile.\n2. **Pathway Exploration**\nDive deeper into various tech pathways, including software development, data science, cybersecurity, and more. Each pathway includes detailed descriptions, required skills, and potential career opportunities to help you make informed decisions.\n3. **Community Blog**\nRead inspiring testimonies from women in tech who share their journeys, challenges, and successes. Our blog serves as a platform for stories that empower and motivate, fostering a sense of community among aspiring tech leaders. It even supports engagement with others through likes and comments.\n## How we built it\nThe HerTechPath project was developed using the PeRN Stack, consisting of PostgreSQL, Express, React, and Node.js, to create a robust and scalable platform tailored to support women in tech. On the backend, we built a custom PostgreSQL database to manage user data, blog posts, comments, and quiz results. We also implemented basic CRUD (Create, Read, Update, Delete) operations, allowing users to interact fully with blog content and user profiles. Additionally, w",
+    "has_architecture_docs": false,
+    "api_routes_count": 21,
+    "db_migrations_or_schema_count": 4,
+    "mock_data_detected": false,
+    "mock_data_indicators": [],
+    "todo_fixme_count": 0,
+    "boilerplate_detected": false,
+    "boilerplate_indicators": [],
+    "deployment_check": null,
+    "consistency_with_claims": "partial",
+    "consistency_explanation": "Partial evidence: 5/14 claimed technologies found in codebase.",
+    "actual_integrations_found": [
+      "express.js",
+      "express.js",
+      "react",
+      "react",
+      "vite"
+    ],
+    "readme_claims_unsupported_by_code": [
+      "css",
+      "css",
+      "gemini-api",
+      "git",
+      "git",
+      "node.js",
+      "node.js",
+      "postgresql",
+      "postgresql"
+    ],
+    "provenance": [
+      {
+        "claim": "Inspected repository https://github.com/carolinhr/shellhacks2024",
+        "evidence_type": "repository",
+        "source": "https://github.com/carolinhr/shellhacks2024",
+        "location": "root",
+        "confidence": 1.0,
+        "details": null
+      }
+    ]
+  },
+  "demo_summary": {
+    "has_video_demo": false,
+    "video_platform": "",
+    "video_url": "",
+    "duration_seconds": null,
+    "has_live_deployment": false,
+    "deployment_url": "",
+    "deployment_reachable": null,
+    "has_slide_deck": true,
+    "observations": []
+  },
+  "sponsor_technologies_mentioned": [],
+  "bundle_sha256": "6da7598afcfd37b94d9e03009a1aa45e6f50c15ca8988334e1435629c2d81867",
+  "created_at": "2026-09-26T02:03:23.320235Z"
+}

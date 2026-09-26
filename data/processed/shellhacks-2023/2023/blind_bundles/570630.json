@@ -1,0 +1,113 @@
+{
+  "project_id": "570630",
+  "slug": "domainenum",
+  "title": "DomainEnum",
+  "tagline": "Speedy domain enumeration!",
+  "problem_statement": "",
+  "inspiration": "",
+  "what_it_does": "",
+  "how_it_was_built": "",
+  "challenges": "",
+  "accomplishments": "",
+  "lessons_learned": "",
+  "future_plans": "",
+  "tech_tags": [
+    "python",
+    "python"
+  ],
+  "team_size": 2,
+  "repository_metrics": {
+    "repo_url": "https://github.com/Gr1mmie/DomainEnum",
+    "status": "accessible",
+    "default_branch": "main",
+    "file_count": 2,
+    "approx_loc": 231,
+    "loc_by_language": {
+      "Python": 231
+    },
+    "primary_languages": [
+      "Python"
+    ],
+    "tech_stack": {
+      "frontend_frameworks": [],
+      "backend_frameworks": [],
+      "databases": [],
+      "ai_ml_libraries": [],
+      "model_providers": [],
+      "cloud_devops": [],
+      "third_party_apis": [],
+      "hardware_components": [],
+      "package_dependencies": []
+    },
+    "git_timeline": {
+      "total_commits": 5,
+      "commits_in_window": 5,
+      "first_commit_time": "2023-09-17T13:55:22Z",
+      "last_commit_time": "2023-09-17T14:56:42Z",
+      "commit_timestamps": [
+        "2023-09-17T13:55:22Z",
+        "2023-09-17T14:14:13Z",
+        "2023-09-17T14:14:50Z",
+        "2023-09-17T14:31:02Z",
+        "2023-09-17T14:56:42Z"
+      ],
+      "late_rewrites_detected": false,
+      "deadline_crunch_ratio": 0.2,
+      "final_stage_focus": "features",
+      "history_is_squashed_or_minimal": false,
+      "contributor_count": 2,
+      "contributors": [
+        "Caleb Sjostedt",
+        "Grimmie"
+      ]
+    },
+    "test_files_count": 0,
+    "test_frameworks": [],
+    "has_ci": false,
+    "ci_configs": [],
+    "has_docker": false,
+    "has_env_template": false,
+    "readme_size_bytes": 46,
+    "readme_excerpt": "# DomainEnum\nhaha funny domain enum go brrrr",
+    "has_architecture_docs": false,
+    "api_routes_count": 0,
+    "db_migrations_or_schema_count": 0,
+    "mock_data_detected": false,
+    "mock_data_indicators": [],
+    "todo_fixme_count": 0,
+    "boilerplate_detected": false,
+    "boilerplate_indicators": [],
+    "deployment_check": null,
+    "consistency_with_claims": "inconsistent",
+    "consistency_explanation": "Weak evidence: Only 0/2 claimed technologies detected in codebase.",
+    "actual_integrations_found": [],
+    "readme_claims_unsupported_by_code": [
+      "python",
+      "python"
+    ],
+    "provenance": [
+      {
+        "claim": "Inspected repository https://github.com/Gr1mmie/DomainEnum",
+        "evidence_type": "repository",
+        "source": "https://github.com/Gr1mmie/DomainEnum",
+        "location": "root",
+        "confidence": 1.0,
+        "details": null
+      }
+    ]
+  },
+  "demo_summary": {
+    "has_video_demo": false,
+    "video_platform": "",
+    "video_url": "",
+    "duration_seconds": null,
+    "has_live_deployment": false,
+    "deployment_url": "",
+    "deployment_reachable": null,
+    "has_slide_deck": false,
+    "observations": []
+  },
+  "sponsor_technologies_mentioned": [],
+  "bundle_sha256": "a573565e18527c074b8c1784589540ed18ed8728cc909a4963e98ba1bae84f90",
+  "created_at": "2026-09-26T02:11:35.811886Z"
+}

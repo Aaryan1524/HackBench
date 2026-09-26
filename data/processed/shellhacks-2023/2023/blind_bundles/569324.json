@@ -1,0 +1,38 @@
+{
+  "project_id": "569324",
+  "slug": "encryptid-o1i5mx",
+  "title": "Decryptid!",
+  "tagline": "Cryptography can be complicated. So why not have the experts - cryptids - simplify it? Join a classy crew of creatures from myth and legend in demystifying prominent encryption concepts.",
+  "problem_statement": "",
+  "inspiration": "",
+  "what_it_does": "",
+  "how_it_was_built": "",
+  "challenges": "",
+  "accomplishments": "",
+  "lessons_learned": "",
+  "future_plans": "",
+  "tech_tags": [
+    "auth0",
+    "skeleton",
+    "svelte",
+    "typescript",
+    "typescript",
+    "vercel"
+  ],
+  "team_size": 2,
+  "repository_metrics": null,
+  "demo_summary": {
+    "has_video_demo": false,
+    "video_platform": "",
+    "video_url": "",
+    "duration_seconds": null,
+    "has_live_deployment": true,
+    "deployment_url": "https://decryptid.vercel.app/",
+    "deployment_reachable": null,
+    "has_slide_deck": false,
+    "observations": []
+  },
+  "sponsor_technologies_mentioned": [],
+  "bundle_sha256": "ccec0bc78115ee5c893b088e015c5a4b7ff71ac697b50357ee2eab41d527fe13",
+  "created_at": "2026-09-26T02:11:35.840200Z"
+}

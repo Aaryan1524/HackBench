@@ -1,0 +1,35 @@
+{
+  "project_id": "570577",
+  "slug": "mbcr-taipy",
+  "title": "MBCR-TaiPy",
+  "tagline": "A script that allows you to view the status of Miami Beach",
+  "problem_statement": "",
+  "inspiration": "",
+  "what_it_does": "",
+  "how_it_was_built": "",
+  "challenges": "",
+  "accomplishments": "",
+  "lessons_learned": "",
+  "future_plans": "",
+  "tech_tags": [
+    "python",
+    "python",
+    "taipy"
+  ],
+  "team_size": 1,
+  "repository_metrics": null,
+  "demo_summary": {
+    "has_video_demo": false,
+    "video_platform": "",
+    "video_url": "",
+    "duration_seconds": null,
+    "has_live_deployment": false,
+    "deployment_url": "",
+    "deployment_reachable": null,
+    "has_slide_deck": false,
+    "observations": []
+  },
+  "sponsor_technologies_mentioned": [],
+  "bundle_sha256": "5063fd5d0b55c0b6d27d81bc65ae8b83df60d41533156a245e6b5b2fce322751",
+  "created_at": "2026-09-26T02:11:35.820569Z"
+}

@@ -1,0 +1,169 @@
+{
+  "project_id": "569948",
+  "slug": "quadrocket",
+  "title": "Quadrocket",
+  "tagline": "This project aims to bring Quadratic Funding to the Stellar Network using the Soroban framework. Quadratic Funding allows users to vote to put funds towards their favorite projects.",
+  "problem_statement": "",
+  "inspiration": "",
+  "what_it_does": "",
+  "how_it_was_built": "",
+  "challenges": "",
+  "accomplishments": "",
+  "lessons_learned": "",
+  "future_plans": "",
+  "tech_tags": [
+    "node.js",
+    "node.js",
+    "rust",
+    "rust",
+    "soroban",
+    "stellar"
+  ],
+  "team_size": 1,
+  "repository_metrics": {
+    "repo_url": "https://github.com/patrickbdevaney/soroban-dapps-challenge/tree/main/crowdfund",
+    "status": "accessible",
+    "default_branch": "main",
+    "file_count": 389,
+    "approx_loc": 12885,
+    "loc_by_language": {
+      "JavaScript": 441,
+      "HTML": 117,
+      "TypeScript": 5872,
+      "CSS": 1956,
+      "Shell": 538,
+      "Rust": 3961
+    },
+    "primary_languages": [
+      "TypeScript",
+      "Rust",
+      "CSS",
+      "Shell",
+      "JavaScript",
+      "HTML"
+    ],
+    "tech_stack": {
+      "frontend_frameworks": [
+        "React",
+        "Vite",
+        "Next.js"
+      ],
+      "backend_frameworks": [],
+      "databases": [],
+      "ai_ml_libraries": [],
+      "model_providers": [],
+      "cloud_devops": [],
+      "third_party_apis": [],
+      "hardware_components": [],
+      "package_dependencies": [
+        "next",
+        "react",
+        "vite"
+      ]
+    },
+    "git_timeline": {
+      "total_commits": 26,
+      "commits_in_window": 26,
+      "first_commit_time": "2023-08-09T08:04:34Z",
+      "last_commit_time": "2023-09-17T09:22:00Z",
+      "commit_timestamps": [
+        "2023-08-09T08:04:34Z",
+        "2023-08-09T14:35:51Z",
+        "2023-08-09T14:40:28Z",
+        "2023-08-09T14:43:09Z",
+        "2023-08-09T14:45:35Z",
+        "2023-08-09T14:48:25Z",
+        "2023-08-09T18:17:10Z",
+        "2023-08-15T00:15:28Z",
+        "2023-08-15T00:25:41Z",
+        "2023-08-15T00:55:02Z",
+        "2023-08-15T04:15:55Z",
+        "2023-08-15T04:52:44Z",
+        "2023-08-16T08:35:00Z",
+        "2023-08-16T12:21:15Z",
+        "2023-08-16T21:21:13Z",
+        "2023-08-16T21:36:26Z",
+        "2023-08-16T22:21:36Z",
+        "2023-08-17T19:09:59Z",
+        "2023-08-18T20:50:59Z",
+        "2023-08-18T21:02:28Z",
+        "2023-08-18T21:50:43Z",
+        "2023-08-21T16:51:09Z",
+        "2023-09-05T19:57:55Z",
+        "2023-09-09T21:13:10Z",
+        "2023-09-09T21:23:24Z",
+        "2023-09-17T09:22:00Z"
+      ],
+      "late_rewrites_detected": false,
+      "deadline_crunch_ratio": 0.12,
+      "final_stage_focus": "debugging",
+      "history_is_squashed_or_minimal": false,
+      "contributor_count": 6,
+      "contributors": [
+        "YY",
+        "Julian Martinez",
+        "Chad Ostrowski",
+        "Yevhen Yermolenko",
+        "patrickbdevaney",
+        "stellar-terraform"
+      ]
+    },
+    "test_files_count": 4,
+    "test_frameworks": [
+      "vitest/jest",
+      "jest"
+    ],
+    "has_ci": true,
+    "ci_configs": [
+      "github_actions"
+    ],
+    "has_docker": false,
+    "has_env_template": false,
+    "readme_size_bytes": 1968,
+    "readme_excerpt": "# Soroban Dapps Challenge\nWelcome to the Soroban Dapps Challenge repository! This dynamic course is designed for developers interested in building decentralized applications (Dapps) on the Soroban smart contracts platform. It is part challenge, part educational journey, and it aims to provide a practical and creative experience in blockchain development.\n## About the Soroban Dapps Challenge\nThe Soroban Dapps Challenge allows you to explore the potential of building Dapps on the Soroban platform. While the course specifically focuses on Soroban, the knowledge you gain can be applied to other transaction processors such as different blockchains, L2s, and permissioned ledgers. The skills you acquire are meant to be transferable and versatile.\nIn this challenge, you'll gain hands-on experience using Soroban's initial versions of the smart contracts environment, a Rust SDK, a CLI, and an RPC server. You'll learn how to write, test, and deploy smart contracts, and you'll get to see your code in action on our special test network, Futurenet.\n## What to Expect\nWe've designed this course as a learning adventure for developers from the Stellar ecosystem and other blockchain communities to experiment, provide feedback, and contribute to the Soroban development process.\nAs you progress through the challenge, anticipate your code to break and updates to shift things. We invite you to experiment and build but also remind you that changes are afoot as we prepare for the production release.\n## Giving Your Feedback\nWe highly value your input and encourage you to share your feedback. Feel free to file issues in the Soroban repos or raise them in the `soroban-help` channel in the Stellar Developer Discord.\n## Conclusion\nWe're excited to have you on board and look forward to seeing the incredible Dapps you create during this challenge!",
+    "has_architecture_docs": false,
+    "api_routes_count": 0,
+    "db_migrations_or_schema_count": 0,
+    "mock_data_detected": false,
+    "mock_data_indicators": [],
+    "todo_fixme_count": 5,
+    "boilerplate_detected": false,
+    "boilerplate_indicators": [],
+    "deployment_check": null,
+    "consistency_with_claims": "inconsistent",
+    "consistency_explanation": "Weak evidence: Only 0/6 claimed technologies detected in codebase.",
+    "actual_integrations_found": [],
+    "readme_claims_unsupported_by_code": [
+      "node.js",
+      "node.js",
+      "rust",
+      "rust",
+      "soroban",
+      "stellar"
+    ],
+    "provenance": [
+      {
+        "claim": "Inspected repository https://github.com/patrickbdevaney/soroban-dapps-challenge/tree/main/crowdfund",
+        "evidence_type": "repository",
+        "source": "https://github.com/patrickbdevaney/soroban-dapps-challenge/tree/main/crowdfund",
+        "location": "root",
+        "confidence": 1.0,
+        "details": null
+      }
+    ]
+  },
+  "demo_summary": {
+    "has_video_demo": false,
+    "video_platform": "",
+    "video_url": "",
+    "duration_seconds": null,
+    "has_live_deployment": false,
+    "deployment_url": "",
+    "deployment_reachable": null,
+    "has_slide_deck": false,
+    "observations": []
+  },
+  "sponsor_technologies_mentioned": [],
+  "bundle_sha256": "7aeb68158ad1d4c8185c3db13f1ee3a0515fb7d0e4d194f7f490495312f2d1af",
+  "created_at": "2026-09-26T02:11:35.574421Z"
+}

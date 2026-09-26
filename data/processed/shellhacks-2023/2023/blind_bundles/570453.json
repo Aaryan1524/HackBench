@@ -1,0 +1,34 @@
+{
+  "project_id": "570453",
+  "slug": "jump-cutter",
+  "title": "Jump Cutter",
+  "tagline": "I wanted to make a project dedicated to helping students watch professor videos. The idea here is that lecture videos would have the silent parts cut or sped up to optimize their viewing experience.",
+  "problem_statement": "",
+  "inspiration": "",
+  "what_it_does": "",
+  "how_it_was_built": "",
+  "challenges": "",
+  "accomplishments": "",
+  "lessons_learned": "",
+  "future_plans": "",
+  "tech_tags": [
+    "python",
+    "python"
+  ],
+  "team_size": 1,
+  "repository_metrics": null,
+  "demo_summary": {
+    "has_video_demo": false,
+    "video_platform": "",
+    "video_url": "",
+    "duration_seconds": null,
+    "has_live_deployment": false,
+    "deployment_url": "",
+    "deployment_reachable": null,
+    "has_slide_deck": false,
+    "observations": []
+  },
+  "sponsor_technologies_mentioned": [],
+  "bundle_sha256": "4bf8e1ffd115629da41318e81a01372812ca4c0ee196906bb0033c0dba20b490",
+  "created_at": "2026-09-26T02:11:35.837895Z"
+}

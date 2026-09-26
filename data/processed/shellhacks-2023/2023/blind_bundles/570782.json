@@ -1,0 +1,40 @@
+{
+  "project_id": "570782",
+  "slug": "locode-motion-programming-explained-with-trains",
+  "title": "Locode-motion: Programming Explained With Trains",
+  "tagline": "We wanted to explain the fundamentals of programming to complete beginners in a VR experience.",
+  "problem_statement": "",
+  "inspiration": "",
+  "what_it_does": "",
+  "how_it_was_built": "",
+  "challenges": "",
+  "accomplishments": "",
+  "lessons_learned": "",
+  "future_plans": "",
+  "tech_tags": [
+    "c#",
+    "c#",
+    "c++",
+    "c++",
+    "unity",
+    "unity",
+    "visual-studio",
+    "visual-studio"
+  ],
+  "team_size": 3,
+  "repository_metrics": null,
+  "demo_summary": {
+    "has_video_demo": true,
+    "video_platform": "youtube",
+    "video_url": "https://www.youtube.com/embed/DiOXONrui5Q?enablejsapi=1&hl=en_US&rel=0&start=&version=3&wmode=transparent",
+    "duration_seconds": null,
+    "has_live_deployment": false,
+    "deployment_url": "",
+    "deployment_reachable": null,
+    "has_slide_deck": false,
+    "observations": []
+  },
+  "sponsor_technologies_mentioned": [],
+  "bundle_sha256": "6d9cb08a7a4d07227bccdfb597c08151bc32b8b226cbb8e8f01c6071dadf918f",
+  "created_at": "2026-09-26T02:11:35.555341Z"
+}

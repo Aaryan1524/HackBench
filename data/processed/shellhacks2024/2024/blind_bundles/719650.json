@@ -1,0 +1,164 @@
+{
+  "project_id": "719650",
+  "slug": "machine-learning-fraud-detection",
+  "title": "Machine Learning Fraud Detection",
+  "tagline": "Using advanced machine learning algorithms to detect financial fraud with high accuracy (over 99.4%)",
+  "problem_statement": "",
+  "inspiration": "",
+  "what_it_does": "",
+  "how_it_was_built": "",
+  "challenges": "",
+  "accomplishments": "",
+  "lessons_learned": "",
+  "future_plans": "",
+  "tech_tags": [
+    "flask",
+    "flask",
+    "mysql",
+    "mysql",
+    "postman",
+    "postman",
+    "randomforestclassifier",
+    "streamlit"
+  ],
+  "team_size": 4,
+  "repository_metrics": {
+    "repo_url": "https://github.com/lquincoso/FinancialFraudDetection",
+    "status": "accessible",
+    "default_branch": "main",
+    "file_count": 17,
+    "approx_loc": 433,
+    "loc_by_language": {
+      "Python": 401,
+      "SQL": 32
+    },
+    "primary_languages": [
+      "Python",
+      "SQL"
+    ],
+    "tech_stack": {
+      "frontend_frameworks": [],
+      "backend_frameworks": [
+        "Flask"
+      ],
+      "databases": [],
+      "ai_ml_libraries": [
+        "Scikit-Learn"
+      ],
+      "model_providers": [],
+      "cloud_devops": [],
+      "third_party_apis": [],
+      "hardware_components": [],
+      "package_dependencies": [
+        "flask",
+        "sklearn"
+      ]
+    },
+    "git_timeline": {
+      "total_commits": 30,
+      "commits_in_window": 30,
+      "first_commit_time": "2024-09-28T02:21:47Z",
+      "last_commit_time": "2026-08-21T19:40:24Z",
+      "commit_timestamps": [
+        "2024-09-28T02:21:47Z",
+        "2024-09-28T03:23:47Z",
+        "2024-09-28T04:51:58Z",
+        "2024-09-28T05:04:41Z",
+        "2024-09-28T15:59:18Z",
+        "2024-09-28T20:05:00Z",
+        "2024-09-28T21:15:41Z",
+        "2024-09-28T21:18:30Z",
+        "2024-09-28T22:42:04Z",
+        "2024-09-29T00:11:40Z",
+        "2024-09-29T00:11:57Z",
+        "2024-09-29T03:14:48Z",
+        "2024-09-29T03:15:28Z",
+        "2024-09-29T03:20:07Z",
+        "2024-09-29T03:23:16Z",
+        "2024-09-29T03:23:56Z",
+        "2024-09-29T03:28:24Z",
+        "2024-09-29T03:53:09Z",
+        "2024-09-29T04:09:28Z",
+        "2024-09-29T04:41:55Z",
+        "2024-09-29T04:43:11Z",
+        "2024-09-29T04:43:36Z",
+        "2024-09-29T04:43:47Z",
+        "2024-09-29T04:44:11Z",
+        "2024-09-29T14:30:48Z",
+        "2024-09-29T14:50:00Z",
+        "2024-09-29T14:51:13Z",
+        "2024-09-29T14:52:00Z",
+        "2026-08-21T19:39:32Z",
+        "2026-08-21T19:40:24Z"
+      ],
+      "late_rewrites_detected": false,
+      "deadline_crunch_ratio": 0.07,
+      "final_stage_focus": "docs",
+      "history_is_squashed_or_minimal": false,
+      "contributor_count": 6,
+      "contributors": [
+        "Ibsen martinez",
+        "JesusVa29",
+        "Fabio Hernandez Rubio",
+        "Fabio Hernandez",
+        "Lorena A. Quincoso-Lugones",
+        "Lorena A. Quincoso Lugones"
+      ]
+    },
+    "test_files_count": 0,
+    "test_frameworks": [],
+    "has_ci": false,
+    "ci_configs": [],
+    "has_docker": false,
+    "has_env_template": false,
+    "readme_size_bytes": 3244,
+    "readme_excerpt": "# Shellhacks - Team CafecitoFIU105 Fall 2024\n### ====Florida International Universty=====\n## Project Title: Machine Learning Fraud Detection\n### Team Members:\n- Lorena A. Quincoso Lugones\n- Ibsen Martinez\n- Fabio Hernandez Rubio\n- Jesus Valdes\n## Code Directory Structure:\nThe folder structure goes as follows:\n### User Guide:\n1. Start MySQL Server and run Backend/API/SQL/TransactionsTable.sql\n2. Install python dependencies (pip install) within the Backend/API/requirements.txt\n3. Run API file in the Backend/API/main.py\n4. Run interface file in the frontend/dashboard.py\n### Model Instructions:\n3.1: Run the Jupyter Notebook under 'Fraud_Model.ipynb' folder in order to see the training/testing model on the dataset.\n3.2: Access if possible to the Command Prompt (Commander from Anaconda Navigator is recommended), and type: 'pip install streamlit-folium' if you don't have the package installed already on your system.\n3.3: Through the same Prompt, 'cd' to the downloaded folder.\n3.4: Ensure the dependencies are installed by typing on the Prompt: 'pip install -r requirements.txt'.\n### Technologies:\nML Model: Jupyter Notebook, Random Forest Classifier, Anaconda\nAPI: Flask\nDatabase: MySQL\nFrontend: Strimlit",
+    "has_architecture_docs": false,
+    "api_routes_count": 0,
+    "db_migrations_or_schema_count": 1,
+    "mock_data_detected": false,
+    "mock_data_indicators": [],
+    "todo_fixme_count": 0,
+    "boilerplate_detected": false,
+    "boilerplate_indicators": [],
+    "deployment_check": null,
+    "consistency_with_claims": "inconsistent",
+    "consistency_explanation": "Weak evidence: Only 2/8 claimed technologies detected in codebase.",
+    "actual_integrations_found": [
+      "flask",
+      "flask"
+    ],
+    "readme_claims_unsupported_by_code": [
+      "mysql",
+      "mysql",
+      "postman",
+      "postman",
+      "randomforestclassifier",
+      "streamlit"
+    ],
+    "provenance": [
+      {
+        "claim": "Inspected repository https://github.com/lquincoso/FinancialFraudDetection",
+        "evidence_type": "repository",
+        "source": "https://github.com/lquincoso/FinancialFraudDetection",
+        "location": "root",
+        "confidence": 1.0,
+        "details": null
+      }
+    ]
+  },
+  "demo_summary": {
+    "has_video_demo": false,
+    "video_platform": "",
+    "video_url": "",
+    "duration_seconds": null,
+    "has_live_deployment": false,
+    "deployment_url": "",
+    "deployment_reachable": null,
+    "has_slide_deck": false,
+    "observations": []
+  },
+  "sponsor_technologies_mentioned": [],
+  "bundle_sha256": "4a4400e90ed71e2f6c1e7a8a5de2f249d2eeac4d92b6991f0a9e04cae42caa37",
+  "created_at": "2026-09-26T02:03:23.474799Z"
+}

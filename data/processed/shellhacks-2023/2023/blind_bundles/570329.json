@@ -1,0 +1,156 @@
+{
+  "project_id": "570329",
+  "slug": "shellhacks-sustain",
+  "title": "Shellhacks SustainSP",
+  "tagline": "Sustainable Investments made easy.",
+  "problem_statement": "",
+  "inspiration": "",
+  "what_it_does": "",
+  "how_it_was_built": "",
+  "challenges": "",
+  "accomplishments": "",
+  "lessons_learned": "",
+  "future_plans": "",
+  "tech_tags": [
+    "apis",
+    "backend",
+    "frontend",
+    "nextjs",
+    "node.js",
+    "node.js",
+    "python",
+    "python",
+    "react",
+    "react"
+  ],
+  "team_size": 4,
+  "repository_metrics": {
+    "repo_url": "https://github.com/TeamRUXH/Shellhacks-Sustain",
+    "status": "accessible",
+    "default_branch": "master",
+    "file_count": 82,
+    "approx_loc": 2564,
+    "loc_by_language": {
+      "JavaScript": 870,
+      "TypeScript": 879,
+      "CSS": 191,
+      "Python": 624
+    },
+    "primary_languages": [
+      "TypeScript",
+      "JavaScript",
+      "Python",
+      "CSS"
+    ],
+    "tech_stack": {
+      "frontend_frameworks": [
+        "Next.js",
+        "TailwindCSS",
+        "React"
+      ],
+      "backend_frameworks": [
+        "Flask"
+      ],
+      "databases": [],
+      "ai_ml_libraries": [
+        "HuggingFace Transformers"
+      ],
+      "model_providers": [],
+      "cloud_devops": [],
+      "third_party_apis": [],
+      "hardware_components": [],
+      "package_dependencies": [
+        "flask",
+        "next",
+        "react",
+        "tailwindcss",
+        "transformers"
+      ]
+    },
+    "git_timeline": {
+      "total_commits": 11,
+      "commits_in_window": 11,
+      "first_commit_time": "2023-09-16T15:37:15Z",
+      "last_commit_time": "2023-09-17T14:22:05Z",
+      "commit_timestamps": [
+        "2023-09-16T15:37:15Z",
+        "2023-09-16T17:36:18Z",
+        "2023-09-16T21:32:06Z",
+        "2023-09-17T01:03:12Z",
+        "2023-09-17T07:39:50Z",
+        "2023-09-17T08:00:42Z",
+        "2023-09-17T13:04:54Z",
+        "2023-09-17T13:06:00Z",
+        "2023-09-17T14:06:18Z",
+        "2023-09-17T14:08:18Z",
+        "2023-09-17T14:22:05Z"
+      ],
+      "late_rewrites_detected": false,
+      "deadline_crunch_ratio": 0.45,
+      "final_stage_focus": "docs",
+      "history_is_squashed_or_minimal": false,
+      "contributor_count": 2,
+      "contributors": [
+        "Uzair Fasih",
+        "Xiaomei Hai"
+      ]
+    },
+    "test_files_count": 0,
+    "test_frameworks": [],
+    "has_ci": false,
+    "ci_configs": [],
+    "has_docker": false,
+    "has_env_template": false,
+    "readme_size_bytes": 2856,
+    "readme_excerpt": "# Shellhacks-SustainSP Project by Team RUXH\n👋 Welcome to the Schonfeld Sustainability Challenge Project Presented by Team RUXH - ShellHacks2023 in Miami!\n## 🙋‍♀️ About Us\nWe are a diverse team of four talented individuals from the University of Florida (UF). Our team consists of three computer science master's students with deep technical knowledge and one information systems master's student with expertise in data analysis and management. Together, we have come together to take on the Schonfeld Sustainability Challenge.\n## 💹 Our Mission\nOur mission is to help Schonfeld visualize their stock picks through the lens of sustainability. We aim to create a powerful database and platform that will enable Schonfeld's investment teams to assess the overall sustainability of companies within the S&P 500 index. We are committed to delivering creative solutions that will redefine how sustainability is measured, offering unique insights into the factors that contribute to a company's overall sustainability score.\n## 💻 Project Goals\nOur primary goals for the Schonfeld Sustainability Challenge Project are as follows:\n**1. Data Analysis**: We will analyze stock data information from various sources by scraping data from different APIs, extracting valuable insights to evaluate the sustainability of companies in the S&P 500.\n**2.Sustainability Scales**: We will develop innovative sustainability scales that go beyond traditional metrics. These scales include sentimental analysis based on the company news, the company's ESG score, google trands, and volatility score, all these scales will encompass a wide range of factors that contribute to a company's sustainability, taking a holistic approach to measurement.\n**3.Dashboard Creation**: We will create an interactive dashboard that presents our findings in a user-friendly and visually appealing manner. This dashboard will allow Schonfeld's investment teams to easily view and understand the sustainability profiles of different stocks.\n**4.Stability Assessment**: Using our unique scales and data analysis, we will identify which stocks are more stable from a sustainability perspective, aiding Schonfeld in making informed investment decisions.\n## 🥷 Get Involved\nWe welcome collaboration and input from the community as we work towards achieving our mission. If you are interested in contributing to our project or have valuable insights to share, please feel free to get involved. You can find more information on how to contribute in o",
+    "has_architecture_docs": false,
+    "api_routes_count": 0,
+    "db_migrations_or_schema_count": 0,
+    "mock_data_detected": false,
+    "mock_data_indicators": [],
+    "todo_fixme_count": 3,
+    "boilerplate_detected": false,
+    "boilerplate_indicators": [],
+    "deployment_check": null,
+    "consistency_with_claims": "partial",
+    "consistency_explanation": "Partial evidence: 3/10 claimed technologies found in codebase.",
+    "actual_integrations_found": [
+      "nextjs",
+      "react",
+      "react"
+    ],
+    "readme_claims_unsupported_by_code": [
+      "apis",
+      "backend",
+      "frontend",
+      "node.js",
+      "node.js",
+      "python",
+      "python"
+    ],
+    "provenance": [
+      {
+        "claim": "Inspected repository https://github.com/TeamRUXH/Shellhacks-Sustain",
+        "evidence_type": "repository",
+        "source": "https://github.com/TeamRUXH/Shellhacks-Sustain",
+        "location": "root",
+        "confidence": 1.0,
+        "details": null
+      }
+    ]
+  },
+  "demo_summary": {
+    "has_video_demo": false,
+    "video_platform": "",
+    "video_url": "",
+    "duration_seconds": null,
+    "has_live_deployment": false,
+    "deployment_url": "",
+    "deployment_reachable": null,
+    "has_slide_deck": false,
+    "observations": []
+  },
+  "sponsor_technologies_mentioned": [],
+  "bundle_sha256": "229d4d2bdb470a17b7941d06aa909976ba75c1cbad2b7b5145daca996077ca34",
+  "created_at": "2026-09-26T02:11:35.792349Z"
+}

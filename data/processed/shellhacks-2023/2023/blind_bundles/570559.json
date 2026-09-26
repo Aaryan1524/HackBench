@@ -1,0 +1,36 @@
+{
+  "project_id": "570559",
+  "slug": "pop-up-platformer",
+  "title": "Pop-Up Platformer",
+  "tagline": "Return a blind frog to its lilypad in this cute platformer projected onto a pop-up book. Created in Unity, this project aims to put a different spin on mixed reality.",
+  "problem_statement": "",
+  "inspiration": "",
+  "what_it_does": "",
+  "how_it_was_built": "",
+  "challenges": "",
+  "accomplishments": "",
+  "lessons_learned": "",
+  "future_plans": "",
+  "tech_tags": [
+    "c#",
+    "c#",
+    "unity",
+    "unity"
+  ],
+  "team_size": 4,
+  "repository_metrics": null,
+  "demo_summary": {
+    "has_video_demo": true,
+    "video_platform": "vimeo",
+    "video_url": "https://player.vimeo.com/video/870197664?byline=0&portrait=0&title=0#t=",
+    "duration_seconds": null,
+    "has_live_deployment": false,
+    "deployment_url": "",
+    "deployment_reachable": null,
+    "has_slide_deck": false,
+    "observations": []
+  },
+  "sponsor_technologies_mentioned": [],
+  "bundle_sha256": "02819fe6d124c119b68f136660b410193fc5bd5e8759aa94338801d749e46365",
+  "created_at": "2026-09-26T02:11:35.702162Z"
+}

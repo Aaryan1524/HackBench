@@ -1,0 +1,136 @@
+{
+  "project_id": "720569",
+  "slug": "therapy-theodore",
+  "title": "Therapy Theodore",
+  "tagline": "A CBT therapist bot that can recognize mental health symptoms based on what the user inputs.",
+  "problem_statement": "",
+  "inspiration": "",
+  "what_it_does": "",
+  "how_it_was_built": "",
+  "challenges": "",
+  "accomplishments": "",
+  "lessons_learned": "",
+  "future_plans": "",
+  "tech_tags": [
+    "flask",
+    "flask",
+    "openai",
+    "python",
+    "python"
+  ],
+  "team_size": 2,
+  "repository_metrics": {
+    "repo_url": "https://github.com/PaolaArraut/Therapist-Bot",
+    "status": "accessible",
+    "default_branch": "main",
+    "file_count": 16,
+    "approx_loc": 61,
+    "loc_by_language": {
+      "HTML": 9,
+      "CSS": 0,
+      "Python": 52
+    },
+    "primary_languages": [
+      "Python",
+      "HTML",
+      "CSS"
+    ],
+    "tech_stack": {
+      "frontend_frameworks": [],
+      "backend_frameworks": [],
+      "databases": [],
+      "ai_ml_libraries": [],
+      "model_providers": [],
+      "cloud_devops": [],
+      "third_party_apis": [],
+      "hardware_components": [],
+      "package_dependencies": []
+    },
+    "git_timeline": {
+      "total_commits": 18,
+      "commits_in_window": 18,
+      "first_commit_time": "2024-09-28T03:45:53Z",
+      "last_commit_time": "2025-07-24T19:13:23Z",
+      "commit_timestamps": [
+        "2024-09-28T03:45:53Z",
+        "2024-09-28T18:36:04Z",
+        "2024-09-28T19:49:51Z",
+        "2024-09-28T20:42:11Z",
+        "2024-09-28T20:42:30Z",
+        "2024-09-28T23:26:03Z",
+        "2024-09-28T23:26:10Z",
+        "2024-09-29T00:20:34Z",
+        "2024-09-29T00:27:07Z",
+        "2024-09-29T00:45:55Z",
+        "2024-09-29T14:57:40Z",
+        "2024-09-29T14:58:35Z",
+        "2024-10-08T20:15:51Z",
+        "2024-10-08T20:17:18Z",
+        "2024-10-08T20:30:08Z",
+        "2024-10-08T20:30:50Z",
+        "2025-07-23T01:28:28Z",
+        "2025-07-24T19:13:23Z"
+      ],
+      "late_rewrites_detected": false,
+      "deadline_crunch_ratio": 0.11,
+      "final_stage_focus": "docs",
+      "history_is_squashed_or_minimal": false,
+      "contributor_count": 2,
+      "contributors": [
+        "dieg0rtega",
+        "Paola Arraut"
+      ]
+    },
+    "test_files_count": 0,
+    "test_frameworks": [],
+    "has_ci": false,
+    "ci_configs": [],
+    "has_docker": false,
+    "has_env_template": false,
+    "readme_size_bytes": 4805,
+    "readme_excerpt": "# Theodore Therapy\n> A Continuation from ShellHacks 2024\n## About\nMeet Theodore Therapy! a bot specialized in cognitive behavioral therapy (CBT) that can suggest users what symptoms they might showcase and ways they can cope without an actual diagnoses.\n## Tools\n## Road map\nDuring the hackathon we went into a road block initially we had no idea how to start let alone we weren't able to demo. The purpose of building Theodore now is for me and my team to learn and see where we went wrong when constructing him!\nThe goal is to be able to demo Theodore and will be opening it up for contribution and feedback!\nAs of now Theodore is still in the beginning stages of construction stay tuned!\n⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣀⣀⣀⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀\n⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⡠⠤⢄⡀⢀⡠⠤⠒⠂⠉⠉⠁⠀⠀⠉⠉⠉⠒⠂⠤⣄⡤⠐⠒⠢⢄⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀\n⠀⠀⠀⠀⠀⠀⠀⠀⢠⠋⠀⢀⠴⠋⢁⡠⠤⠤⣀⠀⠀⠀⠀⠀⠀⠀⢀⡠⠤⢤⡀⠉⠓⢄⠀⠈⡇⠀⠀⠀⠀⠀⠀⠀⠀⠀\n⠀⠀⠀⠀⠀⠀⠀⠀⠸⣄⡔⠁⠀⣴⣯⡀⠀⠀⠈⠳⡄⠀⠀⠀⠀⣼⣅⠀⠀⠀⠈⢳⡀⠀⠙⢤⠃⠀⠀⠀⠀⠀⠀⠀⠀⠀\n⠀⠀⠀⠀⠀⠀⠀⠀⣠⠋⠀⠀⠼⣿⡿⠗⠀⠀⠀⠀⡇⠀⠀⠀⢰⣿⡿⠃⠀⠀⠀⠀⣇⠀⠀⠨⢧⠀⠀⠀⠀⠀⠀⠀⠀⠀\n⠀⠀⠀⠀⠀⠀⠀⣰⠃⠀⠀⠀⠀⠣⡀⠀⠀⠀⢀⣴⠃⠀⠀⠀⠈⠳⡀⠀⠀⠀⢀⡼⠁⠀⠀⠀⠀⢳⡀⠀⠀⠀⠀⠀⠀⠀\n⠀⠀⠀⠀⠀⠀⢠⠃⠀⠀⠀⠀⠀⠀⠈⠑⢒⠶⠛⠻⣾⣿⣿⣿⡦⠀⠈⠑⠒⠒⠉⠀⠀⠀⠀⠀⠀⠀⢣⠀⠀⠀⠀⠀⠀⠀\n⠀⠀⠀⠀⠀⠀⡎⠀⠀⠀⠀⠀⠀⠀⠀⢠⠋⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠇⠈⡇⠀⠀⠀⠀⠀⠀\n⠀⠀⠀⠀⠀⢠⠇⠀⠀⠀⠀⠀⠀⠀⢠⡇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠸⠀⢹⠀⠀⠀⠀⠀⠀\n⠀⠀⠀⠀⠀⡸⠀⠀⠀⠀⠀⠀⠀⠀⠈⣇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⡇⠈⡇⠀⠀⠀⠀⠀\n⠀⠀⠀⠀⢀⠇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠙⣇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢣⠀⢳⠀⠀⠀⠀⠀\n⠀⠀⠀⠀⡜⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢸⡀⠀⢣⠀⠀⠀⠀\n⠀⠀⠀⡰⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠘⡧⡄⠀⢣⡀⠀⠀\n⠀⠀⡰⠁⠀⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢹⠀⠀⢳⠀⠀\n⠀⡰⠁⠀⢀⠇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢸⡀⠀⠀⢣⠀\n⢠⠃⠀⠀⣸⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⣇⠀⠀⠈⡇\n⡎⠀⠀⠀⢻⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⠇⠀⠀⠀⢸\n⡇⠀⠀⠀⢸⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢸⠀⠀⠀⠀⢸\n⢷⣄⠀⠀⠀⡇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⡄⠀⣼⡀⠀⠀⣀⡼\n⠀⠛⠰⠟⠊⢹⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠇⢠⠃⠙⠛⠒⠛⠁\n⠀⠀⠀⠀⠀⠈⢇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠘⢀⡎⠀⠀⠀⠀⠀⠀\n⠀⠀⠀⠀⠀⠀⠈⢦⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣠⡟⠀⠀⠀⠀⠀⠀⠀\n⠀⠀⠀⠀⠀⠀⠀⠀⢷⣄⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣠⠜⢱⠃⠀⠀⠀⠀⠀⠀⠀\n⠀⠀⠀⠀⠀⠀⠀⠀⠸⡌⠑⢦⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣠⠞⠁⢀⡏⠀⠀⠀⠀⠀⠀⠀⠀\n⠀⠀⠀⠀⠀⠀⠀⠀⠀⢱⡀⠀⠈⠓⠦⢄⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣀⠤⠖⠉⠀⠀⠀⡜⠀⠀⠀⠀⠀⠀⠀⠀⠀\n⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⣷⡀⠀⠀⠀⠀⠈⠉⢒⡶⠒⠒⠒⠒⠒⠒⢲⠈⠉⠀⠀⠀⠀⠀⢀⣾⡁⠀⠀⠀⠀⠀⠀⠀⠀⠀\n⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠻⣄⣰⠀⠀⣀⡠⠔⠋⠀⠀⠀⠀⠀⠀⠀⠀⠓⢄⣀⠀⠀⢲⠀⢘⡿⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀\n⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⠉⠉⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠉⢉⠉⠉⠁⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀",
+    "has_architecture_docs": false,
+    "api_routes_count": 0,
+    "db_migrations_or_schema_count": 0,
+    "mock_data_detected": false,
+    "mock_data_indicators": [],
+    "todo_fixme_count": 0,
+    "boilerplate_detected": false,
+    "boilerplate_indicators": [],
+    "deployment_check": null,
+    "consistency_with_claims": "inconsistent",
+    "consistency_explanation": "Weak evidence: Only 0/5 claimed technologies detected in codebase.",
+    "actual_integrations_found": [],
+    "readme_claims_unsupported_by_code": [
+      "flask",
+      "flask",
+      "openai",
+      "python",
+      "python"
+    ],
+    "provenance": [
+      {
+        "claim": "Inspected repository https://github.com/PaolaArraut/Therapist-Bot",
+        "evidence_type": "repository",
+        "source": "https://github.com/PaolaArraut/Therapist-Bot",
+        "location": "root",
+        "confidence": 1.0,
+        "details": null
+      }
+    ]
+  },
+  "demo_summary": {
+    "has_video_demo": false,
+    "video_platform": "",
+    "video_url": "",
+    "duration_seconds": null,
+    "has_live_deployment": false,
+    "deployment_url": "",
+    "deployment_reachable": null,
+    "has_slide_deck": false,
+    "observations": []
+  },
+  "sponsor_technologies_mentioned": [],
+  "bundle_sha256": "783e9204d5fcc2d40e5a4392bf56afd30c2299db8baa98041e64218e87229b92",
+  "created_at": "2026-09-26T02:03:23.091217Z"
+}

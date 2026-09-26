@@ -1,0 +1,182 @@
+{
+  "project_id": "719149",
+  "slug": "visual-insight-ai",
+  "title": "Visual Insight AI",
+  "tagline": "Smart Glasses That See More: AI Power On The GO!",
+  "problem_statement": "",
+  "inspiration": "",
+  "what_it_does": "",
+  "how_it_was_built": "",
+  "challenges": "",
+  "accomplishments": "",
+  "lessons_learned": "",
+  "future_plans": "",
+  "tech_tags": [
+    "arduino",
+    "arduino",
+    "azure",
+    "azure",
+    "c++",
+    "c++",
+    "css",
+    "css",
+    "esp32-cam",
+    "flask",
+    "flask",
+    "github",
+    "github",
+    "html5",
+    "html5",
+    "ocr",
+    "openai",
+    "python",
+    "python",
+    "react",
+    "react",
+    "typescript",
+    "typescript"
+  ],
+  "team_size": 4,
+  "repository_metrics": {
+    "repo_url": "https://github.com/eyumandy/AI-Vision-Glasses.git",
+    "status": "accessible",
+    "default_branch": "main",
+    "file_count": 29,
+    "approx_loc": 1348,
+    "loc_by_language": {
+      "HTML": 13,
+      "JavaScript": 89,
+      "TypeScript": 705,
+      "CSS": 187,
+      "Python": 354
+    },
+    "primary_languages": [
+      "TypeScript",
+      "Python",
+      "CSS",
+      "JavaScript",
+      "HTML"
+    ],
+    "tech_stack": {
+      "frontend_frameworks": [
+        "TailwindCSS",
+        "Vite",
+        "React"
+      ],
+      "backend_frameworks": [
+        "Flask"
+      ],
+      "databases": [],
+      "ai_ml_libraries": [],
+      "model_providers": [
+        "OpenAI"
+      ],
+      "cloud_devops": [],
+      "third_party_apis": [],
+      "hardware_components": [],
+      "package_dependencies": [
+        "flask",
+        "openai",
+        "react",
+        "tailwindcss",
+        "vite"
+      ]
+    },
+    "git_timeline": {
+      "total_commits": 10,
+      "commits_in_window": 10,
+      "first_commit_time": "2024-09-28T20:20:38Z",
+      "last_commit_time": "2024-11-01T12:27:02Z",
+      "commit_timestamps": [
+        "2024-09-28T20:20:38Z",
+        "2024-09-28T20:48:39Z",
+        "2024-09-28T23:06:29Z",
+        "2024-09-28T23:35:37Z",
+        "2024-09-29T03:17:33Z",
+        "2024-09-29T06:04:39Z",
+        "2024-09-29T09:28:44Z",
+        "2024-09-29T09:42:25Z",
+        "2024-09-29T10:41:59Z",
+        "2024-11-01T12:27:02Z"
+      ],
+      "late_rewrites_detected": false,
+      "deadline_crunch_ratio": 0.1,
+      "final_stage_focus": "docs",
+      "history_is_squashed_or_minimal": false,
+      "contributor_count": 1,
+      "contributors": [
+        "Yumandy Espinosa"
+      ]
+    },
+    "test_files_count": 0,
+    "test_frameworks": [],
+    "has_ci": false,
+    "ci_configs": [],
+    "has_docker": false,
+    "has_env_template": false,
+    "readme_size_bytes": 1545,
+    "readme_excerpt": "Visual Insight AI Glasses - README\nWelcome to Visual Insight AI! Our project brings artificial intelligence, computer vision, and OCR directly to your field of view through smart glasses. Whether it's extracting text from the real world, identifying objects, or providing on-the-go insights, our glasses make AI more personal and accessible than ever.\nOverview\nThe Visual Insight AI Glasses allow you to experience the power of AI in real-time, offering detailed visual analysis directly from the smart glasses. They’re designed to assist users in gathering critical information and insights on the fly, eliminating the layers of hardware and time traditionally required for such tasks.\nFeatures\nReal-time Object Recognition: Identify objects in your environment using cutting-edge AI.\nText Extraction (OCR): Extract and display text from various sources, including signs, books, and printed documents.\nSeamless User Interface: Control the glasses with simple gestures and commands.\nPortable and Wearable: Enjoy the convenience of AI-powered insights through smart, lightweight glasses.\nTechnologies Used\nMicrosoft Azure Cognitive Services: For image analysis, computer vision, and text-to-speech.\nOpenAI: For generating real-time insights and responses based on user input.\nPython Flask: To build the backend system connecting the AI components.\nReact & Framer Motion: For creating the interactive user interface.\nESP32-CAM: Camera module for video capture and analysis.\nAzure Speech Services: For converting AI-generated text into speech.",
+    "has_architecture_docs": false,
+    "api_routes_count": 0,
+    "db_migrations_or_schema_count": 0,
+    "mock_data_detected": false,
+    "mock_data_indicators": [],
+    "todo_fixme_count": 0,
+    "boilerplate_detected": false,
+    "boilerplate_indicators": [],
+    "deployment_check": null,
+    "consistency_with_claims": "partial",
+    "consistency_explanation": "Partial evidence: 7/23 claimed technologies found in codebase.",
+    "actual_integrations_found": [
+      "css",
+      "css",
+      "flask",
+      "flask",
+      "openai",
+      "react",
+      "react"
+    ],
+    "readme_claims_unsupported_by_code": [
+      "arduino",
+      "arduino",
+      "azure",
+      "azure",
+      "c++",
+      "c++",
+      "esp32-cam",
+      "github",
+      "github",
+      "html5",
+      "html5",
+      "ocr",
+      "python",
+      "python",
+      "typescript",
+      "typescript"
+    ],
+    "provenance": [
+      {
+        "claim": "Inspected repository https://github.com/eyumandy/AI-Vision-Glasses.git",
+        "evidence_type": "repository",
+        "source": "https://github.com/eyumandy/AI-Vision-Glasses.git",
+        "location": "root",
+        "confidence": 1.0,
+        "details": null
+      }
+    ]
+  },
+  "demo_summary": {
+    "has_video_demo": true,
+    "video_platform": "youtube",
+    "video_url": "https://www.youtube.com/embed/OoAF0aWN7Ic?enablejsapi=1&hl=en_US&rel=0&start=&version=3&wmode=transparent",
+    "duration_seconds": null,
+    "has_live_deployment": false,
+    "deployment_url": "",
+    "deployment_reachable": null,
+    "has_slide_deck": false,
+    "observations": []
+  },
+  "sponsor_technologies_mentioned": [],
+  "bundle_sha256": "5ac37973f2dfdecbe0aec0c49c632c21002f04f2d1d714cf71f78a65a1ec40fc",
+  "created_at": "2026-09-26T02:03:23.402749Z"
+}

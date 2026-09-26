@@ -1,0 +1,139 @@
+{
+  "project_id": "718454",
+  "slug": "project-for-shellhacks-2024",
+  "title": "QuizzyFy",
+  "tagline": "QuizzyFy was born out of the idea that what if there was a resource that could turn any topic that you're studying into a quiz?",
+  "problem_statement": "",
+  "inspiration": "",
+  "what_it_does": "",
+  "how_it_was_built": "",
+  "challenges": "",
+  "accomplishments": "",
+  "lessons_learned": "",
+  "future_plans": "",
+  "tech_tags": [
+    ".net",
+    ".net",
+    "docker",
+    "docker",
+    "javascript",
+    "javascript",
+    "python",
+    "python",
+    "sql",
+    "sql"
+  ],
+  "team_size": 2,
+  "repository_metrics": {
+    "repo_url": "https://github.com/mazid-rafee/Quizify",
+    "status": "accessible",
+    "default_branch": "main",
+    "file_count": 159,
+    "approx_loc": 1925,
+    "loc_by_language": {
+      "Python": 423,
+      "C#": 700,
+      "CSS": 361,
+      "JavaScript": 441
+    },
+    "primary_languages": [
+      "C#",
+      "JavaScript",
+      "Python",
+      "CSS"
+    ],
+    "tech_stack": {
+      "frontend_frameworks": [],
+      "backend_frameworks": [
+        "Flask"
+      ],
+      "databases": [],
+      "ai_ml_libraries": [
+        "HuggingFace Transformers",
+        "PyTorch"
+      ],
+      "model_providers": [],
+      "cloud_devops": [],
+      "third_party_apis": [],
+      "hardware_components": [],
+      "package_dependencies": [
+        "flask",
+        "torch",
+        "transformers"
+      ]
+    },
+    "git_timeline": {
+      "total_commits": 1,
+      "commits_in_window": 1,
+      "first_commit_time": "2024-09-29T14:47:48Z",
+      "last_commit_time": "2024-09-29T14:47:48Z",
+      "commit_timestamps": [
+        "2024-09-29T14:47:48Z"
+      ],
+      "late_rewrites_detected": false,
+      "deadline_crunch_ratio": 0.0,
+      "final_stage_focus": "squashed",
+      "history_is_squashed_or_minimal": true,
+      "contributor_count": 1,
+      "contributors": [
+        "Md Abdullah Al Mazid"
+      ]
+    },
+    "test_files_count": 0,
+    "test_frameworks": [],
+    "has_ci": false,
+    "ci_configs": [],
+    "has_docker": false,
+    "has_env_template": false,
+    "readme_size_bytes": 0,
+    "readme_excerpt": "",
+    "has_architecture_docs": false,
+    "api_routes_count": 0,
+    "db_migrations_or_schema_count": 0,
+    "mock_data_detected": false,
+    "mock_data_indicators": [],
+    "todo_fixme_count": 0,
+    "boilerplate_detected": false,
+    "boilerplate_indicators": [],
+    "deployment_check": null,
+    "consistency_with_claims": "inconsistent",
+    "consistency_explanation": "Weak evidence: Only 0/10 claimed technologies detected in codebase.",
+    "actual_integrations_found": [],
+    "readme_claims_unsupported_by_code": [
+      ".net",
+      ".net",
+      "docker",
+      "docker",
+      "javascript",
+      "javascript",
+      "python",
+      "python",
+      "sql",
+      "sql"
+    ],
+    "provenance": [
+      {
+        "claim": "Inspected repository https://github.com/mazid-rafee/Quizify",
+        "evidence_type": "repository",
+        "source": "https://github.com/mazid-rafee/Quizify",
+        "location": "root",
+        "confidence": 1.0,
+        "details": null
+      }
+    ]
+  },
+  "demo_summary": {
+    "has_video_demo": false,
+    "video_platform": "",
+    "video_url": "",
+    "duration_seconds": null,
+    "has_live_deployment": false,
+    "deployment_url": "",
+    "deployment_reachable": null,
+    "has_slide_deck": false,
+    "observations": []
+  },
+  "sponsor_technologies_mentioned": [],
+  "bundle_sha256": "ad605386ee29b0c7c5c36a3fc59b6a8ac033bbe2d91407fdc5697583ea6c8ef3",
+  "created_at": "2026-09-26T02:03:23.129033Z"
+}

@@ -1,0 +1,125 @@
+{
+  "project_id": "719814",
+  "slug": "spoiled-apple-detector-reducing-waste",
+  "title": "Spoiled Apple Detector: Reducing Waste",
+  "tagline": "Introducing the Spoiled Food Detector: an innovative tool that identifies spoiled produce, from apples to vegetables, minimizing waste and promoting sustainability for a healthier planet.",
+  "problem_statement": "",
+  "inspiration": "",
+  "what_it_does": "",
+  "how_it_was_built": "",
+  "challenges": "",
+  "accomplishments": "",
+  "lessons_learned": "",
+  "future_plans": "",
+  "tech_tags": [
+    "keras",
+    "matplotlib",
+    "numpy",
+    "numpy",
+    "opencv",
+    "opencv",
+    "python",
+    "python",
+    "tensorflow"
+  ],
+  "team_size": 1,
+  "repository_metrics": {
+    "repo_url": "https://github.com/tarun-reddy-5/spoiledAppleDetection/blob/main/predictor.ipynb",
+    "status": "accessible",
+    "default_branch": "main",
+    "file_count": 6,
+    "approx_loc": 0,
+    "loc_by_language": {},
+    "primary_languages": [],
+    "tech_stack": {
+      "frontend_frameworks": [],
+      "backend_frameworks": [],
+      "databases": [],
+      "ai_ml_libraries": [],
+      "model_providers": [],
+      "cloud_devops": [],
+      "third_party_apis": [],
+      "hardware_components": [],
+      "package_dependencies": [
+        "download the weights of yolov3 model",
+        "https://www.kaggle.com/datasets/shivam316/yolov3-weights"
+      ]
+    },
+    "git_timeline": {
+      "total_commits": 5,
+      "commits_in_window": 5,
+      "first_commit_time": "2024-09-29T07:24:52Z",
+      "last_commit_time": "2024-09-29T15:21:24Z",
+      "commit_timestamps": [
+        "2024-09-29T07:24:52Z",
+        "2024-09-29T07:39:49Z",
+        "2024-09-29T07:55:28Z",
+        "2024-09-29T07:58:02Z",
+        "2024-09-29T15:21:24Z"
+      ],
+      "late_rewrites_detected": false,
+      "deadline_crunch_ratio": 0.2,
+      "final_stage_focus": "docs",
+      "history_is_squashed_or_minimal": false,
+      "contributor_count": 1,
+      "contributors": [
+        "Tarun Reddy Nimmala"
+      ]
+    },
+    "test_files_count": 0,
+    "test_frameworks": [],
+    "has_ci": false,
+    "ci_configs": [],
+    "has_docker": false,
+    "has_env_template": false,
+    "readme_size_bytes": 2201,
+    "readme_excerpt": "# Spoiled Apple Detector\nThe **Spoiled Apple Detector** is a machine learning project designed to identify spoiled apples in a batch of apples, aiming to reduce food wastage. By detecting and separating spoiled apples, this tool can help extend the shelf life of good apples and prevent further spoilage. The project leverages state-of-the-art computer vision techniques like **YOLO** for object detection and **MobileNetV2** for classification.\n## Table of Contents\n- Introduction\n- Inspiration\n- Usage\n- Project Overview\n## Introduction\nThe **Spoiled Apple Detector** is designed to address food spoilage in apples, which is a significant contributor to food wastage globally. This solution can be extended to detect spoilage in other types of food, making it a valuable tool for reducing waste in various contexts.\n## Inspiration\nWith food wastage being a global issue, I was inspired to find a solution that could help minimize this problem. By detecting spoiled apples early on, we can prevent the spoilage of other food items and help consumers make better use of their food supplies.\n## Usage\n1. **Upload Images**: Use the 'predictor.ipynb' notebook to upload images of apples.\n2. **Detection & Classification**: The YOLO model detects apples, and the binary classifier determines if they are \"Good\" or \"Spoiled.\"\n3. **Results**: The system returns an image highlighting the spoiled apples in red boxes and good apples in green boxes.\n## Project Overview\nThis project uses a combination of object detection and binary classification to identify spoiled apples within a batch. The system works as follows:\n- **Data Collection**: Images of good and spoiled apples were collected.\n- **Binary Classifier**: I fine-tuned the `MobileNetV2` model to create a binary classifier that distinguishes between good and spoiled apples.\n- **YOLO Integration**: YOLO was fine-tuned to detect apples in images. The detected apples were passed to the classifier for final prediction.\n- **Prediction Pipeline**: The system first detects apples using YOLO, then classifies each apple as either \"Good\" or \"Spoiled\" using the binary classifier.",
+    "has_architecture_docs": false,
+    "api_routes_count": 0,
+    "db_migrations_or_schema_count": 0,
+    "mock_data_detected": false,
+    "mock_data_indicators": [],
+    "todo_fixme_count": 0,
+    "boilerplate_detected": false,
+    "boilerplate_indicators": [],
+    "deployment_check": null,
+    "consistency_with_claims": "inconsistent",
+    "consistency_explanation": "Weak evidence: Only 0/9 claimed technologies detected in codebase.",
+    "actual_integrations_found": [],
+    "readme_claims_unsupported_by_code": [
+      "keras",
+      "matplotlib",
+      "numpy",
+      "numpy",
+      "opencv",
+      "opencv",
+      "python",
+      "python",
+      "tensorflow"
+    ],
+    "provenance": [
+      {
+        "claim": "Inspected repository https://github.com/tarun-reddy-5/spoiledAppleDetection/blob/main/predictor.ipynb",
+        "evidence_type": "repository",
+        "source": "https://github.com/tarun-reddy-5/spoiledAppleDetection/blob/main/predictor.ipynb",
+        "location": "root",
+        "confidence": 1.0,
+        "details": null
+      }
+    ]
+  },
+  "demo_summary": {
+    "has_video_demo": false,
+    "video_platform": "",
+    "video_url": "",
+    "duration_seconds": null,
+    "has_live_deployment": false,
+    "deployment_url": "",
+    "deployment_reachable": null,
+    "has_slide_deck": false,
+    "observations": []
+  },
+  "sponsor_technologies_mentioned": [],
+  "bundle_sha256": "6b1953d4e9fc90c87b94661cb1d57387bcd162c6d1abf22921af0135e2b465f9",
+  "created_at": "2026-09-26T02:03:23.426712Z"
+}

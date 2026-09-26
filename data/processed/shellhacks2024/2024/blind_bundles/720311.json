@@ -1,0 +1,180 @@
+{
+  "project_id": "720311",
+  "slug": "finatlas",
+  "title": "FinAtlas",
+  "tagline": "Steering through a new country’s economy can be challenging for immigrants. So, our team developed a tool combining AI and Mapping Services to connect users with local financial resources.",
+  "problem_statement": "",
+  "inspiration": "",
+  "what_it_does": "",
+  "how_it_was_built": "",
+  "challenges": "",
+  "accomplishments": "",
+  "lessons_learned": "",
+  "future_plans": "",
+  "tech_tags": [
+    "canva",
+    "css",
+    "css",
+    "figma",
+    "github",
+    "github",
+    "google-maps",
+    "google-maps",
+    "groq",
+    "groq",
+    "html",
+    "html",
+    "javascript",
+    "javascript",
+    "natural-language-processing",
+    "natural-language-processing",
+    "natural-language-tool-kit",
+    "python",
+    "python",
+    "react",
+    "react"
+  ],
+  "team_size": 4,
+  "repository_metrics": {
+    "repo_url": "https://github.com/aleguy02/Shellhacks2025",
+    "status": "accessible",
+    "default_branch": "main",
+    "file_count": 44,
+    "approx_loc": 952,
+    "loc_by_language": {
+      "HTML": 13,
+      "JavaScript": 903,
+      "CSS": 36
+    },
+    "primary_languages": [
+      "JavaScript",
+      "CSS",
+      "HTML"
+    ],
+    "tech_stack": {
+      "frontend_frameworks": [
+        "Vite",
+        "React"
+      ],
+      "backend_frameworks": [
+        "Express.js"
+      ],
+      "databases": [],
+      "ai_ml_libraries": [],
+      "model_providers": [
+        "Groq"
+      ],
+      "cloud_devops": [],
+      "third_party_apis": [],
+      "hardware_components": [],
+      "package_dependencies": [
+        "express",
+        "groq",
+        "react",
+        "vite"
+      ]
+    },
+    "git_timeline": {
+      "total_commits": 14,
+      "commits_in_window": 14,
+      "first_commit_time": "2024-09-27T23:07:20Z",
+      "last_commit_time": "2024-11-01T17:57:03Z",
+      "commit_timestamps": [
+        "2024-09-27T23:07:20Z",
+        "2024-09-28T06:06:43Z",
+        "2024-09-28T06:10:51Z",
+        "2024-09-29T01:23:36Z",
+        "2024-09-29T01:51:33Z",
+        "2024-09-29T10:51:26Z",
+        "2024-09-29T14:48:59Z",
+        "2024-09-29T14:57:42Z",
+        "2024-09-29T14:58:19Z",
+        "2024-10-01T03:15:12Z",
+        "2024-10-08T23:17:22Z",
+        "2024-10-10T02:39:08Z",
+        "2024-11-01T17:48:43Z",
+        "2024-11-01T17:57:03Z"
+      ],
+      "late_rewrites_detected": false,
+      "deadline_crunch_ratio": 0.14,
+      "final_stage_focus": "docs",
+      "history_is_squashed_or_minimal": false,
+      "contributor_count": 5,
+      "contributors": [
+        "Kai Sprunger",
+        "aleguy02",
+        "fradicus",
+        "TTRAN70",
+        "Ale V"
+      ]
+    },
+    "test_files_count": 0,
+    "test_frameworks": [],
+    "has_ci": false,
+    "ci_configs": [],
+    "has_docker": false,
+    "has_env_template": false,
+    "readme_size_bytes": 923,
+    "readme_excerpt": "﻿# Shellhacks 2024\nOur tool comprises two major components – an AI Assistant and Mapping Service. The AI Assistant, powered by Groq's API, prompts the user to input relevant questions related to finance or economics. Through Natural Language Processing, the tool evaluates whether the question is or is not relevant to finance. We developed an additional algorithm with  Natural Language Tool Kit and machine learning to further assess the validity, but this algorithm is to be added at a later update. If the question is invalid, the user is prompted again. Otherwise, the tool provides an extensive response alongside a list of local financial resources critical to the user. The Mapping Service then uses Google Maps API to display the resources in a certain radius around the user. Through all of this, the user is able to receive accurate information and access to free as well as significant financial support.",
+    "has_architecture_docs": false,
+    "api_routes_count": 2,
+    "db_migrations_or_schema_count": 0,
+    "mock_data_detected": false,
+    "mock_data_indicators": [],
+    "todo_fixme_count": 0,
+    "boilerplate_detected": false,
+    "boilerplate_indicators": [],
+    "deployment_check": null,
+    "consistency_with_claims": "inconsistent",
+    "consistency_explanation": "Weak evidence: Only 4/21 claimed technologies detected in codebase.",
+    "actual_integrations_found": [
+      "groq",
+      "groq",
+      "react",
+      "react"
+    ],
+    "readme_claims_unsupported_by_code": [
+      "canva",
+      "css",
+      "css",
+      "figma",
+      "github",
+      "github",
+      "google-maps",
+      "google-maps",
+      "html",
+      "html",
+      "javascript",
+      "javascript",
+      "natural-language-processing",
+      "natural-language-processing",
+      "natural-language-tool-kit",
+      "python",
+      "python"
+    ],
+    "provenance": [
+      {
+        "claim": "Inspected repository https://github.com/aleguy02/Shellhacks2025",
+        "evidence_type": "repository",
+        "source": "https://github.com/aleguy02/Shellhacks2025",
+        "location": "root",
+        "confidence": 1.0,
+        "details": null
+      }
+    ]
+  },
+  "demo_summary": {
+    "has_video_demo": false,
+    "video_platform": "",
+    "video_url": "",
+    "duration_seconds": null,
+    "has_live_deployment": false,
+    "deployment_url": "",
+    "deployment_reachable": null,
+    "has_slide_deck": false,
+    "observations": []
+  },
+  "sponsor_technologies_mentioned": [],
+  "bundle_sha256": "9da4a8f2ec4c92592f769663b13a2d59f84984e444b48ec4def84e93b8bc5a1a",
+  "created_at": "2026-09-26T02:03:23.199784Z"
+}

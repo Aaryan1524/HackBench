@@ -1,0 +1,136 @@
+{
+  "project_id": "720185",
+  "slug": "fiu-women-tech-connect",
+  "title": "FIU Women Tech Connect",
+  "tagline": "Empowering Women in Tech : Shaping FIU's Story with AI",
+  "problem_statement": "",
+  "inspiration": "",
+  "what_it_does": "",
+  "how_it_was_built": "",
+  "challenges": "",
+  "accomplishments": "",
+  "lessons_learned": "",
+  "future_plans": "",
+  "tech_tags": [
+    "flask",
+    "flask",
+    "pycharm",
+    "python",
+    "python",
+    "python-avatars",
+    "pyttx3",
+    "tidioai"
+  ],
+  "team_size": 3,
+  "repository_metrics": {
+    "repo_url": "https://github.com/malquinoah/hack",
+    "status": "accessible",
+    "default_branch": "main",
+    "file_count": 58,
+    "approx_loc": 7568,
+    "loc_by_language": {
+      "Python": 161,
+      "CSS": 6218,
+      "JavaScript": 627,
+      "HTML": 562
+    },
+    "primary_languages": [
+      "CSS",
+      "JavaScript",
+      "HTML",
+      "Python"
+    ],
+    "tech_stack": {
+      "frontend_frameworks": [],
+      "backend_frameworks": [
+        "Flask"
+      ],
+      "databases": [],
+      "ai_ml_libraries": [],
+      "model_providers": [],
+      "cloud_devops": [],
+      "third_party_apis": [],
+      "hardware_components": [],
+      "package_dependencies": [
+        "flask"
+      ]
+    },
+    "git_timeline": {
+      "total_commits": 4,
+      "commits_in_window": 4,
+      "first_commit_time": "2024-09-28T21:01:57Z",
+      "last_commit_time": "2024-09-29T16:30:11Z",
+      "commit_timestamps": [
+        "2024-09-28T21:01:57Z",
+        "2024-09-28T21:12:31Z",
+        "2024-09-28T21:29:37Z",
+        "2024-09-29T16:30:11Z"
+      ],
+      "late_rewrites_detected": false,
+      "deadline_crunch_ratio": 0.25,
+      "final_stage_focus": "debugging",
+      "history_is_squashed_or_minimal": false,
+      "contributor_count": 3,
+      "contributors": [
+        "Noah",
+        "malquinoah",
+        "saraitmanar"
+      ]
+    },
+    "test_files_count": 0,
+    "test_frameworks": [],
+    "has_ci": false,
+    "ci_configs": [],
+    "has_docker": false,
+    "has_env_template": false,
+    "readme_size_bytes": 0,
+    "readme_excerpt": "",
+    "has_architecture_docs": false,
+    "api_routes_count": 0,
+    "db_migrations_or_schema_count": 0,
+    "mock_data_detected": false,
+    "mock_data_indicators": [],
+    "todo_fixme_count": 0,
+    "boilerplate_detected": false,
+    "boilerplate_indicators": [],
+    "deployment_check": null,
+    "consistency_with_claims": "inconsistent",
+    "consistency_explanation": "Weak evidence: Only 2/8 claimed technologies detected in codebase.",
+    "actual_integrations_found": [
+      "flask",
+      "flask"
+    ],
+    "readme_claims_unsupported_by_code": [
+      "pycharm",
+      "python",
+      "python",
+      "python-avatars",
+      "pyttx3",
+      "tidioai"
+    ],
+    "provenance": [
+      {
+        "claim": "Inspected repository https://github.com/malquinoah/hack",
+        "evidence_type": "repository",
+        "source": "https://github.com/malquinoah/hack",
+        "location": "root",
+        "confidence": 1.0,
+        "details": null
+      }
+    ]
+  },
+  "demo_summary": {
+    "has_video_demo": false,
+    "video_platform": "",
+    "video_url": "",
+    "duration_seconds": null,
+    "has_live_deployment": false,
+    "deployment_url": "",
+    "deployment_reachable": null,
+    "has_slide_deck": false,
+    "observations": []
+  },
+  "sponsor_technologies_mentioned": [],
+  "bundle_sha256": "68ac148c488c63a3b3c7ee4df9a7de81801cc77eddb179c59e9e39a1fdf4c37c",
+  "created_at": "2026-09-26T02:03:23.217780Z"
+}

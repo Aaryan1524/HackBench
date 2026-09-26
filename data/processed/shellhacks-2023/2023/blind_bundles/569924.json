@@ -1,0 +1,190 @@
+{
+  "project_id": "569924",
+  "slug": "aiseek",
+  "title": "AISeek",
+  "tagline": "This full stack app is to be able to provide information that is most relevant to the user, enhancing new learning opportunities such as sharing videos, answering questions, and providing links",
+  "problem_statement": "",
+  "inspiration": "",
+  "what_it_does": "",
+  "how_it_was_built": "",
+  "challenges": "",
+  "accomplishments": "",
+  "lessons_learned": "",
+  "future_plans": "",
+  "tech_tags": [
+    "api",
+    "bootstrap",
+    "bootstrap",
+    "express.js",
+    "express.js",
+    "javascript",
+    "javascript",
+    "mongodb",
+    "mongodb",
+    "node.js",
+    "node.js",
+    "react",
+    "react",
+    "regex"
+  ],
+  "team_size": 3,
+  "repository_metrics": {
+    "repo_url": "https://github.com/camiloreyes1/server-laibrary",
+    "status": "accessible",
+    "default_branch": "master",
+    "file_count": 13,
+    "approx_loc": 407,
+    "loc_by_language": {
+      "JavaScript": 386,
+      "HTML": 13,
+      "CSS": 8
+    },
+    "primary_languages": [
+      "JavaScript",
+      "HTML",
+      "CSS"
+    ],
+    "tech_stack": {
+      "frontend_frameworks": [],
+      "backend_frameworks": [
+        "Express.js"
+      ],
+      "databases": [
+        "MongoDB"
+      ],
+      "ai_ml_libraries": [],
+      "model_providers": [],
+      "cloud_devops": [],
+      "third_party_apis": [],
+      "hardware_components": [],
+      "package_dependencies": [
+        "axios",
+        "bcryptjs",
+        "cookie-parser",
+        "cors",
+        "debug",
+        "dotenv",
+        "express",
+        "jsonwebtoken",
+        "mongoose",
+        "morgan",
+        "path"
+      ]
+    },
+    "git_timeline": {
+      "total_commits": 28,
+      "commits_in_window": 28,
+      "first_commit_time": "2023-09-16T04:52:32Z",
+      "last_commit_time": "2023-09-17T13:52:41Z",
+      "commit_timestamps": [
+        "2023-09-16T04:52:32Z",
+        "2023-09-16T04:58:58Z",
+        "2023-09-16T05:18:06Z",
+        "2023-09-16T05:23:46Z",
+        "2023-09-16T05:32:10Z",
+        "2023-09-16T15:19:53Z",
+        "2023-09-16T16:49:20Z",
+        "2023-09-16T16:59:50Z",
+        "2023-09-16T17:02:53Z",
+        "2023-09-16T21:02:29Z",
+        "2023-09-16T21:08:37Z",
+        "2023-09-16T21:19:13Z",
+        "2023-09-16T22:02:21Z",
+        "2023-09-16T23:01:37Z",
+        "2023-09-16T23:25:18Z",
+        "2023-09-17T00:25:56Z",
+        "2023-09-17T02:20:37Z",
+        "2023-09-17T03:50:37Z",
+        "2023-09-17T05:34:55Z",
+        "2023-09-17T06:20:24Z",
+        "2023-09-17T07:10:01Z",
+        "2023-09-17T12:39:43Z",
+        "2023-09-17T12:58:27Z",
+        "2023-09-17T13:37:49Z",
+        "2023-09-17T13:48:31Z",
+        "2023-09-17T13:50:49Z",
+        "2023-09-17T13:51:47Z",
+        "2023-09-17T13:52:41Z"
+      ],
+      "late_rewrites_detected": false,
+      "deadline_crunch_ratio": 0.32,
+      "final_stage_focus": "features",
+      "history_is_squashed_or_minimal": false,
+      "contributor_count": 2,
+      "contributors": [
+        "camiloreyes1",
+        "Nikita Valovyy"
+      ]
+    },
+    "test_files_count": 0,
+    "test_frameworks": [],
+    "has_ci": false,
+    "ci_configs": [],
+    "has_docker": false,
+    "has_env_template": false,
+    "readme_size_bytes": 0,
+    "readme_excerpt": "",
+    "has_architecture_docs": false,
+    "api_routes_count": 9,
+    "db_migrations_or_schema_count": 0,
+    "mock_data_detected": false,
+    "mock_data_indicators": [],
+    "todo_fixme_count": 0,
+    "boilerplate_detected": false,
+    "boilerplate_indicators": [],
+    "deployment_check": {
+      "url": "https://aiseek.vercel.app/",
+      "is_reachable": true,
+      "status_code": 200,
+      "response_time_ms": 490.4,
+      "checked_at": "2026-09-26T02:06:54.075370Z",
+      "deployment_url_status": "reachable",
+      "deployment_verification": "unknown",
+      "verification_evidence": "Server responded (HTTP 200), but no project name was provided to verify content."
+    },
+    "consistency_with_claims": "inconsistent",
+    "consistency_explanation": "Weak evidence: Only 4/14 claimed technologies detected in codebase.",
+    "actual_integrations_found": [
+      "express.js",
+      "express.js",
+      "mongodb",
+      "mongodb"
+    ],
+    "readme_claims_unsupported_by_code": [
+      "api",
+      "bootstrap",
+      "bootstrap",
+      "javascript",
+      "javascript",
+      "node.js",
+      "node.js",
+      "react",
+      "react",
+      "regex"
+    ],
+    "provenance": [
+      {
+        "claim": "Inspected repository https://github.com/camiloreyes1/server-laibrary",
+        "evidence_type": "repository",
+        "source": "https://github.com/camiloreyes1/server-laibrary",
+        "location": "root",
+        "confidence": 1.0,
+        "details": null
+      }
+    ]
+  },
+  "demo_summary": {
+    "has_video_demo": false,
+    "video_platform": "",
+    "video_url": "",
+    "duration_seconds": null,
+    "has_live_deployment": true,
+    "deployment_url": "https://aiseek.vercel.app/",
+    "deployment_reachable": true,
+    "has_slide_deck": false,
+    "observations": []
+  },
+  "sponsor_technologies_mentioned": [],
+  "bundle_sha256": "b2ee7a9b6991844ed5c6e65be99a0ba6ea61ab34043f3dfaf831ad0a19a06a1a",
+  "created_at": "2026-09-26T02:11:35.700912Z"
+}

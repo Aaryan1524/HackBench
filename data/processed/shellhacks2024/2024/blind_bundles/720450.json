@@ -1,0 +1,177 @@
+{
+  "project_id": "720450",
+  "slug": "capital-clash",
+  "title": "Capital Clash",
+  "tagline": "Imagine a game in which you not only play but also learn how to manage your finances. Our game combines modules and trivia battles to teach you important money skills with the help of an AI assistant.",
+  "problem_statement": "",
+  "inspiration": "",
+  "what_it_does": "",
+  "how_it_was_built": "",
+  "challenges": "",
+  "accomplishments": "",
+  "lessons_learned": "",
+  "future_plans": "",
+  "tech_tags": [
+    "css",
+    "css",
+    "html",
+    "html",
+    "javascript",
+    "javascript",
+    "python",
+    "python"
+  ],
+  "team_size": 4,
+  "repository_metrics": {
+    "repo_url": "https://github.com/rihhito/capital_clash",
+    "status": "accessible",
+    "default_branch": "main",
+    "file_count": 54,
+    "approx_loc": 1530,
+    "loc_by_language": {
+      "Python": 142,
+      "HTML": 165,
+      "CSS": 67,
+      "JavaScript": 1156
+    },
+    "primary_languages": [
+      "JavaScript",
+      "HTML",
+      "Python",
+      "CSS"
+    ],
+    "tech_stack": {
+      "frontend_frameworks": [
+        "React"
+      ],
+      "backend_frameworks": [
+        "Flask"
+      ],
+      "databases": [
+        "Firebase",
+        "SQLite"
+      ],
+      "ai_ml_libraries": [],
+      "model_providers": [],
+      "cloud_devops": [],
+      "third_party_apis": [],
+      "hardware_components": [],
+      "package_dependencies": [
+        "firebase",
+        "flask",
+        "react",
+        "sqlite"
+      ]
+    },
+    "git_timeline": {
+      "total_commits": 37,
+      "commits_in_window": 37,
+      "first_commit_time": "2024-09-27T01:07:03Z",
+      "last_commit_time": "2024-09-29T18:05:54Z",
+      "commit_timestamps": [
+        "2024-09-27T01:07:03Z",
+        "2024-09-27T01:08:50Z",
+        "2024-09-27T23:21:39Z",
+        "2024-09-27T23:23:16Z",
+        "2024-09-27T23:24:24Z",
+        "2024-09-27T23:28:37Z",
+        "2024-09-28T11:04:33Z",
+        "2024-09-28T18:07:39Z",
+        "2024-09-28T19:27:24Z",
+        "2024-09-28T19:27:53Z",
+        "2024-09-28T19:40:56Z",
+        "2024-09-28T19:41:22Z",
+        "2024-09-28T20:00:06Z",
+        "2024-09-28T20:06:35Z",
+        "2024-09-28T20:23:01Z",
+        "2024-09-28T20:58:58Z",
+        "2024-09-28T21:00:08Z",
+        "2024-09-28T21:25:16Z",
+        "2024-09-28T21:26:06Z",
+        "2024-09-28T21:26:21Z",
+        "2024-09-28T22:27:47Z",
+        "2024-09-28T23:58:04Z",
+        "2024-09-29T01:48:03Z",
+        "2024-09-29T04:05:48Z",
+        "2024-09-29T04:44:11Z",
+        "2024-09-29T05:56:41Z",
+        "2024-09-29T10:29:03Z",
+        "2024-09-29T11:42:56Z",
+        "2024-09-29T13:36:59Z",
+        "2024-09-29T13:52:27Z",
+        "2024-09-29T14:37:43Z",
+        "2024-09-29T14:50:30Z",
+        "2024-09-29T15:26:40Z",
+        "2024-09-29T16:51:56Z",
+        "2024-09-29T16:53:02Z",
+        "2024-09-29T18:05:39Z",
+        "2024-09-29T18:05:54Z"
+      ],
+      "late_rewrites_detected": false,
+      "deadline_crunch_ratio": 0.38,
+      "final_stage_focus": "debugging",
+      "history_is_squashed_or_minimal": false,
+      "contributor_count": 4,
+      "contributors": [
+        "SantiagoCuartas",
+        "rihhito",
+        "CarlosQ003",
+        "scuar003"
+      ]
+    },
+    "test_files_count": 1,
+    "test_frameworks": [],
+    "has_ci": false,
+    "ci_configs": [],
+    "has_docker": false,
+    "has_env_template": false,
+    "readme_size_bytes": 14,
+    "readme_excerpt": "ShellHacks 24",
+    "has_architecture_docs": false,
+    "api_routes_count": 0,
+    "db_migrations_or_schema_count": 0,
+    "mock_data_detected": false,
+    "mock_data_indicators": [],
+    "todo_fixme_count": 0,
+    "boilerplate_detected": false,
+    "boilerplate_indicators": [],
+    "deployment_check": null,
+    "consistency_with_claims": "inconsistent",
+    "consistency_explanation": "Weak evidence: Only 0/8 claimed technologies detected in codebase.",
+    "actual_integrations_found": [],
+    "readme_claims_unsupported_by_code": [
+      "css",
+      "css",
+      "html",
+      "html",
+      "javascript",
+      "javascript",
+      "python",
+      "python"
+    ],
+    "provenance": [
+      {
+        "claim": "Inspected repository https://github.com/rihhito/capital_clash",
+        "evidence_type": "repository",
+        "source": "https://github.com/rihhito/capital_clash",
+        "location": "root",
+        "confidence": 1.0,
+        "details": null
+      }
+    ]
+  },
+  "demo_summary": {
+    "has_video_demo": false,
+    "video_platform": "",
+    "video_url": "",
+    "duration_seconds": null,
+    "has_live_deployment": false,
+    "deployment_url": "",
+    "deployment_reachable": null,
+    "has_slide_deck": false,
+    "observations": []
+  },
+  "sponsor_technologies_mentioned": [],
+  "bundle_sha256": "8e0a58d800f56d52ade62ce6f355c01105152e6102993fd5cfaf30544ba6f42b",
+  "created_at": "2026-09-26T02:03:23.127067Z"
+}

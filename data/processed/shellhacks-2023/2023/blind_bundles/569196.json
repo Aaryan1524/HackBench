@@ -1,0 +1,142 @@
+{
+  "project_id": "569196",
+  "slug": "ecodentify",
+  "title": "EcoDentify",
+  "tagline": "Rewire, reduce, recycle",
+  "problem_statement": "",
+  "inspiration": "",
+  "what_it_does": "",
+  "how_it_was_built": "",
+  "challenges": "",
+  "accomplishments": "",
+  "lessons_learned": "",
+  "future_plans": "",
+  "tech_tags": [
+    "css",
+    "css",
+    "figma",
+    "flask",
+    "flask",
+    "html",
+    "html",
+    "javascript",
+    "javascript",
+    "python",
+    "python",
+    "serpapi"
+  ],
+  "team_size": 4,
+  "repository_metrics": {
+    "repo_url": "https://github.com/AyGeeEm/EcoDenify",
+    "status": "accessible",
+    "default_branch": "main",
+    "file_count": 9,
+    "approx_loc": 104,
+    "loc_by_language": {
+      "Python": 104
+    },
+    "primary_languages": [
+      "Python"
+    ],
+    "tech_stack": {
+      "frontend_frameworks": [],
+      "backend_frameworks": [
+        "Flask"
+      ],
+      "databases": [],
+      "ai_ml_libraries": [],
+      "model_providers": [],
+      "cloud_devops": [],
+      "third_party_apis": [],
+      "hardware_components": [],
+      "package_dependencies": [
+        "flask"
+      ]
+    },
+    "git_timeline": {
+      "total_commits": 9,
+      "commits_in_window": 9,
+      "first_commit_time": "2023-09-16T18:58:44Z",
+      "last_commit_time": "2023-09-17T14:25:40Z",
+      "commit_timestamps": [
+        "2023-09-16T18:58:44Z",
+        "2023-09-16T19:37:12Z",
+        "2023-09-16T20:07:07Z",
+        "2023-09-16T20:19:46Z",
+        "2023-09-16T20:19:57Z",
+        "2023-09-16T20:51:54Z",
+        "2023-09-16T23:37:47Z",
+        "2023-09-17T00:46:13Z",
+        "2023-09-17T14:25:40Z"
+      ],
+      "late_rewrites_detected": false,
+      "deadline_crunch_ratio": 0.11,
+      "final_stage_focus": "features",
+      "history_is_squashed_or_minimal": false,
+      "contributor_count": 2,
+      "contributors": [
+        "Tiffany Reyes",
+        "AyGeeEm"
+      ]
+    },
+    "test_files_count": 0,
+    "test_frameworks": [],
+    "has_ci": false,
+    "ci_configs": [],
+    "has_docker": false,
+    "has_env_template": false,
+    "readme_size_bytes": 11,
+    "readme_excerpt": "# EcoDenify",
+    "has_architecture_docs": false,
+    "api_routes_count": 0,
+    "db_migrations_or_schema_count": 0,
+    "mock_data_detected": false,
+    "mock_data_indicators": [],
+    "todo_fixme_count": 0,
+    "boilerplate_detected": false,
+    "boilerplate_indicators": [],
+    "deployment_check": null,
+    "consistency_with_claims": "inconsistent",
+    "consistency_explanation": "Weak evidence: Only 2/12 claimed technologies detected in codebase.",
+    "actual_integrations_found": [
+      "flask",
+      "flask"
+    ],
+    "readme_claims_unsupported_by_code": [
+      "css",
+      "css",
+      "figma",
+      "html",
+      "html",
+      "javascript",
+      "javascript",
+      "python",
+      "python",
+      "serpapi"
+    ],
+    "provenance": [
+      {
+        "claim": "Inspected repository https://github.com/AyGeeEm/EcoDenify",
+        "evidence_type": "repository",
+        "source": "https://github.com/AyGeeEm/EcoDenify",
+        "location": "root",
+        "confidence": 1.0,
+        "details": null
+      }
+    ]
+  },
+  "demo_summary": {
+    "has_video_demo": false,
+    "video_platform": "",
+    "video_url": "",
+    "duration_seconds": null,
+    "has_live_deployment": false,
+    "deployment_url": "",
+    "deployment_reachable": null,
+    "has_slide_deck": false,
+    "observations": []
+  },
+  "sponsor_technologies_mentioned": [],
+  "bundle_sha256": "39a62ccfb25de51665d72f0e4f3e048ce5aadc30235f2df4affe551c2e8640ff",
+  "created_at": "2026-09-26T02:11:35.740652Z"
+}

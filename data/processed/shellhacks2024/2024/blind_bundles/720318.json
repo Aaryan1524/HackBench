@@ -1,0 +1,173 @@
+{
+  "project_id": "720318",
+  "slug": "rpl-research-plan-learn",
+  "title": "RPL - Research, Plan, Learn",
+  "tagline": "Need help finding resources to level up your skillset? RPL provides insightful, educational resources based on a user's characteristics for any subject - Biology, Software, anything!",
+  "problem_statement": "",
+  "inspiration": "",
+  "what_it_does": "",
+  "how_it_was_built": "",
+  "challenges": "",
+  "accomplishments": "",
+  "lessons_learned": "",
+  "future_plans": "",
+  "tech_tags": [
+    "css",
+    "css",
+    "docker",
+    "docker",
+    "git",
+    "git",
+    "html",
+    "html",
+    "javascript",
+    "javascript",
+    "node.js",
+    "node.js",
+    "openai"
+  ],
+  "team_size": 3,
+  "repository_metrics": {
+    "repo_url": "https://github.com/rencap12/Shellhacks_24",
+    "status": "accessible",
+    "default_branch": "main",
+    "file_count": 26,
+    "approx_loc": 527,
+    "loc_by_language": {
+      "HTML": 107,
+      "JavaScript": 310,
+      "CSS": 110
+    },
+    "primary_languages": [
+      "JavaScript",
+      "CSS",
+      "HTML"
+    ],
+    "tech_stack": {
+      "frontend_frameworks": [
+        "Vite",
+        "React"
+      ],
+      "backend_frameworks": [
+        "Express.js"
+      ],
+      "databases": [],
+      "ai_ml_libraries": [],
+      "model_providers": [
+        "OpenAI"
+      ],
+      "cloud_devops": [],
+      "third_party_apis": [],
+      "hardware_components": [],
+      "package_dependencies": [
+        "express",
+        "openai",
+        "react",
+        "vite"
+      ]
+    },
+    "git_timeline": {
+      "total_commits": 25,
+      "commits_in_window": 25,
+      "first_commit_time": "2024-09-28T15:48:59Z",
+      "last_commit_time": "2024-09-29T14:23:39Z",
+      "commit_timestamps": [
+        "2024-09-28T15:48:59Z",
+        "2024-09-28T16:01:04Z",
+        "2024-09-28T16:05:47Z",
+        "2024-09-28T16:23:51Z",
+        "2024-09-28T20:33:48Z",
+        "2024-09-28T23:18:03Z",
+        "2024-09-29T01:11:56Z",
+        "2024-09-29T01:43:57Z",
+        "2024-09-29T02:34:29Z",
+        "2024-09-29T02:35:55Z",
+        "2024-09-29T02:46:45Z",
+        "2024-09-29T02:51:02Z",
+        "2024-09-29T02:51:50Z",
+        "2024-09-29T02:55:25Z",
+        "2024-09-29T03:08:53Z",
+        "2024-09-29T03:09:34Z",
+        "2024-09-29T03:10:22Z",
+        "2024-09-29T03:15:06Z",
+        "2024-09-29T13:27:06Z",
+        "2024-09-29T13:27:35Z",
+        "2024-09-29T14:00:12Z",
+        "2024-09-29T14:00:55Z",
+        "2024-09-29T14:07:24Z",
+        "2024-09-29T14:14:19Z",
+        "2024-09-29T14:23:39Z"
+      ],
+      "late_rewrites_detected": false,
+      "deadline_crunch_ratio": 0.28,
+      "final_stage_focus": "debugging",
+      "history_is_squashed_or_minimal": false,
+      "contributor_count": 3,
+      "contributors": [
+        "unknown",
+        "Sajuan",
+        "Reneca Capuno"
+      ]
+    },
+    "test_files_count": 0,
+    "test_frameworks": [],
+    "has_ci": false,
+    "ci_configs": [],
+    "has_docker": true,
+    "has_env_template": false,
+    "readme_size_bytes": 2060,
+    "readme_excerpt": "**pending tasks:**\n- clean up UI\n- post onto devPost\n- integrate with Defang?\n- try using a styling framework? - tailwind\n- optimize\nhttps://youtu.be/3UFnxIUfanE\n# RPL - Research, Plan, Learn\n**Need help finding resources to level up your skillset? RPL provides insightful, educational resources based on a user's characteristics for any subject - Biology, Software, anything!**\n## Overview - Full Stack App with React, Node.js, OpenAI API, and Docker\nThis is a full-stack application using React for the client with Node.js and OpenAI API for the backend. The app is fully Dockerized, making it easy to spin up in any environment.\n## Technologies\n- **Frontend**: React (Vite)\n- **Backend**: Node.js with Express\n- **Containerization**: Docker and Docker Compose\n## Prerequisites\n- Node.js (v14+)\n- Docker (v20+)\n## Local Setup\n### 1. Clone the Repository\n## Option 1: Run Manually\nRun the Backend (Node.js)\nCan also use 'nodemon server.js'\nThe backend will run on http://localhost:4000.\nOpen another terminal.\nRun the Frontend (React with Vite)\nThe frontend will run on http://localhost:3000.\nGo to http://localhost:3000. You should see the frontend connected to the backend.\n## Option 2: Use Docker\nEnsure Docker is installed and running on your machine\nFrom the root of your project (/Shellhacks_24), run in the terminal:\nThis will spin up both the React (Vite) frontend and the Node.js backend in Docker containers.\nAccess the Application:\n- Frontend: http://localhost:3000\n- Backend API: http://localhost:4000/api\nTo stop the containers, run in the terminal:\n## Directory Structure\n- /Shellhacks_24\n- /client  # React (Vite) frontend\n- /server  # Node.js backend\n- README.md  # Project documentation\n- docker-compose.yml  # Docker services\n- .dockerignore  # Docker ignore file",
+    "has_architecture_docs": false,
+    "api_routes_count": 5,
+    "db_migrations_or_schema_count": 0,
+    "mock_data_detected": false,
+    "mock_data_indicators": [],
+    "todo_fixme_count": 0,
+    "boilerplate_detected": false,
+    "boilerplate_indicators": [],
+    "deployment_check": null,
+    "consistency_with_claims": "inconsistent",
+    "consistency_explanation": "Weak evidence: Only 1/13 claimed technologies detected in codebase.",
+    "actual_integrations_found": [
+      "openai"
+    ],
+    "readme_claims_unsupported_by_code": [
+      "css",
+      "css",
+      "docker",
+      "docker",
+      "git",
+      "git",
+      "html",
+      "html",
+      "javascript",
+      "javascript",
+      "node.js",
+      "node.js"
+    ],
+    "provenance": [
+      {
+        "claim": "Inspected repository https://github.com/rencap12/Shellhacks_24",
+        "evidence_type": "repository",
+        "source": "https://github.com/rencap12/Shellhacks_24",
+        "location": "root",
+        "confidence": 1.0,
+        "details": null
+      }
+    ]
+  },
+  "demo_summary": {
+    "has_video_demo": true,
+    "video_platform": "youtube",
+    "video_url": "https://www.youtube.com/embed/3UFnxIUfanE?enablejsapi=1&hl=en_US&rel=0&start=&version=3&wmode=transparent",
+    "duration_seconds": null,
+    "has_live_deployment": false,
+    "deployment_url": "",
+    "deployment_reachable": null,
+    "has_slide_deck": false,
+    "observations": []
+  },
+  "sponsor_technologies_mentioned": [],
+  "bundle_sha256": "ac0a28f370a6de73503ba33d0fcbcac330b7527d909bb8e50511171e25cc97d8",
+  "created_at": "2026-09-26T02:03:23.203159Z"
+}

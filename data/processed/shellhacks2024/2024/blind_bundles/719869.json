@@ -1,0 +1,139 @@
+{
+  "project_id": "719869",
+  "slug": "detect-n-dash",
+  "title": "Detect n Dash",
+  "tagline": "I developed a game in C++ using Raylib, focusing on implementing game features. In the Game, the Players must collect all the golden coins on the map while avoiding enemies' vision cones.",
+  "problem_statement": "",
+  "inspiration": "",
+  "what_it_does": "",
+  "how_it_was_built": "",
+  "challenges": "",
+  "accomplishments": "",
+  "lessons_learned": "",
+  "future_plans": "",
+  "tech_tags": [
+    "c++",
+    "c++",
+    "github",
+    "github",
+    "raylib"
+  ],
+  "team_size": 1,
+  "repository_metrics": {
+    "repo_url": "https://github.com/WilliamDouglass/Detect-n-Dash.git",
+    "status": "accessible",
+    "default_branch": "main",
+    "file_count": 65,
+    "approx_loc": 976,
+    "loc_by_language": {
+      "C++": 767,
+      "C/C++": 209
+    },
+    "primary_languages": [
+      "C++",
+      "C/C++"
+    ],
+    "tech_stack": {
+      "frontend_frameworks": [],
+      "backend_frameworks": [],
+      "databases": [],
+      "ai_ml_libraries": [],
+      "model_providers": [],
+      "cloud_devops": [],
+      "third_party_apis": [],
+      "hardware_components": [],
+      "package_dependencies": []
+    },
+    "git_timeline": {
+      "total_commits": 24,
+      "commits_in_window": 24,
+      "first_commit_time": "2024-09-28T04:00:25Z",
+      "last_commit_time": "2024-10-02T04:18:03Z",
+      "commit_timestamps": [
+        "2024-09-28T04:00:25Z",
+        "2024-09-28T04:22:11Z",
+        "2024-09-28T05:12:22Z",
+        "2024-09-28T07:30:06Z",
+        "2024-09-28T08:39:51Z",
+        "2024-09-28T15:14:33Z",
+        "2024-09-28T16:21:32Z",
+        "2024-09-28T20:18:18Z",
+        "2024-09-28T23:22:47Z",
+        "2024-09-29T01:51:15Z",
+        "2024-09-29T02:33:04Z",
+        "2024-09-29T05:52:13Z",
+        "2024-09-29T07:25:56Z",
+        "2024-09-29T08:43:21Z",
+        "2024-09-29T08:58:36Z",
+        "2024-09-30T20:40:50Z",
+        "2024-10-01T05:52:24Z",
+        "2024-10-01T13:47:21Z",
+        "2024-10-01T16:23:40Z",
+        "2024-10-01T17:11:03Z",
+        "2024-10-02T02:20:18Z",
+        "2024-10-02T02:25:28Z",
+        "2024-10-02T02:27:49Z",
+        "2024-10-02T04:18:03Z"
+      ],
+      "late_rewrites_detected": false,
+      "deadline_crunch_ratio": 0.33,
+      "final_stage_focus": "docs",
+      "history_is_squashed_or_minimal": false,
+      "contributor_count": 1,
+      "contributors": [
+        "William Douglass"
+      ]
+    },
+    "test_files_count": 0,
+    "test_frameworks": [],
+    "has_ci": false,
+    "ci_configs": [],
+    "has_docker": false,
+    "has_env_template": false,
+    "readme_size_bytes": 1476,
+    "readme_excerpt": "## Detect n Dash\n### Description:\n**Detect n Dash** is a quick stealth-action arcade game built in C++ using the Raylib library. In this game, you must collect gold coins scattered across the map while avoiding detection from enemies. The enemies are equipped with a cone of vision, and if they catch you, you'll be sent back to the spawn point. You have only 3 lives, and the challenge is to collect all the coins as quickly as possible without getting caught!\n### Features:\n- **Stealth-Based Gameplay**: Avoid being spotted by detectors that scan the environment with their cone of vision.\n- **Time-Based Scoring**: Your final score depends on how quickly you can collect all the coins.\n- **Challenging Lives System**: With only 3 lives, every step you take matters.\n- **Smooth Player Movement**: Navigate the map and dodge detection seamlessly.\n### Controls:\n- **WASD**: Move the player.\n- **Mouse**: Look around.\n### How to Play:\n1. Collect all the Candy Bags scattered around the map.\n2. Avoid detection from enemies, who will send you back to the start if they spot you.\n3. Complete the challenge with only 3 lives—if you lose them all, it's game over.\n4. Collect all coins in the fastest time possible.\n### Game Demo\nCompleated at Shell Hacks\nUpdate Post Shell Hacks\n### Installation and Running the Game:\n1. Download and install Raylib.\n2. Clone this repository:",
+    "has_architecture_docs": false,
+    "api_routes_count": 0,
+    "db_migrations_or_schema_count": 0,
+    "mock_data_detected": false,
+    "mock_data_indicators": [],
+    "todo_fixme_count": 3,
+    "boilerplate_detected": false,
+    "boilerplate_indicators": [],
+    "deployment_check": null,
+    "consistency_with_claims": "inconsistent",
+    "consistency_explanation": "Weak evidence: Only 0/5 claimed technologies detected in codebase.",
+    "actual_integrations_found": [],
+    "readme_claims_unsupported_by_code": [
+      "c++",
+      "c++",
+      "github",
+      "github",
+      "raylib"
+    ],
+    "provenance": [
+      {
+        "claim": "Inspected repository https://github.com/WilliamDouglass/Detect-n-Dash.git",
+        "evidence_type": "repository",
+        "source": "https://github.com/WilliamDouglass/Detect-n-Dash.git",
+        "location": "root",
+        "confidence": 1.0,
+        "details": null
+      }
+    ]
+  },
+  "demo_summary": {
+    "has_video_demo": true,
+    "video_platform": "youtube",
+    "video_url": "https://www.youtube.com/embed/ZNxVVlriMxo?enablejsapi=1&hl=en_US&rel=0&start=&version=3&wmode=transparent",
+    "duration_seconds": null,
+    "has_live_deployment": false,
+    "deployment_url": "",
+    "deployment_reachable": null,
+    "has_slide_deck": false,
+    "observations": []
+  },
+  "sponsor_technologies_mentioned": [],
+  "bundle_sha256": "a34de2e4b9f3643d0ddba70438fcc1d33c4249673d32ca9951f60ab379ba746e",
+  "created_at": "2026-09-26T02:03:23.430308Z"
+}

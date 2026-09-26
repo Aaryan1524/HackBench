@@ -1,0 +1,40 @@
+{
+  "project_id": "570772",
+  "slug": "asl-express",
+  "title": "ASL Express",
+  "tagline": "Our mission is to empower individuals from all walks of life to engage with and embrace the vibrant world of ASL,fostering meaningful connections and breaking down communication barriers.",
+  "problem_statement": "",
+  "inspiration": "",
+  "what_it_does": "",
+  "how_it_was_built": "",
+  "challenges": "",
+  "accomplishments": "",
+  "lessons_learned": "",
+  "future_plans": "",
+  "tech_tags": [
+    "css",
+    "css",
+    "html",
+    "html",
+    "javascript",
+    "javascript",
+    "python",
+    "python"
+  ],
+  "team_size": 4,
+  "repository_metrics": null,
+  "demo_summary": {
+    "has_video_demo": false,
+    "video_platform": "",
+    "video_url": "",
+    "duration_seconds": null,
+    "has_live_deployment": false,
+    "deployment_url": "",
+    "deployment_reachable": null,
+    "has_slide_deck": false,
+    "observations": []
+  },
+  "sponsor_technologies_mentioned": [],
+  "bundle_sha256": "70da6018d2f938f92a50b044c66b987b9dc84fb4986d78001d1aba3d0dfced95",
+  "created_at": "2026-09-26T02:11:35.687496Z"
+}

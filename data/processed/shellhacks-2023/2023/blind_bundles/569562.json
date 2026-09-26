@@ -1,0 +1,35 @@
+{
+  "project_id": "569562",
+  "slug": "budgetgpt",
+  "title": "BudgetGPT",
+  "tagline": "This program offers the ability for a student to track and manage their financials along with a Chat GPT copilot to help them better understand how to spend and save their money more efficiently.",
+  "problem_statement": "",
+  "inspiration": "",
+  "what_it_does": "",
+  "how_it_was_built": "",
+  "challenges": "",
+  "accomplishments": "",
+  "lessons_learned": "",
+  "future_plans": "",
+  "tech_tags": [
+    "openai",
+    "python",
+    "python"
+  ],
+  "team_size": 2,
+  "repository_metrics": null,
+  "demo_summary": {
+    "has_video_demo": false,
+    "video_platform": "",
+    "video_url": "",
+    "duration_seconds": null,
+    "has_live_deployment": false,
+    "deployment_url": "",
+    "deployment_reachable": null,
+    "has_slide_deck": false,
+    "observations": []
+  },
+  "sponsor_technologies_mentioned": [],
+  "bundle_sha256": "2b0b99602cd85aa52c366607cdd768ea2aaec21292c94cd040075faba8680cc7",
+  "created_at": "2026-09-26T02:11:35.823416Z"
+}

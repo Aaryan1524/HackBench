@@ -1,0 +1,36 @@
+{
+  "project_id": "570605",
+  "slug": "factfarm",
+  "title": "FactFarm",
+  "tagline": "FactFarm is a mobile app that provides the user with a fun and interactive way to understand and learn about insurance. By providing daily facts and an incentive students can be motivated to learn.",
+  "problem_statement": "",
+  "inspiration": "",
+  "what_it_does": "",
+  "how_it_was_built": "",
+  "challenges": "",
+  "accomplishments": "",
+  "lessons_learned": "",
+  "future_plans": "",
+  "tech_tags": [
+    "swift",
+    "swift",
+    "xcode",
+    "xcode"
+  ],
+  "team_size": 4,
+  "repository_metrics": null,
+  "demo_summary": {
+    "has_video_demo": false,
+    "video_platform": "",
+    "video_url": "",
+    "duration_seconds": null,
+    "has_live_deployment": false,
+    "deployment_url": "",
+    "deployment_reachable": null,
+    "has_slide_deck": false,
+    "observations": []
+  },
+  "sponsor_technologies_mentioned": [],
+  "bundle_sha256": "bbd15e36019db2ed10229683d3404f7ebf68a2fcc8fdb2820356001709f7114a",
+  "created_at": "2026-09-26T02:11:35.547098Z"
+}

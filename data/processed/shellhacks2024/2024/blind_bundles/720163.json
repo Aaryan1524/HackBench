@@ -1,0 +1,192 @@
+{
+  "project_id": "720163",
+  "slug": "glenda",
+  "title": "Goalden",
+  "tagline": "\"Boost your productivity with an all-in-one Pomodoro dashboard that helps you manage your job search, track applications, organize tasks, and set goals.\"",
+  "problem_statement": "",
+  "inspiration": "",
+  "what_it_does": "",
+  "how_it_was_built": "",
+  "challenges": "",
+  "accomplishments": "",
+  "lessons_learned": "",
+  "future_plans": "",
+  "tech_tags": [
+    "auth0",
+    "claude-3.5-sonnet",
+    "express.js",
+    "express.js",
+    "mongodb",
+    "mongodb",
+    "node.js",
+    "node.js",
+    "react",
+    "react",
+    "render",
+    "vercel"
+  ],
+  "team_size": 2,
+  "repository_metrics": {
+    "repo_url": "https://github.com/rubavignesh/shellhacks-frontend",
+    "status": "accessible",
+    "default_branch": "main",
+    "file_count": 70,
+    "approx_loc": 2168,
+    "loc_by_language": {
+      "JavaScript": 36,
+      "HTML": 42,
+      "TypeScript": 2083,
+      "CSS": 7
+    },
+    "primary_languages": [
+      "TypeScript",
+      "HTML",
+      "JavaScript",
+      "CSS"
+    ],
+    "tech_stack": {
+      "frontend_frameworks": [
+        "React",
+        "TailwindCSS",
+        "Next.js"
+      ],
+      "backend_frameworks": [],
+      "databases": [
+        "PostgreSQL",
+        "Firebase"
+      ],
+      "ai_ml_libraries": [],
+      "model_providers": [],
+      "cloud_devops": [],
+      "third_party_apis": [],
+      "hardware_components": [],
+      "package_dependencies": [
+        "@auth0/auth0-react",
+        "@fortawesome/fontawesome-free",
+        "@headlessui/react",
+        "@heroicons/react",
+        "@types/node",
+        "@types/react",
+        "@types/react-dom",
+        "@typescript-eslint/eslint-plugin",
+        "@typescript-eslint/parser",
+        "autoprefixer",
+        "axios",
+        "chart.js",
+        "firebase",
+        "next",
+        "pg",
+        "postcss",
+        "react",
+        "react-chartjs-2",
+        "react-dom",
+        "react-router-dom",
+        "react-scripts",
+        "react-youtube",
+        "tailwind-styled-components",
+        "tailwindcss",
+        "typescript"
+      ]
+    },
+    "git_timeline": {
+      "total_commits": 21,
+      "commits_in_window": 21,
+      "first_commit_time": "2024-09-28T15:28:17Z",
+      "last_commit_time": "2024-10-09T03:27:46Z",
+      "commit_timestamps": [
+        "2024-09-28T15:28:17Z",
+        "2024-09-28T16:18:47Z",
+        "2024-09-29T03:42:27Z",
+        "2024-09-29T03:42:35Z",
+        "2024-09-29T03:53:07Z",
+        "2024-09-29T03:55:38Z",
+        "2024-09-29T06:31:10Z",
+        "2024-09-29T08:18:01Z",
+        "2024-09-29T11:34:28Z",
+        "2024-09-29T11:36:52Z",
+        "2024-09-29T14:46:52Z",
+        "2024-10-05T21:11:47Z",
+        "2024-10-05T21:15:21Z",
+        "2024-10-05T21:21:14Z",
+        "2024-10-05T21:25:10Z",
+        "2024-10-07T04:19:40Z",
+        "2024-10-08T03:32:55Z",
+        "2024-10-08T03:43:33Z",
+        "2024-10-09T00:22:45Z",
+        "2024-10-09T02:27:25Z",
+        "2024-10-09T03:27:46Z"
+      ],
+      "late_rewrites_detected": false,
+      "deadline_crunch_ratio": 0.29,
+      "final_stage_focus": "debugging",
+      "history_is_squashed_or_minimal": false,
+      "contributor_count": 3,
+      "contributors": [
+        "Ruba Vignesh Balaji",
+        "Sanjeev Parthasarathy",
+        "sanjeev2601"
+      ]
+    },
+    "test_files_count": 0,
+    "test_frameworks": [],
+    "has_ci": true,
+    "ci_configs": [
+      "github_actions"
+    ],
+    "has_docker": false,
+    "has_env_template": false,
+    "readme_size_bytes": 47,
+    "readme_excerpt": "# shellhacks-frontend\nFrontend for Shellhacks",
+    "has_architecture_docs": false,
+    "api_routes_count": 0,
+    "db_migrations_or_schema_count": 0,
+    "mock_data_detected": false,
+    "mock_data_indicators": [],
+    "todo_fixme_count": 0,
+    "boilerplate_detected": false,
+    "boilerplate_indicators": [],
+    "deployment_check": null,
+    "consistency_with_claims": "inconsistent",
+    "consistency_explanation": "Weak evidence: Only 3/12 claimed technologies detected in codebase.",
+    "actual_integrations_found": [
+      "auth0",
+      "react",
+      "react"
+    ],
+    "readme_claims_unsupported_by_code": [
+      "claude-3.5-sonnet",
+      "express.js",
+      "express.js",
+      "mongodb",
+      "mongodb",
+      "node.js",
+      "node.js",
+      "render",
+      "vercel"
+    ],
+    "provenance": [
+      {
+        "claim": "Inspected repository https://github.com/rubavignesh/shellhacks-frontend",
+        "evidence_type": "repository",
+        "source": "https://github.com/rubavignesh/shellhacks-frontend",
+        "location": "root",
+        "confidence": 1.0,
+        "details": null
+      }
+    ]
+  },
+  "demo_summary": {
+    "has_video_demo": false,
+    "video_platform": "",
+    "video_url": "",
+    "duration_seconds": null,
+    "has_live_deployment": false,
+    "deployment_url": "",
+    "deployment_reachable": null,
+    "has_slide_deck": false,
+    "observations": []
+  },
+  "sponsor_technologies_mentioned": [],
+  "bundle_sha256": "1f49f67fa9c30ee117775fe729cccfe280b401980e8170eff7d1aaffd8bf17d6",
+  "created_at": "2026-09-26T02:03:23.356086Z"
+}

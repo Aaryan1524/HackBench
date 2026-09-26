@@ -1,0 +1,165 @@
+{
+  "project_id": "570396",
+  "slug": "cash-clam",
+  "title": "Cash Clam",
+  "tagline": "Unlock financial wisdom with themed learning. AI tailors, engages, and enlightens your financial journey.",
+  "problem_statement": "",
+  "inspiration": "",
+  "what_it_does": "",
+  "how_it_was_built": "",
+  "challenges": "",
+  "accomplishments": "",
+  "lessons_learned": "",
+  "future_plans": "",
+  "tech_tags": [
+    "css3",
+    "css3",
+    "figma",
+    "javascript",
+    "javascript",
+    "next.js",
+    "openai",
+    "react",
+    "react"
+  ],
+  "team_size": 3,
+  "repository_metrics": {
+    "repo_url": "https://github.com/therealozp/cash-clams",
+    "status": "accessible",
+    "default_branch": "main",
+    "file_count": 122,
+    "approx_loc": 7588,
+    "loc_by_language": {
+      "JavaScript": 3339,
+      "CSS": 4249
+    },
+    "primary_languages": [
+      "CSS",
+      "JavaScript"
+    ],
+    "tech_stack": {
+      "frontend_frameworks": [
+        "Next.js",
+        "React",
+        "Vue.js"
+      ],
+      "backend_frameworks": [],
+      "databases": [],
+      "ai_ml_libraries": [],
+      "model_providers": [
+        "OpenAI"
+      ],
+      "cloud_devops": [],
+      "third_party_apis": [],
+      "hardware_components": [],
+      "package_dependencies": [
+        "@chakra-ui/icons",
+        "@chakra-ui/next-js",
+        "@chakra-ui/react",
+        "@emotion/react",
+        "@emotion/styled",
+        "@mui/icons-material",
+        "encoding",
+        "eslint",
+        "eslint-config-next",
+        "framer-motion",
+        "next",
+        "node-fetch",
+        "openai",
+        "react",
+        "react-dom",
+        "react-icons",
+        "vue"
+      ]
+    },
+    "git_timeline": {
+      "total_commits": 15,
+      "commits_in_window": 15,
+      "first_commit_time": "2023-09-16T05:36:39Z",
+      "last_commit_time": "2023-09-25T22:59:30Z",
+      "commit_timestamps": [
+        "2023-09-16T05:36:39Z",
+        "2023-09-17T00:08:36Z",
+        "2023-09-17T06:22:01Z",
+        "2023-09-17T06:23:26Z",
+        "2023-09-17T06:25:02Z",
+        "2023-09-17T06:25:24Z",
+        "2023-09-17T09:03:04Z",
+        "2023-09-17T09:03:44Z",
+        "2023-09-17T09:17:47Z",
+        "2023-09-17T09:22:39Z",
+        "2023-09-17T13:59:44Z",
+        "2023-09-17T14:44:27Z",
+        "2023-09-17T14:49:39Z",
+        "2023-09-17T14:54:43Z",
+        "2023-09-25T22:59:30Z"
+      ],
+      "late_rewrites_detected": false,
+      "deadline_crunch_ratio": 0.07,
+      "final_stage_focus": "debugging",
+      "history_is_squashed_or_minimal": false,
+      "contributor_count": 3,
+      "contributors": [
+        "Garv",
+        "therealozp",
+        "garvsl"
+      ]
+    },
+    "test_files_count": 0,
+    "test_frameworks": [],
+    "has_ci": false,
+    "ci_configs": [],
+    "has_docker": false,
+    "has_env_template": false,
+    "readme_size_bytes": 1714,
+    "readme_excerpt": "## Cash Clams - The Journey to Financial Wisdom\nIn a world driven by knowledge, there was a unique learning platform called Cash Clams. It allows users to embark on a personalized journey towards financial literacy, exploring it through whatever lens they desire, be it a Disney franchise or a video game.\nCash Clams is no ordinary platform. It harnesses the power of AI to transform the learning environment based on users' thematic preferences. Whether you are interested in budgeting, investing, or retirement planning, Cash Clams has you covered.\nUsers can select their preferred themes, and like magic, the AI has catered their entire learning experience.\nThe environment changes dynamically, providing tailored content and resources to suit the chosen theme. Learning has become an ever more engaging and personalized adventure with Clash Clams!\nAs users delve deeper into their realm, it gives users the feeling of active-engagement and retaining information in the users way. Our users no longer become passive learners but active participants in their financial literacy journey.\nCash Clams is more than just a platform; it is a companion that will make Disney motto actual mean something[\"Where dreams come true\"]. With every lesson, users are unlocking new insights, and secured their financial futures with our cutting edge Ai learning experience.\nThe journey to financial wisdom has begun, and Cash Clams is there to guide any realms our users can ever imagine.",
+    "has_architecture_docs": false,
+    "api_routes_count": 0,
+    "db_migrations_or_schema_count": 0,
+    "mock_data_detected": false,
+    "mock_data_indicators": [],
+    "todo_fixme_count": 0,
+    "boilerplate_detected": false,
+    "boilerplate_indicators": [],
+    "deployment_check": null,
+    "consistency_with_claims": "partial",
+    "consistency_explanation": "Partial evidence: 4/9 claimed technologies found in codebase.",
+    "actual_integrations_found": [
+      "next.js",
+      "openai",
+      "react",
+      "react"
+    ],
+    "readme_claims_unsupported_by_code": [
+      "css3",
+      "css3",
+      "figma",
+      "javascript",
+      "javascript"
+    ],
+    "provenance": [
+      {
+        "claim": "Inspected repository https://github.com/therealozp/cash-clams",
+        "evidence_type": "repository",
+        "source": "https://github.com/therealozp/cash-clams",
+        "location": "root",
+        "confidence": 1.0,
+        "details": null
+      }
+    ]
+  },
+  "demo_summary": {
+    "has_video_demo": false,
+    "video_platform": "",
+    "video_url": "",
+    "duration_seconds": null,
+    "has_live_deployment": false,
+    "deployment_url": "",
+    "deployment_reachable": null,
+    "has_slide_deck": false,
+    "observations": []
+  },
+  "sponsor_technologies_mentioned": [],
+  "bundle_sha256": "fde961d1c6a3c5f5edcccdc6267e346b7c82f0c1f746501d969e54cf8cfe6867",
+  "created_at": "2026-09-26T02:11:35.761715Z"
+}

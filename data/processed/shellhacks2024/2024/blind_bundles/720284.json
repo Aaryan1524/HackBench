@@ -1,0 +1,138 @@
+{
+  "project_id": "720284",
+  "slug": "docudane",
+  "title": "DocuDane",
+  "tagline": "Insurance Forms Simplified: Extract, Summarize, Conquer!",
+  "problem_statement": "",
+  "inspiration": "",
+  "what_it_does": "",
+  "how_it_was_built": "",
+  "challenges": "",
+  "accomplishments": "",
+  "lessons_learned": "",
+  "future_plans": "",
+  "tech_tags": [
+    "ai",
+    "gemini",
+    "gemini",
+    "google-cloud",
+    "google-cloud",
+    "google-vertex",
+    "natural-language-processing",
+    "natural-language-processing",
+    "opencv",
+    "opencv",
+    "python",
+    "python"
+  ],
+  "team_size": 4,
+  "repository_metrics": {
+    "repo_url": "https://github.com/RobertFontan/DocumentDanePython/",
+    "status": "accessible",
+    "default_branch": "main",
+    "file_count": 12,
+    "approx_loc": 390,
+    "loc_by_language": {
+      "Python": 390
+    },
+    "primary_languages": [
+      "Python"
+    ],
+    "tech_stack": {
+      "frontend_frameworks": [],
+      "backend_frameworks": [],
+      "databases": [],
+      "ai_ml_libraries": [],
+      "model_providers": [],
+      "cloud_devops": [],
+      "third_party_apis": [],
+      "hardware_components": [],
+      "package_dependencies": []
+    },
+    "git_timeline": {
+      "total_commits": 8,
+      "commits_in_window": 8,
+      "first_commit_time": "2024-09-28T22:28:28Z",
+      "last_commit_time": "2024-09-29T13:32:28Z",
+      "commit_timestamps": [
+        "2024-09-28T22:28:28Z",
+        "2024-09-29T00:14:28Z",
+        "2024-09-29T00:15:36Z",
+        "2024-09-29T00:54:06Z",
+        "2024-09-29T10:57:12Z",
+        "2024-09-29T11:22:06Z",
+        "2024-09-29T13:13:02Z",
+        "2024-09-29T13:32:28Z"
+      ],
+      "late_rewrites_detected": false,
+      "deadline_crunch_ratio": 0.5,
+      "final_stage_focus": "docs",
+      "history_is_squashed_or_minimal": false,
+      "contributor_count": 4,
+      "contributors": [
+        "Robert Fontan",
+        "Jocelyn",
+        "RobertFontan",
+        "Jocelyn Dzuong"
+      ]
+    },
+    "test_files_count": 0,
+    "test_frameworks": [],
+    "has_ci": false,
+    "ci_configs": [],
+    "has_docker": false,
+    "has_env_template": false,
+    "readme_size_bytes": 126,
+    "readme_excerpt": "# DocuDane\nThis is the repository for DocuDane, a Python tool using Google Cloud to understand and summarize insurance forms",
+    "has_architecture_docs": false,
+    "api_routes_count": 0,
+    "db_migrations_or_schema_count": 0,
+    "mock_data_detected": false,
+    "mock_data_indicators": [],
+    "todo_fixme_count": 0,
+    "boilerplate_detected": false,
+    "boilerplate_indicators": [],
+    "deployment_check": null,
+    "consistency_with_claims": "inconsistent",
+    "consistency_explanation": "Weak evidence: Only 0/12 claimed technologies detected in codebase.",
+    "actual_integrations_found": [],
+    "readme_claims_unsupported_by_code": [
+      "ai",
+      "gemini",
+      "gemini",
+      "google-cloud",
+      "google-cloud",
+      "google-vertex",
+      "natural-language-processing",
+      "natural-language-processing",
+      "opencv",
+      "opencv",
+      "python",
+      "python"
+    ],
+    "provenance": [
+      {
+        "claim": "Inspected repository https://github.com/RobertFontan/DocumentDanePython/",
+        "evidence_type": "repository",
+        "source": "https://github.com/RobertFontan/DocumentDanePython/",
+        "location": "root",
+        "confidence": 1.0,
+        "details": null
+      }
+    ]
+  },
+  "demo_summary": {
+    "has_video_demo": false,
+    "video_platform": "",
+    "video_url": "",
+    "duration_seconds": null,
+    "has_live_deployment": false,
+    "deployment_url": "",
+    "deployment_reachable": null,
+    "has_slide_deck": false,
+    "observations": []
+  },
+  "sponsor_technologies_mentioned": [],
+  "bundle_sha256": "a6af9c193fb1319afa673ba9ee51c53408e7cb6be7a2b160c636b58596cfc7a3",
+  "created_at": "2026-09-26T02:03:23.358112Z"
+}

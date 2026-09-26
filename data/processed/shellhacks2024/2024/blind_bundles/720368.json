@@ -1,0 +1,140 @@
+{
+  "project_id": "720368",
+  "slug": "fraudguard-3gxd0w",
+  "title": "FraudGuard",
+  "tagline": "AI-driven solution designed to detect and prevent fraudulent financial transactions in real time. With cutting-edge machine learning models, it ensures secure and reliable fraud detection.",
+  "problem_statement": "",
+  "inspiration": "",
+  "what_it_does": "",
+  "how_it_was_built": "",
+  "challenges": "",
+  "accomplishments": "",
+  "lessons_learned": "",
+  "future_plans": "",
+  "tech_tags": [
+    "eda",
+    "github",
+    "github",
+    "google-colab",
+    "machine-learning",
+    "machine-learning",
+    "python",
+    "python",
+    "streamlit"
+  ],
+  "team_size": 2,
+  "repository_metrics": {
+    "repo_url": "https://github.com/alimuhammad-creator/ShellHacksFIU.git",
+    "status": "accessible",
+    "default_branch": "main",
+    "file_count": 9,
+    "approx_loc": 309,
+    "loc_by_language": {
+      "Python": 309
+    },
+    "primary_languages": [
+      "Python"
+    ],
+    "tech_stack": {
+      "frontend_frameworks": [],
+      "backend_frameworks": [],
+      "databases": [],
+      "ai_ml_libraries": [
+        "Scikit-Learn"
+      ],
+      "model_providers": [],
+      "cloud_devops": [],
+      "third_party_apis": [],
+      "hardware_components": [],
+      "package_dependencies": [
+        "sklearn",
+        "streamlit"
+      ]
+    },
+    "git_timeline": {
+      "total_commits": 13,
+      "commits_in_window": 13,
+      "first_commit_time": "2024-09-29T11:36:14Z",
+      "last_commit_time": "2024-09-29T16:09:17Z",
+      "commit_timestamps": [
+        "2024-09-29T11:36:14Z",
+        "2024-09-29T14:34:14Z",
+        "2024-09-29T14:35:02Z",
+        "2024-09-29T14:35:28Z",
+        "2024-09-29T14:43:32Z",
+        "2024-09-29T15:09:34Z",
+        "2024-09-29T15:12:31Z",
+        "2024-09-29T15:31:30Z",
+        "2024-09-29T15:32:07Z",
+        "2024-09-29T15:59:27Z",
+        "2024-09-29T15:59:48Z",
+        "2024-09-29T16:08:45Z",
+        "2024-09-29T16:09:17Z"
+      ],
+      "late_rewrites_detected": false,
+      "deadline_crunch_ratio": 0.62,
+      "final_stage_focus": "features",
+      "history_is_squashed_or_minimal": false,
+      "contributor_count": 1,
+      "contributors": [
+        "Ali Muhammad Khowaja"
+      ]
+    },
+    "test_files_count": 0,
+    "test_frameworks": [],
+    "has_ci": false,
+    "ci_configs": [],
+    "has_docker": false,
+    "has_env_template": false,
+    "readme_size_bytes": 833,
+    "readme_excerpt": "FraudGuard\nFraudGuard is an AI-powered fraud detection system designed to help financial institutions prevent fraudulent transactions. Leveraging advanced machine learning algorithms and data analysis, FraudGuard identifies anomalies in transaction data, flagging potential fraud in real-time.\nFeatures\nDetects fraudulent transactions using machine learning.\nSupports multiple models: Logistic Regression, Decision Trees, and MLP (Multi-Layer Perceptron).\nProvides insights from advanced exploratory data analysis (EDA).\nTechnologies Used\nPython\nMachine Learning Libraries: Scikit-learn, Pandas, NumPy\nData Visualization: Matplotlib, Seaborn\nStreamlit for interactive UI\nYou can run the project by cloning this repo or by Checking Google Colab: https://colab.research.google.com/drive/1sWwPuidOy2Yz8qZVA5LGcJeCKvGMZ6jJ?usp=sharing",
+    "has_architecture_docs": true,
+    "api_routes_count": 0,
+    "db_migrations_or_schema_count": 0,
+    "mock_data_detected": false,
+    "mock_data_indicators": [],
+    "todo_fixme_count": 0,
+    "boilerplate_detected": false,
+    "boilerplate_indicators": [],
+    "deployment_check": null,
+    "consistency_with_claims": "inconsistent",
+    "consistency_explanation": "Weak evidence: Only 1/9 claimed technologies detected in codebase.",
+    "actual_integrations_found": [
+      "streamlit"
+    ],
+    "readme_claims_unsupported_by_code": [
+      "eda",
+      "github",
+      "github",
+      "google-colab",
+      "machine-learning",
+      "machine-learning",
+      "python",
+      "python"
+    ],
+    "provenance": [
+      {
+        "claim": "Inspected repository https://github.com/alimuhammad-creator/ShellHacksFIU.git",
+        "evidence_type": "repository",
+        "source": "https://github.com/alimuhammad-creator/ShellHacksFIU.git",
+        "location": "root",
+        "confidence": 1.0,
+        "details": null
+      }
+    ]
+  },
+  "demo_summary": {
+    "has_video_demo": false,
+    "video_platform": "",
+    "video_url": "",
+    "duration_seconds": null,
+    "has_live_deployment": false,
+    "deployment_url": "",
+    "deployment_reachable": null,
+    "has_slide_deck": false,
+    "observations": []
+  },
+  "sponsor_technologies_mentioned": [],
+  "bundle_sha256": "238f4343cd7555d0948a87c7a40638898616eb2680f36e09a5424ee7736d3391",
+  "created_at": "2026-09-26T02:03:23.039600Z"
+}

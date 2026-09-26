@@ -1,0 +1,136 @@
+{
+  "project_id": "569387",
+  "slug": "forest_spy",
+  "title": "forest_spy",
+  "tagline": "AI against deforestation",
+  "problem_statement": "",
+  "inspiration": "",
+  "what_it_does": "",
+  "how_it_was_built": "",
+  "challenges": "",
+  "accomplishments": "",
+  "lessons_learned": "",
+  "future_plans": "",
+  "tech_tags": [
+    "flask",
+    "flask",
+    "javascript",
+    "javascript",
+    "keras",
+    "python",
+    "python",
+    "tensorflow"
+  ],
+  "team_size": 3,
+  "repository_metrics": {
+    "repo_url": "https://github.com/Hasitha199310/forest_sound_analysis",
+    "status": "accessible",
+    "default_branch": "main",
+    "file_count": 26,
+    "approx_loc": 603,
+    "loc_by_language": {
+      "Python": 200,
+      "CSS": 246,
+      "HTML": 157
+    },
+    "primary_languages": [
+      "CSS",
+      "Python",
+      "HTML"
+    ],
+    "tech_stack": {
+      "frontend_frameworks": [],
+      "backend_frameworks": [
+        "Flask"
+      ],
+      "databases": [],
+      "ai_ml_libraries": [
+        "TensorFlow"
+      ],
+      "model_providers": [],
+      "cloud_devops": [],
+      "third_party_apis": [],
+      "hardware_components": [],
+      "package_dependencies": [
+        "flask",
+        "tensorflow"
+      ]
+    },
+    "git_timeline": {
+      "total_commits": 4,
+      "commits_in_window": 4,
+      "first_commit_time": "2023-09-16T19:27:54Z",
+      "last_commit_time": "2023-09-17T14:40:06Z",
+      "commit_timestamps": [
+        "2023-09-16T19:27:54Z",
+        "2023-09-16T19:38:04Z",
+        "2023-09-17T07:32:27Z",
+        "2023-09-17T14:40:06Z"
+      ],
+      "late_rewrites_detected": false,
+      "deadline_crunch_ratio": 0.25,
+      "final_stage_focus": "integration",
+      "history_is_squashed_or_minimal": false,
+      "contributor_count": 2,
+      "contributors": [
+        "Hasitha Weerasooriya",
+        "Hasitha199310"
+      ]
+    },
+    "test_files_count": 0,
+    "test_frameworks": [],
+    "has_ci": false,
+    "ci_configs": [],
+    "has_docker": false,
+    "has_env_template": false,
+    "readme_size_bytes": 45,
+    "readme_excerpt": "# forest_sound_analysis\nFor shell hacks 2023",
+    "has_architecture_docs": false,
+    "api_routes_count": 0,
+    "db_migrations_or_schema_count": 0,
+    "mock_data_detected": false,
+    "mock_data_indicators": [],
+    "todo_fixme_count": 0,
+    "boilerplate_detected": false,
+    "boilerplate_indicators": [],
+    "deployment_check": null,
+    "consistency_with_claims": "partial",
+    "consistency_explanation": "Partial evidence: 3/8 claimed technologies found in codebase.",
+    "actual_integrations_found": [
+      "flask",
+      "flask",
+      "tensorflow"
+    ],
+    "readme_claims_unsupported_by_code": [
+      "javascript",
+      "javascript",
+      "keras",
+      "python",
+      "python"
+    ],
+    "provenance": [
+      {
+        "claim": "Inspected repository https://github.com/Hasitha199310/forest_sound_analysis",
+        "evidence_type": "repository",
+        "source": "https://github.com/Hasitha199310/forest_sound_analysis",
+        "location": "root",
+        "confidence": 1.0,
+        "details": null
+      }
+    ]
+  },
+  "demo_summary": {
+    "has_video_demo": false,
+    "video_platform": "",
+    "video_url": "",
+    "duration_seconds": null,
+    "has_live_deployment": false,
+    "deployment_url": "",
+    "deployment_reachable": null,
+    "has_slide_deck": false,
+    "observations": []
+  },
+  "sponsor_technologies_mentioned": [],
+  "bundle_sha256": "fba4aa989ce7590c0de4d28ba780f7d3b1c75b7249ac228f6779ce7a22c4f0d2",
+  "created_at": "2026-09-26T02:11:35.721629Z"
+}

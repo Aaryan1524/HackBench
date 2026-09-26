@@ -1,0 +1,151 @@
+{
+  "project_id": "719741",
+  "slug": "smartcare-74ya1t",
+  "title": "SmartCare",
+  "tagline": "Track your wellness with personalized scores and tips. Our app offers health insights, discounts on insurance, and customized advice based on physical activity, diet, and habits—all in one dashboard.",
+  "problem_statement": "",
+  "inspiration": "",
+  "what_it_does": "",
+  "how_it_was_built": "",
+  "challenges": "",
+  "accomplishments": "",
+  "lessons_learned": "",
+  "future_plans": "",
+  "tech_tags": [
+    "css",
+    "css",
+    "html5",
+    "html5",
+    "json",
+    "json",
+    "react",
+    "react",
+    "tailwind"
+  ],
+  "team_size": 2,
+  "repository_metrics": {
+    "repo_url": "https://github.com/chayex18/SmartCare",
+    "status": "accessible",
+    "default_branch": "main",
+    "file_count": 19,
+    "approx_loc": 1084,
+    "loc_by_language": {
+      "JavaScript": 964,
+      "HTML": 43,
+      "CSS": 77
+    },
+    "primary_languages": [
+      "JavaScript",
+      "CSS",
+      "HTML"
+    ],
+    "tech_stack": {
+      "frontend_frameworks": [
+        "TailwindCSS",
+        "React"
+      ],
+      "backend_frameworks": [],
+      "databases": [],
+      "ai_ml_libraries": [],
+      "model_providers": [],
+      "cloud_devops": [],
+      "third_party_apis": [],
+      "hardware_components": [],
+      "package_dependencies": [
+        "@testing-library/jest-dom",
+        "@testing-library/react",
+        "@testing-library/user-event",
+        "autoprefixer",
+        "postcss",
+        "react",
+        "react-dom",
+        "react-router-dom",
+        "react-scripts",
+        "tailwindcss",
+        "web-vitals"
+      ]
+    },
+    "git_timeline": {
+      "total_commits": 10,
+      "commits_in_window": 10,
+      "first_commit_time": "2024-09-28T15:58:40Z",
+      "last_commit_time": "2024-09-29T14:30:41Z",
+      "commit_timestamps": [
+        "2024-09-28T15:58:40Z",
+        "2024-09-28T15:58:59Z",
+        "2024-09-28T16:11:30Z",
+        "2024-09-28T16:24:34Z",
+        "2024-09-28T16:39:11Z",
+        "2024-09-28T17:54:18Z",
+        "2024-09-28T19:24:49Z",
+        "2024-09-29T01:01:32Z",
+        "2024-09-29T07:08:26Z",
+        "2024-09-29T14:30:41Z"
+      ],
+      "late_rewrites_detected": false,
+      "deadline_crunch_ratio": 0.1,
+      "final_stage_focus": "docs",
+      "history_is_squashed_or_minimal": false,
+      "contributor_count": 1,
+      "contributors": [
+        "Yeixon Chacon"
+      ]
+    },
+    "test_files_count": 0,
+    "test_frameworks": [],
+    "has_ci": false,
+    "ci_configs": [],
+    "has_docker": false,
+    "has_env_template": false,
+    "readme_size_bytes": 1964,
+    "readme_excerpt": "# SmartCare\nWelcome to **SmartCare**! This application helps users track their wellness scores based on physical activity, diet, habits, and other lifestyle factors. It also provides personalized tips and calculates potential insurance discounts based on wellness performance.\n## Table of Contents\n- Features\n- Tech Stack\n- Installation\n- Usage\n## Features\n- **User Authentication**: Users can log in and sign up to access their personal wellness dashboard.\n- **Wellness Score**: Tracks a user's physical activity, sleep quality, diet, smoking habits, and other wellness metrics.\n- **Personalized Tips**: Provides tailored advice based on a user's health data.\n- **Insurance Discounts**: Dynamically calculates insurance discounts based on wellness performance.\n- **Dashboard View**: Users can monitor their total wellness score and view pricing based on improved wellness performance.\n## Tech Stack\n- **Frontend**: React, Tailwind CSS\n- **Backend**: JSON Server (for mock data and user information)\n- **Routing**: React Router\n## Installation\n### Prerequisites\n- Node.js\n- npm\n### Setup Instructions\n1. Clone the repository:\nbash\ncd SmartCare\n3. Install the dependencies:\nbash\nnpm start\nApp should be running at http://localhost:3000\n## Usage\n### Start\n- User will be taken to a \"Wellness\" Assessment to check their current score.\n- After this user will be prompted to sign up before time runs out.\n### Log In\n- Users can log in with their credentials to view their dashboard.\n### Log Out\n- Users can log out from their dashboard and will be redirected to the landing page.",
+    "has_architecture_docs": false,
+    "api_routes_count": 0,
+    "db_migrations_or_schema_count": 0,
+    "mock_data_detected": false,
+    "mock_data_indicators": [],
+    "todo_fixme_count": 0,
+    "boilerplate_detected": false,
+    "boilerplate_indicators": [],
+    "deployment_check": null,
+    "consistency_with_claims": "partial",
+    "consistency_explanation": "Partial evidence: 5/9 claimed technologies found in codebase.",
+    "actual_integrations_found": [
+      "css",
+      "css",
+      "react",
+      "react",
+      "tailwind"
+    ],
+    "readme_claims_unsupported_by_code": [
+      "html5",
+      "html5",
+      "json",
+      "json"
+    ],
+    "provenance": [
+      {
+        "claim": "Inspected repository https://github.com/chayex18/SmartCare",
+        "evidence_type": "repository",
+        "source": "https://github.com/chayex18/SmartCare",
+        "location": "root",
+        "confidence": 1.0,
+        "details": null
+      }
+    ]
+  },
+  "demo_summary": {
+    "has_video_demo": true,
+    "video_platform": "youtube",
+    "video_url": "https://www.youtube.com/embed/Rxt02SD-uoY?enablejsapi=1&hl=en_US&rel=0&start=&version=3&wmode=transparent",
+    "duration_seconds": null,
+    "has_live_deployment": false,
+    "deployment_url": "",
+    "deployment_reachable": null,
+    "has_slide_deck": false,
+    "observations": []
+  },
+  "sponsor_technologies_mentioned": [],
+  "bundle_sha256": "e0f9047c1a52a4d935587f527466c517acdb7840aec90b25208c8a44a3cd0156",
+  "created_at": "2026-09-26T02:03:23.432071Z"
+}

@@ -1,0 +1,131 @@
+{
+  "project_id": "720572",
+  "slug": "fiu-club-recommendation",
+  "title": "FIU Club Recommendation",
+  "tagline": "There's over 500 clubs on campus and it was hard to find one tailored to you, until now.",
+  "problem_statement": "",
+  "inspiration": "",
+  "what_it_does": "",
+  "how_it_was_built": "",
+  "challenges": "",
+  "accomplishments": "",
+  "lessons_learned": "",
+  "future_plans": "",
+  "tech_tags": [
+    "fastapi",
+    "html",
+    "html",
+    "javascript",
+    "javascript",
+    "mysql",
+    "mysql",
+    "python",
+    "python"
+  ],
+  "team_size": 4,
+  "repository_metrics": {
+    "repo_url": "https://github.com/ana-ruth/club-quiz/tree/Development",
+    "status": "accessible",
+    "default_branch": "main",
+    "file_count": 4,
+    "approx_loc": 11,
+    "loc_by_language": {
+      "HTML": 11,
+      "JavaScript": 0,
+      "CSS": 0
+    },
+    "primary_languages": [
+      "HTML",
+      "JavaScript",
+      "CSS"
+    ],
+    "tech_stack": {
+      "frontend_frameworks": [],
+      "backend_frameworks": [],
+      "databases": [],
+      "ai_ml_libraries": [],
+      "model_providers": [],
+      "cloud_devops": [],
+      "third_party_apis": [],
+      "hardware_components": [],
+      "package_dependencies": []
+    },
+    "git_timeline": {
+      "total_commits": 5,
+      "commits_in_window": 5,
+      "first_commit_time": "2024-09-28T13:15:44Z",
+      "last_commit_time": "2025-10-22T22:29:18Z",
+      "commit_timestamps": [
+        "2024-09-28T13:15:44Z",
+        "2024-09-28T13:23:14Z",
+        "2025-10-22T22:19:21Z",
+        "2025-10-22T22:21:47Z",
+        "2025-10-22T22:29:18Z"
+      ],
+      "late_rewrites_detected": false,
+      "deadline_crunch_ratio": 0.6,
+      "final_stage_focus": "docs",
+      "history_is_squashed_or_minimal": false,
+      "contributor_count": 2,
+      "contributors": [
+        "ana-ruth",
+        "Ana Herrera"
+      ]
+    },
+    "test_files_count": 0,
+    "test_frameworks": [],
+    "has_ci": false,
+    "ci_configs": [],
+    "has_docker": false,
+    "has_env_template": false,
+    "readme_size_bytes": 2643,
+    "readme_excerpt": "# 🎓 FIU Club Recommendation\n## 💡 Inspiration\nThere are many clubs at FIU, which can make it daunting for students to decide which one to join. We wanted to make that process easier by building a system that recommends clubs based on each student’s unique responses and interests.\n## ⚙️ What It Does\nThe application recommends clubs based on user responses. Students answer a few short questions, and the system suggests clubs that align with their preferences, helping them get involved more easily on campus.\nWebsite: https://ana-ruth.github.io/club-quiz/\n## 🧩 Project Preview\n## 🛠️ How We Built It\nWe built the project using several tools and technologies:\n- **Frontend:** HTML, CSS, and JavaScript\n- **Backend:** Python and FastAPI\n- **Databases:** MS SQL and MySQL\nThe front end was designed to collect user input, the backend handled data processing through the API, and the databases stored club and user information.\n## 🚧 Challenges We Ran Into\nWe faced many challenges since it was our first time participating in a hackathon. One of the biggest issues was connecting the **front end** to the **backend**, and the **backend** to the **database**. After several debugging attempts, we managed to resolve most of these issues.\nHowever, due to limited time, the last major task—**matching the database information to student responses**—was left incomplete. This was the only remaining step before full functionality.\n## 🏆 Accomplishments That We're Proud Of\nWe are proud that we gained real-world experience because this was the first time we built a project from scratch as a team. We learned to divide the work efficiently, communicate clearly, and take responsibility for each other’s contributions. Completing a working prototype under time pressure was a big achievement for all of us.\n## 📚 What We Learned\nWe learned how to collaborate more effectively in a team setting and improved our technical and problem-solving skills. Working together taught us that teamwork is more productive and enjoyable than working alone—it allowed us to finish tasks faster and with better results.\n## 🔮 What’s Next for FIU Club Recommendation\nOur next step is to fix the remaining issue of matching the databases to the actual responses from students. Once this is completed, the project will be fully functional and ready for real use by students at FIU.\n## 🧩 Built With\n- fastapi\n- html\n- javascript\n- mysql\n- python",
+    "has_architecture_docs": false,
+    "api_routes_count": 0,
+    "db_migrations_or_schema_count": 0,
+    "mock_data_detected": false,
+    "mock_data_indicators": [],
+    "todo_fixme_count": 0,
+    "boilerplate_detected": false,
+    "boilerplate_indicators": [],
+    "deployment_check": null,
+    "consistency_with_claims": "inconsistent",
+    "consistency_explanation": "Weak evidence: Only 0/9 claimed technologies detected in codebase.",
+    "actual_integrations_found": [],
+    "readme_claims_unsupported_by_code": [
+      "fastapi",
+      "html",
+      "html",
+      "javascript",
+      "javascript",
+      "mysql",
+      "mysql",
+      "python",
+      "python"
+    ],
+    "provenance": [
+      {
+        "claim": "Inspected repository https://github.com/ana-ruth/club-quiz/tree/Development",
+        "evidence_type": "repository",
+        "source": "https://github.com/ana-ruth/club-quiz/tree/Development",
+        "location": "root",
+        "confidence": 1.0,
+        "details": null
+      }
+    ]
+  },
+  "demo_summary": {
+    "has_video_demo": false,
+    "video_platform": "",
+    "video_url": "",
+    "duration_seconds": null,
+    "has_live_deployment": false,
+    "deployment_url": "",
+    "deployment_reachable": null,
+    "has_slide_deck": false,
+    "observations": []
+  },
+  "sponsor_technologies_mentioned": [],
+  "bundle_sha256": "a163b90a97b1611c48dbc4b60490856fd739c0800ef81f67162dccb11c566ab9",
+  "created_at": "2026-09-26T02:03:23.193746Z"
+}

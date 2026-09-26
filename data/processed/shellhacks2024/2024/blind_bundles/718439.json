@@ -1,0 +1,138 @@
+{
+  "project_id": "718439",
+  "slug": "patient-safety-technology-8kafb2",
+  "title": "Patient Safety Technology",
+  "tagline": "The project uses ClinicalBERT to detect medication errors from clinical notes, enhancing early detection and patient safety by analyzing interactions and contraindications efficiently.",
+  "problem_statement": "",
+  "inspiration": "",
+  "what_it_does": "",
+  "how_it_was_built": "",
+  "challenges": "",
+  "accomplishments": "",
+  "lessons_learned": "",
+  "future_plans": "",
+  "tech_tags": [
+    "express.js",
+    "express.js",
+    "node.js",
+    "node.js",
+    "python",
+    "python",
+    "pytoch"
+  ],
+  "team_size": 3,
+  "repository_metrics": {
+    "repo_url": "https://github.com/maryam-akhavan-aghdam/Patient-Safety-Project",
+    "status": "accessible",
+    "default_branch": "main",
+    "file_count": 8,
+    "approx_loc": 422,
+    "loc_by_language": {
+      "Python": 130,
+      "JavaScript": 77,
+      "CSS": 215
+    },
+    "primary_languages": [
+      "CSS",
+      "Python",
+      "JavaScript"
+    ],
+    "tech_stack": {
+      "frontend_frameworks": [],
+      "backend_frameworks": [
+        "Express.js"
+      ],
+      "databases": [],
+      "ai_ml_libraries": [
+        "HuggingFace Transformers",
+        "PyTorch"
+      ],
+      "model_providers": [],
+      "cloud_devops": [],
+      "third_party_apis": [],
+      "hardware_components": [],
+      "package_dependencies": [
+        "body-parser",
+        "ejs",
+        "express",
+        "python-shell",
+        "torch",
+        "transformers"
+      ]
+    },
+    "git_timeline": {
+      "total_commits": 4,
+      "commits_in_window": 4,
+      "first_commit_time": "2024-09-29T14:44:03Z",
+      "last_commit_time": "2024-09-29T14:49:11Z",
+      "commit_timestamps": [
+        "2024-09-29T14:44:03Z",
+        "2024-09-29T14:45:14Z",
+        "2024-09-29T14:48:36Z",
+        "2024-09-29T14:49:11Z"
+      ],
+      "late_rewrites_detected": false,
+      "deadline_crunch_ratio": 0.0,
+      "final_stage_focus": "docs",
+      "history_is_squashed_or_minimal": false,
+      "contributor_count": 1,
+      "contributors": [
+        "Maryam Akhavan Aghdam"
+      ]
+    },
+    "test_files_count": 0,
+    "test_frameworks": [],
+    "has_ci": false,
+    "ci_configs": [],
+    "has_docker": false,
+    "has_env_template": false,
+    "readme_size_bytes": 344,
+    "readme_excerpt": "# Patient-Safety-Project\nThe project uses ClinicalBERT to detect medication errors from clinical notes, enhancing early detection and patient safety by analyzing interactions and contraindications efficiently.\n## Installing Dependencies\nConda Setup:\n`conda env create -f environment.yml`\nNPM Setup:\n`npm install`\nRun Project:\n`npm start`",
+    "has_architecture_docs": false,
+    "api_routes_count": 2,
+    "db_migrations_or_schema_count": 0,
+    "mock_data_detected": false,
+    "mock_data_indicators": [],
+    "todo_fixme_count": 0,
+    "boilerplate_detected": false,
+    "boilerplate_indicators": [],
+    "deployment_check": null,
+    "consistency_with_claims": "partial",
+    "consistency_explanation": "Partial evidence: 4/7 claimed technologies found in codebase.",
+    "actual_integrations_found": [
+      "express.js",
+      "express.js",
+      "python",
+      "python"
+    ],
+    "readme_claims_unsupported_by_code": [
+      "node.js",
+      "node.js",
+      "pytoch"
+    ],
+    "provenance": [
+      {
+        "claim": "Inspected repository https://github.com/maryam-akhavan-aghdam/Patient-Safety-Project",
+        "evidence_type": "repository",
+        "source": "https://github.com/maryam-akhavan-aghdam/Patient-Safety-Project",
+        "location": "root",
+        "confidence": 1.0,
+        "details": null
+      }
+    ]
+  },
+  "demo_summary": {
+    "has_video_demo": false,
+    "video_platform": "",
+    "video_url": "",
+    "duration_seconds": null,
+    "has_live_deployment": false,
+    "deployment_url": "",
+    "deployment_reachable": null,
+    "has_slide_deck": false,
+    "observations": []
+  },
+  "sponsor_technologies_mentioned": [],
+  "bundle_sha256": "f31a0b01a53df6e6a4c107928059fc822818d28394806a6b1ce90b405f085ff9",
+  "created_at": "2026-09-26T02:03:23.149175Z"
+}

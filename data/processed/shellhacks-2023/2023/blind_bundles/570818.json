@@ -1,0 +1,187 @@
+{
+  "project_id": "570818",
+  "slug": "ainomadnavigator",
+  "title": "AINomadNavigator",
+  "tagline": "Let AI design your road trip!\r\nTransform your road trips with AI magic. Crafted routes. Curated experiences. Crystal-clear adventures.",
+  "problem_statement": "",
+  "inspiration": "",
+  "what_it_does": "",
+  "how_it_was_built": "",
+  "challenges": "",
+  "accomplishments": "",
+  "lessons_learned": "",
+  "future_plans": "",
+  "tech_tags": [
+    "auth0",
+    "express.js",
+    "express.js",
+    "google-places",
+    "google-places",
+    "materialui",
+    "openai-api",
+    "react",
+    "react"
+  ],
+  "team_size": 4,
+  "repository_metrics": {
+    "repo_url": "https://github.com/moyo-ayy/trip-planner",
+    "status": "accessible",
+    "default_branch": "main",
+    "file_count": 32,
+    "approx_loc": 838,
+    "loc_by_language": {
+      "JavaScript": 568,
+      "HTML": 43,
+      "CSS": 227
+    },
+    "primary_languages": [
+      "JavaScript",
+      "CSS",
+      "HTML"
+    ],
+    "tech_stack": {
+      "frontend_frameworks": [
+        "React"
+      ],
+      "backend_frameworks": [
+        "Express.js"
+      ],
+      "databases": [],
+      "ai_ml_libraries": [],
+      "model_providers": [
+        "OpenAI"
+      ],
+      "cloud_devops": [],
+      "third_party_apis": [],
+      "hardware_components": [],
+      "package_dependencies": [
+        "express",
+        "openai",
+        "react"
+      ]
+    },
+    "git_timeline": {
+      "total_commits": 46,
+      "commits_in_window": 46,
+      "first_commit_time": "2023-09-16T05:41:52Z",
+      "last_commit_time": "2023-09-17T14:14:36Z",
+      "commit_timestamps": [
+        "2023-09-16T05:41:52Z",
+        "2023-09-16T09:29:54Z",
+        "2023-09-16T09:30:50Z",
+        "2023-09-16T13:52:37Z",
+        "2023-09-16T14:26:03Z",
+        "2023-09-16T15:01:51Z",
+        "2023-09-16T15:04:40Z",
+        "2023-09-16T15:25:39Z",
+        "2023-09-16T15:27:41Z",
+        "2023-09-16T16:16:33Z",
+        "2023-09-16T16:21:30Z",
+        "2023-09-16T16:59:18Z",
+        "2023-09-16T17:54:17Z",
+        "2023-09-16T18:05:36Z",
+        "2023-09-16T18:09:37Z",
+        "2023-09-16T18:12:57Z",
+        "2023-09-16T18:19:15Z",
+        "2023-09-16T18:19:29Z",
+        "2023-09-16T18:20:49Z",
+        "2023-09-16T18:28:01Z",
+        "2023-09-16T18:30:46Z",
+        "2023-09-16T18:31:23Z",
+        "2023-09-16T18:35:30Z",
+        "2023-09-16T18:50:57Z",
+        "2023-09-16T18:57:24Z",
+        "2023-09-16T19:00:37Z",
+        "2023-09-16T20:46:54Z",
+        "2023-09-16T20:59:42Z",
+        "2023-09-16T21:01:12Z",
+        "2023-09-16T21:01:31Z",
+        "2023-09-16T21:04:36Z",
+        "2023-09-16T21:09:45Z",
+        "2023-09-16T21:23:03Z",
+        "2023-09-16T21:24:47Z",
+        "2023-09-16T21:48:32Z",
+        "2023-09-16T21:53:23Z",
+        "2023-09-16T23:16:00Z",
+        "2023-09-17T00:15:12Z",
+        "2023-09-17T00:19:22Z",
+        "2023-09-17T00:19:48Z",
+        "2023-09-17T02:17:59Z",
+        "2023-09-17T02:28:55Z",
+        "2023-09-17T14:08:57Z",
+        "2023-09-17T14:10:10Z",
+        "2023-09-17T14:13:52Z",
+        "2023-09-17T14:14:36Z"
+      ],
+      "late_rewrites_detected": false,
+      "deadline_crunch_ratio": 0.09,
+      "final_stage_focus": "debugging",
+      "history_is_squashed_or_minimal": false,
+      "contributor_count": 6,
+      "contributors": [
+        "Moyosoreoluwa",
+        "nate",
+        "Tran Bui",
+        "lindaislinda",
+        "Linda Nguyen",
+        "moyo-ayy"
+      ]
+    },
+    "test_files_count": 0,
+    "test_frameworks": [],
+    "has_ci": false,
+    "ci_configs": [],
+    "has_docker": false,
+    "has_env_template": false,
+    "readme_size_bytes": 1692,
+    "readme_excerpt": "# 🌍 AINomadNavigator 🚗\n## 🌟 Overview\n**AINomadNavigator** is not just another trip planner. It’s your personal travel assistant that understands you. Using advanced AI algorithms, AINomadNavigator tailors road trips based on individual personalities and preferences. Whether you’re an adventurer, a nature lover, or a city explorer, let AI pave your path!\n## 🚀 Features\n1. 📊 **Personalized Profiles** - Create your profile detailing your preferences and personality. We get to know you better to serve you best!\n2. 🗺️ **Dynamic Route Generation** - Say goodbye to one-size-fits-all routes. Every trip is as unique as you are.\n3. 📍 **Curated Stops** - From secret spots to popular locales, get recommendations that fit your style.\n4. 📓 **Detailed Guides** - Receive comprehensive guides for every leg of your trip. Know what to do, where to eat, and what to see.\n## 🛠️ Installation & Setup\n1. Clone this repository:\n2. Navigate to the project directory:\n3. Install the required packages:\n4. Start the server:\n## 🤖 How The AI Works\nAINomadNavigator leverages a blend of **Machine Learning** and **Deep Learning** algorithms to understand user personalities and preferences. By analyzing user input and leveraging content-based filtering, our engine crafts perfect road trip experiences.\nEmbrace the future of road trips with **AINomadNavigator**. Let's hit the road!",
+    "has_architecture_docs": false,
+    "api_routes_count": 1,
+    "db_migrations_or_schema_count": 0,
+    "mock_data_detected": false,
+    "mock_data_indicators": [],
+    "todo_fixme_count": 1,
+    "boilerplate_detected": false,
+    "boilerplate_indicators": [],
+    "deployment_check": null,
+    "consistency_with_claims": "partial",
+    "consistency_explanation": "Partial evidence: 5/9 claimed technologies found in codebase.",
+    "actual_integrations_found": [
+      "express.js",
+      "express.js",
+      "openai-api",
+      "react",
+      "react"
+    ],
+    "readme_claims_unsupported_by_code": [
+      "auth0",
+      "google-places",
+      "google-places",
+      "materialui"
+    ],
+    "provenance": [
+      {
+        "claim": "Inspected repository https://github.com/moyo-ayy/trip-planner",
+        "evidence_type": "repository",
+        "source": "https://github.com/moyo-ayy/trip-planner",
+        "location": "root",
+        "confidence": 1.0,
+        "details": null
+      }
+    ]
+  },
+  "demo_summary": {
+    "has_video_demo": false,
+    "video_platform": "",
+    "video_url": "",
+    "duration_seconds": null,
+    "has_live_deployment": false,
+    "deployment_url": "",
+    "deployment_reachable": null,
+    "has_slide_deck": false,
+    "observations": []
+  },
+  "sponsor_technologies_mentioned": [],
+  "bundle_sha256": "05395696f4a86721416754f9505d4f29427d57318a57600b7319696430ad0158",
+  "created_at": "2026-09-26T02:11:35.607355Z"
+}

@@ -1,0 +1,145 @@
+{
+  "project_id": "569853",
+  "slug": "financially-fresh",
+  "title": "Financially Fresh",
+  "tagline": "\"Financially Fresh\": Next.js + Strapi CMS + Three.JS blog template for student financial education.",
+  "problem_statement": "",
+  "inspiration": "",
+  "what_it_does": "",
+  "how_it_was_built": "",
+  "challenges": "",
+  "accomplishments": "",
+  "lessons_learned": "",
+  "future_plans": "",
+  "tech_tags": [
+    "3js",
+    "headlesscmsapi",
+    "next.js",
+    "react.js",
+    "scss",
+    "scss",
+    "strapi"
+  ],
+  "team_size": 2,
+  "repository_metrics": {
+    "repo_url": "https://github.com/RayhanM17/FinanciallyFresh",
+    "status": "accessible",
+    "default_branch": "master",
+    "file_count": 42,
+    "approx_loc": 763,
+    "loc_by_language": {
+      "JavaScript": 534,
+      "CSS": 229
+    },
+    "primary_languages": [
+      "JavaScript",
+      "CSS"
+    ],
+    "tech_stack": {
+      "frontend_frameworks": [
+        "Next.js",
+        "React"
+      ],
+      "backend_frameworks": [],
+      "databases": [],
+      "ai_ml_libraries": [],
+      "model_providers": [],
+      "cloud_devops": [],
+      "third_party_apis": [],
+      "hardware_components": [],
+      "package_dependencies": [
+        "@react-three/drei",
+        "@react-three/fiber",
+        "eslint",
+        "eslint-config-next",
+        "next",
+        "normalize.css",
+        "react",
+        "react-dom",
+        "react-icons",
+        "sass",
+        "three"
+      ]
+    },
+    "git_timeline": {
+      "total_commits": 10,
+      "commits_in_window": 10,
+      "first_commit_time": "2023-09-17T01:19:34Z",
+      "last_commit_time": "2024-01-08T22:12:23Z",
+      "commit_timestamps": [
+        "2023-09-17T01:19:34Z",
+        "2023-09-17T09:59:51Z",
+        "2023-09-17T11:30:00Z",
+        "2023-09-17T14:28:14Z",
+        "2023-09-17T14:52:12Z",
+        "2023-09-19T21:36:50Z",
+        "2023-11-14T23:07:40Z",
+        "2023-11-14T23:41:25Z",
+        "2024-01-06T23:50:38Z",
+        "2024-01-08T22:12:23Z"
+      ],
+      "late_rewrites_detected": false,
+      "deadline_crunch_ratio": 0.2,
+      "final_stage_focus": "polish",
+      "history_is_squashed_or_minimal": false,
+      "contributor_count": 1,
+      "contributors": [
+        "rayhanm17"
+      ]
+    },
+    "test_files_count": 0,
+    "test_frameworks": [],
+    "has_ci": false,
+    "ci_configs": [],
+    "has_docker": false,
+    "has_env_template": false,
+    "readme_size_bytes": 1369,
+    "readme_excerpt": "This is a Next.js project bootstrapped with `create-next-app`.\n## Getting Started\nFirst, run the development server:\nOpen http://localhost:3000 with your browser to see the result.\nYou can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.\nThis project uses `next/font` to automatically optimize and load Inter, a custom Google Font.\n## Learn More\nTo learn more about Next.js, take a look at the following resources:\n- Next.js Documentation - learn about Next.js features and API.\n- Learn Next.js - an interactive Next.js tutorial.\nYou can check out the Next.js GitHub repository - your feedback and contributions are welcome!\n## Deploy on Vercel\nThe easiest way to deploy your Next.js app is to use the Vercel Platform from the creators of Next.js.\nCheck out our Next.js deployment documentation for more details.",
+    "has_architecture_docs": false,
+    "api_routes_count": 0,
+    "db_migrations_or_schema_count": 0,
+    "mock_data_detected": false,
+    "mock_data_indicators": [],
+    "todo_fixme_count": 0,
+    "boilerplate_detected": false,
+    "boilerplate_indicators": [],
+    "deployment_check": null,
+    "consistency_with_claims": "inconsistent",
+    "consistency_explanation": "Weak evidence: Only 2/7 claimed technologies detected in codebase.",
+    "actual_integrations_found": [
+      "next.js",
+      "react.js"
+    ],
+    "readme_claims_unsupported_by_code": [
+      "3js",
+      "headlesscmsapi",
+      "scss",
+      "scss",
+      "strapi"
+    ],
+    "provenance": [
+      {
+        "claim": "Inspected repository https://github.com/RayhanM17/FinanciallyFresh",
+        "evidence_type": "repository",
+        "source": "https://github.com/RayhanM17/FinanciallyFresh",
+        "location": "root",
+        "confidence": 1.0,
+        "details": null
+      }
+    ]
+  },
+  "demo_summary": {
+    "has_video_demo": true,
+    "video_platform": "vimeo",
+    "video_url": "https://player.vimeo.com/video/865302596?byline=0&portrait=0&title=0#t=",
+    "duration_seconds": null,
+    "has_live_deployment": false,
+    "deployment_url": "",
+    "deployment_reachable": null,
+    "has_slide_deck": false,
+    "observations": []
+  },
+  "sponsor_technologies_mentioned": [],
+  "bundle_sha256": "9628a23796f51397e1247a530d526abd3a0883bc7f874ea928823c6c8a483f7e",
+  "created_at": "2026-09-26T02:11:35.652349Z"
+}

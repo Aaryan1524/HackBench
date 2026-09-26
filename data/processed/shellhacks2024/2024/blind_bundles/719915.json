@@ -1,0 +1,165 @@
+{
+  "project_id": "719915",
+  "slug": "med-memory",
+  "title": "Med-Memory",
+  "tagline": "Med-Memory turns overwhelming medical data into actionable insights with easy-to-read visuals and AI-powered assistance. Helping doctors make smarter decisions that save lives.",
+  "problem_statement": "",
+  "inspiration": "",
+  "what_it_does": "",
+  "how_it_was_built": "",
+  "challenges": "",
+  "accomplishments": "",
+  "lessons_learned": "",
+  "future_plans": "",
+  "tech_tags": [
+    "express.js",
+    "express.js",
+    "firebase",
+    "firebase",
+    "next",
+    "node.js",
+    "node.js",
+    "ollama",
+    "react",
+    "react",
+    "streamlit"
+  ],
+  "team_size": 4,
+  "repository_metrics": {
+    "repo_url": "https://github.com/ashendre1/med-memory-v2",
+    "status": "accessible",
+    "default_branch": "main",
+    "file_count": 51,
+    "approx_loc": 2526,
+    "loc_by_language": {
+      "TypeScript": 1706,
+      "Python": 232,
+      "CSS": 78,
+      "JavaScript": 510
+    },
+    "primary_languages": [
+      "TypeScript",
+      "JavaScript",
+      "Python",
+      "CSS"
+    ],
+    "tech_stack": {
+      "frontend_frameworks": [
+        "TailwindCSS",
+        "Next.js",
+        "React"
+      ],
+      "backend_frameworks": [
+        "Express.js",
+        "FastAPI"
+      ],
+      "databases": [
+        "Firebase"
+      ],
+      "ai_ml_libraries": [],
+      "model_providers": [],
+      "cloud_devops": [],
+      "third_party_apis": [],
+      "hardware_components": [],
+      "package_dependencies": [
+        "express",
+        "fastapi",
+        "firebase",
+        "next",
+        "react",
+        "tailwindcss"
+      ]
+    },
+    "git_timeline": {
+      "total_commits": 14,
+      "commits_in_window": 14,
+      "first_commit_time": "2024-09-28T06:06:15Z",
+      "last_commit_time": "2024-10-07T03:32:42Z",
+      "commit_timestamps": [
+        "2024-09-28T06:06:15Z",
+        "2024-09-28T06:07:54Z",
+        "2024-09-28T13:44:54Z",
+        "2024-09-28T13:47:13Z",
+        "2024-09-28T15:08:28Z",
+        "2024-09-28T19:44:39Z",
+        "2024-09-28T20:05:12Z",
+        "2024-09-28T20:24:35Z",
+        "2024-09-28T20:25:59Z",
+        "2024-09-28T20:33:35Z",
+        "2024-09-29T00:22:39Z",
+        "2024-09-29T13:32:33Z",
+        "2024-10-02T04:32:20Z",
+        "2024-10-07T03:32:42Z"
+      ],
+      "late_rewrites_detected": false,
+      "deadline_crunch_ratio": 0.07,
+      "final_stage_focus": "docs",
+      "history_is_squashed_or_minimal": false,
+      "contributor_count": 4,
+      "contributors": [
+        "samarth126",
+        "ashendre1",
+        "Tanmay",
+        "Samarth Bhole"
+      ]
+    },
+    "test_files_count": 0,
+    "test_frameworks": [],
+    "has_ci": false,
+    "ci_configs": [],
+    "has_docker": false,
+    "has_env_template": false,
+    "readme_size_bytes": 18,
+    "readme_excerpt": "Med-Memory Readme",
+    "has_architecture_docs": false,
+    "api_routes_count": 1,
+    "db_migrations_or_schema_count": 0,
+    "mock_data_detected": false,
+    "mock_data_indicators": [],
+    "todo_fixme_count": 0,
+    "boilerplate_detected": false,
+    "boilerplate_indicators": [],
+    "deployment_check": null,
+    "consistency_with_claims": "partial",
+    "consistency_explanation": "Partial evidence: 7/11 claimed technologies found in codebase.",
+    "actual_integrations_found": [
+      "express.js",
+      "express.js",
+      "firebase",
+      "firebase",
+      "next",
+      "react",
+      "react"
+    ],
+    "readme_claims_unsupported_by_code": [
+      "node.js",
+      "node.js",
+      "ollama",
+      "streamlit"
+    ],
+    "provenance": [
+      {
+        "claim": "Inspected repository https://github.com/ashendre1/med-memory-v2",
+        "evidence_type": "repository",
+        "source": "https://github.com/ashendre1/med-memory-v2",
+        "location": "root",
+        "confidence": 1.0,
+        "details": null
+      }
+    ]
+  },
+  "demo_summary": {
+    "has_video_demo": false,
+    "video_platform": "",
+    "video_url": "",
+    "duration_seconds": null,
+    "has_live_deployment": false,
+    "deployment_url": "",
+    "deployment_reachable": null,
+    "has_slide_deck": false,
+    "observations": []
+  },
+  "sponsor_technologies_mentioned": [],
+  "bundle_sha256": "bb00131f1f8844fc901e0c516a39fae03ab5b02486cba4bf8d5dd0171e668aa6",
+  "created_at": "2026-09-26T02:03:22.980883Z"
+}

@@ -1,0 +1,33 @@
+{
+  "project_id": "570589",
+  "slug": "lifeinsure-game-to-learn-insurance",
+  "title": "LifeInsure - Game to Learn Insurance",
+  "tagline": "Short play life simulation game where each day users get to choose what to do, then see how and why their decisions affect their insurance rates.",
+  "problem_statement": "",
+  "inspiration": "",
+  "what_it_does": "",
+  "how_it_was_built": "",
+  "challenges": "",
+  "accomplishments": "",
+  "lessons_learned": "",
+  "future_plans": "",
+  "tech_tags": [
+    "figma"
+  ],
+  "team_size": 1,
+  "repository_metrics": null,
+  "demo_summary": {
+    "has_video_demo": false,
+    "video_platform": "",
+    "video_url": "",
+    "duration_seconds": null,
+    "has_live_deployment": false,
+    "deployment_url": "",
+    "deployment_reachable": null,
+    "has_slide_deck": true,
+    "observations": []
+  },
+  "sponsor_technologies_mentioned": [],
+  "bundle_sha256": "4c3939340e79fc6c4e9825d7bcef2debbe707cacdcc227507d296899d66688b4",
+  "created_at": "2026-09-26T02:11:35.800289Z"
+}

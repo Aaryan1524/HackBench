@@ -1,0 +1,171 @@
+{
+  "project_id": "718698",
+  "slug": "studyflow-ua0ts5",
+  "title": "StudyFlow",
+  "tagline": "StudyFlow: Personalized AI-Driven Study Plans to Keep You Focused and On Track",
+  "problem_statement": "",
+  "inspiration": "",
+  "what_it_does": "",
+  "how_it_was_built": "",
+  "challenges": "",
+  "accomplishments": "",
+  "lessons_learned": "",
+  "future_plans": "",
+  "tech_tags": [
+    "express.js",
+    "express.js",
+    "javascript",
+    "javascript",
+    "react",
+    "react",
+    "redux",
+    "redux",
+    "sequelize"
+  ],
+  "team_size": 1,
+  "repository_metrics": {
+    "repo_url": "https://github.com/MyNameIsJeff-305/study-flow",
+    "status": "accessible",
+    "default_branch": "main",
+    "file_count": 98,
+    "approx_loc": 3509,
+    "loc_by_language": {
+      "HTML": 13,
+      "JavaScript": 2758,
+      "CSS": 738
+    },
+    "primary_languages": [
+      "JavaScript",
+      "CSS",
+      "HTML"
+    ],
+    "tech_stack": {
+      "frontend_frameworks": [
+        "Vite",
+        "React"
+      ],
+      "backend_frameworks": [
+        "Express.js"
+      ],
+      "databases": [],
+      "ai_ml_libraries": [],
+      "model_providers": [
+        "OpenAI"
+      ],
+      "cloud_devops": [],
+      "third_party_apis": [],
+      "hardware_components": [],
+      "package_dependencies": [
+        "express",
+        "openai",
+        "react",
+        "vite"
+      ]
+    },
+    "git_timeline": {
+      "total_commits": 32,
+      "commits_in_window": 32,
+      "first_commit_time": "2024-09-28T19:56:33Z",
+      "last_commit_time": "2024-09-29T14:31:49Z",
+      "commit_timestamps": [
+        "2024-09-28T19:56:33Z",
+        "2024-09-28T20:22:57Z",
+        "2024-09-28T20:23:18Z",
+        "2024-09-28T20:26:14Z",
+        "2024-09-28T22:27:17Z",
+        "2024-09-28T23:38:59Z",
+        "2024-09-28T23:45:20Z",
+        "2024-09-29T02:15:55Z",
+        "2024-09-29T02:42:47Z",
+        "2024-09-29T02:56:01Z",
+        "2024-09-29T02:56:51Z",
+        "2024-09-29T03:00:59Z",
+        "2024-09-29T03:12:08Z",
+        "2024-09-29T03:15:25Z",
+        "2024-09-29T03:20:00Z",
+        "2024-09-29T03:24:11Z",
+        "2024-09-29T03:36:34Z",
+        "2024-09-29T03:40:17Z",
+        "2024-09-29T03:45:13Z",
+        "2024-09-29T03:46:38Z",
+        "2024-09-29T03:49:23Z",
+        "2024-09-29T03:52:01Z",
+        "2024-09-29T03:58:26Z",
+        "2024-09-29T04:01:48Z",
+        "2024-09-29T04:04:16Z",
+        "2024-09-29T05:50:35Z",
+        "2024-09-29T07:22:28Z",
+        "2024-09-29T07:31:56Z",
+        "2024-09-29T08:05:46Z",
+        "2024-09-29T14:21:23Z",
+        "2024-09-29T14:29:01Z",
+        "2024-09-29T14:31:49Z"
+      ],
+      "late_rewrites_detected": false,
+      "deadline_crunch_ratio": 0.09,
+      "final_stage_focus": "debugging",
+      "history_is_squashed_or_minimal": false,
+      "contributor_count": 2,
+      "contributors": [
+        "Michel Garcia Ribalta",
+        "MyNameIsJeff-305"
+      ]
+    },
+    "test_files_count": 0,
+    "test_frameworks": [],
+    "has_ci": false,
+    "ci_configs": [],
+    "has_docker": false,
+    "has_env_template": false,
+    "readme_size_bytes": 4123,
+    "readme_excerpt": "# StudyFlow: Personalized AI-Driven Study Plans\n## Inspiration\nThe idea for **StudyFlow** emerged from the challenges many students and professionals face when trying to manage their time efficiently. We noticed that while there are many generic study tools, few provide the personalized guidance people need to stay focused and productive. Our goal was to create an app that leverages AI to generate tailored study plans and focus-enhancing exercises, empowering users to achieve their academic and professional goals.\n## What it does\n**StudyFlow** generates personalized study plans based on the user’s subject matter, goals, and deadlines. Users simply input their needs, and the app uses AI to create a customized schedule designed to keep them on track. Additionally, StudyFlow provides AI-generated exercises that help users stay focused, ensuring they take breaks and engage in activities that support their learning journey.\n## How we built it\nWe built **StudyFlow** using a combination of **Express** and **Sequelize** on the backend, managing user data and study plans in a structured, scalable way. The frontend was built with **React** and **Redux**, allowing for seamless state management and a responsive user interface. We integrated **OpenAI API** to dynamically generate study plans and exercises tailored to each user’s unique needs and preferences, making the experience highly personalized.\n## Challenges we ran into\nOne of the major challenges we faced was optimizing the AI-generated study plans to ensure they were both effective and personalized. Obviously, this is an enhancement we will work in the future, considering new prompts depending on the subject the user inputs. It took multiple iterations of AI prompt design to generate plans that felt tailored to users’ needs. Another challenge was balancing state management in React-Redux, especially when handling real-time updates for study plans and exercises. We also had to find the right balance between automation and user control, ensuring that users felt empowered by the AI suggestions.\n## Accomplishments that we're proud of\nWe’re proud of successfully integrating AI to provide real-time, personalized study plans that adapt to different user inputs. The seamless user experience we created, from study plan generation to exercise recommendations, exceeded our initial expectations. Additionally, implementing a robust backend with **Express** and **Sequelize** made the app scalable and efficient, which we’re p",
+    "has_architecture_docs": false,
+    "api_routes_count": 19,
+    "db_migrations_or_schema_count": 0,
+    "mock_data_detected": false,
+    "mock_data_indicators": [],
+    "todo_fixme_count": 0,
+    "boilerplate_detected": false,
+    "boilerplate_indicators": [],
+    "deployment_check": null,
+    "consistency_with_claims": "partial",
+    "consistency_explanation": "Partial evidence: 4/9 claimed technologies found in codebase.",
+    "actual_integrations_found": [
+      "express.js",
+      "express.js",
+      "react",
+      "react"
+    ],
+    "readme_claims_unsupported_by_code": [
+      "javascript",
+      "javascript",
+      "redux",
+      "redux",
+      "sequelize"
+    ],
+    "provenance": [
+      {
+        "claim": "Inspected repository https://github.com/MyNameIsJeff-305/study-flow",
+        "evidence_type": "repository",
+        "source": "https://github.com/MyNameIsJeff-305/study-flow",
+        "location": "root",
+        "confidence": 1.0,
+        "details": null
+      }
+    ]
+  },
+  "demo_summary": {
+    "has_video_demo": true,
+    "video_platform": "youtube",
+    "video_url": "https://www.youtube.com/embed/pBMM8rjED-Q?enablejsapi=1&hl=en_US&rel=0&start=&version=3&wmode=transparent",
+    "duration_seconds": null,
+    "has_live_deployment": false,
+    "deployment_url": "",
+    "deployment_reachable": null,
+    "has_slide_deck": false,
+    "observations": []
+  },
+  "sponsor_technologies_mentioned": [],
+  "bundle_sha256": "3acc38762543a57295c223b8dcbd7b6739a5e4f286c76325d58324850ef24ca9",
+  "created_at": "2026-09-26T02:03:23.498554Z"
+}

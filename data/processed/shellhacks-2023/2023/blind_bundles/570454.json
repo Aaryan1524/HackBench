@@ -1,0 +1,111 @@
+{
+  "project_id": "570454",
+  "slug": "led-counter-q3s817",
+  "title": "LCD Morse Code Converter",
+  "tagline": "The LCD Morse Code Converter will convert simple button presses into alphabetic characters and display them on a small LCD screen.",
+  "problem_statement": "",
+  "inspiration": "",
+  "what_it_does": "",
+  "how_it_was_built": "",
+  "challenges": "",
+  "accomplishments": "",
+  "lessons_learned": "",
+  "future_plans": "",
+  "tech_tags": [
+    "arduino",
+    "arduino",
+    "c++",
+    "c++",
+    "grovebeginnerkit"
+  ],
+  "team_size": 4,
+  "repository_metrics": {
+    "repo_url": "https://github.com/oemolina10/LCD-Morse-Code",
+    "status": "accessible",
+    "default_branch": "main",
+    "file_count": 2,
+    "approx_loc": 0,
+    "loc_by_language": {},
+    "primary_languages": [],
+    "tech_stack": {
+      "frontend_frameworks": [],
+      "backend_frameworks": [],
+      "databases": [],
+      "ai_ml_libraries": [],
+      "model_providers": [],
+      "cloud_devops": [],
+      "third_party_apis": [],
+      "hardware_components": [],
+      "package_dependencies": []
+    },
+    "git_timeline": {
+      "total_commits": 2,
+      "commits_in_window": 2,
+      "first_commit_time": "2023-09-17T14:52:42Z",
+      "last_commit_time": "2023-09-17T15:21:42Z",
+      "commit_timestamps": [
+        "2023-09-17T14:52:42Z",
+        "2023-09-17T15:21:42Z"
+      ],
+      "late_rewrites_detected": false,
+      "deadline_crunch_ratio": 0.0,
+      "final_stage_focus": "squashed",
+      "history_is_squashed_or_minimal": true,
+      "contributor_count": 1,
+      "contributors": [
+        "oemolina10"
+      ]
+    },
+    "test_files_count": 0,
+    "test_frameworks": [],
+    "has_ci": false,
+    "ci_configs": [],
+    "has_docker": false,
+    "has_env_template": false,
+    "readme_size_bytes": 16,
+    "readme_excerpt": "# LCD-Morse-Code",
+    "has_architecture_docs": false,
+    "api_routes_count": 0,
+    "db_migrations_or_schema_count": 0,
+    "mock_data_detected": false,
+    "mock_data_indicators": [],
+    "todo_fixme_count": 0,
+    "boilerplate_detected": false,
+    "boilerplate_indicators": [],
+    "deployment_check": null,
+    "consistency_with_claims": "inconsistent",
+    "consistency_explanation": "Weak evidence: Only 0/5 claimed technologies detected in codebase.",
+    "actual_integrations_found": [],
+    "readme_claims_unsupported_by_code": [
+      "arduino",
+      "arduino",
+      "c++",
+      "c++",
+      "grovebeginnerkit"
+    ],
+    "provenance": [
+      {
+        "claim": "Inspected repository https://github.com/oemolina10/LCD-Morse-Code",
+        "evidence_type": "repository",
+        "source": "https://github.com/oemolina10/LCD-Morse-Code",
+        "location": "root",
+        "confidence": 1.0,
+        "details": null
+      }
+    ]
+  },
+  "demo_summary": {
+    "has_video_demo": false,
+    "video_platform": "",
+    "video_url": "",
+    "duration_seconds": null,
+    "has_live_deployment": false,
+    "deployment_url": "",
+    "deployment_reachable": null,
+    "has_slide_deck": false,
+    "observations": []
+  },
+  "sponsor_technologies_mentioned": [],
+  "bundle_sha256": "84c6402991a7dac3b3f9acd46f7261fd8287f19d56093719eea6a3afd171c761",
+  "created_at": "2026-09-26T02:11:35.836541Z"
+}

@@ -1,0 +1,38 @@
+{
+  "project_id": "569648",
+  "slug": "a-bit-of-balance",
+  "title": "A Bit of Balance",
+  "tagline": "A Bit of Balance is a fun, interactive learning game in which players can learn about financial literacy and bitcoin whilst playing through levels and putting their budgeting skills to the test.",
+  "problem_statement": "",
+  "inspiration": "",
+  "what_it_does": "",
+  "how_it_was_built": "",
+  "challenges": "",
+  "accomplishments": "",
+  "lessons_learned": "",
+  "future_plans": "",
+  "tech_tags": [
+    "c#",
+    "c#",
+    "unity",
+    "unity",
+    "visual-studio",
+    "visual-studio"
+  ],
+  "team_size": 2,
+  "repository_metrics": null,
+  "demo_summary": {
+    "has_video_demo": true,
+    "video_platform": "youtube",
+    "video_url": "https://www.youtube.com/embed/_hBiG-04jdo?enablejsapi=1&hl=en_US&rel=0&start=&version=3&wmode=transparent",
+    "duration_seconds": null,
+    "has_live_deployment": false,
+    "deployment_url": "",
+    "deployment_reachable": null,
+    "has_slide_deck": false,
+    "observations": []
+  },
+  "sponsor_technologies_mentioned": [],
+  "bundle_sha256": "dba7ac171e6532c97bafde6bd8c9a5ee77133a4696c490a3c1a72b0deac43ff6",
+  "created_at": "2026-09-26T02:11:35.704710Z"
+}

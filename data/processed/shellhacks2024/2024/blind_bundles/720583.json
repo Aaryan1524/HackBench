@@ -1,0 +1,166 @@
+{
+  "project_id": "720583",
+  "slug": "finance-manager-f15bwa",
+  "title": "Finance Manager",
+  "tagline": "In this time of inflation, people have the urgent need to have something that tracks their finances so they can meet their financial goals easily and also see progress happening on the daily basis.",
+  "problem_statement": "",
+  "inspiration": "",
+  "what_it_does": "",
+  "how_it_was_built": "",
+  "challenges": "",
+  "accomplishments": "",
+  "lessons_learned": "",
+  "future_plans": "",
+  "tech_tags": [
+    "flask",
+    "flask",
+    "python",
+    "python",
+    "sqlite",
+    "sqlite"
+  ],
+  "team_size": 4,
+  "repository_metrics": {
+    "repo_url": "https://github.com/guptashrey143/Aukaat",
+    "status": "accessible",
+    "default_branch": "main",
+    "file_count": 12,
+    "approx_loc": 561,
+    "loc_by_language": {
+      "Python": 278,
+      "CSS": 35,
+      "HTML": 248
+    },
+    "primary_languages": [
+      "Python",
+      "HTML",
+      "CSS"
+    ],
+    "tech_stack": {
+      "frontend_frameworks": [],
+      "backend_frameworks": [
+        "Flask",
+        "Express.js"
+      ],
+      "databases": [],
+      "ai_ml_libraries": [],
+      "model_providers": [],
+      "cloud_devops": [],
+      "third_party_apis": [],
+      "hardware_components": [],
+      "package_dependencies": [
+        "\u0000",
+        "\u0000b\u0000l\u0000i\u0000n\u0000k\u0000e\u0000r\u0000",
+        "\u0000c\u0000l\u0000i\u0000c\u0000k\u0000",
+        "\u0000c\u0000o\u0000l\u0000o\u0000r\u0000a\u0000m\u0000a\u0000",
+        "\u0000c\u0000o\u0000n\u0000t\u0000o\u0000u\u0000r\u0000p\u0000y\u0000",
+        "\u0000c\u0000y\u0000c\u0000l\u0000e\u0000r\u0000",
+        "\u0000f\u0000l\u0000a\u0000s\u0000k\u0000",
+        "\u0000f\u0000l\u0000a\u0000s\u0000k\u0000-\u0000b\u0000c\u0000r\u0000y\u0000p\u0000t\u0000",
+        "\u0000f\u0000l\u0000a\u0000s\u0000k\u0000-\u0000l\u0000o\u0000g\u0000i\u0000n\u0000",
+        "\u0000f\u0000l\u0000a\u0000s\u0000k\u0000-\u0000s\u0000q\u0000l\u0000a\u0000l\u0000c\u0000h\u0000e\u0000m\u0000y\u0000",
+        "\u0000f\u0000o\u0000n\u0000t\u0000t\u0000o\u0000o\u0000l\u0000s\u0000",
+        "\u0000g\u0000r\u0000e\u0000e\u0000n\u0000l\u0000e\u0000t\u0000",
+        "\u0000i\u0000t\u0000s\u0000d\u0000a\u0000n\u0000g\u0000e\u0000r\u0000o\u0000u\u0000s\u0000",
+        "\u0000j\u0000i\u0000n\u0000j\u0000a\u00002\u0000",
+        "\u0000k\u0000i\u0000w\u0000i\u0000s\u0000o\u0000l\u0000v\u0000e\u0000r\u0000",
+        "\u0000m\u0000a\u0000r\u0000k\u0000u\u0000p\u0000s\u0000a\u0000f\u0000e\u0000",
+        "\u0000m\u0000a\u0000t\u0000p\u0000l\u0000o\u0000t\u0000l\u0000i\u0000b\u0000",
+        "\u0000n\u0000u\u0000m\u0000p\u0000y\u0000",
+        "\u0000p\u0000a\u0000c\u0000k\u0000a\u0000g\u0000i\u0000n\u0000g\u0000",
+        "\u0000p\u0000a\u0000n\u0000d\u0000a\u0000s\u0000",
+        "\u0000p\u0000i\u0000l\u0000l\u0000o\u0000w\u0000",
+        "\u0000p\u0000l\u0000o\u0000t\u0000l\u0000y\u0000",
+        "\u0000p\u0000y\u0000p\u0000a\u0000r\u0000s\u0000i\u0000n\u0000g\u0000",
+        "\u0000p\u0000y\u0000t\u0000h\u0000o\u0000n\u0000-\u0000d\u0000a\u0000t\u0000e\u0000u\u0000t\u0000i\u0000l\u0000",
+        "\u0000p\u0000y\u0000t\u0000z\u0000",
+        "\u0000s\u0000i\u0000x\u0000",
+        "\u0000s\u0000q\u0000l\u0000a\u0000l\u0000c\u0000h\u0000e\u0000m\u0000y\u0000",
+        "\u0000t\u0000e\u0000n\u0000a\u0000c\u0000i\u0000t\u0000y\u0000",
+        "\u0000t\u0000y\u0000p\u0000i\u0000n\u0000g\u0000_\u0000e\u0000x\u0000t\u0000e\u0000n\u0000s\u0000i\u0000o\u0000n\u0000s\u0000",
+        "\u0000t\u0000z\u0000d\u0000a\u0000t\u0000a\u0000",
+        "\u0000w\u0000e\u0000r\u0000k\u0000z\u0000e\u0000u\u0000g\u0000",
+        "b\u0000c\u0000r\u0000y\u0000p\u0000t\u0000",
+        "express",
+        "flask"
+      ]
+    },
+    "git_timeline": {
+      "total_commits": 8,
+      "commits_in_window": 8,
+      "first_commit_time": "2024-09-29T14:57:22Z",
+      "last_commit_time": "2024-09-29T15:27:55Z",
+      "commit_timestamps": [
+        "2024-09-29T14:57:22Z",
+        "2024-09-29T15:21:22Z",
+        "2024-09-29T15:21:44Z",
+        "2024-09-29T15:22:28Z",
+        "2024-09-29T15:23:38Z",
+        "2024-09-29T15:24:14Z",
+        "2024-09-29T15:25:01Z",
+        "2024-09-29T15:27:55Z"
+      ],
+      "late_rewrites_detected": false,
+      "deadline_crunch_ratio": 0.0,
+      "final_stage_focus": "features",
+      "history_is_squashed_or_minimal": false,
+      "contributor_count": 1,
+      "contributors": [
+        "guptashrey143"
+      ]
+    },
+    "test_files_count": 0,
+    "test_frameworks": [],
+    "has_ci": false,
+    "ci_configs": [],
+    "has_docker": false,
+    "has_env_template": false,
+    "readme_size_bytes": 0,
+    "readme_excerpt": "",
+    "has_architecture_docs": false,
+    "api_routes_count": 0,
+    "db_migrations_or_schema_count": 0,
+    "mock_data_detected": false,
+    "mock_data_indicators": [],
+    "todo_fixme_count": 0,
+    "boilerplate_detected": false,
+    "boilerplate_indicators": [],
+    "deployment_check": null,
+    "consistency_with_claims": "partial",
+    "consistency_explanation": "Partial evidence: 2/6 claimed technologies found in codebase.",
+    "actual_integrations_found": [
+      "flask",
+      "flask"
+    ],
+    "readme_claims_unsupported_by_code": [
+      "python",
+      "python",
+      "sqlite",
+      "sqlite"
+    ],
+    "provenance": [
+      {
+        "claim": "Inspected repository https://github.com/guptashrey143/Aukaat",
+        "evidence_type": "repository",
+        "source": "https://github.com/guptashrey143/Aukaat",
+        "location": "root",
+        "confidence": 1.0,
+        "details": null
+      }
+    ]
+  },
+  "demo_summary": {
+    "has_video_demo": false,
+    "video_platform": "",
+    "video_url": "",
+    "duration_seconds": null,
+    "has_live_deployment": false,
+    "deployment_url": "",
+    "deployment_reachable": null,
+    "has_slide_deck": false,
+    "observations": []
+  },
+  "sponsor_technologies_mentioned": [],
+  "bundle_sha256": "88db7a4d0f46111bf6539e17a4da069519d9ad0343750c5f1f8fe668172d874d",
+  "created_at": "2026-09-26T02:03:23.095278Z"
+}

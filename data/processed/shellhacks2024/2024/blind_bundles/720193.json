@@ -1,0 +1,154 @@
+{
+  "project_id": "720193",
+  "slug": "pathfinder-m1oihx",
+  "title": "PathFinder",
+  "tagline": "Our AI optimizes your resume for any job, builds personalized career paths, bridges skill gaps, recommends courses, and explores job demand, helping you make decisions about your professional future.",
+  "problem_statement": "",
+  "inspiration": "",
+  "what_it_does": "",
+  "how_it_was_built": "",
+  "challenges": "",
+  "accomplishments": "",
+  "lessons_learned": "",
+  "future_plans": "",
+  "tech_tags": [
+    "css3",
+    "css3",
+    "html5",
+    "html5",
+    "javascript",
+    "javascript",
+    "json",
+    "json",
+    "mangodb",
+    "openai",
+    "scss",
+    "scss"
+  ],
+  "team_size": 3,
+  "repository_metrics": {
+    "repo_url": "https://github.com/Emny04/PathFinder",
+    "status": "accessible",
+    "default_branch": "main",
+    "file_count": 41,
+    "approx_loc": 19812,
+    "loc_by_language": {
+      "HTML": 2988,
+      "JavaScript": 4860,
+      "CSS": 11964
+    },
+    "primary_languages": [
+      "CSS",
+      "JavaScript",
+      "HTML"
+    ],
+    "tech_stack": {
+      "frontend_frameworks": [],
+      "backend_frameworks": [
+        "Express.js"
+      ],
+      "databases": [
+        "MongoDB"
+      ],
+      "ai_ml_libraries": [],
+      "model_providers": [
+        "OpenAI"
+      ],
+      "cloud_devops": [],
+      "third_party_apis": [],
+      "hardware_components": [],
+      "package_dependencies": [
+        "@google/generative-ai",
+        "bcrypt",
+        "cors",
+        "dotenv",
+        "express",
+        "jsonwebtoken",
+        "mongoose",
+        "multer",
+        "openai",
+        "pdf-parse"
+      ]
+    },
+    "git_timeline": {
+      "total_commits": 5,
+      "commits_in_window": 5,
+      "first_commit_time": "2024-09-28T08:41:53Z",
+      "last_commit_time": "2024-09-29T12:55:44Z",
+      "commit_timestamps": [
+        "2024-09-28T08:41:53Z",
+        "2024-09-29T06:45:22Z",
+        "2024-09-29T09:43:04Z",
+        "2024-09-29T12:45:53Z",
+        "2024-09-29T12:55:44Z"
+      ],
+      "late_rewrites_detected": false,
+      "deadline_crunch_ratio": 0.8,
+      "final_stage_focus": "debugging",
+      "history_is_squashed_or_minimal": false,
+      "contributor_count": 1,
+      "contributors": [
+        "Emny04"
+      ]
+    },
+    "test_files_count": 0,
+    "test_frameworks": [],
+    "has_ci": false,
+    "ci_configs": [],
+    "has_docker": false,
+    "has_env_template": false,
+    "readme_size_bytes": 357,
+    "readme_excerpt": "# PathFinder\nPathFinder is an AI-powered platform designed to help minorities overcome barriers in the job market. By providing personalized resume analysis, tailored job suggestions, and course recommendations, it gives users access to the resources they need to build strong resumes and improve their skills, helping them secure better job opportunities.",
+    "has_architecture_docs": false,
+    "api_routes_count": 8,
+    "db_migrations_or_schema_count": 0,
+    "mock_data_detected": false,
+    "mock_data_indicators": [],
+    "todo_fixme_count": 2,
+    "boilerplate_detected": false,
+    "boilerplate_indicators": [],
+    "deployment_check": null,
+    "consistency_with_claims": "inconsistent",
+    "consistency_explanation": "Weak evidence: Only 3/12 claimed technologies detected in codebase.",
+    "actual_integrations_found": [
+      "json",
+      "json",
+      "openai"
+    ],
+    "readme_claims_unsupported_by_code": [
+      "css3",
+      "css3",
+      "html5",
+      "html5",
+      "javascript",
+      "javascript",
+      "mangodb",
+      "scss",
+      "scss"
+    ],
+    "provenance": [
+      {
+        "claim": "Inspected repository https://github.com/Emny04/PathFinder",
+        "evidence_type": "repository",
+        "source": "https://github.com/Emny04/PathFinder",
+        "location": "root",
+        "confidence": 1.0,
+        "details": null
+      }
+    ]
+  },
+  "demo_summary": {
+    "has_video_demo": false,
+    "video_platform": "",
+    "video_url": "",
+    "duration_seconds": null,
+    "has_live_deployment": false,
+    "deployment_url": "",
+    "deployment_reachable": null,
+    "has_slide_deck": false,
+    "observations": []
+  },
+  "sponsor_technologies_mentioned": [],
+  "bundle_sha256": "ff1cf6dd00e301b999785c6b7812dae8234c47f1bcc4802c902b43f9af604561",
+  "created_at": "2026-09-26T02:03:23.374366Z"
+}

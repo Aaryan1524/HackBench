@@ -1,0 +1,183 @@
+{
+  "project_id": "719658",
+  "slug": "bus-route-buddy",
+  "title": "Bus Route Buddy",
+  "tagline": "The buddy that helps find the closest bus route and set a reminder with ease.",
+  "problem_statement": "",
+  "inspiration": "",
+  "what_it_does": "",
+  "how_it_was_built": "",
+  "challenges": "",
+  "accomplishments": "",
+  "lessons_learned": "",
+  "future_plans": "",
+  "tech_tags": [
+    "google",
+    "google",
+    "google-maps",
+    "google-maps",
+    "netilfy",
+    "react",
+    "react",
+    "typescript",
+    "typescript",
+    "visual-studio-code",
+    "vite"
+  ],
+  "team_size": 1,
+  "repository_metrics": {
+    "repo_url": "https://github.com/ChrisAragon18/bus-routes-web-app",
+    "status": "accessible",
+    "default_branch": "main",
+    "file_count": 28,
+    "approx_loc": 1133,
+    "loc_by_language": {
+      "HTML": 16,
+      "JavaScript": 39,
+      "TypeScript": 478,
+      "CSS": 600
+    },
+    "primary_languages": [
+      "CSS",
+      "TypeScript",
+      "JavaScript",
+      "HTML"
+    ],
+    "tech_stack": {
+      "frontend_frameworks": [
+        "TailwindCSS",
+        "React",
+        "Vite"
+      ],
+      "backend_frameworks": [],
+      "databases": [
+        "Firebase"
+      ],
+      "ai_ml_libraries": [],
+      "model_providers": [],
+      "cloud_devops": [],
+      "third_party_apis": [],
+      "hardware_components": [],
+      "package_dependencies": [
+        "@eslint/js",
+        "@react-google-maps/api",
+        "@types/gapi",
+        "@types/gapi.auth2",
+        "@types/gapi.client.calendar",
+        "@types/google.maps",
+        "@types/node",
+        "@types/react",
+        "@types/react-dom",
+        "@vitejs/plugin-react",
+        "autoprefixer",
+        "axios",
+        "daisyui",
+        "dotenv",
+        "eslint",
+        "eslint-plugin-react-hooks",
+        "eslint-plugin-react-refresh",
+        "firebase",
+        "gapi-script",
+        "globals",
+        "react",
+        "react-dom",
+        "react-router-dom",
+        "tailwindcss",
+        "typescript",
+        "typescript-eslint",
+        "use-places-autocomplete",
+        "vite"
+      ]
+    },
+    "git_timeline": {
+      "total_commits": 16,
+      "commits_in_window": 16,
+      "first_commit_time": "2024-09-28T04:37:15Z",
+      "last_commit_time": "2024-11-30T03:44:42Z",
+      "commit_timestamps": [
+        "2024-09-28T04:37:15Z",
+        "2024-09-28T05:01:27Z",
+        "2024-09-28T05:54:41Z",
+        "2024-09-28T06:23:06Z",
+        "2024-09-28T07:15:04Z",
+        "2024-09-28T11:46:08Z",
+        "2024-09-28T12:53:06Z",
+        "2024-09-28T20:21:30Z",
+        "2024-09-29T02:34:11Z",
+        "2024-09-29T02:59:35Z",
+        "2024-09-29T03:02:58Z",
+        "2024-09-29T03:04:00Z",
+        "2024-09-29T03:09:34Z",
+        "2024-09-29T03:13:56Z",
+        "2024-09-29T14:00:41Z",
+        "2024-11-30T03:44:42Z"
+      ],
+      "late_rewrites_detected": false,
+      "deadline_crunch_ratio": 0.06,
+      "final_stage_focus": "debugging",
+      "history_is_squashed_or_minimal": false,
+      "contributor_count": 1,
+      "contributors": [
+        "Christopher Aragon"
+      ]
+    },
+    "test_files_count": 0,
+    "test_frameworks": [],
+    "has_ci": false,
+    "ci_configs": [],
+    "has_docker": false,
+    "has_env_template": false,
+    "readme_size_bytes": 92,
+    "readme_excerpt": "# bus-routes-web-app\n**Link to the website**: busroutebuddy.co",
+    "has_architecture_docs": false,
+    "api_routes_count": 0,
+    "db_migrations_or_schema_count": 0,
+    "mock_data_detected": false,
+    "mock_data_indicators": [],
+    "todo_fixme_count": 0,
+    "boilerplate_detected": false,
+    "boilerplate_indicators": [],
+    "deployment_check": null,
+    "consistency_with_claims": "consistent",
+    "consistency_explanation": "Strong evidence: 9/11 claimed technologies verified in codebase.",
+    "actual_integrations_found": [
+      "google",
+      "google",
+      "google-maps",
+      "google-maps",
+      "react",
+      "react",
+      "typescript",
+      "typescript",
+      "vite"
+    ],
+    "readme_claims_unsupported_by_code": [
+      "netilfy",
+      "visual-studio-code"
+    ],
+    "provenance": [
+      {
+        "claim": "Inspected repository https://github.com/ChrisAragon18/bus-routes-web-app",
+        "evidence_type": "repository",
+        "source": "https://github.com/ChrisAragon18/bus-routes-web-app",
+        "location": "root",
+        "confidence": 1.0,
+        "details": null
+      }
+    ]
+  },
+  "demo_summary": {
+    "has_video_demo": true,
+    "video_platform": "youtube",
+    "video_url": "https://www.youtube.com/embed/TxBXPnA9Bu0?enablejsapi=1&hl=en_US&rel=0&start=&version=3&wmode=transparent",
+    "duration_seconds": null,
+    "has_live_deployment": false,
+    "deployment_url": "",
+    "deployment_reachable": null,
+    "has_slide_deck": false,
+    "observations": []
+  },
+  "sponsor_technologies_mentioned": [],
+  "bundle_sha256": "fcf78e30411245c120048ea203fca1d401e9042f6aaa435e52303ea29a1dd341",
+  "created_at": "2026-09-26T02:03:23.458254Z"
+}

@@ -1,0 +1,37 @@
+{
+  "project_id": "718976",
+  "slug": "book-shook",
+  "title": "Book Shook",
+  "tagline": "The mission of my website is the provide reading resource that are fun for 6-12 grade. The goal is to provide a space where young reader can find reading games and books.",
+  "problem_statement": "",
+  "inspiration": "",
+  "what_it_does": "",
+  "how_it_was_built": "",
+  "challenges": "",
+  "accomplishments": "",
+  "lessons_learned": "",
+  "future_plans": "",
+  "tech_tags": [
+    "glitch",
+    "glitch",
+    "html",
+    "html",
+    "style.css"
+  ],
+  "team_size": 1,
+  "repository_metrics": null,
+  "demo_summary": {
+    "has_video_demo": true,
+    "video_platform": "youtube",
+    "video_url": "https://www.youtube.com/embed/H6NAKFf7Jew?enablejsapi=1&hl=en_US&rel=0&start=&version=3&wmode=transparent",
+    "duration_seconds": null,
+    "has_live_deployment": false,
+    "deployment_url": "",
+    "deployment_reachable": null,
+    "has_slide_deck": false,
+    "observations": []
+  },
+  "sponsor_technologies_mentioned": [],
+  "bundle_sha256": "972134879f6bd955d8e45ec7c55024516064824f9fa32613b20ff9189f385a7b",
+  "created_at": "2026-09-26T02:03:23.235506Z"
+}

@@ -1,0 +1,39 @@
+{
+  "project_id": "570699",
+  "slug": "twitter-clone-3kbvxz",
+  "title": "Twitter clone",
+  "tagline": "A twitter clone with basic functionality like tweet, like tweet, following system etc. This is a functional Twitter Clone made using Flutter using Kotlin for backend.",
+  "problem_statement": "",
+  "inspiration": "",
+  "what_it_does": "",
+  "how_it_was_built": "",
+  "challenges": "",
+  "accomplishments": "",
+  "lessons_learned": "",
+  "future_plans": "",
+  "tech_tags": [
+    "firebase",
+    "firebase",
+    "glide",
+    "kotlin",
+    "retrofit",
+    "socket.io",
+    "socket.io"
+  ],
+  "team_size": 3,
+  "repository_metrics": null,
+  "demo_summary": {
+    "has_video_demo": false,
+    "video_platform": "",
+    "video_url": "",
+    "duration_seconds": null,
+    "has_live_deployment": false,
+    "deployment_url": "",
+    "deployment_reachable": null,
+    "has_slide_deck": false,
+    "observations": []
+  },
+  "sponsor_technologies_mentioned": [],
+  "bundle_sha256": "5badedb6f930eb5e9f4d7d496f01fe88fb3feff6e1fe5d4672e8dd360a58fa79",
+  "created_at": "2026-09-26T02:11:35.742938Z"
+}

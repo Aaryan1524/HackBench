@@ -1,0 +1,42 @@
+{
+  "project_id": "719671",
+  "slug": "pharmaceutical-inventory-manager",
+  "title": "Pharmaceutical Inventory Manager",
+  "tagline": "This is a CRUD based program using Python, Qt, and SQLite. The aim of this program is to promote organization of inventory within a group of pharmacies.",
+  "problem_statement": "",
+  "inspiration": "",
+  "what_it_does": "",
+  "how_it_was_built": "",
+  "challenges": "",
+  "accomplishments": "",
+  "lessons_learned": "",
+  "future_plans": "",
+  "tech_tags": [
+    "git",
+    "git",
+    "github",
+    "github",
+    "python",
+    "python",
+    "qt",
+    "qt",
+    "sqlite",
+    "sqlite"
+  ],
+  "team_size": 2,
+  "repository_metrics": null,
+  "demo_summary": {
+    "has_video_demo": false,
+    "video_platform": "",
+    "video_url": "",
+    "duration_seconds": null,
+    "has_live_deployment": false,
+    "deployment_url": "",
+    "deployment_reachable": null,
+    "has_slide_deck": false,
+    "observations": []
+  },
+  "sponsor_technologies_mentioned": [],
+  "bundle_sha256": "41a526d27ebd59d6e8805c25c8e5bc0c64fabda580f51266eb67bdb7e306af7f",
+  "created_at": "2026-09-26T02:03:23.470229Z"
+}
