@@ -347,6 +347,18 @@ class PrizeMatcher:
             summary=summary,
         )
 
+    @staticmethod
+    def find_prize(prizes: List[PrizeCategory], award_id: str) -> Optional[PrizeCategory]:
+        """The documented prize an id refers to: by id, else by (loosely matched) title."""
+        clean = (award_id or "").lower().replace(" ", "_")
+        for p in prizes:
+            if p.prize_id == award_id or p.prize_id.lower() == clean:
+                return p
+        for p in prizes:
+            if clean and clean in p.title.lower().replace(" ", "_"):
+                return p
+        return None
+
     def evaluate_specific_prize(
         self,
         extracted: ExtractedIdea,
@@ -358,17 +370,8 @@ class PrizeMatcher:
         Specific-Prize Mode: Directly analyzes the idea against the chosen award.
         """
         prizes = self.load_event_prizes(event_id)
-        target_prize = None
-
+        target_prize = self.find_prize(prizes, award_id)
         clean_target = award_id.lower().replace(" ", "_")
-        for p in prizes:
-            if p.prize_id == award_id or p.prize_id.lower() == clean_target:
-                target_prize = p
-                break
-            # Match titles loosely
-            if clean_target in p.title.lower().replace(" ", "_"):
-                target_prize = p
-                break
 
         if not target_prize:
             # Synthesize fallback category if known standard track
@@ -749,7 +752,7 @@ class PrizeMatcher:
             if in_idea:
                 return PrizeFit(
                     **base, fit_level=FitLevel.STRONG, fit_label="Strong fit",
-                    why_it_fits=f"The idea plans to use {required} in its core workflow.",
+                    why_it_fits=f"It plans to use {required} in its core workflow.",
                     why_it_may_not_fit="Judges will look for it in the live demo, so it has to be in the main path.",
                     biggest_missing_requirement=f"Show {required} working in the demo.",
                     sponsor_tech_role=SponsorTechRole.CENTRAL,
@@ -771,7 +774,7 @@ class PrizeMatcher:
                 **base, fit_level=level, fit_label=label,
                 why_it_fits=(f"Shared subject matter with the challenge: {', '.join(shared_terms[:5])}." if shared_terms
                              else "No shared subject matter with the challenge."),
-                why_it_may_not_fit=f"The idea does not mention {required}, which this challenge requires.",
+                why_it_may_not_fit=f"It does not mention {required}, which this challenge requires.",
                 biggest_missing_requirement=f"Use {required} in the project.",
                 sponsor_tech_role=SponsorTechRole.ABSENT,
             )
@@ -820,14 +823,14 @@ class PrizeMatcher:
             fit_level=level,
             fit_label=label,
             why_it_fits=(
-                f"The idea and this challenge's description share: {', '.join(shared[:5])}."
+                f"This submission and the challenge's description share: {', '.join(shared[:5])}."
                 if shared else "No shared subject matter with this challenge's description."
             ),
             why_it_may_not_fit=(
-                f"The challenge says the core experience cannot be {broken_rule}, and this idea describes one."
+                f"The challenge says the core experience cannot be {broken_rule}, and this describes one."
                 if broken_rule else
                 "Matching is based on shared wording with the published description, so read the full challenge before targeting it."
-                if shared else f"The idea does not touch the subject of '{prize.title}'."
+                if shared else f"Nothing here touches the subject of '{prize.title}'."
             ),
             documented_requirements=requirements,
             # Only what the documentation itself names; never a generic placeholder.

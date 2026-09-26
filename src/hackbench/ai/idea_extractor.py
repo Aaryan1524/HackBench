@@ -95,6 +95,13 @@ class IdeaExtractor:
         result.source_text = desc
         return result
 
+    def extract_offline(self, description: str, technologies_of_interest: Optional[List[str]] = None) -> ExtractedIdea:
+        """Heuristic extraction only: no model call, for callers that just need fields to match against."""
+        desc = (description or "").strip()
+        result = self._extract_heuristic(desc, [t.strip() for t in (technologies_of_interest or []) if t.strip()])
+        result.source_text = desc
+        return result
+
     def _extract_with_llm(self, description: str, technologies_of_interest: List[str]) -> Optional[ExtractedIdea]:
         prompt = f"""You are an objective parser extracting structured components from a hackathon idea description.
 
